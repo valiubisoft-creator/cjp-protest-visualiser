@@ -26,3 +26,4 @@ _None yet. F3 defines the scene module, controller and roach contracts here._
 ## Change log
 - 2026-11-11: plan, CLAUDE.md and F1 kickoff written.
 - 2026-11-11: D1, D9, D10 (D3 added late, in S5b and S7 only) and D11 resolved.
+- 2026-11-11: design direction set in DESIGN.md (Protest Revolution and Public Sans; red, white and black).

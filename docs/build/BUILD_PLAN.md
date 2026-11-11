@@ -170,6 +170,6 @@ Default model: **Opus 5.5 at medium effort**, and **high** for design-heavy chat
 | # | Decision |
 |---|---|
 | D1 | v3 is built in `v3/index.html` and promoted to `index.html` at the end; the Field File moves to `archive/index-v2-fieldfile.html` |
-| D9 | Palette and type are settled in F2 from two board variants |
+| D9 | **Type:** Protest Revolution for major headings, Public Sans for everything else. **Colour:** red, white and black, EFF-inspired. Full spec in [DESIGN.md](DESIGN.md). F2 shows white-dominant and black-dominant variants within that palette |
 | D10 | **D3 approved, added late.** `d3-scale`, `d3-shape`, `d3-hierarchy` and `d3-array` come in via the import map only when S5b (scrubber) and S7 (charts) need them. The F1–F3 foundation and the prologue scenes stay dependency-free. The map projection is hand-rolled |
 | D11 | Charts use the YouTube corpus: views over time (line), channels (bubbles), source type per day (stream) |

@@ -25,7 +25,7 @@ Read `docs/build/BUILD_PLAN.md` for context only if the brief points you to it. 
 - Desktop only, with a minimum viewport of 1280x720. No mobile layout.
 
 ## Design gate
-Show static key frames (screenshots at fixed `p`) and get Vali's approval **before** writing motion. Design preferences:
+Show static key frames (screenshots at fixed `p`) and get Vali's approval **before** writing motion. Type and colour are fixed in `docs/build/DESIGN.md`: Protest Revolution for major headings, Public Sans for everything else, and a red, white and black palette. Use the tokens. Design preferences:
 - Characterful display face for headlines only.
 - Uncommon grotesk for body text. Never Inter or IBM Plex.
 - UI never covers content.
