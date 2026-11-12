@@ -1,0 +1,1398 @@
+{
+  "note": "One row per claim, with the claimant kept. Contested figures stay as separate rows; never average them. value is the lower bound when value_text has '+', '~' or a range; value_max is the upper bound where given. value_text is the dossier's own wording. Rows marked phase 'gap' fall between 25 Jul and October.",
+  "rows": [
+    {
+      "id": "m01",
+      "date": "2026-05-03",
+      "metric": "NEET-UG candidates (registered)",
+      "value_text": "22.79 lakh",
+      "value": 2279000,
+      "unit": "candidates",
+      "claimant": "NTA (official)",
+      "source_text": "NTA notice of 12 May via Deccan Herald; righttoinformation.wiki",
+      "source_ids": [
+        "deccanherald",
+        "righttoinformation"
+      ],
+      "status": "documented",
+      "phase": 1,
+      "page": 17
+    },
+    {
+      "id": "m02",
+      "date": "2026-05-03",
+      "metric": "NEET-UG exam centres",
+      "value_text": "5,400+ centres",
+      "value": 5400,
+      "unit": "centres",
+      "claimant": "NTA (official)",
+      "source_text": "NTA notice of 12 May via Deccan Herald; righttoinformation.wiki",
+      "source_ids": [
+        "deccanherald",
+        "righttoinformation"
+      ],
+      "status": "documented",
+      "phase": 1,
+      "page": 17
+    },
+    {
+      "id": "m03",
+      "date": "2026-05-12",
+      "metric": "NEET-UG candidates affected",
+      "value_text": "22 lakh+",
+      "value": 2200000,
+      "unit": "candidates",
+      "claimant": "Media",
+      "source_text": "BusinessToday, 12 May",
+      "source_ids": [
+        "businesstoday"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 17
+    },
+    {
+      "id": "m04",
+      "date": "2026-05-19",
+      "date_note": "approx.",
+      "metric": "Instagram followers, 78 hrs after launch",
+      "value_text": "3 million",
+      "value": 3000000,
+      "unit": "followers",
+      "claimant": "Media",
+      "source_text": "BusinessToday, 21 May",
+      "source_ids": [
+        "businesstoday"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 17
+    },
+    {
+      "id": "m05",
+      "date": "2026-05-20",
+      "metric": "Instagram followers",
+      "value_text": "9 million+ (vs BJP ~8.7 million)",
+      "value": 9000000,
+      "unit": "followers",
+      "claimant": "Media",
+      "source_text": "BusinessToday, 21 May",
+      "source_ids": [
+        "businesstoday"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 17
+    },
+    {
+      "id": "m06",
+      "date": "2026-05-20",
+      "metric": "Followers gained in 24 hrs",
+      "value_text": "3.7 million",
+      "value": 3700000,
+      "unit": "followers",
+      "claimant": "Media",
+      "source_text": "The Tribune, 20 May",
+      "source_ids": [
+        "tribuneindia",
+        "wikipedia"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 17
+    },
+    {
+      "id": "m07",
+      "date": "2026-05-21",
+      "metric": "X followers",
+      "value_text": "165,500 (disputed vs ~90,000 / ~200,000)",
+      "value": 165500,
+      "unit": "followers",
+      "claimant": "Media",
+      "source_text": "BusinessToday, 21 May",
+      "source_ids": [
+        "businesstoday"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 17
+    },
+    {
+      "id": "m08",
+      "date": "2026-05-21",
+      "metric": "X followers when blocked",
+      "value_text": "~90,000",
+      "value": 90000,
+      "unit": "followers",
+      "claimant": "Officials via media",
+      "source_text": "Indian Express (via Wikipedia)",
+      "source_ids": [
+        "indianexpress",
+        "wikipedia"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 17
+    },
+    {
+      "id": "m09",
+      "date": "2026-05",
+      "date_note": "undated in the dossier",
+      "metric": "X followers",
+      "value_text": "about 200,000",
+      "value": 200000,
+      "unit": "followers",
+      "claimant": "BBC",
+      "source_text": "BBC (dossier text, p2)",
+      "source_ids": [
+        "bbc"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 2,
+      "note": "Not a row in the consolidated table; added from the p2 text so each contested figure has its own row."
+    },
+    {
+      "id": "m10",
+      "date": "2026-05-22",
+      "metric": "Instagram followers",
+      "value_text": "20 million+",
+      "value": 20000000,
+      "unit": "followers",
+      "claimant": "Media",
+      "source_text": "Economic Times (via Wikipedia)",
+      "source_ids": [
+        "economictimes",
+        "wikipedia"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 17
+    },
+    {
+      "id": "m11",
+      "date": "2026-05",
+      "metric": "Members 'within days'",
+      "value_text": "over 100,000",
+      "value": 100000,
+      "unit": "members",
+      "claimant": "Media",
+      "source_text": "WION",
+      "source_ids": [
+        "wionews"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 2,
+      "note": "From p2 text, not the consolidated table."
+    },
+    {
+      "id": "m12",
+      "date": "2026-05",
+      "metric": "NEET-UG fee refunds",
+      "value_text": "more than Rs 300 crore",
+      "value": 3000000000,
+      "unit": "INR",
+      "claimant": "Media",
+      "source_text": "ETV Bharat (p1–2 text)",
+      "source_ids": [
+        "etvbharat"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 2,
+      "note": "From the Key Findings text, not the consolidated table."
+    },
+    {
+      "id": "m13",
+      "date": "2026-05",
+      "metric": "Online sign-ups",
+      "value_text": "350,000+",
+      "value": 350000,
+      "unit": "sign-ups",
+      "claimant": "CJP claim",
+      "source_text": "Al Jazeera",
+      "source_ids": [
+        "wikipedia",
+        "aljazeera"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 17
+    },
+    {
+      "id": "m14",
+      "date": "2026-05",
+      "metric": "Share of Indian audience",
+      "value_text": ">94%",
+      "value": 94,
+      "unit": "percent",
+      "claimant": "CJP (Dipke screen recording)",
+      "source_text": "Wikipedia",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 17
+    },
+    {
+      "id": "m15",
+      "date": "2026-05",
+      "metric": "Share of Pakistani followers",
+      "value_text": "49%",
+      "value": 49,
+      "unit": "percent",
+      "claimant": "Union minister (government)",
+      "source_text": "Wikipedia",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 17,
+      "note": "Dossier: 'The Pakistan-followers claim was rebutted' (p15)."
+    },
+    {
+      "id": "m16",
+      "date": "2026-06-06",
+      "metric": "Crowd",
+      "value_text": "Hundreds",
+      "value": null,
+      "unit": "people",
+      "claimant": "Media",
+      "source_text": "Al Jazeera, 6 Jun",
+      "source_ids": [
+        "aljazeera"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 17,
+      "note": "Outlook (retrospective): 'a few dozen students' (p4)."
+    },
+    {
+      "id": "m17",
+      "date": "2026-06-06",
+      "metric": "Crowd",
+      "value_text": "a few dozen students",
+      "value": null,
+      "unit": "people",
+      "claimant": "Media",
+      "source_text": "Outlook (retrospective)",
+      "source_ids": [
+        "outlookindia"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 4,
+      "note": "Not a row in the consolidated table; added from p4 so each contested figure has its own row."
+    },
+    {
+      "id": "m18",
+      "date": "2026-06-06",
+      "metric": "Police deployed, New Delhi district",
+      "value_text": "~5,000",
+      "value": 5000,
+      "unit": "personnel",
+      "claimant": "Media",
+      "source_text": "Wikipedia summary",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 18
+    },
+    {
+      "id": "m19",
+      "date": "2026-06-06",
+      "metric": "Permitted hours",
+      "value_text": "10:00–17:00",
+      "value": null,
+      "unit": "hours",
+      "claimant": "Delhi Police (official)",
+      "source_text": "The Statesman, 6 Jun",
+      "source_ids": [
+        "thestatesman"
+      ],
+      "status": "documented",
+      "phase": 1,
+      "page": 18
+    },
+    {
+      "id": "m20",
+      "date": "2026-06-20",
+      "metric": "Crowd",
+      "value_text": "Hundreds",
+      "value": null,
+      "unit": "people",
+      "claimant": "Media",
+      "source_text": "Wikipedia/Deccan Herald",
+      "source_ids": [
+        "wikipedia",
+        "deccanherald"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 18
+    },
+    {
+      "id": "m21",
+      "date": "2026-06-21",
+      "metric": "NEET re-test appearing",
+      "value_text": "~20 lakh",
+      "value": 2000000,
+      "unit": "candidates",
+      "claimant": "Secondary",
+      "source_text": "righttoinformation.wiki",
+      "source_ids": [
+        "righttoinformation"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 18
+    },
+    {
+      "id": "m22",
+      "date": "2026-06-21",
+      "metric": "NEET re-test centres",
+      "value_text": "5,440 centres",
+      "value": 5440,
+      "unit": "centres",
+      "claimant": "Secondary",
+      "source_text": "righttoinformation.wiki",
+      "source_ids": [
+        "righttoinformation"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 18
+    },
+    {
+      "id": "m23",
+      "date": "2026-07-16",
+      "metric": "Wangchuk weight loss",
+      "value_text": "more than 9 kg (day 19)",
+      "value": 9,
+      "unit": "kg",
+      "claimant": "Doctors via media",
+      "source_text": "DT Next, 16 Jul",
+      "source_ids": [
+        "dtnext_0716"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 18,
+      "note": "Dossier: 9.1 kg (BBC via Wikipedia, 17 Jul). Corrected to the free DT Next report by the 2026-11-12 Wangchuk research."
+    },
+    {
+      "id": "m24",
+      "date": "2026-07-14",
+      "metric": "Appeal signatories",
+      "value_text": "1,800+",
+      "value": 1800,
+      "unit": "signatories",
+      "claimant": "Media",
+      "source_text": "Scroll, 14 Jul",
+      "source_ids": [
+        "scroll_0714"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 18,
+      "note": "Dossier dated this 17 Jul; Scroll dates it 14 Jul."
+    },
+    {
+      "id": "m25",
+      "date": "2026-07-19",
+      "metric": "Police at site",
+      "value_text": "300+",
+      "value": 300,
+      "unit": "personnel",
+      "claimant": "Delhi Police (official)",
+      "source_text": "ThePrint, 20 Jul",
+      "source_ids": [
+        "theprint"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 18
+    },
+    {
+      "id": "m26",
+      "date": "2026-07-20",
+      "metric": "Marchers",
+      "value_text": ">10,000",
+      "value": 10000,
+      "unit": "people",
+      "claimant": "Delhi Police (DCP Sachin Sharma, via Al Jazeera)",
+      "source_text": "Al Jazeera, 20 Jul",
+      "source_ids": [
+        "aljazeera"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 18,
+      "note": "Web check 2026-11-12: Al Jazeera attributes it to the DCP; the dossier said Al Jazeera/AP/Reuters (media)."
+    },
+    {
+      "id": "m27",
+      "date": "2026-07-20",
+      "metric": "Marchers",
+      "value_text": "Tens of thousands",
+      "value": null,
+      "unit": "people",
+      "claimant": "Media / CJP",
+      "source_text": "Guardian, Deccan Herald; CJP",
+      "source_ids": [
+        "guardian",
+        "deccanherald",
+        "wikipedia"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 18,
+      "note": "Dossier: no sourced figure found for a CJP claim of about 20,000 before 20 July; mark as unverified if used (p21)."
+    },
+    {
+      "id": "m28",
+      "date": "2026-07-20",
+      "metric": "Security deployed",
+      "value_text": "5,000+ plus 25+ CAPF battalions",
+      "value": 5000,
+      "unit": "personnel",
+      "claimant": "Media",
+      "source_text": "India.com",
+      "source_ids": [
+        "india"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 18
+    },
+    {
+      "id": "m29",
+      "date": "2026-07-20",
+      "metric": "Police injured",
+      "value_text": "118+ (later 130+)",
+      "value": 118,
+      "value_later": 130,
+      "unit": "police",
+      "claimant": "Delhi Police (official)",
+      "source_text": "Delhi Police statement via India.com and ThePrint/PTI, 20 Jul",
+      "source_ids": [
+        "theprint",
+        "wikipedia",
+        "india",
+        "pti"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 18,
+      "note": "130+ is a later, open-ended count, not an upper bound."
+    },
+    {
+      "id": "m30",
+      "date": "2026-07-20",
+      "metric": "Protesters injured",
+      "value_text": "~60",
+      "value": 60,
+      "unit": "protesters",
+      "claimant": "Delhi Police (official)",
+      "source_text": "ThePrint/PTI, 20 Jul",
+      "source_ids": [
+        "theprint",
+        "pti"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 18
+    },
+    {
+      "id": "m31",
+      "date": "2026-07-20",
+      "metric": "Injured at RML Hospital emergency by 5.30pm",
+      "value_text": "~100 (incl. 10 police; 4 protesters in ICU)",
+      "value": 100,
+      "unit": "people",
+      "claimant": "Media (hospital sources)",
+      "source_text": "Newslaundry, 21 Jul, citing Indian Express",
+      "source_ids": [
+        "newslaundry",
+        "indianexpress"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 18,
+      "note": "Includes 10 police; not '100+ protesters' (p21)."
+    },
+    {
+      "id": "m32",
+      "date": "2026-07-20",
+      "metric": "Medico-legal cases at RML by 7pm",
+      "value_text": "65",
+      "value": 65,
+      "unit": "cases",
+      "claimant": "Hospital via media",
+      "source_text": "Wikipedia",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 19
+    },
+    {
+      "id": "m33",
+      "date": "2026-07-20",
+      "metric": "Protesters hospitalised",
+      "value_text": "~150",
+      "value": 150,
+      "unit": "protesters",
+      "claimant": "CJP claim",
+      "source_text": "Wikipedia",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 19
+    },
+    {
+      "id": "m34",
+      "date": "2026-07-20",
+      "metric": "Detained",
+      "value_text": "~70",
+      "value": 70,
+      "unit": "people",
+      "claimant": "Delhi Police (PTI) / CJP",
+      "source_text": "ThePrint/PTI, Telangana Today, 20 Jul",
+      "source_ids": [
+        "theprint",
+        "pti",
+        "telanganatoday"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 19,
+      "note": "The dossier attributes the ~70 to CJP on p2 and to police on p21; the table lists both claimants."
+    },
+    {
+      "id": "m35",
+      "date": "2026-07-20",
+      "metric": "Detained",
+      "value_text": "0 (denial)",
+      "value": 0,
+      "unit": "people",
+      "claimant": "Delhi Police (later statement)",
+      "source_text": "Wikipedia",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 19
+    },
+    {
+      "id": "m36",
+      "date": "2026-07-20",
+      "metric": "Government vehicles damaged",
+      "value_text": "15–20",
+      "value": 15,
+      "value_max": 20,
+      "unit": "vehicles",
+      "claimant": "Delhi Police (official)",
+      "source_text": "Wikipedia",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "status": "claimed",
+      "phase": 1,
+      "page": 19
+    },
+    {
+      "id": "m37",
+      "date": "2026-07-20",
+      "metric": "Pellet rounds fired",
+      "value_text": "7",
+      "value": 7,
+      "unit": "rounds",
+      "claimant": "CRPF report (via The Wire)",
+      "source_text": "The Wire",
+      "source_ids": [
+        "thewire"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 19,
+      "note": "Dossier: 'Media / Indian Express (via Wikipedia)'. Web check 2026-11-12 found the figure only in The Wire, citing a CRPF report."
+    },
+    {
+      "id": "m38",
+      "date": "2026-07-20",
+      "metric": "Pellet rounds fired",
+      "value_text": "2",
+      "value": 2,
+      "unit": "rounds",
+      "claimant": "Delhi Police records",
+      "source_text": "Hindustan Times (via Wikipedia); The Tribune",
+      "source_ids": [
+        "wikipedia",
+        "tribuneindia"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 19,
+      "note": "Added by the 2026-11-12 web check."
+    },
+    {
+      "id": "m39",
+      "date": "2026-07-20",
+      "metric": "Pellet hits",
+      "value_text": "5",
+      "value": 5,
+      "unit": "people hit",
+      "claimant": "CRPF report (via The Wire)",
+      "source_text": "The Wire",
+      "source_ids": [
+        "thewire"
+      ],
+      "status": "disputed",
+      "phase": 1,
+      "page": 19
+    },
+    {
+      "id": "m40",
+      "date": "2026-07-20",
+      "metric": "Metro stations closed",
+      "value_text": "5",
+      "value": 5,
+      "unit": "stations",
+      "claimant": "DMRC",
+      "source_text": "Wikipedia",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "status": "documented",
+      "phase": 1,
+      "page": 19
+    },
+    {
+      "id": "m41",
+      "date": "2026-07-21",
+      "metric": "CRPF companies airlifted",
+      "value_text": "20",
+      "value": 20,
+      "unit": "companies",
+      "claimant": "MHA (official)",
+      "source_text": "Wikipedia",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "status": "documented",
+      "phase": 1,
+      "page": 19
+    },
+    {
+      "id": "m42",
+      "date": "2026-07-22",
+      "metric": "Metro stations closed",
+      "value_text": "17",
+      "value": 17,
+      "unit": "stations",
+      "claimant": "DMRC",
+      "source_text": "Wikipedia",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "status": "documented",
+      "phase": 1,
+      "page": 19,
+      "note": "The day-by-day table puts '16 then 17' on 21 Jul (p6)."
+    },
+    {
+      "id": "m43",
+      "date": "2026-07-22",
+      "metric": "Opposition MPs’ letter to Wangchuk",
+      "value_text": "~65 MPs",
+      "value": 65,
+      "unit": "MPs",
+      "claimant": "Media",
+      "source_text": "ThePrint (via Wikipedia)",
+      "source_ids": [
+        "theprint",
+        "wikipedia"
+      ],
+      "status": "documented",
+      "phase": 1,
+      "page": 19
+    },
+    {
+      "id": "m44",
+      "date": "2026-07-24",
+      "metric": "Metro stations closed",
+      "value_text": "18",
+      "value": 18,
+      "unit": "stations",
+      "claimant": "DMRC",
+      "source_text": "Wikipedia",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "status": "documented",
+      "phase": 1,
+      "page": 19
+    },
+    {
+      "id": "m45",
+      "date": "2026-07-23",
+      "metric": "Hunger strike duration",
+      "value_text": "26 days (28 Jun–23 Jul)",
+      "value": 26,
+      "unit": "days",
+      "claimant": "Media",
+      "source_text": "NBC, 25 Jul",
+      "source_ids": [
+        "nbcnews"
+      ],
+      "status": "documented",
+      "phase": 1,
+      "page": 19
+    },
+    {
+      "id": "m46",
+      "date": "2026-07-25",
+      "metric": "Agitation length (sit-in)",
+      "value_text": "36 days (sit-in)",
+      "value": 36,
+      "unit": "days",
+      "claimant": "Media",
+      "source_text": "Al Jazeera, 25 Jul; Telangana Today",
+      "source_ids": [
+        "aljazeera",
+        "telanganatoday_0725"
+      ],
+      "status": "documented",
+      "phase": 1,
+      "page": 19,
+      "note": "Sources corrected by the 2026-11-12 web check."
+    },
+    {
+      "id": "m47",
+      "date": "2026-07-25",
+      "metric": "Agitation length (from 6 Jun)",
+      "value_text": "49 days (from 6 Jun)",
+      "value": 49,
+      "unit": "days",
+      "claimant": "Media",
+      "source_text": "Christian Daily; Wikipedia infobox",
+      "source_ids": [
+        "christiandaily",
+        "wikipedia"
+      ],
+      "status": "documented",
+      "phase": 1,
+      "page": 19,
+      "note": "Sources corrected by the 2026-11-12 web check."
+    },
+    {
+      "id": "m48",
+      "date": "2026-07-28",
+      "date_note": "approx.",
+      "metric": "Protesters arrested nationwide after deal",
+      "value_text": "100+",
+      "value": 100,
+      "unit": "protesters",
+      "claimant": "CJP claim",
+      "source_text": "Waging Nonviolence",
+      "source_ids": [
+        "wagingnonviolence"
+      ],
+      "status": "claimed",
+      "phase": "gap",
+      "page": 20
+    },
+    {
+      "id": "m49",
+      "date": "2026-07-20",
+      "date_note": "2026-07-20 to 25",
+      "metric": "People with criminal antecedents present",
+      "value_text": "2,873",
+      "value": 2873,
+      "unit": "people",
+      "claimant": "Delhi Police (official)",
+      "source_text": "Wikipedia",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "status": "alleged",
+      "phase": 1,
+      "page": 20,
+      "note": "Dossier day-by-day table: 'Police later allege' (p8)."
+    },
+    {
+      "id": "m50",
+      "date": "2026-10-09",
+      "date_note": "2026-10-09/10",
+      "metric": "Metro stations closed",
+      "value_text": "45",
+      "value": 45,
+      "unit": "stations",
+      "claimant": "DMRC via media",
+      "source_text": "ETV Bharat",
+      "source_ids": [
+        "etvbharat"
+      ],
+      "status": "documented",
+      "phase": 2,
+      "page": 20
+    },
+    {
+      "id": "m51",
+      "date": "2026-10-10",
+      "metric": "Security deployed",
+      "value_text": "20,000+",
+      "value": 20000,
+      "unit": "personnel",
+      "claimant": "PTI",
+      "source_text": "Various",
+      "source_ids": [
+        "pti",
+        "ratopati"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 20,
+      "note": "One of five deployment figures the table gives in a single row; split here so each claimant has its own row."
+    },
+    {
+      "id": "m52",
+      "date": "2026-10-10",
+      "metric": "Security deployed",
+      "value_text": "25,000+",
+      "value": 25000,
+      "unit": "personnel",
+      "claimant": "ETV Bharat",
+      "source_text": "Various",
+      "source_ids": [
+        "etvbharat"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 20,
+      "note": "One of five deployment figures the table gives in a single row; split here so each claimant has its own row."
+    },
+    {
+      "id": "m53",
+      "date": "2026-10-10",
+      "metric": "Security deployed",
+      "value_text": "30,000+",
+      "value": 30000,
+      "unit": "personnel",
+      "claimant": "IPS",
+      "source_text": "Various",
+      "source_ids": [
+        "ips"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 20,
+      "note": "One of five deployment figures the table gives in a single row; split here so each claimant has its own row."
+    },
+    {
+      "id": "m54",
+      "date": "2026-10-10",
+      "metric": "Security deployed",
+      "value_text": "35,000+",
+      "value": 35000,
+      "unit": "personnel",
+      "claimant": "Tribune",
+      "source_text": "Various",
+      "source_ids": [
+        "tribuneindia"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 20,
+      "note": "One of five deployment figures the table gives in a single row; split here so each claimant has its own row."
+    },
+    {
+      "id": "m55",
+      "date": "2026-10-10",
+      "metric": "Security deployed",
+      "value_text": "~43,000",
+      "value": 43000,
+      "unit": "personnel",
+      "claimant": "Zee",
+      "source_text": "Various",
+      "source_ids": [
+        "zeenews"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 20,
+      "note": "One of five deployment figures the table gives in a single row; split here so each claimant has its own row. Zee figure taken from a TV programme."
+    },
+    {
+      "id": "m56",
+      "date": "2026-10-10",
+      "metric": "Detained (Delhi)",
+      "value_text": "~2,000",
+      "value": 2000,
+      "unit": "people",
+      "claimant": "MHA official",
+      "source_text": "Reuters via Al Jazeera, 10 Oct",
+      "source_ids": [
+        "reuters",
+        "aljazeera"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 20
+    },
+    {
+      "id": "m57",
+      "date": "2026-10-10",
+      "metric": "Detained (Delhi)",
+      "value_text": "~2,500",
+      "value": 2500,
+      "unit": "people",
+      "claimant": "Delhi Police sources",
+      "source_text": "The Hindu via Al Jazeera",
+      "source_ids": [
+        "thehindu",
+        "aljazeera"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 20
+    },
+    {
+      "id": "m58",
+      "date": "2026-10-10",
+      "metric": "Detained (Delhi)",
+      "value_text": "~3,000",
+      "value": 3000,
+      "unit": "people",
+      "claimant": "Police sources",
+      "source_text": "The Tribune, 11 Oct",
+      "source_ids": [
+        "tribuneindia"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 20
+    },
+    {
+      "id": "m59",
+      "date": "2026-10-10",
+      "metric": "Detained (Delhi)",
+      "value_text": "5,900 → 7,000+",
+      "value": 5900,
+      "value_later": 7000,
+      "unit": "people",
+      "claimant": "Media sources",
+      "source_text": "Zee News",
+      "source_ids": [
+        "zeenews"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 20,
+      "note": "7,000+ is a later, open-ended count, not an upper bound."
+    },
+    {
+      "id": "m60",
+      "date": "2026-10-10",
+      "metric": "Detained (Delhi)",
+      "value_text": "~15,000",
+      "value": 15000,
+      "unit": "people",
+      "claimant": "CJP claim",
+      "source_text": "Zee News",
+      "source_ids": [
+        "zeenews"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 20
+    },
+    {
+      "id": "m61",
+      "date": "2026-10-10",
+      "metric": "Arrested (Mumbai)",
+      "value_text": "~600",
+      "value": 600,
+      "unit": "people",
+      "claimant": "Media",
+      "source_text": "ANI via Al Jazeera",
+      "source_ids": [
+        "ani",
+        "aljazeera"
+      ],
+      "status": "claimed",
+      "phase": 2,
+      "page": 20
+    },
+    {
+      "id": "m62",
+      "date": "2026-10-10",
+      "metric": "UP women police deployed",
+      "value_text": "300+",
+      "value": 300,
+      "unit": "personnel",
+      "claimant": "Media",
+      "source_text": "The Tribune",
+      "source_ids": [
+        "tribuneindia"
+      ],
+      "status": "claimed",
+      "phase": 2,
+      "page": 20
+    },
+    {
+      "id": "m63",
+      "date": "2026-10-12",
+      "metric": "Social posts taken down",
+      "value_text": "300",
+      "value": 300,
+      "unit": "posts",
+      "claimant": "Delhi Police (official)",
+      "source_text": "Business Standard",
+      "source_ids": [
+        "business_standard"
+      ],
+      "status": "claimed",
+      "phase": 2,
+      "page": 20
+    },
+    {
+      "id": "m64",
+      "date": "2026-10-12",
+      "metric": "Years as designated protest site",
+      "value_text": "33",
+      "value": 33,
+      "unit": "years",
+      "claimant": "Media",
+      "source_text": "Daily Jagran",
+      "source_ids": [
+        "thedailyjagran"
+      ],
+      "status": "documented",
+      "phase": 2,
+      "page": 21
+    },
+    {
+      "id": "m65",
+      "date": "2026-10-13",
+      "metric": "People breaching site",
+      "value_text": "14 (police)",
+      "value": 14,
+      "unit": "people",
+      "claimant": "Official",
+      "source_text": "Hans India",
+      "source_ids": [
+        "hansindia"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 21
+    },
+    {
+      "id": "m66",
+      "date": "2026-10-13",
+      "metric": "People breaching site",
+      "value_text": "~20 (Al Jazeera)",
+      "value": 20,
+      "unit": "people",
+      "claimant": "Media",
+      "source_text": "Al Jazeera",
+      "source_ids": [
+        "aljazeera"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 21
+    },
+    {
+      "id": "m67",
+      "date": "2026-10-14",
+      "date_note": "2026-10-14 to 21",
+      "metric": "Days in judicial custody (Das, Ranka)",
+      "value_text": "7",
+      "value": 7,
+      "unit": "days",
+      "claimant": "Court via media",
+      "source_text": "India TV, LiveLaw",
+      "source_ids": [
+        "indiatv",
+        "livelaw"
+      ],
+      "status": "documented",
+      "phase": 2,
+      "page": 21
+    },
+    {
+      "id": "m68",
+      "date": "2026-10-16",
+      "metric": "Detained, Tiranga march",
+      "value_text": "~150",
+      "value": 150,
+      "unit": "people",
+      "claimant": "Delhi Police (official)",
+      "source_text": "ThePrint/PTI, 16 Oct",
+      "source_ids": [
+        "theprint",
+        "pti"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 21
+    },
+    {
+      "id": "m69",
+      "date": "2026-10-16",
+      "metric": "Detained, Tiranga march",
+      "value_text": "more than 100",
+      "value": 100,
+      "unit": "people",
+      "claimant": "Media",
+      "source_text": "Fair Observer",
+      "source_ids": [
+        "fairobserver",
+        "theprint"
+      ],
+      "status": "disputed",
+      "phase": 2,
+      "page": 10,
+      "note": "From the p10 day-by-day row (crowd cell carries a theprint chip); contests the police ~150."
+    },
+    {
+      "id": "m70",
+      "date": "2026-10-21",
+      "metric": "Bail bond",
+      "value_text": "₹50,000 each",
+      "value": 50000,
+      "unit": "INR",
+      "claimant": "Court",
+      "source_text": "The Tribune, 5 Nov",
+      "source_ids": [
+        "tribuneindia",
+        "thelogicalindian"
+      ],
+      "status": "documented",
+      "phase": 2,
+      "page": 21
+    },
+    {
+      "id": "m71",
+      "date": "2026-11-05",
+      "metric": "Questions at Crime Branch",
+      "value_text": "~70 in ~4 hrs",
+      "value": 70,
+      "unit": "questions",
+      "claimant": "Police sources",
+      "source_text": "ThePrint/PTI, 5 Nov",
+      "source_ids": [
+        "theprint",
+        "pti"
+      ],
+      "status": "claimed",
+      "phase": 2,
+      "page": 21
+    },
+    {
+      "id": "m72",
+      "date": "2026-11-07",
+      "metric": "Kochi marchers",
+      "value_text": "~500",
+      "value": 500,
+      "unit": "people",
+      "claimant": "CJP (organisers)",
+      "source_text": "The Week, 7 Nov",
+      "source_ids": [
+        "theweek"
+      ],
+      "status": "claimed",
+      "phase": 2,
+      "page": 21
+    }
+  ],
+  "tactics": [
+    {
+      "tactic": "Permission limited to 10am–5pm, “one-time exemption”",
+      "dates": "6 Jun, 20 Jun",
+      "status_text": "Documented (police letter, The Statesman)",
+      "status": "documented",
+      "source_ids": [
+        "thestatesman"
+      ],
+      "page": 13,
+      "chartable": true
+    },
+    {
+      "tactic": "Lights, water, food and washroom access cut at the site",
+      "dates": "20 Jun, 28 Jun",
+      "status_text": "CJP allegation; reported live by Dynamite News; access later restored",
+      "status": "alleged",
+      "source_ids": [
+        "thefederal",
+        "dynamitenews"
+      ],
+      "page": 13,
+      "chartable": true
+    },
+    {
+      "tactic": "No force used; police withdrew",
+      "dates": "6 Jun, 20 Jun night",
+      "status_text": "Reported (Wikipedia citing media)",
+      "status": "claimed",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "page": 13,
+      "chartable": true
+    },
+    {
+      "tactic": "Bag scanners, frisking, plain-clothes officers, QRTs, inter-state border checks",
+      "dates": "19–20 Jul",
+      "status_text": "Documented (ThePrint, senior officer quoted)",
+      "status": "documented",
+      "source_ids": [
+        "theprint"
+      ],
+      "page": 13,
+      "chartable": true
+    },
+    {
+      "tactic": "Section 163 BNSS (assemblies of 5+ banned)",
+      "dates": "20 Jul; 16 Oct",
+      "status_text": "Documented (DCP X post)",
+      "status": "documented",
+      "source_ids": [
+        "theprint"
+      ],
+      "page": 13,
+      "chartable": true
+    },
+    {
+      "tactic": "Lathi charge, tear gas",
+      "dates": "20 Jul, 25 Jul",
+      "status_text": "Documented by AP, Reuters, Al Jazeera and police statements",
+      "status": "documented",
+      "source_ids": [
+        "theprint",
+        "asiaone"
+      ],
+      "page": 13,
+      "chartable": true
+    },
+    {
+      "tactic": "Pellet guns (RAF; 2 rounds per police records, 7 rounds and 5 hits per a CRPF report; 3 named victims including an Outlook journalist)",
+      "dates": "20 Jul",
+      "status_text": "Count disputed; under HPEC review",
+      "status": "documented",
+      "source_ids": [
+        "wikipedia",
+        "tribuneindia",
+        "thewire",
+        "newslaundry"
+      ],
+      "page": 13,
+      "chartable": true
+    },
+    {
+      "tactic": "Nail-fitted batons",
+      "dates": "20 Jul",
+      "status_text": "Police denied; Alt News and BOOM found the videos authentic",
+      "status": "disputed",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "page": 13,
+      "chartable": true
+    },
+    {
+      "tactic": "Electric shock batons",
+      "dates": "20 Jul",
+      "status_text": "Dainik Bhaskar video report; unverified",
+      "status": "unverified",
+      "source_ids": [
+        "wikipedia",
+        "dainikbhaskar"
+      ],
+      "page": 13,
+      "chartable": true
+    },
+    {
+      "tactic": "Officer slapping a woman (Addl DCP Sandeep Lamba); baton toward a woman’s groin (Inspector Naveen Rathi)",
+      "dates": "20 Jul",
+      "status_text": "Video and press reports; cited in PIL; Saket Gokhale filed an FIR complaint",
+      "status": "alleged",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "page": 13,
+      "chartable": true
+    },
+    {
+      "tactic": "Missing name badges; plain-clothes men with batons",
+      "dates": "20 Jul",
+      "status_text": "Media reports",
+      "status": "alleged",
+      "source_ids": [
+        "newslaundry",
+        "wikipedia"
+      ],
+      "page": 13,
+      "chartable": true
+    },
+    {
+      "tactic": "RAF IG says force “did not align with prescribed standards”",
+      "dates": "Post-20 Jul",
+      "status_text": "ThePrint, quoting an officer at an internal meeting",
+      "status": "documented",
+      "source_ids": [
+        "wikipedia",
+        "theprint"
+      ],
+      "page": 13,
+      "chartable": true
+    },
+    {
+      "tactic": "Internet shutdowns; metro closures (5 → 16 → 17 → 18 stations in July; 45 in October)",
+      "dates": "Jul, Oct",
+      "status_text": "Documented (DMRC, ETV Bharat)",
+      "status": "documented",
+      "source_ids": [
+        "aljazeera",
+        "wikipedia",
+        "etvbharat"
+      ],
+      "page": 13,
+      "chartable": true
+    },
+    {
+      "tactic": "Mass preventive detention; detention aboard an aircraft; buses used to remove protesters",
+      "dates": "10 Oct",
+      "status_text": "Documented (Al Jazeera/Reuters/AP)",
+      "status": "documented",
+      "source_ids": [
+        "aljazeera"
+      ],
+      "page": 14,
+      "chartable": true
+    },
+    {
+      "tactic": "Water cannon, drones, kettling",
+      "dates": "—",
+      "status_text": "No credible source found; do not chart",
+      "status": "unverified",
+      "source_ids": [
+        "dossier"
+      ],
+      "page": 14,
+      "chartable": false
+    }
+  ]
+}

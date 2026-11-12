@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" data-theme="ink">
+<head>
+<meta charset="utf-8">
+<title>Cockroaches · F2 design board</title>
+<meta name="viewport" content="width=1280">
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="board.css">
+<style>
+  .hero-spec { font-size: var(--fs-hero); }
+  .date-spec { font-size: var(--fs-date); }
+  .ht-tile { position: relative; height: 260px; border: var(--rule) solid var(--rule-c); overflow: hidden; background: var(--bg); }
+  .ht-tile canvas { position: absolute; inset: 0; }
+  .ht-tile p { position: relative; margin: var(--s-5); max-width: 34ch; font-size: var(--fs-body); }
+  .roach-row { display: flex; gap: var(--s-6); align-items: flex-end; flex-wrap: wrap; }
+  .roach-row figure { margin: 0; text-align: center; }
+  .roach-row figcaption { font-size: var(--fs-micro); color: var(--muted); margin-top: var(--s-2); }
+  .s5-demo { display: grid; grid-template-columns: 1fr 460px; gap: var(--s-6); align-items: start; }
+  .chart { width: 100%; height: auto; display: block; }
+  .chart text { font: 12px var(--font-text); fill: var(--muted); }
+  .chart .lbl { fill: var(--fg); font-weight: 700; }
+  .legend { display: flex; gap: var(--s-5); font-size: var(--fs-micro); color: var(--muted); margin-top: var(--s-3); flex-wrap: wrap; }
+  .legend svg { vertical-align: middle; margin-right: 6px; }
+  .footer-entry { font-size: var(--fs-small); border-top: var(--rule) solid var(--rule-c); padding: var(--s-3) 0; max-width: 70ch; }
+  .footer-entry b { color: var(--accent-text); margin-right: var(--s-2); }
+  .map-tile { position: relative; height: 520px; border: var(--rule) solid var(--rule-c); overflow: hidden; }
+  .map-tile .lab { position: absolute; transform: translate(10px, -50%); background: var(--map-label-bg); color: var(--map-label-fg); font: var(--w-bold) 11px/1 var(--font-text); letter-spacing: .06em; text-transform: uppercase; padding: 5px 7px; white-space: nowrap; }
+  .map-tile .lab.illus { background: transparent; color: var(--map-illustrative); border: 1px dashed currentColor; }
+  .map-tile canvas { position: absolute; inset: 0; pointer-events: none; }
+  .map-legend { position: absolute; left: var(--s-4); bottom: var(--s-4); background: var(--bg); border: var(--rule) solid var(--fg); padding: var(--s-3) var(--s-4); font-size: var(--fs-micro); line-height: 1.6; max-width: 300px; }
+  .kin { font-family: var(--font-display); line-height: .9; }
+</style>
+</head>
+<body>
+<div class="bar">
+  <h1>COCKROACHES · F2 design board</h1>
+  <nav><a href="#palette">Palette</a><a href="#type">Type</a><a href="#roach">Roach</a><a href="#halftone">Halftone</a><a href="#map">Map</a><a href="#s5">Rail + scrubber</a><a href="#facts">Facts &amp; *</a><a href="#charts">Charts</a><a href="#quotes">Quotes</a><a href="storyboard.html">Storyboard →</a></nav>
+  <div class="theme" role="group" aria-label="Theme"><button data-t="ink">Ink</button><button data-t="paper">Paper</button></div>
+</div>
+<main id="board"></main>
+<script type="module" src="board.js"></script>
+</body>
+</html>

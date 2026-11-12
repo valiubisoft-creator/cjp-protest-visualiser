@@ -1,0 +1,253 @@
+{
+  "note": "Every coordinate states its origin. 'verified' = an OpenStreetMap feature with a named id (lookup 2026-11-11). 'approx' = a street rather than a point, or an unconfirmed name match; do not present as precise. OSM data © OpenStreetMap contributors, ODbL: credit it in the footer. The dossier names only five of the closed metro stations (5 → 16 → 17 → 18 in July); the other 13 are unnamed.",
+  "base_map": null,
+  "base_map_status": "missing: no GeoJSON/SVG base map exists in the repo. See GAPS.md.",
+  "sites": [
+    {
+      "id": "jantar_mantar_road",
+      "name": "Jantar Mantar Road",
+      "type": "protest_site",
+      "lat": 28.62553,
+      "lon": 77.21579,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap way 1493039594 'Jantar Mantar Protest Site' (amenity=events_venue), centre point, Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL). Cross-check: the derived point from docs/archive/within-earshot.md (centre of the demonstration band) is about 27 m away. Road = OSM way 24583495.",
+      "source_ids": [
+        "within_earshot",
+        "business_standard"
+      ],
+      "role_in_story": "Main protest and sit-in site, 6 Jun – 25 Jul.",
+      "note": "The protest street, not the observatory. The dossier: 'Jantar Mantar Road is about 1 km from Parliament House.'"
+    },
+    {
+      "id": "jantar_mantar_observatory",
+      "name": "Jantar Mantar (observatory)",
+      "type": "landmark",
+      "lat": 28.62718,
+      "lon": 77.21662,
+      "coord_status": "verified",
+      "coord_origin": "OSM Nominatim point for way 223456559, per docs/archive/within-earshot.md section 4 (0 m from Nominatim, 23 m from Wikipedia's coordinate).",
+      "source_ids": [
+        "within_earshot"
+      ],
+      "note": "Map anchor only. Not the protest location."
+    },
+    {
+      "id": "parliament",
+      "name": "Parliament House (new)",
+      "type": "landmark",
+      "lat": 28.61712,
+      "lon": 77.21022,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap relation 12737019 'New Parliament House', Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL). The Old Parliament House is relation 6087635 (28.61719, 77.20819).",
+      "source_ids": [
+        "business_standard"
+      ],
+      "role_in_story": "Destination of the 20 Jul 'Sansad Chalo' march.",
+      "note": "The dossier doesn't say which building the march targeted; the Monsoon Session sits in the new building (assumption, check)."
+    },
+    {
+      "id": "parliament_street",
+      "name": "Parliament Street (Sansad Marg)",
+      "type": "flashpoint",
+      "lat": 28.62554,
+      "lon": 77.21424,
+      "coord_status": "approx",
+      "coord_origin": "OpenStreetMap way 24583327 'Sansad Marg', centre of the segment between Jantar Mantar Road and Patel Chowk, Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL). A street, not a point; the exact flashpoint position isn't recorded.",
+      "source_ids": [
+        "imnindia",
+        "wikipedia"
+      ],
+      "role_in_story": "20 Jul: lathi charges and tear gas. PS Parliament Street registered FIR 128/26 on 13 Oct."
+    },
+    {
+      "id": "patel_chowk",
+      "name": "Patel Chowk",
+      "type": "flashpoint",
+      "lat": 28.6234,
+      "lon": 77.2128,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap roundabout ways 24583324/447141147/447141148/572511730/572511731/590609994/1493678697, mean of centres, Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL).",
+      "source_ids": [
+        "imnindia",
+        "wikipedia"
+      ],
+      "role_in_story": "20 Jul: lathi charges and tear gas."
+    },
+    {
+      "id": "rail_bhawan",
+      "name": "Rail Bhawan",
+      "type": "flashpoint",
+      "lat": 28.61586,
+      "lon": 77.21139,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap node 10264397115 'Rail Bhavan' (government=ministry), Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL).",
+      "source_ids": [
+        "imnindia",
+        "wikipedia"
+      ],
+      "role_in_story": "20 Jul: lathi charges and tear gas."
+    },
+    {
+      "id": "mandi_house",
+      "name": "Mandi House",
+      "type": "flashpoint",
+      "lat": 28.62569,
+      "lon": 77.23195,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap way 700293873 'Mandi House Gol Chakkar Park' (the roundabout); metro stop area relation 8076975 is at 28.62561, 77.23399, Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL).",
+      "source_ids": [
+        "imnindia",
+        "wikipedia"
+      ],
+      "role_in_story": "20 Jul: start of the flashpoint sequence 'Mandi House → Parliament Street'. 16 Oct: Neha Bora detained here."
+    },
+    {
+      "id": "shastri_bhawan",
+      "name": "Shastri Bhawan",
+      "type": "flashpoint",
+      "lat": 28.61608,
+      "lon": 77.21543,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap relation 5262900 'Shastri Bhawan', Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL). (The clip-corpus gazetteer point, 28.6142, 77.2196, was about 450 m off.)",
+      "source_ids": [
+        "imnindia",
+        "wikipedia"
+      ],
+      "role_in_story": "20 Jul flashpoint (dossier spells it 'Shastri Bhavan')."
+    },
+    {
+      "id": "palika_bazar",
+      "name": "Palika Bazar",
+      "type": "flashpoint",
+      "lat": 28.63071,
+      "lon": 77.21884,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap way 1393736849 'Palika Bazar' (landuse=retail), Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL).",
+      "source_ids": [
+        "imnindia",
+        "wikipedia"
+      ],
+      "role_in_story": "20 Jul: pellet injuries."
+    },
+    {
+      "id": "gurdwara_bangla_sahib",
+      "name": "Gurdwara Bangla Sahib",
+      "type": "refuge",
+      "lat": 28.62631,
+      "lon": 77.20909,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap way 111695183 'Gurudwara Bangla Sahib Sikh Temple', Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL).",
+      "source_ids": [
+        "imnindia",
+        "wikipedia"
+      ],
+      "role_in_story": "20 Jul: refuge."
+    },
+    {
+      "id": "rml_hospital",
+      "name": "RML Hospital",
+      "type": "hospital",
+      "lat": 28.62606,
+      "lon": 77.20075,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap way 34404757 'Dr. Ram Manohar Lohia Hospital', Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL).",
+      "source_ids": [
+        "imnindia",
+        "wikipedia"
+      ],
+      "role_in_story": "20 Jul: injured taken here."
+    },
+    {
+      "id": "safdarjung_hospital",
+      "name": "Safdarjung Hospital",
+      "type": "hospital",
+      "lat": 28.56734,
+      "lon": 77.20497,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap way 454523330 'Safdarjung Hospital', Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL). About 6.5 km south of Jantar Mantar Road: outside the main map frame.",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "role_in_story": "18 Jul: police removed Wangchuk here."
+    },
+    {
+      "id": "constitution_club",
+      "name": "Constitution Club",
+      "type": "flashpoint",
+      "lat": 28.61959,
+      "lon": 77.21328,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap node 14289213396 'Constitution Club of India', Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL).",
+      "source_ids": [
+        "imnindia",
+        "wikipedia"
+      ],
+      "role_in_story": "20 Jul flashpoint."
+    },
+    {
+      "id": "metro_udyog_bhawan",
+      "name": "Udyog Bhawan metro station",
+      "type": "metro_closed",
+      "lat": 28.60951,
+      "lon": 77.2118,
+      "coord_status": "approx",
+      "coord_origin": "OpenStreetMap node 7018886727 (railway=station), Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL). OSM now names this station 'Seva Teerth'; position matches Udyog Bhawan station but the name match is unconfirmed.",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "role_in_story": "Closed before 20 Jul."
+    },
+    {
+      "id": "metro_central_secretariat",
+      "name": "Central Secretariat metro station",
+      "type": "metro_closed",
+      "lat": 28.61629,
+      "lon": 77.21228,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap relation 8076972 'Central Secretariat (Yellow Line)' stop area, Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL).",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "role_in_story": "Closed before 20 Jul."
+    },
+    {
+      "id": "metro_patel_chowk",
+      "name": "Patel Chowk metro station",
+      "type": "metro_closed",
+      "lat": 28.6228,
+      "lon": 77.21397,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap relation 9561642 'Patel Chowk' stop area, Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL).",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "role_in_story": "Closed before 20 Jul."
+    },
+    {
+      "id": "metro_janpath",
+      "name": "Janpath metro station",
+      "type": "metro_closed",
+      "lat": 28.62531,
+      "lon": 77.2184,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap relation 8032896 'Janpath' stop area, Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL).",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "role_in_story": "Closed before 20 Jul."
+    },
+    {
+      "id": "metro_rajiv_chowk",
+      "name": "Rajiv Chowk metro station",
+      "type": "metro_closed",
+      "lat": 28.63281,
+      "lon": 77.21959,
+      "coord_status": "verified",
+      "coord_origin": "OpenStreetMap relation 8032902 'Rajiv Chowk (Blue Line)' stop area, Overpass/Nominatim lookup 2026-11-11 (© OpenStreetMap contributors, ODbL).",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "role_in_story": "Closed before 20 Jul."
+    }
+  ]
+}

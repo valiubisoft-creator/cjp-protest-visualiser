@@ -1,0 +1,415 @@
+{
+  "cji_quote_sources": [
+    {
+      "outlet": "The News Minute (citing LiveLaw)",
+      "headline": "CJI Surya Kant sparks row by calling activists, media 'cockroaches'",
+      "date": "2026-05-16 (published 7:15 am; remarks made Fri 15 May)",
+      "url": "https://www.thenewsminute.com/news/cji-surya-kant-sparks-row-by-calling-activists-media-cockroaches",
+      "wording_as_printed": "\"...There are youngsters like cockroaches, who don't get any employment and don't have any place in profession. Some of them become media, some of them become social media, some of them become RTI activists, some of them become other activists, and they start attacking everyone...\"",
+      "matches_client_text": "near-exact",
+      "notes": "Closest match to the client text. Only difference: 'in profession' where client has 'in the profession'. Printed as an excerpt with leading/trailing ellipses and attributed to LiveLaw. Text fetched and extracted directly from the page HTML."
+    },
+    {
+      "outlet": "LiveLaw",
+      "headline": "Unemployed Youngsters Who're Like Cockroaches Become Activists & Start Attacking Every System: CJI Surya Kant",
+      "date": "2026-05-15 12:19 PM IST",
+      "byline": "Amisha Shrivastava",
+      "url": "https://www.livelaw.in/top-stories/if-hc-makes-you-senior-we-will-set-it-aside-supreme-court-pulls-up-lawyer-for-repeated-pleas-over-delhi-hc-senior-designations-534311",
+      "wording_as_printed": "\"There are youngsters like cockroaches, who don't get any employment and don't have any place in profession.\" (this sentence only; rest of the quote is behind the paywall)",
+      "matches_client_text": "partial: first sentence matches except 'in profession' (client: 'in the profession'). Remaining sentences not visible (premium content).",
+      "notes": "The original report that others cite. Page says the remark was made on Friday while hearing a petition by an advocate re Delhi HC senior designation. Page is paywalled after the intro. The first sentence was reproduced via a search-tool summary and the page intro; I could not read the rest myself. Preceded in the hearing by: \"There are already parasites of society who attack the system and you want to join hands with them?\" (as quoted by Free Press Journal)."
+    },
+    {
+      "outlet": "Free Press Journal",
+      "headline": "Unemployed 'Youngsters Like Cockroaches' Become Media, Activists & Attack System: Chief Justice Of India",
+      "date": "2026-05-15 (updated 6:43 PM IST)",
+      "url": "https://www.freepressjournal.in/india/unemployed-youngsters-like-cockroaches-become-media-activists-attack-system-chief-justice-of-india",
+      "wording_as_printed": "\"There are youngsters like cockroaches, who don't get any employment or have any place in profession. Some of them become media, some of them become social media, RTI activists and other activists and they start attacking everyone,\" he said.",
+      "matches_client_text": "no, paraphrase-level differences",
+      "notes": "Differences vs client text: 'or have any place in profession' (client 'and don't have any place in the profession'); 'RTI activists and other activists' (client 'some of them become RTI activists, some of them become other activists, and'). Extracted directly from page HTML."
+    },
+    {
+      "outlet": "Bar and Bench",
+      "headline": "Unemployed youngsters in law like cockroaches; take to social media, RTI activism: CJI Surya Kant",
+      "date": "2026-05-15 4:03 pm",
+      "byline": "Debayan Roy",
+      "url": "https://www.barandbench.com/news/unemployed-youngsters-in-law-like-cockroaches-take-to-social-media-rti-activism-cji-surya-kant",
+      "wording_as_printed": "\"There are youngsters like cockroaches who are not getting employment in the profession.\" / \"Some are on social media, some become RTI activists,\" the CJI said. (via fetch-tool summary; I could not re-extract the exact text from the HTML)",
+      "matches_client_text": "no",
+      "notes": "Different wording; B&B frames it as unemployed young lawyers and says such youngsters were becoming 'parasites in society'. Do NOT use B&B as support for the client's verbatim text. Wording here is from a summarising fetch tool, so re-check on the page before quoting."
+    },
+    {
+      "outlet": "Scroll.in",
+      "headline": "'Misquoted by media,' claims CJI after backlash over 'cockroaches' remark about unemployed youth",
+      "date": "2026-05-16 12:25 pm (updated 9:53 pm)",
+      "url": "https://scroll.in/latest/1092906/unemployed-youngsters-like-cockroaches-become-media-activists-and-attack-the-system-cji",
+      "wording_as_printed": "\"There are youngsters like cockroaches, who don't get any employment or have any place in profession,\"",
+      "matches_client_text": "partial: 'or have' instead of 'and don't have'; 'in profession'",
+      "notes": "Via fetch-tool summary; one clause only."
+    }
+  ],
+  "cji_quote_general_notes": "No exact match to the client's 'in the profession' was found in any outlet. Closest: LiveLaw/TNM with 'in profession' (no 'the'). The client text probably tidied that article. The words 'cockroaches' remark was in the context of a hearing, not a speech; the 'parasites' line is a separate quote. Indian Express and The Hindu could not be accessed (blocked for the tools used), so not checked. NDTV/HT also blocked.",
+  "client_text": "There are youngsters like cockroaches, who don't get any employment and don't have any place in the profession. Some of them become media, some of them become social media, some of them become RTI activists, some of them become other activists, and they start attacking everyone.",
+  "cji_clarification_sources": [
+    {
+      "outlet": "LiveLaw",
+      "headline": "Section Of Media Misquoted Me, Criticised Only Those Who Join Professions With Fake Degrees: CJI Surya Kant Clarifies Remarks On Youth",
+      "date": "2026-05-16 3:34 PM IST",
+      "byline": "LiveLaw News Network",
+      "url": "https://www.livelaw.in/top-stories/section-of-media-misquoted-me-criticised-only-those-who-join-professions-with-fake-degrees-cji-surya-kant-clarifies-remarks-on-youth-534448",
+      "verbatim": "“I am pained to read how a section of the media has misquoted my oral observations made during the hearing of a frivolous case yesterday. What I had specifically criticised were those who have entered professions like the Bar (legal profession) with the aid of fake and bogus degrees. Similar persons have sneaked into the media, social media, and other noble professions as well, and hence, they are like parasites,” ... “It is totally baseless to suggest that I criticised the youth of our nation. Not only am I proud of our present and future human resource, but every youth of India inspires me.”",
+      "notes": "Extracted directly from page HTML (not a summary). Statement was issued on Saturday 16 May. Note he still uses the word 'parasites' in the clarification; and does not repeat 'cockroaches'."
+    },
+    {
+      "outlet": "Bar and Bench",
+      "headline": "CJI Surya Kant says media misquoted 'cockroaches' remark; criticism was against fake degree holders, not unemployed youth",
+      "date": "2026-05-16 10:16 am",
+      "url": "https://www.barandbench.com/news/litigation/cji-surya-kant-says-media-misquoted-cockroaches-remark-criticism-was-against-fake-degree-holders-not-unemployed-youth",
+      "verbatim": "(paraphrase only in what I read: 'media misquoted his oral observations which were made during hearing of a frivolous case')",
+      "notes": "Also Bar and Bench exclusive interview 'CJI Surya Kant clarifies cockroach remark, calls for protocol on reporting oral court observations' https://www.barandbench.com/news/litigation/exclusive-cji-surya-kant-clarifies-cockroach-remark-calls-for-protocol-on-reporting-oral-court-observations (surfaced in search; not opened). Search summary says he later said 'fake degrees' meant unrecognised degrees (July 2026) - unverified."
+    },
+    {
+      "outlet": "Scroll.in",
+      "headline": "'Misquoted by media,' claims CJI after backlash over 'cockroaches' remark about unemployed youth",
+      "date": "2026-05-16",
+      "url": "https://scroll.in/latest/1092906/unemployed-youngsters-like-cockroaches-become-media-activists-and-attack-the-system-cji",
+      "verbatim": "had been misquoted by sections of the media (phrase as printed)",
+      "notes": "Good neutral wording for 'claims': Scroll's headline uses 'claims'."
+    }
+  ],
+  "handles": [
+    {
+      "platform": "Instagram",
+      "handle": "@cockroachjantaparty",
+      "url": "https://www.instagram.com/cockroachjantaparty/",
+      "status": "Profile page loads (200) when I fetched it on 2026-11-11 and showed '25M Followers, 1,459 Posts'. Business Today (22 Jul 2026) reported the official Instagram account was restricted in India after a legal request ('Account not available in India'). Dipke said 23 May the main IG was hacked and a backup was taken down (Scroll).",
+      "evidence": [
+        "https://www.businesstoday.in/amp/india/story/cockroach-janta-partys-instagram-account-banned-in-india-heres-why-544552-2026-07-22 (calls it the 'official Instagram account'; no handle given)",
+        "https://scroll.in/latest/1093036/cockroach-janata-party-founder-says-instagram-account-hacked-backup-handle-taken-down",
+        "Asianet Newsable embeds a post from @cockroachjantaparty (seen via search)"
+      ],
+      "confidence": "high for the handle, medium for 'official' evidence (no article I opened prints the handle).",
+      "notes": "Follower counts vary by date; do not hard-code. Handle confirmed by multiple search-summary reports and by the live page."
+    },
+    {
+      "platform": "X (original, withheld in India)",
+      "handle": "@CJP_2029",
+      "url": "https://x.com/CJP_2029",
+      "status": "Withheld in India on 21 May 2026 'in response to a legal demand' (reports). Delhi HC on 7 Jul 2026 ordered unblocking after Centre said no objection (Moneylife via search summary; page itself returned 403 to me). Page loads (200) outside India.",
+      "evidence": [
+        "https://www.outlookindia.com/national/how-cockroach-janta-party-became-more-popular-on-instagram-than-bjp (photo caption gives @CJP_2029)",
+        "https://x.com/Cockroachisback (bio: 'This is the only official account for CJP after the Govt of India took down our original handle @CJP_2029')",
+        "https://www.barandbench.com/news/cockroach-janta-party-founder-abhijeet-dipke-moves-delhi-high-court-against-blocking-of-partys-x-handle (25 May 2026; handle not printed)"
+      ],
+      "confidence": "high",
+      "notes": "Bio on @CJP_2029 reads 'A political front of the youth, by the youth, for the youth'. Unblock status as of Nov 2026 not verified by me; the unblocking report comes from search summaries."
+    },
+    {
+      "platform": "X (replacement)",
+      "handle": "@Cockroachisback",
+      "url": "https://x.com/Cockroachisback",
+      "status": "Launched 21 May 2026 after the original was withheld. Display name 'Cockroach Janta Party - CJP'.",
+      "evidence": [
+        "https://www.freepressjournal.in/india/cockroach-janata-party-launches-new-x-handle-cockroach-is-back-after-original-account-withheld-in-india (updated 22 May 2026; links to x.com/Cockroachisback post and Dipke's @abhijeet_dipke announcement)",
+        "https://scroll.in/latest/1093036/cockroach-janata-party-founder-says-instagram-account-hacked-backup-handle-taken-down (23 May; x.com/Cockroachisback)",
+        "Account bio self-declares official (see above)"
+      ],
+      "confidence": "high",
+      "notes": "Founder's personal X is @abhijeet_dipke: not a party account."
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@CJP_2029 (channel id UCYoZCUbQm2EEsZGfLlVU8dQ)",
+      "url": "https://www.youtube.com/@CJP_2029",
+      "status": "Channel exists; description 'A political front of the youth, by the youth, for the youth - Secular - Socialist - Democratic - Lazy'; page HTML links to cockroachjantaparty.org and to x.com/CJP_2029.",
+      "evidence": [
+        "Page self-links to the party website and the original X handle (my own fetch of the page HTML; no news report found naming it)"
+      ],
+      "confidence": "medium: probable official, no news article confirms it",
+      "notes": "A second channel https://www.youtube.com/@cockroachjantaparty exists but its description lists a personal gmail contact and no link to the official site: treat as UNOFFICIAL / likely impersonation until confirmed. News coverage found no official YouTube channel (only unofficial anthem uploads). Ask the client."
+    },
+    {
+      "platform": "Facebook",
+      "handle": "cockroachjantaparty",
+      "url": "https://www.facebook.com/cockroachjantaparty",
+      "status": "Page exists, '16,500 followers' in og tags, tagline 'Voice of the Lazy & Unemployed'.",
+      "evidence": [],
+      "confidence": "low: no evidence of official status found",
+      "notes": "No news report or official-site link ties this page to CJP; 16.5k followers is tiny against 25M on Instagram. Do NOT present as official without client confirmation."
+    },
+    {
+      "platform": "Website",
+      "handle": "cockroachjantaparty.org",
+      "url": "https://cockroachjantaparty.org",
+      "status": "Reported taken down/blocked ~22-23 May 2026 (Scroll 23 May; Intellinews 'India blocks parody CJP website'). My curl returned Cloudflare 403/'Just a moment', so I could not view it. cockroachjantaparty.in did not respond; cockroachjantaparty.com returned a Cloudflare challenge.",
+      "evidence": [
+        "https://scroll.in/latest/1093036/cockroach-janata-party-founder-says-instagram-account-hacked-backup-handle-taken-down (photo caption cockroachjantaparty.org)",
+        "YouTube @CJP_2029 page links to cockroachjantaparty.org"
+      ],
+      "confidence": "medium for .org",
+      "notes": "CONFLICT: Outlook (21 May) links https://www.cockroachjantaparty.in/ ; one search summary said .com. The .org domain is the one the Scroll caption and the YouTube channel use. Verify with client before showing. Current availability unknown."
+    }
+  ],
+  "portraits": [
+    {
+      "name": "Abhijeet Dipke",
+      "local_file": "media/people/abhijeet-dipke.jpg",
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Abhijeet_Dipke_during_an_interview_with_LetsUpp_Marathi_on_YouTube_(in_Marathi)_(3x4_cropped).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Abhijeet_Dipke_during_an_interview_with_LetsUpp_Marathi_on_YouTube_%28in_Marathi%29_%283x4_cropped%29.jpg",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "LetsUpp Marathi on YouTube",
+      "credit_line": "https://www.youtube.com/watch?v=4hOYcPXcNRs",
+      "size": "573x763",
+      "bytes": 171143,
+      "photo_date": "2026-08-13",
+      "notes": "Screenshot of a YouTube interview (LetsUpp Marathi), Commons says video is CC BY via CC Search. 3x4 crop is the one used on the Wikipedia article. Screenshot quality (573x763). Licence rests on the YouTube video's CC BY setting, as verified by the Commons uploader."
+    },
+    {
+      "name": "Sonam Wangchuk",
+      "local_file": "media/people/sonam-wangchuk.jpg",
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Sonam_Wangchuk,_2017_(cropped).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Sonam_Wangchuk%2C_2017_%28cropped%29.jpg",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "artist": "Sonam Wangchuk",
+      "credit_line": "https://www.flickr.com/photos/142320870@N07/33991280315/in/photostream/",
+      "size": "741x1049",
+      "bytes": 482611,
+      "photo_date": "2017-01-22 15:26:30",
+      "notes": "CC BY 2.0 from Flickr user (Commons artist field 'Sonam Wangchuk'); photo dated 22 Jan 2017, so not current. Full uncropped: Sonam_Wangchuk.jpg (5031x3354) same licence."
+    },
+    {
+      "name": "Dharmendra Pradhan",
+      "local_file": "media/people/dharmendra-pradhan.jpg",
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Dharmendra_Pradhan,_Minister_of_Education.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Dharmendra_Pradhan%2C_Minister_of_Education.jpg",
+      "license": "GODL-India",
+      "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+      "artist": "Ministry of Education",
+      "credit_line": "This file or its source was published by Press Information Bureau on behalf of Ministry of Education, Government of India under the ID 200476. (direct link) This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing. العربية ∙ বাংলা ∙ Deutsch ∙ English ∙ हिन्दी ∙ 日本語 ∙ македонски ∙ മലയാളം ∙ polski ∙ தமிழ் ∙ ತುಳು ∙ 中文 ∙ 中文（简体） ∙ 中文（繁體） ∙ +/−",
+      "size": "800x1000",
+      "bytes": 333853,
+      "photo_date": "2026-01-06",
+      "notes": "GODL-India (Government Open Data License - India), NOT in the client's allowed list (CC BY/BY-SA/CC0/PD). Downloaded but needs Vali's OK. PIB/Ministry of Education photo dated 2026-01-06. GODL requires attribution and a source link. Commons also hosts older PIB portraits."
+    },
+    {
+      "name": "Saurav Das",
+      "local_file": "media/people/saurav-das.png",
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Saurav_Das_(political_activist)_on_podcast_with_Teesta_Setalvad.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Saurav_Das_%28political_activist%29_on_podcast_with_Teesta_Setalvad.png",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Teesta Setalvad on YouTube",
+      "credit_line": "https://m.youtube.com/watch?v=kxXvW-zpl_A",
+      "size": "886x499",
+      "bytes": 359439,
+      "photo_date": "2026-09-22",
+      "notes": "Screenshot from a Teesta Setalvad YouTube podcast, CC BY 4.0 per Commons. Wide frame 886x499 and low-res; face is small, needs crop. Identity: Commons title says 'political activist'; Wikipedia lists Saurav Das as a CJP spokesperson/co-convener."
+    },
+    {
+      "name": "Ashutosh Ranka",
+      "local_file": null,
+      "commons_page": null,
+      "url": null,
+      "license": null,
+      "license_url": null,
+      "artist": null,
+      "credit_line": null,
+      "notes": "NOT FOUND. No Commons file and no image on the Wikipedia 'Cockroach Janta Party' or related pages. Wikipedia text lists him as CJP spokesperson/co-convener."
+    },
+    {
+      "name": "Neha Bora",
+      "local_file": "media/people/neha-bora.jpg",
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Neha_Bora_in_Patna_(cropped).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Neha_Bora_in_Patna_%28cropped%29.jpg",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Hindustan Samachar on YouTube",
+      "credit_line": "https://www.youtube.com/watch?v=kSKefSq3Uok",
+      "size": "650x655",
+      "bytes": 34253,
+      "photo_date": "2026-09-07",
+      "notes": "CC BY 4.0 screenshot from Hindustan Samachar YouTube, Patna speech, 7 Sep 2026 (cropped version used on Wikipedia). 650x655, low-res. Other Commons options: Neha_Bora.png (1052x1090, ABP MAJHA, CC BY 4.0). Wikipedia: AISA national president; confirm this is the Neha Bora the client means."
+    },
+    {
+      "name": "J.P. Nadda",
+      "local_file": "media/people/jp-nadda.jpg",
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Jagat_Prakash_Nadda_in_2026.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Jagat_Prakash_Nadda_in_2026.jpg",
+      "license": "GODL-India",
+      "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+      "artist": "Ministry of Health and Family Welfare",
+      "credit_line": "This file or its source was published by Press Information Bureau on behalf of Ministry of Health and Family Welfare, Government of India under the ID 280697 and CNR 974161. (direct link) This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing. العربية ∙ বাংলা ∙ Deutsch ∙ English ∙ हिन्दी ∙ 日本語 ∙ македонски ∙ മലയാളം ∙ polski ∙ தமிழ் ∙ ತುಳು ∙ 中文 ∙ 中文（简体） ∙ 中文（繁體） ∙ +/−",
+      "size": "858x1072",
+      "bytes": 350419,
+      "photo_date": "2026-06-29",
+      "notes": "GODL-India, NOT in client's allowed list. Needs Vali's OK. PIB photo dated 2026-06-29. Other option under same licence: Jagat_Prakash_Nadda_2023.jpg (President's Secretariat, also GODL-India)."
+    },
+    {
+      "name": "Jitendra Singh",
+      "local_file": "media/people/jitendra-singh.jpg",
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Shri_Jitendra_Singh_Minister_of_for_Personnel,_Public_Grievances_%26_Pensions.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Shri_Jitendra_Singh_Minister_of_for_Personnel%2C_Public_Grievances_%26_Pensions.jpg",
+      "license": "GODL-India",
+      "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+      "artist": "Ministry of Personnel, Public Grievances and Pensions",
+      "credit_line": "This file or its source was published by Press Information Bureau on behalf of Ministry of Personnel, Public Grievances and Pensions, Government of India under the ID 133391. (direct link) This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing. العربية ∙ বাংলা ∙ Deutsch ∙ English ∙ हिन्दी ∙ 日本語 ∙ македонски ∙ മലയാളം ∙ polski ∙ தமிழ் ∙ ತುಳು ∙ 中文 ∙ 中文（简体） ∙ 中文（繁體） ∙ +/−",
+      "size": "1390x803",
+      "bytes": 181304,
+      "photo_date": "2023-06-09",
+      "notes": "GODL-India, NOT in client's allowed list. Needs Vali's OK. Landscape 1390x803 PIB photo from 2023-06-09 (Dr Jitendra Singh, MoS Personnel). A '(cropped)' variant exists on Commons but API call was rate-limited; original used."
+    }
+  ],
+  "quotes": [
+    {
+      "id": "gandhi-hind-swaraj",
+      "type": "activist",
+      "author": "M. K. Gandhi",
+      "year": "1909 (Gujarati original, Indian Opinion); English translation by Gandhi, 1910",
+      "work": "Hind Swaraj / Indian Home Rule, ch. XVII 'Passive Resistance'",
+      "original_language": "Gujarati",
+      "original_text": null,
+      "english_text": "Passive resistance is a method of securing rights by personal suffering; it is the reverse of resistance by arms.",
+      "translator": "M. K. Gandhi himself (1910 English edition)",
+      "translation_is_ours": false,
+      "source_url": "https://www.gutenberg.org/files/40461/40461-h/40461-h.htm",
+      "source_note": "Project Gutenberg #40461, 'Indian Home Rule' (Ganesh & Co., Madras, 5th edition). Text extracted directly from page HTML.",
+      "disputed": false,
+      "nationality": "Indian",
+      "public_domain": true,
+      "notes": "Gujarati original NOT retrieved, so the original-script requirement is unmet; the English text is Gandhi's own translation of his Gujarati. Spoken by 'Editor' in the dialogue. Gandhi d.1948: public domain in India."
+    },
+    {
+      "id": "ambedkar-annihilation-of-caste",
+      "type": "activist",
+      "author": "B. R. Ambedkar",
+      "year": "1936 (undelivered address for Jat-Pat-Todak Mandal, Lahore; published May 1936)",
+      "work": "Annihilation of Caste, section 20 in the Columbia/CCNMTL edition",
+      "original_language": "English",
+      "original_text": "Political tyranny is nothing compared to social tyranny, and a reformer who defies society is a much more courageous man than a politician who defies the government.",
+      "english_text": "(same; written in English)",
+      "translator": null,
+      "translation_is_ours": false,
+      "source_url": "https://ccnmtl.columbia.edu/projects/mmt/ambedkar/web/section_20.html",
+      "source_note": "Columbia CCNMTL web edition, paragraph [6] of section 20; extracted directly from page HTML. 31 words.",
+      "disputed": false,
+      "nationality": "Indian",
+      "public_domain": true,
+      "notes": "Other editions differ in small ways (e.g. 'the social tyranny', 'Government' capitalised). If printing, check against the MEA/Govt of Maharashtra Writings & Speeches vol. 1 (https://www.mea.gov.in/images/CPV/Volume1.pdf) or the Anand annotated edition. Ambedkar d.1956: public domain in India."
+    },
+    {
+      "id": "bhagat-singh-red-pamphlet",
+      "type": "activist",
+      "author": "Bhagat Singh (HSRA notice; primarily written by him, thrown in Central Assembly with Batukeshwar Dutt)",
+      "year": "1929 (8 April)",
+      "work": "'The Red Pamphlet' / HSRA notice",
+      "original_language": "English",
+      "original_text": "It takes a loud voice to make the deaf hear",
+      "english_text": "(same; written in English)",
+      "translator": null,
+      "translation_is_ours": false,
+      "source_url": "https://www.marxists.org/archive/bhagat-singh/1929/04/08.htm",
+      "source_note": "Marxists Internet Archive transcription from shahidbhagatsingh.org; opening line of the notice, extracted directly from page HTML. Full sentence continues: 'with these immortal words uttered on a similar occasion by Valiant, a French anarchist martyr, do we strongly justify this action of ours.'",
+      "disputed": "partially",
+      "nationality": "Indian",
+      "public_domain": true,
+      "notes": "The line is a quotation by Bhagat Singh of French anarchist Auguste Vaillant (spelt 'Valiant' on the transcription); credit it as 'Bhagat Singh quoting Vaillant', not as his own aphorism. Some outlets print 'loud noise' not 'loud voice'. Do NOT use the widely circulated 'They may kill me but they cannot kill my ideas' (unsourced)."
+    },
+    {
+      "id": "lajpat-rai-1928",
+      "type": "activist",
+      "author": "Lala Lajpat Rai",
+      "year": "1928 (30 October, Lahore, anti-Simon Commission march)",
+      "work": "Public meeting speech after lathi charge",
+      "original_language": "unknown (reported in English)",
+      "original_text": "I declare that the blows struck at me today will be the last nails in the coffin of British rule in India.",
+      "english_text": "(same; reported in English)",
+      "translator": null,
+      "translation_is_ours": false,
+      "source_url": "https://www.britannica.com/biography/Lala-Lajpat-Rai",
+      "source_note": "Britannica biography is a general source; it gives a DIFFERENT phrasing ('Every blow aimed at me is a nail in the coffin of British imperialism' per search summary). The quoted text is the most common version, appearing in an anti-Simon-Commission profile via search; no primary source found.",
+      "disputed": true,
+      "nationality": "Indian",
+      "public_domain": true,
+      "notes": "WEAK candidate: wording varies across sources (The Tribune: 'Every blow on my body will prove to be the last nail in the coffin of British rule in India'). No 1928 newspaper or Collected Works citation found. Recommend swapping for Savitribai Phule or another Gandhi/Ambedkar line if Vali wants a clean source. I did not verify the Britannica page text myself."
+    },
+    {
+      "id": "faiz-bol",
+      "type": "poet",
+      "author": "Faiz Ahmad Faiz",
+      "nationality": "Pakistani (b. Sialkot 1911, d. Lahore 1984), Urdu; widely read in India",
+      "year": "not verified; Rekhta cites the book Nuskha Hai Wafa, p. 81",
+      "work": "'Bol' (nazm)",
+      "original_language": "Urdu",
+      "original_text": "بول کہ لب آزاد ہیں تیرے\nبول زباں اب تک تیری ہے",
+      "roman": "bol ki lab āzād haiñ tere / bol zabāñ ab tak terī hai",
+      "english_text": "Speak, your lips are free, speak, your tongue is still yours",
+      "translator": "Not named on Rekhta (page prints an unattributed English rendering: 'Speak, your lips are free, speak, your tongue is still yours, your slim body is yours alone, speak, this life is yours, still yours.')",
+      "translation_is_ours": false,
+      "source_url": "https://www.rekhta.org/nazms/bol-bol-ki-lab-aazaad-hain-tere-faiz-ahmad-faiz-nazms",
+      "source_note": "Rekhta nazm page; Urdu script read from ?lang=ur version of the page, Roman and English from the default version. 13 words.",
+      "disputed": false,
+      "public_domain": false,
+      "notes": "Rekhta's English is unattributed; if a named translator is needed, V. G. Kiernan's 'Poems by Faiz' (1971) is the standard English edition but I did NOT verify that it contains 'Bol', so do not credit it. Copyright: Faiz d.1984, still in copyright in India; short quote use needs fair-dealing judgement or permission."
+    },
+    {
+      "id": "jalib-dastoor",
+      "type": "poet",
+      "author": "Habib Jalib",
+      "nationality": "Pakistani (1928-1993), Urdu/Punjabi",
+      "year": "1962 (per Wikipedia and Express Tribune via search; written against Ayub Khan's constitution)",
+      "work": "'Dastoor' (also called 'Main nahin maanta')",
+      "original_language": "Urdu",
+      "original_text": "ایسے دستور کو صبح بے نور کو\nمیں نہیں مانتا میں نہیں جانتا",
+      "roman": "aise dastūr ko sub.h-e-be-nūr ko / maiñ nahīñ māntā maiñ nahīñ jāntā",
+      "english_text": "That kind of system, like dawn without light, I refuse to acknowledge, I refuse to accept",
+      "translator": "None named. This wording is the unattributed translation in the English Wikipedia 'Habib Jalib' article (CC BY-SA); Rekhta has no English for this nazm. Treat as supplied/unattributed.",
+      "translation_is_ours": false,
+      "source_url": "https://www.rekhta.org/nazms/dastuur-diip-jis-kaa-mahallaat-hii-men-jale-habib-jalib-nazms",
+      "source_note": "Rekhta nazm page (Urdu read from ?lang=ur version). Roman from Wikipedia table. 14 words. Translation from https://en.wikipedia.org/wiki/Habib_Jalib",
+      "disputed": false,
+      "public_domain": false,
+      "notes": "The famous refrain is 'main nahin maanta, main nahin jaanta'. Rekhta lists no book in what I extracted. Rekhta line 3 of the last stanza reads 'چارہ گر دردمندوں کے بنتے ہو کیوں' (Wikipedia version differs slightly); the lines I chose are identical on both. Jalib d.1993, in copyright. Consider an own translation: 'Such a constitution, a dawn without light: I do not accept it, I do not acknowledge it.' (ours, unverified by any translator)."
+    },
+    {
+      "id": "dushyant-saaye-mein-dhoop",
+      "type": "poet",
+      "author": "Dushyant Kumar",
+      "nationality": "Indian (1933-1975, Hindi)",
+      "year": "not verified; usually dated 1975 (Saaye Mein Dhoop), but Rekhta lists the book as 'Hindustani Gazlen' and gives no year",
+      "work": "Ghazal 'ho ga.ī hai piir parvat sī pighalnī chāhiye'",
+      "original_language": "Hindi (Devanagari)",
+      "original_text": "सिर्फ़ हंगामा खड़ा करना मिरा मक़्सद नहीं\nमेरी कोशिश है कि ये सूरत बदलनी चाहिए",
+      "roman": "None extracted",
+      "english_text": "My aim is not merely to raise a commotion; my effort is that this state of things must change.",
+      "translator": "OURS (no published translation with a named translator found)",
+      "translation_is_ours": true,
+      "source_url": "https://www.rekhta.org/hindi-ghazals/ho-gaii-hai-piir-parvat-sii-pighalnii-chaahiye-dushyant-kumar-hindi-ghazals",
+      "source_note": "Rekhta Hindi ghazal page, Devanagari from ?lang=hi version. Rekhta prints 'मिरा'; some print editions use 'मेरा'. 22 words.",
+      "disputed": false,
+      "public_domain": false,
+      "notes": "Alternative shorter, better-known couplet from the same ghazal: 'हो गई है पीर पर्वत सी पिघलनी चाहिए / इस हिमालय से कोई गंगा निकलनी चाहिए'. Dushyant d.1975: Indian copyright runs life+60, so still protected until 2036."
+    },
+    {
+      "id": "dinkar-singhasan",
+      "type": "poet",
+      "author": "Ramdhari Singh 'Dinkar'",
+      "nationality": "Indian (1908-1974, Hindi)",
+      "year": "not verified; I believe ~1950 (poem titled 'Janatantra ka Janm') but no source I opened states it. Kavita Kosh page lists no collection",
+      "work": "'सिंहासन खाली करो कि जनता आती है' (also circulated as 'जनतन्त्र का जन्म')",
+      "original_language": "Hindi (Devanagari)",
+      "original_text": "दो राह, समय के रथ का घर्घर-नाद सुनो,\nसिंहासन खाली करो कि जनता आती है ।",
+      "roman": "None extracted",
+      "english_text": "Make way, hear the rumble of the chariot of time; vacate the throne, for the people are coming.",
+      "translator": "OURS (the phrase 'Vacate the throne, for the people are coming' is the common English rendering, e.g. in Wikipedia's Dinkar article, but no translator is named)",
+      "translation_is_ours": true,
+      "source_url": "https://kavitakosh.org/kk/%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9%E0%A4%BE%E0%A4%B8%E0%A4%A8_%E0%A4%96%E0%A4%BE%E0%A4%B2%E0%A5%80_%E0%A4%95%E0%A4%B0%E0%A5%8B_%E0%A4%95%E0%A4%BF_%E0%A4%9C%E0%A4%A8%E0%A4%A4%E0%A4%BE_%E0%A4%86%E0%A4%A4%E0%A5%80_%E0%A4%B9%E0%A5%88_/_%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%A7%E0%A4%BE%E0%A4%B0%E0%A5%80_%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9_%22%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A4%95%E0%A4%B0%22",
+      "source_note": "Kavita Kosh; text copied from page HTML (refrain appears at line 4 of stanza 1 and repeats). 14 words.",
+      "disputed": false,
+      "public_domain": false,
+      "notes": "Also used by JP Narayan in the 1974-75 movement and the Ramlila Maidan 1975 rally (The Leaflet article, not opened). Dinkar d.1974; Indian copyright runs till 2035, so not public domain."
+    }
+  ],
+  "summary_notes": "Quotes: 4 activists (Gandhi, Ambedkar, Bhagat Singh, Lajpat Rai) and 4 poets (Faiz, Jalib, Dushyant Kumar, Dinkar). Poems are in copyright (not PD in India); Faiz and Jalib are Pakistani."
+}

@@ -1,0 +1,3624 @@
+{
+  "phase": 1,
+  "start": "2026-05-16",
+  "end": "2026-07-25",
+  "note": "Phase 1 only (D2). Node mapping follows D3: Detention = 18 Jul, Protest and arrest = 20 Jul. Media lists images first, then videos. Videos are seeded random picks (D13) tagged review: 'pending'. upload_date is the YouTube upload date in IST, not the date the footage was shot.",
+  "video_pool_sizes": {
+    "start": 34,
+    "protest": 37,
+    "wangchuk": 60,
+    "detention": 144,
+    "protest_arrest": 513,
+    "victory": 0
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "order": 1,
+      "label": "Start",
+      "date": "2026-06-06",
+      "date_window": {
+        "start": "2026-05-16",
+        "end": "2026-06-19"
+      },
+      "title": "How it began",
+      "summary": {
+        "text": "It moved to the streets with a permitted one-day Jantar Mantar protest on 6 June (hundreds attended), then held an indefinite sit-in from 20 June.",
+        "source_ids": [
+          "dossier"
+        ],
+        "page": 1
+      },
+      "site_ids": [
+        "jantar_mantar_road"
+      ],
+      "crowd_tier": 2,
+      "crowd_basis": "6 Jun: 'Hundreds' (Al Jazeera, Statesman/UNI) vs 'a few dozen students' (Outlook, retrospective). Tier uses the majority report; the dispute is shown as two facts.",
+      "hunger_strike_day": null,
+      "route": null,
+      "media_mode": "rail",
+      "facts": [
+        {
+          "text": "CJI remark; CJP founded",
+          "value_text": "15–16 May",
+          "claimant": "media",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia",
+            "dainikjagranmpcg"
+          ],
+          "page": 4,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cockroach_Janta_Party#Formation",
+              "title": "Cockroach Janta Party - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "launched the \"Cockroach Janta Party\" (CJP) online on 16 May 2026",
+              "verified": true
+            },
+            {
+              "source_id": "dainikjagranmpcg",
+              "url": "https://english.dainikjagranmpcg.com/politics/-cockroach-janta-party-vs-national-parasitic-front-viral-battle/article-19015",
+              "title": "Cockroach Janta Party vs National Parasitic Front: Viral battle",
+              "publisher": "Dainik Jagran MP/CG (English)",
+              "date": "2026-05-22",
+              "snippet": "CJI Surya Kant 'reportedly compared certain jobless youth to cockroaches and parasites'; 'It started on May 16'",
+              "verified": false
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "wikipedia: Page gives 16 May as launch; 15 May is the CJI remark date, cited in #Background (New Indian Express 15 May; Statesman 16 May). PARTIAL: no single sentence gives '15-16 May'. Anchors derived from heading names.",
+            "dainikjagranmpcg: PARTIAL: confirms CJI remark and that CJP launched same day (16 May); does not mention 15 May date or contempt plea. Other Jagran English pieces (article-19019, 19016, 18987) are weaker. Snippet is paraphrase from fetch tool."
+          ]
+        },
+        {
+          "text": "Abhijeet Dipke (born 29 Sept 1995, Aurangabad; Boston University MSc in public relations; AAP social-media volunteer 2020–23) launched the CJP …",
+          "value_text": "16 May",
+          "claimant": "Wikipedia",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 2,
+          "resolution": "Vali 2026-11-12: primary source wins. 'from the US' cut: Wikipedia, the cited source, doesn't say it. The launch was online on 16 May.",
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Abhijeet_Dipke#Early_life_and_education",
+              "title": "Abhijeet Dipke - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "Dipke was born on 29 September 1995 in Aurangabad, Maharashtra.",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "wikipedia: PARTIAL: Wikipedia Dipke page supports birth date/place, 'Master of Science in public relations' from BU College of Communication, AAP social-media volunteer 2020-23, returned to India June 2026. It does NOT explicitly say he launched CJP 'from the US' (says he lived in Boston). CJP page says 'graduated in communications from Boston University'. Originals cited: Lokmat Times, Al Jazeera 20 May 2026."
+          ]
+        },
+        {
+          "text": "3 million Instagram followers within 78 hours",
+          "value": 3000000,
+          "unit": "Instagram followers",
+          "claimant": "BusinessToday",
+          "attribution": "reported",
+          "status": "claimed",
+          "source_ids": [
+            "businesstoday"
+          ],
+          "page": 2,
+          "note": "Dossier: no platform-verified data; label as organiser/media-reported.",
+          "links": [
+            {
+              "source_id": "businesstoday",
+              "url": "https://www.businesstoday.in/latest/trends/story/from-a-joke-on-x-to-9-3-mn-followers-cockroach-janta-party-crosses-instagram-followers-of-bjp-in-just-4-days-532556-2026-05-21",
+              "title": "From a joke on X to 9.3 mn followers: Cockroach Janta Party crosses Instagram followers of BJP in just 4 days",
+              "publisher": "BusinessToday",
+              "date": "2026-05-21",
+              "snippet": "Within 78 hours, it had blown past 3 million followers.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "over 20 million by 22 May",
+          "value": 20000000,
+          "value_text": "20 million+",
+          "unit": "Instagram followers",
+          "claimant": "Economic Times (via Wikipedia)",
+          "attribution": "reported",
+          "status": "claimed",
+          "source_ids": [
+            "economictimes",
+            "wikipedia"
+          ],
+          "page": 2,
+          "links": [
+            {
+              "source_id": "economictimes",
+              "url": "https://economictimes.indiatimes.com/news/new-updates/asli-kaam-ka-waqt-aagya-cockroach-janta-party-launches-new-campaign-after-crossing-bjps-instagram-follower-count-hits-20-million/articleshow/131258883.cms",
+              "title": "'Asli kaam ka waqt aagya': Cockroach Janta Party launches new campaign after crossing BJP's Instagram follower count, hits 20 million",
+              "publisher": "Economic Times",
+              "date": "2026-05-22",
+              "snippet": "title: '...after crossing BJP's Instagram follower count, hits 20 million'",
+              "verified": true
+            },
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cockroach_Janta_Party#Formation",
+              "title": "Cockroach Janta Party - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "reached about 15 million Instagram followers by the end of its first week and later reported 20 million",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "wikipedia: PARTIAL: Wikipedia body says 15M first week, 'later reported 20 million'; 22 May date not on page. Cited original (ET article title 'hits 20 million'): https://economictimes.indiatimes.com/news/new-updates/asli-kaam-ka-waqt-aagya-cockroach-janta-party-launches-new-campaign-after-crossing-bjps-instagram-follower-count-hits-20-million/articleshow/131258883.cms (fetch blocked; not verified directly)."
+          ]
+        },
+        {
+          "text": "MeitY ordered the X account withheld in India under Section 69A of the IT Act, citing IB inputs on “national security” (21 May).",
+          "claimant": "MeitY",
+          "attribution": "officials said",
+          "status": "documented",
+          "source_ids": [
+            "dossier",
+            "repo_indiacom_xblock"
+          ],
+          "page": 3,
+          "note": "No chip on this item in the dossier. repo_indiacom_xblock covers the same event but the dossier doesn't cite it."
+        },
+        {
+          "text": "“Hundreds”",
+          "value_text": "Hundreds",
+          "unit": "crowd, 6 Jun",
+          "claimant": "Al Jazeera, The Week",
+          "attribution": "reported",
+          "status": "disputed",
+          "source_ids": [
+            "aljazeera",
+            "theweek"
+          ],
+          "page": 4,
+          "resolution": "Vali 2026-11-12: primary source wins. The Week (verified) says 'drawing hundreds of participants'. Statesman/UNI dropped: unfetchable, and search summaries suggest the Statesman said 'thousands'.",
+          "links": [
+            {
+              "source_id": "aljazeera",
+              "url": "https://www.aljazeera.com/news/2026/6/6/supporters-of-the-cockroach-peoples-party-hold-protest-in-new-delhi",
+              "title": "Supporters of the Cockroach People's Party hold protest in New Delhi",
+              "publisher": "Al Jazeera",
+              "date": "2026-06-06",
+              "snippet": "On Saturday, hundreds gathered in New Delhi's protest zone near parliament, with some participants wearing cockroach masks.",
+              "verified": true
+            },
+            {
+              "source_id": "theweek",
+              "url": "https://www.theweek.in/news/india/2026/06/06/cockroach-janata-party-cjp-jantar-mantar-protest.html",
+              "title": null,
+              "publisher": "The Week",
+              "date": "2026-06-06",
+              "snippet": "drawing hundreds of participants",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "“a few dozen students”",
+          "value_text": "a few dozen students",
+          "unit": "crowd, 6 Jun",
+          "claimant": "Outlook (retrospective)",
+          "attribution": "reported",
+          "status": "disputed",
+          "source_ids": [
+            "outlookindia"
+          ],
+          "page": 4,
+          "links": [
+            {
+              "source_id": "outlookindia",
+              "url": "https://www.outlookindia.com/national/ground-report-cockroaches-won-how-a-seven-week-protest-at-jantar-mantar-forced-dharmendra-pradhans-exit",
+              "title": "‘Cockroaches Won’: How A Seven-Week Protest At Jantar Mantar Forced Dharmendra Pradhan’s Exit",
+              "publisher": "Outlook India",
+              "date": "2026-07-25",
+              "snippet": "began in the first week of June as a few dozen students at Jantar Mantar",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "outlookindia: PARTIAL: ground report says 'first week of June', not specifically 6 Jun. Search results (not fetched) show Outlook's contemporaneous 6 Jun report said hundreds of students turned up (outlookindia.com/national/delhi-police-detain-six-during-cockroach-janta-party-protest-at-jantar-mantar), so 'a few dozen' is only Outlook's retrospective framing; keep it labelled retrospective."
+          ]
+        },
+        {
+          "text": "One-time exemption, 10am–5pm (New Delhi District Police letter)",
+          "value_text": "10:00–17:00",
+          "claimant": "New Delhi District Police",
+          "attribution": "police said",
+          "status": "documented",
+          "source_ids": [
+            "thestatesman"
+          ],
+          "page": 4,
+          "links": [
+            {
+              "source_id": "thestatesman",
+              "url": "https://www.thestatesman.com/india/cockroach-janta-party-gets-delhi-police-nod-for-protest-at-jantar-mantar-today-1503602455.html",
+              "title": "Cockroach Janta Party gets Delhi Police nod for protest at Jantar Mantar today",
+              "publisher": "The Statesman",
+              "date": "2026-06-06",
+              "snippet": "(search summary) letter allowed a dharna 10 am to 5 pm on June 6, issued as a 'one-time exemption'",
+              "verified": false
+            }
+          ],
+          "web_check": "unconfirmed",
+          "web_notes": [
+            "thestatesman: Found via search; fetch blocked (403) so not page-verified. Search summary says the New Delhi District police letter allowed the dharna 10am-5pm as a one-time exemption. Likely match; confirm manually."
+          ]
+        },
+        {
+          "text": "about 5,000 personnel in New Delhi district (per Wikipedia summary of reports)",
+          "value": 5000,
+          "unit": "police personnel",
+          "claimant": "media (Wikipedia summary)",
+          "attribution": "reported",
+          "status": "claimed",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 4,
+          "note": "Dossier caveat: no official Delhi Police deployment figure for 6 Jun beyond secondary summaries.",
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#First_protest_at_Jantar_Mantar",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "deployed about 5,000 personnel in New Delhi district",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "slogan “We asked for Make in India, you gave us Leak in India”",
+          "claimant": "The Week",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "theweek"
+          ],
+          "page": 4,
+          "resolution": "Vali 2026-11-12: primary source wins. The Week (verified) carries the chant. 'Wangchuk attends; 7-day ultimatum' dropped: The Week doesn't say it, and Statesman coverage (search only) mentions Wangchuk present with a 5 PM ultimatum.",
+          "links": [
+            {
+              "source_id": "theweek",
+              "url": "https://www.theweek.in/news/india/2026/06/06/cockroach-janata-party-cjp-jantar-mantar-protest.html",
+              "title": null,
+              "publisher": "The Week",
+              "date": "2026-06-06",
+              "snippet": "We asked for Make in India, you gave us Leak in India",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "Sonam Wangchuk on Saturday joined a protest at Jantar Mantar in New Delhi organised by the Cockroach Janata Party",
+          "claimant": "Kashmir Life",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "kashmirlife_0606",
+            "fpj_0606"
+          ],
+          "page": 0,
+          "resolution": "Wangchuk research 2026-11-12 (public Indian outlets; Vali: primary source wins). Restores Wangchuk's 6 Jun attendance, now sourced to free articles."
+        },
+        {
+          "text": "I don't like protests, but we have to do it for justice",
+          "claimant": "Sonam Wangchuk (via Free Press Journal)",
+          "attribution": "said",
+          "status": "documented",
+          "source_ids": [
+            "fpj_0606"
+          ],
+          "page": 0
+        },
+        {
+          "text": "AIYF/AISF allege RSS-linked harassment",
+          "claimant": "AIYF/AISF",
+          "attribution": "alleged",
+          "status": "alleged",
+          "source_ids": [
+            "thestatesman",
+            "wikipedia"
+          ],
+          "page": 4,
+          "links": [
+            {
+              "source_id": "thestatesman",
+              "url": null,
+              "title": null,
+              "publisher": "The Statesman",
+              "date": null,
+              "snippet": null,
+              "verified": false
+            },
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#First_protest_at_Jantar_Mantar",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "AIYF and AISF alleged that RSS-affiliated people harassed and assaulted some protesters",
+              "verified": true
+            }
+          ],
+          "web_check": "unconfirmed",
+          "web_notes": [
+            "thestatesman: NOT FOUND: no Statesman article on AIYF/AISF alleging RSS-linked harassment surfaced. The Wire has https://thewire.in/rights/rss-will-not-deter-us-say-student-bodies-on-alleged-attacks-at-cjps-debut-jantar-mantar-protest (8 Jun 2026; from Wikipedia refs, not fetched) and The Hindu has https://www.thehindu.com/news/national/kerala/neet-row-aisf-aiyf-express-solidarity-with-student-protests-seek-ministers-resignation/article71069941.ece (6 Jun)."
+          ]
+        },
+        {
+          "text": "The CJP’s 6 June event was described as the first major Jantar Mantar demonstration since the wrestlers.",
+          "claimant": "media",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 16,
+          "note": "Chip reads 'Wikipedia + 3'; the other three outlets are not named.",
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#First_protest_at_Jantar_Mantar",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "first major demonstration there since the 2023 wrestlers' protest",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        }
+      ],
+      "people": [
+        {
+          "name": "Abhijeet Dipke",
+          "role": "Founder of the CJP; a Boston University-trained communications strategist",
+          "image": {
+            "src": "media/people/abhijeet-dipke.jpg",
+            "credit": "Screenshot from LetsUpp Marathi on YouTube, CC BY 4.0, via Wikimedia Commons",
+            "license": "CC BY 4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0",
+            "commons_page": "https://commons.wikimedia.org/wiki/File:Abhijeet_Dipke_during_an_interview_with_LetsUpp_Marathi_on_YouTube_(in_Marathi)_(3x4_cropped).jpg",
+            "license_ok": true
+          },
+          "source_ids": [
+            "dossier",
+            "wikipedia"
+          ],
+          "page": 1,
+          "note": "Role wording is from p1 (no chip); biography carries a Wikipedia chip on p2."
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "media/cjp-public-images/cjp_flag_variant-a.png",
+          "caption": "Cockroach Janta Party",
+          "credit": "Photo: SALlM BlN YOUSUF / Wikimedia Commons / CC BY 4.0",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0",
+          "commons_page": "https://commons.wikimedia.org/wiki/File:CJP_Flag.png",
+          "date": "2026-05-16",
+          "identifiable_faces": "No",
+          "source_ids": [],
+          "note": "CJP flag on Commons, dated 16 May. Symbol, not a protest photo."
+        },
+        {
+          "type": "youtube",
+          "youtube_id": "oik_nVBL8sI",
+          "caption": "CJP Live | Peaceful Student Protest At Pune University Demanding Dharmendra Pradhan's Resignation",
+          "credit": "YouTube: Cockroach Janta Party",
+          "upload_date": "2026-06-11",
+          "channel": "Cockroach Janta Party",
+          "source_type": "party",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        },
+        {
+          "type": "youtube",
+          "youtube_id": "8Ukn5vdMJ8E",
+          "caption": "In conversation with the protestors at the CJP protest in Pune",
+          "credit": "YouTube: newslaundry",
+          "upload_date": "2026-06-12",
+          "channel": "newslaundry",
+          "source_type": "news",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        },
+        {
+          "type": "youtube",
+          "youtube_id": "4-30_yargBs",
+          "caption": "Huge Crowds from CJP Lucknow Protest are Unreal✊ | Cockroach Janata Party | Abhijeet Dipke",
+          "credit": "YouTube: Cockroach Janta Party",
+          "upload_date": "2026-06-13",
+          "channel": "Cockroach Janta Party",
+          "source_type": "party",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        }
+      ],
+      "sub_beats": [
+        {
+          "id": "start_pushback",
+          "date": "2026-05-21",
+          "title": "State pushback and disinformation",
+          "site_ids": [],
+          "crowd_tier": null,
+          "crowd_basis": null,
+          "hunger_strike_day": null,
+          "facts": [
+            {
+              "text": "The CJP reappeared within minutes as “Cockroach is Back” (@Cockroachisback).",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 3,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://www.businesstoday.in/india/story/you-thought-you-can-cockroach-janta-party-comes-back-in-a-new-avatar-on-x-532687-2026-05-21",
+                  "title": "Business Today: You thought you can... Cockroach Janta Party comes back in a new avatar on X",
+                  "publisher": "Wikipedia",
+                  "date": "2026-05-21",
+                  "snippet": "The handle \"@Cockroachisback\" wrote in its first post, \"You thought you can get rid of us? Lol!\"",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "Dipke approached the Delhi High Court against the block (Bar and Bench, 25 May).",
+              "value_text": "25 May",
+              "claimant": "Bar and Bench",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "barandbench"
+              ],
+              "page": 3,
+              "resolution": "Vali 2026-11-12: primary source wins. Dossier said 26 May; the Bar and Bench article is dated 25 May. First hearing reported as 29 May (search only).",
+              "links": [
+                {
+                  "source_id": "barandbench",
+                  "url": "https://www.barandbench.com/news/cockroach-janta-party-founder-abhijeet-dipke-moves-delhi-high-court-against-blocking-of-x-account",
+                  "title": null,
+                  "publisher": "Bar and Bench",
+                  "date": "2026-05-25",
+                  "snippet": null,
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "A Supreme Court plea seeking a CBI probe into the CJP, and an Allahabad HC (Lucknow) PIL by a Karnataka BJP worker seeking NIA/ED probes and Dipke’s extradition, were both dismissed.",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 3,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/Cockroach_Janta_Party#Misinformation,_attacks,_and_threats",
+                  "title": "Cockroach Janta Party - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "petitions were filed in Allahabad High Court and Supreme Court seeking investigation into CJP",
+                  "verified": true
+                }
+              ],
+              "web_check": "partial",
+              "web_notes": [
+                "wikipedia: PARTIAL: Wikipedia says petitions in Allahabad HC and SC sought probes for 'anti-national activities' and were dismissed (cites Hindustan Times 3 June https://www.hindustantimes.com/cities/lucknow-news/allahabad-hc-bins-pil-seeking-probe-into-anti-national-activities-of-cockroach-janta-party-101780425101520.html and The Hindu 25 May https://www.thehindu.com/news/national/dont-take-it-so-sentimentally-cji-tells-lawyer-who-complained-about-activities-of-cockroach-janta-party-fake-law-degrees/article71019997.ece). Karnataka BJP worker, NIA/ED probes, extradition details NOT on page. Those URLs not fetched."
+              ]
+            },
+            {
+              "text": "Union minister Sukanta Majumdar claimed 49% of followers were Pakistani. Dipke’s screen recording showed over 94% were Indian.",
+              "claimant": "Sukanta Majumdar; Abhijeet Dipke",
+              "attribution": "claimed",
+              "status": "disputed",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 3,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/Cockroach_Janta_Party#Misinformation,_attacks,_and_threats",
+                  "title": "Cockroach Janta Party - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "Majumdar claimed 49% of followers were Pakistani. Dipke shared audience analytics showing over 94% of the audience was in India",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "Kiren Rijiju alluded to followers from “Pakistan & George Soros gang”.",
+              "claimant": "Kiren Rijiju",
+              "attribution": "said",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 3,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/Cockroach_Janta_Party#Misinformation,_attacks,_and_threats",
+                  "title": "Cockroach Janta Party - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "Union ministers Sukanta Majumdar and Kiren Rijiju alleged most followers were from Pakistan",
+                  "verified": true
+                }
+              ],
+              "web_check": "partial",
+              "web_notes": [
+                "wikipedia: PARTIAL: exact phrase 'Pakistan & George Soros gang' not seen on Wikipedia; page says Rijiju alleged Pakistan-origin followers and Soros-linked backing. Original: Hindustan Times 24 May (URL above), not fetched."
+              ]
+            },
+            {
+              "text": "TraceX Labs (reported by The Hindu) flagged a fake “Cockroach Janta Party” Android app with spyware or RAT-like behaviour.",
+              "claimant": "TraceX Labs (via The Hindu)",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia",
+                "thehindu"
+              ],
+              "page": 3,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://thefederal.com/category/news/tracex-labs-cockroach-janta-party-android-malware-security-advisory-244030",
+                  "title": "The Federal: TraceX Labs warns of fake Cockroach Janta Party Android malware spreading via WhatsApp, Telegram",
+                  "publisher": "Wikipedia",
+                  "date": "2026-05-22",
+                  "snippet": "TraceX Labs has released a public security advisory warning Android users about a dangerous spyware campaign",
+                  "verified": true
+                },
+                {
+                  "source_id": "thehindu",
+                  "url": null,
+                  "title": null,
+                  "publisher": "The Hindu",
+                  "date": null,
+                  "snippet": null,
+                  "verified": false
+                }
+              ],
+              "web_check": "unconfirmed",
+              "web_notes": [
+                "thehindu: The Hindu article not found (thehindu.com blocked for search/fetch; no URL for it in Wikipedia refs fetched). Verified alternative: https://thefederal.com/category/news/tracex-labs-cockroach-janta-party-android-malware-security-advisory-244030 (The Federal, 22 May 2026: 'sophisticated Android Remote Access Trojan (RAT) and spyware'; does not credit The Hindu). Also Outlook: outlookindia.com/national/fake-cockroach-janta-party-app-spreading-malware-cybersecurity-report-warns (not fetched)."
+              ]
+            }
+          ],
+          "media": []
+        },
+        {
+          "id": "start_pune",
+          "date": "2026-06-11",
+          "title": "Nationwide campaign launched at SPPU Pune",
+          "site_ids": [],
+          "crowd_tier": null,
+          "crowd_basis": null,
+          "hunger_strike_day": null,
+          "facts": [
+            {
+              "text": "Nationwide campaign launched at SPPU Pune; “exam manifesto” with ₹10,000 compensation demand",
+              "value": 10000,
+              "unit": "INR compensation demand",
+              "claimant": "dossier",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "dossier"
+              ],
+              "page": 4,
+              "note": "Dossier row cites no outlet."
+            }
+          ],
+          "media": []
+        },
+        {
+          "id": "start_hyderabad",
+          "date": "2026-06-14",
+          "title": "Hyderabad protest",
+          "site_ids": [],
+          "crowd_tier": null,
+          "crowd_basis": null,
+          "hunger_strike_day": null,
+          "facts": [
+            {
+              "text": "Hyderabad protest (AP photo)",
+              "claimant": "Al Jazeera",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "aljazeera"
+              ],
+              "page": 4,
+              "links": [
+                {
+                  "source_id": "aljazeera",
+                  "url": "https://www.aljazeera.com/news/2026/6/16/my-voice-is-being-heard-a-month-of-indias-cockroach-janta-party",
+                  "title": "'My voice is being heard': A month of India's Cockroach Janta Party",
+                  "publisher": "Al Jazeera",
+                  "date": "2026-06-16",
+                  "snippet": "Supporters of the Cockroach Janta Party hold placards during a protest in Hyderabad, India, June 14, 2026 [Mahesh Kumar A/AP]",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "media/cjp-public-images/bengaluru_dinkan-poster-photo_2026-06-14.jpg",
+              "caption": "Dinkan poster in NEET paper leak protest, Freedom Park, Bengaluru. 2026 June 14.",
+              "credit": "Subin Siby / Wikimedia Commons / CC0",
+              "license": "CC0",
+              "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+              "commons_page": "https://commons.wikimedia.org/wiki/File:Dinkan_poster_in_NEET_paper_leak_protest,_bengaluru.jpg",
+              "date": "2026-06-14 17:42:45",
+              "identifiable_faces": "Partial (crowd in background)",
+              "source_ids": [],
+              "note": "Bengaluru, not Hyderabad. Under an active Commons deletion request (Aug 2026): check before use."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "protest",
+      "order": 2,
+      "label": "Protest",
+      "date": "2026-06-20",
+      "date_window": {
+        "start": "2026-06-20",
+        "end": "2026-06-27"
+      },
+      "title": "The sit-in",
+      "summary": {
+        "text": "Second protest from 1pm; Dipke refuses to leave after 5pm; thalis banged; indefinite sit-in begins",
+        "source_ids": [
+          "wikipedia",
+          "cnn"
+        ],
+        "page": 4
+      },
+      "site_ids": [
+        "jantar_mantar_road"
+      ],
+      "crowd_tier": 2,
+      "crowd_basis": "20 Jun: 'Hundreds', mostly students. ~23 Jun: 'Hundreds' camping (Yahoo/Independent).",
+      "hunger_strike_day": null,
+      "route": null,
+      "media_mode": "rail",
+      "facts": [],
+      "people": [
+        {
+          "name": "Abhijeet Dipke",
+          "role": "Founder of the CJP; a Boston University-trained communications strategist",
+          "image": {
+            "src": "media/people/abhijeet-dipke.jpg",
+            "credit": "Screenshot from LetsUpp Marathi on YouTube, CC BY 4.0, via Wikimedia Commons",
+            "license": "CC BY 4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0",
+            "commons_page": "https://commons.wikimedia.org/wiki/File:Abhijeet_Dipke_during_an_interview_with_LetsUpp_Marathi_on_YouTube_(in_Marathi)_(3x4_cropped).jpg",
+            "license_ok": true
+          },
+          "source_ids": [
+            "dossier",
+            "wikipedia"
+          ],
+          "page": 1,
+          "note": "Role wording is from p1 (no chip); biography carries a Wikipedia chip on p2."
+        },
+        {
+          "name": "Dharmendra Pradhan",
+          "role": "Education Minister (resigned 25 July)",
+          "image": {
+            "src": "media/people/dharmendra-pradhan.jpg",
+            "credit": "Ministry of Education / Press Information Bureau, Government of India (GODL-India), via Wikimedia Commons",
+            "license": "GODL-India (Government Open Data License - India)",
+            "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+            "commons_page": "https://commons.wikimedia.org/wiki/File:Dharmendra_Pradhan,_Minister_of_Education.jpg",
+            "license_ok": true
+          },
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 1
+        }
+      ],
+      "media": [
+        {
+          "type": "youtube",
+          "youtube_id": "SJTK5acpFi0",
+          "caption": "Why has this 60 year-old teacher decided to turn up at the CJP protest?",
+          "credit": "YouTube: newslaundry",
+          "upload_date": "2026-06-20",
+          "channel": "newslaundry",
+          "source_type": "news",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        },
+        {
+          "type": "youtube",
+          "youtube_id": "DA8C5Cn72oo",
+          "caption": "CJP Live | Jantar Mantar Protest",
+          "credit": "YouTube: Cockroach Janta Party",
+          "upload_date": "2026-06-23",
+          "channel": "Cockroach Janta Party",
+          "source_type": "party",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        },
+        {
+          "type": "youtube",
+          "youtube_id": "cLMYTdFotek",
+          "caption": "CJP Live | Jantar Mantar Protest",
+          "credit": "YouTube: Cockroach Janta Party",
+          "upload_date": "2026-06-23",
+          "channel": "Cockroach Janta Party",
+          "source_type": "party",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        }
+      ],
+      "sub_beats": [
+        {
+          "id": "protest_2a",
+          "date": "2026-06-20",
+          "title": "The sit-in begins",
+          "site_ids": [
+            "jantar_mantar_road"
+          ],
+          "crowd_tier": 2,
+          "crowd_basis": "'Hundreds', mostly students",
+          "hunger_strike_day": null,
+          "facts": [
+            {
+              "text": "Second protest from 1pm; Dipke refuses to leave after 5pm; thalis banged; indefinite sit-in begins",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia",
+                "cnn"
+              ],
+              "page": 4,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Second_protest_at_Jantar_Mantar",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "banged metal plates with spoons as a symbol of protest",
+                  "verified": true
+                },
+                {
+                  "source_id": "cnn",
+                  "url": null,
+                  "title": "Why political fury is boiling over on the streets of India's capital",
+                  "publisher": "CNN",
+                  "date": "2026-07-22",
+                  "snippet": "",
+                  "verified": false
+                }
+              ],
+              "web_check": "unconfirmed",
+              "web_notes": [
+                "cnn: Candidate URL (from Wikipedia refs, not fetched successfully, HTTP 451 geoblock): https://edition.cnn.com/2026/07/22/india/india-cockroach-party-protest-anger-intl-hnk . Could not confirm it contains the 1pm / 5pm / thalis detail. No other CNN article found."
+              ]
+            },
+            {
+              "text": "“Hundreds”, mostly students",
+              "value_text": "Hundreds",
+              "unit": "crowd",
+              "claimant": "Wikipedia/Deccan Herald",
+              "attribution": "reported",
+              "status": "claimed",
+              "source_ids": [
+                "wikipedia",
+                "deccanherald"
+              ],
+              "page": 4,
+              "note": "Sources from the p18 table row.",
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Second_protest_at_Jantar_Mantar",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "Hundreds attended, including students, parents, doctors, lawyers, and teachers",
+                  "verified": false
+                },
+                {
+                  "source_id": "deccanherald",
+                  "url": null,
+                  "title": "",
+                  "publisher": "Deccan Herald",
+                  "date": null,
+                  "snippet": "",
+                  "verified": false
+                }
+              ],
+              "web_check": "unconfirmed",
+              "web_notes": [
+                "wikipedia: PARTIAL: 'hundreds' is from the 6 June protest text; for 20 June Wikipedia cites 'Youths rally in large numbers' (The Hindu 20 June https://www.thehindu.com/news/cities/Delhi/heavy-security-in-place-as-cjp-stages-second-protest-at-jantar-mantar/article71125029.ece). Deccan Herald attribution not confirmed. Not verified for the 20 June sit-in.",
+                "deccanherald: Not found. A DH report seen only in search snippet said 'hundreds of students and quite a few parents and teachers joined' an earlier protest; no DH article confirmed 'hundreds, mostly students' for 20 June. Possible DH leads (unverified, fetch 403): https://www.deccanherald.com/india/delhi/give-us-fresh-protest-site-cockroach-janta-party-founder-dipke-announces-indefinite-sit-in-despite-police-objections-at-jantar-mantar-4046545"
+              ]
+            },
+            {
+              "text": "Police declare the protest past permitted hours",
+              "claimant": "Delhi Police",
+              "attribution": "police said",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia",
+                "dynamitenews"
+              ],
+              "page": 4,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Second_protest_at_Jantar_Mantar",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "Police said permission ran only until 5 P.M.",
+                  "verified": true
+                },
+                {
+                  "source_id": "dynamitenews",
+                  "url": "https://www.dynamitenews.com/national/jantar-mantar-protest-ends-amid-police-action-abhijit-dipke-refuses-to-leave-stage/amp",
+                  "title": "CJP Protest: Water Cut, Power Disconnected, But Abhijit Deepke Refuses to Back Down at Jantar Mantar",
+                  "publisher": "Dynamite News",
+                  "date": "2026-06-20",
+                  "snippet": "after the expiry of the permitted demonstration period",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            }
+          ],
+          "media": []
+        },
+        {
+          "id": "protest_2b",
+          "date": "2026-06-23",
+          "title": "Growth",
+          "site_ids": [
+            "jantar_mantar_road"
+          ],
+          "crowd_tier": 2,
+          "crowd_basis": "'Hundreds' camping",
+          "hunger_strike_day": null,
+          "facts": [
+            {
+              "text": "Pradhan, to NDTV, calls the CJP a “B Team Of Disruptive Elements”; Dipke responds on day 4 of the sit-in",
+              "claimant": "Dharmendra Pradhan (NDTV interview)",
+              "attribution": "said",
+              "status": "disputed",
+              "source_ids": [
+                "ndtv",
+                "thewire",
+                "dainikjagranmpcg"
+              ],
+              "page": 5,
+              "note": "Dossier dates this '~23 Jun' (approximate).",
+              "resolution": "Vali 2026-11-12: primary source wins. NDTV's own headline (23 Jun) reads 'B Team Of Disruptive Elements'. The Wire, Dainik Jagran and The Federal report it as 'B-team of terrorists'. NDTV body not fetched (blocked): click-check the wording before ship.",
+              "hold": "Vali 2026-11-12: kept on the backbench. NDTV interview not viewable; don't feature on screen until checked.",
+              "links": [
+                {
+                  "source_id": "dainikjagranmpcg",
+                  "url": "https://english.dainikjagranmpcg.com/special-news/cjps-dipke-slams-pradhan-over-terrorists-remark/article-20540",
+                  "title": "CJP's Dipke Slams Pradhan Over 'Terrorists' Remark",
+                  "publisher": "Dainik Jagran MP/CG (English)",
+                  "date": "2026-06-24",
+                  "snippet": "Dipke responded to Pradhan's 'B team of terrorists' remark; youth don't need patriotism certificates",
+                  "verified": true
+                },
+                {
+                  "source_id": "ndtv",
+                  "url": null,
+                  "title": "'B Team Of Disruptive Elements': Education Minister Dharmendra Pradhan To NDTV on CJP",
+                  "publisher": "NDTV",
+                  "date": "2026-06-23",
+                  "snippet": "",
+                  "verified": false
+                },
+                {
+                  "source_id": "thewire",
+                  "url": "https://m.thewire.in/article/rights/in-photos-sonam-wangchuk-left-students-hunger-strike-cjp-jantar-mantar",
+                  "title": "In Photos: Sonam Wangchuk, Left Students Go on Hunger Strike at CJP's Jantar Mantar Protest",
+                  "publisher": "The Wire",
+                  "date": "2026-06-30",
+                  "snippet": "Pradhan had called the CJP the 'B-team of terrorists'",
+                  "verified": true
+                },
+                {
+                  "source_id": "ndtv",
+                  "url": "https://www.ndtv.com/india-news/b-team-of-disruptive-elements-education-minister-dharmendra-pradhan-to-ndtv-on-cjp-11675087",
+                  "title": "B Team Of Disruptive Elements: Education Minister Dharmendra Pradhan To NDTV On CJP",
+                  "publisher": "NDTV",
+                  "date": "2026-06-23",
+                  "snippet": null,
+                  "verified": false
+                }
+              ],
+              "web_check": "resolved",
+              "web_notes": [
+                "dainikjagranmpcg: Supports Dipke reply + 'B team of terrorists' wording in Jagran. CONTRADICTION: NDTV/other outlets quote Pradhan as 'B team of disruptive elements' (see id 32); only Jagran says 'terrorists'. Page dated 24 Jun; ledger says Dipke responds on 'day 4 of sit-in' (not checked).",
+                "ndtv: NDTV URL (from Wikipedia refs; NDTV blocks fetch): https://www.ndtv.com/india-news/b-team-of-disruptive-elements-education-minister-dharmendra-pradhan-to-ndtv-on-cjp-11675087 . CONTRADICTION: NDTV headline and most outlets (Free Press Journal, IBTimes) say 'B team of disruptive elements'; only Dainik Jagran says 'B team of terrorists'. Not fetched, so unverified body.",
+                "thewire: PARTIAL / CONTRADICTION: The Wire confirms Pradhan 'B-team of terrorists' and Dipke saying protest continues; no NDTV mention, no 'day 4'. The NDTV headline (Wikipedia ref 96, 23 Jun) reads 'B Team Of Disruptive Elements': https://www.ndtv.com/india-news/b-team-of-disruptive-elements-education-minister-dharmendra-pradhan-to-ndtv-on-cjp-11675087 (not fetched). Yahoo SG says 'terrorists' wording came via The Independent. Dipke's day-4 reply: The Federal https://thefederal.com/category/states/north/delhi/diaper-drive-marks-4th-day-of-cjp-sit-in-dipke-hits-back-at-pradhans-terrorist-remark-247795 (search only). Wording ('disruptive elements' vs 'terrorists') should be checked before quoting.",
+                "ndtv: Title from URL slug and search; NDTV blocks fetching."
+              ]
+            },
+            {
+              "text": "“Hundreds” camping (Yahoo/Independent)",
+              "value_text": "Hundreds",
+              "unit": "camping",
+              "claimant": "Yahoo/Independent",
+              "attribution": "reported",
+              "status": "claimed",
+              "source_ids": [
+                "yahoo",
+                "independent"
+              ],
+              "page": 5,
+              "links": [
+                {
+                  "source_id": "yahoo",
+                  "url": "https://www.yahoo.com/news/politics/articles/youth-led-cockroach-movement-staging-190822613.html",
+                  "title": "What Is the Youth-Led 'Cockroach Movement' Staging Mass Protests in India? (Time, on Yahoo)",
+                  "publisher": "Yahoo",
+                  "date": "2026-07-22",
+                  "snippet": "hundreds of protesters standing beneath a series of tents",
+                  "verified": true
+                },
+                {
+                  "source_id": "independent",
+                  "url": null,
+                  "title": "India's viral 'cockroaches' are biggest challenge to Modi in years. Will they get what they want?",
+                  "publisher": "The Independent",
+                  "date": "2026-06-23",
+                  "snippet": "after nightfall, when hundreds of paramilitary personnel moved in to clear the site ... Mr Dipke and his supporters remained camped at the site",
+                  "verified": false
+                }
+              ],
+              "web_check": "partial",
+              "web_notes": [
+                "yahoo: PARTIAL: syndicated Time article; says 'Protestors have camped at Jantar Mantar... for the past month'. Dated 22 Jul, not ~23 Jun. Original is Time https://time.com/article/2026/07/22/india-cockroach-janta-party-protest-movement/ (Wikipedia ref 2). Not the Independent.",
+                "independent: PARTIAL/uncertain: https://www.independent.co.uk/asia/india/cockroach-janata-party-neet-dharmendra-pradhan-resignation-protest-b3000119.html seen in an earlier page grab; 'hundreds' there refers to paramilitary, not campers. No Independent article with 'hundreds camping' confirmed; WebFetch/search blocked for independent.co.uk. Not recommending as source."
+              ]
+            },
+            {
+              "text": "Outlook’s ground report describes the movement as a fringe story for nearly three weeks until Wangchuk’s fast.",
+              "claimant": "Outlook",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "outlookindia"
+              ],
+              "page": 2,
+              "links": [
+                {
+                  "source_id": "outlookindia",
+                  "url": "https://www.outlookindia.com/national/ground-report-cockroaches-won-how-a-seven-week-protest-at-jantar-mantar-forced-dharmendra-pradhans-exit",
+                  "title": "‘Cockroaches Won’: How A Seven-Week Protest At Jantar Mantar Forced Dharmendra Pradhan’s Exit",
+                  "publisher": "Outlook India",
+                  "date": "2026-07-25",
+                  "snippet": "for nearly three weeks the protest stayed a fringe story",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            }
+          ],
+          "media": []
+        },
+        {
+          "id": "protest_2c",
+          "date": "2026-06-20",
+          "title": "Key moments: the state responds",
+          "site_ids": [
+            "jantar_mantar_road"
+          ],
+          "crowd_tier": null,
+          "crowd_basis": null,
+          "hunger_strike_day": null,
+          "facts": [
+            {
+              "text": "CJP alleges water, lights, food and washroom access cut, later restored",
+              "claimant": "CJP",
+              "attribution": "CJP claims",
+              "status": "alleged",
+              "source_ids": [
+                "wikipedia",
+                "dynamitenews"
+              ],
+              "page": 4,
+              "note": "Tactics table: 'CJP allegation; reported live by Dynamite News; access later restored' (p13).",
+              "resolution": "Kept as a CJP allegation: Wikipedia states it as a police tactic, but its primary reports (Independent 23 Jun, Al Jazeera 21 Jun) weren't fetched.",
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Second_protest_at_Jantar_Mantar",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "switching off lights and briefly cutting off access to food and drinking water",
+                  "verified": true
+                },
+                {
+                  "source_id": "dynamitenews",
+                  "url": "https://www.dynamitenews.com/national/jantar-mantar-protest-ends-amid-police-action-abhijit-dipke-refuses-to-leave-stage/amp",
+                  "title": "CJP Protest: Water Cut, Power Disconnected, But Abhijit Deepke Refuses to Back Down at Jantar Mantar",
+                  "publisher": "Dynamite News",
+                  "date": "2026-06-20",
+                  "snippet": "protesters alleged authorities first halted water, then cut electricity",
+                  "verified": true
+                }
+              ],
+              "web_check": "resolved",
+              "web_notes": [
+                "wikipedia: PARTIAL/CONTRADICTION-lite: Wikipedia states this as police tactic (not as 'CJP alleges'), lists lights, food, water; washroom and 'later restored' not seen (says 'briefly'). Cited Independent 23 June https://www.independent.co.uk/asia/india/cockroach-janata-party-neet-dharmendra-pradhan-resignation-protest-b3000119.html and Al Jazeera 21 June (not fetched). Dynamite News not found.",
+                "dynamitenews: PARTIAL: water and power cut allegation confirmed; food and washroom access and later restoration not on this page (washroom cut alleged 28 Jun by Dipke per other outlets; The Quint/NewsBytes report restoration)."
+              ]
+            },
+            {
+              "text": "police tried to disperse, then withdrew",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia",
+                "dynamitenews"
+              ],
+              "page": 5,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": null,
+                  "title": null,
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": null,
+                  "verified": false
+                },
+                {
+                  "source_id": "dynamitenews",
+                  "url": "https://www.dynamitenews.com/national/jantar-mantar-protest-ends-amid-police-action-abhijit-dipke-refuses-to-leave-stage/amp",
+                  "title": "CJP Protest: Water Cut, Power Disconnected, But Abhijit Deepke Refuses to Back Down at Jantar Mantar",
+                  "publisher": "Dynamite News",
+                  "date": "2026-06-20",
+                  "snippet": "police began a 'peaceful removal process'; most protesters left, Dipke stayed",
+                  "verified": true
+                }
+              ],
+              "web_check": "unconfirmed",
+              "web_notes": [
+                "wikipedia: Not verified. Wikipedia describes police pressure tactics on 20 June (lights, food/water) but no passage seen saying police 'tried to disperse, then withdrew'. Dynamite News article not found.",
+                "dynamitenews: PARTIAL: police removal attempt confirmed; page does not report police withdrawal. A search summary says police were withdrawn around 6:30 PM (Deccan Herald, unverified)."
+              ]
+            },
+            {
+              "text": "Volunteer Mohammad Junaid later alleged he was picked up, held for about 6 hours and dropped in Dehradun",
+              "value": 6,
+              "unit": "hours held (alleged)",
+              "claimant": "Mohammad Junaid",
+              "attribution": "alleged",
+              "status": "alleged",
+              "source_ids": [
+                "wikipedia",
+                "dynamitenews"
+              ],
+              "page": 5,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Second_protest_at_Jantar_Mantar",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "alleged in a petition to the Supreme Court that police picked him up in Delhi and held him in a vehicle for about six hours",
+                  "verified": true
+                },
+                {
+                  "source_id": "dynamitenews",
+                  "url": null,
+                  "title": "",
+                  "publisher": "Dynamite News",
+                  "date": null,
+                  "snippet": "",
+                  "verified": false
+                }
+              ],
+              "web_check": "unconfirmed",
+              "web_notes": [
+                "dynamitenews: Not found at Dynamite News. Junaid's account (picked up ~midnight 24 Jul, held ~5-6 hours, dropped on Dehradun road) is reported by LiveLaw https://www.livelaw.in/top-stories/cjp-food-volunteer-junaid-malik-moves-supreme-court-alleging-police-harassment-of-family-543144 and The Wire https://thewire.in/rights/junaid-malik-distributed-free-food-cjp-alleges-police-harassment-supreme-court (search-snippet only, not fetched). Note: reports say 5-6 hours (ledger: about 6)."
+              ]
+            }
+          ],
+          "media": []
+        },
+        {
+          "id": "protest_retest",
+          "date": "2026-06-21",
+          "title": "NEET re-test held",
+          "site_ids": [],
+          "crowd_tier": null,
+          "crowd_basis": null,
+          "hunger_strike_day": null,
+          "facts": [
+            {
+              "text": "The re-test was held on 21 June at 5,440 centres, with about 20 lakh appearing (secondary source).",
+              "value": 5440,
+              "unit": "centres",
+              "claimant": "secondary source",
+              "attribution": "reported",
+              "status": "claimed",
+              "source_ids": [
+                "businesstoday",
+                "righttoinformation"
+              ],
+              "page": 11,
+              "links": [
+                {
+                  "source_id": "businesstoday",
+                  "url": "https://www.businesstoday.in/education/exams/story/jammers-1-38-lakh-cctv-cameras-ai-surveillance-ntas-security-plan-for-big-neet-re-exam-today-538271-2026-06-21",
+                  "title": "Jammers, 1.38 lakh CCTV cameras: How NTA is gearing up for big NEET re test today",
+                  "publisher": "BusinessToday",
+                  "date": "2026-06-21",
+                  "snippet": "5,440 centres in 551 cities in India and 14 centres abroad, with over 22 lakh aspirants expected to appear.",
+                  "verified": true
+                },
+                {
+                  "source_id": "righttoinformation",
+                  "url": null,
+                  "title": null,
+                  "publisher": "righttoinformation.wiki",
+                  "date": null,
+                  "snippet": null,
+                  "verified": false
+                }
+              ],
+              "web_check": "unconfirmed",
+              "web_notes": [
+                "businesstoday: PARTIAL: 5,440 centres verified; this pre-exam article says 22 lakh EXPECTED. 'About 20 lakh' appears in https://www.businesstoday.in/education/exams/story/re-neet-ug-2026-results-nta-to-release-re-test-scorecards-by-july-20-for-20-lakh-students-540579-2026-07-02 ('over 20 lakh candidates affected', 2 Jul), which lacks the 5,440 figure.",
+                "righttoinformation: Not found: righttoinformation.wiki homepage has no such page and search returned nothing. Alternative verified: https://www.siasat.com/neet-retest-held-for-20-lakh-aspirants-after-paper-leak-row-3493652/ (21 Jun 2026, NTA statement via Siasat/PTI): 'more than 20 lakh candidates appeared for the NEET (UG) 2026 re-examination across 5,440 centres in India'. NOTE: some outlets (Vedantu, Quint) say 22 lakh; NTA says 20 lakh+; one Asianet report says 5,454 centres."
+              ]
+            }
+          ],
+          "media": []
+        }
+      ]
+    },
+    {
+      "id": "wangchuk",
+      "order": 3,
+      "label": "Sonam Wangchuk",
+      "date": "2026-06-28",
+      "date_window": {
+        "start": "2026-06-28",
+        "end": "2026-07-17"
+      },
+      "title": "The fast",
+      "summary": {
+        "text": "Wangchuk begins indefinite fast with 6 AISA students (incl. Neha Bora) and independent student Hamad",
+        "source_ids": [
+          "wikipedia"
+        ],
+        "page": 5
+      },
+      "site_ids": [
+        "jantar_mantar_road"
+      ],
+      "crowd_tier": 2,
+      "crowd_basis": "28 Jun: 'Hundreds' (The Federal).",
+      "hunger_strike_day": 1,
+      "route": null,
+      "media_mode": "rail",
+      "facts": [
+        {
+          "text": "Wangchuk begins an indefinite fast with six students from the All India Students' Association (AISA), including Neha Bora",
+          "claimant": "media",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "wire_0630",
+            "scroll_0718"
+          ],
+          "page": 5,
+          "resolution": "Wangchuk research 2026-11-12 (public Indian outlets; Vali: primary source wins). 'six students from the All India Students' Association' is The Wire's wording; Scroll (18 Jul) names Neha Bora. 'Independent student Hamad' dropped: not confirmed in any public article."
+        },
+        {
+          "text": "“Hundreds” (The Federal)",
+          "value_text": "Hundreds",
+          "unit": "crowd",
+          "claimant": "The Federal",
+          "attribution": "reported",
+          "status": "claimed",
+          "source_ids": [
+            "thefederal"
+          ],
+          "page": 5,
+          "links": [
+            {
+              "source_id": "thefederal",
+              "url": "https://thefederal.com/category/states/north/delhi/cjp-alleges-delhi-police-cut-water-supply-after-wangchuk-joins-jantar-mantar-protest-248340",
+              "title": "CJP alleges Delhi police cut water supply after Wangchuk joins Jantar Mantar protest",
+              "publisher": "The Federal",
+              "date": "2026-06-28",
+              "snippet": "hundreds of protesters, mostly youth, gathered at Jantar Mantar",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "CJP alleges water and sanitation cut again",
+          "claimant": "CJP",
+          "attribution": "CJP claims",
+          "status": "alleged",
+          "source_ids": [
+            "thefederal"
+          ],
+          "page": 5,
+          "links": [
+            {
+              "source_id": "thefederal",
+              "url": "https://thefederal.com/category/states/north/delhi/cjp-alleges-delhi-police-cut-water-supply-after-wangchuk-joins-jantar-mantar-protest-248340",
+              "title": "CJP alleges Delhi police cut water supply after Wangchuk joins Jantar Mantar protest",
+              "publisher": "The Federal",
+              "date": "2026-06-28",
+              "snippet": "Delhi police cut off water supply and sanitation facilities at Jantar Mantar",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "But I consider myself an honorary cockroach",
+          "value_text": "23 May",
+          "claimant": "Sonam Wangchuk (via ThePrint/PTI)",
+          "attribution": "said",
+          "status": "documented",
+          "source_ids": [
+            "theprint_0523"
+          ],
+          "page": 14,
+          "resolution": "Wangchuk research 2026-11-12 (public Indian outlets; Vali: primary source wins). Said on 23 May, before the street protest; verbatim from ThePrint (PTI)."
+        },
+        {
+          "text": "… after three weeks on hunger strike in solidarity with the Cockroach Janta Party (CJP) protest movement.",
+          "claimant": "Al Jazeera",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "aljazeera_0719"
+          ],
+          "page": 0,
+          "note": "Verbatim from Al Jazeera, 19 Jul (source supplied by Vali). Same article: 'The movement’s main demand is the resignation of Education Minister Dharmendra Pradhan.'"
+        }
+      ],
+      "people": [
+        {
+          "name": "Sonam Wangchuk",
+          "role": "Engineer-turned-activist",
+          "image": {
+            "src": "media/people/sonam-wangchuk.jpg",
+            "credit": "Sonam Wangchuk (Flickr), CC BY 2.0, via Wikimedia Commons",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0",
+            "commons_page": "https://commons.wikimedia.org/wiki/File:Sonam_Wangchuk,_2017_(cropped).jpg",
+            "license_ok": true
+          },
+          "source_ids": [
+            "aljazeera_0714"
+          ],
+          "page": 0,
+          "note": "Role wording from Al Jazeera (14 Jul): 'an engineer-turned-activist who inspired a character in the blockbuster Bollywood film, 3 Idiots'. He joined the CJP protest on 6 Jun and fasted 28 Jun – 24 Jul in support of it. page 0 = not from the dossier."
+        },
+        {
+          "name": "Neha Bora",
+          "role": "AISA student; joined Wangchuk's fast on 28 Jun",
+          "image": {
+            "src": "media/people/neha-bora.jpg",
+            "credit": "Screenshot from Hindustan Samachar on YouTube, CC BY 4.0, via Wikimedia Commons",
+            "license": "CC BY 4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0",
+            "commons_page": "https://commons.wikimedia.org/wiki/File:Neha_Bora_in_Patna_(cropped).jpg",
+            "license_ok": true
+          },
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 5
+        }
+      ],
+      "media": [
+        {
+          "type": "youtube",
+          "youtube_id": "IkY9Oe3JUAA",
+          "caption": "Raghu Ram Backs CJP Demands Pradhan's Resignation In Roadies Style",
+          "credit": "YouTube: The Indian Express",
+          "upload_date": "2026-07-08",
+          "channel": "The Indian Express",
+          "source_type": "citizen",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        },
+        {
+          "type": "youtube",
+          "youtube_id": "XKyEnv7fnQU",
+          "caption": "From Sit-In Protest to Hunger Strike: Inside the 25-Day CJP Protest",
+          "credit": "YouTube: The Indian Express",
+          "upload_date": "2026-07-14",
+          "channel": "The Indian Express",
+          "source_type": "citizen",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        },
+        {
+          "type": "youtube",
+          "youtube_id": "84mLiDYNgoY",
+          "caption": "\"Before Swinging Your Batons, Remember Who Is Walking With Us\": Abhijeet Dipke at CJP Protest",
+          "credit": "YouTube: The Indian Express",
+          "upload_date": "2026-07-15",
+          "channel": "The Indian Express",
+          "source_type": "citizen",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        }
+      ],
+      "sub_beats": [
+        {
+          "id": "wangchuk_day1",
+          "date": "2026-06-28",
+          "title": "Day 1",
+          "site_ids": [
+            "jantar_mantar_road"
+          ],
+          "crowd_tier": 2,
+          "crowd_basis": "'Hundreds' (The Federal)",
+          "hunger_strike_day": 1,
+          "facts": [],
+          "media": []
+        },
+        {
+          "id": "wangchuk_march_called",
+          "date": "2026-07-09",
+          "title": "The march is called",
+          "site_ids": [
+            "jantar_mantar_road",
+            "parliament"
+          ],
+          "crowd_tier": null,
+          "crowd_basis": null,
+          "hunger_strike_day": 12,
+          "facts": [
+            {
+              "text": "CJP announces 20 July Parliament march (PTI/The Hindu)",
+              "claimant": "CJP",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia",
+                "pti",
+                "thehindu"
+              ],
+              "page": 5,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": null,
+                  "title": null,
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": null,
+                  "verified": false
+                },
+                {
+                  "source_id": "pti",
+                  "url": "https://telanganatoday.com/cjp-sonam-wangchuk-plan-peaceful-parliament-march-on-july-20",
+                  "title": "CJP, Sonam Wangchuk plan peaceful Parliament march on July 20",
+                  "publisher": "PTI (via Telangana Today)",
+                  "date": "2026-07-09",
+                  "snippet": "announced that it would march peacefully to Parliament on the first day of the monsoon session on July 20.",
+                  "verified": true
+                },
+                {
+                  "source_id": "thehindu",
+                  "url": null,
+                  "title": null,
+                  "publisher": "The Hindu",
+                  "date": null,
+                  "snippet": null,
+                  "verified": false
+                }
+              ],
+              "web_check": "unconfirmed",
+              "web_notes": [
+                "wikipedia: Not verified. No Wikipedia text seen announcing a 20 July Parliament march by PTI/The Hindu (only launch description of 'Chalo Sansad'; closest PTI/The Hindu ref is 20 July fast statement). Visible text only 100k of 215k chars of protests page; unread tail may contain it.",
+                "thehindu: The Hindu article not found (domain blocked). Verified PTI version: https://telanganatoday.com/cjp-sonam-wangchuk-plan-peaceful-parliament-march-on-july-20 (PTI, 9 Jul 2026). Other coverage (search-only): dtnext.in/news/national/cjp-announces-parliament-march-on-july-20-asks-students-parents-to-join-in"
+              ]
+            }
+          ],
+          "media": []
+        },
+        {
+          "id": "wangchuk_day17",
+          "date": "2026-07-14",
+          "title": "Day 17",
+          "site_ids": [
+            "jantar_mantar_road"
+          ],
+          "crowd_tier": null,
+          "crowd_basis": null,
+          "hunger_strike_day": 17,
+          "facts": [
+            {
+              "text": "More than 1,800 members of civil society on Tuesday urged activist Sonam Wangchuk to withdraw his hunger strike in Delhi.",
+              "value": 1800,
+              "value_text": "1,800+",
+              "unit": "signatories",
+              "claimant": "Scroll",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "scroll_0714"
+              ],
+              "page": 18,
+              "resolution": "Wangchuk research 2026-11-12 (public Indian outlets; Vali: primary source wins). Dossier dated this ~17 Jul; Scroll dates the letter Tuesday 14 Jul."
+            }
+          ],
+          "media": []
+        },
+        {
+          "id": "wangchuk_day19",
+          "date": "2026-07-16",
+          "title": "Day 19",
+          "site_ids": [
+            "jantar_mantar_road"
+          ],
+          "crowd_tier": null,
+          "crowd_basis": null,
+          "hunger_strike_day": 19,
+          "facts": [
+            {
+              "text": "Wangchuk has lost more than nine kg after 19 days of hunger strike",
+              "value": 9,
+              "value_text": "9+ kg",
+              "unit": "kg",
+              "claimant": "doctors (via DT Next)",
+              "attribution": "reported",
+              "status": "claimed",
+              "source_ids": [
+                "dtnext_0716"
+              ],
+              "page": 18,
+              "resolution": "Wangchuk research 2026-11-12 (public Indian outlets; Vali: primary source wins). The exact 9.1 kg figure is BBC copy found only on a mirror site, so the free DT Next wording ('over 9 kg', day 19, 16 Jul) is used."
+            },
+            {
+              "text": "The next stage can be alarming. Organs can be impacted.",
+              "claimant": "a doctor (via DT Next)",
+              "attribution": "said",
+              "status": "documented",
+              "source_ids": [
+                "dtnext_0716"
+              ],
+              "page": 0
+            }
+          ],
+          "media": []
+        },
+        {
+          "id": "wangchuk_day20",
+          "date": "2026-07-17",
+          "title": "Day 20",
+          "site_ids": [
+            "jantar_mantar_road"
+          ],
+          "crowd_tier": null,
+          "crowd_basis": null,
+          "hunger_strike_day": 20,
+          "facts": [
+            {
+              "text": "Government tells HC it will intervene if his health worsens",
+              "claimant": "Government",
+              "attribution": "officials said",
+              "status": "documented",
+              "source_ids": [
+                "dossier"
+              ],
+              "page": 5,
+              "note": "Dossier row cites no outlet."
+            },
+            {
+              "text": "Delhi HC petition",
+              "claimant": "dossier",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "dossier"
+              ],
+              "page": 5,
+              "note": "Dossier row cites no outlet."
+            }
+          ],
+          "media": []
+        }
+      ]
+    },
+    {
+      "id": "detention",
+      "order": 4,
+      "label": "Detention",
+      "date": "2026-07-18",
+      "date_window": {
+        "start": "2026-07-18",
+        "end": "2026-07-19"
+      },
+      "title": "Removed to hospital",
+      "summary": {
+        "text": "Police remove Wangchuk to Safdarjung Hospital (police: on medical advice and per HC directions; CJP: “kidnapping”); Dipke starts a fast and alleges he was beaten and detained; SFI leaders join the fast",
+        "source_ids": [
+          "wikipedia"
+        ],
+        "page": 5
+      },
+      "site_ids": [
+        "jantar_mantar_road",
+        "safdarjung_hospital"
+      ],
+      "crowd_tier": 3,
+      "crowd_basis": "18 Jul: no crowd figure (carry previous tier). 19 Jul: 'Thousands' (Tribune live blog).",
+      "hunger_strike_day": 21,
+      "route": null,
+      "media_mode": "rail",
+      "facts": [
+        {
+          "text": "Police remove Wangchuk to Safdarjung Hospital",
+          "claimant": "media",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 5,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Timeline",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "18 July: Police removed him from the site and admitted him to Safdarjung Hospital.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "police: on medical advice and per HC directions",
+          "claimant": "Delhi Police",
+          "attribution": "police said",
+          "status": "disputed",
+          "source_ids": [
+            "wikipedia",
+            "scroll_0718"
+          ],
+          "page": 5,
+          "note": "Scroll quotes the police as citing 'essential medical care' under a High Court order.",
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Timeline",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "Police said the move was on medical advice and under Delhi High Court directions. Organisers disputed this",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "he has been forcefully kidnapped by the Police and taken away.",
+          "claimant": "CJP (via Newslaundry)",
+          "attribution": "CJP claims",
+          "status": "disputed",
+          "source_ids": [
+            "newslaundry_0718",
+            "scroll_0718"
+          ],
+          "page": 5,
+          "resolution": "Wangchuk research 2026-11-12 (public Indian outlets; Vali: primary source wins). Verbatim CJP wording from Newslaundry; Scroll reports the CJP alleging he was 'detained'. Police didn't use 'detained'; they cited 'essential medical care' under an HC order."
+        },
+        {
+          "text": "Dipke starts a fast and alleges he was beaten and detained",
+          "claimant": "Abhijeet Dipke",
+          "attribution": "alleged",
+          "status": "alleged",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 5,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Timeline",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "Dipke began his own hunger strike on 18 July",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "wikipedia: PARTIAL: fast start supported (ET 18 July https://economictimes.indiatimes.com/news/india/cjp-chief-abhijeet-dipke-begins-indefinite-hunger-strike-after-wangchuk-taken-to-hospital/articleshow/132473653.cms); 'alleges beaten and detained' not seen. Wikipedia says he later ended it at Wangchuk's request (India Today 20 July)."
+          ]
+        },
+        {
+          "text": "SFI leaders join the fast",
+          "claimant": "media",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 6,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Timeline",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "SFI General Secretary Srijan Bhattacharyya announced that SFI President Adarsh M. Saji and Joint Secretary Aishe Ghosh would join an indefinite hunger strike",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "It is not medical care. It is illegal detention.",
+          "value_text": "19 Jul",
+          "claimant": "Gitanjali Angmo, Wangchuk's wife (via Al Jazeera)",
+          "attribution": "said",
+          "status": "disputed",
+          "source_ids": [
+            "aljazeera_0719"
+          ],
+          "page": 0,
+          "note": "Said on X on 19 Jul. Same article: police 'seized' Wangchuk at Jantar Mantar on 18 Jul and took him to Safdarjung Hospital."
+        },
+        {
+          "text": "It cannot be said that any force is being used against Mr Sonam Wangchuk or that his bodily autonomy is being violated in any manner whatsoever.",
+          "value_text": "19 Jul",
+          "claimant": "Justice Mini Pushkarna, Delhi High Court (via Al Jazeera)",
+          "attribution": "said",
+          "status": "disputed",
+          "source_ids": [
+            "aljazeera_0719"
+          ],
+          "page": 0,
+          "note": "The court declined to order his discharge; doctors had given only oral fluids and supplements with his consent."
+        }
+      ],
+      "people": [
+        {
+          "name": "Sonam Wangchuk",
+          "role": "Engineer-turned-activist",
+          "image": {
+            "src": "media/people/sonam-wangchuk.jpg",
+            "credit": "Sonam Wangchuk (Flickr), CC BY 2.0, via Wikimedia Commons",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0",
+            "commons_page": "https://commons.wikimedia.org/wiki/File:Sonam_Wangchuk,_2017_(cropped).jpg",
+            "license_ok": true
+          },
+          "source_ids": [
+            "aljazeera_0714"
+          ],
+          "page": 0,
+          "note": "Role wording from Al Jazeera (14 Jul): 'an engineer-turned-activist who inspired a character in the blockbuster Bollywood film, 3 Idiots'. He joined the CJP protest on 6 Jun and fasted 28 Jun – 24 Jul in support of it. page 0 = not from the dossier."
+        },
+        {
+          "name": "Abhijeet Dipke",
+          "role": "Founder of the CJP; a Boston University-trained communications strategist",
+          "image": {
+            "src": "media/people/abhijeet-dipke.jpg",
+            "credit": "Screenshot from LetsUpp Marathi on YouTube, CC BY 4.0, via Wikimedia Commons",
+            "license": "CC BY 4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0",
+            "commons_page": "https://commons.wikimedia.org/wiki/File:Abhijeet_Dipke_during_an_interview_with_LetsUpp_Marathi_on_YouTube_(in_Marathi)_(3x4_cropped).jpg",
+            "license_ok": true
+          },
+          "source_ids": [
+            "dossier",
+            "wikipedia"
+          ],
+          "page": 1,
+          "note": "Role wording is from p1 (no chip); biography carries a Wikipedia chip on p2."
+        }
+      ],
+      "media": [
+        {
+          "type": "youtube",
+          "youtube_id": "CDIlAhbM1p4",
+          "caption": "Sonam Wangchuk को अस्पताल क्यों ले गई Delhi Police, पत्नी Gitanjali J Angmo  ने क्या कहा?",
+          "credit": "YouTube: The Lallantop",
+          "upload_date": "2026-07-18",
+          "channel": "The Lallantop",
+          "source_type": "news",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        },
+        {
+          "type": "youtube",
+          "youtube_id": "Q5yGaL7k7H8",
+          "caption": "Sonam Wangchuk को अस्पताल ले जाने पर क्या बोलीं Kunickaa Sadanand #shorts",
+          "credit": "YouTube: The Lallantop",
+          "upload_date": "2026-07-18",
+          "channel": "The Lallantop",
+          "source_type": "news",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        },
+        {
+          "type": "youtube",
+          "youtube_id": "SnWd-qGejLA",
+          "caption": "Sonam Wangchuk के लिए क्या बोले Chirag Paswan | Abhijeet Dipke | Jantar Mantar | CJP Protest",
+          "credit": "YouTube: Rajasthan Patrika",
+          "upload_date": "2026-07-19",
+          "channel": "Rajasthan Patrika",
+          "source_type": "news",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        },
+        {
+          "type": "youtube",
+          "youtube_id": "0ofNZkOHpvs",
+          "caption": "CJP ने Sansad March से पहले बड़ा दावा किया, Sonam Wangchuk पर क्या Update? | Jantar Mantar Protest",
+          "credit": "YouTube: The Lallantop",
+          "upload_date": "2026-07-19",
+          "channel": "The Lallantop",
+          "source_type": "news",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        }
+      ],
+      "sub_beats": [
+        {
+          "id": "detention_0718",
+          "date": "2026-07-18",
+          "title": "Wangchuk removed",
+          "site_ids": [
+            "jantar_mantar_road",
+            "safdarjung_hospital"
+          ],
+          "crowd_tier": null,
+          "crowd_basis": "No count reported; carry the previous tier.",
+          "hunger_strike_day": 21,
+          "facts": [
+            {
+              "text": "Leadership change in Delhi Police reported; barricades removed",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "dossier"
+              ],
+              "page": 5,
+              "note": "Dossier row cites no outlet for this cell."
+            }
+          ],
+          "media": []
+        },
+        {
+          "id": "detention_0719",
+          "date": "2026-07-19",
+          "title": "Crowds swell ahead of the march",
+          "site_ids": [
+            "jantar_mantar_road"
+          ],
+          "crowd_tier": 3,
+          "crowd_basis": "'Thousands' (Tribune live blog)",
+          "hunger_strike_day": 22,
+          "facts": [
+            {
+              "text": "Crowds swell ahead of the march",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "dossier"
+              ],
+              "page": 6,
+              "note": "Events cell cites no outlet."
+            },
+            {
+              "text": "“Thousands” (Tribune live blog)",
+              "value_text": "Thousands",
+              "unit": "crowd",
+              "claimant": "The Tribune (live blog)",
+              "attribution": "reported",
+              "status": "claimed",
+              "source_ids": [
+                "tribuneindia"
+              ],
+              "page": 6,
+              "links": [
+                {
+                  "source_id": "tribuneindia",
+                  "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+                  "title": "'Sansad Chalo' march: CJP alleges police excesses after crackdown, continues sit-in near Kerala House",
+                  "publisher": "The Tribune",
+                  "date": "2026-07-20",
+                  "snippet": "As the CJP march protest continues to draw a large gathering.",
+                  "verified": true
+                }
+              ],
+              "web_check": "partial",
+              "web_notes": [
+                "tribuneindia: PARTIAL: word 'thousands' appears only in the URL slug / original live-blog title ('Live updates: thousands gather at Jantar Mantar ahead of CJP's march to Parliament'); updated body text says 'large gathering'. Fine for a 'Tribune live blog' footer but note the live blog was retitled."
+              ]
+            },
+            {
+              "text": "300+ personnel at the site with conveyor-belt bag scanners, frisking, plain-clothes officers and riot vehicles with tear-gas mounts (ThePrint)",
+              "value": 300,
+              "value_text": "300+",
+              "unit": "police personnel",
+              "claimant": "Delhi Police (official)",
+              "attribution": "police said",
+              "status": "claimed",
+              "source_ids": [
+                "theprint"
+              ],
+              "page": 6,
+              "links": [
+                {
+                  "source_id": "theprint",
+                  "url": "https://theprint.in/india/delhi-police-puts-blockades-jantar-mantar-ahead-of-cjps-protest-march-to-parliament/2990640/",
+                  "title": "Delhi Police puts blockades Jantar Mantar ahead of CJP’s protest march to Parliament",
+                  "publisher": "ThePrint",
+                  "date": "2026-07-20",
+                  "snippet": "riot-control vehicles with teargas mounts guard the barricades",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "DCP Sachin Sharma: no permission sought or granted, Section 163 BNSS in force",
+              "claimant": "DCP Sachin Sharma",
+              "attribution": "police said",
+              "status": "documented",
+              "source_ids": [
+                "theprint"
+              ],
+              "page": 6,
+              "links": [
+                {
+                  "source_id": "theprint",
+                  "url": "https://theprint.in/india/delhi-police-puts-blockades-jantar-mantar-ahead-of-cjps-protest-march-to-parliament/2990640/",
+                  "title": "Delhi Police puts blockades Jantar Mantar ahead of CJP’s protest march to Parliament",
+                  "publisher": "ThePrint",
+                  "date": "2026-07-20",
+                  "snippet": "no permission has been sought or granted for any such protest march/procession",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            }
+          ],
+          "media": []
+        }
+      ]
+    },
+    {
+      "id": "protest_arrest",
+      "order": 5,
+      "label": "Protest and arrest",
+      "date": "2026-07-20",
+      "date_window": {
+        "start": "2026-07-20",
+        "end": "2026-07-24"
+      },
+      "title": "Sansad Chalo",
+      "summary": {
+        "text": "“Sansad Chalo” march on Monsoon Session Day 1; Dipke ends his fast; 3 AISA fasters end theirs; Das and Ranka meet J.P. Nadda",
+        "source_ids": [
+          "wikipedia"
+        ],
+        "page": 6
+      },
+      "site_ids": [
+        "jantar_mantar_road",
+        "parliament",
+        "mandi_house",
+        "parliament_street",
+        "patel_chowk",
+        "rail_bhawan",
+        "constitution_club",
+        "shastri_bhawan",
+        "palika_bazar",
+        "gurdwara_bangla_sahib",
+        "rml_hospital",
+        "metro_udyog_bhawan",
+        "metro_central_secretariat",
+        "metro_patel_chowk",
+        "metro_janpath",
+        "metro_rajiv_chowk"
+      ],
+      "crowd_tier": 4,
+      "crowd_basis": "'More than 10,000' (Al Jazeera/AP/Reuters) vs 'tens of thousands' (Guardian, Deccan Herald, CJP). Tier uses the lower, documented floor.",
+      "hunger_strike_day": 23,
+      "route": null,
+      "media_mode": "rail",
+      "facts": [
+        {
+          "text": "“More than 10,000”",
+          "value": 10000,
+          "value_text": ">10,000",
+          "unit": "marchers",
+          "claimant": "DCP Sachin Sharma (via Al Jazeera)",
+          "attribution": "police said",
+          "status": "disputed",
+          "source_ids": [
+            "aljazeera"
+          ],
+          "page": 6,
+          "resolution": "Vali 2026-11-12: primary source wins. Al Jazeera attributes the figure to DCP Sachin Sharma (a police estimate). AP and Reuters dropped: AP reports 'thousands'; Reuters wasn't reachable.",
+          "links": [
+            {
+              "source_id": "aljazeera",
+              "url": "https://www.aljazeera.com/news/2026/7/20/police-attack-cockroach-activists-as-thousands-march-on-indian-parliament",
+              "title": "Police attack Cockroach activists as thousands march on Indian parliament",
+              "publisher": "Al Jazeera",
+              "date": "2026-07-20",
+              "snippet": "more than 10,000 protesters were at the Jantar Mantar and on the march.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "“tens of thousands”",
+          "value_text": "tens of thousands",
+          "unit": "marchers",
+          "claimant": "Guardian, Deccan Herald, CJP",
+          "attribution": "reported",
+          "status": "disputed",
+          "source_ids": [
+            "wikipedia",
+            "guardian",
+            "deccanherald"
+          ],
+          "page": 6,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Timeline",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "Tens of thousands of protesters gather at Jantar Mantar and attempt to march toward the Parliament House.",
+              "verified": true
+            },
+            {
+              "source_id": "guardian",
+              "url": "https://www.theguardian.com/world/2026/jul/20/cockroach-janta-party-protest-march-sonam-wangchuk-india-parliament",
+              "title": "Tens of thousands of Cockroach movement protesters defy police with Delhi march",
+              "publisher": "The Guardian",
+              "date": "2026-07-20",
+              "snippet": "Tens of thousands of protesters have defied police orders and descended on Delhi to demand the resignation of India's education minister",
+              "verified": true
+            },
+            {
+              "source_id": "deccanherald",
+              "url": "https://www.deccanherald.com/india/tear-gas-lathi-charge-police-use-force-to-disperse-cjp-protesters-near-parliament-house-as-chaos-unfolds-amid-chalo-sansad-4080104",
+              "title": "Tear gas, lathi charge: Police use force to disperse CJP protesters near Parliament House as chaos unfolds amid 'Chalo Sansad'",
+              "publisher": "Deccan Herald",
+              "date": "2026-07-20",
+              "snippet": "",
+              "verified": false
+            }
+          ],
+          "web_check": "unconfirmed",
+          "web_notes": [
+            "deccanherald: Found via Wikipedia reference list; DH fetch returns 403 so 'tens of thousands' wording NOT confirmed in DH. The Guardian (id 69) does say it. Other DH lead: https://www.deccanherald.com/india/the-rise-of-the-cockroaches-how-cji-surya-kants-remark-led-to-massive-student-movement-in-jantar-mantar-4081727 (also 403)."
+          ]
+        },
+        {
+          "text": "Lathi charges, tear gas at Parliament Street, Patel Chowk and Rail Bhawan",
+          "claimant": "media and police statements",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia",
+            "theprint",
+            "asiaone"
+          ],
+          "page": 6,
+          "note": "Tactics table: 'Documented by AP, Reuters, Al Jazeera and police statements' (p13).",
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Sansad_Chalo_March",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "Security forces used baton charges and tear gas against the protesters who were marching towards the Parliament",
+              "verified": true
+            },
+            {
+              "source_id": "theprint",
+              "url": "https://theprint.in/india/clashes-tear-gas-thwart-students-march-to-parliament-several-injured-detained/2991284/",
+              "title": "Clashes, tear gas thwart students' march to Parliament; several injured, detained",
+              "publisher": "ThePrint",
+              "date": "2026-07-20",
+              "snippet": "Delhi Police lobbed tear gas shells and wielded sticks on Parliament Street on Monday",
+              "verified": true
+            },
+            {
+              "source_id": "asiaone",
+              "url": "https://www.asiaone.com/asia/india-police-use-tear-gas-stop-march-parliament-cockroach-movement-supporters",
+              "title": "India police use tear gas to stop march on Parliament by Cockroach movement supporters",
+              "publisher": "AsiaOne",
+              "date": "2026-07-21",
+              "snippet": "Police used tear gas and batons to stop supporters of India's youth-led Cockroach movement",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "wikipedia: PARTIAL: Wikipedia (Sansad Chalo March; Constitution Club tear gas ref 143) supports lathi charge/tear gas near Parliament; 'Rail Bhawan' not found in the first ~100k chars read. Originals: Deccan Herald https://www.deccanherald.com/india/tear-gas-lathi-charge-police-use-force-to-disperse-cjp-protesters-near-parliament-house-as-chaos-unfolds-amid-chalo-sansad-4080104 ; HT https://www.hindustantimes.com/india-news/how-cjp-chalo-sansad-march-brought-delhi-to-a-standstill-lathi-charge-detentions-internet-snags-sonam-wangchuk-101784533037018.html (not individually fetched). Wikipedia text read via summarising fetch, not raw.",
+            "theprint: PARTIAL: supports tear gas and sticks on Parliament Street; Patel Chowk appears only as a closed metro station; Rail Bhawan not mentioned; the word 'lathi' not used. Other ThePrint candidates seen in search but not fetched: https://theprint.in/india/from-children-to-elderly-thousands-brave-rain-tear-gas-and-lathis-at-cjps-march-to-parliament/2991208/",
+            "asiaone: PARTIAL: AP wire copy. Tear gas and batons yes; Parliament Street, Patel Chowk, Rail Bhawan NOT named."
+          ]
+        },
+        {
+          "text": "RAF personnel fired seven pellet gun rounds on July 20, five hit protesters",
+          "value": 7,
+          "unit": "pellet rounds",
+          "claimant": "CRPF report (via The Wire)",
+          "attribution": "reported",
+          "status": "disputed",
+          "source_ids": [
+            "thewire"
+          ],
+          "page": 6,
+          "note": "Under HPEC review (p13). Wording from The Wire's headline (search result only, not fetched).",
+          "resolution": "Vali 2026-11-12: primary source wins. Dossier cited Indian Express via Wikipedia; no Indian Express page was found. The 7/5 figure is The Wire, citing a CRPF report. Delhi Police records say two rounds (separate fact).",
+          "links": [
+            {
+              "source_id": "thewire",
+              "url": "https://thewire.in/rights/raf-personnel-fired-seven-pellet-gun-rounds-on-july-20-five-hit-protesters-crpf-report-finds",
+              "title": "RAF Fired Seven Pellet Gun Rounds on July 20, Five Hit Protesters, CRPF Report Finds",
+              "publisher": "The Wire",
+              "date": null,
+              "snippet": null,
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "nail-fitted batons (Alt News/BOOM verified)",
+          "claimant": "Alt News, BOOM",
+          "attribution": "reported",
+          "status": "disputed",
+          "source_ids": [
+            "wikipedia",
+            "altnews",
+            "boom"
+          ],
+          "page": 6,
+          "note": "Tactics table: 'Police denied; Alt News and BOOM found the videos authentic' (p13).",
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://www.altnews.in/baton-with-nails-videos-indeed-from-july-20-protests-delhi-police-pibs-fact-check-incorrect/",
+              "title": "Baton with nails videos indeed from July 20 protests; Delhi Police/PIB fact check incorrect",
+              "publisher": "Alt News",
+              "date": "2026-07-21",
+              "snippet": "conclusively prove that during the protest on July 20, a Delhi Police official was seen carrying a baton with nails",
+              "verified": true
+            },
+            {
+              "source_id": "altnews",
+              "url": "https://www.altnews.in/baton-with-nails-videos-indeed-from-july-20-protests-delhi-police-pibs-fact-check-incorrect/",
+              "title": "Baton-with-nails videos indeed from July 20 protests. Delhi Police, PIB's 'fact check' incorrect",
+              "publisher": "Alt News",
+              "date": "2026-07-21",
+              "snippet": "a Delhi Police official was seen carrying a baton with nails attached to it",
+              "verified": true
+            },
+            {
+              "source_id": "boom",
+              "url": "https://www.boomlive.in/fact-check/batons-with-nails-delhi-police-calls-real-cjp-protest-video-fake-denies-brutality-31904",
+              "title": "Batons With Nails: Delhi Police Calls Real CJP Protest Video 'Fake', Denies Brutality",
+              "publisher": "BOOM",
+              "date": "2026-07-22",
+              "snippet": "BOOM found that the video was recorded by UPSC aspirant Upendra Gaur during the July 20 protest",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "wikipedia: Wikipedia pages do not mention nail batons (not found). Primary: Alt News (fetched). BOOM also fetched: https://www.boomlive.in/fact-check/batons-with-nails-delhi-police-calls-real-cjp-protest-video-fake-denies-brutality-31904 (22 Jul 2026) - PARTIAL: BOOM confirmed video recorded at the 20 July protest by UPSC aspirant Upendra Gaur but says it does not establish who fitted nails or police use. Ledger 'Alt News and BOOM found the videos authentic' fits Alt News fully, BOOM only for authenticity of recording. Publisher field here is Alt News."
+          ]
+        },
+        {
+          "text": "A Delhi Police statement said more than 118 personnel were injured, including officers up to special commissioner rank and several women officers; the count later rose to 130+.",
+          "value": 118,
+          "value_text": "118+ (later 130+)",
+          "unit": "police injured",
+          "claimant": "Delhi Police",
+          "attribution": "police said",
+          "status": "disputed",
+          "source_ids": [
+            "theprint",
+            "wikipedia",
+            "india",
+            "pti"
+          ],
+          "page": 1,
+          "links": [
+            {
+              "source_id": "theprint",
+              "url": "https://theprint.in/india/118-police-personnel-injured-70-protesters-detained-as-cjp-protest-turns-violent-in-delhi/2991722/",
+              "title": "118 police personnel injured, 70 protesters detained as CJP protest turns violent in Delhi",
+              "publisher": "ThePrint",
+              "date": "2026-07-20",
+              "snippet": "more than 118 police personnel sustained injuries",
+              "verified": true
+            },
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#20_July",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "at least 118 personnel were hurt",
+              "verified": true
+            },
+            {
+              "source_id": "india",
+              "url": "https://www.india.com/news/india/cjp-chalo-sansad-march-violence-cockroach-janta-party-delhi-police-sonam-wangchuk-abhijeet-dipke-amit-shah-crpf-parliament-dharmendra-pradhan-neet-paper-leak-bharatiya-nyaya-sanhita-8479469/",
+              "title": "CJP Chalo Sansad March Violence: Over 118 Delhi Police personnel injured, public property damaged, legal action initiated",
+              "publisher": "India.com",
+              "date": "2026-07-21",
+              "snippet": "more than 118 police personnel sustained injuries",
+              "verified": true
+            },
+            {
+              "source_id": "pti",
+              "url": "https://telanganatoday.com/violent-cjp-protest-leaves-118-police-personnel-injured-70-detained",
+              "title": "Violent CJP protest leaves 118 police personnel injured, 70 detained",
+              "publisher": "PTI (via Telangana Today)",
+              "date": "2026-07-20",
+              "snippet": "including officers of the ranks of Special Commissioner of Police",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "theprint: PARTIAL: PTI dateline 20 Jul; Delhi Police statement says more than 118 personnel hurt incl. senior officers and several women officers. The 'later 130+' and 'special commissioner rank' wording not on this page (a search summary of ThePrint indicated special commissioner rank in the live blog https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/, not fetched). Original is PTI via ThePrint.",
+            "wikipedia: Wikipedia Timeline 20 July, ref 71: Times of India 'Over 70 detained; police claim 118 personnel hurt' https://timesofindia.indiatimes.com/city/delhi/over-70-detained-police-claim-118-personnel-hurt/articleshow/132522189.cms . PARTIAL: '130+' later count and 'special commissioner rank / women officers' not found in portion read; ToI headline confirms 'police claim 118'.",
+            "india: PARTIAL: 118+, special commissioner rank and women personnel confirmed; 'later rose to 130+' not in article. Assumes 'india' chip = India.com.",
+            "pti: PARTIAL: page confirms 'more than 118' injured incl. senior officers (Delhi Police statement, PTI). The later rise to 130+ is NOT on this page. PBS/AP copy says police put injuries at nearly 180 (118 security personnel + 60 protesters)."
+          ]
+        },
+        {
+          "text": "About 60 protesters were injured by police count.",
+          "value": 60,
+          "value_text": "~60",
+          "unit": "protesters injured",
+          "claimant": "Delhi Police",
+          "attribution": "police said",
+          "status": "disputed",
+          "source_ids": [
+            "theprint",
+            "pti"
+          ],
+          "page": 1,
+          "links": [
+            {
+              "source_id": "theprint",
+              "url": "https://theprint.in/india/118-police-personnel-injured-70-protesters-detained-as-cjp-protest-turns-violent-in-delhi/2991722/",
+              "title": "118 police personnel injured, 70 protesters detained as CJP protest turns violent in Delhi",
+              "publisher": "ThePrint",
+              "date": "2026-07-20",
+              "snippet": "around 60 protesters were also reported to get injured",
+              "verified": true
+            },
+            {
+              "source_id": "pti",
+              "url": "https://telanganatoday.com/violent-cjp-protest-leaves-118-police-personnel-injured-70-detained",
+              "title": "Violent CJP protest leaves 118 police personnel injured, 70 detained",
+              "publisher": "PTI (via Telangana Today)",
+              "date": "2026-07-20",
+              "snippet": "around 60 protesters were also reported to have been injured",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "around 100 injured people at RML Hospital’s emergency by 5.30 pm, including 10 police personnel, with 4 protesters in the ICU",
+          "value": 100,
+          "value_text": "~100",
+          "unit": "injured at RML",
+          "claimant": "Newslaundry, citing Indian Express hospital sources",
+          "attribution": "reported",
+          "status": "disputed",
+          "source_ids": [
+            "newslaundry"
+          ],
+          "page": 1,
+          "note": "Dossier: includes 10 police, so it should not be read as '100+ protesters'.",
+          "links": [
+            {
+              "source_id": "newslaundry",
+              "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures",
+              "title": "Lathis, tear gas and injured protesters: The ‘Chalo Sansad’ crackdown in pictures",
+              "publisher": "Newslaundry",
+              "date": "2026-07-21",
+              "snippet": "Around 100 of them, including 10 police personnel, had been brought to Ram Manohar Lohia Hospital’s emergency by 5.30 pm.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "The CJP claims about 150 were hospitalised.",
+          "value": 150,
+          "value_text": "~150",
+          "unit": "protesters hospitalised",
+          "claimant": "CJP",
+          "attribution": "CJP claims",
+          "status": "disputed",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 1,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#20_July",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "around 150 protesters were hospitalised and roughly 70 were detained",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "about 70 detained; police later denied detaining anyone",
+          "value": 70,
+          "value_text": "~70",
+          "unit": "detained",
+          "claimant": "Delhi Police (PTI) / CJP",
+          "attribution": "reported; police later denied",
+          "status": "disputed",
+          "source_ids": [
+            "theprint",
+            "pti",
+            "telanganatoday",
+            "wikipedia"
+          ],
+          "page": 19,
+          "note": "The dossier contradicts itself on who gave the ~70 (p2: CJP; p21: police; p19 table: both). Vali, 2026-11-11: keep 'Delhi Police (PTI) / CJP'.",
+          "links": [
+            {
+              "source_id": "theprint",
+              "url": "https://theprint.in/india/118-police-personnel-injured-70-protesters-detained-as-cjp-protest-turns-violent-in-delhi/2991722/",
+              "title": "118 police personnel injured, 70 protesters detained as CJP protest turns violent in Delhi",
+              "publisher": "ThePrint",
+              "date": "2026-07-20",
+              "snippet": "around 70 protesters have been detained",
+              "verified": true
+            },
+            {
+              "source_id": "pti",
+              "url": "https://telanganatoday.com/violent-cjp-protest-leaves-118-police-personnel-injured-70-detained",
+              "title": "Violent CJP protest leaves 118 police personnel injured, 70 detained",
+              "publisher": "PTI (via Telangana Today)",
+              "date": "2026-07-20",
+              "snippet": "Around 70 protesters have been detained.",
+              "verified": true
+            },
+            {
+              "source_id": "telanganatoday",
+              "url": "https://telanganatoday.com/violent-cjp-protest-leaves-118-police-personnel-injured-70-detained",
+              "title": "Violent CJP protest leaves 118 police personnel injured, 70 detained",
+              "publisher": "Telangana Today",
+              "date": "2026-07-20",
+              "snippet": "Around 70 protesters have been detained.",
+              "verified": true
+            },
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#20_July",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "around 150 protesters were hospitalised and roughly 70 were detained",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "theprint: PARTIAL: page attributes ~70 to the Delhi Police statement (PTI), consistent with the p21 reading, not 'CJP said'. 'Police later denied detaining anyone' is NOT on this page (a live-blog report noted police denials of an early lathi-charge/detention report). Cannot confirm the denial.",
+            "wikipedia: Wikipedia ref 77 (NYT) for ~70; ToI headline 'Over 70 detained' (ref 71) and ET https://economictimes.indiatimes.com/news/india/delhi-police-detains-70-cjp-protesters-alleges-violent-unruly-conduct/articleshow/132520853.cms (ref 73) attribute detention to Delhi Police. PARTIAL: 'police later denied detaining anyone' not found on Wikipedia in portion read."
+          ]
+        },
+        {
+          "text": "5,000+ personnel and 25+ CAPF battalions (India.com)",
+          "value": 5000,
+          "value_text": "5,000+ plus 25+ CAPF battalions",
+          "unit": "personnel",
+          "claimant": "India.com",
+          "attribution": "reported",
+          "status": "claimed",
+          "source_ids": [
+            "india"
+          ],
+          "page": 6,
+          "links": [
+            {
+              "source_id": "india",
+              "url": "https://www.india.com/news/india/chalo-sansad-march-delhi-security-home-miinistry-delhi-police-parliament-monsoon-session-cjp-protest-cockroach-janta-party-sachin-sharma-sonam-wangchuk-abhijeet-dipke-dharmendra-pradhan-ne-8478659/",
+              "title": "Chalo Sansad March: Delhi Police on HIGH ALERT ahead of Cockroach Janta Party's March to Parliament, deploys over 5000 security personnel",
+              "publisher": "India.com",
+              "date": "2026-07-20",
+              "snippet": "over 5,000 personnel from the Delhi Police and paramilitary forces ... over 25 battalions of the Central Armed Police Forces (CAPF)",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "internet suspended",
+          "claimant": "media",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 6,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Sansad_Chalo_March",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "Internet services were also shut down in the vicinity of the Parliament",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "stage and tents dismantled",
+          "claimant": "media",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 6,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#20_July",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "after police cleared the stage and tents during Monday's demonstrations",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "Delhi Police records show two rounds of pellets were used on 20 July",
+          "value": 2,
+          "unit": "pellet rounds",
+          "claimant": "Delhi Police records (via Hindustan Times, The Tribune)",
+          "attribution": "police said",
+          "status": "disputed",
+          "source_ids": [
+            "wikipedia",
+            "tribuneindia"
+          ],
+          "page": 13,
+          "resolution": "Added by the 2026-11-12 web check (Vali: primary source wins). Contests the CRPF report's seven rounds.",
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Delhi_Police_response",
+              "title": null,
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "recorded the use of two rounds of pellets on 20 July",
+              "verified": true
+            },
+            {
+              "source_id": "tribuneindia",
+              "url": "https://www.tribuneindia.com/news/delhi/raf-fired-pellet-gun-on-order-of-dcp-at-cjp-protest-general-diary-details-reveal/",
+              "title": null,
+              "publisher": "The Tribune",
+              "date": null,
+              "snippet": null,
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        }
+      ],
+      "people": [
+        {
+          "name": "Abhijeet Dipke",
+          "role": "Founder of the CJP; a Boston University-trained communications strategist",
+          "image": {
+            "src": "media/people/abhijeet-dipke.jpg",
+            "credit": "Screenshot from LetsUpp Marathi on YouTube, CC BY 4.0, via Wikimedia Commons",
+            "license": "CC BY 4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0",
+            "commons_page": "https://commons.wikimedia.org/wiki/File:Abhijeet_Dipke_during_an_interview_with_LetsUpp_Marathi_on_YouTube_(in_Marathi)_(3x4_cropped).jpg",
+            "license_ok": true
+          },
+          "source_ids": [
+            "dossier",
+            "wikipedia"
+          ],
+          "page": 1,
+          "note": "Role wording is from p1 (no chip); biography carries a Wikipedia chip on p2."
+        },
+        {
+          "name": "Saurav Das",
+          "role": "CJP co-convenor; one of the first three spokespeople",
+          "image": {
+            "src": "media/people/saurav-das.png",
+            "credit": "Screenshot from Teesta Setalvad on YouTube, CC BY 4.0, via Wikimedia Commons",
+            "license": "CC BY 4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0",
+            "commons_page": "https://commons.wikimedia.org/wiki/File:Saurav_Das_(political_activist)_on_podcast_with_Teesta_Setalvad.png",
+            "license_ok": true
+          },
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 3
+        },
+        {
+          "name": "Ashutosh Ranka",
+          "role": "CJP co-convenor; one of the first three spokespeople",
+          "image": {
+            "src": "media/people/Ashutosh_Ranka.png",
+            "credit": "Wikigama (uploaded 31 Jul 2026), CC BY-SA 4.0",
+            "license": "CC BY-SA 4.0 (Wikigama site default; the file page states no licence)",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "commons_page": "https://wikigama.org/wiki/File:Ashutosh_Ranka.png",
+            "license_ok": "caution: site-default licence; photographer unknown"
+          },
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 3
+        },
+        {
+          "name": "J.P. Nadda",
+          "role": "Government negotiator",
+          "image": {
+            "src": "media/people/jp-nadda.jpg",
+            "credit": "Ministry of Health and Family Welfare / Press Information Bureau, Government of India (GODL-India), via Wikimedia Commons",
+            "license": "GODL-India (Government Open Data License - India)",
+            "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+            "commons_page": "https://commons.wikimedia.org/wiki/File:Jagat_Prakash_Nadda_in_2026.jpg",
+            "license_ok": true
+          },
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 14
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "media/cjp-public-images/jantar-mantar_parliament-march_2026-07-20_01.jpg",
+          "caption": "Students from All Over India protesting against 2026 NEET UG paper leak place  Jantar Mantar on  20 July  2026 ahead of Parliament March",
+          "credit": "Photo: Sumita Roy Dutta / Wikimedia Commons / CC BY-SA 4.0",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "commons_page": "https://commons.wikimedia.org/wiki/File:Students_from_All_Over_India_protesting_against_2026_NEET_UG_paper_leak_place_Jantar_Mantar_on_20_July_2026_ahead_of_Parliament_March_01.jpg",
+          "date": "2026-07-20 07:35:37",
+          "identifiable_faces": "Yes",
+          "source_ids": [],
+          "note": "Morning gathering, 07:35. Shows the gathering, not the later clashes."
+        },
+        {
+          "type": "image",
+          "src": "media/cjp-public-images/jantar-mantar_parliament-march_2026-07-20_11.jpg",
+          "caption": "Students from All Over India protesting against 2026 NEET UG paper leak place  Jantar Mantar on  20 July  2026 ahead of Parliament March",
+          "credit": "Photo: Sumita Roy Dutta / Wikimedia Commons / CC BY-SA 4.0",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "commons_page": "https://commons.wikimedia.org/wiki/File:Students_from_All_Over_India_protesting_against_2026_NEET_UG_paper_leak_place_Jantar_Mantar_on_20_July_2026_ahead_of_Parliament_March_11.jpg",
+          "date": "2026-07-20 07:41:28",
+          "identifiable_faces": "Yes",
+          "source_ids": [],
+          "note": "Morning gathering, 07:41."
+        },
+        {
+          "type": "youtube",
+          "youtube_id": "s90eK_FSVAk",
+          "caption": "Abhijeet Dipke Ended Hunger Strike : अभिजीत दीपके ने तोड़ा अनशन | Jantar Mantar | CJP  Protest",
+          "credit": "YouTube: Dainik Jagran - दैनिक जागरण",
+          "upload_date": "2026-07-20",
+          "channel": "Dainik Jagran - दैनिक जागरण",
+          "source_type": "news",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        },
+        {
+          "type": "youtube",
+          "youtube_id": "TTax40AT7hQ",
+          "caption": "दिल्ली में प्रोटेस्ट पर क्या बोले चिराग ? #cjp #delhi #news #viral #shorts",
+          "credit": "YouTube: JanWire",
+          "upload_date": "2026-07-21",
+          "channel": "JanWire",
+          "source_type": "news",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        },
+        {
+          "type": "youtube",
+          "youtube_id": "eAmtVu_Sqhk",
+          "caption": "CJP Protest was funded by Pakistan?😳 #cjp #delhi #shorts",
+          "credit": "YouTube: Yasir Pathaan",
+          "upload_date": "2026-07-21",
+          "channel": "Yasir Pathaan",
+          "source_type": "citizen",
+          "cw": [],
+          "source_ids": [
+            "timeline_clips"
+          ],
+          "review": "pending"
+        }
+      ],
+      "sub_beats": [
+        {
+          "id": "pa_0720",
+          "date": "2026-07-20",
+          "title": "The march and the crackdown",
+          "site_ids": [
+            "jantar_mantar_road",
+            "parliament",
+            "mandi_house",
+            "parliament_street",
+            "patel_chowk",
+            "rail_bhawan",
+            "constitution_club",
+            "shastri_bhawan",
+            "palika_bazar",
+            "gurdwara_bangla_sahib",
+            "rml_hospital"
+          ],
+          "crowd_tier": 4,
+          "crowd_basis": "'More than 10,000' / 'tens of thousands'",
+          "hunger_strike_day": 23,
+          "facts": [
+            {
+              "text": "Medico-legal cases at RML by 7pm",
+              "value": 65,
+              "unit": "medico-legal cases",
+              "claimant": "Hospital via media",
+              "attribution": "reported",
+              "status": "claimed",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 19,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#20_July",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "Ram Manohar Lohia Hospital alone recorded 65 medico-legal cases",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "Government vehicles damaged",
+              "value_text": "15–20",
+              "unit": "vehicles",
+              "claimant": "Delhi Police (official)",
+              "attribution": "police said",
+              "status": "claimed",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 19,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#20_July",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "between 15–20 government vehicles were damaged during the protests",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "Metro stations closed",
+              "value": 5,
+              "unit": "stations",
+              "claimant": "DMRC",
+              "attribution": "officials said",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 19,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Sansad_Chalo_March",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "closed five metro stations",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "Flashpoints on 20 July: Mandi House → Parliament Street, Patel Chowk, Rail Bhawan, Constitution Club, Shastri Bhavan, Palika Bazar (pellet injuries), Gurdwara Bangla Sahib (refuge), RML Hospital (injured).",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "imnindia",
+                "wikipedia"
+              ],
+              "page": 15,
+              "links": [
+                {
+                  "source_id": "imnindia",
+                  "url": null,
+                  "title": "",
+                  "publisher": "IMN India",
+                  "date": null,
+                  "snippet": "",
+                  "verified": false
+                },
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Sansad_Chalo_March",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "became a refuge for several such students and protesters fleeing batons and teargas",
+                  "verified": true
+                }
+              ],
+              "web_check": "unconfirmed",
+              "web_notes": [
+                "imnindia: Not found; no imnindia.com results from search. Wikipedia 'Sansad Chalo march' https://en.wikipedia.org/wiki/Sansad_Chalo_march carries a flashpoint table (Palika Bazar injuries etc.) but is not the outlet.",
+                "wikipedia: PARTIAL: Wikipedia confirms Gurdwara refuge (refs 67/68), Constitution Club (ref 143), Parliament Street, Patel Chowk, RML (65 cases). Not found in portion read: Shastri Bhavan, Palika Bazar, Rail Bhawan, Mandi House route. Full list likely not in one article."
+              ]
+            },
+            {
+              "text": "A Newslaundry investigation found the truck had been in police custody since 16 July; police confirmed this but called conspiracy claims baseless.",
+              "claimant": "Newslaundry; Delhi Police",
+              "attribution": "reported",
+              "status": "disputed",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 2,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://www.newslaundry.com/2026/07/28/from-accident-to-malkhana-to-protest-site-tracing-the-mysterious-stone-laden-truck",
+                  "title": "A truck full of stones appeared near the CJP protest. We found out how",
+                  "publisher": "Newslaundry",
+                  "date": "2026-07-28",
+                  "snippet": "police called any claim linking the vehicle to a conspiracy against protesters 'completely baseless' (update 29 Jul)",
+                  "verified": true
+                }
+              ],
+              "web_check": "partial",
+              "web_notes": [
+                "wikipedia: PARTIAL: Newslaundry (fetched) confirms seized 16 July after crash, held at Parliament Street station malkhana; police 'moved to a secure location'; 'completely baseless'. Page did not explicitly show police confirming 16 July custody; police acknowledgment is in the 29 Jul follow-up https://newslaundry.com/2026/07/29/delhi-police-owns-the-stone-laden-truck-after-nl-report-but-their-lawyer-linked-it-to-protesters-in-hc and ThePrint https://theprint.in/india/delhi-police-rejects-cjps-mystery-truck-conspiracy-claim-says-vehicle-was-seized-in-accident-case/2999503/ (search results only). Not on Wikipedia pages read."
+              ]
+            }
+          ],
+          "media": []
+        },
+        {
+          "id": "pa_0721",
+          "date": "2026-07-21",
+          "title": "The camp is rebuilt",
+          "site_ids": [
+            "jantar_mantar_road",
+            "metro_udyog_bhawan",
+            "metro_central_secretariat",
+            "metro_patel_chowk",
+            "metro_janpath",
+            "metro_rajiv_chowk"
+          ],
+          "crowd_tier": null,
+          "crowd_basis": "No count reported; carry the previous tier.",
+          "hunger_strike_day": 24,
+          "facts": [
+            {
+              "text": "Protesters rebuild the camp in the rain; Delhi HC orders Wangchuk moved to Medanta, Gurugram; Rahul Gandhi, Kharge and other MPs protest outside the PM’s residence; Rahul Gandhi is detained",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia",
+                "pbs",
+                "theprint_0721"
+              ],
+              "page": 6,
+              "resolution": "Vali 2026-11-12: primary source wins. Wikipedia says Kharge led the protest but doesn't report him detained; Rahul Gandhi's detention is on p14.",
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#21_July",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "shifted immediately from Safdarjung hospital to Medanta Hospital in Gurugram",
+                  "verified": true
+                },
+                {
+                  "source_id": "pbs",
+                  "url": "https://www.pbs.org/newshour/world/indias-youth-led-cockroach-movement-vows-to-continue-protest-after-police-crackdown",
+                  "title": "India's youth-led Cockroach movement vows to continue protest after police crackdown",
+                  "publisher": "PBS",
+                  "date": "2026-07-21",
+                  "snippet": "dozens of his Congress party lawmakers showed their support Tuesday with a sit-in outside Modi's residence before police forcibly removed them",
+                  "verified": true
+                }
+              ],
+              "web_check": "partial",
+              "web_notes": [
+                "wikipedia: Wikipedia Timeline 21 July: Medanta (ref 84 The Hindu https://www.thehindu.com/news/national/delhi-high-court-allows-sonam-wangchuk-to-shift-to-private-hospital/article71248605.ece); rebuild camp (ref 35 ThePrint); Rahul Gandhi detained (refs 85 NIE live, 86 Al Jazeera https://www.aljazeera.com/news/2026/7/22/india-opposition-leader-gandhi-freed-after-detention-at-student-led-protest). PARTIAL: Kharge is described as leading the protest; Wikipedia does not say he was detained (text read). 'In the rain' not confirmed.",
+                "pbs: PARTIAL: PBS (AP copy) supports only the Rahul Gandhi/Congress MPs sit-in outside PM residence and forcible removal. Does NOT mention camp rebuilt in rain, Delhi HC / Medanta, Kharge, or the word 'detained' (says Wangchuk 'forcibly taken to a hospital by police'). Original is AP (apnews.com/article/india-cockroach-party-protest-dc9d61bf27f26510c0bd427f4d889699). Rebuild-in-rain is at ThePrint (theprint.in/india/rain-rubble-resolve-cjp-protesters-rebuild-tattered-camps-in-jantar-mantar-after-police-action/2991760/) and Medanta order at The Hindu per Wikipedia refs (neither fetched)."
+              ]
+            },
+            {
+              "text": "20 CRPF companies airlifted from Kolkata (MHA order)",
+              "value": 20,
+              "unit": "CRPF companies",
+              "claimant": "MHA (official)",
+              "attribution": "officials said",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 6,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#22_July",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "20 Central Reserve Police Force (CRPF) companies were airlifted from Kolkata",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "16 then 17 metro stations closed",
+              "value": 17,
+              "unit": "stations",
+              "claimant": "DMRC",
+              "attribution": "officials said",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 6,
+              "note": "Consolidated table dates the 17 to 22 Jul (p19).",
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#22_July",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "temporarily closed down 16 metro stations / 17 metro stations across Delhi would remain closed until further notice",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "ASG S.V. Raju tells Delhi HC that videos show stone-throwing; HC declines urgent hearing (“Don’t drag us into it”)",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 7,
+              "resolution": "Vali 2026-11-12: primary source wins. Dossier dated this 22 Jul; Wikipedia's timeline has it on 21 Jul (original, The Hindu, not fetched).",
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Litigation_and_investigations",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "Additional Solicitor General S.V. Raju submitted that the section of the protests had turned violent",
+                  "verified": true
+                }
+              ],
+              "web_check": "resolved",
+              "web_notes": [
+                "wikipedia: Wikipedia ref 158 The Hindu https://www.thehindu.com/news/cities/Delhi/delhi-hc-seeks-centre-police-response-on-pleas-alleging-excessive-force-during-july-20-cjp-protest-march/article71253106.ece ; 'Don't drag us into it.' (ref 90) is in Timeline 21 July, so Wikipedia dates it 21 July, not 22 July. Ledger date 22 Jul may be a CONTRADICTION (Wikipedia: 21 July) - unverified against original."
+              ]
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "media/cjp-public-images/jantar-mantar_evening_2026-07-21.jpg",
+              "caption": "Protest at Jantar Mantar, Delhi.",
+              "credit": "Photo: Alnitak-Alnilam-Mintaka / Wikimedia Commons / CC BY-SA 4.0",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+              "commons_page": "https://commons.wikimedia.org/wiki/File:Evening_at_Jantar_Mantar_Protest_21st_July_2026.jpg",
+              "date": "2026-07-21 18:14:17",
+              "identifiable_faces": "Yes (backs mostly)",
+              "source_ids": []
+            },
+            {
+              "type": "image",
+              "src": "media/cjp-public-images/jantar-mantar_crowd-night_2026-07-21.jpg",
+              "caption": "Jantar Mantar Protest, Delhi.",
+              "credit": "Photo: Alnitak-Alnilam-Mintaka / Wikimedia Commons / CC BY-SA 4.0",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+              "commons_page": "https://commons.wikimedia.org/wiki/File:Jantar_Mantar_Protest.jpg",
+              "date": "2026-07-21 19:34:12",
+              "identifiable_faces": "Yes",
+              "source_ids": []
+            }
+          ]
+        },
+        {
+          "id": "pa_0722",
+          "date": "2026-07-22",
+          "title": "In court and in Parliament",
+          "site_ids": [
+            "jantar_mantar_road",
+            "parliament"
+          ],
+          "crowd_tier": null,
+          "crowd_basis": null,
+          "hunger_strike_day": 25,
+          "facts": [
+            {
+              "text": "about 65 opposition MPs write to Wangchuk",
+              "value": 65,
+              "value_text": "~65",
+              "unit": "MPs",
+              "claimant": "ThePrint (via Wikipedia)",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "theprint",
+                "wikipedia"
+              ],
+              "page": 7,
+              "links": [
+                {
+                  "source_id": "theprint",
+                  "url": "https://theprint.in/india/wangchuk-agrees-to-end-hunger-strike-if-govt-assures-it-wont-take-punitive-action-against-protesters/2993729/",
+                  "title": "Wangchuk agrees to end hunger strike if govt assures it won't take punitive action against protesters",
+                  "publisher": "ThePrint",
+                  "date": "2026-07-22",
+                  "snippet": "Wangchuk thanked all 65 MPs",
+                  "verified": true
+                },
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#22_July",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "separately wrote to Wangchuk asking him to withdraw his fast",
+                  "verified": true
+                }
+              ],
+              "web_check": "partial",
+              "web_notes": [
+                "wikipedia: Wikipedia ref 99 ThePrint https://theprint.in/india/wangchuk-agrees-to-end-hunger-strike-if-govt-assures-it-wont-take-punitive-action-against-protesters/2993729/ . PARTIAL: '~65' MPs figure not seen in the snippet."
+              ]
+            },
+            {
+              "text": "2 ACPs and 4 other personnel reported hurt by stones",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "unverified",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 7,
+              "resolution": "Wikipedia's source (Deccan Chronicle) headline mentions one ACP; body not checked. Unverified until checked.",
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#22_July",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "four other police personnel were reported to have been injured",
+                  "verified": true
+                }
+              ],
+              "web_check": "resolved",
+              "web_notes": [
+                "wikipedia: Wikipedia ref 100 Deccan Chronicle https://www.deccanchronicle.com/nation/current-affairs/delhi-acp-suffers-head-injury-in-jantar-mantar-stone-pelting-incident-1973220 . PARTIAL: '2 ACPs' count not confirmed (title says 'Delhi ACP' singular) - possible CONTRADICTION, unchecked."
+              ]
+            }
+          ],
+          "media": []
+        },
+        {
+          "id": "pa_0723",
+          "date": "2026-07-23",
+          "title": "Wangchuk ends his fast",
+          "site_ids": [
+            "jantar_mantar_road"
+          ],
+          "crowd_tier": null,
+          "crowd_basis": null,
+          "hunger_strike_day": 26,
+          "facts": [
+            {
+              "text": "Wangchuk ends his fast after 26 days in the presence of Nadda and Jitendra Singh after assurances (cases withdrawn, compensation, debate on leaks)",
+              "value": 26,
+              "value_text": "night of 23–24 Jul",
+              "unit": "days",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "scroll_0724",
+                "outlook_0724",
+                "dtnext_0724",
+                "wikipedia"
+              ],
+              "page": 7,
+              "note": "Day-by-day row cites no outlet; 'Written assurances to Wangchuk (23 July)' carries a Wikipedia chip (p12). Duration also in the table: NBC, 25 Jul (p19).",
+              "resolution": "Wangchuk research 2026-11-12 (public Indian outlets; Vali: primary source wins). Scroll, TNM, Outlook and PTI put the end shortly after midnight on Friday 24 Jul; The Week says Thursday night. 'Written' dropped: Outlook and The Week say written, while Scroll, TNM and PTI say the assurances were read out. He had sought a written assurance on 22 Jul (FPJ).",
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#23_July",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "Sonam Wangchuk broke his fast after 26 days",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "Parliament adjourned for a 4th day",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 7,
+              "resolution": "Vali 2026-11-12: primary source wins. Dossier dated this 22 Jul; Wikipedia has 23 Jul.",
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#23_July",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "fourth consecutive day of disruption since the Monsoon session began",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "Minister Jitendra Singh says 4 talk proposals sent since 22 Jul",
+              "value": 4,
+              "unit": "talk proposals",
+              "claimant": "Jitendra Singh",
+              "attribution": "said",
+              "status": "claimed",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 7,
+              "resolution": "Vali 2026-11-12: primary source wins. Dossier dated this 22 Jul; Wikipedia has 23 Jul.",
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#23_July",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "it had sent four proposals since 22 July",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "Dipke vows to continue; MEA “no information” on foreign funding; PM announces fast-track courts",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "dossier"
+              ],
+              "page": 7,
+              "note": "Dossier row cites no outlet."
+            }
+          ],
+          "media": []
+        },
+        {
+          "id": "pa_0724",
+          "date": "2026-07-24",
+          "title": "Holding on",
+          "site_ids": [
+            "jantar_mantar_road",
+            "metro_udyog_bhawan",
+            "metro_central_secretariat",
+            "metro_patel_chowk",
+            "metro_janpath",
+            "metro_rajiv_chowk"
+          ],
+          "crowd_tier": null,
+          "crowd_basis": null,
+          "hunger_strike_day": null,
+          "facts": [
+            {
+              "text": "Government source: resigning “equates to running away”",
+              "claimant": "a government source",
+              "attribution": "reported",
+              "status": "claimed",
+              "source_ids": [
+                "christiandaily"
+              ],
+              "page": 7,
+              "links": [
+                {
+                  "source_id": "christiandaily",
+                  "url": "https://www.christiandaily.com/news/indias-cockroach-protests-education-minister-resigns-the-government-is-still-deciding-how-to-lose",
+                  "title": "India's Cockroach protests: Education minister resigns. The government is still deciding how to lose.",
+                  "publisher": "Christian Daily",
+                  "date": "2026-07-26",
+                  "snippet": "equates to running away, and running away is not a solution.",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "Protest continues; Kolkata solidarity march",
+              "claimant": "media",
+              "attribution": "reported",
+              "status": "documented",
+              "source_ids": [
+                "altnews"
+              ],
+              "page": 7,
+              "links": [
+                {
+                  "source_id": "altnews",
+                  "url": "https://www.altnews.in/jamatis-islamists-friday-people-bengal-cms-communal-script-behind-the-crackdown-on-cjp-protesters/",
+                  "title": "'Jamatis', 'Islamists', 'Friday people': Bengal CM's communal script behind the crackdown on CJP protesters",
+                  "publisher": "Alt News",
+                  "date": "2026-07-30",
+                  "snippet": "Kolkata witnessed a rally organised by several Left groups ... the resignation of Union education minister Dharmendra Pradhan.",
+                  "verified": true
+                }
+              ],
+              "web_check": "partial",
+              "web_notes": [
+                "altnews: PARTIAL: confirms 24 Jul Kolkata Sealdah-Esplanade march. 'Protest continues' not stated. Article is mostly about subsequent violence/arrests, so it is a weak match for a neutral 'solidarity march' beat."
+              ]
+            },
+            {
+              "text": "Checkpoints about 5 km out (Ranka alleges)",
+              "value": 5,
+              "unit": "km",
+              "claimant": "Ashutosh Ranka",
+              "attribution": "alleged",
+              "status": "alleged",
+              "source_ids": [
+                "outlookindia"
+              ],
+              "page": 7,
+              "links": [
+                {
+                  "source_id": "outlookindia",
+                  "url": "https://www.outlookindia.com/national/ground-report-cockroaches-won-how-a-seven-week-protest-at-jantar-mantar-forced-dharmendra-pradhans-exit",
+                  "title": "‘Cockroaches Won’: How A Seven-Week Protest At Jantar Mantar Forced Dharmendra Pradhan’s Exit",
+                  "publisher": "Outlook India",
+                  "date": "2026-07-25",
+                  "snippet": "checkpoints five kilometres out were stopping students",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            },
+            {
+              "text": "18 metro stations closed on 24 Jul",
+              "value": 18,
+              "unit": "stations",
+              "claimant": "DMRC",
+              "attribution": "officials said",
+              "status": "documented",
+              "source_ids": [
+                "wikipedia"
+              ],
+              "page": 7,
+              "links": [
+                {
+                  "source_id": "wikipedia",
+                  "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#24_July",
+                  "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+                  "publisher": "Wikipedia",
+                  "date": null,
+                  "snippet": "18 metro stations would remain closed on 24 July",
+                  "verified": true
+                }
+              ],
+              "web_check": "verified"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "media/cjp-public-images/solidarity_los-angeles_2026-07.jpg",
+              "caption": "Protest organized in Los Angeles by South Asian network in support of the Delhi Jantar Mantar protests in July 2026",
+              "credit": "Photo: Osparagus / Wikimedia Commons / CC BY-SA 4.0",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+              "commons_page": "https://commons.wikimedia.org/wiki/File:Protest_in_LA_to_support_Delhi_Jantar_Mantar_protests,_July_2026.jpg",
+              "date": "2019-07-24 10:00:01",
+              "identifiable_faces": "Partial",
+              "source_ids": [],
+              "note": "Los Angeles solidarity protest. EXIF says 2019-07-24; the banner in frame reads July 24, 2026."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "victory",
+      "order": 6,
+      "label": "Victory",
+      "date": "2026-07-25",
+      "date_window": {
+        "start": "2026-07-25",
+        "end": "2026-07-25"
+      },
+      "title": "Pradhan resigns",
+      "summary": {
+        "text": "Pradhan announces his resignation on X after talks with the CJP (NBC News), with a letter to “young friends”; joint press conference with Nadda and Singh; CJP calls off protest; site swept clean",
+        "source_ids": [
+          "nbcnews"
+        ],
+        "page": 7
+      },
+      "site_ids": [
+        "jantar_mantar_road"
+      ],
+      "crowd_tier": 2,
+      "crowd_basis": "'Hundreds' celebrating on site; 'Lakhs' galvanised overall (Outlook). Tier is the on-site figure. Spec S5 'largest roaches' refers to size (days elapsed), not count.",
+      "hunger_strike_day": null,
+      "route": null,
+      "media_mode": "kinetic_type",
+      "facts": [
+        {
+          "text": "Education Minister Dharmendra Pradhan resigned on 25 July",
+          "claimant": "media",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 1,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#25_July",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "Dharmendra Pradhan resigned.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "“Lakhs” galvanised overall (Outlook)",
+          "value_text": "Lakhs",
+          "claimant": "Outlook",
+          "attribution": "reported",
+          "status": "claimed",
+          "source_ids": [
+            "outlookindia"
+          ],
+          "page": 7,
+          "links": [
+            {
+              "source_id": "outlookindia",
+              "url": null,
+              "title": null,
+              "publisher": "Outlook India",
+              "date": null,
+              "snippet": null,
+              "verified": false
+            }
+          ],
+          "web_check": "unconfirmed",
+          "web_notes": [
+            "outlookindia: Not found. Fetched ground report, protest-ends live blog, called-off article, Joshi article: none say 'lakhs' galvanised. Searches found no Outlook text with it."
+          ]
+        },
+        {
+          "text": "“hundreds” celebrating on site",
+          "value_text": "hundreds",
+          "claimant": "dossier",
+          "attribution": "reported",
+          "status": "claimed",
+          "source_ids": [
+            "dossier"
+          ],
+          "page": 7,
+          "note": "Dossier row cites no outlet for this cell."
+        },
+        {
+          "text": "Police report a Special CP and 2 officers hurt by stones, followed by lathi charge and tear gas",
+          "claimant": "Delhi Police",
+          "attribution": "police said",
+          "status": "claimed",
+          "source_ids": [
+            "dossier"
+          ],
+          "page": 7,
+          "note": "Dossier row cites no outlet for this cell."
+        },
+        {
+          "text": "36 days (sit-in)",
+          "value": 36,
+          "unit": "days",
+          "claimant": "media",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "aljazeera",
+            "telanganatoday_0725"
+          ],
+          "page": 19,
+          "resolution": "Vali 2026-11-12: primary source wins. 36 is in Al Jazeera (25 Jul) and Telangana Today. The dossier's mixed attribution is corrected.",
+          "links": [
+            {
+              "source_id": "aljazeera",
+              "url": "https://www.aljazeera.com/features/2026/7/25/we-have-done-it-joy-as-cockroach-protests-push-india-minister-out",
+              "title": "'We have done it': Joy as 'Cockroach' protests push India minister out",
+              "publisher": "Al Jazeera",
+              "date": "2026-07-25",
+              "snippet": "36-day youth-led protests over exam leaks rattle PM Modi's government.",
+              "verified": true
+            },
+            {
+              "source_id": "telanganatoday_0725",
+              "url": "https://telanganatoday.com/jantar-mantar-falls-silent-after-36-day-neet-protest-ends-with-pradhans-resignation",
+              "title": null,
+              "publisher": "Telangana Today",
+              "date": "2026-07-25",
+              "snippet": "ended its 36-day protest",
+              "verified": true
+            }
+          ],
+          "web_check": "verified"
+        },
+        {
+          "text": "49 days (from 6 Jun)",
+          "value": 49,
+          "unit": "days",
+          "claimant": "media",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "christiandaily",
+            "wikipedia"
+          ],
+          "page": 19,
+          "resolution": "Vali 2026-11-12: primary source wins. 49 is in Christian Daily; the Wikipedia infobox gives 6 Jun – 25 Jul (1 month 19 days).",
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "(1 month and 19 days)",
+              "verified": false
+            },
+            {
+              "source_id": "christiandaily",
+              "url": "https://www.christiandaily.com/news/indias-cockroach-protests-education-minister-resigns-the-government-is-still-deciding-how-to-lose",
+              "title": "India's Cockroach protests: Education minister resigns. The government is still deciding how to lose.",
+              "publisher": "Christian Daily",
+              "date": "2026-07-26",
+              "snippet": "Forty-nine days after the movement's first, police-permitted march to Jantar Mantar",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "wikipedia: PARTIAL: Wikipedia infobox gives span 6 June-25 July as '1 month and 19 days' (~49 days by arithmetic) but no explicit '49 days' wording found in either Wikipedia page. Not verified for other cited outlets (Outlook, Al Jazeera, Christian Daily)."
+          ]
+        },
+        {
+          "text": "An agreement to withdraw cases in NDA-ruled states and pay “maximum compensation per the rules”.",
+          "claimant": "media",
+          "attribution": "reported",
+          "status": "unverified",
+          "source_ids": [
+            "wikipedia",
+            "christiandaily"
+          ],
+          "page": 12,
+          "resolution": "Web check 2026-11-12: Christian Daily says 'BJP-governed states' and 'honourable compensation' within existing rules; Moneylife says 'maximum possible compensation'. The quoted wording isn't confirmed in any source: don't quote it until checked.",
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#25_July",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "police cases filed against protesters would be withdrawn in all NDA-ruled states",
+              "verified": true
+            },
+            {
+              "source_id": "christiandaily",
+              "url": "https://www.christiandaily.com/news/indias-cockroach-protests-education-minister-resigns-the-government-is-still-deciding-how-to-lose",
+              "title": "India's Cockroach protests: Education minister resigns. The government is still deciding how to lose.",
+              "publisher": "Christian Daily International",
+              "date": "2026-07-26",
+              "snippet": "police complaints against demonstrators would be dropped in Delhi and in states governed by the BJP; 'honourable compensation' within existing rules",
+              "verified": false
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "christiandaily: PARTIAL: page says 'BJP-governed states' (not 'NDA-ruled') and 'honourable compensation' within existing rules; the ledger phrase 'maximum compensation per the rules' not found in fetched text (paraphrase of fetch tool, not verbatim). Moneylife says 'maximum possible compensation' (other outlet). Sister article 'half a deal' (Jul 24) https://www.christiandaily.com/news/india-s-cockroach-protests-they-wanted-one-resignation-they-got-tear-gas-a-hunger-strike-and-half-a-deal does not contain it. Dated 2026 on page."
+          ]
+        },
+        {
+          "text": "Outlook’s metadata names Pralhad Joshi as the new Education Minister.",
+          "claimant": "Outlook (metadata)",
+          "attribution": "reported",
+          "status": "claimed",
+          "source_ids": [
+            "outlookindia"
+          ],
+          "page": 12,
+          "note": "Web check 2026-11-12: Outlook reports Joshi took charge of Education as an additional charge (he keeps Consumer Affairs, Food and Public Distribution).",
+          "links": [
+            {
+              "source_id": "outlookindia",
+              "url": "https://www.outlookindia.com/national/with-full-dedication-humility-and-honesty-pralhad-joshi-takes-charge-of-education-ministry",
+              "title": "'With Full Dedication, Humility And Honesty': Pralhad Joshi Takes Charge Of Education Ministry",
+              "publisher": "Outlook India",
+              "date": "2026-07-26",
+              "snippet": "Pralhad Joshi has assumed additional charge of the Education Ministry after Dharmendra Pradhan resigned",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "outlookindia: PARTIAL: Joshi holds Education as ADDITIONAL charge (keeps Consumer Affairs, Food and Public Distribution). Ledger says 'new Education Minister' and 'Outlook metadata'; ground report only lists Joshi in tags. Other Outlook URLs (search-only): outlookindia.com/national/pralhad-joshi-takes-charge-as-education-minister-what-awaits-him-at-a-ministry-in-crisis"
+          ]
+        }
+      ],
+      "people": [
+        {
+          "name": "Dharmendra Pradhan",
+          "role": "Education Minister (resigned 25 July)",
+          "image": {
+            "src": "media/people/dharmendra-pradhan.jpg",
+            "credit": "Ministry of Education / Press Information Bureau, Government of India (GODL-India), via Wikimedia Commons",
+            "license": "GODL-India (Government Open Data License - India)",
+            "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+            "commons_page": "https://commons.wikimedia.org/wiki/File:Dharmendra_Pradhan,_Minister_of_Education.jpg",
+            "license_ok": true
+          },
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 1
+        },
+        {
+          "name": "J.P. Nadda",
+          "role": "Government negotiator",
+          "image": {
+            "src": "media/people/jp-nadda.jpg",
+            "credit": "Ministry of Health and Family Welfare / Press Information Bureau, Government of India (GODL-India), via Wikimedia Commons",
+            "license": "GODL-India (Government Open Data License - India)",
+            "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+            "commons_page": "https://commons.wikimedia.org/wiki/File:Jagat_Prakash_Nadda_in_2026.jpg",
+            "license_ok": true
+          },
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 14
+        },
+        {
+          "name": "Jitendra Singh",
+          "role": "Union minister; government negotiator",
+          "image": {
+            "src": "media/people/jitendra-singh.jpg",
+            "credit": "Ministry of Personnel, Public Grievances and Pensions / Press Information Bureau, Government of India (GODL-India), via Wikimedia Commons",
+            "license": "GODL-India (Government Open Data License - India)",
+            "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+            "commons_page": "https://commons.wikimedia.org/wiki/File:Shri_Jitendra_Singh_Minister_of_for_Personnel,_Public_Grievances_%26_Pensions.jpg",
+            "license_ok": true
+          },
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 14
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "media/cjp-public-images/jantar-mantar_kys-victory-march_2026-07-25.jpg",
+          "caption": "This is a photo of the Victory March held by KYS at Jantar-Mantar after Education Minister's resignation on July 25, 2026.",
+          "credit": "Photo: Hammer1848 / Wikimedia Commons / CC BY-SA 4.0",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "commons_page": "https://commons.wikimedia.org/wiki/File:KYS_Victory_March_Jantar_Mantar_Protests_2026.jpg",
+          "date": "2026-07-25",
+          "identifiable_faces": "Yes",
+          "source_ids": []
+        },
+        {
+          "type": "image",
+          "src": "media/cjp-public-images/cartoon_cockroach-atop-constitution_2026-07-25.jpg",
+          "caption": "Editorial cartoon depicting a giant cockroach atop the Constitution of India, created following the resignation of Union Education Minister Dharmendra Pradhan after sustained protests by the Gen Z–led Cockroach Janta Party (CJP).",
+          "credit": "Abhilash Thiru / Wikimedia Commons / CC0",
+          "license": "CC0",
+          "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "commons_page": "https://commons.wikimedia.org/wiki/File:Editorial_cartoon_depicting_a_giant_cockroach_atop_the_Constitution_of_India,_created_following_the_resignation_of_Union_Education_Minister_Dharmendra_Pradhan_after_sustained_protests_by_the_Gen_Z%E2%80%93led_Cockroach_Janta_Party_(CJP).jpg",
+          "date": "2026-07-25",
+          "identifiable_faces": "No",
+          "source_ids": [],
+          "note": "Editorial cartoon, not a photograph."
+        }
+      ],
+      "sub_beats": []
+    }
+  ]
+}

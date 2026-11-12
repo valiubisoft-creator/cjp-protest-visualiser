@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-theme="ink">
+<head>
+<meta charset="utf-8">
+<title>Cockroaches · F2 storyboard</title>
+<meta name="viewport" content="width=1280">
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="board.css">
+<link rel="stylesheet" href="storyboard.css">
+</head>
+<body>
+<div class="bar">
+  <h1>COCKROACHES · F2 storyboard</h1>
+  <nav id="nav"></nav>
+  <div class="theme" role="group" aria-label="Theme"><button data-t="ink">Ink</button><button data-t="paper">Paper</button></div>
+</div>
+<main id="sb">
+  <header class="sb-intro">
+    <p class="t-micro">Design gate · static key frames · 1440×900 each</p>
+    <p class="note">One frame per scene at its key <code>p</code>, drawn with the board's kit (halftone, verbatim <code>roach()</code>, base map, rail card, scrubber). Every string and number comes from <code>data/story</code>. Where the data has no text (S4 caption, S6.5 heading, S9 headline) the slot is left empty, per Vali. No motion: each frame is the state a scene must hit at that <code>p</code>.</p>
+  </header>
+  <div id="frames"></div>
+</main>
+<script type="module" src="storyboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+{
+  "title": "Cockroaches",
+  "title_source": "Vali, 2026-11-11",
+  "protest_start_date": "2026-06-06",
+  "finale_date": "2026-07-25",
+  "cji_quote": {
+    "text": "There are youngsters like cockroaches, who don't get any employment and don't have any place in profession. Some of them become media, some of them become social media, some of them become RTI activists, some of them become other activists, and they start attacking everyone.",
+    "speaker": "Surya Kant, Chief Justice of India",
+    "date": "2026-05-15",
+    "keyword": "cockroaches",
+    "source_id": "tnm_0516",
+    "source_ids": [
+      "tnm_0516"
+    ],
+    "source_status": "Vali confirmed the source wording 2026-11-12. Web check 2026-11-12: The News Minute (16 May, citing LiveLaw; free to read) prints 'in profession' where D7 had 'in the profession'; otherwise word for word. Free Press Journal and Scroll print a shorter variant; Bar and Bench paraphrases ('parasites in society') and must not be cited for the verbatim text.",
+    "d7_text_variant": "don't have any place in the profession",
+    "context_facts": [
+      {
+        "text": "A CJI Surya Kant–led bench, hearing a contempt plea about senior-advocate designation, compared some unemployed youth who turn to media, social media and RTI activism to “cockroaches” and “parasites”.",
+        "claimant": "media",
+        "attribution": "reported",
+        "status": "documented",
+        "source_ids": [
+          "dainikjagranmpcg"
+        ],
+        "page": 2,
+        "links": [
+          {
+            "source_id": "dainikjagranmpcg",
+            "url": "https://english.dainikjagranmpcg.com/politics/-cockroach-janta-party-vs-national-parasitic-front-viral-battle/article-19015",
+            "title": "Cockroach Janta Party vs National Parasitic Front: Viral battle",
+            "publisher": "Dainik Jagran MP/CG (English)",
+            "date": "2026-05-22",
+            "snippet": "CJI Surya Kant 'reportedly compared certain jobless youth to cockroaches and parasites'",
+            "verified": false
+          }
+        ],
+        "web_check": "partial",
+        "web_notes": [
+          "dainikjagranmpcg: PARTIAL: confirms the cockroaches/parasites remark; page does not mention the contempt plea about senior-advocate designation. A Jagran search summary (not fetched) said the remark came at a 15 May hearing. Treat as weak."
+        ]
+      },
+      {
+        "text": "Kant later said he had been misquoted and was referring to people with fake degrees.",
+        "claimant": "Surya Kant",
+        "attribution": "said",
+        "status": "documented",
+        "source_ids": [
+          "wikipedia",
+          "livelaw_0516"
+        ],
+        "page": 2,
+        "links": [
+          {
+            "source_id": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cockroach_Janta_Party#Background",
+            "title": "Cockroach Janta Party - Wikipedia",
+            "publisher": "Wikipedia",
+            "date": null,
+            "snippet": "his remarks had been misquoted and that he was specifically criticising individuals",
+            "verified": true
+          }
+        ],
+        "web_check": "verified"
+      },
+      {
+        "text": "“I am pained to read how a section of the media has misquoted my oral observations made during the hearing of a frivolous case yesterday. What I had specifically criticised were those who have entered professions like the Bar (legal profession) with the aid of fake and bogus degrees. Similar persons have sneaked into the media, social media, and other noble professions as well, and hence, they are like parasites,” ... “It is totally baseless to suggest that I criticised the youth of our nation. Not only am I proud of our present and future human resource, but every youth of India inspires me.”",
+        "claimant": "Surya Kant (statement)",
+        "attribution": "said",
+        "status": "documented",
+        "source_ids": [
+          "livelaw_0516"
+        ],
+        "page": 0,
+        "note": "Verbatim from LiveLaw, 16 May (read from the page HTML). The '...' is LiveLaw's own elision between two passages. page 0 = not from the dossier."
+      }
+    ]
+  },
+  "founder": {
+    "name": "Abhijeet Dipke",
+    "source_ids": [
+      "wikipedia"
+    ],
+    "founded": {
+      "text": "Abhijeet Dipke … launched the CJP …",
+      "value_text": "16 May 2026",
+      "claimant": "Wikipedia",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "page": 2,
+      "links": [
+        {
+          "source_id": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cockroach_Janta_Party#Formation",
+          "title": "Cockroach Janta Party - Wikipedia",
+          "publisher": "Wikipedia",
+          "date": null,
+          "snippet": "launched the 'Cockroach Janta Party' (CJP...) online on 16 May 2026 as a form of political satire",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "wikipedia: PARTIAL: Wikipedia says founded/launched online on 16 May 2026 (cite The Diplomat https://thediplomat.com/2026/06/cockroach-janta-party-is-the-modi-government-wary-of-a-gen-z-revolt/ ). 'from the US' NOT stated; Wikipedia says he graduated from Boston University and returned to India in June 2026 (BU https://www.bu.edu/com/articles/com-grad-turns-cockroach-insult-of-india-youth-into-massive-online-movement/ ) - consistent with being in the US but not explicit."
+      ]
+    },
+    "note": "Spelling is Abhijeet (D12). The labelled founder roach is a symbolic marker."
+  },
+  "finale": {
+    "date": "2026-07-25",
+    "headline": "Victory",
+    "line": "Education Minister Dharmendra Pradhan resigned on 25 July",
+    "source_ids": [
+      "wikipedia"
+    ],
+    "page": 1
+  },
+  "background_facts": [
+    {
+      "text": "NTA cancels NEET-UG (held 3 May); CBI probe ordered",
+      "value_text": "12 May",
+      "claimant": "media",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "businesstoday",
+        "indiatvnews"
+      ],
+      "page": 4,
+      "links": [
+        {
+          "source_id": "businesstoday",
+          "url": "https://www.businesstoday.in/education/exams/story/how-neet-ug-2026-paper-was-leaked-on-whatsapp-my-friend-sent-these-exam-now-cancelled-531004-2026-05-12",
+          "title": "How NEET UG 2026 paper was leaked on WhatsApp ... Exam now cancelled",
+          "publisher": "BusinessToday",
+          "date": "2026-05-12",
+          "snippet": "The National Testing Agency has officially pulled the plug on NEET-UG 2026, taken by more than 22 lakh students on May 3",
+          "verified": true
+        },
+        {
+          "source_id": "indiatvnews",
+          "url": "https://www.indiatvnews.com/education/news/neet-ug-2026-exam-cancelled-nta-2026-05-12-1040797",
+          "title": "NEET UG 2026 cancelled over paper leak allegations; Centre orders CBI probe",
+          "publisher": "India TV News",
+          "date": "2026-05-12",
+          "snippet": "NTA cancelled the NEET (UG) 2026 exam held on May 3 ... Government decided to refer the matter to the CBI",
+          "verified": false
+        }
+      ],
+      "web_check": "unconfirmed",
+      "web_notes": [
+        "businesstoday: PARTIAL: cancellation and 3 May date verified; CBI probe appears only in a linked headline ('NEET-UG 2026 cancelled! CBI probe ordered...'). Search: CBI registered case 12 May.",
+        "indiatvnews: Found via search; page not fetched (not tested) - snippet from search summary. 3 May exam, 12 May cancellation, CBI probe consistent."
+      ]
+    },
+    {
+      "text": "NEET-UG was cancelled on 12 May; the NTA notice, cited by Deccan Herald, said nearly 22.79 lakh candidates had taken the exam at 5,400+ centres, and ETV Bharat reported fee refunds of more than Rs 300 crore.",
+      "claimant": "NTA; ETV Bharat",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "deccanherald",
+        "etvbharat"
+      ],
+      "page": 1,
+      "links": [
+        {
+          "source_id": "deccanherald",
+          "url": "https://www.deccanherald.com/india/nta-cancels-neet-ug-2026-exam-held-on-may-3-after-paper-leak-centre-orders-cbi-probe-3999654",
+          "title": "NTA cancels NEET-UG 2026 exam held on May 3 after allegations of paper leak, Centre orders CBI probe",
+          "publisher": "Deccan Herald",
+          "date": "2026-05-12",
+          "snippet": "",
+          "verified": false
+        },
+        {
+          "source_id": "etvbharat",
+          "url": "https://www.etvbharat.com/en/bharat/neet-ug-2026-cancellation-after-paper-leak-nta-opens-refund-portal-for-over-22-lakh-candidates-enn26052301074",
+          "title": "NEET UG 2026 Cancellation After Paper Leak: NTA Opens Refund Portal For Over 22 Lakh Candidates",
+          "publisher": "ETV Bharat",
+          "date": "2026-05-23",
+          "snippet": "Around 22.79 lakh registered candidates are expected to receive refunds amounting to more than Rs 300 crore.",
+          "verified": true
+        }
+      ],
+      "web_check": "unconfirmed",
+      "web_notes": [
+        "deccanherald: Found via search; fetch 403. A search summary attributed '22.79 lakh candidates, 5,400+ centres' and cancellation on 12 May to Deccan Herald coverage (also https://www.deccanherald.com/education/explained-neet-ug-2026-re-exam-on-june-21-what-changes-what-stays-the-same-for-candidates-all-you-need-to-know-4003856). ETV Bharat half of the fact verified separately (id 136). Unverified for DH."
+      ]
+    }
+  ],
+  "handles": [
+    {
+      "platform": "Instagram",
+      "handle": "@cockroachjantaparty",
+      "url": "https://www.instagram.com/cockroachjantaparty/",
+      "official": "reported",
+      "show": true,
+      "note": "Business Today (22 Jul) calls the account official; restricted in India after a legal request.",
+      "source_ids": [
+        "businesstoday"
+      ]
+    },
+    {
+      "platform": "X",
+      "handle": "@Cockroachisback",
+      "url": "https://x.com/Cockroachisback",
+      "official": "self-declared + reported",
+      "show": true,
+      "note": "Replacement after the original was withheld on 21 May; bio says it is the only official account.",
+      "source_ids": [
+        "fpj_cockroachisback"
+      ]
+    }
+  ],
+  "handles_status": "Vali 2026-11-12: use Instagram and X (@Cockroachisback) only.",
+  "designer_credit": "Design and development: Vali Hashmi"
+}

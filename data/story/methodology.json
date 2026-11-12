@@ -1,0 +1,249 @@
+{
+  "statuses": {
+    "documented": "Recorded in an official document, or reported as fact by the outlets the dossier cites, with no competing account in the dossier.",
+    "claimed": "A figure or statement asserted by a named party (police, officials, the CJP, organisers, a single outlet) and not contested in the dossier.",
+    "alleged": "An accusation of wrongdoing that the dossier records as an allegation, not as established.",
+    "disputed": "The dossier records conflicting figures or accounts. Each side is kept as a separate fact or row.",
+    "unverified": "The dossier itself flags the item as unverified, single-sourced or without a credible source. Don't chart; show only with the flag."
+  },
+  "attribution": "Every fact keeps its claimant. On screen use the dossier's attribution words: 'police said', 'CJP claims', 'reported', 'alleged'. Never merge competing figures, never average them.",
+  "asterisk": "Every stat on screen carries an asterisk * that links to its footer entry: claimant, status and source(s). Footer entries are generated from source_ids; sources with url null are listed by outlet name only.",
+  "crowd_tiers": {
+    "basis": "D6: ordinal tiers at the builder's judgement, mapped to a roach count. Tiers encode reported descriptions, not headcounts.",
+    "tiers": [
+      {
+        "tier": 1,
+        "label": "dozens",
+        "roaches": 40,
+        "matches": "'a few dozen'"
+      },
+      {
+        "tier": 2,
+        "label": "hundreds",
+        "roaches": 120,
+        "matches": "'Hundreds', 'hundreds camping', 'hundreds celebrating'"
+      },
+      {
+        "tier": 3,
+        "label": "thousands",
+        "roaches": 250,
+        "matches": "'Thousands'"
+      },
+      {
+        "tier": 4,
+        "label": "ten thousand or more",
+        "roaches": 400,
+        "matches": "'More than 10,000', 'tens of thousands'"
+      }
+    ],
+    "null_rule": "crowd_tier null means no count reported: carry the previous tier and show 'no count reported'.",
+    "disputed_rule": "Where reports conflict, the tier uses the lower documented description and both reports appear as facts.",
+    "config_note": "These roach counts are defaults for roachEncoding; S5 may retune them. Spec S5 caps the largest node at about 400 (max 600)."
+  },
+  "roach_size": "Spec S5: roach size encodes days elapsed, not crowd size.",
+  "founder_roach": "The labelled founder roach is a symbolic marker for Abhijeet Dipke. It is not a position, a tracked person or a headcount.",
+  "videos": "D13: per node, k = 2–4 clips drawn with Python random.Random('F1:<node_id>') from data/timeline_clips.json clips sorted by id, filtered to the node's date_window (upload date converted to IST) and graphic == false. Every pick is tagged review: 'pending'. Upload date is not the filming date. Generator: docs/build/f1/build_story.py.",
+  "images": "Wikimedia Commons files in media/cjp-public-images, credited per license. Most protest photos show identifiable faces (see identifiable_faces); IMAGE_SOURCES.md advises considering blurring, and a blurred CC BY-SA image must stay CC BY-SA.",
+  "collection_dates": {
+    "dossier": "Not stated in the PDF. Its latest event is 7 Nov 2026 and it treats the HPEC report (due about a month after 5 Nov) as pending.",
+    "images": "2026-10-22 (IMAGE_SOURCES.md)",
+    "video_corpus": "2026-07-21T18:54:05Z (timeline_clips.json meta.generated_at)",
+    "ledger_built": "2026-11-11"
+  },
+  "caveats": [
+    {
+      "text": "Several figures rely on Wikipedia summaries of primary reports (The Hindu, Indian Express, BBC); verify against the originals before publishing.",
+      "claimant": "dossier",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "dossier"
+      ],
+      "page": 22
+    },
+    {
+      "text": "No official Delhi Police deployment figures were found for 6 June beyond secondary summaries, and none for barricade layers on any date.",
+      "claimant": "dossier",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "dossier"
+      ],
+      "page": 22
+    },
+    {
+      "text": "No hashtag-trend analytics or platform-verified reach data exist in the sources found.",
+      "claimant": "dossier",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "dossier"
+      ],
+      "page": 22
+    },
+    {
+      "text": "The HPEC’s findings are not yet public; its first report was due about one month after 5 November.",
+      "claimant": "dossier",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "barandbench"
+      ],
+      "page": 22
+    },
+    {
+      "text": "Some outlets (Organiser; Zee figures taken from a TV programme; Countercurrents op-ed) have clear editorial positions; they are labelled accordingly.",
+      "claimant": "dossier",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "dossier"
+      ],
+      "page": 22
+    },
+    {
+      "text": "One outlet (Christian Daily) misdates the resignation to 2025; disregard.",
+      "claimant": "dossier",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "christiandaily"
+      ],
+      "page": 22
+    },
+    {
+      "text": "Wikipedia’s infobox marks the outcome “successful” and lists a 2026 amendment act; several entries carry “failed verification” tags.",
+      "claimant": "dossier",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "page": 22
+    },
+    {
+      "text": "PM-announced fast-track courts and a stricter paper-leak law. The Wikipedia infobox lists a Public Examinations (Prevention of Unfair Means) Amendment Act, 2026; independent confirmation is needed.",
+      "claimant": "dossier",
+      "attribution": "reported",
+      "status": "unverified",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "page": 12
+    }
+  ],
+  "disputed_claims": [
+    {
+      "text": "20 July violence: police say stone-pelting came first; protesters and CJP videos say police threw stones or charged peaceful crowds. The ASG cited the “stone truck”, which Newslaundry showed was in police custody.",
+      "claimant": "police / CJP",
+      "attribution": "disputed",
+      "status": "disputed",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "page": 21
+    },
+    {
+      "text": "20 July detentions: police said about 70, then denied any detentions.",
+      "claimant": "Delhi Police",
+      "attribution": "police said",
+      "status": "disputed",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "page": 21
+    },
+    {
+      "text": "Injury counts: police 118 → 130+ vs. protesters about 60 (police) and about 150 (CJP). The RML figure of about 100 (Newslaundry, citing Indian Express hospital sources) includes 10 police, so it should not be read as “100+ protesters”.",
+      "claimant": "various",
+      "attribution": "disputed",
+      "status": "disputed",
+      "source_ids": [
+        "dossier"
+      ],
+      "page": 21,
+      "note": "An Indian Express headline ('More than 100 CJP protesters at RML emergency') conflicts with this caveat, but the article is paywalled, so it is kept out (Vali, 2026-11-12)."
+    },
+    {
+      "text": "Crowd sizes: “tens of thousands” vs. “more than 10,000”. No sourced figure was found for a CJP claim of about 20,000 before 20 July, or for 1,000–2,000 police personnel; mark as unverified if used.",
+      "claimant": "various",
+      "attribution": "disputed",
+      "status": "disputed",
+      "source_ids": [
+        "dossier"
+      ],
+      "page": 21
+    },
+    {
+      "text": "X follower counts: about 90,000 (at blocking), 165,500 (BusinessToday, 21 May) and about 200,000 (BBC) conflict.",
+      "claimant": "various",
+      "attribution": "disputed",
+      "status": "disputed",
+      "source_ids": [
+        "dossier"
+      ],
+      "page": 21
+    },
+    {
+      "text": "10 October detentions and deployments: they vary by a factor of about 7.",
+      "claimant": "various",
+      "attribution": "disputed",
+      "status": "disputed",
+      "source_ids": [
+        "aljazeera",
+        "india"
+      ],
+      "page": 21
+    },
+    {
+      "text": "Foreign funding: alleged by Jitendra Singh; MEA said it had “no information”; the CJP denies it.",
+      "claimant": "Jitendra Singh / MEA / CJP",
+      "attribution": "alleged",
+      "status": "disputed",
+      "source_ids": [
+        "wikipedia",
+        "theweek"
+      ],
+      "page": 21
+    },
+    {
+      "text": "Vijeta Dahiya’s removal as spokesperson (reportedly for a fast-food break during the clashes): a single Wikipedia-sourced claim; treat as unverified.",
+      "claimant": "Wikipedia",
+      "attribution": "reported",
+      "status": "unverified",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "page": 21
+    },
+    {
+      "text": "An ink attack on Dipke by a woman chanting Hindutva slogans (mid-July): Wikipedia-sourced only.",
+      "claimant": "Wikipedia",
+      "attribution": "reported",
+      "status": "unverified",
+      "source_ids": [
+        "wikipedia"
+      ],
+      "page": 22
+    }
+  ],
+  "map": {
+    "base": "data/map/base.json, built by tools/map/build_basemap.py from OpenStreetMap (Overpass, 2026-11-11). Credit: © OpenStreetMap contributors (ODbL).",
+    "crop": "Tight around the story sites (Vali, 2026-11-11). Safdarjung Hospital is off-frame (~6.5 km south).",
+    "camera": "Auto zoom in/out per story marker (Vali, 2026-11-11): each node and sub-beat fits the bounds of its site_ids with padding; a single-site beat uses a set close zoom."
+  },
+  "web_check": "2026-11-12: each fact carries links[] (article URLs found by a web agent) and web_check: verified | partial | unconfirmed | contradicted. A 'contradicted' fact must not ship until Vali resolves it (GAPS.md). Footer links use links[].url where present; Wikipedia section anchors are inferred and need a click-check.",
+  "illustrative_graphics": "Vali approved drawn graphic elements such as barricade lines (2026-11-11). No source records barricade positions on any date (dossier p22), so every drawn element not backed by a site or fact is marked 'illustrative' in the map legend, and positions are never presented as factual. A fact may trigger a graphic (e.g. 18 Jul 'barricades removed'); the drawing itself stays illustrative.",
+  "disclaimer": {
+    "status": "approved by Vali 2026-11-12",
+    "paragraphs": [
+      "Cockroaches is an independent visual reconstruction of the Cockroach Janta Party protest at Jantar Mantar, New Delhi, from 16 May to 25 July 2026. It is not affiliated with, commissioned by or endorsed by the Cockroach Janta Party, any political party or any government body.",
+      "Every figure, date and quotation on this page comes from publicly available reporting, linked in the sources below. We did not use paywalled material. Some facts rely on Wikipedia's summaries of news reports; where we could reach the original report, we link it.",
+      "Many figures are contested. Where the police, the organisers and the press disagree, we show each claim separately with who made it. We do not average or reconcile them, and an asterisk beside a number leads to its source.",
+      "The cockroaches on the map are a visual device. Their number reflects reported crowd descriptions in broad bands, not headcounts; their size reflects days elapsed. The labelled founder roach is a symbolic marker, not a location. Barricades and other drawn map elements are illustrative.",
+      "Videos are third-party YouTube uploads, embedded as published; an upload date is not necessarily the date the footage was filmed. Quotations are reproduced verbatim from the cited source, and translations are credited.",
+      "Map data © OpenStreetMap contributors (ODbL). Photographs are credited individually.",
+      "To report an error: valiullah.hashmi90@gmail.com"
+    ]
+  }
+}

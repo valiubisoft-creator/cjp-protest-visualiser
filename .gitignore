@@ -36,3 +36,6 @@ curation/
 
 # Local Claude Code settings
 .claude/
+
+# Raw OSM dump (4+ MB); regenerate with tools/map/build_basemap.py
+data/map/raw/

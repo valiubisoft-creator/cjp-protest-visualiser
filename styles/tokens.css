@@ -1,0 +1,175 @@
+/* ─────────────────────────────────────────────────────────────
+   Cockroaches (v3): design tokens. F2, 2026-11-12.
+   One file re-skins the piece. Scenes read tokens; they never hard-code values.
+   Themes: [data-theme="ink"] black-dominant (DEFAULT, Vali 2026-11-12) | [data-theme="paper"] white-dominant (opt-in).
+   The paper block doubles as the base; the ink block wins on :root unless <html data-theme="paper">.
+   Direction: docs/build/DESIGN.md (EFF-like red / white / black).
+   ───────────────────────────────────────────────────────────── */
+@import url("./fonts.css");
+
+:root {
+  /* ── palette (raw) ── */
+  --black: #0B0B0B;
+  --white: #FAFAF7;
+  --red: #E0201B;        /* the one accent: meaning only. 4.6:1 on white (large text/marks only), 4.1:1 on black (marks only) */
+  --red-deep: #A8130F;   /* small red text on white (7.3:1 on white) */
+  --red-bright: #FF3B30; /* small red text on black (5.5:1 on black) */
+  --grey-1: #6B6B66;     /* secondary text on white (5.1:1) */
+  --grey-1-ink: #A3A29C; /* secondary text on black (7.7:1) */
+  --grey-2: #C9C8C2;     /* rules, gridlines on white */
+  --grey-2-ink: #3A3A37; /* rules, gridlines on black */
+  --grey-3: #1E1E1C;     /* raised surface on black */
+  --paper-2: #F0EFEA;    /* raised surface on white */
+
+  /* ── type ── */
+  --font-display: "Protest Revolution", "Public Sans", sans-serif; /* major headings only, single weight */
+  --font-text: "Public Sans", system-ui, sans-serif;
+  --font-deva: "Noto Sans Devanagari", "Public Sans", sans-serif;
+  --font-urdu: "Noto Nastaliq Urdu", serif;
+
+  /* desktop scale (min viewport 1280×720), px so frames are exact */
+  --fs-hero: 200px;   /* S0 word */
+  --fs-date: 168px;   /* S4/S6 date (skeleton reference size) */
+  --fs-d1: 112px;     /* "Victory", scene titles */
+  --fs-d2: 64px;
+  --fs-h1: 40px;      /* Public Sans 800 */
+  --fs-h2: 28px;
+  --fs-quote: 34px;   /* S1, S8 */
+  --fs-lead: 22px;
+  --fs-body: 18px;
+  --fs-small: 15px;
+  --fs-micro: 12px;   /* labels, kickers: uppercase, tracked */
+  --fs-stat: 56px;    /* rail fact value */
+
+  --lh-tight: 1.02;
+  --lh-head: 1.15;
+  --lh-body: 1.55;
+  --track-micro: 0.12em;
+  --track-display: 0.01em;
+
+  --w-regular: 400;
+  --w-medium: 560;
+  --w-bold: 760;
+  --w-black: 900;
+
+  /* ── spacing (4px base) ── */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px; --s-5: 24px;
+  --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px; --s-10: 144px;
+  --measure: 62ch;
+  --radius: 0;            /* poster system: square corners */
+  --rule: 1px;
+  --rule-heavy: 3px;
+
+  /* ── layout ── */
+  --stage-w: 100vw;
+  --map-w: 62%;           /* S5 map */
+  --rail-w: 38%;          /* S5 rail */
+  --scrubber-h: 96px;     /* S5 hatched strip */
+  --hud-inset: 24px;
+
+  /* ── halftone backdrop ── */
+  --ht-cell: 7px;         /* dot screen pitch */
+  --ht-angle: 45deg;
+  --ht-jitter: 0.15;      /* radius jitter, rough print */
+  --ht-max-r: 0.42;       /* max dot radius as a fraction of the cell */
+  --ht-parallax: 0.1;
+
+  /* ── roach sizes (body length s in px, roach(ctx,x,y,rot,s)) ── */
+  --roach-swarm: 5px;     /* S0/S3 swarm */
+  --roach-type: 4px;      /* S4 date-forming */
+  --roach-map-min: 6px;   /* S5 day 0 (spec: lerp 6→28) */
+  --roach-map-max: 28px;  /* S5 last day */
+  --roach-founder: 36px;  /* S2 symbolic founder marker */
+  --roach-cursor: 14px;
+
+  /* ── motion (used by scene chats, not F2) ── */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease-inout: cubic-bezier(.65, 0, .35, 1);
+  --dur-fast: 150ms; --dur: 400ms; --dur-slow: 800ms;
+
+  /* ── z layers ── */
+  --z-backdrop: 0; --z-map: 10; --z-swarm: 20; --z-text: 30; --z-rail: 40; --z-hud: 50; --z-scrubber: 60; --z-overlay: 90;
+}
+
+/* ── theme: paper (white-dominant; also the base the ink theme overrides) ── */
+:root, [data-theme="paper"] {
+  --bg: var(--white);
+  --fg: var(--black);
+  --surface: var(--paper-2);
+  --muted: var(--grey-1);
+  --rule-c: var(--grey-2);
+  --accent: var(--red);
+  --accent-text: var(--red-deep);   /* red text under 24px */
+  --roach: var(--black);
+  --ht-ink: rgba(11, 11, 11, 0.075); /* faint enough for AA under body text */
+  --stage-dramatic-bg: var(--black); /* the click, 20 Jul, Victory */
+  --stage-dramatic-fg: var(--white);
+
+  /* map (Maidan-like greys) */
+  --map-ground: #ECEBE6;
+  --map-green: #DFE2DA;
+  --map-water: #D5DCE0;
+  --map-road: #FFFFFF;
+  --map-road-casing: #D9D8D2;
+  --map-building: #BDBCB6;
+  --map-building-stroke: #9C9B95;
+  --map-label-bg: var(--black);
+  --map-label-fg: var(--white);
+  --map-illustrative: var(--grey-1); /* barricades etc: dashed */
+
+  /* charts */
+  --chart-1: var(--black);
+  --chart-2: var(--grey-1);
+  --chart-3: #9C9B95;
+  --chart-grid: var(--grey-2);
+  --chart-hi: var(--red);
+}
+
+/* ── theme: ink (black-dominant, the chosen default) ── */
+:root:not([data-theme="paper"]), [data-theme="ink"] {
+  --bg: var(--black);
+  --fg: var(--white);
+  --surface: var(--grey-3);
+  --muted: var(--grey-1-ink);
+  --rule-c: var(--grey-2-ink);
+  --accent: var(--red);
+  --accent-text: var(--red-bright);
+  --roach: var(--white);
+  --ht-ink: rgba(250, 250, 247, 0.06);
+  --stage-dramatic-bg: var(--red);
+  --stage-dramatic-fg: var(--white); /* white on red 4.6:1; black on red fails AA (4.1:1) */
+
+  --map-ground: #141413;
+  --map-green: #1A1D18;
+  --map-water: #151A1D;
+  --map-road: #2E2E2B;
+  --map-road-casing: #0B0B0B;
+  --map-building: #262624;
+  --map-building-stroke: #3A3A37;
+  --map-label-bg: var(--white);
+  --map-label-fg: var(--black);
+  --map-illustrative: var(--grey-1-ink);
+
+  --chart-1: var(--white);
+  --chart-2: var(--grey-1-ink);
+  --chart-3: #6B6B66;
+  --chart-grid: var(--grey-2-ink);
+  --chart-hi: var(--red);
+}
+
+/* reading sections stay paper in the ink theme (DESIGN.md: "white paper for reading sections") */
+:root:not([data-theme="paper"]) .reading { --bg: var(--white); --fg: var(--black); --muted: var(--grey-1); --rule-c: var(--grey-2); --accent-text: var(--red-deep); }
+
+/* dramatic stage (the click, 20 Jul, Victory): paper → black, ink → red. Re-points the semantic tokens inside it. */
+.stage-dramatic { --bg: var(--stage-dramatic-bg); --fg: var(--stage-dramatic-fg); background: var(--bg); color: var(--fg); }
+[data-theme="paper"] .stage-dramatic { --muted: var(--grey-1-ink); --rule-c: var(--grey-2-ink); --accent-text: var(--red-bright); --roach: var(--white); --ht-ink: rgba(250, 250, 247, 0.06); }
+:root:not([data-theme="paper"]) .stage-dramatic { --muted: var(--white); --rule-c: rgba(250, 250, 247, 0.45); --accent: var(--black); --accent-text: var(--white); --roach: var(--black); --ht-ink: rgba(11, 11, 11, 0.09); }
+
+/* ── shared primitives every scene uses ── */
+.t-display { font-family: var(--font-display); font-weight: 400; line-height: var(--lh-tight); letter-spacing: var(--track-display); }
+.t-micro { font: var(--w-bold) var(--fs-micro)/1.3 var(--font-text); letter-spacing: var(--track-micro); text-transform: uppercase; }
+.t-num { font-variant-numeric: tabular-nums lining-nums; }
+.star { color: var(--accent-text); font-weight: var(--w-bold); text-decoration: none; margin-left: 0.08em; font-size: 0.6em; vertical-align: super; }
+.star:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.missing { color: var(--accent-text); font: var(--w-bold) var(--fs-micro)/1.3 var(--font-text); letter-spacing: .04em; border: 1px dashed currentColor; padding: 1px 4px; }
+.hatch { background-image: repeating-linear-gradient(-45deg, var(--fg) 0 1px, transparent 1px 6px); }

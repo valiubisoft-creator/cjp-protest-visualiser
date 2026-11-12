@@ -1,0 +1,772 @@
+{
+  "sources": [
+    {
+      "id": "dossier",
+      "title": "The Cockroach Janta Party (CJP) Protests at Jantar Mantar, New Delhi (May–November 2026): A Sourced Timeline and Dataset for a D3.js Visualisation",
+      "publisher": "Research dossier (Claude.pdf, supplied by Vali)",
+      "url": null,
+      "date": null,
+      "note": "Primary input for this ledger. Used as the source only where a dossier row cites no outlet."
+    },
+    {
+      "id": "wikipedia",
+      "title": "Wikipedia (article not specified)",
+      "publisher": "Wikipedia",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title. Probably one of wiki_cjp or wiki_protests; the chip doesn't say which."
+    },
+    {
+      "id": "wiki_cjp",
+      "title": "Cockroach Janta Party",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cockroach_Janta_Party",
+      "date": null,
+      "note": "From the v2 index.html sources list. The v2 list notes the page flags parts as unverified."
+    },
+    {
+      "id": "wiki_protests",
+      "title": "2026 Delhi Jantar Mantar protests",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests",
+      "date": null,
+      "note": "From the v2 index.html sources list."
+    },
+    {
+      "id": "christiandaily",
+      "title": "Christian Daily (article not specified)",
+      "publisher": "Christian Daily",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title. The dossier warns this outlet misdates the resignation to 2025."
+    },
+    {
+      "id": "aljazeera",
+      "title": "Al Jazeera (article not specified)",
+      "publisher": "Al Jazeera",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "india",
+      "title": "india (article not specified)",
+      "publisher": "India.com (assumed from chip 'india')",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title. Chip reads 'india'; the outlet is not certain."
+    },
+    {
+      "id": "theweek",
+      "title": "The Week (article not specified)",
+      "publisher": "The Week",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "barandbench",
+      "title": "Bar and Bench (article not specified)",
+      "publisher": "Bar and Bench",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "dainikjagranmpcg",
+      "title": "dainikjagranmpcg (article not specified)",
+      "publisher": "Dainik Jagran MP/CG",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "wionews",
+      "title": "WION (article not specified)",
+      "publisher": "WION",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "yahoo",
+      "title": "Yahoo (article not specified)",
+      "publisher": "Yahoo",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title. The dossier pairs it with The Independent on ~23 Jun."
+    },
+    {
+      "id": "outlookindia",
+      "title": "Outlook (article not specified)",
+      "publisher": "Outlook India",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "businesstoday",
+      "title": "BusinessToday (article not specified)",
+      "publisher": "BusinessToday",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title. Dossier dates: 12 May and 21 May."
+    },
+    {
+      "id": "indiatvnews",
+      "title": "indiatvnews (article not specified)",
+      "publisher": "India TV News",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "thestatesman",
+      "title": "The Statesman (article not specified)",
+      "publisher": "The Statesman",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "cnn",
+      "title": "CNN (article not specified)",
+      "publisher": "CNN",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title. The repo has a CNN 22 Jul URL (repo_cnn_0722); it is not confirmed to be the same article."
+    },
+    {
+      "id": "dynamitenews",
+      "title": "Dynamite News (article not specified)",
+      "publisher": "Dynamite News",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "thefederal",
+      "title": "The Federal (article not specified)",
+      "publisher": "The Federal",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "theprint",
+      "title": "ThePrint (article not specified)",
+      "publisher": "ThePrint",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "pbs",
+      "title": "PBS (article not specified)",
+      "publisher": "PBS",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "wagingnonviolence",
+      "title": "Waging Nonviolence (article not specified)",
+      "publisher": "Waging Nonviolence",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "tribuneindia",
+      "title": "The Tribune (article not specified)",
+      "publisher": "The Tribune",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "siasat",
+      "title": "Siasat (article not specified)",
+      "publisher": "Siasat",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "thedailyjagran",
+      "title": "thedailyjagran (article not specified)",
+      "publisher": "The Daily Jagran",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "business_standard",
+      "title": "Business Standard (article not specified)",
+      "publisher": "Business Standard",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "thelogicalindian",
+      "title": "The Logical Indian (article not specified)",
+      "publisher": "The Logical Indian",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "telanganatoday",
+      "title": "Telangana Today (article not specified)",
+      "publisher": "Telangana Today",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "lawtrend",
+      "title": "LawTrend (article not specified)",
+      "publisher": "LawTrend",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "righttoinformation",
+      "title": "righttoinformation.wiki (page not specified)",
+      "publisher": "righttoinformation.wiki",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "thewire",
+      "title": "The Wire (article not specified)",
+      "publisher": "The Wire",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "asiaone",
+      "title": "AsiaOne (article not specified)",
+      "publisher": "AsiaOne",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "newslaundry",
+      "title": "Newslaundry (article not specified)",
+      "publisher": "Newslaundry",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "altnews",
+      "title": "Alt News (article not specified)",
+      "publisher": "Alt News",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "fairobserver",
+      "title": "Fair Observer (article not specified)",
+      "publisher": "Fair Observer",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "countercurrents",
+      "title": "Countercurrents (op-ed, Nov)",
+      "publisher": "Countercurrents",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title. The dossier labels it an op-ed with a clear editorial position."
+    },
+    {
+      "id": "organiser",
+      "title": "Organiser (article not specified)",
+      "publisher": "Organiser (RSS-affiliated)",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title. The dossier labels it RSS-affiliated."
+    },
+    {
+      "id": "thequint",
+      "title": "The Quint (article not specified)",
+      "publisher": "The Quint",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "imnindia",
+      "title": "imnindia (article not specified)",
+      "publisher": "IMN India",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "ratopati",
+      "title": "Ratopati (article not specified)",
+      "publisher": "Ratopati",
+      "url": null,
+      "date": null,
+      "note": "Cited as an outlet chip in the dossier; the dossier gives no URL or article title."
+    },
+    {
+      "id": "deccanherald",
+      "title": "Deccan Herald (article not specified)",
+      "publisher": "Deccan Herald",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "etvbharat",
+      "title": "ETV Bharat (article not specified)",
+      "publisher": "ETV Bharat",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "indianexpress",
+      "title": "Indian Express (article not specified)",
+      "publisher": "Indian Express",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given. Several figures reach the dossier via Wikipedia or Newslaundry."
+    },
+    {
+      "id": "bbc",
+      "title": "BBC (article not specified)",
+      "publisher": "BBC",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given. Figures reach the dossier via Wikipedia."
+    },
+    {
+      "id": "economictimes",
+      "title": "Economic Times (article not specified)",
+      "publisher": "Economic Times",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given. Via Wikipedia."
+    },
+    {
+      "id": "nbcnews",
+      "title": "NBC News (article not specified)",
+      "publisher": "NBC News",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given. Dossier date: 25 Jul."
+    },
+    {
+      "id": "guardian",
+      "title": "The Guardian (article not specified)",
+      "publisher": "The Guardian",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "ap",
+      "title": "Associated Press (article not specified)",
+      "publisher": "AP",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "reuters",
+      "title": "Reuters (article not specified)",
+      "publisher": "Reuters",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "ani",
+      "title": "ANI (article not specified)",
+      "publisher": "ANI",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given. Via Al Jazeera."
+    },
+    {
+      "id": "pti",
+      "title": "PTI (article not specified)",
+      "publisher": "PTI",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "zeenews",
+      "title": "Zee News (article not specified)",
+      "publisher": "Zee News",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given. The dossier notes Zee figures were taken from a TV programme."
+    },
+    {
+      "id": "hansindia",
+      "title": "Hans India (article not specified)",
+      "publisher": "Hans India",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "indiatv",
+      "title": "India TV (article not specified)",
+      "publisher": "India TV",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "livelaw",
+      "title": "LiveLaw (article not specified)",
+      "publisher": "LiveLaw",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "thehindu",
+      "title": "The Hindu (article not specified)",
+      "publisher": "The Hindu",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "dainikbhaskar",
+      "title": "Dainik Bhaskar (video report)",
+      "publisher": "Dainik Bhaskar",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "ips",
+      "title": "IPS (article not specified)",
+      "publisher": "IPS (not expanded in the dossier)",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "independent",
+      "title": "The Independent (article not specified)",
+      "publisher": "The Independent",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "ndtv",
+      "title": "NDTV (interview)",
+      "publisher": "NDTV",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "boom",
+      "title": "BOOM (fact-check)",
+      "publisher": "BOOM",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "uni",
+      "title": "UNI (article not specified)",
+      "publisher": "UNI",
+      "url": null,
+      "date": null,
+      "note": "Named in the dossier text (not as a chip); no URL or article title given."
+    },
+    {
+      "id": "theprint_0523",
+      "title": "Sonam Wangchuk calls himself 'honorary cockroach', urges govt to hear voices of youth",
+      "publisher": "ThePrint (PTI)",
+      "url": "https://theprint.in/india/sonam-wangchuk-calls-himself-honorary-cockroach-urges-govt-to-hear-voices-of-youth/2939511/",
+      "date": "2026-05-23",
+      "note": "Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "fpj_0606",
+      "title": "I don't like protests, but we need justice: Sonam Wangchuk joins CJP rally at Jantar Mantar",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/india/i-dont-like-protests-but-we-need-justice-sonam-wangchuk-joins-cjp-rally-at-jantar-mantar",
+      "date": "2026-06-06",
+      "note": "Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "kashmirlife_0606",
+      "title": "Students, activists rally at Jantar Mantar as Sonam Wangchuk joins protest",
+      "publisher": "Kashmir Life",
+      "url": "https://kashmirlife.net/students-activists-rally-at-jantar-mantar-as-sonam-wangchuk-joins-protest-439078/",
+      "date": "2026-06-06",
+      "note": "Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "wire_0630",
+      "title": "In photos: Sonam Wangchuk, Left students on hunger strike at CJP's Jantar Mantar protest",
+      "publisher": "The Wire",
+      "url": "https://m.thewire.in/article/rights/in-photos-sonam-wangchuk-left-students-hunger-strike-cjp-jantar-mantar",
+      "date": "2026-06-30",
+      "note": "Title from URL slug. Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "aljazeera_0714",
+      "title": "Indian activist Wangchuk urged to end hunger strike over exam paper leaks",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/7/14/indian-activist-wangchuk-urged-to-end-hunger-strike-over-exam-paper-leaks",
+      "date": "2026-07-14",
+      "note": "Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "scroll_0714",
+      "title": "More than 1,800 members of civil society urge Sonam Wangchuk to end hunger strike",
+      "publisher": "Scroll",
+      "url": "https://scroll.in/latest/1094273/scroll_in",
+      "date": "2026-07-14",
+      "note": "Title paraphrased from the lede; URL slug is generic. Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "dtnext_0716",
+      "title": "Sonam Wangchuk loses over 9 kg after 19 days of hunger strike, doctors warn it could affect organs",
+      "publisher": "DT Next",
+      "url": "https://www.dtnext.in/news/national/sonam-wangchuk-loses-over-9-kg-after-19-days-of-hunger-strike-doctors-warn-it-could-affect-organs",
+      "date": "2026-07-16",
+      "note": "Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "scroll_0718",
+      "title": "Delhi Police says Sonam Wangchuk shifted to hospital under HC order; CJP alleges he was detained",
+      "publisher": "Scroll",
+      "url": "https://scroll.in/latest/1094360/delhi-police-says-sonam-wangchuk-shifted-to-hospital-under-hc-order-cjp-alleges-he-was-detained",
+      "date": "2026-07-18",
+      "note": "Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "newslaundry_0718",
+      "title": "Sonam Wangchuk taken to hospital as Delhi Police tighten grip on Jantar Mantar protest",
+      "publisher": "Newslaundry",
+      "url": "https://newslaundry.com/2026/07/18/sonam-wangchuk-taken-to-hospital-as-delhi-police-tighten-grip-on-jantar-mantar-protest",
+      "date": "2026-07-18",
+      "note": "Free article. Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "theprint_0721",
+      "title": "Sonam Wangchuk shifted from Safdarjung Hospital to Medanta after Delhi HC order",
+      "publisher": "ThePrint (ANI)",
+      "url": "https://theprint.in/india/sonam-wangchuk-shifted-from-safdarjung-hospital-to-medanta-after-delhi-hc-order/2992562/",
+      "date": "2026-07-21",
+      "note": "Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "fpj_0722",
+      "title": "Sonam Wangchuk seeks written govt assurance before ending 25-day hunger strike",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/india/sonam-wangchuk-seeks-written-govt-assurance-before-ending-25-day-hunger-strike",
+      "date": "2026-07-22",
+      "note": "Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "scroll_0724",
+      "title": "Activist Sonam Wangchuk breaks fast after 26 days in presence of Union ministers",
+      "publisher": "Scroll",
+      "url": "https://scroll.in/latest/1094491/activist-sonam-wangchuk-breaks-fast-after-26-days-in-presence-of-union-ministers",
+      "date": "2026-07-24",
+      "note": "Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "outlook_0724",
+      "title": "Why did Sonam Wangchuk end his hunger strike? What the Centre promised and what comes next",
+      "publisher": "Outlook",
+      "url": "https://www.outlookindia.com/national/why-did-sonam-wangchuk-end-his-hunger-strike-what-the-centre-promised-and-what-comes-next",
+      "date": "2026-07-24",
+      "note": "Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "dtnext_0724",
+      "title": "Wangchuk ends 26-day fast following govt assurance; CJP to continue protest",
+      "publisher": "DT Next (PTI)",
+      "url": "https://www.dtnext.in/news/national/wangchuk-ends-26-day-fast-following-govt-assurance-cjp-to-continue-protest",
+      "date": "2026-07-24",
+      "note": "Wangchuk research 2026-11-12."
+    },
+    {
+      "id": "aljazeera_0719",
+      "title": "Indian court rejects bid to release hunger-striking activist from hospital",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/7/19/indian-court-rejects-bid-to-release-hunger-striking-activist-from-hospital",
+      "date": "2026-07-19",
+      "note": "Supplied by Vali 2026-11-12; text read from the page."
+    },
+    {
+      "id": "tnm_0516",
+      "title": "CJI Surya Kant sparks row by calling activists, media 'cockroaches'",
+      "publisher": "The News Minute (citing LiveLaw)",
+      "url": "https://www.thenewsminute.com/news/cji-surya-kant-sparks-row-by-calling-activists-media-cockroaches",
+      "date": "2026-05-16",
+      "note": "Prints the full quote; matches the ledger text word for word."
+    },
+    {
+      "id": "livelaw_0516",
+      "title": "Section Of Media Misquoted Me, Criticised Only Those Who Join Professions With Fake Degrees: CJI Surya Kant Clarifies Remarks On Youth",
+      "publisher": "LiveLaw",
+      "url": "https://www.livelaw.in/top-stories/section-of-media-misquoted-me-criticised-only-those-who-join-professions-with-fake-degrees-cji-surya-kant-clarifies-remarks-on-youth-534448",
+      "date": "2026-05-16",
+      "note": "Verbatim statement read from the page HTML."
+    },
+    {
+      "id": "fpj_cockroachisback",
+      "title": "Cockroach Janata Party launches new X handle 'Cockroach is Back' after original account withheld in India",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/india/cockroach-janata-party-launches-new-x-handle-cockroach-is-back-after-original-account-withheld-in-india",
+      "date": "2026-05-22",
+      "note": "Evidence for the @Cockroachisback handle."
+    },
+    {
+      "id": "telanganatoday_0725",
+      "title": "Jantar Mantar falls silent after 36-day NEET protest ends with Pradhan's resignation",
+      "publisher": "Telangana Today",
+      "url": "https://telanganatoday.com/jantar-mantar-falls-silent-after-36-day-neet-protest-ends-with-pradhans-resignation",
+      "date": "2026-07-25",
+      "note": "Found by the 2026-11-12 web check."
+    },
+    {
+      "id": "repo_cnn_0722",
+      "title": "India’s CJP protests: why Gen-Z’s political fury is boiling over",
+      "publisher": "CNN",
+      "url": "https://www.cnn.com/2026/07/22/india/india-cockroach-party-protest-anger-intl-hnk",
+      "date": "2026-07-22",
+      "note": "From the v2 index.html sources list."
+    },
+    {
+      "id": "repo_amnesty_1014",
+      "title": "India: Release CJP leaders arrested at Jantar Mantar",
+      "publisher": "Amnesty International",
+      "url": "https://www.amnesty.org/en/latest/news/2026/10/india-release-cjp-leaders-arrested-after-attempting-peaceful-protests-at-jantar-mantar/",
+      "date": "2026-10-14",
+      "note": "From the v2 index.html sources list."
+    },
+    {
+      "id": "repo_aljazeera_1002",
+      "title": "Authorities clamp down as ‘cockroach’ movement launches new protests",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/10/2/indian-authorities-clamp-down-as-cockroach-movement-launches-new-protests",
+      "date": "2026-10-02",
+      "note": "From the v2 index.html sources list."
+    },
+    {
+      "id": "repo_aljazeera_1008",
+      "title": "‘Cockroach’ movement says members detained as protests continue",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/10/8/indias-cockroach-movement-says-members-detained-as-protests-continue",
+      "date": "2026-10-08",
+      "note": "From the v2 index.html sources list."
+    },
+    {
+      "id": "repo_aljazeera_1019",
+      "title": "Indian court extends detention of cockroach leaders",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/10/19/indian-court-extends-detention-of-cockroach-leaders",
+      "date": "2026-10-19",
+      "note": "From media/cjp-public-images/IMAGE_SOURCES.md. Title taken from the URL slug."
+    },
+    {
+      "id": "repo_medianama",
+      "title": "Delhi HC orders unblocking of CJP X account",
+      "publisher": "MediaNama",
+      "url": "https://www.medianama.com/2026/07/223-delhi-hc-cockroach-janta-party-x-account-unblocked/",
+      "date": null,
+      "note": "From the v2 index.html sources list."
+    },
+    {
+      "id": "repo_lawbeat",
+      "title": "Delhi High Court orders restoration of CJP’s X account",
+      "publisher": "LawBeat",
+      "url": "https://lawbeat.in/news-updates/delhi-high-court-orders-restoration-of-cockroach-janta-partys-x-account-1610149",
+      "date": null,
+      "note": "From the v2 index.html sources list."
+    },
+    {
+      "id": "repo_indiacom_xblock",
+      "title": "X account blocked over IB security concerns",
+      "publisher": "India.com",
+      "url": "https://www.india.com/news/india/cockroach-janta-party-x-account-blocked-india-over-alleged-security-concerns-by-intelligence-bureau-abhijeet-dipke-receives-death-threats-8423047/",
+      "date": null,
+      "note": "From the v2 index.html sources list. Same event as the 21 May X block, but the dossier doesn't cite it."
+    },
+    {
+      "id": "repo_outlook_instagram",
+      "title": "Instagram account blocked for two hours",
+      "publisher": "Outlook",
+      "url": "https://www.outlookindia.com/national/cockroach-janta-partys-instagram-account-blocked-in-india-for-two-hours",
+      "date": null,
+      "note": "From the v2 index.html sources list."
+    },
+    {
+      "id": "repo_iff_central_delhi",
+      "title": "IFF condemns internet shutdown in central Delhi",
+      "publisher": "Internet Freedom Foundation",
+      "url": "https://internetfreedom.in/iff-condemns-the-internet-shutdown-in-parts-of-central-delhi-no-suspension-order-has-been-made-public/",
+      "date": null,
+      "note": "From the v2 index.html sources list."
+    },
+    {
+      "id": "repo_iff_cp",
+      "title": "Shutdown before the first protester arrived",
+      "publisher": "Internet Freedom Foundation",
+      "url": "https://internetfreedom.in/shutdown-before-the-first-protester-arrived-iff-condemns-the-internet-suspension-in-connaught-place/",
+      "date": null,
+      "note": "From the v2 index.html sources list (dated 'Oct' there)."
+    },
+    {
+      "id": "repo_isoc_0723",
+      "title": "Internet suspended in New Delhi, 23 July",
+      "publisher": "Internet Society Pulse",
+      "url": "https://pulse.internetsociety.org/en/shutdowns/internet-suspended-in-new-dehli-nct-india-23-july-2026/",
+      "date": "2026-07-23",
+      "note": "From the v2 index.html sources list."
+    },
+    {
+      "id": "repo_theweek_0722",
+      "title": "Blanket blackout, no order",
+      "publisher": "The Week",
+      "url": "https://www.theweek.in/news/india/2026/07/22/blanket-blackout-no-order-sudden-internet-shutdown-amid-cjp-s-chalo-sansad-protest-raises-questions.html",
+      "date": "2026-07-22",
+      "note": "From the v2 index.html sources list."
+    },
+    {
+      "id": "timeline_clips",
+      "title": "YouTube clip corpus (machine-tagged, unreviewed)",
+      "publisher": "data/timeline_clips.json",
+      "url": null,
+      "date": "2026-07-21",
+      "note": "Generated 2026-07-21T18:54:05Z. Place geo is a gazetteer keyword match. Used for video picks and approximate site coordinates."
+    },
+    {
+      "id": "within_earshot",
+      "title": "Within Earshot prototype, geography notes",
+      "publisher": "docs/archive/within-earshot.md, section 4",
+      "url": null,
+      "date": null,
+      "note": "OSM Nominatim origin for the observatory and the Jantar Mantar Road local frame."
+    }
+  ]
+}

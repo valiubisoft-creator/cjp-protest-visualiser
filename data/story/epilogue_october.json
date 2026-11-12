@@ -1,0 +1,975 @@
+{
+  "note": "Text-only epilogue (D2, S6.5). The October phase is a different story: the dossier says treat it as a separate phase, not a continuation (p2).",
+  "framing": {
+    "text": "The October phase is a different kind of story. The issue (SIR electoral rolls), the opponent (the CEC) and the state posture (mass preventive detention, internet shutdowns, de-notification of the site) all differ from the summer.",
+    "claimant": "dossier",
+    "attribution": "reported",
+    "status": "documented",
+    "source_ids": [
+      "aljazeera"
+    ],
+    "page": 2,
+    "links": [
+      {
+        "source_id": "aljazeera",
+        "url": "https://www.aljazeera.com/features/2026/10/2/can-indias-cockroach-movement-oust-modis-election-chief",
+        "title": "Can India's 'cockroach' movement oust Modi's election chief?",
+        "publisher": "Al Jazeera",
+        "date": "2026-10-02",
+        "snippet": "Kumar is spearheading the highly contested revision of the voters' list.",
+        "verified": true
+      }
+    ],
+    "web_check": "partial",
+    "web_notes": [
+      "aljazeera: PARTIAL: supports shift of issue (voter-list revision) and opponent (election chief), metros shut and internet suspended, hundreds detained pre-protest. 'Preventive detention' and 'de-notification' terms absent (de-notification happened 11 Oct, after this article). Framing is a dossier synthesis; see 10-11 Oct AJ pieces for the rest."
+    ]
+  },
+  "bridge": [
+    {
+      "date": "2026-07-28",
+      "text": "CJP says 100+ protesters arrested nationwide (Delhi, Assam, West Bengal, Bihar) despite assurances",
+      "value": 100,
+      "value_text": "100+",
+      "claimant": "CJP",
+      "attribution": "CJP claims",
+      "status": "claimed",
+      "source_ids": [
+        "wagingnonviolence"
+      ],
+      "page": 8,
+      "links": [
+        {
+          "source_id": "wagingnonviolence",
+          "url": "https://wagingnonviolence.org/2026/07/what-indias-cockroach-party-won-whats-next/",
+          "title": "What India's Cockroach Party won — and what's next",
+          "publisher": "Waging Nonviolence",
+          "date": "2026-07-30",
+          "snippet": "over 100 protesters have been arrested nationwide, with cases filed in the states of Delhi, Assam, West Bengal and Bihar",
+          "verified": true
+        }
+      ],
+      "web_check": "verified"
+    },
+    {
+      "date": "2026-08-18",
+      "text": "Supreme Court constitutes High-Powered Enquiry Committee (HPEC) under Justice R. Subhash Reddy",
+      "claimant": "Supreme Court",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "tribuneindia",
+        "siasat"
+      ],
+      "page": 8,
+      "links": [
+        {
+          "source_id": "tribuneindia",
+          "url": "https://www.tribuneindia.com/news/india/supreme-court-forms-high-powered-committee-to-probe-allegations-of-police-excesses-during-student-protests-in-delhi/",
+          "title": "CJP protests: Former SC judge R Subhash Reddy to head 5-member panel to probe alleged police excesses",
+          "publisher": "The Tribune",
+          "date": "2026-08-21",
+          "snippet": "The Supreme Court has set up a five-member High-Powered Enquiry Committee (HPEC)... headed by former top court judge Justice R. Subhash Reddy.",
+          "verified": true
+        },
+        {
+          "source_id": "siasat",
+          "url": "https://www.siasat.com/sc-to-set-up-high-powered-panel-to-probe-delhi-police-brutality-3526772/",
+          "title": "SC to set up high-powered panel to probe Delhi Police brutality",
+          "publisher": "Siasat",
+          "date": "2026-08-18",
+          "snippet": "said it would constitute a high-powered committee",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "siasat: PARTIAL: Siasat 18 Aug says SC 'would constitute' the committee, order to follow 19 Aug; does not name Justice R. Subhash Reddy. Siasat 10 Sep PTI piece (siasat.com/sc-refuses-to-alter-high-powered-committee-in-neet-protest-case-3539949/) names Reddy as head but gives no constitution date. Tribune (search-only) dates the order 18 Aug. Ledger's 'constitutes 18 Aug' is therefore soft: 18 Aug announcement, order next day per Siasat. Check against SC order."
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "text": "SC refuses to reconstitute the HPEC (order uploaded later)",
+      "claimant": "Supreme Court",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "siasat"
+      ],
+      "page": 8,
+      "links": [
+        {
+          "source_id": "siasat",
+          "url": "https://www.siasat.com/cjp-protest-sc-refuses-panel-reconstitution-over-police-excesses-3543027/",
+          "title": "CJP protest: SC refuses panel reconstitution over 'police excesses'",
+          "publisher": "Siasat",
+          "date": "2026-09-16",
+          "snippet": "We are not inclined to effect any alteration in the constitution of the Committee.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified"
+    }
+  ],
+  "facts": [
+    {
+      "date": "2026-10-01",
+      "text": "Delhi Police deny permission for a Jantar Mantar protest (challenged in HC)",
+      "claimant": "Delhi Police",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "thedailyjagran"
+      ],
+      "page": 8,
+      "links": [
+        {
+          "source_id": "thedailyjagran",
+          "url": null,
+          "title": null,
+          "publisher": "The Daily Jagran",
+          "date": null,
+          "snippet": null,
+          "verified": false
+        }
+      ],
+      "web_check": "unconfirmed",
+      "web_notes": [
+        "thedailyjagran: Not found. Jagran domains blocked for search; no Jagran article surfaced. Alternatives (search-only, not fetched): newsonair.gov.in/delhi-police-denies-cjp-permission-to-hold-protest-at-jantar-mantar-tomorrow/ (9 Oct); deccanchronicle.com/nation/politics/delhi-police-denies-permission-for-oct-2-protest-at-jantar-mantar-1992242; theprint.in/india/delhi-police-denies-nod-for-saturdays-cjp-protest-at-jantar-mantar/3066437/"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "text": "45 metro stations’ gates shut from 9pm (ETV Bharat); mobile internet suspended within 4 km of Jantar Mantar, 10pm 9 Oct – 10pm 10 Oct",
+      "value": 45,
+      "unit": "stations",
+      "claimant": "media (ETV Bharat)",
+      "attribution": "reported",
+      "status": "disputed",
+      "source_ids": [
+        "etvbharat"
+      ],
+      "page": 8,
+      "note": "ETV Bharat itself notes an earlier count of 57; IANS (via Telangana Today) reports 57.",
+      "links": [
+        {
+          "source_id": "etvbharat",
+          "url": "https://www.etvbharat.com/en/bharat/cjp-delhi-protest-october-10-saturday-unprecedented-security-clampdown-several-metro-stations-shut-mobile-internet-suspended-train-cancellations-list-enn26100908396",
+          "title": "Clampdown In Capital: 25,000+ Troops On Ground, 45 Metro Stations Shut, 250 Trains Cancelled, Internet Off",
+          "publisher": "ETV Bharat",
+          "date": "2026-10-10",
+          "snippet": "Entry and exit gates at 45 Delhi Metro stations ... closed from 9 pm; internet suspended within 4 km radius of Jantar Mantar from 10 pm on October 9",
+          "verified": true
+        }
+      ],
+      "web_check": "verified"
+    },
+    {
+      "date": "2026-10-10",
+      "text": "Reports put 10 October detentions anywhere from about 2,000 (an MHA official, cited by Reuters via Al Jazeera) to 15,000 (CJP claim).",
+      "claimant": "MHA official; CJP",
+      "attribution": "reported",
+      "status": "disputed",
+      "source_ids": [
+        "reuters",
+        "aljazeera",
+        "zeenews"
+      ],
+      "page": 1,
+      "note": "Range of separate claims; see metrics.json rows for 10 Oct. Never average.",
+      "links": [
+        {
+          "source_id": "reuters",
+          "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+          "title": "India's 'Cockroach' leaders detained; New Delhi in lockdown",
+          "publisher": "Al Jazeera (citing Reuters)",
+          "date": "2026-10-10",
+          "snippet": "Reuters ... put the figure at about 2,000.",
+          "verified": true
+        },
+        {
+          "source_id": "aljazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+          "title": "India's 'Cockroach' leaders released from detention after police crackdown",
+          "publisher": "Al Jazeera",
+          "date": "2026-10-10",
+          "snippet": "Reuters, citing a Ministry of Home Affairs official, put the figure at about 2,000.",
+          "verified": true
+        },
+        {
+          "source_id": "zeenews",
+          "url": "https://zeenews.india.com/india/over-7000-detained-rs-2000-crore-lost-inside-the-day-cjp-was-stopped-from-reaching-jantar-mantar-3075511.html",
+          "title": "Over 7,000 detained, Rs 2,000 crore lost: Inside the day CJP was stopped from reaching Jantar Mantar",
+          "publisher": "Zee News",
+          "date": "2026-10-10",
+          "snippet": "The CJP claimed about 15,000 had been held.",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "reuters: PARTIAL: ~2,000 (MHA official via Reuters) confirmed. The 15,000 CJP claim is NOT on this page. Same page also gives The Hindu citing Delhi police sources: nearly 2,500 detained; Al Jazeera lede 'more than 2,000'. Reuters original 'India detains thousands, locks down Delhi to foil election chief protest' (10 Oct) exists but reuters.com is blocked; syndicated copies seen in search: gvwire.com/2026/10/10/india-detains-thousands-locks-down-delhi-to-foil-election-chief-protest/ (not fetched). Reuters headline later changed from 'hundreds' to 'thousands'.",
+        "aljazeera: PARTIAL: MHA/Reuters ~2,000 present. 15,000 CJP claim ABSENT. Article also gives 2,500 (Delhi police sources via The Hindu) and 600 arrests in Mumbai (via ANI). Updated 11 Oct.",
+        "zeenews: PARTIAL: supports the 15,000 CJP claim only. It says 'about 5,900 people were detained, though later updates put the figure above 7,000'; no ~2,000 MHA/Reuters figure here ('2,000' is a Rs crore loss). Reuters piece for the lower figure: https://www.reuters.com/world/india/delhi-sealed-off-ahead-youth-protest-against-indian-election-chief-2026-10-10/ (not fetched). Note the ledger range omits the 5,900-7,000+ police/media figures that The Hindu and Zee report."
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "text": "SC hearing calls for rethink of Jantar Mantar as the protest site",
+      "claimant": "Supreme Court",
+      "attribution": "reported",
+      "status": "unverified",
+      "source_ids": [
+        "thedailyjagran"
+      ],
+      "page": 8,
+      "resolution": "Dossier-only: no source found for a 9 Oct hearing. A 3 Aug SC hearing on Jantar Mantar's suitability exists (LiveLaw, search only).",
+      "links": [
+        {
+          "source_id": "thedailyjagran",
+          "url": null,
+          "title": null,
+          "publisher": "The Daily Jagran",
+          "date": null,
+          "snippet": null,
+          "verified": false
+        }
+      ],
+      "web_check": "resolved",
+      "web_notes": [
+        "thedailyjagran: Not found. POSSIBLE CONTRADICTION (unverified): search found only a SC hearing on 3 Aug 2026 agreeing to examine a PIL on Jantar Mantar suitability (livelaw.in/top-stories/supreme-court-asks-centre-to-decide-on-reconsidering-jantar-mantar-as-designated-protest-venue-553932; deccanherald PIL piece), not 9 Oct. A 9 Oct hearing may exist but was not found."
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "text": "Dipke, Das and Ranka detained aboard an Air India plane on landing",
+      "claimant": "media",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "aljazeera"
+      ],
+      "page": 9,
+      "links": [
+        {
+          "source_id": "aljazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+          "title": "India's 'Cockroach' leaders released from detention after police crackdown",
+          "publisher": "Al Jazeera",
+          "date": "2026-10-10",
+          "snippet": "officers entering the Air India plane after it landed",
+          "verified": true
+        }
+      ],
+      "web_check": "verified"
+    },
+    {
+      "date": "2026-10-11",
+      "text": "Commissioner Anurag Kumar signs standing order de-notifying Jantar Mantar",
+      "claimant": "Delhi Police",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "business_standard"
+      ],
+      "page": 9,
+      "links": [
+        {
+          "source_id": "business_standard",
+          "url": "https://www.business-standard.com/india-news/delhi-police-de-notifies-jantar-mantar-as-protest-site-names-3-new-spots-126101201284_1.html",
+          "title": "Delhi Police de-notifies Jantar Mantar as protest site, names 3 new spots",
+          "publisher": "Business Standard",
+          "date": "2026-10-12",
+          "snippet": null,
+          "verified": false
+        }
+      ],
+      "web_check": "unconfirmed",
+      "web_notes": [
+        "business_standard: Found via search; business-standard.com returns 403 to fetch. Search summary: Commissioner Anurag Kumar's standing order dated 11 Oct de-notified Jantar Mantar. Alt URL: https://www.business-standard.com/india-news/delhi-police-de-notifies-jantar-mantar-as-protest-venue-names-three-sites-126101200407_1.html"
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "text": "Executive magistrate releases Dipke and others (“no breach of peace for one year”)",
+      "claimant": "court",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "aljazeera"
+      ],
+      "page": 9,
+      "links": [
+        {
+          "source_id": "aljazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+          "title": "India's 'Cockroach' leaders released from detention after police crackdown",
+          "publisher": "Al Jazeera",
+          "date": "2026-10-11",
+          "snippet": "released ... executive magistrate's court on the condition of 'no breach of peace for one year'",
+          "verified": true
+        }
+      ],
+      "web_check": "verified"
+    },
+    {
+      "date": "2026-10-12",
+      "text": "Opposition “March for Democracy” to SC stopped at Bhagwan Dass Road",
+      "claimant": "media",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "business_standard"
+      ],
+      "page": 9,
+      "links": [
+        {
+          "source_id": "business_standard",
+          "url": null,
+          "title": null,
+          "publisher": "Business Standard",
+          "date": null,
+          "snippet": null,
+          "verified": false
+        }
+      ],
+      "web_check": "unconfirmed",
+      "web_notes": [
+        "business_standard: NOT FOUND: no Business Standard article on the 12 Oct opposition march halt located (BS pages 403 on fetch). Search found a BS preview ('Opposition to march to SC today') and The Week https://www.theweek.in/news/india/2026/10/12/anti-cec-protest-india-bloc-march-halted-rahul-gandhi-files-writ-petition-against-ec-in-supreme-court.html (not fetched) saying march was halted near the Supreme Court / Bhagwan Dass Road."
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "text": "Delhi Police get 300 social-media posts taken down for “rumours” (Business Standard)",
+      "value": 300,
+      "unit": "posts",
+      "claimant": "Delhi Police",
+      "attribution": "police said",
+      "status": "claimed",
+      "source_ids": [
+        "business_standard"
+      ],
+      "page": 9,
+      "links": [
+        {
+          "source_id": "business_standard",
+          "url": "https://www.business-standard.com/amp/india-news/delhi-police-gets-300-social-media-posts-taken-down-for-spreading-rumours-126101200612_1.html",
+          "title": "Delhi Police gets 300 social media posts taken down for spreading 'rumours'",
+          "publisher": "Business Standard",
+          "date": "2026-10-12",
+          "snippet": null,
+          "verified": false
+        }
+      ],
+      "web_check": "unconfirmed",
+      "web_notes": [
+        "business_standard: Title matches ledger; found via search, fetch 403. Per search summary figure comes from police sources."
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "text": "Jantar Mantar was stripped of its 33-year protest-site status",
+      "value": 33,
+      "unit": "years",
+      "claimant": "media",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "dossier",
+        "thedailyjagran"
+      ],
+      "page": 1,
+      "note": "p1 wording has no chip; the 33 figure is sourced to Daily Jagran in the p21 table.",
+      "links": [
+        {
+          "source_id": "thedailyjagran",
+          "url": null,
+          "title": null,
+          "publisher": "The Daily Jagran",
+          "date": null,
+          "snippet": null,
+          "verified": false
+        }
+      ],
+      "web_check": "unconfirmed",
+      "web_notes": [
+        "thedailyjagran: Not found. Search results (not fetched): Jantar Mantar de-notified by Delhi Police order of 11 Oct 2026 (ledger 12 Oct is the reporting day); site designated for protests from 1993 (33 yrs) per a result, though ThePrint (theprint.in/india/de-listed-as-protest-site-but-jantar-mantars-seen-2-decades-of-dissent-anna-hazare-to-wrestlers-to-cjp/3069661/) says formally designated 2003. Unverified 33-year figure."
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "text": "new sites: Ramlila Maidan (3 km), CBD Ground Shahdara (12 km), Burari (23 km)",
+      "claimant": "Delhi Police",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "business_standard"
+      ],
+      "page": 9,
+      "links": [
+        {
+          "source_id": "business_standard",
+          "url": "https://www.business-standard.com/india-news/delhi-police-de-notifies-jantar-mantar-as-protest-site-names-3-new-spots-126101201284_1.html",
+          "title": "Delhi Police de-notifies Jantar Mantar as protest site, names 3 new spots",
+          "publisher": "Business Standard",
+          "date": "2026-10-12",
+          "snippet": null,
+          "verified": false
+        }
+      ],
+      "web_check": "unconfirmed",
+      "web_notes": [
+        "business_standard: Found via search, fetch 403. Search summary gives Ramlila Maidan 3 km, CBD Ground Shahdara 12 km, Burari 23 km from Jantar Mantar (matches ledger)."
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "text": "Das, Ranka and Shinde among those who enter the de-notified site: 14 people (police, via Hans India) / about 20 volunteers who jumped barricades (Al Jazeera)",
+      "claimant": "police / Al Jazeera",
+      "attribution": "reported",
+      "status": "disputed",
+      "source_ids": [
+        "india",
+        "hansindia",
+        "aljazeera"
+      ],
+      "page": 9,
+      "resolution": "Vali 2026-11-12: primary source wins. 'via private premises' dropped: Al Jazeera says volunteers jumped barricades. 14 is the police figure from the consolidated table (Hans India).",
+      "links": [
+        {
+          "source_id": "india",
+          "url": "https://www.india.com/news/india/sir-row-ashutosh-ranka-saurav-das-abhijeet-dipke-ajinkya-shinde-bjp-ratna-singh-jantar-mantar-gyanesh-kumar-delhi-police-cec-election-commission-8535853/",
+          "title": "SIR Row Live: Saurav Das, Ashutosh Ranka arrested, claims CJP; Delhi Police calls it preventive",
+          "publisher": "India.com",
+          "date": "2026-10-14",
+          "snippet": "Das, Ranka and Ajinkya Shinde placed under preventive arrest; FIR for entering Jantar Mantar area without authorisation",
+          "verified": true
+        },
+        {
+          "source_id": "hansindia",
+          "url": "https://www.thehansindia.com/news/cities/new-delhi/saurav-das-ranka-arrested-for-repeated-law-violations-instigating-others-delhi-police-1132339",
+          "title": "Saurav Das, Ranka arrested for repeated law violations, instigating others: Delhi Police",
+          "publisher": "Hans India",
+          "date": "2026-10-14",
+          "snippet": "reached Jantar Mantar, which has been denotified as a designated protest site, by trespassing through a private premise",
+          "verified": true
+        },
+        {
+          "source_id": "aljazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/13/police-detain-leaders-of-indias-cockroach-movement-at-new-delhi-protest",
+          "title": "Police detain leaders of India's 'cockroach' movement at New Delhi protest",
+          "publisher": "Al Jazeera",
+          "date": "2026-10-13",
+          "snippet": "among about 20 volunteers who 'sneaked' into Jantar Mantar",
+          "verified": true
+        }
+      ],
+      "web_check": "resolved",
+      "web_notes": [
+        "india: PARTIAL: names/site breach confirmed; '11 others', 'private premises' and 'about 20 (Al Jazeera)' not on this page. See id 156 for private premises (Hans India).",
+        "hansindia: PARTIAL: confirms de-notified site and private premises per police; '11 others' not in fetched text. Al Jazeera 13 Oct https://www.aljazeera.com/news/2026/10/13/police-detain-leaders-of-indias-cockroach-movement-at-new-delhi-protest says about 20 volunteers (search snippet only); a later Al Jazeera piece says 14 protesters.",
+        "aljazeera: CONTRADICTION: ledger says site breached 'via private premises'; AJ says volunteers jumped barricades into the protest site; no private premises mentioned. Also: Ranka, Das, Ajinkya Shinde named; 'about 20' matches; police figure of '11 others' absent. AJ says Delhi Police declared Jantar Mantar 'no longer designated an official protest site'."
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "text": "FIR 128/26 at PS Parliament Street (BNS 221/115(2)/132/121(1)/3(5)); second FIR at Connaught Place; “preventive arrest”",
+      "claimant": "Delhi Police",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "india"
+      ],
+      "page": 9,
+      "links": [
+        {
+          "source_id": "india",
+          "url": null,
+          "title": "Jantar Mantar breach: Delhi Police files FIR against CJP leaders Ashutosh Ranka, Saurav Das",
+          "publisher": "India.com",
+          "date": "2026-10-13",
+          "snippet": "",
+          "verified": false
+        }
+      ],
+      "web_check": "unconfirmed",
+      "web_notes": [
+        "india: Closest: https://www.india.com/news/india/jantar-mantar-breach-delhi-police-files-fir-against-cjp-leaders-ashutosh-ranka-saurav-das-8535820/ but it does NOT mention FIR 128/26, PS Parliament Street, BNS sections, Connaught Place FIR (only 'trespassing, violation of prohibitory orders, breach of peace bond'). A search snippet (not fetched) mentions 'FIR No 128/26 dated 13.10.2026' and FIR 289/26 PS Connaught Place u/s 223a/332/61(2) (a Zee News piece). Unverified."
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "text": "SEM at Mandir Marg remands Das and Ranka to 5 days’ judicial custody (Tihar)",
+      "value": 5,
+      "unit": "days",
+      "claimant": "court",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "india"
+      ],
+      "page": 10,
+      "links": [
+        {
+          "source_id": "india",
+          "url": "https://zeenews.india.com/india/jailing-youth-act-of-cowardice-rahul-gandhi-slams-arrest-of-cjp-leaders-saurav-das-and-ashutosh-ranka-3075965.html",
+          "title": "'Jailing youth act of cowardice': Rahul Gandhi slams arrest of CJP leaders Saurav Das and Ashutosh Ranka",
+          "publisher": "Zee News (zeenews.india.com)",
+          "date": "2026-10-14",
+          "snippet": "Saurav Das and Ashutosh Ranka were sent to five days of judicial custody on Wednesday",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "india: PARTIAL: five days judicial custody confirmed; Tihar confirmed by India.com live blog (id 155 URL). Mandir Marg SEM per search results. Note 'india' chip may be India.com or zeenews.india.com; India.com live blog also confirms 5-day custody in Tihar."
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "text": "Rahul Gandhi calls it “an act of cowardice”",
+      "claimant": "Rahul Gandhi",
+      "attribution": "said",
+      "status": "documented",
+      "source_ids": [
+        "india"
+      ],
+      "page": 10,
+      "links": [
+        {
+          "source_id": "india",
+          "url": "https://www.india.com/news/india/sir-row-ashutosh-ranka-saurav-das-abhijeet-dipke-ajinkya-shinde-bjp-ratna-singh-jantar-mantar-gyanesh-kumar-delhi-police-cec-election-commission-8535853/",
+          "title": "SIR Row Live: Saurav Das, Ashutosh Ranka arrested, claims CJP; Delhi Police calls it preventive",
+          "publisher": "India.com",
+          "date": "2026-10-14",
+          "snippet": "Rahul Gandhi called the jailing 'an act of cowardice.'",
+          "verified": true
+        }
+      ],
+      "web_check": "verified"
+    },
+    {
+      "date": "2026-10-15",
+      "text": "HPEC portal (hpec.nic.in) launched; the SC-appointed committee lists pellet gun use, harassment of female protesters and property destruction among its priorities",
+      "claimant": "HPEC (SC-appointed committee)",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "theprint",
+        "tribuneindia"
+      ],
+      "page": 10,
+      "resolution": "Vali 2026-11-12: primary source wins. ThePrint attributes the priorities to the committee, not the MHA, and uses 'harassment of female protesters'.",
+      "links": [
+        {
+          "source_id": "theprint",
+          "url": "https://theprint.in/india/panel-probing-cjp-protest-violence-launches-portal-inviting-complaints-evidence/3073014/",
+          "title": "Panel probing CJP protest violence launches portal inviting complaints, evidence",
+          "publisher": "ThePrint",
+          "date": "2026-10-15",
+          "snippet": "has launched an online portal inviting complaints, statements and evidence",
+          "verified": true
+        },
+        {
+          "source_id": "tribuneindia",
+          "url": "https://www.tribuneindia.com/news/india/sc-panel-launches-portal-for-plaints-on-pellet-gun-use-in-july/",
+          "title": "Supreme Court panel launches portal for plaints on pellet gun use in July",
+          "publisher": "The Tribune",
+          "date": "2026-10-18",
+          "snippet": "launched a dedicated portal, hpec.nic.in, to facilitate complaints and submissions",
+          "verified": true
+        }
+      ],
+      "web_check": "resolved",
+      "web_notes": [
+        "theprint: PARTIAL / CONTRADICTION (attribution): portal https://hpec.nic.in/ and the pellet guns / harassment of female protesters / property destruction priorities are confirmed, but the article attributes the inquiry to the Supreme Court-appointed committee (HPEC) and does not name the MHA. Tribune says 'the ministry's statement'. Wording is 'harassment of female protesters', not 'targeting of women'. ThePrint follow-up: https://theprint.in/india/jantar-mantar-violence-sc-panel-to-hear-evidence-on-pellet-gun-use-harassment-of-female-protesters/3080573/ (24 Oct, said to cite a Home Ministry statement; not fetched).",
+        "tribuneindia: PARTIAL: confirms portal and priorities (pellet guns, targeted violence/harassment of female protesters, destruction of property by either side); MHA not named ('the ministry's statement'). Date: page updated 18 Oct; another Tribune version https://www.tribuneindia.com/news/delhi/cjp-protests-sc-panel-launches-portal-for-witnesses-pellet-gun-use-vandalism-priority-areas is dated 17 Oct; ThePrint/PTI says 15 Oct. Ledger date 15 Oct matches PTI."
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "text": "“Lehra Do Tiranga” march, Connaught Place; Dipke detained at home (20+ police, 2 notices); Bora detained at Mandi House",
+      "claimant": "media",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "theprint"
+      ],
+      "page": 10,
+      "links": [
+        {
+          "source_id": "theprint",
+          "url": "https://theprint.in/india/two-notices-20-cops-at-his-door-cjp-founder-dipke-barred-from-tiranga-march-detained/3074187/",
+          "title": "Two notices, 20 cops at his door: CJP founder Dipke barred from Tiranga march, detained",
+          "publisher": "ThePrint",
+          "date": "2026-10-16",
+          "snippet": "picked up from his Jhandewalan residence",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "theprint: PARTIAL: headline supports 2 notices / 20 cops and pickup from residence. Bora: ThePrint https://theprint.in/feature/delhi-connaught-place-tiranga-march-cjp-aisa-detentions/3074090/ says she was 'marching from Mandi House' when detained; PTI piece 3074067 says 'detained at Mandi House'. Minor inconsistency: PTI body says Dipke was served one notice; the headline says two."
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "text": "~150 detained (police)",
+      "value": 150,
+      "unit": "detained",
+      "claimant": "Delhi Police",
+      "attribution": "police said",
+      "status": "disputed",
+      "source_ids": [
+        "theprint"
+      ],
+      "page": 10,
+      "links": [
+        {
+          "source_id": "theprint",
+          "url": "https://theprint.in/india/abhijeet-dipke-neha-bora-among-over-150-detained-amid-lehra-do-tiranga-protests/3074067/",
+          "title": "Abhijeet Dipke, Neha Bora among over 150 detained amid 'Lehra Do Tiranga' protests",
+          "publisher": "ThePrint",
+          "date": "2026-10-16",
+          "snippet": "around 150 people have been detained so far",
+          "verified": true
+        }
+      ],
+      "web_check": "verified"
+    },
+    {
+      "date": "2026-10-16",
+      "text": "“more than 100” (Fair Observer)",
+      "value": 100,
+      "unit": "detained",
+      "claimant": "Fair Observer",
+      "attribution": "reported",
+      "status": "disputed",
+      "source_ids": [
+        "fairobserver",
+        "theprint"
+      ],
+      "page": 10,
+      "links": [
+        {
+          "source_id": "fairobserver",
+          "url": "https://www.fairobserver.com/world-news/india-news/indias-cockroach-generation-a-youth-movement-challenges-the-establishment/",
+          "title": "India's Cockroach Generation: A Youth Movement Challenges the Establishment",
+          "publisher": "Fair Observer",
+          "date": "2026-11-07",
+          "snippet": "Police reportedly detained more than 100 protesters during the demonstrations, citing restrictions on public gatherings and the absence of permission.",
+          "verified": true
+        },
+        {
+          "source_id": "theprint",
+          "url": null,
+          "title": null,
+          "publisher": "ThePrint",
+          "date": null,
+          "snippet": null,
+          "verified": false
+        }
+      ],
+      "web_check": "unconfirmed",
+      "web_notes": [
+        "fairobserver: PARTIAL: figure is not explicitly tied to 16 Oct; article dates Dipke's detention to 16 Oct. Other Fair Observer pieces (elite universities, Gen Z CJP) do not contain it.",
+        "theprint: NOT FOUND: the fact is a Fair Observer figure ('more than 100'), mis-tagged to ThePrint. No Fair Observer article located by search. ThePrint's own count for 16 Oct is ~150 (police), not 100. Suggest re-tagging this fact to fairobserver."
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "text": "Custody extended by 2 days; cases moved to Crime Branch Inter-State Cell",
+      "claimant": "court",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "dossier"
+      ],
+      "page": 10,
+      "note": "Dossier row cites no outlet."
+    },
+    {
+      "date": "2026-10-21",
+      "text": "Das and Ranka released after 7 days; SEM Ritu Raj rejects 3-day extension; ₹50,000 bonds and an undertaking not to call Jantar Mantar protests",
+      "value": 7,
+      "unit": "days",
+      "claimant": "court",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "thelogicalindian"
+      ],
+      "page": 10,
+      "links": [
+        {
+          "source_id": "thelogicalindian",
+          "url": "https://thelogicalindian.com/?p=131264",
+          "title": "CJP Leaders Saurav Das And Ashutosh Ranka Walk Free, Promise No Protest At De-notified Jantar Mantar",
+          "publisher": "The Logical Indian",
+          "date": "2026-10-22",
+          "snippet": "would not call for a protest at Jantar Mantar for as long as the site remains de-notified",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "thelogicalindian: PARTIAL: confirms release after 7 days (Wed 21 Oct), Rs 50,000 bonds, undertaking not to call Jantar Mantar protests while de-notified. Does not name 'SEM Ritu Raj' or use 'rejects'; says police sought three more days but the Special Executive Magistrate ordered release. Another report (sabrangindia.in, search-only) names SEM Ritu Raj. Undertaking is conditional on de-notified status; ledger wording omits that."
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "text": "Crime Branch questioning, Rajouri Garden: about 4 hours, about 70 questions (PTI)",
+      "value": 70,
+      "unit": "questions",
+      "claimant": "police sources (PTI)",
+      "attribution": "reported",
+      "status": "claimed",
+      "source_ids": [
+        "telanganatoday",
+        "theweek",
+        "pti"
+      ],
+      "page": 11,
+      "note": "Dossier dates this '23 Oct / 5 Nov'.",
+      "links": [
+        {
+          "source_id": "telanganatoday",
+          "url": "https://telanganatoday.com/delhi-police-pose-around-70-questions-to-cjp-leaders-over-jantar-mantar-protest",
+          "title": "Delhi Police pose around 70 questions to CJP leaders over Jantar Mantar protest",
+          "publisher": "Telangana Today",
+          "date": "2026-11-05",
+          "snippet": "Around 70 questions were put to them during the questioning",
+          "verified": true
+        },
+        {
+          "source_id": "theweek",
+          "url": "https://www.theweek.in/wire-updates/national/2026/11/05/delhi-police-crime-branch-questions-cjp-leaders-saurav-das-ashutosh-ranka.amp.html",
+          "title": "Delhi Police Crime Branch questions CJP leaders Saurav Das Ashutosh Ranka",
+          "publisher": "The Week",
+          "date": "2026-11-05",
+          "snippet": "reached the Crime Branch office in Rajouri Garden",
+          "verified": false
+        },
+        {
+          "source_id": "pti",
+          "url": "https://telanganatoday.com/delhi-police-pose-around-70-questions-to-cjp-leaders-over-jantar-mantar-protest",
+          "title": "Delhi Police pose around 70 questions to CJP leaders over Jantar Mantar protest",
+          "publisher": "PTI (via Telangana Today)",
+          "date": "2026-11-05",
+          "snippet": "Around 70 questions were put to them during the questioning",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "theweek: PARTIAL: PTI wire story on The Week confirms Rajouri Garden, police sources, 5 Nov (published 1:28 PM, around 11am arrival), but contains NO duration or question count. 'About 4 hours / about 70 questions' not found on this page; probably in a later PTI update. Telangana Today (other source id) may carry it."
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "text": "SC directs HPEC to file its first fact-finding report within a month",
+      "claimant": "Supreme Court",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "barandbench"
+      ],
+      "page": 11,
+      "resolution": "LawTrend dropped: its 5 Nov article sets no one-month deadline. Bar and Bench does.",
+      "links": [
+        {
+          "source_id": "barandbench",
+          "url": "https://www.barandbench.com/news/cjp-protests-supreme-court-asks-inquiry-panel-to-submit-its-report-on-police-excesses-in-a-month",
+          "title": "CJP Protests: Supreme Court asks inquiry panel to submit its report on police excesses in a month",
+          "publisher": "Bar and Bench",
+          "date": "2026-11-05",
+          "snippet": "to submit its first fact-finding report within one month",
+          "verified": true
+        }
+      ],
+      "web_check": "verified"
+    },
+    {
+      "date": "2026-11-05",
+      "text": "Union minister Jitendra Singh alleges CJP is funded from “unauthorised sources”; Ranka responds “Why were you negotiating with us then?”",
+      "claimant": "Jitendra Singh; Ashutosh Ranka",
+      "attribution": "alleged",
+      "status": "alleged",
+      "source_ids": [
+        "theweek"
+      ],
+      "page": 11,
+      "note": "Dossier dates this '~6 Nov'.",
+      "resolution": "Vali 2026-11-12: primary source wins. The Week's article is dated 5 Nov; UNI/Deccan Herald (search only) say Singh spoke on 3 Nov. Ranka's reply is verbatim in The Week, 7 Nov.",
+      "links": [
+        {
+          "source_id": "theweek",
+          "url": "https://www.theweek.in/news/india/2026/11/05/jitendra-singh-accuses-cjp-funding-foreign-ngos-pakistani-politicians.html",
+          "title": "Union minister's big charge: 'CJP funded by foreign donors, Pakistani politicians'",
+          "publisher": "The Week",
+          "date": "2026-11-05",
+          "snippet": "There is enough evidence to show that they are being funded by unauthorised sources, by anti-India NGOs...",
+          "verified": true
+        },
+        {
+          "source_id": "theweek",
+          "url": "https://www.theweek.in/news/india/2026/11/07/its-not-over-dipkes-message-ahead-of-cjp-protest-who-all-to-attend-kochi-jantar-mantar-stir.html",
+          "title": null,
+          "publisher": "The Week",
+          "date": "2026-11-07",
+          "snippet": "Why were you negotiating with us then?",
+          "verified": true
+        }
+      ],
+      "web_check": "resolved",
+      "web_notes": [
+        "theweek: PARTIAL / CONTRADICTION (date): article is dated 5 Nov 2026 (ledger says 6 Nov, '~6 Nov'); UNI/Deccan Herald say Singh spoke Tuesday 3 Nov. Ranka's reply 'Why were you negotiating with us then?' is NOT on this page but IS verbatim in The Week's https://www.theweek.in/news/india/2026/11/07/its-not-over-dipkes-message-ahead-of-cjp-protest-who-all-to-attend-kochi-jantar-mantar-stir.html (7 Nov)."
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "text": "“Jantar Mantar @ Kochi” march, Marine Drive to Rajendra Maidan, led by Prakash Raj",
+      "claimant": "CJP (organisers)",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "theweek"
+      ],
+      "page": 11,
+      "links": [
+        {
+          "source_id": "theweek",
+          "url": "https://www.theweek.in/news/india/2026/11/07/cockroach-janata-party-kochi-protest.html",
+          "title": "Jantar Mantar @ Kochi: CJP stages anti-SIR protest, Prakash Raj leads march",
+          "publisher": "The Week",
+          "date": "2026-11-07",
+          "snippet": "A march from Marine Drive to Rajendra Maidan, led by Prakash Raj",
+          "verified": true
+        }
+      ],
+      "web_check": "verified"
+    },
+    {
+      "date": "2026-11-07",
+      "text": "~500 (organisers)",
+      "value": 500,
+      "unit": "marchers",
+      "claimant": "CJP (organisers)",
+      "attribution": "CJP claims",
+      "status": "claimed",
+      "source_ids": [
+        "theweek"
+      ],
+      "page": 11,
+      "links": [
+        {
+          "source_id": "theweek",
+          "url": "https://www.theweek.in/news/india/2026/11/07/cockroach-janata-party-kochi-protest.html",
+          "title": "Jantar Mantar @ Kochi: CJP stages anti-SIR protest, Prakash Raj leads march",
+          "publisher": "The Week",
+          "date": "2026-11-07",
+          "snippet": "Around 500 activists participated in the march, according to the organisers.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified"
+    }
+  ],
+  "narratives": [
+    {
+      "text": "“anarchic elements” and a “flop show” (BJP’s Sambit Patra)",
+      "claimant": "Sambit Patra",
+      "attribution": "said",
+      "status": "documented",
+      "source_ids": [
+        "aljazeera"
+      ],
+      "page": 12,
+      "resolution": "Split by the 2026-11-12 web check: Al Jazeera (10 Oct) carries Patra's phrases only.",
+      "links": [
+        {
+          "source_id": "aljazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+          "title": "India's 'Cockroach' leaders released from detention after police crackdown",
+          "publisher": "Al Jazeera",
+          "date": "2026-10-10",
+          "snippet": "anarchic elements ... their flop show has been completely demolished",
+          "verified": true
+        }
+      ],
+      "web_check": "resolved",
+      "web_notes": [
+        "aljazeera: PARTIAL: Sambit Patra phrases present. Chouhan 'hooligans' and Jitendra Singh foreign-funding ABSENT from this AJ piece. CONTRADICTION (search only, not fetched): Jitendra Singh foreign-funding allegations are dated ~5 Nov 2026 (The Week https://www.theweek.in/news/india/2026/11/05/jitendra-singh-accuses-cjp-funding-foreign-ngos-pakistani-politicians.html; Outlook India), not October. Chouhan quote not found."
+      ]
+    },
+    {
+      "text": "“group of hooligans” (Shivraj Singh Chouhan)",
+      "claimant": "Shivraj Singh Chouhan",
+      "attribution": "said",
+      "status": "unverified",
+      "source_ids": [
+        "dossier"
+      ],
+      "page": 12,
+      "resolution": "Dossier-only: not in the Al Jazeera piece and not found elsewhere. Jitendra Singh's foreign-funding claim is dated 5 Nov (separate fact)."
+    },
+    {
+      "text": "India’s UN mission in Geneva called UN concerns “unwarranted interference”.",
+      "claimant": "India's UN mission",
+      "attribution": "said",
+      "status": "documented",
+      "source_ids": [
+        "aljazeera"
+      ],
+      "page": 12,
+      "links": [
+        {
+          "source_id": "aljazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+          "title": "India's 'Cockroach' leaders released from detention after police crackdown",
+          "publisher": "Al Jazeera",
+          "date": "2026-10-10",
+          "snippet": "an unwarranted interference in the internal affairs of India",
+          "verified": true
+        }
+      ],
+      "web_check": "verified"
+    }
+  ],
+  "status_line": {
+    "text": "The movement is still active (Kochi rally, 7 November) and a Supreme Court-appointed inquiry into the July police violence is pending.",
+    "claimant": "dossier",
+    "attribution": "reported",
+    "status": "documented",
+    "source_ids": [
+      "theweek",
+      "barandbench"
+    ],
+    "page": 1,
+    "links": [
+      {
+        "source_id": "theweek",
+        "url": "https://www.theweek.in/news/india/2026/11/07/cockroach-janata-party-kochi-protest.html",
+        "title": "Jantar Mantar @ Kochi: CJP stages anti-SIR protest, Prakash Raj leads march",
+        "publisher": "The Week",
+        "date": "2026-11-07",
+        "snippet": "Around 500 activists participated in the march, according to the organisers.",
+        "verified": true
+      },
+      {
+        "source_id": "barandbench",
+        "url": "https://www.barandbench.com/news/cjp-protests-supreme-court-asks-inquiry-panel-to-submit-its-report-on-police-excesses-in-a-month",
+        "title": "CJP Protests: Supreme Court asks inquiry panel to submit its report on police excesses in a month",
+        "publisher": "Bar and Bench",
+        "date": "2026-11-05",
+        "snippet": "to submit its first fact-finding report within one month",
+        "verified": true
+      }
+    ],
+    "web_check": "partial",
+    "web_notes": [
+      "theweek: PARTIAL: supports the Kochi rally on 7 Nov only. The Week pages checked (Kochi report, 'It's not over') do NOT mention the Supreme Court-appointed inquiry; for that use Tribune https://www.tribuneindia.com/news/delhi/cjp-protests-probe-panel-hardly-received-any-complaints-on-jantar-mantar-stir-violence-says-sc/ (not fetched) or the Tribune HPEC pages.",
+      "barandbench: PARTIAL: supports the pending SC-appointed inquiry only. Kochi rally of 7 Nov not mentioned (other outlet, The Week/India Today)."
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+[
+ {
+  "name": "Abhijeet Dipke",
+  "local_file": "media/people/abhijeet-dipke.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Abhijeet_Dipke_during_an_interview_with_LetsUpp_Marathi_on_YouTube_(in_Marathi)_(3x4_cropped).jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Abhijeet_Dipke_during_an_interview_with_LetsUpp_Marathi_on_YouTube_%28in_Marathi%29_%283x4_cropped%29.jpg",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "artist": "LetsUpp Marathi on YouTube",
+  "credit_line": "Screenshot from LetsUpp Marathi on YouTube, CC BY 4.0, via Wikimedia Commons"
+ },
+ {
+  "name": "Sonam Wangchuk",
+  "local_file": "media/people/sonam-wangchuk.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Sonam_Wangchuk,_2017_(cropped).jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Sonam_Wangchuk%2C_2017_%28cropped%29.jpg",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "artist": "Sonam Wangchuk",
+  "credit_line": "Sonam Wangchuk (Flickr), CC BY 2.0, via Wikimedia Commons"
+ },
+ {
+  "name": "Dharmendra Pradhan",
+  "local_file": "media/people/dharmendra-pradhan.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Dharmendra_Pradhan,_Minister_of_Education.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Dharmendra_Pradhan%2C_Minister_of_Education.jpg",
+  "license": "GODL-India (Government Open Data License - India)",
+  "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+  "artist": "Ministry of Education",
+  "credit_line": "Ministry of Education / Press Information Bureau, Government of India (GODL-India), via Wikimedia Commons"
+ },
+ {
+  "name": "Saurav Das",
+  "local_file": "media/people/saurav-das.png",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Saurav_Das_(political_activist)_on_podcast_with_Teesta_Setalvad.png",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Saurav_Das_%28political_activist%29_on_podcast_with_Teesta_Setalvad.png",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "artist": "Teesta Setalvad on YouTube",
+  "credit_line": "Screenshot from Teesta Setalvad on YouTube, CC BY 4.0, via Wikimedia Commons"
+ },
+ {
+  "name": "Neha Bora",
+  "local_file": "media/people/neha-bora.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Neha_Bora_in_Patna_(cropped).jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Neha_Bora_in_Patna_%28cropped%29.jpg",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "artist": "Hindustan Samachar on YouTube",
+  "credit_line": "Screenshot from Hindustan Samachar on YouTube, CC BY 4.0, via Wikimedia Commons"
+ },
+ {
+  "name": "J.P. Nadda",
+  "local_file": "media/people/jp-nadda.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Jagat_Prakash_Nadda_in_2026.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Jagat_Prakash_Nadda_in_2026.jpg",
+  "license": "GODL-India (Government Open Data License - India)",
+  "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+  "artist": "Ministry of Health and Family Welfare",
+  "credit_line": "Ministry of Health and Family Welfare / Press Information Bureau, Government of India (GODL-India), via Wikimedia Commons"
+ },
+ {
+  "name": "Jitendra Singh",
+  "local_file": "media/people/jitendra-singh.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Shri_Jitendra_Singh_Minister_of_for_Personnel,_Public_Grievances_%26_Pensions.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Shri_Jitendra_Singh_Minister_of_for_Personnel%2C_Public_Grievances_%26_Pensions.jpg",
+  "license": "GODL-India (Government Open Data License - India)",
+  "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+  "artist": "Ministry of Personnel, Public Grievances and Pensions",
+  "credit_line": "Ministry of Personnel, Public Grievances and Pensions / Press Information Bureau, Government of India (GODL-India), via Wikimedia Commons"
+ },
+ {
+  "name": "Ashutosh Ranka",
+  "local_file": "media/people/Ashutosh_Ranka.png",
+  "commons_page": "https://wikigama.org/wiki/File:Ashutosh_Ranka.png",
+  "url": "https://wikigama.org/images/0/06/Ashutosh_Ranka.png",
+  "license": "CC BY-SA 4.0 (Wikigama site default; the file page states no licence)",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "artist": null,
+  "credit_line": "Wikigama (uploaded 31 Jul 2026), CC BY-SA 4.0",
+  "note": "Supplied by Vali 2026-11-12; byte-identical to the Wikigama file. The file page names no photographer or source, and the image looks like a news-agency photo, so the site licence may not truly cover it. Replace if an agency credit turns up."
+ }
+]
