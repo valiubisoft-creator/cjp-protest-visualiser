@@ -8,7 +8,7 @@ Branch: `build/scene-by-scene`. Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions 
 | F1 Editorial and data ledger | **done** 2026-11-12 | medium | Kickoff: [kickoffs/F1.md](kickoffs/F1.md). Output: `data/story/*.json`, generator `f1/build_story.py`, [GAPS.md](GAPS.md) |
 | F2 Design system and storyboard | **done** 2026-11-12 | high | Brief: [kickoffs/F2.md](kickoffs/F2.md). Theme: **ink**. Visual target: `design/storyboard` + `design/shots/frames/` (19 frames) |
 | F3 Shell and harness | **done** 2026-11-12 (Vali approved) | high | Kickoff: [kickoffs/F3.md](kickoffs/F3.md). Shell at http://localhost:5173/v3/. Briefs + targets: [scenes/](scenes/README.md). QA: `qa/v3/` |
-| S4a Skeleton spike | **next**: brief ready, [scenes/S4a.md](scenes/S4a.md) | high | Paste line is at the top of the brief |
+| S4a Skeleton spike | **done** 2026-11-12 (Vali approved) | high | Brief: [scenes/S4a.md](scenes/S4a.md). Spike: http://localhost:5173/design/spike-s4a. Shots: `qa/v3/S4a/`. **Lanes 3**, runtime skeleton |
 | S0 | — | high | |
 | S1–S2 | — | high | |
 | S3 | — | high | |
@@ -70,6 +70,13 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
 - Stars: `star(source_ids, data.byId.source, label)` (`src/lib/star.js`) → `<a class="star" href="#src-N">`. S10 renders `id="src-N"`.
 
 **Roach contract.** `roach(ctx, x, y, rot, s, legs)` in `src/roach/roach.js` is the verbatim v2 renderer (`design/lib/roach.js` re-exports it). Never edit it; wrap it. `src/roach/swarm.js`: `createSwarm({ seed = 380, capacity = 1200 })` → `{ list, clear(), draw(ctx, { from, to, color }) }`; roach *i* keeps seeded traits (`k[4]`, `rot0`, `legs0`) from S0 to S4 and scenes write only its pose (`x, y, rot, s, legs, alpha`). `hash01(i, salt)` for stateless per-roach randomness. S0 owns the swarm model; S3/S3.5/S4 may add to it. The spec's `Roach` class interface (`update`, `setPath`, `setTarget`) is not built: S0/S4b add what they need on top of the pool.
+
+**Skeleton contract (S4a, 2026-11-12; additive to F3).** `src/lib/skeleton.js`, runtime (no bake).
+- `await skeletonReady(face)` before the first call (loads the face; if it isn't loaded the result is not cached and a warning is logged).
+- `strokes(text, face)` → reference polylines (raster at 240 px → Zhang–Suen → staircase clean → trace → spur prune → smooth). Once per string, viewport-independent.
+- `skeleton(text, { w, h, spacing, face = 'sans', lanes = 1, laneGap = .68 × spacing })` → `{ slots: [{ x, y, a, path, u, lane, o }], paths: [{ pts, closed, len }], box, k, ms }`. Slots are evenly spaced along arc length (merged within 0.6 × spacing at junctions), in reading order (path left to right, then `u`). `a` = tangent; `u` = arc length along `paths[path]` (for walking/shimmer); `lane`/`o` = lane index and its normal offset. Same fit and box as F2.
+- `fitScale(text, w, h, face)` → box px per reference px. **S4 size rule:** `k = fitScale(box) / fitScale(1220 × 330)`; roach `s = 5.6 × max(1, k)`, spacing `7.4 × max(1, k)`. So the slot count never exceeds the 1440×900 count (bigger screens get bigger roaches) and s never drops below 5.6 (legs stay visible).
+- `brackets()` unchanged; pad 30 and length 46 scale by `k`.
 
 **Harness.** `tools/cdp-scroll.mjs` (legacy list mode unchanged; a targets file → down pass then up pass, p checked per target, per-scene monotonic check, `qa-log.json`), `tools/compare.mjs` (storyboard | down | up sheet + down/up pixel diff), `tools/qa-shell.mjs` (shell regression), `tools/lib/cdp.mjs` (shared driver, exact viewport via Emulation). Targets: `docs/build/scenes/targets/*.json` `{ scene, brief, note, targets: [{ name, at: "S4:0.6", frame?, expect }] }`.
 
@@ -183,3 +190,19 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
   - Kept anime.js on the jsDelivr CDN as the kickoff asked (v2 pattern). Spec §8 wants no runtime network calls: self-host it in M9.
   - Desktop gate at 1280×720 (CLAUDE.md), not the spec's 1024 px. Note: a 1280×800 laptop's browser viewport is usually under 720 px tall, so it will see the gate.
 - 2026-11-12, **Vali approved F3** as built, including the decisions above. Next chat: **S4a** (`Read CLAUDE.md, then docs/build/STATUS.md and docs/build/scenes/S4a.md, and do S4a. Stop for my review at the end.`).
+- 2026-11-12, **S4a built** (awaiting Vali's review). Files: `src/lib/skeleton.js` (rewritten, contract above), `design/spike-s4a.{html,js}`, shots in `qa/v3/S4a/`. `s04-date.js` untouched (still the F3 placeholder for S4b).
+  - **Correction: the "~1,000 roaches" in F2 was wrong.** At s 5.6 and 7.4 px spacing, one track along the skeleton needs **386** slots at 1440×900 (the F2 raster picker made **334**, and that is what the approved `ink-S4-0.6.png` shows). That is about S3.5's 380, so the "~600 join from the edges" premise doesn't hold at the approved look.
+  - **New option, `lanes`** (raises slot density, as the spec's legibility rule allows; the face weight is unchanged): parallel tracks offset along the stroke normal, in a brick pattern. Slots at 1280×720 / 1440×900 / 2560×1440: **lanes 1: 341 / 386 / 386 · lanes 2: 670 / 762 / 762 · lanes 3: 1,007 / 1,143 / 1,143.** The pool (1,200) covers every case because of the size rule; 3 lanes leaves 57 spare.
+  - **Recommendation: lanes 3.** It reads as a bold date at both viewports (the single track reads, but light), and it restores Vali's ~1,000 and the join-from-the-edges beat: **S3.5's 380 take the centre lane** (386 slots, so +6 joiners) and draw the thin date first; **763 joiners** (627 at 1280×720) walk straight in from the nearest edge (T 289 · B 94 · L 193 · R 187 at 1440×900) and thicken it. Paths: mean 360 px, max 473 px against 729 px of converge scroll (S4 p 0–0.45); 299 / 383 of 583 at 1280×720; 598 / 762 of 1,166 at 2560×1440. Parallel paths, so no crossings. Spike: `?lanes=3&plan`.
+  - **Runtime, not bake.** Reference strokes: 60–66 ms cold, 17–22 ms warm (headless); 33–60 ms in Vali's Chrome. Viewport-independent, and layout costs 1–2 ms per size. The F2 version re-thinned at viewport size: 97 ms at 1440×900 and growing with area. A bake would save at most ~60 ms once at boot, but it would add a tool, a data file per date string (S4 and S6) and a regeneration step. Stage 1's output is plain JSON-able arrays if M9 ever wants one.
+  - **Frame time** (all slots shimmering ±3 px, lanes 3, DPR 2): Vali's Chrome (M-series, 120 Hz) **120 fps**, frame p95 8.6 ms, draw 1.2 ms at 1434×788; 120 fps, p95 9.1 ms at a 2560×1440 virtual viewport. Headless: 59 fps, draw 2.0–2.3 ms at 1280×720, 1440×900 and 2560×1440.
+  - Storyboard re-shot to scratch: S4-0/0.45/0.6/0.9 and S6 differ from `design/shots/frames/` **by slot positions only**. The new slots are evenly spaced along arc length, while F2's raster-scan picker left gaps; same box, size and composition. Every other frame is byte-identical. `design/shots/frames/*` not re-shot (never-touch); `storyboard.js` unchanged.
+  - QA: `cdp-scroll` S4 targets down + up at 1440×900 and 1280×720: all PASS (placeholder). `qa-shell`: ALL PASS.
+  - For S4b: shimmer in the spike is `j = 3 · sin(ωt + φ)` along `a`, ω in 1.2–2.4 Hz (peak ≈ 34 px/s), legs phase `legs0 + 1.5 j`, heading flipped for half (`hash01(i, 1)`). Slot i = pool roach i. `?speed=` scales ω for tuning.
+- 2026-11-12, **Vali's review of S4a: approved.**
+  - **Lanes 3** for S4 (`skeleton(…, { lanes: 3 })`; the spike now defaults to it). The function default stays 1, so S6 and the storyboard are unchanged.
+  - **Converge plan adopted:** S3.5's 380 take the centre lane; ~760 joiners walk straight in from the nearest edge and thicken the date.
+  - **Runtime skeleton** (no bake).
+  - **Legibility passes** at 1440×900 and 1280×720.
+  - **Roaches were too slow:** shimmer doubled from 0.55–1.15 Hz to 1.2–2.4 Hz, and the legs swing 1.5× the displacement (was 1.1×). S4b uses these, and should keep the converge and release walks brisk to match.
+

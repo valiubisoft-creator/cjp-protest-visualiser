@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-theme="ink">
+<head>
+<meta charset="utf-8">
+<title>Cockroaches · S4a skeleton spike</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../styles/tokens.css">
+<style>
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); overflow: hidden; }
+  #stage { position: absolute; left: 0; top: 0; transform-origin: 0 0; background: var(--bg); }
+  #stage canvas { position: absolute; left: 0; top: 0; }
+  /* readout sits in the bottom-left corner, clear of the date (UI never covers content); H toggles it */
+  #hud { position: fixed; left: 12px; bottom: 12px; font: 500 12px/1.45 var(--font-text); color: var(--fg);
+         background: color-mix(in srgb, var(--bg) 82%, transparent); border: 1px solid var(--rule-c, currentColor);
+         padding: 8px 10px; white-space: pre; font-variant-numeric: tabular-nums; z-index: 2; }
+  #hud b { font-weight: 800; }
+  #hud.off { display: none; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<div id="hud" aria-live="off"></div>
+<script type="module" src="spike-s4a.js"></script>
+</body>
+</html>
