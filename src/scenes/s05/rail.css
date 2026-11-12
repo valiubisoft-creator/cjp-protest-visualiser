@@ -3,9 +3,9 @@
    host by the scene; --s5r-max (card max height) by rail.js. */
 .s5r-card { position: absolute; top: 24px; right: 24px; width: var(--s5-card-w, 400px); max-height: var(--s5r-max, calc(100% - 48px));
   box-sizing: border-box; overflow: hidden; background: var(--bg); color: var(--fg); border: var(--rule) solid var(--fg);
-  font-family: var(--font-text); pointer-events: auto; will-change: transform, opacity; }
+  font-family: var(--font-text); pointer-events: auto; }
 .s5r-card[aria-hidden="true"] { pointer-events: none; }
-.s5r-in { padding: 18px 20px; display: flex; flex-direction: column; gap: var(--s-3); will-change: transform; }
+.s5r-in { padding: 18px 20px; display: flex; flex-direction: column; gap: var(--s-3); }
 .s5r-fade { position: absolute; left: 0; right: 0; height: 24px; pointer-events: none; transition: none; }
 .s5r-fade.t { top: 0; background: linear-gradient(var(--bg), transparent); }
 .s5r-fade.b { bottom: 0; background: linear-gradient(transparent, var(--bg)); }

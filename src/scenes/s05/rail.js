@@ -97,8 +97,8 @@ export function createRail({ host, model, data, onMeasure }) {
   function show(c, [y, o, iy]) {
     const key = `${y.toFixed(1)}|${o.toFixed(3)}|${iy.toFixed(1)}`;
     if (c.key === key) return; c.key = key;
-    c.el.style.transform = `translateY(${y.toFixed(1)}px)`; c.el.style.opacity = o.toFixed(3); c.el.style.visibility = '';
-    c.inner.style.transform = `translateY(${iy.toFixed(1)}px)`;
+    c.el.style.transform = `translateY(${Math.round(y)}px)`; c.el.style.opacity = o.toFixed(3); c.el.style.visibility = '';
+    c.inner.style.transform = `translateY(${Math.round(iy)}px)`;
     c.el.classList.toggle('at-top', iy > -1); c.el.classList.toggle('at-end', iy < -O[c.i] + 1);
     arm(c);
   }

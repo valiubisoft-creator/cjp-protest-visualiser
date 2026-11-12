@@ -65,9 +65,10 @@ export default def => {
       baseMap().then(base => {
         points = pointsFor(model, base, c.data.byId.site);
         overlay = createOverlay({ model, pts: points, data: c.data, labelHost: el.labs });
-        mapApi = createMap({ model, data: c.data, base, points, labelHost: el.labs, legend: b => ({ w: el.legend.offsetWidth, h: Math.max(el.legend.offsetHeight, 110) + (b?.kind === 'hour' ? 64 : 0) }), extent: (b, k, sc) => clusterExtent(b, k, sc, M62, MH) });
+        mapApi = createMap({ model, data: c.data, base, points, labelHost: el.labs, legend: b => ({ w: el.legend.offsetWidth, h: Math.max(el.legend.offsetHeight, 62) + (b?.kind === 'hour' ? 18 : 0) }), extent: (b, k, sc) => clusterExtent(b, k, sc, M62, MH) });
         roaches = createRoaches({ model, data: c.data, mapApi, anchors: points, legendHost: el.legend, landed: () => release.landed(0) });
-        el.legend.insertAdjacentHTML('beforeend', overlay.keyHTML());
+        el.legend.querySelector('.lg-more').insertAdjacentHTML('beforeend', overlay.keyHTML());
+        el.legend.insertAdjacentHTML('beforeend', '<p class="lg-ill">Police, barricades and clashes: positions approximate, illustrative</p>');
         ready = true;
         if (W) { scene.resize(W, H); if (!ctx.root.hidden) render(ctx.clock.t); }
       }).catch(e => console.error('[S5] base map', e));
@@ -90,7 +91,10 @@ export default def => {
     enter() {},
     exit() { rail.unload?.(); },
     update(q) { p = q; render(ctx.clock.t); },
-    tick(t, dt) { if (!ready) return; roaches.frame(dt); drawRoaches(t); },
+    tick(t, dt) {
+      if (!ready) return; roaches.frame(dt); drawRoaches(t);
+      if (hourLive) drawMarks(t);     // tear gas breathes, bursts throb (idle only)
+    },
   };
 
   // the prologue backdrop, frozen at its S4 p 1 offset (it stops where the map takes over, STATUS)
@@ -118,6 +122,7 @@ export default def => {
     // S4's soft edges sat on a 62% box (black to 70%, clear at 100% of it): grow them out to the full screen
     s.setProperty('--s5-mx', (.7 * M62 + (W + 2 - .7 * M62) * eIn).toFixed(1) + 'px'); s.setProperty('--s5-mx2', (M62 + (W + 4 - M62) * eIn).toFixed(1) + 'px');
     s.setProperty('--s5-my', (80 + 20 * eIn).toFixed(2) + '%');
+    el.box.classList.toggle('hard', eIn >= 1);
     el.box.style.opacity = stage.toFixed(3); el.marks.style.opacity = stage.toFixed(3);
     const railA = ease.inOutSine(clamp01((li - .2) / .8)) * stage;
     el.rail.style.opacity = railA.toFixed(3); el.rail.style.transform = `translateX(${((1 - ease.outCubic(clamp01((li - .2) / .8))) * 24).toFixed(1)}px)`;
@@ -132,9 +137,8 @@ export default def => {
     // map + marks
     const cam = mapApi.camAt(p);
     mapApi.drawBase(g.base, cam);
-    mapApi.marks(g.ov, p, cam);
-    const hour = overlay.draw(g.ov, p, cam);
-    leaders(g.ov, cam, linkA);
+    linkAlpha = linkA; drawMarks(t, cam);
+    const hour = hourLive;
     el.legend.classList.toggle('hour', hour);
     drawRoaches(t);
     roaches.legend(p);
@@ -157,6 +161,12 @@ export default def => {
     }
     g2.beginPath(); g2.arc(sx, an.y, 2.5, 0, Math.PI * 2); g2.fill();
     g2.restore();
+  }
+  let hourLive = false, linkAlpha = 0;
+  function drawMarks(t, cam = mapApi.camAt(p)) {
+    mapApi.marks(g.ov, p, cam);
+    hourLive = overlay.draw(g.ov, p, cam, 1, t);
+    leaders(g.ov, cam, linkAlpha);
   }
   let hudKey = '';
   function hud() {

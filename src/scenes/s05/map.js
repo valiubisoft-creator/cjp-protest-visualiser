@@ -174,7 +174,7 @@ export function createMap({ model, data, base, labelHost, legend, extent, points
   function show(el, x, y, al, alignRight = false) {
     if (el.style.display === 'none') el.style.display = '';
     el.style.visibility = ''; el.style.opacity = al.toFixed(3);
-    el.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px) translate(${alignRight ? '-100%' : '10px'}, -50%)`;
+    el.style.transform = `translate(${Math.round(x)}px, ${Math.round(y)}px) translate(${alignRight ? '-100%' : '10px'}, -50%)`;   // whole px: crisp text, same raster both ways
   }
   return { resize, camAt, drawBase, marks, dirty, cams: () => cams, get sc() { return sc; } };
 }

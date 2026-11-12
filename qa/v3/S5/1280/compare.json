@@ -1,0 +1,68 @@
+[
+ {
+  "name": "S5-0",
+  "at": "S5:0",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "S5-lead",
+  "at": "S5:0.015",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "S5-start",
+  "at": "S5:0.048",
+  "frame": "S5-start",
+  "downUpDiff": 0
+ },
+ {
+  "name": "S5-0718",
+  "at": "S5:0.3357",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "S5-0720",
+  "at": "S5:0.41",
+  "frame": "S5-0720",
+  "downUpDiff": 0.0129296875
+ },
+ {
+  "name": "S5-0720-0720",
+  "at": "S5:0.507",
+  "frame": null,
+  "downUpDiff": 0.005628255208333334
+ },
+ {
+  "name": "S5-0720-1115",
+  "at": "S5:0.63",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "S5-0720-1430",
+  "at": "S5:0.692",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "S5-0720-1600",
+  "at": "S5:0.727",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "S5-0720-2040",
+  "at": "S5:0.803",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "S5-1",
+  "at": "S5:1",
+  "frame": null,
+  "downUpDiff": 0
+ }
+]

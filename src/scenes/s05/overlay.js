@@ -53,7 +53,9 @@ export function createOverlay({ model, pts, data, labelHost }) {
   }
   const at = (id, cam) => { const q = pts[id]; return q ? project(cam, mw, mh, q.x, q.y) : null; };
 
-  function draw(g, p, cam, alpha = 1) {
+  let T = 0;                                   // idle clock (tick only; 0 under ?still → the static frame)
+  function draw(g, p, cam, alpha = 1, clock = 0) {
+    T = clock;
     const { a, b, t } = model.phase(p), N = model.N;
     const show = (k, f) => k >= 0 && k < N && model.beats[k].step && f > 0 ? [k, f] : null;
     const layers = a === b ? [show(a, 1)] : [show(a, 1 - clamp01(t * 2)), show(b, clamp01(t * 2 - 1))];
@@ -102,7 +104,7 @@ export function createOverlay({ model, pts, data, labelHost }) {
       }
       g.restore();
       const el = labs[k][j];
-      if (el) { el.style.display = ''; el.style.opacity = A.toFixed(3); el.style.transform = `translate(${(q.x + 14).toFixed(1)}px, ${(q.y + 30).toFixed(1)}px)`; }
+      if (el) { el.style.display = ''; el.style.opacity = A.toFixed(3); el.style.transform = `translate(${Math.round(q.x + 14)}px, ${Math.round(q.y + 30)}px)`; }
     });
     g.globalAlpha = 1;
   }
@@ -121,7 +123,7 @@ export function createOverlay({ model, pts, data, labelHost }) {
   function incident(g, kind, q, k) {
     g.save();
     if (kind === 'tear_gas') {                       // halftone cloud: dots thinning outward (seeded)
-      const R = 58, cx = q.x + 8, cy = q.y - 6, A0 = g.globalAlpha;
+      const br = Math.sin(T * 1.1 + k) - Math.sin(k), R = 58 * (1 + .07 * br), cx = q.x + 8 + 3 * (Math.sin(T * .6) ), cy = q.y - 6 - 2 * Math.sin(T * .45), A0 = g.globalAlpha;   // the cloud breathes and drifts
       const grd = g.createRadialGradient(cx, cy, 0, cx, cy, R); grd.addColorStop(0, col.gasFill); grd.addColorStop(1, 'transparent');
       g.globalAlpha = A0 * .55; g.fillStyle = grd; g.beginPath(); g.ellipse(cx, cy, R, R * .75, 0, 0, TAU); g.fill();
       g.globalAlpha = A0; g.fillStyle = col.gas;
@@ -132,7 +134,8 @@ export function createOverlay({ model, pts, data, labelHost }) {
       }
     } else if (kind === 'lathi_charge') {            // red burst
       g.fillStyle = col.polEdge; g.beginPath(); g.arc(q.x, q.y, 25, 0, TAU); g.fill();
-      g.strokeStyle = col.red; g.lineWidth = 3.5; g.lineCap = 'round';
+      const pu = .5 - .5 * Math.cos(T * 3.2 + (q.x % 7));                  // the burst throbs (idle)
+      g.globalAlpha *= 1 - .35 * pu * (T > 0); g.strokeStyle = col.red; g.lineWidth = 3.5; g.lineCap = 'round';
       for (let i = 0; i < 10; i++) { const a = i * TAU / 10 + .2, r1 = i % 2 ? 15 : 23; g.beginPath(); g.moveTo(q.x + Math.cos(a) * 6, q.y + Math.sin(a) * 6); g.lineTo(q.x + Math.cos(a) * r1, q.y + Math.sin(a) * r1); g.stroke(); }
     } else if (kind === 'pellets') {                 // small red crosses
       g.fillStyle = col.polEdge; g.fillRect(q.x - 26, q.y - 34, 52, 24);
@@ -154,7 +157,7 @@ export function createOverlay({ model, pts, data, labelHost }) {
   }
   // a small symbol key (HTML) for the legend, shown while an hour beat is up
   function keyHTML() {
-    return `<div class="lg-key">${KEY.map(([k, l]) => `<span class="k k-${k}"><i></i>${esc(l)}</span>`).join('')}<span class="k-note">Positions approximate · illustrative</span></div>`;
+    return `<div class="lg-key">${KEY.map(([k, l]) => `<span class="k k-${k}"><i></i>${esc(l)}</span>`).join('')}</div>`;
   }
   // what a beat's card points at: hour beats → incident spots (then police), other beats → their in-frame sites; ≤ 3
   function targets(k) {

@@ -153,6 +153,9 @@ export function createRoaches({ model, data, mapApi, anchors, legendHost, landed
       if (t > 0) {                                     // standing jitter (idle only; 0 at t = 0)
         const w = TAU * (.6 + .8 * hash01(r.i, 320)), ph = TAU * hash01(r.i, 321), j1 = 1.2 * (Math.sin(w * t + ph) - Math.sin(ph));
         x += Math.cos(r.rot) * j1; y += Math.sin(r.rot) * j1; legs += 1.5 * j1;
+        // and a slow amble round its spot (spec: idle-walk within the site footprint), radius ~ a body length
+        const wa = .25 + .35 * hash01(r.i, 322), pa = TAU * hash01(r.i, 323), ra = r.s * 1.9 * (.6 + .8 * hash01(r.i, 324));
+        x += ra * (Math.cos(wa * t + pa) - Math.cos(pa)); y += ra * (Math.sin(wa * t + pa) - Math.sin(pa)); legs += ra * wa * t / r.s * 1.2;
       }
       roach(g, x, y, r.rot, r.s, legs);
     }
@@ -167,8 +170,13 @@ export function createRoaches({ model, data, mapApi, anchors, legendHost, landed
 
   /* ── legend (bottom-left of the map) ── */
   let legKey = '', legIcon = null;
-  legendHost.innerHTML = `<b class="lg-h">Reading the map</b><div class="lg-row t-num"><canvas class="lg-ico" width="88" height="52" aria-hidden="true"></canvas><span class="lg-t"></span></div>
-    <p class="lg-n">${esc(data.methodology.roach_size)} Dashed = illustrative. ${esc((data.methodology.map.base.match(/Credit: (.*)$/) || [])[1] || '')}</p>`;
+  // collapsible (Vali 2026-11-12: smaller, a dropdown): collapsed = the toggle + the tier row; open = notes + symbol key
+  legendHost.innerHTML = `<button class="lg-h" type="button" aria-expanded="false" aria-controls="s5-lg-more">Reading the map<span class="lg-car" aria-hidden="true"></span></button>
+    <div class="lg-row t-num"><canvas class="lg-ico" width="88" height="52" aria-hidden="true"></canvas><span class="lg-t"></span></div>
+    <div class="lg-more" id="s5-lg-more"><p class="lg-n">${esc(data.methodology.roach_size)} Dashed = illustrative. ${esc((data.methodology.map.base.match(/Credit: (.*)$/) || [])[1] || '')}</p></div>`;
+  legendHost.querySelector('.lg-h').addEventListener('click', e => {
+    const open = legendHost.classList.toggle('open'); e.currentTarget.setAttribute('aria-expanded', open);
+  });
   legIcon = legendHost.querySelector('canvas'); const legT = legendHost.querySelector('.lg-t');
   function legend(p) {
     const { a, b, t } = model.phase(p), k = Math.max(0, Math.min(model.N - 1, t < .5 ? a : b)), B = model.beats[k];
