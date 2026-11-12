@@ -1,0 +1,8 @@
+/* S2 · spawn label (prologue chat, 2026-11-12). Lives in layers.annot, shared by S1 (done state) and S2. */
+.s2-spawn { position: absolute; pointer-events: none; white-space: nowrap; }
+.s2-spawn[hidden] { display: none; }
+.s2-spawn p { margin: 0; }
+.s2-label { font: var(--w-regular) var(--fs-h2)/1.2 var(--font-text); }
+.s2-label b { font-weight: var(--w-black); }
+.s2-attr { margin-top: var(--s-2); color: var(--muted); }
+.s2-spawn .star { pointer-events: auto; }

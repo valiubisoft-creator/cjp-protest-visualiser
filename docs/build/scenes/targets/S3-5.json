@@ -1,10 +1,30 @@
 {
  "scene": "S3.5",
  "brief": "docs/build/scenes/S3.md",
- "note": "Key frames from the F2 storyboard (frames S3-5-claim, S3-5-mid, S3-5-rebut). Vali 2026-11-12: p 0.30, 0.60, 0.90.",
+ "note": "Key frames from the F2 storyboard (frames S3-5-claim, S3-5-mid, S3-5-rebut). Prologue chat 2026-11-12 (Vali): 760 roaches, and a scroll pause before the claim, so the frames moved to p 0.42, 0.69, 0.93; p 0.28 shows the pause (white clusters, no text).",
  "targets": [
-  {"name": "S3-5-0.3", "at": "S3.5:0.3", "frame": "S3-5-claim", "expect": "The claim: 380 roaches in two phyllotaxis clusters, Indian 51% (minister, disputed) left and Pakistani 49% (minister, disputed) right in red. Caption = first sentence of start_pushback, verbatim, with *."},
-  {"name": "S3-5-0.6", "at": "S3.5:0.6", "frame": "S3-5-mid", "expect": "Mid-transition: roaches leave the red cluster in random stagger, arcing left and dropping the red as they cross. Same roaches, none born or killed."},
-  {"name": "S3-5-0.9", "at": "S3.5:0.9", "frame": "S3-5-rebut", "expect": "The correction: Indian >94% (Dipke, disputed) large cluster; small 'Elsewhere' cluster with no number at 55% alpha. Caption = second sentence of start_pushback, verbatim, with *. S4's converge starts from this layout."}
+  {
+   "name": "S3-5-0.28",
+   "at": "S3.5:0.28",
+   "expect": "The pause: 760 roaches sorted into two white clusters, no red, no text."
+  },
+  {
+   "name": "S3-5-0.42",
+   "at": "S3.5:0.42",
+   "frame": "S3-5-claim",
+   "expect": "The claim: two phyllotaxis clusters, Indian 51% (minister, disputed) left and Pakistani 49% (minister, disputed) right in red. Caption = first sentence of start_pushback, verbatim, with *."
+  },
+  {
+   "name": "S3-5-0.69",
+   "at": "S3.5:0.69",
+   "frame": "S3-5-mid",
+   "expect": "Mid-transition: roaches leave the red cluster in random stagger, arcing left and dropping the red as they cross. Same roaches, none born or killed."
+  },
+  {
+   "name": "S3-5-0.93",
+   "at": "S3.5:0.93",
+   "frame": "S3-5-rebut",
+   "expect": "The correction: Indian >94% (Dipke, disputed) large cluster; small 'Elsewhere' cluster with no number at 55% alpha. Caption = second sentence of start_pushback, verbatim, with *. S4's converge starts from this layout."
+  }
  ]
 }

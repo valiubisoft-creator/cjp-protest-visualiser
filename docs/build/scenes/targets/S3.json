@@ -1,10 +1,23 @@
 {
  "scene": "S3",
  "brief": "docs/build/scenes/S3.md",
- "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image.",
+ "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image. Prologue chat 2026-11-12: Vali asked for more roaches after the spawn, so N = 760 (n = round(760^p)).",
  "targets": [
-  {"name": "S3-0.1", "at": "S3:0.1", "expect": "First split: 2 roaches (n = round(380^0.1)). Founder still large, shrinking (s 36 → swarm size over p 0–0.3)."},
-  {"name": "S3-0.3", "at": "S3:0.3", "expect": "Founder has reached swarm size; no marker from here on."},
-  {"name": "S3-0.8", "at": "S3:0.8", "frame": "S3", "expect": "n = round(380^0.8) = 116; births spread out from the founder spot, youngest (outermost) still scaling in. No text."}
+  {
+   "name": "S3-0.1",
+   "at": "S3:0.1",
+   "expect": "First split: 2 roaches (n = round(760^0.1)). Founder still large, shrinking (s 36 → swarm size over p 0–0.3)."
+  },
+  {
+   "name": "S3-0.3",
+   "at": "S3:0.3",
+   "expect": "Founder has reached swarm size; no marker from here on."
+  },
+  {
+   "name": "S3-0.8",
+   "at": "S3:0.8",
+   "frame": "S3",
+   "expect": "n = round(760^0.8) = 202; births spread out from the founder spot, youngest (outermost) still scaling in. No text."
+  }
  ]
 }

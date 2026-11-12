@@ -1,0 +1,7 @@
+/* S0 · Hero (prologue chat, 2026-11-12). Tokens only; geometry is set from JS in CSS px. */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.s0-word { position: absolute; inset: 0; pointer-events: none; }
+.s0-word[hidden] { display: none; }
+.s0-word canvas { position: absolute; left: 0; top: 0; will-change: transform, opacity; }
+.s0-cue { position: absolute; left: 50%; bottom: var(--s-7); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 6px; color: var(--muted); pointer-events: none; }
+.s0-cue canvas { width: 40px; height: 24px; }

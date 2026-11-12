@@ -1,0 +1,11 @@
+/* S4 · the date (prologue chat, 2026-11-12). The map canvas sits in layers.text (under the swarm); HUD in the root. */
+.s4 { pointer-events: none; }
+.s4-map { position: absolute; left: 0; top: 0; pointer-events: none; will-change: opacity;
+  -webkit-mask-image: linear-gradient(90deg, #000 70%, transparent), linear-gradient(#000 80%, transparent); -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, #000 70%, transparent), linear-gradient(#000 80%, transparent); mask-composite: intersect; }
+.s4-map[hidden] { display: none; }
+.s4-map canvas { display: block; }
+.s4-cap { position: absolute; left: 0; right: 0; top: 72%; text-align: center; font-size: var(--fs-lead); }
+.s4-hud { position: absolute; left: var(--hud-inset); top: var(--hud-inset); background: var(--bg); border: var(--rule) solid var(--fg); padding: 10px 14px 9px; display: flex; flex-direction: column; gap: var(--s-1); }
+.s4-hud .d { font: var(--w-black) 28px/1 var(--font-text); letter-spacing: -.01em; }
+.s4-hud .t-micro { color: var(--muted); }

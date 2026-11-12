@@ -1,0 +1,11 @@
+/* S3.5 · the claim and the correction (prologue chat, 2026-11-12). Storyboard geometry; positions set from JS. */
+.s35 { pointer-events: none; }
+.s35 .cl-lab { position: absolute; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: var(--s-1); text-align: center; white-space: nowrap; }
+.s35 .cl-lab .nm { font: var(--w-black) var(--fs-h2)/1 var(--font-text); }
+.s35 .cl-lab .v { font: var(--w-black) var(--fs-stat)/1 var(--font-text); letter-spacing: -.02em; }
+.s35 .cl-lab .cl { color: var(--muted); }
+.s35 .cl-cap { position: absolute; left: 11%; right: 11%; bottom: 7.1%; margin: 0; text-align: center; font: var(--w-medium) var(--fs-lead)/1.4 var(--font-text); }
+.s35 .cl-a { display: block; margin-top: 6px; color: var(--muted); font-size: var(--fs-micro); }
+.s35 .st { text-transform: uppercase; letter-spacing: .08em; font-weight: var(--w-bold); }
+.s35 .st-disputed, .s35 .st-alleged { color: var(--accent-text); }
+.s35 .star { pointer-events: auto; }

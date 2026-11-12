@@ -1,11 +1,41 @@
 {
  "scene": "S4",
  "brief": "docs/build/scenes/S4b.md",
- "note": "Key frames from the F2 storyboard (design/storyboard.js, frames S4-0, S4-0.45, S4-0.6, S4-0.9).",
+ "note": "Key frames from the F2 storyboard (design/storyboard.js, frames S4-0, S4-0.45, S4-0.6, S4-0.9). Prologue chat 2026-11-12: S4:0 is the handover frame (= S3.5 p 1, joiners still off-screen); the storyboard's S4-0 picture is at p 0.08. S4:1 is the frame S5 p 0 must match.",
  "targets": [
-  {"name": "S4-0", "at": "S4:0", "frame": "S4-0", "expect": "Converge begins from the S3.5 end layout; both clusters break up toward their slots; first joiners stream in from all four edges; date not yet visible."},
-  {"name": "S4-0.45", "at": "S4:0.45", "frame": "S4-0.45", "expect": "End of converge: near slots filled, farthest arrivals still walking in along their approach line. No brackets yet."},
-  {"name": "S4-0.6", "at": "S4:0.6", "frame": "S4-0.6", "expect": "Hold: 06/06/2026 in Public Sans Black skeleton, ~1,000 roaches at s 5.6, shimmer ±3 px; corner brackets drawn. No caption (empty slot). Legibility check frame."},
-  {"name": "S4-0.9", "at": "S4:0.9", "frame": "S4-0.9", "expect": "Release left to right toward the Jantar Mantar landing point; backdrop cross-dissolves into the map; date becomes the HUD readout top-left."}
+  {
+   "name": "S4-0",
+   "at": "S4:0",
+   "expect": "Handover: identical to S3.5 p 1 (760 roaches in the correction layout, no text); every joiner still off-screen."
+  },
+  {
+   "name": "S4-0.08",
+   "at": "S4:0.08",
+   "frame": "S4-0",
+   "expect": "Converge begins: both clusters break up toward their slots; first joiners stream in from all four edges; date not yet visible."
+  },
+  {
+   "name": "S4-0.45",
+   "at": "S4:0.45",
+   "frame": "S4-0.45",
+   "expect": "End of converge: near slots filled, farthest arrivals still walking in along their approach line. No brackets yet."
+  },
+  {
+   "name": "S4-0.6",
+   "at": "S4:0.6",
+   "frame": "S4-0.6",
+   "expect": "Hold: 06/06/2026 in Public Sans Black skeleton, ~1,140 roaches (760 from S3.5 + joiners) at s 5.6, shimmer ±3 px; corner brackets drawn. No caption (empty slot). Legibility check frame."
+  },
+  {
+   "name": "S4-0.9",
+   "at": "S4:0.9",
+   "frame": "S4-0.9",
+   "expect": "Release left to right toward the Jantar Mantar landing point; backdrop cross-dissolves into the map; date becomes the HUD readout top-left."
+  },
+  {
+   "name": "S4-1",
+   "at": "S4:1",
+   "expect": "End of release = the S5 p 0 contract: start-camera map (62% × (h − scrubber), soft right/bottom edges), 120 roaches loosely round the Jantar Mantar Road anchor at s 6/1.9, HUD '06/06/2026 · Day 0' top-left, no rail or scrubber."
+  }
  ]
 }
