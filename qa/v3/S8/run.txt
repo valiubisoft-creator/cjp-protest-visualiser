@@ -1,0 +1,8 @@
+PASS down S8a-0.5          at S8a:0.5    → S8a p=0.5000  y=26460  live: S8a@0.500
+PASS down S8b-0.5          at S8b:0.5    → S8b p=0.5000  y=27360  live: S8b@0.500
+PASS down S8c-0.5          at S8c:0.5    → S8c p=0.5000  y=28260  live: S8c@0.500
+PASS down monotonic p: 127 samples over 4 scenes
+PASS up   S8c-0.5          at S8c:0.5    → S8c p=0.5000  y=28260  live: S8c@0.500
+PASS up   S8b-0.5          at S8b:0.5    → S8b p=0.5000  y=27360  live: S8b@0.500
+PASS up   S8a-0.5          at S8a:0.5    → S8a p=0.5000  y=26460  live: S8a@0.500
+PASS up monotonic p: 127 samples over 4 scenes

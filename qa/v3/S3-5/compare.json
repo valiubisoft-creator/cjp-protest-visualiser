@@ -1,0 +1,20 @@
+[
+ {
+  "name": "S3-5-0.3",
+  "at": "S3.5:0.3",
+  "frame": "S3-5-claim",
+  "downUpDiff": 0
+ },
+ {
+  "name": "S3-5-0.6",
+  "at": "S3.5:0.6",
+  "frame": "S3-5-mid",
+  "downUpDiff": 0
+ },
+ {
+  "name": "S3-5-0.9",
+  "at": "S3.5:0.9",
+  "frame": "S3-5-rebut",
+  "downUpDiff": 0
+ }
+]

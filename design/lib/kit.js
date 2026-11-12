@@ -1,68 +1,17 @@
 // F2 design kit: shared helpers for board.html and storyboard.html (static frames, no motion).
-import { roach } from './roach.js';
-export { roach };
+// F3: the generic helpers were promoted to src/ (one copy each) and are re-exported here unchanged.
+// What stays here: swarm() (design scatter) and the base-map helpers (S5a takes those over).
+import { roach } from '../../src/roach/roach.js';
+import { rng } from '../../src/lib/rng.js';
+import { load } from '../../src/data/load.js';
+export { roach, rng, load };
+export { tok, px, canvasIn } from '../../src/lib/dom.js';
+export { missing, esc, showable } from '../../src/lib/text.js';
+export { halftone } from '../../src/lib/halftone.js';
+export { DAY0, dayN, fmtDate } from '../../src/lib/dates.js';
+export { story } from '../../src/data/load.js';
 
 const TAU = Math.PI * 2;
-
-// ── deterministic RNG (mulberry32) ──
-export function rng(seed) {
-  let a = seed >>> 0;
-  return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
-}
-
-// ── tokens ──
-export const tok = (name, el = document.documentElement) => getComputedStyle(el).getPropertyValue(name).trim();
-export const px = (name, el) => parseFloat(tok(name, el));
-
-// ── data ──
-const cache = {};
-export async function load(name) {
-  if (!cache[name]) cache[name] = fetch(`../data/${name}`).then(r => { if (!r.ok) throw new Error(name); return r.json(); });
-  return cache[name];
-}
-export const story = n => load(`story/${n}.json`);
-export const missing = key => `<span class="missing">[MISSING: ${key}]</span>`;
-export const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-
-// facts usable on screen: not held, not unverified
-export const showable = f => f && !f.hold && f.status !== 'unverified';
-
-// ── canvas helpers ──
-export function canvasIn(el, w, h) {
-  const c = document.createElement('canvas');
-  const d = Math.min(devicePixelRatio || 1, 2);
-  c.width = w * d; c.height = h * d; c.style.width = w + 'px'; c.style.height = h + 'px';
-  const ctx = c.getContext('2d'); ctx.setTransform(d, 0, 0, d, 0, 0);
-  el.appendChild(c);
-  return ctx;
-}
-
-// ── halftone: noise field thresholded into a 45° dot screen, jittered radius (spec §5) ──
-function valueNoise(r) {
-  const G = 64, g = Array.from({ length: G * G }, r);
-  const at = (x, y) => g[((y % G + G) % G) * G + ((x % G + G) % G)];
-  const sm = t => t * t * (3 - 2 * t);
-  return (x, y) => {
-    const xi = Math.floor(x), yi = Math.floor(y), xf = sm(x - xi), yf = sm(y - yi);
-    const a = at(xi, yi), b = at(xi + 1, yi), c = at(xi, yi + 1), d = at(xi + 1, yi + 1);
-    return a + (b - a) * xf + (c - a) * yf + (a - b - c + d) * xf * yf;
-  };
-}
-export function halftone(ctx, w, h, { seed = 7, cell = 7, maxR = 0.42, jitter = 0.15, ink = 'rgba(0,0,0,.075)', scale = 0.006, bias = 0, grain = true } = {}) {
-  const r = rng(seed), n = valueNoise(r);
-  ctx.save(); ctx.fillStyle = ink;
-  const diag = Math.hypot(w, h), cs = Math.SQRT1_2;
-  for (let v = -diag; v < diag; v += cell) for (let u = -diag; u < diag; u += cell) {
-    const x = (u - v) * cs + w / 2, y = (u + v) * cs + h / 2;   // 45° screen
-    if (x < -cell || y < -cell || x > w + cell || y > h + cell) continue;
-    const t = Math.min(1, Math.max(0, n(x * scale * 8, y * scale * 8) * 1.15 - 0.2 + bias));
-    const rr = cell * maxR * t * (1 + (r() - .5) * 2 * jitter);
-    if (rr < .35) continue;
-    ctx.beginPath(); ctx.arc(x, y, rr, 0, TAU); ctx.fill();
-  }
-  if (grain) { for (let i = 0; i < w * h / 90; i++) { ctx.globalAlpha = r() * .35; ctx.fillRect(r() * w, r() * h, 1, 1); } }
-  ctx.restore();
-}
 
 // ── swarm: deterministic scatter of roaches ──
 export function swarm(ctx, w, h, { seed = 3, count = 300, size = 5, color = '#0B0B0B', avoid = null, sizeJitter = .35 } = {}) {
@@ -111,8 +60,3 @@ export async function fitSites(ids, { w, h, pad = 80, kMax = 3.2, kSingle = 2.2 
   const k = Math.min(kMax, (w - 2 * pad) / Math.max(1, x1 - x0), (h - 2 * pad) / Math.max(1, y1 - y0));
   return { cx: (x0 + x1) / 2, cy: (y0 + y1) / 2, k };
 }
-
-// ── small date helpers ──
-export const DAY0 = Date.UTC(2026, 5, 6); // 6 Jun 2026 = day 0 of the street protest (D4)
-export const dayN = iso => Math.round((Date.parse(iso + 'T00:00:00Z') - DAY0) / 864e5);
-export const fmtDate = iso => new Date(iso + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' });

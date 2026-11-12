@@ -39,3 +39,7 @@ curation/
 
 # Raw OSM dump (4+ MB); regenerate with tools/map/build_basemap.py
 data/map/raw/
+
+# QA raw shots (regenerate with tools/cdp-scroll.mjs); logs and compare sheets are kept
+qa/v3*/**/*-down.png
+qa/v3*/**/*-up.png

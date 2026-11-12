@@ -7,8 +7,8 @@ Branch: `build/scene-by-scene`. Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions 
 | Plan | done 2026-11-11 | — | Decisions D2–D8, D12 and D13 resolved |
 | F1 Editorial and data ledger | **done** 2026-11-12 | medium | Kickoff: [kickoffs/F1.md](kickoffs/F1.md). Output: `data/story/*.json`, generator `f1/build_story.py`, [GAPS.md](GAPS.md) |
 | F2 Design system and storyboard | **done** 2026-11-12 | high | Brief: [kickoffs/F2.md](kickoffs/F2.md). Theme: **ink**. Visual target: `design/storyboard` + `design/shots/frames/` (19 frames) |
-| F3 Shell and harness | **next**: kickoff ready, [kickoffs/F3.md](kickoffs/F3.md) | high | Writes the per-scene briefs in `scenes/`. Must add S3.5 to the scene list and scroll budget |
-| S4a Skeleton spike | waiting on F3 | high | |
+| F3 Shell and harness | **done** 2026-11-12 (Vali approved) | high | Kickoff: [kickoffs/F3.md](kickoffs/F3.md). Shell at http://localhost:5173/v3/. Briefs + targets: [scenes/](scenes/README.md). QA: `qa/v3/` |
+| S4a Skeleton spike | **next**: brief ready, [scenes/S4a.md](scenes/S4a.md) | high | Paste line is at the top of the brief |
 | S0 | — | high | |
 | S1–S2 | — | high | |
 | S3 | — | high | |
@@ -34,7 +34,44 @@ Branch: `build/scene-by-scene`. Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions 
 - `data/map/base.json`: `{ meta { viewBox, projection, attribution }, anchors { site_id: {x, y, in_frame} }, layers { buildings[], green[], water[], roads[{c, p, n?, tunnel?, rb?}], rail[] } }`. All geometry is flat [x,y,…] arrays.
 - `methodology.json`: `map`, `illustrative_graphics`, status definitions, the `*` convention, crowd tier → roach count table, video-pick algorithm, collection dates, `caveats[]`, `disputed_claims[]`, `disclaimer` (null, a gap).
 
-_F3 defines the scene module, controller and roach contracts here._
+**Shell (F3, 2026-11-12).** v3 lives in `v3/index.html` (D1). Serve `npx serve . -l 5173`, open http://localhost:5173/v3/ (`/v3` works too: paths are root-absolute). Import map: `animejs` 4.5.0 from jsDelivr (v2's pattern; self-hosting is an M9 item). `<html data-theme="ink">`.
+- Files: `src/main.js` (boot), `src/scroll/{budget,controller,hud}.js`, `src/scenes/sNN-*.js` + `placeholder.js`, `src/roach/{roach,swarm}.js`, `src/lib/{rng,text,dom,dates,halftone,skeleton,star}.js`, `src/data/load.js`, `src/shell.css`. `design/lib/{roach,kit}.js` and `design/storyboard.js` now import the promoted helpers (one copy each; storyboard re-shot byte-identical except S0, which already varied run to run).
+- URL params: `?p=S4:0.6` deep link (also `S10:top`, `S7:x` → S7a, `S8:x` → S8a); `?debug[=tr|tl|br|bl]` HUD (scene, p to 3 dp, scrollY, direction, FPS; backtick moves it) + console enter/exit log; `?still` freezes the idle clock at t = 0; `?trace` records every mapping step in `__v3.trace`.
+- Desktop gate: below **1280×720** the piece is hidden and the spec's desktop message shows (`html.gated`).
+
+**Scroll budget (F3; single source of truth: `src/scroll/budget.js`).** `len` = scroll distance in vh over which the scene's p runs 0 → 1.
+
+| Block (pinned unless flow) | Stage | Scenes and lengths (vh) | Section height |
+|---|---|---|---|
+| `main` | `prologue` | S0 80 · S1 150 · S2 60 (+ timed sequence) · S3 180 · **S3.5 160** · S4 180 = 810 | |
+| `main` | `map` | S5 **810** (lead_in 60, start 100, protest 260, wangchuk 110, detention 110, protest_arrest 110, lead_out 60) | |
+| `main` | `finale` | S6 260 | 1,880 + 100 |
+| flow | | S6.5 auto | content |
+| `S7a`, `S7b`, `S7c` | `chart` | 170 each | 270 each |
+| `S8` | `quotes` | S8a, S8b, S8c: 100 each (one per `selected` quote; count comes from the data) | 400 |
+| flow | | S9 100 · S10 auto | 100 · content |
+
+Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); S8 is one pinned block of N quote scenes; prologue, S5 and S6 share **one** pinned block so the stages hand over in place (no slide) at S4→S5 and S5→S6. At 1440×900 the page is 31,410 px.
+
+**Controller contract (`src/scroll/controller.js`).** The only scroll owner: one anime.js `onScroll` observer on the document + CSS sticky. Scenes never listen to scroll, wheel or resize.
+- Ranges in px of scrollY. Pinned scene: `a` = block top + earlier lens in the block, `b = a + len`; live on `[a, b)`, plus the block's first scene while its stage slides in (`blockTop − vh`) and the last while it slides out (`b + vh`). Flow scene: `a = top − vh`, `b = top + height − vh`, live until it has left through the top. `p = clamp((y − a)/(b − a))`. Same scrollY → same p, both directions.
+- Boundaries are half-open: at the exact end of S3, S3 has exited and S3.5 is at p 0. So **within a block, scene N at p 1 must look exactly like scene N+1 at p 0** (S2→S3, S3→S3.5, S3.5→S4, S4→S5, S5→S6, and so on). `yFor(id, 1)` stops 1 px short so `?p=S3:1` shows S3.
+- Each frame: exits (`exit(dir)`) → stage visibility → enters (`enter(dir)`) → `update(p)` for every live scene whose p changed. Pinned scene roots are `hidden` when not live; flow roots never are (they are page sections).
+- API (`ctx.controller`, also `window.__v3`): `seek(id, p, { duration, ease })` (instant, or a glide: S5b uses 800 ms inOutCubic), `yFor(id, p)`, `state()` → `{ scene, p, y, dir, locked, gated, live[] }`, `lock({ maxMs = 3200 })` / `unlock()` (blocks wheel, touch and scroll keys; auto-unlocks), `refresh()`, `trace`, `budget`.
+- Resize: debounced 150 ms; re-fits stage canvases, calls every scene's `resize(w, h)`, re-measures, and puts the reader back on the same (scene, p).
+- Idle clock: one anime `createTimer` calls `tick(t, dt)` on **live scenes only** (off-screen loops pause by construction). `?still` never starts it.
+
+**Scene contract (`src/scenes/sNN-*.js`).** Default export: a factory `(def) => scene` (a plain scene object also works). S7 and S8 use one factory for several scenes (`def.sub`).
+- `scene = { id, init(ctx), enter(dir), update(p), exit(dir), resize(w, h), tick?(t, dt) }`. `init` may be async; it runs once for every scene at boot, before layout. `dir` is `'down'` or `'up'`.
+- **`update(p)` is pure in p**: it draws the complete frame for (p, `ctx.clock.t`). `tick` may redraw at a new t but never changes what p decides. Only exception: S2's timed sequence (spec §3, `done` flag, reset above S1 p 0.5).
+- `ctx = { def, root, stage, layers, data, swarm, controller, viewport: { w, h }, clock: { t, still }, params, debug }`. `root` is the scene's own element: inside its stage for pinned scenes (for the prologue, inside `layers.annot`), or the page section itself for flow scenes. `def` is the budget entry (`id, name, len, block, stage, file, segments?, sub?`).
+- Prologue stage layers (shared by S0–S4, persistent): `layers.back` and `layers.swarm` = `{ canvas, ctx }` (viewport-sized, DPR ≤ 2, re-fitted before `resize`), `layers.text` and `layers.annot` = divs (pointer-events pass through except on scene content).
+- `data` = `loadStory()`: `{ meta, timeline, metrics, quotes, sites, sources, methodology, epilogue, byId: { node, site, source } }`; `byId.source[id].n` is the footer number. The map is lazy: `baseMap()`.
+- Stars: `star(source_ids, data.byId.source, label)` (`src/lib/star.js`) → `<a class="star" href="#src-N">`. S10 renders `id="src-N"`.
+
+**Roach contract.** `roach(ctx, x, y, rot, s, legs)` in `src/roach/roach.js` is the verbatim v2 renderer (`design/lib/roach.js` re-exports it). Never edit it; wrap it. `src/roach/swarm.js`: `createSwarm({ seed = 380, capacity = 1200 })` → `{ list, clear(), draw(ctx, { from, to, color }) }`; roach *i* keeps seeded traits (`k[4]`, `rot0`, `legs0`) from S0 to S4 and scenes write only its pose (`x, y, rot, s, legs, alpha`). `hash01(i, salt)` for stateless per-roach randomness. S0 owns the swarm model; S3/S3.5/S4 may add to it. The spec's `Roach` class interface (`update`, `setPath`, `setTarget`) is not built: S0/S4b add what they need on top of the pool.
+
+**Harness.** `tools/cdp-scroll.mjs` (legacy list mode unchanged; a targets file → down pass then up pass, p checked per target, per-scene monotonic check, `qa-log.json`), `tools/compare.mjs` (storyboard | down | up sheet + down/up pixel diff), `tools/qa-shell.mjs` (shell regression), `tools/lib/cdp.mjs` (shared driver, exact viewport via Emulation). Targets: `docs/build/scenes/targets/*.json` `{ scene, brief, note, targets: [{ name, at: "S4:0.6", frame?, expect }] }`.
 
 ## Change log
 - 2026-11-11: plan, CLAUDE.md and F1 kickoff written.
@@ -137,3 +174,12 @@ _F3 defines the scene module, controller and roach contracts here._
   - **S3.5 claim frame uses the minister's numbers on both sides:** Pakistani 49 % (data) and Indian 51 % (= 100 − 49, attributed to the same claimant and status). The correction frame keeps “Elsewhere” without a number.
   - Storyboard final: 19 frames, both themes, in `design/shots/frames/`.
 - 2026-11-12: F3 kickoff written. **Vali: every chat from F3 on (F3, all scene chats, M9) runs on Opus 5.5 at high effort.** BUILD_PLAN's effort column is updated to match.
+- 2026-11-12, **F3 built**. Shell, controller, budget, placeholders, harness, 13 briefs and 13 targets files. Decisions made in F3 (Vali to confirm):
+  - Prologue, S5 and S6 share **one pinned block** with three stages, so S4→S5 and S5→S6 hand over in place with no slide (kickoff: "pinned stages: the prologue, S5 and S6"; spec: "release flows into S5 with no jump"). Charts are three separate pinned blocks; S8 is one pinned block of quote scenes.
+  - Flow-scene p runs from the section's top entering the viewport to its bottom reaching the viewport bottom; `S10:top`-style targets exist for "top of section" frames.
+  - `tick(t, dt)` added to the scene contract for idle motion (the kickoff contract had only `update(p)`); `?still` freezes it for QA.
+  - The S8 count comes from `quotes.json` (`selected: true`, 3 today), so adding a quote adds a 100vh scene without touching the budget.
+  - New `src/lib/star.js` so S1, S3.5 and S5 can emit `*` links before S10 exists; S10 owns it afterwards.
+  - Kept anime.js on the jsDelivr CDN as the kickoff asked (v2 pattern). Spec §8 wants no runtime network calls: self-host it in M9.
+  - Desktop gate at 1280×720 (CLAUDE.md), not the spec's 1024 px. Note: a 1280×800 laptop's browser viewport is usually under 720 px tall, so it will see the gate.
+- 2026-11-12, **Vali approved F3** as built, including the decisions above. Next chat: **S4a** (`Read CLAUDE.md, then docs/build/STATUS.md and docs/build/scenes/S4a.md, and do S4a. Stop for my review at the end.`).

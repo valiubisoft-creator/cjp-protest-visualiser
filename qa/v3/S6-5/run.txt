@@ -1,0 +1,4 @@
+PASS down S6-5-top         at S6.5:top   → S6.5 p=1.0000  y=17820  live: S6.5@1.000 S7a@0.000
+PASS down monotonic p: 44 samples over 3 scenes
+PASS up   S6-5-top         at S6.5:top   → S6.5 p=1.0000  y=17820  live: S6.5@1.000 S7a@0.000
+PASS up monotonic p: 43 samples over 2 scenes

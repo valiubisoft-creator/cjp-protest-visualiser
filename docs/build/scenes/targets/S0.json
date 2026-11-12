@@ -1,0 +1,9 @@
+{
+ "scene": "S0",
+ "brief": "docs/build/scenes/S0.md",
+ "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image.",
+ "targets": [
+  {"name": "S0-0", "at": "S0:0", "frame": "S0", "expect": "About 420 roaches (s ≈ 5) roam over meta.title in Protest Revolution at --fs-hero; glitch slices where a roach crosses a glyph; scroll cue bottom-centre."},
+  {"name": "S0-0.8", "at": "S0:0.8", "expect": "Exit in progress (spec p 0.6–1): word scaled ~0.9, lifted, fading toward 25%; swarm thinning toward 40% density."}
+ ]
+}

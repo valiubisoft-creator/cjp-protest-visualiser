@@ -1,0 +1,11 @@
+{
+ "scene": "S4",
+ "brief": "docs/build/scenes/S4b.md",
+ "note": "Key frames from the F2 storyboard (design/storyboard.js, frames S4-0, S4-0.45, S4-0.6, S4-0.9).",
+ "targets": [
+  {"name": "S4-0", "at": "S4:0", "frame": "S4-0", "expect": "Converge begins from the S3.5 end layout; both clusters break up toward their slots; first joiners stream in from all four edges; date not yet visible."},
+  {"name": "S4-0.45", "at": "S4:0.45", "frame": "S4-0.45", "expect": "End of converge: near slots filled, farthest arrivals still walking in along their approach line. No brackets yet."},
+  {"name": "S4-0.6", "at": "S4:0.6", "frame": "S4-0.6", "expect": "Hold: 06/06/2026 in Public Sans Black skeleton, ~1,000 roaches at s 5.6, shimmer ±3 px; corner brackets drawn. No caption (empty slot). Legibility check frame."},
+  {"name": "S4-0.9", "at": "S4:0.9", "frame": "S4-0.9", "expect": "Release left to right toward the Jantar Mantar landing point; backdrop cross-dissolves into the map; date becomes the HUD readout top-left."}
+ ]
+}

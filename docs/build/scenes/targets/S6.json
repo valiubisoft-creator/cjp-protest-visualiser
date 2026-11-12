@@ -1,0 +1,9 @@
+{
+ "scene": "S6",
+ "brief": "docs/build/scenes/S6.md",
+ "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image.",
+ "targets": [
+  {"name": "S6-0", "at": "S6:0", "expect": "Handover from S5 p 1 (no jump)."},
+  {"name": "S6-0.85", "at": "S6:0.85", "frame": "S6", "expect": "Dramatic stage (ink: red stage, black roaches, white text). meta.finale.date re-formed by the larger map roaches, brackets, finale.headline \"Victory\" in display type, finale.line verbatim with *. First roaches peel away downward."}
+ ]
+}

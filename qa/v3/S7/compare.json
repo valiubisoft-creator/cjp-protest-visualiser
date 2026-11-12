@@ -1,0 +1,20 @@
+[
+ {
+  "name": "S7a-0.75",
+  "at": "S7a:0.75",
+  "frame": "S7",
+  "downUpDiff": 0
+ },
+ {
+  "name": "S7b-0.75",
+  "at": "S7b:0.75",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "S7c-0.75",
+  "at": "S7c:0.75",
+  "frame": null,
+  "downUpDiff": 0
+ }
+]

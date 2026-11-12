@@ -1,0 +1,9 @@
+{
+ "scene": "S10",
+ "brief": "docs/build/scenes/S8-S10.md",
+ "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image. S10 is the last flow section: \"S10:top\" puts its top at the viewport top; S10:1 is the end of the page.",
+ "targets": [
+  {"name": "S10-top", "at": "S10:top", "frame": "S10", "expect": "Three underlined headings (Credit, Methodology, Disclaimer), then the numbered sources. Reading section (paper)."},
+  {"name": "S10-1", "at": "S10:1", "expect": "End of page."}
+ ]
+}

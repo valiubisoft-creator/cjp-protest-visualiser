@@ -1,0 +1,4 @@
+PASS down S9-1             at S9:1       → S9 p=1.0000  y=29610  live: S9@1.000 S10@0.000
+PASS down monotonic p: 43 samples over 3 scenes
+PASS up   S9-1             at S9:1       → S9 p=1.0000  y=29610  live: S9@1.000 S10@0.000
+PASS up monotonic p: 43 samples over 2 scenes

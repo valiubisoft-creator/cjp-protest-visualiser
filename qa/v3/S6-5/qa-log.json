@@ -1,0 +1,48 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1440x900",
+ "targets": "docs/build/scenes/targets/S6-5.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S6-5-top",
+   "at": "S6.5:top",
+   "frame": "S6-5",
+   "ok": true,
+   "y": 17820,
+   "current": "S7a",
+   "p": 1,
+   "live": "S6.5@1.000 S7a@0.000",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 44,
+    "scenes": 3,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S6-5-top",
+   "at": "S6.5:top",
+   "frame": "S6-5",
+   "ok": true,
+   "y": 17820,
+   "current": "S7a",
+   "p": 1,
+   "live": "S6.5@1.000 S7a@0.000",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 43,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

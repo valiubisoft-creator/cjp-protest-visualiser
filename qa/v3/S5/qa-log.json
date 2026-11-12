@@ -1,0 +1,120 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1440x900",
+ "targets": "docs/build/scenes/targets/S5.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S5-0",
+   "at": "S5:0",
+   "frame": null,
+   "ok": true,
+   "y": 7290,
+   "current": "S5",
+   "p": 0,
+   "live": "S5@0.000",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S5-start",
+   "at": "S5:0.1358",
+   "frame": "S5-start",
+   "ok": true,
+   "y": 8280,
+   "current": "S5",
+   "p": 0.1358,
+   "live": "S5@0.136",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S5-0720",
+   "at": "S5:0.8309",
+   "frame": "S5-0720",
+   "ok": true,
+   "y": 13347,
+   "current": "S5",
+   "p": 0.8309,
+   "live": "S5@0.831",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S5-1",
+   "at": "S5:1",
+   "frame": null,
+   "ok": true,
+   "y": 14579,
+   "current": "S5",
+   "p": 0.9999,
+   "live": "S5@1.000",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 196,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S5-1",
+   "at": "S5:1",
+   "frame": null,
+   "ok": true,
+   "y": 14579,
+   "current": "S5",
+   "p": 0.9999,
+   "live": "S5@1.000",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S5-0720",
+   "at": "S5:0.8309",
+   "frame": "S5-0720",
+   "ok": true,
+   "y": 13347,
+   "current": "S5",
+   "p": 0.8309,
+   "live": "S5@0.831",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S5-start",
+   "at": "S5:0.1358",
+   "frame": "S5-start",
+   "ok": true,
+   "y": 8280,
+   "current": "S5",
+   "p": 0.1358,
+   "live": "S5@0.136",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S5-0",
+   "at": "S5:0",
+   "frame": null,
+   "ok": true,
+   "y": 7290,
+   "current": "S5",
+   "p": 0,
+   "live": "S5@0.000",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 196,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

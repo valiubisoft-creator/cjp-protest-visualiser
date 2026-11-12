@@ -1,0 +1,10 @@
+PASS down S4-0             at S4:0       → S4 p=0.0000  y=5670  live: S4@0.000
+PASS down S4-0.45          at S4:0.45    → S4 p=0.4500  y=6399  live: S4@0.450
+PASS down S4-0.6           at S4:0.6     → S4 p=0.6000  y=6642  live: S4@0.600
+PASS down S4-0.9           at S4:0.9     → S4 p=0.9000  y=7128  live: S4@0.900
+PASS down monotonic p: 169 samples over 2 scenes
+PASS up   S4-0.9           at S4:0.9     → S4 p=0.9000  y=7128  live: S4@0.900
+PASS up   S4-0.6           at S4:0.6     → S4 p=0.6000  y=6642  live: S4@0.600
+PASS up   S4-0.45          at S4:0.45    → S4 p=0.4500  y=6399  live: S4@0.450
+PASS up   S4-0             at S4:0       → S4 p=0.0000  y=5670  live: S4@0.000
+PASS up monotonic p: 168 samples over 2 scenes

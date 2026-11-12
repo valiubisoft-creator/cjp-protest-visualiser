@@ -1,0 +1,11 @@
+{
+ "scene": "S5",
+ "brief": "docs/build/scenes/S5a.md",
+ "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image. S5 p values come from budget.js segments: segmentP(S5, \"start\", 0.5) = 0.1358; protest_arrest local 0.3 = 0.8309. S5b may move the 20 Jul sub-beat and update this file.",
+ "targets": [
+  {"name": "S5-0", "at": "S5:0", "expect": "Handover: must look exactly like S4 p 1 (no jump)."},
+  {"name": "S5-start", "at": "S5:0.1358", "frame": "S5-start", "expect": "Node 1 Start, hold: camera fitted to start.site_ids; tier → roach count at day-0 size; rail card (two featured facts); HUD top-left, legend bottom-left; scrubber at the bottom."},
+  {"name": "S5-0720", "at": "S5:0.8309", "frame": "S5-0720", "expect": "Node 5, sub-beat 20 Jul, hold: camera fits the eleven 20 Jul site_ids; tier 4 roaches weighted to Jantar Mantar Road; red site dots; barricade dashed and labelled illustrative; map roach s = size ÷ 1.9 × √(zoom ÷ 2.4)."},
+  {"name": "S5-1", "at": "S5:1", "expect": "End of lead-out: must look exactly like S6 p 0. No Victory node or marker anywhere in S5."}
+ ]
+}

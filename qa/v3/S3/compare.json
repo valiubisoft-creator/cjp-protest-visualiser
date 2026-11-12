@@ -1,0 +1,20 @@
+[
+ {
+  "name": "S3-0.1",
+  "at": "S3:0.1",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "S3-0.3",
+  "at": "S3:0.3",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "S3-0.8",
+  "at": "S3:0.8",
+  "frame": "S3",
+  "downUpDiff": 0
+ }
+]

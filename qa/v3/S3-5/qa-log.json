@@ -1,0 +1,96 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1440x900",
+ "targets": "docs/build/scenes/targets/S3-5.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S3-5-0.3",
+   "at": "S3.5:0.3",
+   "frame": "S3-5-claim",
+   "ok": true,
+   "y": 4662,
+   "current": "S3.5",
+   "p": 0.3,
+   "live": "S3.5@0.300",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S3-5-0.6",
+   "at": "S3.5:0.6",
+   "frame": "S3-5-mid",
+   "ok": true,
+   "y": 5094,
+   "current": "S3.5",
+   "p": 0.6,
+   "live": "S3.5@0.600",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S3-5-0.9",
+   "at": "S3.5:0.9",
+   "frame": "S3-5-rebut",
+   "ok": true,
+   "y": 5526,
+   "current": "S3.5",
+   "p": 0.9,
+   "live": "S3.5@0.900",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 127,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S3-5-0.9",
+   "at": "S3.5:0.9",
+   "frame": "S3-5-rebut",
+   "ok": true,
+   "y": 5526,
+   "current": "S3.5",
+   "p": 0.9,
+   "live": "S3.5@0.900",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S3-5-0.6",
+   "at": "S3.5:0.6",
+   "frame": "S3-5-mid",
+   "ok": true,
+   "y": 5094,
+   "current": "S3.5",
+   "p": 0.6,
+   "live": "S3.5@0.600",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S3-5-0.3",
+   "at": "S3.5:0.3",
+   "frame": "S3-5-claim",
+   "ok": true,
+   "y": 4662,
+   "current": "S3.5",
+   "p": 0.3,
+   "live": "S3.5@0.300",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 126,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

@@ -1,0 +1,8 @@
+{
+ "scene": "S6.5",
+ "brief": "docs/build/scenes/S6-5.md",
+ "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image. S6.5 is a flow (unpinned) section: \"S6.5:top\" puts its top edge at the viewport top.",
+ "targets": [
+  {"name": "S6-5-top", "at": "S6.5:top", "frame": "S6-5", "expect": "Reading section (paper in the ink theme): framing, dated bridge[], status_line. No heading (empty slot until Vali supplies one)."}
+ ]
+}

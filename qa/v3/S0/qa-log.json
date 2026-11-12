@@ -1,0 +1,72 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1440x900",
+ "targets": "docs/build/scenes/targets/S0.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S0-0",
+   "at": "S0:0",
+   "frame": "S0",
+   "ok": true,
+   "y": 0,
+   "current": "S0",
+   "p": 0,
+   "live": "S0@0.000",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S0-0.8",
+   "at": "S0:0.8",
+   "frame": null,
+   "ok": true,
+   "y": 576,
+   "current": "S0",
+   "p": 0.8,
+   "live": "S0@0.800",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 42,
+    "scenes": 1,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S0-0.8",
+   "at": "S0:0.8",
+   "frame": null,
+   "ok": true,
+   "y": 576,
+   "current": "S0",
+   "p": 0.8,
+   "live": "S0@0.800",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S0-0",
+   "at": "S0:0",
+   "frame": "S0",
+   "ok": true,
+   "y": 0,
+   "current": "S0",
+   "p": 0,
+   "live": "S0@0.000",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 56,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

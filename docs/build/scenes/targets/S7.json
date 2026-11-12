@@ -1,0 +1,10 @@
+{
+ "scene": "S7",
+ "brief": "docs/build/scenes/S7.md",
+ "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image. S7 is three pinned chart stages: S7a, S7b, S7c.",
+ "targets": [
+  {"name": "S7a-0.75", "at": "S7a:0.75", "frame": "S7", "expect": "Chart A, hold: summed views by upload day (IST), fully drawn; black line, red only for the peak; node markers with node.label; callouts with * on the right. Reading section (paper)."},
+  {"name": "S7b-0.75", "at": "S7b:0.75", "expect": "Chart B (channels, bubbles), hold. No storyboard frame."},
+  {"name": "S7c-0.75", "at": "S7c:0.75", "expect": "Chart C (source type per day, stream), hold. No storyboard frame."}
+ ]
+}

@@ -1,0 +1,20 @@
+[
+ {
+  "name": "S8a-0.5",
+  "at": "S8a:0.5",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "S8b-0.5",
+  "at": "S8b:0.5",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "S8c-0.5",
+  "at": "S8c:0.5",
+  "frame": "S8",
+  "downUpDiff": 0
+ }
+]

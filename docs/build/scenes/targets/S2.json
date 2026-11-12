@@ -1,0 +1,8 @@
+{
+ "scene": "S2",
+ "brief": "docs/build/scenes/S1-S2.md",
+ "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image. S2 is a timed sequence: a deep link straight to S2 must show the post-sequence (done) state.",
+ "targets": [
+  {"name": "S2-0.3", "at": "S2:0.3", "frame": "S2", "expect": "Quote gone; one founder roach at --roach-founder (s 36) in the lower third; label \"<founder.name> is spawned\" with a * to founder.founded. Nothing else on screen."}
+ ]
+}

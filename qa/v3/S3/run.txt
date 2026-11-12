@@ -1,0 +1,8 @@
+PASS down S3-0.1           at S3:0.1     → S3 p=0.1000  y=2772  live: S3@0.100
+PASS down S3-0.3           at S3:0.3     → S3 p=0.3000  y=3096  live: S3@0.300
+PASS down S3-0.8           at S3:0.8     → S3 p=0.8000  y=3906  live: S3@0.800
+PASS down monotonic p: 127 samples over 3 scenes
+PASS up   S3-0.8           at S3:0.8     → S3 p=0.8000  y=3906  live: S3@0.800
+PASS up   S3-0.3           at S3:0.3     → S3 p=0.3000  y=3096  live: S3@0.300
+PASS up   S3-0.1           at S3:0.1     → S3 p=0.1000  y=2772  live: S3@0.100
+PASS up monotonic p: 125 samples over 2 scenes

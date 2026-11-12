@@ -1,0 +1,10 @@
+{
+ "scene": "S8",
+ "brief": "docs/build/scenes/S8-S10.md",
+ "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image. One 100vh scene per selected quote (S8a, S8b, S8c for the 3 selected today).",
+ "targets": [
+  {"name": "S8a-0.5", "at": "S8a:0.5", "expect": "Quote 1 of 3, centred, no role label."},
+  {"name": "S8b-0.5", "at": "S8b:0.5", "expect": "Quote 2 of 3, centred, no role label."},
+  {"name": "S8c-0.5", "at": "S8c:0.5", "frame": "S8", "expect": "Quote 3 of 3 (Faiz, \"Bol\"): centred, no role label; Urdu original (Noto Nastaliq Urdu, RTL) above the English; author, work, translation credit, source; a single roach idles on the attribution rule."}
+ ]
+}

@@ -61,6 +61,12 @@ _2026-11-11: checked against OpenStreetMap. 16 of 18 sites are now `verified` wi
 - **Dossier collection date**: not stated.
 - **No source for figures named as unsourced in the dossier**: the dossier found no source for "about 20,000" (a CJP claim before 20 Jul) or for "1,000–2,000 police". Don't use either.
 
+## F3 (2026-11-12)
+
+- No new data gaps: the shell shows no facts.
+- **Footer anchors**: scenes emit `*` links to `#src-N` (`src/lib/star.js`) before S10 exists, so they dead-end until S8–S10 renders the sources list.
+- **Runtime network call**: anime.js loads from jsDelivr (kept from v2 at the kickoff's request). Spec §8 wants none; self-host in M9.
+
 ## The web contradicts the dossier (2026-11-12): resolved
 
 A web agent checked 180 fact–source pairs: 134 have a found URL, 24 have none, and 22 conflict with the dossier. **Vali (2026-11-12): primary source wins.** Every conflict below is now resolved in `build_story.py`, and each changed fact carries a `resolution` note. 0 facts are left `contradicted`.

@@ -1,0 +1,6 @@
+PASS down S0-0             at S0:0       → S0 p=0.0000  y=0  live: S0@0.000
+PASS down S0-0.8           at S0:0.8     → S0 p=0.8000  y=576  live: S0@0.800
+PASS down monotonic p: 42 samples over 1 scenes
+PASS up   S0-0.8           at S0:0.8     → S0 p=0.8000  y=576  live: S0@0.800
+PASS up   S0-0             at S0:0       → S0 p=0.0000  y=0  live: S0@0.000
+PASS up monotonic p: 56 samples over 2 scenes

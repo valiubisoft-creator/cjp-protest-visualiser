@@ -1,0 +1,10 @@
+PASS down S5-0             at S5:0       → S5 p=0.0000  y=7290  live: S5@0.000
+PASS down S5-start         at S5:0.1358  → S5 p=0.1358  y=8280  live: S5@0.136
+PASS down S5-0720          at S5:0.8309  → S5 p=0.8309  y=13347  live: S5@0.831
+PASS down S5-1             at S5:1       → S5 p=0.9999  y=14579  live: S5@1.000
+PASS down monotonic p: 196 samples over 2 scenes
+PASS up   S5-1             at S5:1       → S5 p=0.9999  y=14579  live: S5@1.000
+PASS up   S5-0720          at S5:0.8309  → S5 p=0.8309  y=13347  live: S5@0.831
+PASS up   S5-start         at S5:0.1358  → S5 p=0.1358  y=8280  live: S5@0.136
+PASS up   S5-0             at S5:0       → S5 p=0.0000  y=7290  live: S5@0.000
+PASS up monotonic p: 196 samples over 2 scenes

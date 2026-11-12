@@ -1,0 +1,6 @@
+PASS down S10-top          at S10:top    → S10 p=1.0000  y=30510  live: S10@1.000
+PASS down S10-1            at S10:1      → S10 p=1.0000  y=30510  live: S10@1.000
+PASS down monotonic p: 14 samples over 2 scenes
+PASS up   S10-top          at S10:top    → S10 p=1.0000  y=30510  live: S10@1.000
+PASS up   S10-1            at S10:1      → S10 p=1.0000  y=30510  live: S10@1.000
+PASS up monotonic p: 0 samples over 0 scenes

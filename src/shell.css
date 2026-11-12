@@ -1,0 +1,40 @@
+/* v3 shell (F3): page frame, pinned blocks, stages, desktop gate, debug HUD, placeholders.
+   Colours and type come from styles/tokens.css. Scenes put their own CSS in their own files. */
+html { scrollbar-gutter: stable; }
+html.is-locked { overflow: hidden; }            /* controller.lock(): S2 timed sequence */
+body { margin: 0; background: var(--bg); color: var(--fg); font: var(--w-regular) var(--fs-body)/var(--lh-body) var(--font-text); }
+
+/* ── pinned blocks: section = Σlen + 100vh (set in JS), sticky viewport inside ── */
+#piece { position: relative; }
+.block-pinned { position: relative; }
+.sticky { position: sticky; top: 0; width: 100%; overflow: hidden; }
+.stage { position: absolute; inset: 0; background: var(--bg); }
+.stage[hidden], .scene[hidden] { display: none; }
+.stage > .layer { position: absolute; inset: 0; }
+.stage > canvas.layer { display: block; }
+.stage > .scene, .layer > .scene { position: absolute; inset: 0; }
+.layer-text, .layer-annot { pointer-events: none; }
+.layer-text > .scene > *, .layer-annot > .scene > * { pointer-events: auto; }   /* scene content stays clickable */
+.scene-flow { position: relative; }
+
+/* ── desktop gate (CLAUDE.md: min viewport 1280×720; no mobile layout) ── */
+#gate { display: none; }
+html.gated #piece, html.gated .hud-debug { display: none; }
+html.gated #gate { display: grid; place-items: center; min-height: 100vh; padding: 0 var(--s-6, 48px); text-align: center; font-size: var(--fs-lead); }
+
+/* ── ?debug HUD: tiny, one corner, never interactive ── */
+.hud-debug { position: fixed; z-index: 9999; pointer-events: none; padding: 4px 7px; border-radius: 3px;
+  background: rgba(11, 11, 11, .72); color: #FAFAF7; font: 500 11px/1.35 var(--font-text); font-variant-numeric: tabular-nums; }
+.hud-debug[data-corner="tr"] { top: 6px; right: 6px; }
+.hud-debug[data-corner="tl"] { top: 6px; left: 6px; }
+.hud-debug[data-corner="br"] { bottom: 6px; right: 6px; }
+.hud-debug[data-corner="bl"] { bottom: 6px; left: 6px; }
+
+/* ── F3 placeholders: a flat panel with the scene id and a p bar ── */
+.ph-host { display: grid; place-items: center; }
+.ph { width: 420px; padding: 28px 32px; border: 1px solid var(--rule-c); background: var(--surface); }
+.ph-id { font: var(--w-black) 72px/1 var(--font-text); }
+.ph-name { margin-top: 6px; color: var(--muted); }
+.ph-bar { margin-top: 20px; height: 8px; background: var(--rule-c); }
+.ph-bar i { display: block; height: 100%; background: var(--accent); transform-origin: 0 50%; transform: scaleX(0); }
+.ph-p { margin-top: 8px; font-size: var(--fs-small); }

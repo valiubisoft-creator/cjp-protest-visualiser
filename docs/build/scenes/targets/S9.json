@@ -1,0 +1,8 @@
+{
+ "scene": "S9",
+ "brief": "docs/build/scenes/S8-S10.md",
+ "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image. S9 is a flow section of 100vh: p 1 = it fills the viewport.",
+ "targets": [
+  {"name": "S9-1", "at": "S9:1", "frame": "S9", "expect": "One solid button per meta.handles[show]; share row (copy link is the red primary). No headline (empty slot). Roaches only in the margins."}
+ ]
+}
