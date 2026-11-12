@@ -1,0 +1,120 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1280x720",
+ "targets": "docs/build/scenes/targets/S3-5.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S3-5-0.32",
+   "at": "S3.5:0.32",
+   "frame": null,
+   "ok": true,
+   "y": 3937,
+   "current": "S3.5",
+   "p": 0.32,
+   "live": "S3.5@0.320",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S3-5-0.54",
+   "at": "S3.5:0.54",
+   "frame": "S3-5-claim",
+   "ok": true,
+   "y": 4317,
+   "current": "S3.5",
+   "p": 0.5399,
+   "live": "S3.5@0.540",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S3-5-0.75",
+   "at": "S3.5:0.75",
+   "frame": "S3-5-mid",
+   "ok": true,
+   "y": 4680,
+   "current": "S3.5",
+   "p": 0.75,
+   "live": "S3.5@0.750",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S3-5-0.94",
+   "at": "S3.5:0.94",
+   "frame": "S3-5-rebut",
+   "ok": true,
+   "y": 5008,
+   "current": "S3.5",
+   "p": 0.9398,
+   "live": "S3.5@0.940",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 169,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S3-5-0.94",
+   "at": "S3.5:0.94",
+   "frame": "S3-5-rebut",
+   "ok": true,
+   "y": 5008,
+   "current": "S3.5",
+   "p": 0.9398,
+   "live": "S3.5@0.940",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S3-5-0.75",
+   "at": "S3.5:0.75",
+   "frame": "S3-5-mid",
+   "ok": true,
+   "y": 4680,
+   "current": "S3.5",
+   "p": 0.75,
+   "live": "S3.5@0.750",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S3-5-0.54",
+   "at": "S3.5:0.54",
+   "frame": "S3-5-claim",
+   "ok": true,
+   "y": 4317,
+   "current": "S3.5",
+   "p": 0.5399,
+   "live": "S3.5@0.540",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S3-5-0.32",
+   "at": "S3.5:0.32",
+   "frame": null,
+   "ok": true,
+   "y": 3937,
+   "current": "S3.5",
+   "p": 0.32,
+   "live": "S3.5@0.320",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 167,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

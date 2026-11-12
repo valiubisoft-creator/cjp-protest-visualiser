@@ -7,7 +7,7 @@ Set by Vali on 2026-11-11. F2 turns this into `styles/tokens.css` and the design
 | Role | Face | Use |
 |---|---|---|
 | Display | **Protest Revolution** (Google Fonts, OFL) | Major headings only: the hero word, scene titles, "Victory", the S4/S6 date if the spike approves it (see below). Never body text, labels or UI |
-| Text and UI | **Public Sans** (Google Fonts, OFL, variable weight) | Everything else: body, quotes, captions, rail cards, scrubber labels, chart axes, footer |
+| Text and UI | **Public Sans** (Google Fonts, OFL, variable weight). **2026-11-12 (Vali): body copy is now Redaction** (`--font-text`); Public Sans stays as `--font-ui` and for the skeleton date | Everything else: body, quotes, captions, rail cards, scrubber labels, chart axes, footer |
 | Numbers in UI | Public Sans with `font-variant-numeric: tabular-nums` | Stats, readouts, the HUD date |
 | Indian scripts | Noto family matching the script (Devanagari first) | Original-language quotes and titles |
 

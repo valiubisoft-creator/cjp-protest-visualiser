@@ -23,12 +23,13 @@
 
   /* ── type ── */
   --font-display: "Protest Revolution", "Public Sans", sans-serif; /* major headings only, single weight */
-  --font-text: "Public Sans", system-ui, sans-serif;
+  --font-text: "Redaction", "Public Sans", Georgia, serif;   /* body copy: Redaction (Vali 2026-11-12, prologue chat; was Public Sans) */
+  --font-ui: "Public Sans", system-ui, sans-serif;           /* Public Sans stays for the S4/S6 skeleton date and where a scene asks for it */
   --font-deva: "Noto Sans Devanagari", "Public Sans", sans-serif;
   --font-urdu: "Noto Nastaliq Urdu", serif;
 
   /* desktop scale (min viewport 1280×720), px so frames are exact */
-  --fs-hero: 200px;   /* S0 word */
+  --fs-hero: 150px;   /* S0 word (Vali 2026-11-12: smaller; was 200) */
   --fs-date: 168px;   /* S4/S6 date (skeleton reference size) */
   --fs-d1: 112px;     /* "Victory", scene titles */
   --fs-d2: 64px;

@@ -6,7 +6,7 @@
   {
    "name": "S4-0",
    "at": "S4:0",
-   "expect": "Handover: identical to S3.5 p 1 (760 roaches in the correction layout, no text); every joiner still off-screen."
+   "expect": "Handover: identical to S3.5 p 1 (1000 roaches in the correction layout, no text); every joiner still off-screen."
   },
   {
    "name": "S4-0.08",
@@ -24,7 +24,7 @@
    "name": "S4-0.6",
    "at": "S4:0.6",
    "frame": "S4-0.6",
-   "expect": "Hold: 06/06/2026 in Public Sans Black skeleton, ~1,140 roaches (760 from S3.5 + joiners) at s 5.6, shimmer ±3 px; corner brackets drawn. No caption (empty slot). Legibility check frame."
+   "expect": "Hold: 06/06/2026 in Public Sans Black skeleton, ~1,140 roaches (1000 from S3.5 + ~140 joiners) at s 5.6, shimmer ±3 px; no corner brackets (removed, Vali 2026-11-12). No caption (empty slot). Legibility check frame."
   },
   {
    "name": "S4-0.9",

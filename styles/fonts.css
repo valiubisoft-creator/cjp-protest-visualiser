@@ -167,3 +167,10 @@
   src: url(../static/fonts/public-sans-normal-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* Redaction (MCKL Inc. / Jeremy Mickel for Titus Kaphar & Forest Young; OFL-1.1, licence in static/fonts/REDACTION-OFL.txt).
+   Source: https://www.redaction.us/static/redaction.zip (Redaction 2.001 webfonts). Body copy face (Vali 2026-11-12, prologue chat).
+   "Redaction 35" is the 35%-degraded cut, used for the S1 keyword only. */
+@font-face { font-family: 'Redaction'; font-style: normal; font-weight: 400; font-display: swap; src: url(../static/fonts/redaction-regular.woff2) format('woff2'); }
+@font-face { font-family: 'Redaction'; font-style: normal; font-weight: 700; font-display: swap; src: url(../static/fonts/redaction-bold.woff2) format('woff2'); }
+@font-face { font-family: 'Redaction'; font-style: italic; font-weight: 400; font-display: swap; src: url(../static/fonts/redaction-italic.woff2) format('woff2'); }
+@font-face { font-family: 'Redaction 35'; font-style: normal; font-weight: 700; font-display: swap; src: url(../static/fonts/redaction-35-bold.woff2) format('woff2'); }

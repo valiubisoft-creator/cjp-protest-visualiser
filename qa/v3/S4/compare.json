@@ -2,6 +2,12 @@
  {
   "name": "S4-0",
   "at": "S4:0",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "S4-0.08",
+  "at": "S4:0.08",
   "frame": "S4-0",
   "downUpDiff": 0
  },
@@ -21,6 +27,12 @@
   "name": "S4-0.9",
   "at": "S4:0.9",
   "frame": "S4-0.9",
+  "downUpDiff": 0
+ },
+ {
+  "name": "S4-1",
+  "at": "S4:1",
+  "frame": null,
   "downUpDiff": 0
  }
 ]

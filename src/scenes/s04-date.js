@@ -1,12 +1,12 @@
 // S4 · The date on the skeleton (prologue chat, 2026-11-12). Brief: docs/build/scenes/S4b.md; skeleton: S4a (STATUS).
 //
-// p 0.00–0.52  converge. S3.5's 760 roaches take the centre lane of a 3-lane Public Sans Black skeleton plus an even
-//              share of the outer lanes (sorted by x onto them, so paths barely cross); the remaining ~380 slots
-//              (~250 at 1280×720) fill with joiners that walk straight in from the nearest screen edge. Staggered by
+// p 0.00–0.52  converge. S3.5's 1000 roaches take the centre lane of a 3-lane Public Sans Black skeleton plus an even
+//              share of the outer lanes (sorted by x onto them, so paths barely cross); the remaining ~140 slots
+//              (~7 at 1280×720) fill with joiners that walk straight in from the nearest screen edge. Staggered by
 //              distance: far ones start later and arrive last (p 0.45 still has late arrivals). At p 0 nothing has
 //              moved yet (= S3.5 p 1) and every joiner is still off-screen.
 // p 0.52–0.80  hold: each roach shimmers ±3 px along its stroke (1.2–2.4 Hz, legs 1.5× the displacement, S4a);
-//              corner brackets draw in over p 0.52–0.58. Caption slot left EMPTY (Vali 2026-11-12).
+//              no corner brackets (Vali 2026-11-12, removed). Caption slot left EMPTY (Vali 2026-11-12).
 // p 0.80–1.00  release, left to right: roaches peel off toward the Jantar Mantar landing point and shrink to map size
 //              (s = 6 / 1.9: the spec's day-0 size ÷ 1.9, zoom 2.4); the map fades in under them (map region, soft
 //              edges); the date's readout appears top-left as the HUD. p 1 is the frame S5 p 0 must match.
@@ -14,7 +14,7 @@
 import { tok, px, dpr } from '../lib/dom.js';
 import { esc } from '../lib/text.js';
 import { ddmmyyyy, dayN } from '../lib/dates.js';
-import { skeleton, fitScale, skeletonReady, brackets } from '../lib/skeleton.js';
+import { skeleton, fitScale, skeletonReady } from '../lib/skeleton.js';
 import { baseMap } from '../data/load.js';
 import { roach } from '../roach/roach.js';
 import { hash01, clamp01, lerp, ease, angDiff, TAU } from '../roach/swarm.js';
@@ -26,7 +26,7 @@ const CSS = new URL('./s04-date.css', import.meta.url).href;
 // the storyboard's S4 box at 1440×900 (x 110, y 250, 1220 × 330), as fractions of the viewport (S4a)
 const BOX = { x: 110 / 1440, y: 250 / 900, w: 1220 / 1440, h: 330 / 900 };
 const S_TYPE = 5.6, SPACING = 7.4, LANES = 3, AMP = 3;     // Vali 2026-11-12 (S4a review)
-const CONV = .52, HOLD_B = [.52, .58], REL = .80;     // converge ends .52 so p .45 still has late arrivals (storyboard)
+const CONV = .52, REL = .80;     // converge ends .52 so p .45 still has late arrivals (storyboard)
 const MAP_S = 6 / 1.9;                                     // spec S5 size at day 0 (6 px) ÷ 1.9, at zoom 2.4
 const MAP_K = 2.4;                                         // camera zoom for a single site (storyboard kSingle)
 const ROAD_W = { major: 16, secondary: 12, tertiary: 9, minor: 6, service: 3.5, path: 1.6 };   // design/lib/kit.js mapSVG
@@ -85,6 +85,11 @@ export default def => {
     const byX = [...Array(N3).keys()].sort((a, b) => end[a].x - end[b].x);
     const R = [];                                           // R[r] for pool roach r
     byX.forEach((r, j) => { if (j < own.length) R[r] = { slot: own[j], joiner: false }; });
+    // surplus (more S3.5 roaches than slots, small viewports): crawl off the nearest edge during the converge (spec S4)
+    const surplus = byX.slice(own.length).map(r => {
+      const e = end[r], d = [e.x, w - e.x, e.y, h - e.y], k = d.indexOf(Math.min(...d)), out = 3 * S_TYPE * 1.9;
+      return { r, sx: e.x, sy: e.y, tx: [-out, w + out, e.x, e.x][k], ty: [e.y, e.y, -out, h + out][k] };
+    });
     // joiners: every other slot, pool N3 …, entering straight from the nearest edge (~2 body lengths off-screen)
     const off = 2.2 * S * 1.9;
     let r = N3;
@@ -131,7 +136,7 @@ export default def => {
       o.stay = j < landN; o.lx = land.x + Math.cos(a) * rr * 1.1; o.ly = land.y + Math.sin(a) * rr * .75;
       o.lrot = TAU * hash01(i, 65);
     });
-    return { slots, box, R, n, S, k, cam, land };
+    return { slots, box, R, n, S, k, cam, land, surplus };
   }
 
   /* ── the map under the release (same look as design/lib/kit.js mapSVG; S5a takes the map over at S5 p 0) ── */
@@ -185,7 +190,7 @@ export default def => {
       const travel = Math.atan2(s.y - sy, s.x - sx);
       const startRot = o.joiner ? travel : S35[i].rot;
       let rot = e0 <= 0 ? startRot : e0 < .15 && !o.joiner ? startRot + angDiff(startRot, travel) * (e0 / .15) : travel + angDiff(travel, fl) * clamp01((e - .85) / .15);
-      let legs = list[i].legs0 + e * o.d / S * 1.2;
+      let legs = (o.joiner ? list[i].legs0 : S35[i].legs) + e * o.d / S * 1.2;   // S3.5 roaches continue their walk cycle
       // shimmer once home (time only; amplitude grows on arrival and dies away in the release)
       const rel = clamp01((p - o.r0) / (o.r1 - o.r0));
       const arr = clamp01((e0 - .9) / .1) * (1 - clamp01(rel * 4));
@@ -203,15 +208,13 @@ export default def => {
       g.globalAlpha = alpha;
       roach(g, x, y, rot, size, legs);
     }
-    g.globalAlpha = 1;
-    // brackets draw in over p 0.50–0.56 (two strokes per corner, dashed reveal) and go as the release starts
-    const bIn = clamp01((p - HOLD_B[0]) / (HOLD_B[1] - HOLD_B[0])), bOut = 1 - clamp01((p - REL) / .05);
-    if (bIn > 0 && bOut > 0) {
-      const len = 46 * Math.max(1, k);
-      g.save(); g.globalAlpha = bOut; g.setLineDash([2 * len * ease.outCubic(bIn), 1e5]);
-      brackets(g, box, 30 * Math.max(1, k), len, tok('--fg'), 3);
-      g.restore();
+    for (const o of L.surplus) {                          // surplus roaches leave by the nearest edge
+      const s0 = S35[o.r], e = ease.inOutSine(clamp01(p / .3)), dirA = Math.atan2(o.ty - o.sy, o.tx - o.sx);
+      g.globalAlpha = s0.a;
+      roach(g, lerp(o.sx, o.tx, e), lerp(o.sy, o.ty, e), e < .1 ? s0.rot + angDiff(s0.rot, dirA) * e / .1 : dirA, s0.s, s0.legs + e * Math.hypot(o.tx - o.sx, o.ty - o.sy) / s0.s * 1.2);
     }
+    g.globalAlpha = 1;
+    // no corner brackets (Vali 2026-11-12)
   }
   return scene;
 };

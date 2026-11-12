@@ -1,0 +1,10 @@
+/* S3 · how many joined (prologue chat, 2026-11-12). A label box over the swarm, bottom-left. */
+.s3 { pointer-events: none; }
+.s3-note { position: absolute; left: var(--hud-inset); bottom: var(--hud-inset); display: flex; flex-direction: column; gap: var(--s-1);
+  padding: var(--s-4) var(--s-5) var(--s-4); background: var(--bg); border: var(--rule) solid var(--fg); min-width: 300px; }
+.s3-note .v { font: var(--w-bold) var(--fs-stat)/1 var(--font-text); letter-spacing: -.01em; }
+.s3-note .l { font: var(--w-regular) var(--fs-lead)/1.2 var(--font-text); }
+.s3-note .c { color: var(--muted); margin-top: var(--s-1); }
+.s3-note .st { text-transform: uppercase; letter-spacing: .08em; font-weight: var(--w-bold); }
+.s3-note .st-disputed, .s3-note .st-alleged { color: var(--accent-text); }
+.s3-note .star { pointer-events: auto; }

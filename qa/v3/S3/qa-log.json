@@ -86,7 +86,7 @@
   {
    "monotonic": {
     "leg": "up",
-    "samples": 125,
+    "samples": 127,
     "scenes": 2,
     "nonMonotonic": []
    }

@@ -112,3 +112,14 @@ Sources: Scroll, The Wire, Free Press Journal, Kashmir Life, Al Jazeera, Newslau
   - "Honorary cockroach": dated 23 May, verbatim.
   - "Independent student Hamad": dropped as unconfirmed.
 - **Why he fasted:** now verbatim from Al Jazeera, 19 Jul: 'three weeks on hunger strike in solidarity with the Cockroach Janta Party (CJP) protest movement'. The same article adds his wife's 'illegal detention' quote and the judge's reply, both attributed.
+
+## Prologue (S0–S4b), 2026-11-12
+
+- **Swarm count 1000, not the spec's 380** (Vali, gate 1 and review). Spec S3 and the S3.5/S4 briefs say 380; STATUS records the change.
+- **S4 map landing count** comes from `methodology.crowd_tiers` (start node tier 2 → 120 roaches). That key isn't on S4b's allowed list; Vali approved it at gate 1.
+- **S4 → S5 handover is open**: S5 is still the F3 placeholder. S5a must build its p 0 frame to the S4 p 1 contract in STATUS.
+- **Keyword aria-label** reads "Click the word cockroaches to continue". The spec says "cockroach"; the build uses the data's keyword as written.
+- **S4 caption** stays empty (Vali 2026-11-12); there's no `meta.protest_start_caption`.
+- No new data gaps: every on-screen string in S0–S4 comes from `data/story`.
+- **S3 "how many joined"**: uses the metrics row `Online sign-ups` (350,000+, CJP claim, claimed). The other candidate is `Members 'within days'` (over 100,000, media, claimed). Vali can swap it.
+- **Body face changed to Redaction** (Vali 2026-11-12). DESIGN.md still says Public Sans; update it if this sticks. Redaction has only 400/700, so `--w-medium` and `--w-black` render as Bold.

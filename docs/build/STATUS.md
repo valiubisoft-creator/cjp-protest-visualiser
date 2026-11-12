@@ -9,11 +9,7 @@ Branch: `build/scene-by-scene`. Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions 
 | F2 Design system and storyboard | **done** 2026-11-12 | high | Brief: [kickoffs/F2.md](kickoffs/F2.md). Theme: **ink**. Visual target: `design/storyboard` + `design/shots/frames/` (19 frames) |
 | F3 Shell and harness | **done** 2026-11-12 (Vali approved) | high | Kickoff: [kickoffs/F3.md](kickoffs/F3.md). Shell at http://localhost:5173/v3/. Briefs + targets: [scenes/](scenes/README.md). QA: `qa/v3/` |
 | S4a Skeleton spike | **done** 2026-11-12 (Vali approved) | high | Brief: [scenes/S4a.md](scenes/S4a.md). Spike: http://localhost:5173/design/spike-s4a. Shots: `qa/v3/S4a/`. **Lanes 3**, runtime skeleton |
-| S0 | — | high | |
-| S1–S2 | — | high | |
-| S3 | — | high | |
-| S3.5 The claim and the correction | — | high | **New scene** (Vali 2026-11-12). Suggest it rides with the S3 chat |
-| S4b | — | high | |
+| **Prologue (S0–S4b, one chat)** | **built** 2026-11-12, awaiting Vali's review | high | Vali 2026-11-12: one chat for S0, S1–S2, S3, S3.5 and S4b. Gate 1 approved and pushed (`2084092`). Shots: `qa/v3/{S0,S1,S2,S3,S3-5,S4}`, `qa/v3/prologue-gate1`, `qa/v3/handover`, `qa/v3/S2/seq` |
 | S5a / S5b / S5c | — | high | |
 | S6 | — | high | |
 | S6.5 October epilogue (text) | — | high | |
@@ -43,9 +39,9 @@ Branch: `build/scene-by-scene`. Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions 
 
 | Block (pinned unless flow) | Stage | Scenes and lengths (vh) | Section height |
 |---|---|---|---|
-| `main` | `prologue` | S0 80 · S1 150 · S2 60 (+ timed sequence) · S3 180 · **S3.5 160** · S4 180 = 810 | |
+| `main` | `prologue` | S0 80 · S1 150 · S2 60 (+ timed sequence) · S3 180 · **S3.5 240** (was 160) · S4 180 = 890 | |
 | `main` | `map` | S5 **810** (lead_in 60, start 100, protest 260, wangchuk 110, detention 110, protest_arrest 110, lead_out 60) | |
-| `main` | `finale` | S6 260 | 1,880 + 100 |
+| `main` | `finale` | S6 260 | 1,960 + 100 |
 | flow | | S6.5 auto | content |
 | `S7a`, `S7b`, `S7c` | `chart` | 170 each | 270 each |
 | `S8` | `quotes` | S8a, S8b, S8c: 100 each (one per `selected` quote; count comes from the data) | 400 |
@@ -78,7 +74,16 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
 - `fitScale(text, w, h, face)` → box px per reference px. **S4 size rule:** `k = fitScale(box) / fitScale(1220 × 330)`; roach `s = 5.6 × max(1, k)`, spacing `7.4 × max(1, k)`. So the slot count never exceeds the 1440×900 count (bigger screens get bigger roaches) and s never drops below 5.6 (legs stay visible).
 - `brackets()` unchanged; pad 30 and length 46 scale by `k`.
 
-**Harness.** `tools/cdp-scroll.mjs` (legacy list mode unchanged; a targets file → down pass then up pass, p checked per target, per-scene monotonic check, `qa-log.json`), `tools/compare.mjs` (storyboard | down | up sheet + down/up pixel diff), `tools/qa-shell.mjs` (shell regression), `tools/lib/cdp.mjs` (shared driver, exact viewport via Emulation). Targets: `docs/build/scenes/targets/*.json` `{ scene, brief, note, targets: [{ name, at: "S4:0.6", frame?, expect }] }`.
+**Prologue contracts (prologue chat, 2026-11-12; additive).**
+- **Swarm model** (`src/roach/swarm.js`): `wander(i, tau, w, h)` is the hero swarm's closed-form roaming path in swarm time `swarm.tau` (advanced in `tick` by S0/S1 only; 0 under `?still`). `idle(i, t, amp)` is the standing jitter. `fleeStep(b, x, y, dt, k)` eases a per-roach cursor-flee offset `b.fx/b.fy` (radius 90 px), which is idle motion only. Also exported: `heroCount(w, h)` (420 at 1440×900, area-scaled, cap 700), `heroSize`, `clamp01`, `lerp`, `ease`, `angDiff`.
+- **Shared scene state:** `heroWord` (`s00-hero.js`) is the title canvas in `layers.text`, used by S0 and S1. `spawn` (`s02-spawn.js`) holds the `done` flag, the founder's resting pose `pose(tf)`, and the label in `layers.annot`, used by S1, S2 and S3. `mult.poses(p, t)` (`s03-multiply.js`) and `claim.poses(p, t)` (`s03-5-claim.js`) are pure pose functions; each next scene starts from the previous one's p 1.
+- **Swarm count: 1000** (Vali, gate 1 → 760, then review 2026-11-12 → 1000, "fill the screen end to end"; spec 380). S3 `n(p) = round(1000^(p/0.85))`: first split at p 0.10, full swarm from 0.85, everyone home by p 1. Homes cover the whole viewport (R2 sequence, nearest the founder's spot first).
+- **S3.5: 240 vh** (budget change, Vali 2026-11-12: more scroll before the BJP minister's claim; was 160). Sort 0–0.20, with the right cluster turning red **gradually as it sorts** · pause 0.20–0.44 (no text) · claim caption and 51/49 at 0.44–0.50 · re-sort 0.62–0.88 · correction from 0.88 · text out 0.97–1. Key frames: **0.32, 0.54, 0.75, 0.94**. The `main` block is now 1,960 + 100 vh.
+- **S4:** the 1000 S3.5 roaches take the centre lane plus an even share of the outer lanes (sorted by x). **Joiners: ~140 at 1440×900, ~7 at 1280×720**, entering from the nearest edge; any surplus (slots < 1000) crawls off the nearest edge. Converge ends at p **0.52**; **no corner brackets** (Vali 2026-11-12); release 0.80–1.
+- **S4 p 1 = the S5 p 0 contract (for S5a).** The map at the start camera: map box 62% × (h − scrubber); single site centred at zoom 2.4 × (map width ÷ 893); the kit `mapSVG` look drawn to a canvas, with soft right and bottom edges. 120 roaches (the start node's crowd tier) stay loosely round the `jantar_mantar_road` anchor at s 6/1.9; the other ~1,020 fade into them as they land. HUD `06/06/2026 · Day 0` top-left (`.s4-hud`). No rail, scrubber or site label yet. Reference: `qa/v3/S4/S4-1-down.png`, `qa/v3/handover/S4-1_vs_S5-0-*-A.png`.
+- **S2 sequence:** runs on its own rAF clock (so it also runs under `?still`), locked ≤ 3.2 s. It ends by seeking to S2 p 0 unless the reader is already past it. Leaving S1 mid-sequence finishes it at once. A deep link to S2 or later sets `done`.
+
+**Harness.** `tools/cdp-scroll.mjs` (legacy list mode unchanged; a targets file → down pass then up pass, p checked per target, per-scene monotonic check, `qa-log.json`), `tools/compare.mjs` (storyboard | down | up sheet + down/up pixel diff), `tools/qa-shell.mjs` (shell regression), `tools/lib/cdp.mjs` (shared driver, exact viewport via Emulation). New in the prologue chat: `tools/shoot-frames.mjs` (deep-link key frames at any `SIZE`; keep for now, Vali may delete it later), `tools/qa-sequence.mjs` (the S1→S2 click, keyboard, auto-trigger, lock, reset and replay), `tools/qa-handover.mjs` (in-block A p 1 vs B p 0 pixel diff). Targets: `docs/build/scenes/targets/*.json` `{ scene, brief, note, targets: [{ name, at: "S4:0.6", frame?, expect }] }`.
 
 ## Change log
 - 2026-11-11: plan, CLAUDE.md and F1 kickoff written.
@@ -206,3 +211,27 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
   - **Legibility passes** at 1440×900 and 1280×720.
   - **Roaches were too slow:** shimmer doubled from 0.55–1.15 Hz to 1.2–2.4 Hz, and the legs swing 1.5× the displacement (was 1.1×). S4b uses these, and should keep the converge and release walks brisk to match.
 
+- 2026-11-12, **prologue chat (S0–S4b in one chat, Vali).**
+  - **Gate 1 (static key frames):** approved by Vali with two additions: more roaches after the spawn (760), and a scroll pause before the BJP minister's 49% claim. Also approved: S4:0 as the handover frame with the storyboard S4-0 picture at p 0.08; the 120-roach map landing; converge ending at 0.52; keeping `tools/shoot-frames.mjs`. Committed and pushed as `2084092`.
+  - **Gate 2 (motion):** hero roaming plus glitch slices (≤ 35% displaced, ≤ 16 hits); cursor flee; the S1 keyword idle (1 px stepped jitter, a roach walking the underline); the S2 timed sequence; S3 births walking out from their parents; the S3.5 sorts; the S4 converge, shimmer and release.
+  - **Handovers:** S0→S1→S2→S3→S3.5→S4 measure **0.000%** differing pixels at 1440×900 and 1280×720 (`tools/qa-handover.mjs`). **S4→S5 fails (44%)**: S5 is still the F3 placeholder, so S5a must build to the S4 p 1 contract above.
+  - QA at both sizes: all targets PASS down and up, monotonic, compare down≠up 0.000%. `qa-shell` ALL PASS. `qa-sequence` ALL PASS. Live clock: 60 fps (headless, vsync-capped) at S0, S1, S2, S3 0.95, S3.5 0.42/0.69, S4 0.3/0.6/0.9.
+  - **Spec deviations:**
+    - The S2 keyword doesn't open its letter-spacing (it reflowed the quote), so it only scales.
+    - The founder is red while it forms and turns white as it starts to walk.
+    - Hero roaches standing on a glyph are drawn in the background colour, cut into the letter (v2 hero).
+- 2026-11-12, **Vali's review of the prologue motion** (edits made; committed and pushed):
+  - **S0:**
+    - `--fs-hero` 200 → 150 px.
+    - Roaches move at 45–90 px/s (was 16–42).
+    - As the reader scrolls, a crew of 14 cleaner roaches sweeps the word away band by band (p 0.02–0.90, pure in p). The word no longer scales or fades.
+    - The "Scroll" cue sits on a white label and fades as soon as scrolling starts. S1 no longer shows the word.
+  - **Type:** **Redaction** (MCKL, OFL-1.1, self-hosted from redaction.us 2.001: Regular, Bold, Italic, plus the 35%-degraded Bold) **replaces Public Sans as `--font-text`** (body copy, the quote, captions, labels).
+    - Public Sans stays as `--font-ui` (the S0 cue) and as the S4/S6 skeleton face.
+    - `tokens.css` and `fonts.css` changed with Vali's OK. **DESIGN.md is superseded on the body face.** Scenes S5–S10 inherit Redaction through the token.
+  - **S1:** the keyword is set in Redaction 35 Bold, white on a procedural dry red brush stroke (no wavy underline). In the sequence, both letters and brush collapse into particles.
+  - **S2 sequence:** the founder walks one Bézier curve whose tangent is its heading, ending on its resting heading, so it no longer flips at 1400 ms. The leg cycle is continuous.
+  - **S3:** 1000 roaches fill the screen edge to edge. The text "350,000+ Online sign-ups · CJP claim · claimed *" (metrics `Online sign-ups`) shows at p 0.55–0.94 in a bottom-left label box.
+  - **S3.5:** 240 vh, a longer pause before the claim, and red applied gradually during the sort.
+  - **S4:** corner brackets removed.
+  - QA after the edits (both sizes): every target passes down and up, compare down≠up 0.000%. Handovers S0→…→S4 are 0.000%. `qa-sequence` and `qa-shell` ALL PASS. 60 fps live (headless).

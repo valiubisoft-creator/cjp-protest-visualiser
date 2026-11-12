@@ -17,6 +17,18 @@
   },
   {
    "leg": "down",
+   "name": "S0-0.4",
+   "at": "S0:0.4",
+   "frame": null,
+   "ok": true,
+   "y": 288,
+   "current": "S0",
+   "p": 0.4,
+   "live": "S0@0.400",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
    "name": "S0-0.8",
    "at": "S0:0.8",
    "frame": null,
@@ -30,7 +42,7 @@
   {
    "monotonic": {
     "leg": "down",
-    "samples": 42,
+    "samples": 82,
     "scenes": 1,
     "nonMonotonic": []
    }
@@ -49,6 +61,18 @@
   },
   {
    "leg": "up",
+   "name": "S0-0.4",
+   "at": "S0:0.4",
+   "frame": null,
+   "ok": true,
+   "y": 288,
+   "current": "S0",
+   "p": 0.4,
+   "live": "S0@0.400",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
    "name": "S0-0",
    "at": "S0:0",
    "frame": "S0",
@@ -62,7 +86,7 @@
   {
    "monotonic": {
     "leg": "up",
-    "samples": 56,
+    "samples": 98,
     "scenes": 2,
     "nonMonotonic": []
    }

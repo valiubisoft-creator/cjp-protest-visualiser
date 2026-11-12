@@ -47,9 +47,10 @@ export const heroSize = i => 5 * (1 + (hash01(i, 21) - .5) * .7);
 // pose of hero roach i at swarm time tau: drift + two wobbles (curving paths), wrapped round the screen with a margin
 export function wander(i, tau, w, h, out = {}) {
   const m = 30;
-  const th = TAU * hash01(i, 10), v = 16 + 26 * hash01(i, 11);
-  const a1 = 14 + 30 * hash01(i, 12), w1 = .3 + .5 * hash01(i, 13), p1 = TAU * hash01(i, 14);
-  const a2 = 6 + 14 * hash01(i, 15), w2 = .8 + .9 * hash01(i, 16), p2 = TAU * hash01(i, 17);
+  // speed 45–90 px/s (spec S0 40–90; Vali 2026-11-12: faster than the first build's 16–42)
+  const th = TAU * hash01(i, 10), v = 45 + 45 * hash01(i, 11);
+  const a1 = 14 + 30 * hash01(i, 12), w1 = .5 + .8 * hash01(i, 13), p1 = TAU * hash01(i, 14);
+  const a2 = 6 + 14 * hash01(i, 15), w2 = 1.2 + 1.4 * hash01(i, 16), p2 = TAU * hash01(i, 17);
   const x = w * hash01(i, 18) + v * Math.cos(th) * tau + a1 * Math.sin(w1 * tau + p1) + a2 * Math.cos(w2 * tau + p2);
   const y = h * hash01(i, 19) + v * Math.sin(th) * tau + a1 * Math.cos(w1 * 1.13 * tau + p1 * .7) + a2 * Math.sin(w2 * tau + p2);
   const dx = v * Math.cos(th) + a1 * w1 * Math.cos(w1 * tau + p1) - a2 * w2 * Math.sin(w2 * tau + p2);
@@ -58,7 +59,7 @@ export function wander(i, tau, w, h, out = {}) {
   out.x = ((x + m) % W + W) % W - m;
   out.y = ((y + m) % H + H) % H - m;
   out.rot = Math.atan2(dy, dx);
-  out.legs = TAU * hash01(i, 20) + tau * (v + a1 * w1) * .55;   // leg phase ~ distance walked
+  out.legs = TAU * hash01(i, 20) + tau * (v + a1 * w1) * .3;    // leg phase ~ distance walked
   return out;
 }
 

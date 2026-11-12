@@ -1,12 +1,13 @@
 /* S1 · the CJI quote (prologue chat, 2026-11-12). Geometry follows the F2 storyboard at 1440×900, as % of the viewport. */
 .s1 { pointer-events: none; }
 .s1-quote { position: absolute; left: 10%; top: 18.9%; width: min(1010px, 76%); will-change: transform, opacity; }
-.s1-quote blockquote { margin: 0; font: var(--w-medium) var(--fs-quote)/1.42 var(--font-text); letter-spacing: -.01em; }
-.kw { font: inherit; letter-spacing: inherit; color: var(--accent-text); background: none; border: 0; padding: 0 0 6px; margin: 0; cursor: pointer; position: relative;
-  text-decoration: underline wavy var(--accent); text-decoration-thickness: 2px; text-underline-offset: 7px; font-weight: var(--w-black);
-  display: inline-block; transform-origin: 50% 60%; pointer-events: auto; }
+.s1-quote blockquote { margin: 0; font: var(--w-regular) var(--fs-quote)/1.42 var(--font-text); letter-spacing: 0; }
+.kw { font-family: "Redaction 35", var(--font-text); font-size: inherit; line-height: inherit; font-weight: var(--w-bold); letter-spacing: inherit; color: var(--fg); background: none; border: 0;
+  padding: 0 .18em; margin: 0 -.04em; cursor: pointer; position: relative; display: inline-block; transform-origin: 50% 60%; pointer-events: auto; }
+.kw-t { position: relative; }
+.kw-brush { position: absolute; left: -.1em; right: -.12em; top: .08em; bottom: -.02em; width: calc(100% + .22em); height: calc(100% - .06em); pointer-events: none; }
 .kw:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-.kw-roach { position: absolute; left: 62%; bottom: -6px; width: 28px; height: 17px; pointer-events: none; }
+.kw-roach { position: absolute; left: 62%; bottom: -12px; width: 28px; height: 17px; pointer-events: none; }
 .s1-hint { position: absolute; display: flex; align-items: center; gap: var(--s-2); color: var(--accent-text); white-space: nowrap; pointer-events: none; }
 .s1-hint::before { content: ''; width: 40px; height: 1px; background: currentColor; }
 .s1-attr { margin-top: var(--s-6); display: flex; gap: var(--s-4); align-items: baseline; font-size: var(--fs-small); }

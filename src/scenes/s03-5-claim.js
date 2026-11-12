@@ -2,15 +2,16 @@
 // no spec section; the brief is its spec). Port of v2's "01 · The swarm" split (SPLITS 2 → 3: phyllotaxis clusters,
 // stagger({ from: 'random' }) + inOutQuart), expressed as a function of p with a per-roach delay, not a timeline.
 //
-// p 0.00–0.22  sort: the roaches leave their S3 homes for two clusters at the minister's split, all still white,
-//              no text
-// p 0.22–0.34  pause: the clusters idle, nothing new on screen (Vali 2026-11-12: a scroll delay before the figure)
-// p 0.34–0.40  the claim: the right cluster turns red (state action), caption and both figures (51% / 49%) fade in
-// p 0.40–0.52  hold the claim (key frame 0.42)
-// p 0.52–0.86  re-sort to Dipke's >94% Indian: roaches leave the red cluster in random stagger, arcing, dropping the
-//              red as they cross (key frame 0.69 = halfway); correction caption from 0.54
-// p 0.86–1.00  hold the correction ("Elsewhere" at 55%, no number; key frame 0.93); labels and caption fade
-//              0.96–1.0 so p 1 is roaches only: S4's converge starts from claim.poses(1, t).
+// Budget 240 vh (Vali 2026-11-12: more scroll before the BJP minister's claim; was 160).
+// p 0.00–0.20  sort: the roaches leave their S3 homes for two clusters at the minister's split; the right cluster's
+//              roaches turn red GRADUALLY as they walk to it (Vali 2026-11-12), so the colour is there before any text
+// p 0.20–0.44  pause: the clusters idle, no text (key frame 0.32)
+// p 0.44–0.50  the claim: caption and both figures (51% / 49%, the minister's) fade in
+// p 0.50–0.62  hold the claim (key frame 0.54)
+// p 0.62–0.88  re-sort to Dipke's >94% Indian: roaches leave the red cluster in random stagger, arcing, dropping the
+//              red as they cross (key frame 0.75 = halfway); correction caption from 0.64
+// p 0.88–1.00  hold the correction ("Elsewhere" at 55%, no number; key frame 0.94); labels and caption fade
+//              0.97–1.0 so p 1 is roaches only: S4's converge starts from claim.poses(1, t).
 // Nothing is born or killed here. Facts: start_pushback (both sentences verbatim), metrics rows m15 / m14.
 import { tok } from '../lib/dom.js';
 import { esc } from '../lib/text.js';
@@ -25,8 +26,7 @@ const CSS = new URL('./s03-5-claim.css', import.meta.url).href;
 const GOLD = Math.PI * (3 - Math.sqrt(5));
 const phyllo = (n, cx, cy, sp) => Array.from({ length: n }, (_, i) => [cx + Math.cos(i * GOLD) * sp * Math.sqrt(i + .5), cy + Math.sin(i * GOLD) * sp * Math.sqrt(i + .5)]);
 const shuffle = seed => { const r = rng(seed), a = [...Array(N3).keys()]; for (let i = a.length - 1; i > 0; i--) { const j = (r() * (i + 1)) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
-const A = [0, .22], B = [.52, .86];                     // the two sorts, in p
-const REVEAL = [.34, .40];                              // the claim (red + 49%) appears after a scroll pause (Vali 2026-11-12)
+const A = [0, .20], B = [.62, .88];                     // the two sorts, in p
 
 export const claim = {
   W: 0, H: 0, CLAIM: null, REBUT: null,
@@ -36,7 +36,7 @@ export const claim = {
   clusters(rightShare) {
     // shorter viewports shrink the clusters a little more, so the labels clear the caption (1280×720)
     const u = Math.min(this.W / 1440, this.H / 900) * (this.H < 800 ? .9 : 1);
-    const nR = Math.round(N3 * rightShare / 100), nL = N3 - nR, sp = 12.5 * Math.sqrt(380 / N3) * u, gap = 150 * u, cy = 380 * this.H / 900;
+    const nR = Math.round(N3 * rightShare / 100), nL = N3 - nR, sp = 12.5 * Math.sqrt(380 / N3) * u, gap = 150 * u, cy = 360 * this.H / 900;
     const rL = sp * Math.sqrt(nL), rR = sp * Math.sqrt(nR), cxL = (this.W - (2 * rL + gap + 2 * rR)) / 2 + rL, cxR = cxL + rL + gap + rR;
     return { pts: [...phyllo(nL, cxL, cy, sp).map(p => [...p, 0]), ...phyllo(nR, cxR, cy, sp).map(p => [...p, 1])], cxL, cxR, rL, rR, cy, nL, nR };
   },
@@ -55,10 +55,10 @@ export const claim = {
         x = lerp(s3.x, ax, eA); y = lerp(s3.y, ay, eA) - Math.sin(eA * Math.PI) * 30;
         travel = Math.atan2(ay - s3.y, ax - s3.x);
         rot = eA <= 0 ? s3.rot : eA >= 1 ? rest : travel + angDiff(travel, rest) * clamp01((eA - .8) / .2);
-        // red only when the claim is revealed, after the pause; staggered so the cluster "turns"
-        o.c = a[2] === 1 ? ease.smooth(clamp01((p - REVEAL[0] - R.delay * .06) / .03)) : 0;
+        // the right cluster's roaches turn red gradually as they walk to it (Vali 2026-11-12)
+        o.c = a[2] === 1 ? ease.smooth(clamp01(eA / .9)) : 0;
         o.a = 1; o.s = lerp(s3.s, 5, eA);
-        o.legs = R.legs + eA * Math.hypot(ax - s3.x, ay - s3.y) / 5 * 1.3;
+        o.legs = s3.legs + eA * Math.hypot(ax - s3.x, ay - s3.y) / 5 * 1.3;   // continues S3's walk cycle
       } else {                                             // sort B: claim → correction, arcing up (storyboard)
         x = lerp(ax, bx, eB); y = lerp(ay, by, eB) - Math.sin(eB * Math.PI) * 40 * this.H / 900;
         travel = Math.atan2(by - ay, bx - ax);
@@ -66,7 +66,7 @@ export const claim = {
         o.c = a[2] === 1 ? 1 - ease.smooth(clamp01((eB - .35) / .3)) : 0;
         o.a = b[2] === 1 ? lerp(1, .55, ease.smooth(clamp01((eB - .5) / .5))) : 1;
         o.s = 5;
-        o.legs = R.legs + Math.hypot(ax - (s3.x), ay - (s3.y)) / 5 * 1.3 + eB * Math.hypot(bx - ax, by - ay) / 5 * 1.3;
+        o.legs = s3.legs + Math.hypot(ax - s3.x, ay - s3.y) / 5 * 1.3 + eB * Math.hypot(bx - ax, by - ay) / 5 * 1.3;
       }
       o.x = x; o.y = y; o.rot = rot;
     }
@@ -119,13 +119,13 @@ export default def => {
   function fade(e, a) { e.style.opacity = a; e.style.visibility = a > 0 ? '' : 'hidden'; }
   function render() {
     // DOM: labels and captions are functions of p only
-    const out = 1 - clamp01((p - .96) / .04);
+    const out = 1 - clamp01((p - .97) / .03);
     const inOut = (a, b, c, d) => clamp01((p - a) / (b - a)) * (1 - clamp01((p - c) / (d - c)));
-    fade(el['claim-l'], inOut(.35, .40, .49, .52)); fade(el['claim-r'], inOut(.35, .40, .49, .52));
-    fade(el.capC, inOut(.34, .38, .49, .52));
-    fade(el.capR, clamp01((p - .54) / .05) * out);
-    el.capRa.style.opacity = clamp01((p - .86) / .05);
-    fade(el['rebut-l'], clamp01((p - .86) / .05) * out); fade(el['rebut-r'], clamp01((p - .86) / .05) * out);
+    fade(el['claim-l'], inOut(.45, .50, .59, .62)); fade(el['claim-r'], inOut(.45, .50, .59, .62));
+    fade(el.capC, inOut(.44, .48, .59, .62));
+    fade(el.capR, clamp01((p - .64) / .05) * out);
+    el.capRa.style.opacity = clamp01((p - .88) / .05);
+    fade(el['rebut-l'], clamp01((p - .88) / .05) * out); fade(el['rebut-r'], clamp01((p - .88) / .05) * out);
     // swarm
     const g = ctx.layers.swarm.ctx, fg = tok('--roach'), red = tok('--accent');
     claim.poses(p, ctx.clock.t, P, ctx.swarm.list, S3);
