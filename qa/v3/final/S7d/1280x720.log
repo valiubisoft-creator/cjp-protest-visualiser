@@ -1,0 +1,8 @@
+PASS down S7d-0.3          at S7d:0.3    → S7d p=0.2998  y=32125  live: S7d@0.300
+PASS down S7d-0.6          at S7d:0.6    → S7d p=0.5998  y=32773  live: S7d@0.600
+PASS down S7d-0.98         at S7d:0.98   → S7d p=0.9799  y=33594  live: S7d@0.980
+PASS down monotonic p: 127 samples over 1 scenes
+PASS up   S7d-0.98         at S7d:0.98   → S7d p=0.9799  y=33594  live: S7d@0.980
+PASS up   S7d-0.6          at S7d:0.6    → S7d p=0.5998  y=32773  live: S7d@0.600
+PASS up   S7d-0.3          at S7d:0.3    → S7d p=0.2998  y=32125  live: S7d@0.300
+PASS up monotonic p: 127 samples over 2 scenes

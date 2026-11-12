@@ -1,0 +1,1186 @@
+{
+  "draft": true,
+  "note": "DRAFT for Vali's review (2026-11-12). Port of v2 '07 · The apparatus' (index.html N array). Every v2 action is listed with v2_action; facts copied from the ledger keep their text verbatim (from: 'ledger:<file>#<path>'); web facts (from: 'web') use source wording. Actions with v2_action null are additions. Scenes must not show status 'unverified' or any fact with 'hold'. new_sources are NOT yet in sources.json: merge them before S7 renders.",
+  "groups": [
+    {
+      "id": "street",
+      "label": "On the street"
+    },
+    {
+      "id": "digital",
+      "label": "Online"
+    },
+    {
+      "id": "courts",
+      "label": "In court"
+    },
+    {
+      "id": "politics",
+      "label": "In power"
+    }
+  ],
+  "hub": {
+    "id": "cjp",
+    "label": "CJP"
+  },
+  "actors": [
+    {
+      "id": "delhi_police",
+      "label": "Delhi Police",
+      "group": "street",
+      "kind": "restriction",
+      "v2_label": "Delhi Police",
+      "v2_source_chip": "Wikipedia · Amnesty",
+      "actions": [
+        {
+          "text": "At around 1 pm police imposed Section 163 BNSS in the area, banning any gathering.",
+          "time": "13:00",
+          "claimant": "PTI",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "theprint"
+          ],
+          "page": null,
+          "links": [
+            {
+              "source_id": "theprint",
+              "url": "https://theprint.in/india/clashes-tear-gas-thwart-students-march-to-parliament-several-injured-detained/2991284/",
+              "title": "Clashes, tear gas thwart students' march to Parliament; several injured, detained",
+              "publisher": "ThePrint (PTI)",
+              "date": "2026-07-20",
+              "snippet": "At around 1 pm, police imposed Section 163 of Bharatiya Nagarik Suraksha Sanhita (BNSS) in the area, banning any gathering.",
+              "verified": true
+            }
+          ],
+          "note": "Conflicts with DCP Sachin Sharma's statement that Section 163 was already in force (ThePrint 19–20 Jul; Business Today 8:23 am). See open_questions.",
+          "date": "2026-07-20",
+          "web_check": "verified",
+          "web_notes": [
+            "web_check derived from links[].verified in the ledger (no web_check field on the ledger fact)."
+          ],
+          "v2_action": "20 Jul · Section 163 orders",
+          "from": "ledger:sansad_chalo.json#steps[5].summary_facts[0]"
+        },
+        {
+          "text": "Lathi charges, tear gas at Parliament Street, Patel Chowk and Rail Bhawan",
+          "claimant": "media and police statements",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia",
+            "theprint",
+            "asiaone"
+          ],
+          "page": 6,
+          "note": "Tactics table: 'Documented by AP, Reuters, Al Jazeera and police statements' (p13).",
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Sansad_Chalo_March",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "Security forces used baton charges and tear gas against the protesters who were marching towards the Parliament",
+              "verified": true
+            },
+            {
+              "source_id": "theprint",
+              "url": "https://theprint.in/india/clashes-tear-gas-thwart-students-march-to-parliament-several-injured-detained/2991284/",
+              "title": "Clashes, tear gas thwart students' march to Parliament; several injured, detained",
+              "publisher": "ThePrint",
+              "date": "2026-07-20",
+              "snippet": "Delhi Police lobbed tear gas shells and wielded sticks on Parliament Street on Monday",
+              "verified": true
+            },
+            {
+              "source_id": "asiaone",
+              "url": "https://www.asiaone.com/asia/india-police-use-tear-gas-stop-march-parliament-cockroach-movement-supporters",
+              "title": "India police use tear gas to stop march on Parliament by Cockroach movement supporters",
+              "publisher": "AsiaOne",
+              "date": "2026-07-21",
+              "snippet": "Police used tear gas and batons to stop supporters of India's youth-led Cockroach movement",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "wikipedia: PARTIAL: Wikipedia (Sansad Chalo March; Constitution Club tear gas ref 143) supports lathi charge/tear gas near Parliament; 'Rail Bhawan' not found in the first ~100k chars read. Originals: Deccan Herald https://www.deccanherald.com/india/tear-gas-lathi-charge-police-use-force-to-disperse-cjp-protesters-near-parliament-house-as-chaos-unfolds-amid-chalo-sansad-4080104 ; HT https://www.hindustantimes.com/india-news/how-cjp-chalo-sansad-march-brought-delhi-to-a-standstill-lathi-charge-detentions-internet-snags-sonam-wangchuk-101784533037018.html (not individually fetched). Wikipedia text read via summarising fetch, not raw.",
+            "theprint: PARTIAL: supports tear gas and sticks on Parliament Street; Patel Chowk appears only as a closed metro station; Rail Bhawan not mentioned; the word 'lathi' not used. Other ThePrint candidates seen in search but not fetched: https://theprint.in/india/from-children-to-elderly-thousands-brave-rain-tear-gas-and-lathis-at-cjps-march-to-parliament/2991208/",
+            "asiaone: PARTIAL: AP wire copy. Tear gas and batons yes; Parliament Street, Patel Chowk, Rail Bhawan NOT named."
+          ],
+          "date": "2026-07-20",
+          "v2_action": "20 Jul · baton charges and tear gas",
+          "from": "ledger:timeline.json#protest_arrest.facts[2]"
+        },
+        {
+          "text": "“Reports claiming that police forces are using pellet guns against peaceful protesters are completely false and misleading,” the police said in a “Fake News Alert” on X.",
+          "date": "2026-07-21",
+          "claimant": "Delhi Police (X post, via PTI)",
+          "attribution": "police said",
+          "status": "disputed",
+          "source_ids": [
+            "theprint_0721_pellet_denial"
+          ],
+          "links": [
+            {
+              "source_id": "theprint_0721_pellet_denial",
+              "url": "https://theprint.in/india/delhi-police-denies-cjps-claim-of-pellet-gun-use-against-protesters-calls-post-fake/2992645/",
+              "title": "Delhi Police denies CJP's claim of pellet gun use against protesters, calls post 'fake'",
+              "publisher": "ThePrint (PTI)",
+              "date": "2026-07-21",
+              "snippet": "Reports claiming that police forces are using pellet guns against peaceful protesters are completely false and misleading",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Moved from v2's Rapid Action Force node: the statement is Delhi Police's, not the RAF's. v2 dated it 20 Jul; PTI dates the post Tuesday 21 Jul."
+          ],
+          "note": "Contradicted by the Delhi Police General Diary (RAF fired plastic pellets; ledger sansad_chalo.json#steps[7].summary_facts[4]) and the CRPF report (7 rounds; steps[7].summary_facts[3]). Show it next to those, never alone.",
+          "v2_action": "20 Jul · (under RAF) Police call pellet reports “completely false and misleading”",
+          "from": "web"
+        },
+        {
+          "text": "Delhi Police officially removed Jantar Mantar from the list of legal, permitted areas.",
+          "date": "2026-10-12",
+          "claimant": "Amnesty International",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "repo_amnesty_1014"
+          ],
+          "links": [
+            {
+              "source_id": "repo_amnesty_1014",
+              "url": "https://www.amnesty.org/en/latest/news/2026/10/india-release-cjp-leaders-arrested-after-attempting-peaceful-protests-at-jantar-mantar/",
+              "title": "India: Release CJP leaders arrested after attempting peaceful protests at Jantar Mantar",
+              "publisher": "Amnesty International",
+              "date": "2026-10-14",
+              "snippet": "Delhi Police officially removed Jantar Mantar from the list of legal, permitted areas",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Amnesty dates the removal 12 October and says it cited a Supreme Court direction about alternative venues.",
+            "Ledger epilogue_october.json#facts[5] has Commissioner Anurag Kumar's standing order dated 11 Oct (Business Standard, web_check unconfirmed); #facts[9] has 12 Oct. 12 Oct is the reporting day."
+          ],
+          "v2_action": "12 Oct · Strikes Jantar Mantar off the permitted protest sites",
+          "from": "web"
+        },
+        {
+          "text": "CJP leaders Saurav Das and Ashutosh Ranka were arrested after trying to protest at Jantar Mantar on 13 October and remanded to five days of judicial custody.",
+          "date": "2026-10-13",
+          "claimant": "Amnesty International",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "repo_amnesty_1014"
+          ],
+          "links": [
+            {
+              "source_id": "repo_amnesty_1014",
+              "url": "https://www.amnesty.org/en/latest/news/2026/10/india-release-cjp-leaders-arrested-after-attempting-peaceful-protests-at-jantar-mantar/",
+              "title": "India: Release CJP leaders arrested after attempting peaceful protests at Jantar Mantar",
+              "publisher": "Amnesty International",
+              "date": "2026-10-14",
+              "snippet": "who have been remanded to five days of judicial custody after trying to protest at Jantar Mantar on Tuesday",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Text joins Amnesty's headline ('CJP leaders arrested after attempting peaceful protests at Jantar Mantar') and body ('remanded to five days of judicial custody after trying to protest at Jantar Mantar on Tuesday'). 'Tuesday' = 13 Oct per the 14 Oct article.",
+            "Delhi Police called it a 'preventive' arrest (ledger epilogue_october.json#facts[12], India.com, unconfirmed); remand is #facts[13]."
+          ],
+          "v2_action": "13 Oct · Arrests CJP leaders Das and Ranka",
+          "from": "web"
+        }
+      ]
+    },
+    {
+      "id": "raf",
+      "label": "Rapid Action Force",
+      "group": "street",
+      "kind": "restriction",
+      "v2_label": "Rapid Action Force",
+      "v2_source_chip": "Wikipedia (GD entry)",
+      "actions": [
+        {
+          "text": "The General Diary records the RAF firing 'two rounds using ballistic cartridges with plastic pellets from an anti-riot gun' on the instructions of a DCP-rank officer in Zone 1 of Jantar Mantar.",
+          "value": 2,
+          "unit": "pellet rounds",
+          "claimant": "Delhi Police General Diary (via The Tribune)",
+          "attribution": "police said",
+          "status": "disputed",
+          "source_ids": [
+            "tribuneindia"
+          ],
+          "page": 13,
+          "links": [
+            {
+              "source_id": "tribuneindia",
+              "url": "https://www.tribuneindia.com/news/delhi/raf-fired-pellet-gun-on-order-of-dcp-at-cjp-protest-general-diary-details-reveal/",
+              "title": "RAF fired pellet gun on order of DCP at CJP protest, general diary details reveal",
+              "publisher": "The Tribune",
+              "date": "2026-07-28",
+              "snippet": "two rounds using ballistic cartridges with plastic pellets from an anti-riot gun",
+              "verified": true
+            }
+          ],
+          "note": "Same GD: 'RAF fired 55 rounds of non-electrical shells, 15 rounds of electrical shells, five tear gas grenades'. GD registered at 1:24 am (per Tribune); firing time not given.",
+          "date": "2026-07-20",
+          "web_check": "verified",
+          "web_notes": [
+            "web_check derived from links[].verified in the ledger (no web_check field on the ledger fact)."
+          ],
+          "v2_action": "20 Jul · Station diary records two rounds of pellets fired",
+          "from": "ledger:sansad_chalo.json#steps[7].summary_facts[4]"
+        },
+        {
+          "text": "RAF personnel fired seven pellet gun rounds on July 20; five hit protesters.",
+          "value": 7,
+          "unit": "pellet rounds",
+          "claimant": "CRPF report (via The Wire)",
+          "attribution": "reported",
+          "status": "disputed",
+          "source_ids": [
+            "thewire"
+          ],
+          "page": 6,
+          "links": [
+            {
+              "source_id": "thewire",
+              "url": "https://thewire.in/rights/raf-personnel-fired-seven-pellet-gun-rounds-on-july-20-five-hit-protesters-crpf-report-finds",
+              "title": "RAF Fired Seven Pellet Gun Rounds on July 20, Five Hit Protesters, CRPF Report Finds",
+              "publisher": "The Wire",
+              "date": null,
+              "snippet": null,
+              "verified": true
+            }
+          ],
+          "date": "2026-07-20",
+          "web_check": "verified",
+          "web_notes": [
+            "web_check derived from links[].verified in the ledger (no web_check field on the ledger fact)."
+          ],
+          "note": "Disputed pair with the General Diary's two rounds (STATUS 2026-11-12). Not in v2; added so the GD figure is never shown alone.",
+          "v2_action": null,
+          "from": "ledger:sansad_chalo.json#steps[7].summary_facts[3]"
+        }
+      ],
+      "note": "The RAF is a CRPF unit (ledger sansad_chalo.json#deployment[5]). v2's second RAF action (the pellet denial) is a Delhi Police statement and now sits on the Delhi Police node."
+    },
+    {
+      "id": "crpf",
+      "label": "CRPF",
+      "group": "street",
+      "kind": "restriction",
+      "v2_label": "CRPF",
+      "v2_source_chip": "Wikipedia",
+      "actions": [
+        {
+          "text": "20 CRPF companies airlifted from Kolkata (MHA order)",
+          "value": 20,
+          "unit": "CRPF companies",
+          "claimant": "MHA (official)",
+          "attribution": "officials said",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 6,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#22_July",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "20 Central Reserve Police Force (CRPF) companies were airlifted from Kolkata",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "date": "2026-07-21",
+          "web_notes": [
+            "v2 dated this 22 Jul. Wikipedia files it under 22 July but says the MHA ordered the deployment on 'Tuesday night' (21 Jul); the ledger's 21 Jul stands."
+          ],
+          "v2_action": "22 Jul · 20 companies airlifted from Kolkata to Delhi on Home Ministry orders",
+          "from": "ledger:timeline.json#pa_0721.facts[1]"
+        }
+      ]
+    },
+    {
+      "id": "delhi_metro",
+      "label": "Delhi Metro",
+      "group": "street",
+      "kind": "restriction",
+      "v2_label": "Delhi Metro",
+      "v2_source_chip": "Wikipedia · Al Jazeera",
+      "actions": [
+        {
+          "text": "DMRC closed five stations: Rajiv Chowk, Janpath, Patel Chowk, Central Secretariat and Seva Teerth (formerly Udyog Bhawan).",
+          "value": 5,
+          "unit": "metro stations",
+          "claimant": "DMRC (via PTI, Newslaundry, The Week)",
+          "attribution": "officials said",
+          "status": "documented",
+          "source_ids": [
+            "theprint",
+            "theweek_0720"
+          ],
+          "page": 19,
+          "links": [
+            {
+              "source_id": "theprint",
+              "url": "https://theprint.in/india/clashes-tear-gas-thwart-students-march-to-parliament-several-injured-detained/2991284/",
+              "title": "Clashes, tear gas thwart students' march to Parliament; several injured, detained",
+              "publisher": "ThePrint (PTI)",
+              "date": "2026-07-20",
+              "snippet": "The Delhi Metro Rail Corporation closed five stations – Rajiv Chowk, Janpath, Patel Chowk,",
+              "verified": true
+            },
+            {
+              "source_id": "theweek_0720",
+              "url": "https://www.theweek.in/news/india/2026/07/20/cjp-neet-protest-jantar-mantar-parliament-march.html",
+              "title": "Delhi Police lathi-charge CJP protesters at Jantar Mantar as thousands join Parliament march",
+              "publisher": "The Week",
+              "date": "2026-07-20",
+              "snippet": "closed five metro stations—Rajiv Chowk, Janpath, Patel Chowk, Central Secretariat and Seva Teerth",
+              "verified": true
+            }
+          ],
+          "note": "Seva Teerth is the renamed Udyog Bhawan station (renamed Feb 2026), i.e. sites.json metro_udyog_bhawan.",
+          "date": "2026-07-20",
+          "web_check": "verified",
+          "web_notes": [
+            "web_check derived from links[].verified in the ledger (no web_check field on the ledger fact)."
+          ],
+          "v2_action": "20 Jul · Shuts 5 …",
+          "from": "ledger:sansad_chalo.json#steps[2].summary_facts[0]"
+        },
+        {
+          "text": "16 then 17 metro stations closed",
+          "value": 17,
+          "unit": "stations",
+          "claimant": "DMRC",
+          "attribution": "officials said",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 6,
+          "note": "Consolidated table dates the 17 to 22 Jul (p19).",
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#22_July",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "temporarily closed down 16 metro stations / 17 metro stations across Delhi would remain closed until further notice",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "date": "2026-07-21",
+          "web_notes": [
+            "Wikipedia now puts 16 on 22 Jul and 17 on 23 Jul; ledger keeps 21 Jul (metrics m42 notes the same split)."
+          ],
+          "v2_action": "… then 16, 17 …",
+          "from": "ledger:timeline.json#pa_0721.facts[2]"
+        },
+        {
+          "text": "18 metro stations closed on 24 Jul",
+          "value": 18,
+          "unit": "stations",
+          "claimant": "DMRC",
+          "attribution": "officials said",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 7,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#24_July",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "18 metro stations would remain closed on 24 July",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "date": "2026-07-24",
+          "v2_action": "… 18 central stations (20–24 Jul)",
+          "from": "ledger:timeline.json#pa_0724.facts[3]"
+        },
+        {
+          "text": "Authorities closed at least 11 metro stations around the Jantar Mantar observatory.",
+          "date": "2026-10-02",
+          "claimant": "Al Jazeera",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "repo_aljazeera_1002"
+          ],
+          "links": [
+            {
+              "source_id": "repo_aljazeera_1002",
+              "url": "https://www.aljazeera.com/news/2026/10/2/indian-authorities-clamp-down-as-cockroach-movement-launches-new-protests",
+              "title": "Authorities clamp down as ‘cockroach’ movement launches new protests",
+              "publisher": "Al Jazeera",
+              "date": "2026-10-02",
+              "snippet": "Authorities closed at least 11 metro stations around the Jantar Mantar observatory",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Al Jazeera says 'Authorities', not DMRC by name."
+          ],
+          "v2_action": "2 Oct · At least 11 stations near Jantar Mantar closed",
+          "from": "web"
+        },
+        {
+          "date": "2026-10-09",
+          "text": "45 metro stations’ gates shut from 9pm (ETV Bharat); mobile internet suspended within 4 km of Jantar Mantar, 10pm 9 Oct – 10pm 10 Oct",
+          "value": 45,
+          "unit": "stations",
+          "claimant": "media (ETV Bharat)",
+          "attribution": "reported",
+          "status": "disputed",
+          "source_ids": [
+            "etvbharat"
+          ],
+          "page": 8,
+          "note": "Not in v2. Added because the tactics table cites '45 in October' and it is the largest closure in the ledger. Drop if S7 keeps strictly to v2.",
+          "links": [
+            {
+              "source_id": "etvbharat",
+              "url": "https://www.etvbharat.com/en/bharat/cjp-delhi-protest-october-10-saturday-unprecedented-security-clampdown-several-metro-stations-shut-mobile-internet-suspended-train-cancellations-list-enn26100908396",
+              "title": "Clampdown In Capital: 25,000+ Troops On Ground, 45 Metro Stations Shut, 250 Trains Cancelled, Internet Off",
+              "publisher": "ETV Bharat",
+              "date": "2026-10-10",
+              "snippet": "Entry and exit gates at 45 Delhi Metro stations ... closed from 9 pm; internet suspended within 4 km radius of Jantar Mantar from 10 pm on October 9",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "v2_action": null,
+          "from": "ledger:epilogue_october.json#facts[1]"
+        }
+      ]
+    },
+    {
+      "id": "mumbai_police",
+      "label": "Mumbai Police",
+      "group": "street",
+      "kind": "restriction",
+      "v2_label": "Mumbai Police",
+      "v2_source_chip": "Wikipedia · Amnesty",
+      "actions": [
+        {
+          "text": "Mumbai Police registered 13 FIRs between July 18 and July 22, booking 400 people for staging protests without permission, officials said.",
+          "date": "2026-07-18",
+          "claimant": "Mumbai Police officials (via PTI)",
+          "attribution": "police said",
+          "status": "documented",
+          "source_ids": [
+            "theprint_0723_mumbai"
+          ],
+          "links": [
+            {
+              "source_id": "theprint_0723_mumbai",
+              "url": "https://theprint.in/india/mumbai-400-booked-13-firs-registered-in-five-days-for-staging-protests-without-permission/2994070/",
+              "title": "Mumbai: 400 booked, 13 FIRs registered in five days for staging protests without permission",
+              "publisher": "ThePrint (PTI)",
+              "date": "2026-07-23",
+              "snippet": "registered 13 FIRs between July 18 and July 22 ... booking 400 people, officials have said",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "v2 said 'Jul–Aug' and 'FIRs against 400 people'. PTI: 13 FIRs, 400 booked, 18–22 Jul. Wikipedia carries the 400 too."
+          ],
+          "date_end": "2026-07-22",
+          "v2_action": "Jul–Aug · FIRs against 400 people for protesting without permission",
+          "from": "web"
+        },
+        {
+          "text": "In Mumbai, police detained more than 600 people on 10 October as they tried to gather at August Kranti Maidan.",
+          "date": "2026-10-10",
+          "claimant": "Amnesty International",
+          "attribution": "reported",
+          "status": "claimed",
+          "source_ids": [
+            "repo_amnesty_1014"
+          ],
+          "links": [
+            {
+              "source_id": "repo_amnesty_1014",
+              "url": "https://www.amnesty.org/en/latest/news/2026/10/india-release-cjp-leaders-arrested-after-attempting-peaceful-protests-at-jantar-mantar/",
+              "title": "India: Release CJP leaders arrested after attempting peaceful protests at Jantar Mantar",
+              "publisher": "Amnesty International",
+              "date": "2026-10-14",
+              "snippet": "In Mumbai, police detained more than 600 people on 10 October as they tried to gather at August Kranti Maidan.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Ledger metrics.json m61 has 'Arrested (Mumbai) ~600' (ANI via Al Jazeera, status claimed). Amnesty says 'detained'. Status kept 'claimed' to match m61."
+          ],
+          "v2_action": "10 Oct · Detains more than 600 people",
+          "from": "web"
+        }
+      ]
+    },
+    {
+      "id": "bengaluru_police",
+      "label": "Bengaluru Police",
+      "group": "street",
+      "kind": "restriction",
+      "v2_label": "Bengaluru Police",
+      "v2_source_chip": "Amnesty",
+      "actions": [
+        {
+          "text": "Police detained at least 100 people who were marching towards the Karnataka Chief Electoral Officer's office.",
+          "date": "2026-10-12",
+          "claimant": "Amnesty International",
+          "attribution": "reported",
+          "status": "disputed",
+          "source_ids": [
+            "repo_amnesty_1014",
+            "southfirst_1012_bengaluru"
+          ],
+          "links": [
+            {
+              "source_id": "repo_amnesty_1014",
+              "url": "https://www.amnesty.org/en/latest/news/2026/10/india-release-cjp-leaders-arrested-after-attempting-peaceful-protests-at-jantar-mantar/",
+              "title": "India: Release CJP leaders arrested after attempting peaceful protests at Jantar Mantar",
+              "publisher": "Amnesty International",
+              "date": "2026-10-14",
+              "snippet": "police detained at least 100 people who were marching towards the Karnataka Chief Electoral Officer's office",
+              "verified": true
+            },
+            {
+              "source_id": "southfirst_1012_bengaluru",
+              "url": "https://thesouthfirst.com/karnataka/anti-sir-protesters-detained-near-ceo-office-in-bengaluru-women-allege-police-excesses/",
+              "title": "Anti-SIR protesters detained near CEO office in Bengaluru; women allege police excesses",
+              "publisher": "The South First",
+              "date": "2026-10-12",
+              "snippet": "Police detained around 50–60 protesters around 3:30 pm on Monday, 12 October",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "Count disputed: Amnesty 'at least 100'; The South First 'around 50–60' (unattributed).",
+            "The South First and the reports found by search name the 'My Vote My Right' coalition, not the CJP. Only Amnesty places this inside the CJP-led protests."
+          ],
+          "v2_action": "12 Oct · Detains at least 100 marching to the state electoral office",
+          "from": "web"
+        }
+      ],
+      "note": "Vali to decide: the Bengaluru march is attributed to the CJP only by Amnesty."
+    },
+    {
+      "id": "home_ministry",
+      "label": "Home Ministry",
+      "group": "digital",
+      "kind": "restriction",
+      "v2_label": "Home Ministry",
+      "v2_source_chip": "Wikipedia · Internet Society Pulse",
+      "actions": [
+        {
+          "text": "20 CRPF companies airlifted from Kolkata (MHA order)",
+          "value": 20,
+          "unit": "CRPF companies",
+          "claimant": "MHA (official)",
+          "attribution": "officials said",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 6,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#22_July",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "20 Central Reserve Police Force (CRPF) companies were airlifted from Kolkata",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "date": "2026-07-21",
+          "v2_action": "22 Jul · Orders CRPF deployment to Delhi",
+          "note": "Same fact as the CRPF node (the MHA ordered it; the CRPF carried it out).",
+          "from": "ledger:timeline.json#pa_0721.facts[1]"
+        },
+        {
+          "text": "The Ministry of Home Affairs ordered the suspension of mobile Internet services around a 1.5 km radius of Jantar Mantar, New Delhi, from 9:30 to 16:00 on 23 July 2026.",
+          "date": "2026-07-23",
+          "claimant": "Internet Society Pulse",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "repo_isoc_0723"
+          ],
+          "links": [
+            {
+              "source_id": "repo_isoc_0723",
+              "url": "https://pulse.internetsociety.org/en/shutdowns/internet-suspended-in-new-dehli-nct-india-23-july-2026/",
+              "title": "Shutdown - India | ISOC Pulse (Internet suspended in New Delhi, 23 July 2026)",
+              "publisher": "Internet Society Pulse",
+              "date": "2026-07-23",
+              "snippet": "The Ministry of Home Affairs has ordered the suspension of mobile Internet services ... around a 1.5 km radius of Jantar Mantar, New Delhi ... from 9:30 to 16:00 on 23 July 2026",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "Pulse embeds images of the orders but gives no order number in text.",
+            "Window conflict on the same page: a quoted InternetShutdowns.in post says '4:00 PM till 12 AM on 23rd July 2026'; Pulse also logs orders extended through 25 July."
+          ],
+          "v2_action": "23 Jul · Suspends mobile internet within 1.5 km of Jantar Mantar, 09:30–16:00",
+          "from": "web"
+        }
+      ],
+      "note": "v2 groups the Home Ministry under 'digital'; its CRPF order is a street action. Vali may prefer 'street' or a split."
+    },
+    {
+      "id": "meity",
+      "label": "MeitY",
+      "group": "digital",
+      "kind": "restriction",
+      "v2_label": "MeitY",
+      "v2_source_chip": "MediaNama · LawBeat",
+      "actions": [
+        {
+          "text": "MeitY ordered the X account withheld in India under Section 69A of the IT Act, citing IB inputs on “national security” (21 May).",
+          "claimant": "MeitY",
+          "attribution": "officials said",
+          "status": "documented",
+          "source_ids": [
+            "dossier",
+            "repo_indiacom_xblock"
+          ],
+          "page": 3,
+          "note": "No chip on this item in the dossier. repo_indiacom_xblock covers the same event but the dossier doesn't cite it.",
+          "date": "2026-05-21",
+          "web_check": "verified",
+          "links": [
+            {
+              "source_id": "repo_indiacom_xblock",
+              "url": "https://www.india.com/news/india/cockroach-janta-party-x-account-blocked-india-over-alleged-security-concerns-by-intelligence-bureau-abhijeet-dipke-receives-death-threats-8423047/",
+              "title": "Viral ‘Cockroach Janta Party’ X account blocked in India over alleged security concerns by Intelligence Bureau: Report",
+              "publisher": "India.com",
+              "date": "2026-05-22",
+              "snippet": "the Ministry of Electronics and Information Technology invoked Section 69A of the IT Act to issue the order",
+              "verified": true
+            },
+            {
+              "source_id": "repo_lawbeat",
+              "url": "https://lawbeat.in/news-updates/delhi-high-court-orders-restoration-of-cockroach-janta-partys-x-account-1610149",
+              "title": "Delhi High Court Orders Restoration Of Cockroach Janta Party's X Account",
+              "publisher": "LawBeat",
+              "date": "2026-07-08",
+              "snippet": "the impugned blocking order as referred in Email dated 21.05.2026, passed by respondent no. 1",
+              "verified": true
+            }
+          ],
+          "web_notes": [
+            "India.com (citing Indian Express): MeitY invoked Section 69A; IB inputs citing 'national security concerns'; withheld 'on Thursday' (21 May 2026).",
+            "LawBeat: the court order refers to the blocking order 'in Email dated 21.05.2026'. Links added in this draft; the ledger fact had none."
+          ],
+          "v2_action": "21 May · Withholds the CJP’s X account in India under Sec. 69A, IT Act",
+          "from": "ledger:timeline.json#start.facts[4]"
+        },
+        {
+          "text": "The government said it had “no difficulty with the unblocking of the account”; Solicitor General Tushar Mehta said “It was blocked at a time when the NEET examination was to take place” and “Now the examination is over.”",
+          "date": "2026-07-07",
+          "claimant": "Solicitor General Tushar Mehta, for the Centre (via MediaNama)",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "repo_lawbeat",
+            "repo_medianama"
+          ],
+          "links": [
+            {
+              "source_id": "repo_medianama",
+              "url": "https://www.medianama.com/2026/07/223-delhi-hc-cockroach-janta-party-x-account-unblocked/",
+              "title": "Delhi HC orders unblocking of Cockroach Janta Party's X account",
+              "publisher": "MediaNama",
+              "date": "2026-07-07",
+              "snippet": "no difficulty with the unblocking of the account",
+              "verified": true
+            },
+            {
+              "source_id": "repo_lawbeat",
+              "url": "https://lawbeat.in/news-updates/delhi-high-court-orders-restoration-of-cockroach-janta-partys-x-account-1610149",
+              "title": "Delhi High Court Orders Restoration Of Cockroach Janta Party's X Account",
+              "publisher": "LawBeat",
+              "date": "2026-07-08",
+              "snippet": "had no objection to unblocking the handle following the conclusion of the NEET examination",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "Neither source quotes MeitY by name: the statement is the Solicitor General's, for the Union. v2 credited MeitY.",
+            "LawBeat says 'no objection'; MediaNama says 'no difficulty'. Both date the hearing 7 Jul."
+          ],
+          "v2_action": "7 Jul · Tells court it has “no difficulty” with unblocking once exams end",
+          "from": "web"
+        }
+      ]
+    },
+    {
+      "id": "intelligence_bureau",
+      "label": "Intelligence Bureau",
+      "group": "digital",
+      "kind": "restriction",
+      "v2_label": "Intelligence Bureau",
+      "v2_source_chip": "India.com (reported)",
+      "actions": [
+        {
+          "text": "The move reportedly came after inputs from the Intelligence Bureau citing “national security concerns”.",
+          "date": "2026-05-21",
+          "claimant": "India.com (citing The Indian Express)",
+          "attribution": "reported",
+          "status": "claimed",
+          "source_ids": [
+            "repo_indiacom_xblock",
+            "repo_medianama"
+          ],
+          "links": [
+            {
+              "source_id": "repo_indiacom_xblock",
+              "url": "https://www.india.com/news/india/cockroach-janta-party-x-account-blocked-india-over-alleged-security-concerns-by-intelligence-bureau-abhijeet-dipke-receives-death-threats-8423047/",
+              "title": "Viral ‘Cockroach Janta Party’ X account blocked in India over alleged security concerns by Intelligence Bureau: Report",
+              "publisher": "India.com",
+              "date": "2026-05-22",
+              "snippet": "The move reportedly came after inputs from the Intelligence Bureau citing ‘national security concerns’",
+              "verified": true
+            },
+            {
+              "source_id": "repo_medianama",
+              "url": "https://www.medianama.com/2026/07/223-delhi-hc-cockroach-janta-party-x-account-unblocked/",
+              "title": "Delhi HC orders unblocking of Cockroach Janta Party's X account",
+              "publisher": "MediaNama",
+              "date": "2026-07-07",
+              "snippet": "following inputs from the Intelligence Bureau, which cited a threat to the sovereignty of India",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "v2 said 'inflammatory content'. India.com says 'after intelligence agencies raised concerns about allegedly inflammatory posts' (agencies, not the IB by name). Source wording used.",
+            "Both outlets cite an Indian Express report; the IB has not confirmed."
+          ],
+          "v2_action": "May · Reportedly flags the X account over “inflammatory content”",
+          "from": "web"
+        }
+      ]
+    },
+    {
+      "id": "telecom_operators",
+      "label": "Telecom operators",
+      "group": "digital",
+      "kind": "restriction",
+      "v2_label": "Telecom operators",
+      "v2_source_chip": "IFF · The Wire",
+      "actions": [
+        {
+          "text": "Mobile internet was switched off in parts of Central Delhi, including the area around Jantar Mantar. “No copy of any suspension order has been published by the Ministry of Home Affairs.”",
+          "date": "2026-07-20",
+          "claimant": "Internet Freedom Foundation",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "repo_iff_central_delhi",
+            "repo_theweek_0722"
+          ],
+          "links": [
+            {
+              "source_id": "repo_iff_central_delhi",
+              "url": "https://internetfreedom.in/iff-condemns-the-internet-shutdown-in-parts-of-central-delhi-no-suspension-order-has-been-made-public/",
+              "title": "IFF condemns the internet shutdown in parts of Central Delhi. No suspension order has been made public.",
+              "publisher": "Internet Freedom Foundation",
+              "date": "2026-07-20",
+              "snippet": "No copy of any suspension order has been published by the Ministry of Home Affairs",
+              "verified": true
+            },
+            {
+              "source_id": "repo_theweek_0722",
+              "url": "https://www.theweek.in/news/india/2026/07/22/blanket-blackout-no-order-sudden-internet-shutdown-amid-cjp-s-chalo-sansad-protest-raises-questions.html",
+              "title": "Blanket blackout, no order: sudden internet shutdown amid CJP's Chalo Sansad protest raises questions",
+              "publisher": "The Week",
+              "date": "2026-07-22",
+              "snippet": "As per government instructions Internet services have been stopped in your area till further notice",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "Neither IFF nor The Week names an operator. The 'government instructions' SMS is a photo posted by the CJP (The Week does not confirm it).",
+            "IFF: nothing published by the MHA, DoT, the Delhi government or Delhi Police. The Week: the suspension 'remained in effect until the evening of July 20'.",
+            "v2 cited 'IFF · The Wire'; no Wire article was needed or checked."
+          ],
+          "v2_action": "20 Jul · Cut mobile data on a government directive; no order is published",
+          "from": "web"
+        },
+        {
+          "text": "Mobile internet in Connaught Place was suspended at 9:40 am, before the 11 am protest at Jantar Mantar began. Jio subscribers received the message: “As per government instructions Internet services have been stopped in your area till further notice.”",
+          "date": "2026-10-02",
+          "claimant": "Internet Freedom Foundation",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "repo_iff_cp"
+          ],
+          "links": [
+            {
+              "source_id": "repo_iff_cp",
+              "url": "https://internetfreedom.in/shutdown-before-the-first-protester-arrived-iff-condemns-the-internet-suspension-in-connaught-place/",
+              "title": "Shutdown before the first protester arrived: IFF condemns the internet suspension in Connaught Place",
+              "publisher": "Internet Freedom Foundation",
+              "date": "2026-10-02",
+              "snippet": "As per government instructions Internet services have been stopped in your area till further notice",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "IFF says it does not know who directed the shutdown and found no published order."
+          ],
+          "v2_action": "2 Oct · Mobile internet off near Connaught Place before the protest starts",
+          "from": "web"
+        }
+      ],
+      "note": "The only operator named in any source is Jio (the 2 Oct SMS)."
+    },
+    {
+      "id": "delhi_high_court",
+      "label": "Delhi High Court",
+      "group": "courts",
+      "kind": "court",
+      "v2_label": "Delhi High Court",
+      "v2_source_chip": "MediaNama · Wikipedia",
+      "actions": [
+        {
+          "text": "Justice Swarana Kanta Sharma directed that “the impugned blocking order as referred in Email dated 21.05.2026, passed by respondent no. 1, is directed to be revoked.”",
+          "date": "2026-07-07",
+          "claimant": "Delhi High Court (via LawBeat)",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "repo_lawbeat",
+            "repo_medianama"
+          ],
+          "links": [
+            {
+              "source_id": "repo_lawbeat",
+              "url": "https://lawbeat.in/news-updates/delhi-high-court-orders-restoration-of-cockroach-janta-partys-x-account-1610149",
+              "title": "Delhi High Court Orders Restoration Of Cockroach Janta Party's X Account",
+              "publisher": "LawBeat",
+              "date": "2026-07-08",
+              "snippet": "the impugned blocking order as referred in Email dated 21.05.2026, passed by respondent no. 1, is directed to be revoked",
+              "verified": true
+            },
+            {
+              "source_id": "repo_medianama",
+              "url": "https://www.medianama.com/2026/07/223-delhi-hc-cockroach-janta-party-x-account-unblocked/",
+              "title": "Delhi HC orders unblocking of Cockroach Janta Party's X account",
+              "publisher": "MediaNama",
+              "date": "2026-07-07",
+              "snippet": "ordered the unblocking of Cockroach Janta Party's X account",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Abhijeet Dipke v. Union of India; hearing 7 Jul 2026 (LawBeat, published 8 Jul)."
+          ],
+          "effect": "restore",
+          "v2_action": "7 Jul · Orders the X account restored",
+          "from": "web"
+        },
+        {
+          "text": "police: on medical advice and per HC directions",
+          "claimant": "Delhi Police",
+          "attribution": "police said",
+          "status": "disputed",
+          "source_ids": [
+            "wikipedia",
+            "scroll_0718"
+          ],
+          "page": 5,
+          "note": "Scroll quotes the police as citing 'essential medical care' under a High Court order.",
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#Timeline",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "Police said the move was on medical advice and under Delhi High Court directions. Organisers disputed this",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "date": "2026-07-18",
+          "effect": "restrict",
+          "web_notes": [
+            "v2 said the court 'orders … removed from the site'. No source found shows an HC order to remove him; the police said they acted under HC directions, and the CJP disputes it."
+          ],
+          "v2_action": "18 Jul · Orders hunger-striker Sonam Wangchuk removed from the site",
+          "from": "ledger:timeline.json#detention.facts[1]"
+        },
+        {
+          "text": "It cannot be said that any force is being used against Mr Sonam Wangchuk or that his bodily autonomy is being violated in any manner whatsoever.",
+          "value_text": "19 Jul",
+          "claimant": "Justice Mini Pushkarna, Delhi High Court (via Al Jazeera)",
+          "attribution": "said",
+          "status": "disputed",
+          "source_ids": [
+            "aljazeera_0719"
+          ],
+          "page": 0,
+          "note": "The court declined to order his discharge; doctors had given only oral fluids and supplements with his consent.",
+          "date": "2026-07-19",
+          "web_check": "verified",
+          "effect": "restrict",
+          "links": [
+            {
+              "source_id": "aljazeera_0719",
+              "url": "https://www.aljazeera.com/news/2026/7/19/indian-court-rejects-bid-to-release-hunger-striking-activist-from-hospital",
+              "title": "Indian court rejects bid to release hunger-striking activist from hospital",
+              "publisher": "Al Jazeera",
+              "date": "2026-07-19",
+              "snippet": "It cannot be said that any force is being used against Mr Sonam Wangchuk",
+              "verified": true
+            }
+          ],
+          "web_notes": [
+            "Quote confirmed verbatim; Al Jazeera styles her 'Judge Mini Pushkarna'. The court rejected Gitanjali Angmo's petition to release him. Link added in this draft."
+          ],
+          "v2_action": "19 Jul · (part of 18–21 Jul) court keeps him in hospital",
+          "from": "ledger:timeline.json#detention.facts[6]"
+        },
+        {
+          "text": "A Division Bench of Chief Justice Devendra Kumar Upadhyaya and Justice Tejas Karia: “we direct that Sonam Wangchuk be shifted immediately to Medanta Hospital.”",
+          "date": "2026-07-21",
+          "claimant": "Delhi High Court (via ANI)",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "theprint_0721"
+          ],
+          "links": [
+            {
+              "source_id": "theprint_0721",
+              "url": "https://theprint.in/india/sonam-wangchuk-shifted-from-safdarjung-hospital-to-medanta-after-delhi-hc-order/2992562/",
+              "title": "Sonam Wangchuk shifted from Safdarjung Hospital to Medanta after Delhi HC order",
+              "publisher": "ThePrint (ANI)",
+              "date": "2026-07-21",
+              "snippet": "we direct that Sonam Wangchuk be shifted immediately to Medanta Hospital",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Same event as ledger timeline.json#pa_0721.facts[0] ('Delhi HC orders Wangchuk moved to Medanta, Gurugram'), which is a combined beat."
+          ],
+          "effect": "mixed",
+          "v2_action": "21 Jul · … then to hospital",
+          "from": "web"
+        }
+      ],
+      "note": "Court spokes are dashed in v2 because the court both restricted and restored; each action carries effect: restore | restrict | mixed (Medanta was the hospital of his family's choice)."
+    },
+    {
+      "id": "election_commission",
+      "label": "Election Commission",
+      "group": "politics",
+      "kind": "trigger",
+      "v2_label": "Election Commission",
+      "v2_source_chip": "Al Jazeera · Indian Express",
+      "actions": [
+        {
+          "text": "India's Election Commission has so far removed more than 130 million names from the voter lists.",
+          "date": "2026-10-08",
+          "claimant": "AP and Reuters (via Al Jazeera)",
+          "attribution": "reported",
+          "status": "claimed",
+          "source_ids": [
+            "repo_aljazeera_1008"
+          ],
+          "links": [
+            {
+              "source_id": "repo_aljazeera_1008",
+              "url": "https://www.aljazeera.com/news/2026/10/8/indias-cockroach-movement-says-members-detained-as-protests-continue",
+              "title": "‘Cockroach’ movement says members detained as protests continue",
+              "publisher": "Al Jazeera (AP, Reuters)",
+              "date": "2026-10-08",
+              "snippet": "India's Election Commission has so far removed more than 130 million names from the voter lists",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "v2 said '2025–26'; the source gives no period, only 'so far' as of 8 Oct 2026.",
+            "Same article: 'The commission and government deny the allegations' (of irregularities in the SIR)."
+          ],
+          "v2_action": "2025–26 · Voter-roll revision removes 130M+ names",
+          "from": "web"
+        },
+        {
+          "text": "Gyanesh Kumar’s two deputies had formally raised concerns at least 14 times in the past 10 months over revisions to voter lists.",
+          "date": "2026-10-02",
+          "claimant": "The Indian Express (via Al Jazeera)",
+          "attribution": "reported",
+          "status": "claimed",
+          "source_ids": [
+            "repo_aljazeera_1002"
+          ],
+          "links": [
+            {
+              "source_id": "repo_aljazeera_1002",
+              "url": "https://www.aljazeera.com/news/2026/10/2/indian-authorities-clamp-down-as-cockroach-movement-launches-new-protests",
+              "title": "Authorities clamp down as ‘cockroach’ movement launches new protests",
+              "publisher": "Al Jazeera",
+              "date": "2026-10-02",
+              "snippet": "had formally raised concerns at least 14 times in the past 10 months over revisions to voter lists",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Al Jazeera attributes this to The Indian Express; the Indian Express original was not fetched (possible paywall; paywalled sources are excluded)."
+          ],
+          "v2_action": "10 months · Two commissioners raise concerns at least 14 times",
+          "from": "web"
+        }
+      ],
+      "note": "Not a restriction on the CJP: the SIR is the October grievance. kind 'trigger' is a draft proposal; v2 drew it as a solid red spoke."
+    },
+    {
+      "id": "union_ministers",
+      "label": "Union ministers",
+      "group": "politics",
+      "kind": "restriction",
+      "v2_label": "Union ministers",
+      "v2_source_chip": "The Telegraph · Wikipedia",
+      "actions": [
+        {
+          "text": "Union minister Sukanta Majumdar claimed 49% of followers were Pakistani. Dipke’s screen recording showed over 94% were Indian.",
+          "claimant": "Sukanta Majumdar; Abhijeet Dipke",
+          "attribution": "claimed",
+          "status": "disputed",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 3,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cockroach_Janta_Party#Misinformation,_attacks,_and_threats",
+              "title": "Cockroach Janta Party - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "Majumdar claimed 49% of followers were Pakistani. Dipke shared audience analytics showing over 94% of the audience was in India",
+              "verified": true
+            },
+            {
+              "source_id": "devdiscourse_0523",
+              "url": "https://www.devdiscourse.com/article/politics/3919435-nearly-half-of-cockroach-janta-partys-social-media-followers-from-pak-bjps-sukanta-majumdar",
+              "title": "Nearly half of Cockroach Janta Party's social media followers from Pak: BJP's Sukanta Majumdar",
+              "publisher": "Devdiscourse (PTI)",
+              "date": "2026-05-23",
+              "snippet": "The big thing is that 49 per cent of followers of the 'Cockroach Janta Party' on social media are from Pakistan",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "date": "2026-05-23",
+          "web_notes": [
+            "Date 23 May confirmed by PTI (Kolkata) via Devdiscourse; the ledger fact has no date of its own. v2's 'The Telegraph' chip not checked."
+          ],
+          "v2_action": "23 May · Sukanta Majumdar claims 49% of followers are Pakistani",
+          "from": "ledger:timeline.json#start_pushback.facts[3]"
+        },
+        {
+          "text": "Education Minister Dharmendra Pradhan resigned on 25 July",
+          "claimant": "media",
+          "attribution": "reported",
+          "status": "documented",
+          "source_ids": [
+            "wikipedia"
+          ],
+          "page": 1,
+          "links": [
+            {
+              "source_id": "wikipedia",
+              "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests#25_July",
+              "title": "2026 Delhi Jantar Mantar protests - Wikipedia",
+              "publisher": "Wikipedia",
+              "date": null,
+              "snippet": "Dharmendra Pradhan resigned.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "date": "2026-07-25",
+          "v2_action": "25 Jul · Dharmendra Pradhan resigns as Education Minister",
+          "from": "ledger:timeline.json#victory.facts[0]"
+        }
+      ],
+      "note": "Excluded: Pradhan's 'B Team Of Disruptive Elements' (timeline.json#protest_2b.facts[0]) is on hold. Not in v2 and out of its 15 May–21 Oct range: Jitendra Singh's 5 Nov funding allegation (epilogue_october.json#facts[23])."
+    }
+  ],
+  "new_sources": [
+    {
+      "id": "theprint_0721_pellet_denial",
+      "title": "Delhi Police denies CJP's claim of pellet gun use against protesters, calls post 'fake'",
+      "publisher": "ThePrint (PTI)",
+      "url": "https://theprint.in/india/delhi-police-denies-cjps-claim-of-pellet-gun-use-against-protesters-calls-post-fake/2992645/",
+      "date": "2026-07-21",
+      "note": "PTI copy. Quotes the Delhi Police 'Fake News Alert' post on X."
+    },
+    {
+      "id": "theprint_0723_mumbai",
+      "title": "Mumbai: 400 booked, 13 FIRs registered in five days for staging protests without permission",
+      "publisher": "ThePrint (PTI)",
+      "url": "https://theprint.in/india/mumbai-400-booked-13-firs-registered-in-five-days-for-staging-protests-without-permission/2994070/",
+      "date": "2026-07-23",
+      "note": "PTI copy, dateline Mumbai, Jul 23. Figures from unnamed Mumbai Police officials."
+    },
+    {
+      "id": "southfirst_1012_bengaluru",
+      "title": "Anti-SIR protesters detained near CEO office in Bengaluru; women allege police excesses",
+      "publisher": "The South First",
+      "url": "https://thesouthfirst.com/karnataka/anti-sir-protesters-detained-near-ceo-office-in-bengaluru-women-allege-police-excesses/",
+      "date": "2026-10-12",
+      "note": "Gives around 50–60 detained (contests Amnesty's 'at least 100'). Names the 'My Vote My Right' coalition; does not mention the CJP."
+    },
+    {
+      "id": "devdiscourse_0523",
+      "title": "Nearly half of Cockroach Janta Party's social media followers from Pak: BJP's Sukanta Majumdar",
+      "publisher": "Devdiscourse (PTI)",
+      "url": "https://www.devdiscourse.com/article/politics/3919435-nearly-half-of-cockroach-janta-partys-social-media-followers-from-pak-bjps-sukanta-majumdar",
+      "date": "2026-05-23",
+      "note": "PTI feed, dateline Kolkata. Used only to date the Majumdar claim; Deccan Herald carries the same PTI copy but returned 403."
+    }
+  ]
+}

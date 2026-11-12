@@ -1,0 +1,96 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1440x900",
+ "targets": "docs/build/scenes/targets/S8.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S8a-0.5",
+   "at": "S8a:0.5",
+   "frame": null,
+   "ok": true,
+   "y": 39480,
+   "current": "S8a",
+   "p": 0.4997,
+   "live": "S8a@0.500",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S8b-0.5",
+   "at": "S8b:0.5",
+   "frame": null,
+   "ok": true,
+   "y": 40380,
+   "current": "S8b",
+   "p": 0.4997,
+   "live": "S8b@0.500",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S8c-0.5",
+   "at": "S8c:0.5",
+   "frame": "S8",
+   "ok": true,
+   "y": 41280,
+   "current": "S8c",
+   "p": 0.4997,
+   "live": "S8c@0.500",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 126,
+    "scenes": 4,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S8c-0.5",
+   "at": "S8c:0.5",
+   "frame": "S8",
+   "ok": true,
+   "y": 41280,
+   "current": "S8c",
+   "p": 0.4997,
+   "live": "S8c@0.500",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S8b-0.5",
+   "at": "S8b:0.5",
+   "frame": null,
+   "ok": true,
+   "y": 40380,
+   "current": "S8b",
+   "p": 0.4997,
+   "live": "S8b@0.500",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S8a-0.5",
+   "at": "S8a:0.5",
+   "frame": null,
+   "ok": true,
+   "y": 39480,
+   "current": "S8a",
+   "p": 0.4997,
+   "live": "S8a@0.500",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 125,
+    "scenes": 4,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

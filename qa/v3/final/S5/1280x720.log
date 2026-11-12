@@ -1,0 +1,25 @@
+PASS down S5-0             at S5:0       → S5 p=0.0000  y=6984  live: S5@0.000
+PASS down S5-lead          at S5:0.015   → S5 p=0.0150  y=7208  live: S5@0.015
+PASS down S5-start         at S5:0.048   → S5 p=0.0480  y=7699  live: S5@0.048
+PASS down S5-0718          at S5:0.3357  → S5 p=0.3357  y=11987  live: S5@0.336
+PASS down S5-0720          at S5:0.41    → S5 p=0.4100  y=13095  live: S5@0.410
+PASS down S5-0720-0720     at S5:0.507   → S5 p=0.5070  y=14540  live: S5@0.507
+PASS down S5-0720-1115     at S5:0.63    → S5 p=0.6300  y=16374  live: S5@0.630
+PASS down S5-0720-1430     at S5:0.692   → S5 p=0.6920  y=17298  live: S5@0.692
+PASS down S5-0720-1600     at S5:0.727   → S5 p=0.7270  y=17819  live: S5@0.727
+PASS down S5-0720-2040     at S5:0.803   → S5 p=0.8030  y=18952  live: S5@0.803
+PASS down S5-1             at S5:1       → S5 p=0.9999  y=21887  live: S5@1.000
+PASS down monotonic p: 515 samples over 2 scenes
+PASS up   S5-1             at S5:1       → S5 p=0.9999  y=21887  live: S5@1.000
+PASS up   S5-0720-2040     at S5:0.803   → S5 p=0.8030  y=18952  live: S5@0.803
+PASS up   S5-0720-1600     at S5:0.727   → S5 p=0.7270  y=17819  live: S5@0.727
+PASS up   S5-0720-1430     at S5:0.692   → S5 p=0.6920  y=17298  live: S5@0.692
+PASS up   S5-0720-1115     at S5:0.63    → S5 p=0.6300  y=16374  live: S5@0.630
+PASS up   S5-0720-0720     at S5:0.507   → S5 p=0.5070  y=14540  live: S5@0.507
+PASS up   S5-0720          at S5:0.41    → S5 p=0.4100  y=13095  live: S5@0.410
+PASS up   S5-0718          at S5:0.3357  → S5 p=0.3357  y=11987  live: S5@0.336
+PASS up   S5-start         at S5:0.048   → S5 p=0.0480  y=7699  live: S5@0.048
+PASS up   S5-lead          at S5:0.015   → S5 p=0.0150  y=7208  live: S5@0.015
+PASS up   S5-0             at S5:0       → S5 p=0.0000  y=6984  live: S5@0.000
+PASS up monotonic p: 518 samples over 2 scenes
+LOG: Failed to load resource: the server responded with a status of 404 (Not Found) http://localhost:5173/src/scenes/s07-charts.css

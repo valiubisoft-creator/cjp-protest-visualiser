@@ -1,10 +1,53 @@
 {
  "scene": "S7",
  "brief": "docs/build/scenes/S7.md",
- "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image. S7 is three pinned chart stages: S7a, S7b, S7c.",
+ "note": "Anime.js redesign (2026-11-12): three key frames per chart (act/draw-in and hold). S7 is three pinned chart stages: S7a, S7b, S7c (S7d is its own scene and targets file).",
  "targets": [
-  {"name": "S7a-0.75", "at": "S7a:0.75", "frame": "S7", "expect": "Chart A, hold: summed views by upload day (IST), fully drawn; black line, red only for the peak; node markers with node.label; callouts with * on the right. Reading section (paper)."},
-  {"name": "S7b-0.75", "at": "S7b:0.75", "expect": "Chart B (channels, bubbles), hold. No storyboard frame."},
-  {"name": "S7c-0.75", "at": "S7c:0.75", "expect": "Chart C (source type per day, stream), hold. No storyboard frame."}
+  {
+   "name": "S7a-0.30",
+   "at": "S7a:0.30",
+   "expect": "Chart A act 1: line drawn to about 10 Jun on the zoomed scale (0–1.5M); Start marker; callout 1 (1,244)."
+  },
+  {
+   "name": "S7a-0.50",
+   "at": "S7a:0.50",
+   "expect": "Chart A act 1 end: line drawn to 17 Jul on the zoomed scale; Start, Protest, Sonam Wangchuk, Detention markers; roach at the pen tip."
+  },
+  {
+   "name": "S7a-0.75",
+   "at": "S7a:0.75",
+   "frame": "S7",
+   "expect": "Chart A hold: full linear scale 0–60M, line fully drawn, red peak 50.3M* on 20 Jul, node markers with node.label, three callouts with *; roach resting at 21 Jul."
+  },
+  {
+   "name": "S7b-0.30",
+   "at": "S7b:0.30",
+   "expect": "Chart B: waffle cells rippling in from the bottom-left; The Lallantop label."
+  },
+  {
+   "name": "S7b-0.50",
+   "at": "S7b:0.50",
+   "expect": "Chart B: all 1,000 cells in; block labels; callout 1 (30%)."
+  },
+  {
+   "name": "S7b-0.75",
+   "at": "S7b:0.75",
+   "expect": "Chart B hold: 1,000-square waffle, top-10 outline, group labels, scale key, red party speck; three callouts with *."
+  },
+  {
+   "name": "S7c-0.30",
+   "at": "S7c:0.30",
+   "expect": "Chart C: roaches crawling into the May–June day blocks; Start marker."
+  },
+  {
+   "name": "S7c-0.50",
+   "at": "S7c:0.50",
+   "expect": "Chart C: crackdown blocks still filling (roaches mid-crawl); callout 1 (42)."
+  },
+  {
+   "name": "S7c-0.75",
+   "at": "S7c:0.75",
+   "expect": "Chart C hold: 1,244 roaches by upload day and source tag, counts over the big blocks, node markers, three callouts with *."
+  }
  ]
 }

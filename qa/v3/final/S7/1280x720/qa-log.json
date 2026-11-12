@@ -1,0 +1,240 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1280x720",
+ "targets": "docs/build/scenes/targets/S7.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S7a-0.30",
+   "at": "S7a:0.30",
+   "frame": null,
+   "ok": true,
+   "y": 26013,
+   "current": "S7a",
+   "p": 0.3003,
+   "live": "S7a@0.300",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S7a-0.50",
+   "at": "S7a:0.50",
+   "frame": null,
+   "ok": true,
+   "y": 26257,
+   "current": "S7a",
+   "p": 0.4997,
+   "live": "S7a@0.500",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S7a-0.75",
+   "at": "S7a:0.75",
+   "frame": "S7",
+   "ok": true,
+   "y": 26563,
+   "current": "S7a",
+   "p": 0.7497,
+   "live": "S7a@0.750",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S7b-0.30",
+   "at": "S7b:0.30",
+   "frame": null,
+   "ok": true,
+   "y": 27957,
+   "current": "S7b",
+   "p": 0.3003,
+   "live": "S7b@0.300",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S7b-0.50",
+   "at": "S7b:0.50",
+   "frame": null,
+   "ok": true,
+   "y": 28201,
+   "current": "S7b",
+   "p": 0.4997,
+   "live": "S7b@0.500",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S7b-0.75",
+   "at": "S7b:0.75",
+   "frame": null,
+   "ok": true,
+   "y": 28507,
+   "current": "S7b",
+   "p": 0.7497,
+   "live": "S7b@0.750",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S7c-0.30",
+   "at": "S7c:0.30",
+   "frame": null,
+   "ok": true,
+   "y": 29901,
+   "current": "S7c",
+   "p": 0.3003,
+   "live": "S7c@0.300",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S7c-0.50",
+   "at": "S7c:0.50",
+   "frame": null,
+   "ok": true,
+   "y": 30145,
+   "current": "S7c",
+   "p": 0.4997,
+   "live": "S7c@0.500",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S7c-0.75",
+   "at": "S7c:0.75",
+   "frame": null,
+   "ok": true,
+   "y": 30451,
+   "current": "S7c",
+   "p": 0.7497,
+   "live": "S7c@0.750",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 377,
+    "scenes": 4,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S7c-0.75",
+   "at": "S7c:0.75",
+   "frame": null,
+   "ok": true,
+   "y": 30451,
+   "current": "S7c",
+   "p": 0.7497,
+   "live": "S7c@0.750",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S7c-0.50",
+   "at": "S7c:0.50",
+   "frame": null,
+   "ok": true,
+   "y": 30145,
+   "current": "S7c",
+   "p": 0.4997,
+   "live": "S7c@0.500",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S7c-0.30",
+   "at": "S7c:0.30",
+   "frame": null,
+   "ok": true,
+   "y": 29901,
+   "current": "S7c",
+   "p": 0.3003,
+   "live": "S7c@0.300",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S7b-0.75",
+   "at": "S7b:0.75",
+   "frame": null,
+   "ok": true,
+   "y": 28507,
+   "current": "S7b",
+   "p": 0.7497,
+   "live": "S7b@0.750",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S7b-0.50",
+   "at": "S7b:0.50",
+   "frame": null,
+   "ok": true,
+   "y": 28201,
+   "current": "S7b",
+   "p": 0.4997,
+   "live": "S7b@0.500",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S7b-0.30",
+   "at": "S7b:0.30",
+   "frame": null,
+   "ok": true,
+   "y": 27957,
+   "current": "S7b",
+   "p": 0.3003,
+   "live": "S7b@0.300",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S7a-0.75",
+   "at": "S7a:0.75",
+   "frame": "S7",
+   "ok": true,
+   "y": 26563,
+   "current": "S7a",
+   "p": 0.7497,
+   "live": "S7a@0.750",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S7a-0.50",
+   "at": "S7a:0.50",
+   "frame": null,
+   "ok": true,
+   "y": 26257,
+   "current": "S7a",
+   "p": 0.4997,
+   "live": "S7a@0.500",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S7a-0.30",
+   "at": "S7a:0.30",
+   "frame": null,
+   "ok": true,
+   "y": 26013,
+   "current": "S7a",
+   "p": 0.3003,
+   "live": "S7a@0.300",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 375,
+    "scenes": 4,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

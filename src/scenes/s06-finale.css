@@ -1,0 +1,10 @@
+/* S6 · Finale (remaining-scenes chat, 2026-11-12). Canvases full-stage; text positioned from JS (below the date box).
+   The stage floods to the dramatic stage (ink: red, black roaches, white text) inside the scene, so the text uses the
+   dramatic tokens directly. Tokens only. */
+.s6 { pointer-events: none; }
+.s6 > canvas { position: absolute; left: 0; top: 0; display: block; }
+.s6-text { position: absolute; inset: 0; color: var(--stage-dramatic-fg); }
+.s6-victory, .s6-line { visibility: hidden; }
+.s6-victory { position: absolute; left: 0; right: 0; top: 0; margin: 0; text-align: center; font-size: var(--fs-d1); line-height: 1.05; }
+.s6-line { position: absolute; left: 0; right: 0; top: 0; margin: 0 auto; max-width: var(--measure); text-align: center; font: var(--w-bold) var(--fs-lead)/1.35 var(--font-text); pointer-events: auto; }
+.s6-line .star { color: var(--stage-dramatic-fg); }

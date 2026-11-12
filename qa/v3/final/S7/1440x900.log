@@ -1,0 +1,20 @@
+PASS down S7a-0.30         at S7a:0.30   → S7a p=0.2998  y=32199  live: S7a@0.300
+PASS down S7a-0.50         at S7a:0.50   → S7a p=0.4998  y=32505  live: S7a@0.500
+PASS down S7a-0.75         at S7a:0.75   → S7a p=0.7502  y=32888  live: S7a@0.750
+PASS down S7b-0.30         at S7b:0.30   → S7b p=0.2998  y=34629  live: S7b@0.300
+PASS down S7b-0.50         at S7b:0.50   → S7b p=0.4998  y=34935  live: S7b@0.500
+PASS down S7b-0.75         at S7b:0.75   → S7b p=0.7502  y=35318  live: S7b@0.750
+PASS down S7c-0.30         at S7c:0.30   → S7c p=0.2998  y=37059  live: S7c@0.300
+PASS down S7c-0.50         at S7c:0.50   → S7c p=0.4998  y=37365  live: S7c@0.500
+PASS down S7c-0.75         at S7c:0.75   → S7c p=0.7502  y=37748  live: S7c@0.750
+PASS down monotonic p: 376 samples over 4 scenes
+PASS up   S7c-0.75         at S7c:0.75   → S7c p=0.7502  y=37748  live: S7c@0.750
+PASS up   S7c-0.50         at S7c:0.50   → S7c p=0.4998  y=37365  live: S7c@0.500
+PASS up   S7c-0.30         at S7c:0.30   → S7c p=0.2998  y=37059  live: S7c@0.300
+PASS up   S7b-0.75         at S7b:0.75   → S7b p=0.7502  y=35318  live: S7b@0.750
+PASS up   S7b-0.50         at S7b:0.50   → S7b p=0.4998  y=34935  live: S7b@0.500
+PASS up   S7b-0.30         at S7b:0.30   → S7b p=0.2998  y=34629  live: S7b@0.300
+PASS up   S7a-0.75         at S7a:0.75   → S7a p=0.7502  y=32888  live: S7a@0.750
+PASS up   S7a-0.50         at S7a:0.50   → S7a p=0.4998  y=32505  live: S7a@0.500
+PASS up   S7a-0.30         at S7a:0.30   → S7a p=0.2998  y=32199  live: S7a@0.300
+PASS up monotonic p: 378 samples over 4 scenes

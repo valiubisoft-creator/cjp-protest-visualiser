@@ -1,0 +1,4 @@
+PASS down S6-5-top         at S6.5:top   → S6.5 p=0.6180  y=24480  live: S6.5@0.618
+PASS down monotonic p: 42 samples over 2 scenes
+PASS up   S6-5-top         at S6.5:top   → S6.5 p=0.6180  y=24480  live: S6.5@0.618
+PASS up monotonic p: 43 samples over 2 scenes

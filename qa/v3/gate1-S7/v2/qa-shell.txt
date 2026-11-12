@@ -1,0 +1,21 @@
+PASS sweep down: scenes current in budget order (16/16) 
+PASS sweep down: p monotonic in all 16 scenes over 1091 samples
+PASS sweep down: every scene's p spans its range
+PASS sweep up: scenes current in budget order (16/16) 
+PASS sweep up: p monotonic in all 16 scenes over 1080 samples
+PASS sweep up: every scene's p spans its range
+FAIL deep links: 48/49 land on their p
+  S8a:0.8 → p 0.8192057291666667 y 43782
+PASS lock: wheel and PageDown do not scroll while locked
+PASS unlock: wheel scrolls again
+PASS lock: auto-unlocks after maxMs
+PASS gate: 1279×900 shows the desktop message, hides the piece
+PASS gate: 1440×719 shows the desktop message, hides the piece
+PASS gate: 1280×720 shows the piece
+PASS resize to 1920×1080: still S4 p 0.5998
+PASS resize to 2560×1440: still S4 p 0.5999
+PASS resize to 1280×720: still S4 p 0.6003
+PASS resize to 1440×900: still S4 p 0.6006
+PASS /v3 (no slash) boots and deep-links: S3.5 p 0.3000
+PASS console: no errors or exceptions
+1 FAILED

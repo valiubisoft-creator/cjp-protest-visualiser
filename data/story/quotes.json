@@ -1,5 +1,5 @@
 {
-  "note": "Candidates sourced from the web 2026-11-12 (Vali approved web sourcing; supersedes D8). Vali picked Ambedkar, Bhagat Singh and Faiz (2026-11-12); the rest stay as unselected candidates. Render original_text with text beneath it, plus a visible source line. Poets are in copyright in India: short quotes need a fair-dealing call. 'translation_is_ours: true' means no published translation was found: label the English 'Translation: CJP Visualiser' or find a published one.",
+  "note": "Candidates sourced from the web 2026-11-12 (Vali approved web sourcing; supersedes D8). Vali picked Ambedkar, Bhagat Singh and Faiz (2026-11-12), then kept Ambedkar only (2026-11-12); the rest stay as unselected candidates. Render original_text with text beneath it, plus a visible source line. Poets are in copyright in India: short quotes need a fair-dealing call. 'translation_is_ours: true' means no published translation was found: label the English 'Translation: CJP Visualiser' or find a published one.",
   "quotes": [
     {
       "id": "gandhi-hind-swaraj",
@@ -59,7 +59,7 @@
       "disputed": "partially",
       "public_domain": true,
       "notes": "The line is a quotation by Bhagat Singh of French anarchist Auguste Vaillant (spelt 'Valiant' on the transcription); credit it as 'Bhagat Singh quoting Vaillant', not as his own aphorism. Some outlets print 'loud noise' not 'loud voice'. Do NOT use the widely circulated 'They may kill me but they cannot kill my ideas' (unsourced).",
-      "selected": true
+      "selected": false
     },
     {
       "id": "lajpat-rai-1928",
@@ -99,7 +99,7 @@
       "disputed": false,
       "public_domain": false,
       "notes": "Rekhta's English is unattributed; if a named translator is needed, V. G. Kiernan's 'Poems by Faiz' (1971) is the standard English edition but I did NOT verify that it contains 'Bol', so do not credit it. Copyright: Faiz d.1984, still in copyright in India; short quote use needs fair-dealing judgement or permission.",
-      "selected": true
+      "selected": false
     },
     {
       "id": "jalib-dastoor",

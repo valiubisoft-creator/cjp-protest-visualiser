@@ -1,0 +1,56 @@
+[
+ {
+  "name": "S7a-0.30",
+  "at": "S7a:0.30",
+  "frame": null,
+  "downUpDiff": 0.0000023148148148148148
+ },
+ {
+  "name": "S7a-0.50",
+  "at": "S7a:0.50",
+  "frame": null,
+  "downUpDiff": 0.0000023148148148148148
+ },
+ {
+  "name": "S7a-0.75",
+  "at": "S7a:0.75",
+  "frame": "S7",
+  "downUpDiff": 0.0000023148148148148148
+ },
+ {
+  "name": "S7b-0.30",
+  "at": "S7b:0.30",
+  "frame": null,
+  "downUpDiff": 0.0000015432098765432098
+ },
+ {
+  "name": "S7b-0.50",
+  "at": "S7b:0.50",
+  "frame": null,
+  "downUpDiff": 0.0000015432098765432098
+ },
+ {
+  "name": "S7b-0.75",
+  "at": "S7b:0.75",
+  "frame": null,
+  "downUpDiff": 0.00001388888888888889
+ },
+ {
+  "name": "S7c-0.30",
+  "at": "S7c:0.30",
+  "frame": null,
+  "downUpDiff": 7.716049382716049e-7
+ },
+ {
+  "name": "S7c-0.50",
+  "at": "S7c:0.50",
+  "frame": null,
+  "downUpDiff": 7.716049382716049e-7
+ },
+ {
+  "name": "S7c-0.75",
+  "at": "S7c:0.75",
+  "frame": null,
+  "downUpDiff": 7.716049382716049e-7
+ }
+]

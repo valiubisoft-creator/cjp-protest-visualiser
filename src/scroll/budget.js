@@ -37,8 +37,11 @@ export function buildBudget({ quoteCount = 3 } = {}) {
     { id: 'S7a',  name: 'Chart A: views over time',            len: 170, block: 'S7a', stage: 'chart', file: 's07-charts.js', sub: 0 },
     { id: 'S7b',  name: 'Chart B: channels',                   len: 170, block: 'S7b', stage: 'chart', file: 's07-charts.js', sub: 1 },
     { id: 'S7c',  name: 'Chart C: source type per day',        len: 170, block: 'S7c', stage: 'chart', file: 's07-charts.js', sub: 2 },
+    // Vali 2026-11-12 (remaining-scenes chat): v2's "07 · The apparatus" spokes network, ported with sourced data
+    { id: 'S7d',  name: 'The apparatus: state actors',         len: 300, block: 'S7d', stage: 'chart', file: 's07-apparatus.js' },
     // one 100vh scene per selected quote (quotes.json `selected: true`), crossfading in one pinned stage
-    ...quoteIds.map((id, i) => ({ id, name: `Quote ${i + 1} of ${quoteCount}`, len: 100, block: 'S8', stage: 'quotes', file: 's08-quotes.js', sub: i })),
+    // Vali 2026-11-12: Ambedkar only, typed out like a typewriter, so each quote scene gets 160 vh (was 100)
+    ...quoteIds.map((id, i) => ({ id, name: `Quote ${i + 1} of ${quoteCount}`, len: 160, block: 'S8', stage: 'quotes', file: 's08-quotes.js', sub: i })),
     { id: 'S9',   name: 'Follow and share',                    len: 100, block: null, file: 's09-cta.js' },
     { id: 'S10',  name: 'Credit, methodology, disclaimer',     len: 'auto', block: null, file: 's10-footer.js' },
   ];

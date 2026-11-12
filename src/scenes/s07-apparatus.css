@@ -1,0 +1,109 @@
+/* S7d · The apparatus (S7d chat, 2026-11-12). Paper (.reading) chart stage, same family as S7a–c (styles copied, not
+   imported, so the S7 redesign can't break this scene). Network ≈58% left, record panel ≈36% right. Tokens only.
+   Red means restriction only: red solid spokes and dots; courts dashed (ink); other roles neutral grey. */
+.s7d.reading { --chart-1: var(--black); --chart-2: var(--grey-1); --chart-grid: var(--grey-2); --chart-hi: var(--red);
+  --s7d-label-font: 760 13px "Public Sans"; }
+
+.s7d { position: absolute; inset: 0; background: var(--bg); color: var(--fg); box-sizing: border-box;
+  display: grid; grid-template-rows: auto minmax(0, 1fr); row-gap: var(--s-5);
+  padding: var(--s-8) var(--s-8) var(--s-6); font-family: var(--font-text); }
+.s7d *, .s7d *::before, .s7d *::after { box-sizing: border-box; }
+
+/* ── header: kicker + title left, line key right ── */
+.s7d-head { display: flex; justify-content: space-between; align-items: flex-end; gap: var(--s-6); }
+.s7d-kick { margin: 0; color: var(--accent-text); }
+.s7d-title { margin: var(--s-2) 0 0; font-size: var(--fs-d2); color: var(--fg); }
+.s7d-key { display: flex; gap: var(--s-5); margin: 0 0 var(--s-2); padding: 0; list-style: none;
+  font: var(--w-bold) var(--fs-micro)/1.3 var(--font-ui); color: var(--fg); }
+.s7d-key li { display: flex; align-items: center; gap: var(--s-2); }
+.s7d-key svg { display: block; }
+
+/* ── main row ── */
+.s7d-main { display: grid; grid-template-columns: minmax(0, 60fr) minmax(0, 35fr); column-gap: 5%; min-height: 0; }
+.s7d-net { position: relative; margin: 0; min-height: 0; }
+.s7d-svg { position: absolute; left: 0; top: 0; display: block; overflow: visible; }
+
+/* spokes */
+.s7d-sp { stroke-width: 1.3; stroke-linecap: butt; }   /* butt: an undrawn (zero-length) spoke paints nothing */
+.k-r.s7d-sp, .s7d-key .k-r { stroke: var(--chart-hi); }
+.k-c.s7d-sp, .s7d-key .k-c { stroke: var(--chart-1); stroke-dasharray: 3 4; stroke-linecap: butt; }
+.k-n.s7d-sp, .s7d-key .k-n { stroke: var(--chart-2); }
+.s7d-key line { stroke-width: 2; }
+.s7d-sp.on { stroke-width: 2.8; }
+
+/* group labels inside the ring (haloed so the spokes pass behind) */
+.s7d-glab { font: var(--w-bold) 11px/1 var(--font-ui); letter-spacing: var(--track-micro); text-transform: uppercase;
+  fill: var(--muted); paint-order: stroke; stroke: var(--bg); stroke-width: 5px; stroke-linejoin: round; }
+.s7d-sec.dim .s7d-glab { fill: var(--chart-grid); }
+
+/* hub */
+.s7d-hub .core { fill: var(--chart-1); }
+.s7d-hub .pulse { fill: none; stroke: var(--chart-1); stroke-width: 1; opacity: 0; }
+.s7d-hub text { font: var(--w-black) 13px/1 var(--font-ui); letter-spacing: .08em; fill: var(--bg); }
+
+/* nodes */
+.s7d-nd { cursor: pointer; outline: none; }
+.s7d-nd .hit { fill: transparent; }
+.s7d-nd .dot { stroke: var(--bg); stroke-width: 2; }
+.s7d-nd.k-r .dot { fill: var(--chart-hi); }
+.s7d-nd.k-c .dot { fill: var(--bg); stroke: var(--chart-1); stroke-width: 1.5; }
+.s7d-nd.k-n .dot { fill: var(--chart-2); }
+.s7d-nd text { font: var(--s7d-label-font); fill: var(--fg); paint-order: stroke; stroke: var(--bg); stroke-width: 4px; stroke-linejoin: round; }
+.s7d-nd.on text { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.s7d-nd:focus-visible .dot { stroke: var(--fg); stroke-width: 3; }
+
+/* ── record panel: one card per actor, stacked; scroll p picks which shows ── */
+.s7d-panel { position: relative; min-height: 0; }
+.s7d-card { position: absolute; left: 0; top: 0; right: 0; max-height: 100%; overflow: hidden; visibility: hidden; }   /* no will-change: whole-px moves, re-rastered (down == up) */
+.s7d-actor { border-top: var(--rule-heavy) solid var(--fg); padding-top: var(--s-3); }
+.s7d-actor.k-r { border-top-color: var(--chart-hi); }
+.s7d-actor.k-c { border-top-style: dashed; }
+.s7d-actor.k-n { border-top-color: var(--chart-2); }
+.s7d-ck { display: flex; justify-content: space-between; margin: 0; color: var(--muted); }
+.s7d-an { margin: var(--s-2) 0 var(--s-4); font: var(--w-black) var(--fs-h2)/1.1 var(--font-ui); letter-spacing: -.01em; }
+.s7d-acts { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: var(--s-4); }
+.s7d-act { padding-left: var(--s-3); border-left: 1px solid var(--chart-grid); }
+.s7d-act p { margin: 0; }
+.s7d-when { display: flex; align-items: center; flex-wrap: wrap; gap: var(--s-2); font: var(--w-bold) var(--fs-micro)/1.3 var(--font-ui); }
+.s7d-when .d { font-variant-numeric: tabular-nums; }
+.chip { padding: 0 5px; border: 1px solid var(--chart-2); color: var(--muted); font: var(--w-bold) 10px/1.5 var(--font-ui);
+  letter-spacing: .06em; text-transform: uppercase; }
+.s7d-tx { margin-top: var(--s-1) !important; font-size: var(--fs-small); line-height: 1.4; }
+.s7d-by { margin-top: var(--s-1) !important; font: var(--w-regular) var(--fs-micro)/1.35 var(--font-ui); color: var(--muted); }
+.s7d-by .star { font-size: 1.1em; }
+.s7d-x { margin-top: var(--s-1) !important; font: var(--w-regular) var(--fs-micro)/1.35 var(--font-ui); color: var(--muted); }
+.s7d-x button, .s7d-roster button { all: unset; cursor: pointer; }
+.s7d-x button { color: var(--fg); font-weight: var(--w-bold); text-decoration: underline; text-underline-offset: 2px; }
+.s7d-x button:focus-visible, .s7d-roster button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* type steps when a record is long (set per viewport by fitCards) */
+.s7d-card.tight .s7d-an { font-size: 24px; margin-bottom: var(--s-3); }
+.s7d-card.tight .s7d-acts { gap: var(--s-3); }
+.s7d-card.tight .s7d-tx { font-size: 14px; line-height: 1.36; }
+.s7d-card.tighter .s7d-tx { font-size: 13px; line-height: 1.3; }
+.s7d-card.tighter .s7d-acts { gap: var(--s-2); }
+.s7d-card.tighter .s7d-an { font-size: 22px; margin: var(--s-1) 0 var(--s-2); }
+.s7d-card.tighter .s7d-by, .s7d-card.tighter .s7d-x { font-size: 11px; }
+
+/* roster (draw-in and hold): the groups and their actors, as the network shows them */
+.s7d-roster { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-5) var(--s-6); align-content: start; }
+.s7d-rg { border-top: var(--rule) solid var(--fg); padding-top: var(--s-2); }
+.s7d-rgh { margin: 0 0 var(--s-2); color: var(--fg); font-family: var(--font-ui); }
+.s7d-rg ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 3px; }
+.s7d-roster li button { display: flex; align-items: center; gap: var(--s-2); font: var(--w-regular) var(--fs-small)/1.35 var(--font-text); }
+.s7d-roster li button:hover { text-decoration: underline; }
+.sw { display: inline-block; flex: none; width: 8px; height: 8px; border-radius: 50%; }
+.sw.k-r { background: var(--chart-hi); }
+.sw.k-c { background: var(--bg); box-shadow: inset 0 0 0 1.5px var(--chart-1); }
+.sw.k-n { background: var(--chart-2); }
+.s7d-hint { grid-column: 1 / -1; margin: 0; font: var(--w-regular) var(--fs-micro)/1.4 var(--font-ui); color: var(--muted); }
+
+/* ── the minimum viewport (1280×720) ── */
+@media (max-height: 820px) {
+  .s7d { padding: var(--s-7) var(--s-8) var(--s-5); row-gap: var(--s-4); }
+  .s7d-title { font-size: var(--fs-h1); }
+  .s7d-an { font-size: 24px; margin-bottom: var(--s-3); }
+  .s7d-acts { gap: var(--s-3); }
+  .s7d-tx { font-size: 14px; }
+  .s7d-roster { gap: var(--s-4) var(--s-5); }
+}

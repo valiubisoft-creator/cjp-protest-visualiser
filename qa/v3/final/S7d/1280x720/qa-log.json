@@ -1,0 +1,96 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1280x720",
+ "targets": "docs/build/scenes/targets/S7d.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S7d-0.3",
+   "at": "S7d:0.3",
+   "frame": null,
+   "ok": true,
+   "y": 32125,
+   "current": "S7d",
+   "p": 0.2998,
+   "live": "S7d@0.300",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S7d-0.6",
+   "at": "S7d:0.6",
+   "frame": null,
+   "ok": true,
+   "y": 32773,
+   "current": "S7d",
+   "p": 0.5998,
+   "live": "S7d@0.600",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S7d-0.98",
+   "at": "S7d:0.98",
+   "frame": null,
+   "ok": true,
+   "y": 33594,
+   "current": "S7d",
+   "p": 0.9799,
+   "live": "S7d@0.980",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 127,
+    "scenes": 1,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S7d-0.98",
+   "at": "S7d:0.98",
+   "frame": null,
+   "ok": true,
+   "y": 33594,
+   "current": "S7d",
+   "p": 0.9799,
+   "live": "S7d@0.980",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S7d-0.6",
+   "at": "S7d:0.6",
+   "frame": null,
+   "ok": true,
+   "y": 32773,
+   "current": "S7d",
+   "p": 0.5998,
+   "live": "S7d@0.600",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S7d-0.3",
+   "at": "S7d:0.3",
+   "frame": null,
+   "ok": true,
+   "y": 32125,
+   "current": "S7d",
+   "p": 0.2998,
+   "live": "S7d@0.300",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 127,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

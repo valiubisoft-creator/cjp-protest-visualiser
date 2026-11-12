@@ -133,3 +133,21 @@ Sources: Scroll, The Wire, Free Press Journal, Kashmir Life, Al Jazeera, Newslau
 - **Flagged video** (`eAmtVu_Sqhk`, "funded by Pakistan?") flagged by id in `rail.js`; a `flag` field in the data would be cleaner. It never renders (first-media rule).
 - Long place labels overlap on some 20 Jul hour frames; late-day roaches at close zoom crowd the incident glyphs.
 
+
+## Remaining scenes: S6, S6.5, S7a–d, S8–S10 (2026-11-12)
+- **S6:** "Victory" and the line come from `meta.finale`; the `*` uses the victory node fact's attribution ("reported"). No new gaps. Brackets kept per the brief, but S4 dropped them (Vali to confirm).
+- **S6.5:** the "Epilogue" kicker is a section label from the storyboard, not data. Narratives (`epilogue_october.narratives[]`) are not shown (not in the approved frame).
+- **S7 corpus (charts A–C):**
+  - `clip.source` tags are per channel and undefined in `vocab.json`. The Indian Express, Hindustan Times, The Hindu, IndiaTV and LokmatHindi are tagged "citizen"; "party" = only the channel named Cockroach Janta Party. Needs a reviewed channel → type map.
+  - Channel count: `channels.json` / `data_profile.channels` say 310 (309 unique, The Hindu twice); the clips have 255 distinct channels. Charts use 255.
+  - 8 channels have 0 views (no circle in chart B).
+  - Collection time 2026-07-21T18:54Z = 22 Jul 00:24 IST; the screen says "collected 21 Jul" (UTC date).
+  - Kicker "Media engagement" is the spec default (O3), not data. Chart titles, callouts and notes are new copy.
+  - `.reading` doesn't re-point `--chart-*` tokens in the ink theme; S7's CSS does it locally (belongs in tokens.css).
+  - The D3 modules load from jsDelivr; one failed load stops boot (self-host at M9).
+- **S7d apparatus** (`data/story/apparatus.json`, draft): Election Commission `kind: "trigger"` drawn grey (v2: red); Bengaluru tied to the CJP only by Amnesty; Home Ministry grouped online but its CRPF order is a street action (duplicates the CRPF fact); two actions not in v2 (RAF 7 rounds, 45 metro stations); the Delhi High Court 18 Jul item reads "police: on medical advice and per HC directions" verbatim. Kicker "The state response", title "The apparatus" and the "See also: Rapid Action Force" cross-reference are new copy. 4 new sources merged at runtime (117–120); `devdiscourse_0523` is cited by no action.
+- **Runtime source merges** (S5, S7d, S10) should move into `load.js` (needs Vali's OK); today S7d merges sansad's sources first so numbering is stable (97–116 sansad, 117–120 apparatus).
+- **S8:** Bhagat Singh and Faiz deselected (Vali); the generic original-script/translation path stays.
+- **S9 `<head>` tags:** no share image (1200×630) and no production URL. Proposed tags are in the S8–S10 report (STATUS).
+- **S10 shows builder-facing text** from `methodology.json`: `roach_size` starts "Spec S5:"; `collection_dates` mentions "the PDF", `IMAGE_SOURCES.md`, `timeline_clips.json`; some caveats are instructions ("verify against the originals before publishing"); the `dossier` source reads "Research dossier (Claude.pdf, supplied by Vali)"; ~50 entries read "Outlet, Outlet (article not specified)". Needs reader-facing wording.
+- **S10 open:** url-null sources by outlet only (`methodology.asterisk`)? Claimant/status appear only in each star's aria-label; YouTube videos credited only in S5 cards; "no unused sources" not yet checked (65 of 116 not seen in a coarse sweep).

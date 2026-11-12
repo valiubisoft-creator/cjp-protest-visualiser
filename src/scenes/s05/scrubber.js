@@ -6,6 +6,10 @@
 //   top label row (baseline 18) · riding roach (centre y 38) · strip y 52–76 with day ticks and node markers ·
 //   bottom label row (baseline 92). Labels alternate above / below; no middle row, so the roach on the handle never
 //   meets a label (F2 nit). Axis: model.axis t0 (16 May, start of node 1's window) → t1 (24 Jul, the last beat).
+// LOG time (Vali 2026-11-12, remaining-scenes chat): position ∝ −log(LOG_C + days left to t1), so the crowded last
+//   week (18 Jul detention, 20 Jul's hour-by-hour) opens up and the quiet early weeks compress; then every node marker
+//   is pushed at least MIN_GAP px from the previous one ("more visual space between each section"). The warp is
+//   piecewise in log space between the node knots, so X() and T() stay exact inverses.
 // Drag: pointer x → whole day (clamped to [first node, t1]) → seek(pAt(day)), instant. Release within 10 px of a
 // marker → glide to it (800 ms). Keys: arrows step node to node (glide), Home / End jump to the first / last.
 import { esc } from '../../lib/text.js';
@@ -16,7 +20,7 @@ import { loadCss } from '../s00-hero.js';
 import { DAY_MS } from './beats.js';
 
 const CSS = new URL('./scrubber.css', import.meta.url).href;
-const PAD = 56, SNAP = 10, GLIDE = 800;
+const PAD = 56, SNAP = 10, GLIDE = 800, LOG_C = 5, MIN_GAP = 150;
 const Y = { lab0: 18, roach: 38, s0: 52, s1: 76, lab1: 92, bar0: 46, bar1: 82 };
 const svgNS = 'http://www.w3.org/2000/svg';
 
@@ -33,8 +37,23 @@ export function createScrubber({ host, model, controller, sceneId }) {
   // w is the viewport width; the host's own box wins when it has one (it is display:none while S5 isn't live)
   function resize(w, h) {
     W = host.clientWidth || w; H = h || 96; checkW = !host.clientWidth;
-    X = t => PAD + (t - t0) / (t1 - t0) * (W - 2 * PAD);
-    T = x => t0 + (x - PAD) / (W - 2 * PAD) * (t1 - t0);
+    const sw = W - 2 * PAD, u = t => Math.log(LOG_C + (t1 - t) / DAY_MS), U0 = u(t0), U1 = u(t1);
+    // knots: axis ends + node markers, at their log positions, then spaced ≥ MIN_GAP apart (never past the end)
+    const kt = [t0, ...marks.map(m => m.t), t1], ks = kt.map(t => (U0 - u(t)) / (U0 - U1));
+    const g = Math.min(MIN_GAP, sw / (marks.length + 1)) / sw;
+    for (let i = 2; i < ks.length - 1; i++) ks[i] = Math.max(ks[i], ks[i - 1] + g);
+    for (let i = ks.length - 2; i >= 1; i--) ks[i] = Math.min(ks[i], ks[i + 1] - g * (i === ks.length - 2 ? .5 : 1));
+    const seg = t => { let i = 0; while (i < kt.length - 2 && t > kt[i + 1]) i++; return i; };
+    X = t => {
+      t = Math.max(t0, Math.min(t1, t)); const i = seg(t), a = u(kt[i]), b = u(kt[i + 1]);
+      const f = a === b ? 0 : (a - u(t)) / (a - b);
+      return PAD + (ks[i] + f * (ks[i + 1] - ks[i])) * sw;
+    };
+    T = x => {
+      const s = Math.max(0, Math.min(1, (x - PAD) / sw)); let i = 0; while (i < ks.length - 2 && s > ks[i + 1]) i++;
+      const f = ks[i + 1] === ks[i] ? 0 : (s - ks[i]) / (ks[i + 1] - ks[i]), a = u(kt[i]), b = u(kt[i + 1]);
+      return t1 - (Math.exp(a + f * (b - a)) - LOG_C) * DAY_MS;
+    };
     build(H);
     hxKey = ''; active = null; ariaKey = '';
     if (lastP != null) update(lastP);
@@ -65,7 +84,7 @@ export function createScrubber({ host, model, controller, sceneId }) {
         <text x="${P.x0.toFixed(1)}" y="${P.row ? Y.lab1 : Y.lab0}" class="t-num">${esc(P.lab)}</text></g>`;
     }).join('');
     const sw = W - 2 * PAD, sh = Y.s1 - Y.s0;
-    host.innerHTML = `<svg class="s5s-svg" width="${W}" height="${h}" viewBox="0 0 ${W} ${h}" role="slider" tabindex="0" aria-label="Timeline"
+    host.innerHTML = `<svg class="s5s-svg" width="${W}" height="${h}" viewBox="0 0 ${W} ${h}" role="slider" tabindex="0" aria-label="Timeline (log time: recent days drawn wider)"
         aria-valuemin="${dayMin}" aria-valuemax="${dayMax}" aria-orientation="horizontal">
       <defs><pattern id="s5s-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="7"/></pattern></defs>
       <rect class="hit" x="0" y="0" width="${W}" height="${h}"/>
@@ -73,6 +92,7 @@ export function createScrubber({ host, model, controller, sceneId }) {
       <rect class="dim" x="${PAD}" y="${Y.s0}" width="0" height="${sh}"/>
       <rect class="frame" x="${PAD}" y="${Y.s0}" width="${sw}" height="${sh}"/>
       <g class="ticks">${ticks}</g>
+      <text class="log" x="${PAD - 8}" y="${(Y.s0 + Y.s1) / 2 + 4}" text-anchor="end">log</text>
       <g class="marks">${markSvg}</g>
       <g class="handle"><line x1="0" x2="0" y1="${Y.bar0}" y2="${Y.bar1}"/><image width="44" height="24" x="-18" y="${Y.roach - 12}"/></g>
     </svg>`;

@@ -1,0 +1,48 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1440x900",
+ "targets": "docs/build/scenes/targets/S9.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S9-1",
+   "at": "S9:1",
+   "frame": "S9",
+   "ok": true,
+   "y": 42630,
+   "current": "S9",
+   "p": 0.9997,
+   "live": "S8c@1.000 S9@1.000",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 42,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S9-1",
+   "at": "S9:1",
+   "frame": "S9",
+   "ok": true,
+   "y": 42630,
+   "current": "S9",
+   "p": 0.9997,
+   "live": "S8c@1.000 S9@1.000",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 43,
+    "scenes": 3,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

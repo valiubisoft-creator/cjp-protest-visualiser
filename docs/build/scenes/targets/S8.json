@@ -1,10 +1,9 @@
 {
  "scene": "S8",
  "brief": "docs/build/scenes/S8-S10.md",
- "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image. One 100vh scene per selected quote (S8a, S8b, S8c for the 3 selected today).",
+ "note": "Vali's review 2026-11-12: Ambedkar only (quotes.json selected), typed like a typewriter, pure in p. One 160 vh scene, S8a. Rule draws 0-0.08; typing 0.08-0.70 (roach walks the rule in step); attribution fades in 0.72-0.80; hold; fade out 0.92-1.",
  "targets": [
-  {"name": "S8a-0.5", "at": "S8a:0.5", "expect": "Quote 1 of 3, centred, no role label."},
-  {"name": "S8b-0.5", "at": "S8b:0.5", "expect": "Quote 2 of 3, centred, no role label."},
-  {"name": "S8c-0.5", "at": "S8c:0.5", "frame": "S8", "expect": "Quote 3 of 3 (Faiz, \"Bol\"): centred, no role label; Urdu original (Noto Nastaliq Urdu, RTL) above the English; author, work, translation credit, source; a single roach idles on the attribution rule."}
+  {"name": "S8a-0.3", "at": "S8a:0.3", "expect": "Ambedkar quote mid-typing (about a third typed, red caret on the last typed character), centred, no role label; the rule drawn, the roach part-way along it; no attribution yet."},
+  {"name": "S8a-0.8", "at": "S8a:0.8", "expect": "Quote fully typed, no caret; roach at rest on the rule; author, work and source shown. No role label, no year."}
  ]
 }

@@ -1,0 +1,10 @@
+{
+ "scene": "S7d",
+ "brief": "docs/build/scenes/S7.md",
+ "note": "S7d · The apparatus (v2's spokes network, ported 2026-11-12). Own pinned block, 300 vh, paper chart stage. No storyboard frames. p: 0–0.06 hub · 0.06–0.27 spokes draw group by group · 0.27–0.31 whole network + roster · 0.31–0.95 walk, one actor at a time · 0.95–1 hold.",
+ "targets": [
+  {"name": "S7d-0.3", "at": "S7d:0.3", "expect": "Whole network drawn: CJP hub, 13 actors on spokes in four groups (red solid = restriction, dashed = court, grey = other role); roster panel lists the groups and actors; no hint yet."},
+  {"name": "S7d-0.6", "at": "S7d:0.6", "expect": "Walk: Bengaluru Police (06 / 13) highlighted, its spoke thick, its group half-dimmed, the rest faint; panel shows its dated action with status chip, claimant · attribution and *."},
+  {"name": "S7d-0.98", "at": "S7d:0.98", "expect": "Hold: whole network at full strength, roster panel with all four groups and the 'Select any actor' hint."}
+ ]
+}

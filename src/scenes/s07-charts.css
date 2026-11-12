@@ -1,0 +1,112 @@
+/* S7 · Charts: media engagement (S7 chat, 2026-11-12). Reading section: paper in both themes (.reading).
+   Layout (spec S7): kicker + title above; chart ≈68% left, callouts ≈28% right; chart note below. Tokens only. */
+
+/* .reading re-points bg/fg/muted/rule but not the chart tokens, which in the ink theme are the white-on-black set:
+   re-point them to the paper values here (GAPS: belongs in tokens.css .reading). */
+.s7.reading { --chart-1: var(--black); --chart-2: var(--grey-1); --chart-grid: var(--grey-2); --chart-hi: var(--red); }
+
+.s7 { position: absolute; inset: 0; background: var(--bg); color: var(--fg); box-sizing: border-box;
+  display: grid; grid-template-rows: auto minmax(0, 1fr) auto; row-gap: var(--s-6);
+  padding: var(--s-8) var(--s-8) var(--s-6); font-family: var(--font-text); }
+.s7 *, .s7 *::before, .s7 *::after { box-sizing: border-box; }
+
+/* ── header ── */
+.s7-head { position: relative; }
+.s7-kick { margin: 0; color: var(--accent-text); }
+.s7-title { margin: var(--s-2) 0 0; font-size: var(--fs-d2); color: var(--fg); }
+.s7-count { position: absolute; right: 0; top: 0; margin: 0; color: var(--muted); }
+
+/* ── main row ── */
+.s7-main { display: grid; grid-template-columns: minmax(0, 68fr) minmax(0, 28fr); column-gap: 4%; min-height: 0; }
+.s7-cell { position: relative; margin: 0; display: flex; flex-direction: column; min-height: 0; }
+.s7-plot { position: relative; flex: 1 1 auto; min-height: 0; }
+.s7-svg { position: absolute; left: 0; top: 0; display: block; overflow: visible; }
+.s7 .nw { white-space: nowrap; }
+.s7-ylab { margin: 0 0 var(--s-3); font: var(--w-medium) var(--fs-micro)/1.3 var(--font-ui); color: var(--muted); }
+.s7-legrow { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s-5); }
+.s7-legend { display: flex; gap: var(--s-4); margin: 0; padding: 0; list-style: none; font: var(--w-bold) var(--fs-micro)/1.3 var(--font-ui); }
+.s7-legend li { display: flex; align-items: center; gap: 6px; }
+
+/* swatches beside text (text never wears the series colour) */
+.s7-sw { display: inline-block; flex: none; width: 10px; height: 10px; }
+.s7-sw-s1 { background: var(--chart-1); }
+.s7-sw-s2 { background: var(--chart-2); }
+.s7-sw-hi { background: var(--chart-hi); }
+.s7-fv .s7-sw { width: 12px; height: 12px; border-radius: 50%; margin-right: var(--s-3); align-self: center; }
+
+/* ── svg chrome: hairline, recessive ── */
+.s7-svg text { font: var(--w-regular) var(--fs-micro) var(--font-ui); fill: var(--muted); }
+.s7-svg .t-num, .s7-svg .grid text, .s7-svg .xt text { font-variant-numeric: tabular-nums; }
+.s7-svg .grid line { stroke: var(--chart-grid); stroke-width: 1; }
+.s7-svg .xt line { stroke: var(--chart-1); stroke-width: 1; }
+.s7-svg .base { stroke: var(--chart-1); stroke-width: 1.5; fill: none; }
+.s7-svg .s7-xlab { font-weight: var(--w-medium); }
+.s7-svg .guide { stroke: var(--fg); stroke-width: 1; }
+
+/* roach layer (A: the pen-tip roach; C: one roach per video), drawn by the wrapped roach() renderer */
+.s7-roach { position: absolute; left: 0; top: 0; pointer-events: none; }
+
+/* A · the line that waited */
+.s7-a .ln { fill: none; stroke: var(--chart-1); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.s7-a .wash { fill: url(#s7a-dots); }
+.s7-a .dot { fill: var(--chart-1); opacity: .32; }
+.s7-a .grid line { stroke: var(--chart-grid); stroke-width: 1; }
+.s7-a .base { fill: none; }
+.s7-a .peak { fill: var(--chart-hi); stroke: var(--bg); stroke-width: 2; }
+.s7-a .hd { fill: var(--chart-1); stroke: var(--bg); stroke-width: 2; }
+.s7-a .nodes path, .s7-c .nodes path { fill: none; stroke: var(--chart-2); stroke-width: 1; stroke-opacity: .55; }
+.s7-a .nodes text, .s7-c .nodes text { font-weight: var(--w-bold); fill: var(--fg); }
+.s7-plab { position: absolute; left: 0; top: 0; display: flex; flex-direction: column; align-items: flex-end; pointer-events: none;
+  font: var(--w-regular) var(--fs-micro)/1.25 var(--font-ui); color: var(--muted); }
+.s7-plab b { font: var(--w-black) var(--fs-small)/1.2 var(--font-ui); color: var(--accent-text); background: var(--bg); padding: 0 2px; pointer-events: auto; }
+.s7-plab span { background: var(--bg); padding: 0 2px; }
+
+/* B · the 1,000-square waffle */
+.s7-b .cells rect { transform-box: fill-box; transform-origin: center; }
+.s7-b .cells .a { fill: var(--chart-1); }
+.s7-b .cells .b { fill: var(--chart-2); }
+.s7-b .cells .o { fill: var(--chart-grid); }
+.s7-b .cells.hov rect:not(.on) { fill-opacity: .45; }
+.s7-b .outline { fill: none; stroke: var(--fg); stroke-width: 1.5; stroke-linejoin: miter; }
+.s7-b .glab .nm, .s7-b .key .nm { font-weight: var(--w-bold); fill: var(--fg); }
+.s7-b .key .k1 { fill: var(--chart-1); }
+.s7-b .key .speck { fill: var(--chart-hi); transform-box: fill-box; transform-origin: center; }
+.s7-b .key .lead { fill: none; stroke: var(--fg); stroke-width: 1; }
+.s7-blabs { position: absolute; inset: 0; pointer-events: none; }
+.s7-blab { position: absolute; display: flex; justify-content: center; align-items: center; }
+.s7-blab p { margin: 0; padding: 5px 7px 6px; display: flex; flex-direction: column; align-items: center; gap: 1px; text-align: center;
+  background: var(--chart-1); color: var(--bg); font: var(--w-bold) var(--fs-micro)/1.15 var(--font-ui); box-shadow: 0 0 0 2px var(--bg); }
+.s7-blab.b p { background: var(--chart-2); }
+.s7-blab b { font-weight: var(--w-black); font-size: var(--fs-small); line-height: 1.1; }
+
+/* C · one roach per video */
+.s7-c .grid line { stroke: var(--chart-grid); stroke-width: 1; }
+.s7-c .base { fill: none; }
+.s7-c .cnt text { font-weight: var(--w-bold); fill: var(--fg); }
+.s7-c .hb { fill: none; stroke: var(--fg); stroke-width: 1; }
+
+/* ── callouts (right) ── */
+.s7-side { display: flex; flex-direction: column; gap: var(--s-5); min-height: 0; }
+.s7-fact { border-top: var(--rule-heavy) solid var(--fg); padding-top: var(--s-3); }
+.s7-fv { display: flex; align-items: baseline; font: var(--w-black) var(--fs-stat)/1 var(--font-ui); letter-spacing: -.01em; }
+.s7-fv .star { font-size: .5em; }
+.s7-ft { margin: var(--s-2) 0 0; font-size: var(--fs-small); line-height: 1.4; }
+.s7-fa { margin: var(--s-1) 0 0; font: var(--w-regular) var(--fs-micro)/1.35 var(--font-ui); color: var(--muted); }
+
+/* ── note ── */
+.s7-note { margin: 0; max-width: 68%; font: var(--w-regular) var(--fs-micro)/1.5 var(--font-ui); color: var(--muted); }
+
+/* ── tooltip: beside the mark, never over it; pointer only ── */
+.s7-tip { position: absolute; left: 0; top: 0; z-index: 2; max-width: 280px; padding: var(--s-2) var(--s-3); pointer-events: none;
+  background: var(--fg); color: var(--bg); font: var(--w-regular) var(--fs-micro)/1.45 var(--font-ui); }
+.s7-tip[hidden] { display: none; }
+.s7-tip b { font-weight: var(--w-bold); }
+.s7-tip .u, .s7-tip .src { opacity: .72; }
+
+/* ── the minimum viewport (1280×720): tighter, smaller display ── */
+@media (max-height: 820px) {
+  .s7 { padding: var(--s-7) var(--s-8) var(--s-5); row-gap: var(--s-5); }
+  .s7-title { font-size: var(--fs-h1); }
+  .s7-side { gap: var(--s-4); }
+  .s7-fv { font-size: var(--fs-h1); }
+}

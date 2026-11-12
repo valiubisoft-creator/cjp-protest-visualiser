@@ -1,0 +1,25 @@
+/* S8 · Quotes on protest (S8-S10 chat, 2026-11-12). Centred, no role label (Vali 2026-11-12); typewriter (Vali review).
+   Geometry follows design/storyboard.css .s8 at 1440×900; sizes cap by viewport height so 1280×720 fits. */
+.s8 { background: var(--bg); color: var(--fg); }
+.s8-back { position: absolute; inset: 0; display: block; }
+.s8-q { position: absolute; inset: 0; margin: 0; padding: 0 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.s8-orig { margin: 0 0 min(var(--s-7), 3.6vh); font: 400 min(60px, 6.6vh)/2 var(--font-urdu); }
+.s8-en { margin: 0; font: var(--w-bold) min(52px, 6vh)/1.2 var(--font-text); letter-spacing: -.01em; max-width: 24ch; text-wrap: balance; }
+.s8-q.is-en .s8-en { font-size: min(48px, 5.6vh); max-width: 30ch; }
+/* typewriter: every character is a span; untyped ones keep their space, so nothing reflows */
+.s8-en .c { visibility: hidden; }
+.s8-en .c.on { visibility: visible; }
+.s8-en .c.cur { position: relative; }
+.s8-en .c.cur::after { content: ''; position: absolute; right: -4px; top: .14em; bottom: .02em; width: 3px; background: var(--accent); }
+.s8-q.caret-off .s8-en .c.cur::after { opacity: 0; }
+/* the rule (draws out from its centre) with the roach canvas straddling it */
+.s8-rule { position: relative; width: 640px; max-width: 100%; height: var(--rule); margin-top: min(var(--s-7), 5vh); }
+.s8-rule i { position: absolute; inset: 0; background: var(--fg); transform-origin: 50% 50%; }
+.s8-roach { position: absolute; left: -24px; top: -14px; pointer-events: none; }
+.s8-attr { padding-top: var(--s-4); width: 640px; max-width: 100%; display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: var(--fs-small); line-height: 1.35; }
+.s8-name { font-size: var(--fs-lead); font-weight: var(--w-bold); }
+.s8-note, .s8-work, .s8-src { color: var(--muted); }
+.s8-note { font-size: var(--fs-small); max-width: 56ch; }
+.s8-src { font-size: 13px; margin-top: 2px; }
+.s8-src a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.s8-src a:hover, .s8-src a:focus-visible { color: var(--fg); }

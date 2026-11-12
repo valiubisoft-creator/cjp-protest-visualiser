@@ -911,9 +911,9 @@ def _quote(q):
             "text": q.get("english_text"), "translator": q.get("translator"), "translation_is_ours": q.get("translation_is_ours", False),
             "source_url": q.get("source_url"), "source_note": q.get("source_note"), "disputed": q.get("disputed"),
             "public_domain": q.get("public_domain"), "notes": q.get("notes"), "selected": q["id"] in SELECTED_QUOTES}
-SELECTED_QUOTES = {"ambedkar-annihilation-of-caste", "bhagat-singh-red-pamphlet", "faiz-bol"}  # Vali, 2026-11-12
+SELECTED_QUOTES = {"ambedkar-annihilation-of-caste"}  # Vali, 2026-11-12: Ambedkar only (was + Bhagat Singh, Faiz)
 quotes = {
-    "note": ("Candidates sourced from the web 2026-11-12 (Vali approved web sourcing; supersedes D8). Vali picked Ambedkar, Bhagat Singh and Faiz (2026-11-12); the rest stay as unselected candidates. "
+    "note": ("Candidates sourced from the web 2026-11-12 (Vali approved web sourcing; supersedes D8). Vali picked Ambedkar, Bhagat Singh and Faiz (2026-11-12), then kept Ambedkar only (2026-11-12); the rest stay as unselected candidates. "
              "Render original_text with text beneath it, plus a visible source line. Poets are in copyright in India: short quotes need a fair-dealing call. "
              "'translation_is_ours: true' means no published translation was found: label the English 'Translation: CJP Visualiser' or find a published one."),
     "quotes": [_quote(q) for q in SOURCING["quotes"]],

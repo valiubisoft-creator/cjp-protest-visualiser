@@ -11,10 +11,7 @@ Branch: `build/scene-by-scene`. Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions 
 | S4a Skeleton spike | **done** 2026-11-12 (Vali approved) | high | Brief: [scenes/S4a.md](scenes/S4a.md). Spike: http://localhost:5173/design/spike-s4a. Shots: `qa/v3/S4a/`. **Lanes 3**, runtime skeleton |
 | **Prologue (S0–S4b, one chat)** | **built** 2026-11-12, awaiting Vali's review | high | Vali 2026-11-12: one chat for S0, S1–S2, S3, S3.5 and S4b. Gate 1 approved and pushed (`2084092`). Shots: `qa/v3/{S0,S1,S2,S3,S3-5,S4}`, `qa/v3/prologue-gate1`, `qa/v3/handover`, `qa/v3/S2/seq` |
 | **S5 map stage (S5a+b+c, one chat)** | **built** 2026-11-12, awaiting Vali's review | high | Vali: one chat for S5a, S5b, S5c. Gate-1 shots: `qa/v3/S5/gate1c`. Rail + scrubber and the 20 Jul research/imagery built by sub-agents, reviewed by the lead |
-| S6 | — | high | |
-| S6.5 October epilogue (text) | — | high | |
-| S7 | — | high | |
-| S8–S10 | — | high | Quotes are placeholders |
+| **Remaining scenes (S6, S6.5, S7a–d, S8–S10, one chat)** | gate 1 in review 2026-11-12 | high | Kickoff: [kickoffs/remaining.md](kickoffs/remaining.md). Gate-1 shots: `qa/v3/gate1-S6`, `qa/v3/gate1-S7`, `qa/v3/gate1-S7d`, `qa/v3/gate1-S8-S10`. Sub-agents: S7 charts, S7d apparatus, S8–S10, apparatus data |
 | M9 | — | high | Plus architect and GPU review agents |
 
 ## Contracts in force
@@ -44,7 +41,8 @@ Branch: `build/scene-by-scene`. Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions 
 | `main` | `finale` | S6 260 | 2,040 + 100 |
 | flow | | S6.5 auto | content |
 | `S7a`, `S7b`, `S7c` | `chart` | 170 each | 270 each |
-| `S8` | `quotes` | S8a, S8b, S8c: 100 each (one per `selected` quote; count comes from the data) | 400 |
+| `S7d` | `chart` | 300 (apparatus spokes, Vali 2026-11-12) | 400 |
+| `S8` | `quotes` | **160** per `selected` quote (Vali 2026-11-12: Ambedkar only → S8a) | 260 |
 | flow | | S9 100 · S10 auto | 100 · content |
 
 Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); S8 is one pinned block of N quote scenes; prologue, S5 and S6 share **one** pinned block so the stages hand over in place (no slide) at S4→S5 and S5→S6. At 1440×900 the page is 31,410 px.
@@ -268,4 +266,21 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
   - QA: S5 targets (11) PASS down and up at 1440×900 and 1280×720, p monotonic. Compare down≠up 0.000% everywhere except two card-photo boxes (S5-0720 1.06% / 1.29%, S5-0720-0720 0.56% at 1280), where the photo was still decoding in one pass (load timing, not logic). `qa-shell` ALL PASS. Handover S4→S5 0.033% / 0.043% PASS; **S5→S6 FAIL 16.3% / 18.9%** because S6 is the F3 placeholder (S6 must build to the S5 p 1 contract, now written into `scenes/S6.md`).
   - Frame rate: headless measured 30 fps across the whole piece this run, prologue included (machine load; the prologue was 60 fps earlier). S5 JS ≈ 0.6 ms/frame. Re-measure on Vali's Chrome.
   - **Next chat: the remaining scenes** — kickoff `docs/build/kickoffs/remaining.md` (S6 → S6.5 → S7 → S8–S10; then M9).
+- 2026-11-12, **remaining-scenes chat, gate 1** (S6, S6.5 by the lead; S7, S8–S10 and the apparatus data by sub-agents):
+  - **S6** (`s06-finale.js/.css`): S5's 400 map roaches walk onto a 2-lane 25/07/2026 skeleton (s 7.2, spacing 9.2) and grow; joiners fill from the edges; from p 0.14 the dramatic stage floods out from the date as a halftone dot-screen wipe (roaches inside turn black); brackets 0.30–0.40; "Victory" wipes in 0.55–0.72; line 0.75–0.83; peel-away downward from 0.76 (~45% gone by p 1). Handover S5→S6 **0.000%** at 1440×900 and 1280×720. Reads `s5End.poses()` after S5's lazy layout (polls until set).
+  - **S6.5** (`s06-5-epilogue.js/.css`): paper reading section; framing, bridge[], status_line; all disputed October facts on the right, same-date claims side by side; no heading; top edge is a red dot screen dissolving into paper (continues S6's red).
+  - **Shell note for M9:** `scrollbar-gutter: stable` paints a 15 px `--bg` strip at the right in headless/classic-scrollbar browsers (visible against S6's red and the paper sections).
+  - **Apparatus data draft:** `data/story/apparatus.json` (13 actors, 31 actions, 4 `new_sources`; research log `docs/build/f1/apparatus_research.md`).
+- 2026-11-12, **Vali's review of gate 1** (remaining-scenes chat):
+  - **S7 charts redesigned with anime.js** (Vali wrote "anima.js"; read as anime.js v4.5, already in the import map; no new dependency). Paused timelines driven by `seek(p)`, so update(p) stays pure.
+  - **v2's apparatus spokes are included** as a new scene **S7d** (`s07-apparatus.js`, own pinned block, **300 vh**, after S7c; budget edited). Its `new_sources` are merged at runtime in its init like S5's (centralise in `load.js` at M9).
+  - **S5 scrubber: log time axis** (position ∝ −log(5 + days left to 24 Jul)) with every node marker ≥ 150 px from the next ("more visual space between each section"); `scrubber.js` + `.css` edited at Vali's request. Small "LOG" tag left of the strip; aria-label says so.
+  - **Quotes: Ambedkar only, typed like a typewriter.** `SELECTED_QUOTES` in `docs/build/f1/build_story.py` → Ambedkar only; regenerated (only `quotes.json` changed). Quote scenes are now **160 vh** each (was 100), so S8 = S8a only.
+  - **S9 handle buttons: plain and simple.**
+- 2026-11-12, **remaining-scenes chat, after Vali's review** (committed and pushed to `build/scene-by-scene` at Vali's request):
+  - **S7a–c redesigned with anime.js:** one paused timeline per chart (1000 ms = p 0→1), `update(p)` = `tl.seek(p × 1000)`; every tween preset to its start value so backward seeks match. A: drawn line on a zoomed scale that widens to 0–60M, halftone area, a roach walks the pen tip. B: 1,000-square waffle of all views (one square = 0.1%), top 10 channels outlined, the party channel as 0.63 of a square in red. C: one roach per video (1,244) by upload day and tag, empty days skipped (said on the axis). Import map now keeps only `d3-scale@4.0.2`. Shared helpers in `src/scenes/s07/common.js` (`headHTML`, `noteHTML`, `S7_CSS`, `fromTo`, `drawIn`, …). Header count "n / 4".
+  - **S7d apparatus** (`s07-apparatus.js`, `s07d/{model,net}.js`): hub → spokes by group (0–0.27) → one-actor-at-a-time walk with dated actions and stars (0.31–0.95) → full network + roster. Hover/click pins a record. Merges sansad then apparatus `new_sources` (stable numbering 97–116, 117–120). All 13 actors, 31 actions shown. Targets: `targets/S7d.json`.
+  - **S8:** Ambedkar only; typewriter pure in p (rule 0–0.08, typing 0.08–0.70, attribution 0.72–0.80, fade 0.92–1); the roach walks the rule with the typing; caret blink tick-only. **S9:** two plain solid follow buttons + plain share row.
+  - **QA:** `cdp-scroll` targets S5, S6, S6-5, S7 (9), S7d, S8, S9, S10 at 1440×900 and 1280×720: **0 FAIL**, monotonic both ways (`qa/v3/final/`). `qa-shell` **ALL PASS** (49/49 deep links). Handovers S4→S5 0.033% / 0.043%, S5→S6 **0.000%** at both sizes.
+  - **Still gate 1 (static, Vali to approve before motion):** S6 and S6.5 motion polish (S6 already scrubs pure in p), S10. Open questions are in GAPS.md "Remaining scenes".
 

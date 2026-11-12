@@ -1,0 +1,6 @@
+PASS down S6-0             at S6:0       → S6 p=0.0000  y=21888  live: S6@0.000
+PASS down S6-0.85          at S6:0.85    → S6 p=0.8499  y=23479  live: S6@0.850
+PASS down monotonic p: 84 samples over 2 scenes
+PASS up   S6-0.85          at S6:0.85    → S6 p=0.8499  y=23479  live: S6@0.850
+PASS up   S6-0             at S6:0       → S6 p=0.0000  y=21888  live: S6@0.000
+PASS up monotonic p: 87 samples over 2 scenes
