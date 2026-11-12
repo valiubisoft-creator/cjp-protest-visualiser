@@ -9,7 +9,7 @@
    "at": "S3.5:0.32",
    "frame": null,
    "ok": true,
-   "y": 3937,
+   "y": 4513,
    "current": "S3.5",
    "p": 0.32,
    "live": "S3.5@0.320",
@@ -21,7 +21,7 @@
    "at": "S3.5:0.54",
    "frame": "S3-5-claim",
    "ok": true,
-   "y": 4317,
+   "y": 4893,
    "current": "S3.5",
    "p": 0.5399,
    "live": "S3.5@0.540",
@@ -33,7 +33,7 @@
    "at": "S3.5:0.75",
    "frame": "S3-5-mid",
    "ok": true,
-   "y": 4680,
+   "y": 5256,
    "current": "S3.5",
    "p": 0.75,
    "live": "S3.5@0.750",
@@ -45,7 +45,7 @@
    "at": "S3.5:0.94",
    "frame": "S3-5-rebut",
    "ok": true,
-   "y": 5008,
+   "y": 5584,
    "current": "S3.5",
    "p": 0.9398,
    "live": "S3.5@0.940",
@@ -54,7 +54,7 @@
   {
    "monotonic": {
     "leg": "down",
-    "samples": 169,
+    "samples": 168,
     "scenes": 2,
     "nonMonotonic": []
    }
@@ -65,7 +65,7 @@
    "at": "S3.5:0.94",
    "frame": "S3-5-rebut",
    "ok": true,
-   "y": 5008,
+   "y": 5584,
    "current": "S3.5",
    "p": 0.9398,
    "live": "S3.5@0.940",
@@ -77,7 +77,7 @@
    "at": "S3.5:0.75",
    "frame": "S3-5-mid",
    "ok": true,
-   "y": 4680,
+   "y": 5256,
    "current": "S3.5",
    "p": 0.75,
    "live": "S3.5@0.750",
@@ -89,7 +89,7 @@
    "at": "S3.5:0.54",
    "frame": "S3-5-claim",
    "ok": true,
-   "y": 4317,
+   "y": 4893,
    "current": "S3.5",
    "p": 0.5399,
    "live": "S3.5@0.540",
@@ -101,7 +101,7 @@
    "at": "S3.5:0.32",
    "frame": null,
    "ok": true,
-   "y": 3937,
+   "y": 4513,
    "current": "S3.5",
    "p": 0.32,
    "live": "S3.5@0.320",
@@ -110,7 +110,7 @@
   {
    "monotonic": {
     "leg": "up",
-    "samples": 167,
+    "samples": 169,
     "scenes": 2,
     "nonMonotonic": []
    }

@@ -39,9 +39,9 @@ Branch: `build/scene-by-scene`. Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions 
 
 | Block (pinned unless flow) | Stage | Scenes and lengths (vh) | Section height |
 |---|---|---|---|
-| `main` | `prologue` | S0 80 · S1 150 · S2 60 (+ timed sequence) · S3 180 · **S3.5 240** (was 160) · S4 180 = 890 | |
+| `main` | `prologue` | S0 80 · S1 150 · S2 60 (+ timed sequence) · **S3 260** (was 180) · **S3.5 240** (was 160) · S4 180 = 970 | |
 | `main` | `map` | S5 **810** (lead_in 60, start 100, protest 260, wangchuk 110, detention 110, protest_arrest 110, lead_out 60) | |
-| `main` | `finale` | S6 260 | 1,960 + 100 |
+| `main` | `finale` | S6 260 | 2,040 + 100 |
 | flow | | S6.5 auto | content |
 | `S7a`, `S7b`, `S7c` | `chart` | 170 each | 270 each |
 | `S8` | `quotes` | S8a, S8b, S8c: 100 each (one per `selected` quote; count comes from the data) | 400 |
@@ -77,7 +77,7 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
 **Prologue contracts (prologue chat, 2026-11-12; additive).**
 - **Swarm model** (`src/roach/swarm.js`): `wander(i, tau, w, h)` is the hero swarm's closed-form roaming path in swarm time `swarm.tau` (advanced in `tick` by S0/S1 only; 0 under `?still`). `idle(i, t, amp)` is the standing jitter. `fleeStep(b, x, y, dt, k)` eases a per-roach cursor-flee offset `b.fx/b.fy` (radius 90 px), which is idle motion only. Also exported: `heroCount(w, h)` (420 at 1440×900, area-scaled, cap 700), `heroSize`, `clamp01`, `lerp`, `ease`, `angDiff`.
 - **Shared scene state:** `heroWord` (`s00-hero.js`) is the title canvas in `layers.text`, used by S0 and S1. `spawn` (`s02-spawn.js`) holds the `done` flag, the founder's resting pose `pose(tf)`, and the label in `layers.annot`, used by S1, S2 and S3. `mult.poses(p, t)` (`s03-multiply.js`) and `claim.poses(p, t)` (`s03-5-claim.js`) are pure pose functions; each next scene starts from the previous one's p 1.
-- **Swarm count: 1000** (Vali, gate 1 → 760, then review 2026-11-12 → 1000, "fill the screen end to end"; spec 380). S3 `n(p) = round(1000^(p/0.85))`: first split at p 0.10, full swarm from 0.85, everyone home by p 1. Homes cover the whole viewport (R2 sequence, nearest the founder's spot first).
+- **Swarm count: 1000** (Vali, gate 1 → 760, then review 2026-11-12 → 1000, "fill the screen end to end"; spec 380). S3 `n(p) = round(1000^(p/0.78))`: first split at p 0.10, full swarm at 0.78, everyone home by 0.92. Homes cover the whole viewport (R2 sequence, nearest the founder's spot first).
 - **S3.5: 240 vh** (budget change, Vali 2026-11-12: more scroll before the BJP minister's claim; was 160). Sort 0–0.20, with the right cluster turning red **gradually as it sorts** · pause 0.20–0.44 (no text) · claim caption and 51/49 at 0.44–0.50 · re-sort 0.62–0.88 · correction from 0.88 · text out 0.97–1. Key frames: **0.32, 0.54, 0.75, 0.94**. The `main` block is now 1,960 + 100 vh.
 - **S4:** the 1000 S3.5 roaches take the centre lane plus an even share of the outer lanes (sorted by x). **Joiners: ~140 at 1440×900, ~7 at 1280×720**, entering from the nearest edge; any surplus (slots < 1000) crawls off the nearest edge. Converge ends at p **0.52**; **no corner brackets** (Vali 2026-11-12); release 0.80–1.
 - **S4 p 1 = the S5 p 0 contract (for S5a).** The map at the start camera: map box 62% × (h − scrubber); single site centred at zoom 2.4 × (map width ÷ 893); the kit `mapSVG` look drawn to a canvas, with soft right and bottom edges. 120 roaches (the start node's crowd tier) stay loosely round the `jantar_mantar_road` anchor at s 6/1.9; the other ~1,020 fade into them as they land. HUD `06/06/2026 · Day 0` top-left (`.s4-hud`). No rail, scrubber or site label yet. Reference: `qa/v3/S4/S4-1-down.png`, `qa/v3/handover/S4-1_vs_S5-0-*-A.png`.
@@ -235,3 +235,15 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
   - **S3.5:** 240 vh, a longer pause before the claim, and red applied gradually during the sort.
   - **S4:** corner brackets removed.
   - QA after the edits (both sizes): every target passes down and up, compare down≠up 0.000%. Handovers S0→…→S4 are 0.000%. `qa-sequence` and `qa-shell` ALL PASS. 60 fps live (headless).
+- 2026-11-12, **Vali's review 3** (edits made; committed and pushed):
+  - **Scrolling backdrop:** `backdrop` in `s00-hero.js` is a seamless vertical halftone tile drawn on `layers.back`. Its offset is prologue scroll (vh) × 0.5 vh, computed from the budget, so it is pure in p and continuous across scenes. Every prologue scene calls `backdrop.scroll(def, p)` in `update`. During the S2 sequence it glides to its S2 p 0 offset. **For S5a:** the backdrop stops at S4 p 1; the map stage replaces it.
+  - **S0:**
+    - Every roach walks to a spot on the word (0.02–0.28), scrubs a stroke across it (to 0.59), and the remainder fades (0.44–0.56). Then the roaches dissolve (0.55–0.97). S0 p 1 is an empty stage; S1 no longer draws a swarm.
+    - The scroll cue is a thin outlined "Scroll" label with two CSS-animated chevrons (frozen under `?still`). No roach.
+  - **S1:**
+    - Typewriter: one span per character. Typed = max(scroll: all by p 0.30, time: 55 chars/s from entering), so QA frames are reproducible. The keyword's brush grows with its letters, and the `*` appears with the closing quote mark.
+    - The hint is a red brush arrow drawn over p 0.38–0.46, with "click the word" in italic at its tail.
+  - **S2:** a circular portrait of Abhijeet Dipke above the founder (`people[].image`, CC BY 4.0, credit line shown). Under it: "Abhijeet Dipke is spawned *", the attribution, the photo credit, and a thin line down to the roach.
+  - **S3:** 260 vh. The full swarm at 0.78; the sign-ups label stays up until 0.92.
+  - **S3.5:** the cluster labels arrive with the sort (0.17–0.23), and the claim caption follows at 0.40.
+  - QA: every target passes both ways at both sizes, down≠up 0.000%. Handovers S0→…→S4 are ≤ 0.11% (the half-pixel backdrop move over the 1 px between the shots). `qa-sequence` and `qa-shell` ALL PASS. 60 fps idle and while scrolling (headless).

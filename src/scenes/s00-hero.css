@@ -3,8 +3,13 @@
 .s0-word { position: absolute; inset: 0; pointer-events: none; }
 .s0-word[hidden] { display: none; }
 .s0-word canvas { position: absolute; left: 0; top: 0; will-change: transform, opacity; }
-.s0-cue { position: absolute; left: 50%; bottom: var(--s-7); transform: translateX(-50%); display: flex; align-items: center; gap: var(--s-2);
-  padding: var(--s-2) var(--s-4) var(--s-2) var(--s-3); background: var(--fg); color: var(--bg); pointer-events: none;
-  font: var(--w-bold) var(--fs-small)/1 var(--font-ui); letter-spacing: var(--track-micro); text-transform: uppercase; }
-.s0-cue canvas { width: 28px; height: 28px; }
-.s0-cue i { width: 9px; height: 9px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-3px) rotate(45deg); margin-left: var(--s-1); }
+.s0-cue { position: absolute; left: 50%; bottom: var(--s-6); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: var(--s-2);
+  color: var(--fg); pointer-events: none; font: var(--w-regular) var(--fs-small)/1 var(--font-ui); letter-spacing: var(--track-micro); text-transform: uppercase; }
+.s0-cue > span:first-child { padding: 6px 12px 5px; border: var(--rule) solid var(--rule-c); background: var(--bg); }
+.s0-cue .ar { position: relative; width: 14px; height: 22px; }
+.s0-cue .ar i { position: absolute; left: 2px; width: 9px; height: 9px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); opacity: 0;
+  animation: s0-cue 1.6s var(--ease-inout) infinite; }
+.s0-cue .ar i:nth-child(2) { animation-delay: .25s; }
+@keyframes s0-cue { 0% { top: -4px; opacity: 0; } 35% { opacity: 1; } 100% { top: 12px; opacity: 0; } }
+.s0.is-still .s0-cue .ar i { animation: none; opacity: 1; top: 0; }
+.s0.is-still .s0-cue .ar i:nth-child(2) { top: 7px; opacity: .55; }

@@ -9,9 +9,9 @@
    "at": "S3:0.1",
    "frame": null,
    "ok": true,
-   "y": 2218,
+   "y": 2275,
    "current": "S3",
-   "p": 0.1003,
+   "p": 0.0999,
    "live": "S3@0.100",
    "overflowX": false
   },
@@ -21,7 +21,7 @@
    "at": "S3:0.3",
    "frame": null,
    "ok": true,
-   "y": 2477,
+   "y": 2650,
    "current": "S3",
    "p": 0.3002,
    "live": "S3@0.300",
@@ -33,7 +33,7 @@
    "at": "S3:0.8",
    "frame": "S3",
    "ok": true,
-   "y": 3125,
+   "y": 3586,
    "current": "S3",
    "p": 0.8002,
    "live": "S3@0.800",
@@ -43,7 +43,7 @@
    "monotonic": {
     "leg": "down",
     "samples": 127,
-    "scenes": 3,
+    "scenes": 2,
     "nonMonotonic": []
    }
   },
@@ -53,7 +53,7 @@
    "at": "S3:0.8",
    "frame": "S3",
    "ok": true,
-   "y": 3125,
+   "y": 3586,
    "current": "S3",
    "p": 0.8002,
    "live": "S3@0.800",
@@ -65,7 +65,7 @@
    "at": "S3:0.3",
    "frame": null,
    "ok": true,
-   "y": 2477,
+   "y": 2650,
    "current": "S3",
    "p": 0.3002,
    "live": "S3@0.300",
@@ -77,16 +77,16 @@
    "at": "S3:0.1",
    "frame": null,
    "ok": true,
-   "y": 2218,
+   "y": 2275,
    "current": "S3",
-   "p": 0.1003,
+   "p": 0.0999,
    "live": "S3@0.100",
    "overflowX": false
   },
   {
    "monotonic": {
     "leg": "up",
-    "samples": 126,
+    "samples": 124,
     "scenes": 2,
     "nonMonotonic": []
    }

@@ -3,6 +3,11 @@
  "brief": "docs/build/scenes/S1-S2.md",
  "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image.",
  "targets": [
-  {"name": "S1-0.5", "at": "S1:0.5", "frame": "S1", "expect": "Hold, hint showing: meta.cji_quote.text verbatim; keyword \"cockroaches\" is a button (black weight, --accent-text, wavy red underline, small roach on the underline); \"click the word\" hint above it; swarm behind at 25% opacity and 40% count."}
+  {
+   "name": "S1-0.5",
+   "at": "S1:0.5",
+   "frame": "S1",
+   "expect": "Hold: quote fully typed (typewriter complete by p 0.30), Redaction; 'cockroaches' white on a red dry-brush stroke; red brush arrow from 'click the word' (italic) curving onto the keyword; no swarm."
+  }
  ]
 }

@@ -20,7 +20,7 @@ import { roach } from '../roach/roach.js';
 import { hash01, clamp01, lerp, ease, angDiff, TAU } from '../roach/swarm.js';
 import { claim } from './s03-5-claim.js';
 import { N3 } from './s03-multiply.js';
-import { loadCss } from './s00-hero.js';
+import { loadCss, backdrop } from './s00-hero.js';
 
 const CSS = new URL('./s04-date.css', import.meta.url).href;
 // the storyboard's S4 box at 1440×900 (x 110, y 250, 1220 × 330), as fractions of the viewport (S4a)
@@ -61,7 +61,7 @@ export default def => {
     resize(w, h) { W = w; H = h; L = layout(w, h); if (map) drawMap(); },
     enter() {},
     exit() { host.hidden = true; ctx.layers.swarm.ctx.clearRect(0, 0, W, H); },
-    update(q) { p = q; render(); },
+    update(q) { p = q; backdrop.scroll(def, p); render(); },
     tick() { render(); },
   };
 

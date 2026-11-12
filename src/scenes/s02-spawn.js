@@ -12,7 +12,7 @@ import { esc } from '../lib/text.js';
 import { star } from '../lib/star.js';
 import { roach } from '../roach/roach.js';
 import { clamp01, TAU } from '../roach/swarm.js';
-import { loadCss } from './s00-hero.js';
+import { loadCss, backdrop } from './s00-hero.js';
 
 const CSS = new URL('./s02-spawn.css', import.meta.url).href;
 
@@ -31,30 +31,44 @@ export const spawn = {
     const cx = s.x - R * Math.cos(ph0), cy = s.y - R * Math.sin(ph0), ph = ph0 + w * tf;
     return { x: cx + R * Math.cos(ph), y: cy + R * Math.sin(ph), rot: ph + Math.PI / 2, legs: this.legs0 + tf * 3.2 };
   },
+  // the portrait (Vali 2026-11-12): a circular photo above-right of the founder, the label centred beneath it, and the
+  // photo credit (CC BY 4.0) under that. Photo and credit from the founder's `people[]` entry in timeline.json.
   mount(layer, data) {
     if (this.el) return;
     const f = data.meta.founder, fd = f.founded;
-    this.el = document.createElement('div'); this.el.className = 's2-spawn'; this.el.hidden = true;
-    this.el.innerHTML = `<p class="s2-label"><b>${esc(f.name)}</b> is spawned${star(fd.source_ids, data.byId.source, fd.claimant)}</p>
-      <p class="s2-attr t-micro">${esc(fd.attribution)} · ${esc(fd.value_text)}</p>`;
+    const person = data.timeline.nodes.flatMap(n => [...(n.people || []), ...(n.sub_beats || []).flatMap(b => b.people || [])]).find(q => q.name === f.name);
+    const img = person?.image;
+    this.el = document.createElement('figure'); this.el.className = 's2-spawn'; this.el.hidden = true;
+    this.el.innerHTML = `${img ? `<img class="s2-face" src="/${esc(img.src)}" alt="${esc(f.name)}">` : '<span class="s2-face"></span>'}
+      <figcaption><p class="s2-label"><b>${esc(f.name)}</b> is spawned${star(fd.source_ids, data.byId.source, fd.claimant)}</p>
+      <p class="s2-attr t-micro">${esc(fd.attribution)} · ${esc(fd.value_text)}</p>
+      ${img ? `<p class="s2-credit">Photo: ${esc(img.credit)}</p>` : ''}</figcaption>`;
     layer.append(this.el);
   },
+  // the portrait's centre and radius (CSS px): centred above the founder; the caption sits under it, then the roach
+  face() { const s = this.spot(), u = this.u(); return { x: s.x, y: s.y - 390 * u, r: 70 * u }; },
   layout(w, h) {
     this.W = w; this.H = h;
-    const s = this.spot(), u = this.u();
-    Object.assign(this.el.style, { left: s.x + 176 * u + 'px', top: s.y - 108 * u + 'px' });
+    const F = this.face(), u = this.u();
+    this.el.style.setProperty('--face', 2 * F.r + 'px');
+    Object.assign(this.el.style, { left: F.x - 300 * u + 'px', top: F.y - F.r + 'px', width: 600 * u + 'px' });
   },
-  // the done-state frame: founder at its idle pose, label + lead line at alpha la. g = the swarm canvas.
+  // a short vertical lead from under the caption down to the founder
+  lead(g, la) {
+    if (!this.el || this.el.hidden) return;
+    const P = this.pose(), u = this.u(), cap = this.el.getBoundingClientRect();
+    const y0 = cap.bottom + 12 * u, y1 = P.y - 34 * u;
+    if (y1 <= y0) return;
+    g.save(); g.globalAlpha = la; g.strokeStyle = tok('--fg'); g.lineWidth = 1; g.beginPath();
+    g.moveTo(this.spot().x, y0); g.lineTo(this.spot().x, y1); g.stroke(); g.restore();
+  },
+  // the done-state frame: founder at its idle pose, portrait + label + lead line at alpha la. g = the swarm canvas.
   drawDone(g, la = 1) {
-    const P = this.pose(), s = this.spot(), u = this.u();
+    const P = this.pose();
     g.fillStyle = g.strokeStyle = tok('--roach');
     roach(g, P.x, P.y, P.rot, this.size(), P.legs);
     this.label(la);
-    if (la > 0) {
-      g.save(); g.globalAlpha = la; g.strokeStyle = tok('--fg'); g.lineWidth = 1; g.beginPath();
-      const a = -24 * Math.PI / 180, x0 = P.x + 64 * u, y0 = P.y - 40 * u;
-      g.moveTo(x0, y0); g.lineTo(s.x + 64 * u + 120 * u * Math.cos(a), s.y - 40 * u + 120 * u * Math.sin(a)); g.stroke(); g.restore();
-    }
+    if (la > 0) this.lead(g, la);
   },
   label(a) { if (!this.el) return; this.el.hidden = a <= 0; this.el.style.opacity = a; },
   hide() { this.label(0); },
@@ -68,7 +82,7 @@ export default def => {
     resize(w, h) { W = w; H = h; spawn.layout(w, h); },
     enter() { spawn.done = true; },          // a deep link (or a fast scroll) past S1 lands on the done state
     exit(dir) { if (dir === 'down') spawn.hide(); ctx.layers.swarm.ctx.clearRect(0, 0, W, H); },
-    update(q) { p = q; spawn.done = true; render(); },
+    update(q) { p = q; spawn.done = true; backdrop.scroll(def, p); render(); },
     tick(t, dt) { spawn.tf += dt; render(); },
   };
   function render() {

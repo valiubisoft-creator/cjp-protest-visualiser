@@ -5,11 +5,13 @@
 // Budget 240 vh (Vali 2026-11-12: more scroll before the BJP minister's claim; was 160).
 // p 0.00–0.20  sort: the roaches leave their S3 homes for two clusters at the minister's split; the right cluster's
 //              roaches turn red GRADUALLY as they walk to it (Vali 2026-11-12), so the colour is there before any text
-// p 0.20–0.44  pause: the clusters idle, no text (key frame 0.32)
-// p 0.44–0.50  the claim: caption and both figures (51% / 49%, the minister's) fade in
-// p 0.50–0.62  hold the claim (key frame 0.54)
+// p 0.17–0.23  the cluster labels (Indian 51% / Pakistani 49%, the minister's) come in as the last roaches settle
+//              (Vali 2026-11-12: "bring them in sooner")
+// p 0.23–0.40  pause on the labelled clusters (key frame 0.32)
+// p 0.40–0.45  the claim caption (the minister's sentence) fades in
+// p 0.45–0.62  hold the claim (key frame 0.54)
 // p 0.62–0.88  re-sort to Dipke's >94% Indian: roaches leave the red cluster in random stagger, arcing, dropping the
-//              red as they cross (key frame 0.75 = halfway); correction caption from 0.64
+//              red as they cross (key frame 0.75 = halfway); correction caption from 0.64; labels as they land (0.82)
 // p 0.88–1.00  hold the correction ("Elsewhere" at 55%, no number; key frame 0.94); labels and caption fade
 //              0.97–1.0 so p 1 is roaches only: S4's converge starts from claim.poses(1, t).
 // Nothing is born or killed here. Facts: start_pushback (both sentences verbatim), metrics rows m15 / m14.
@@ -20,7 +22,7 @@ import { rng } from '../lib/rng.js';
 import { roach } from '../roach/roach.js';
 import { idle, clamp01, lerp, ease, angDiff, TAU } from '../roach/swarm.js';
 import { mult, N3 } from './s03-multiply.js';
-import { loadCss } from './s00-hero.js';
+import { loadCss, backdrop } from './s00-hero.js';
 
 const CSS = new URL('./s03-5-claim.css', import.meta.url).href;
 const GOLD = Math.PI * (3 - Math.sqrt(5));
@@ -113,7 +115,7 @@ export default def => {
     },
     enter() {},
     exit() { ctx.layers.swarm.ctx.clearRect(0, 0, W, H); },
-    update(q) { p = q; render(); },
+    update(q) { p = q; backdrop.scroll(def, p); render(); },
     tick() { render(); },
   };
   function fade(e, a) { e.style.opacity = a; e.style.visibility = a > 0 ? '' : 'hidden'; }
@@ -121,11 +123,11 @@ export default def => {
     // DOM: labels and captions are functions of p only
     const out = 1 - clamp01((p - .97) / .03);
     const inOut = (a, b, c, d) => clamp01((p - a) / (b - a)) * (1 - clamp01((p - c) / (d - c)));
-    fade(el['claim-l'], inOut(.45, .50, .59, .62)); fade(el['claim-r'], inOut(.45, .50, .59, .62));
-    fade(el.capC, inOut(.44, .48, .59, .62));
+    fade(el['claim-l'], inOut(.17, .23, .59, .62)); fade(el['claim-r'], inOut(.17, .23, .59, .62));
+    fade(el.capC, inOut(.40, .45, .59, .62));
     fade(el.capR, clamp01((p - .64) / .05) * out);
-    el.capRa.style.opacity = clamp01((p - .88) / .05);
-    fade(el['rebut-l'], clamp01((p - .88) / .05) * out); fade(el['rebut-r'], clamp01((p - .88) / .05) * out);
+    el.capRa.style.opacity = clamp01((p - .82) / .05);
+    fade(el['rebut-l'], clamp01((p - .82) / .05) * out); fade(el['rebut-r'], clamp01((p - .82) / .05) * out);
     // swarm
     const g = ctx.layers.swarm.ctx, fg = tok('--roach'), red = tok('--accent');
     claim.poses(p, ctx.clock.t, P, ctx.swarm.list, S3);

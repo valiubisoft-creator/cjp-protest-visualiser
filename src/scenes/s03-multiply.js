@@ -1,13 +1,14 @@
 // S3 · Multiply (prologue chat, 2026-11-12). Brief: docs/build/scenes/S3.md.
 //
-// n(p) = round(N3^(p/0.85)), N3 = 1000 (Vali 2026-11-12: "more roaches, fill the screen end to end"; spec 380): roach i
-// is born at p_i = 0.85 · ln(i + 0.5) / ln N3, from its parent (i − 1) >> 1. A newborn scales in over 0.02 of p, then
+// n(p) = round(N3^(p/0.78)), N3 = 1000 (Vali 2026-11-12: "more roaches, fill the screen end to end"; spec 380): roach i
+// is born at p_i = 0.78 · ln(i + 0.5) / ln N3, from its parent (i − 1) >> 1. A newborn scales in over 0.02 of p, then
 // walks out to its home over 0.14 of p (ease out), starting from where its parent is NOW, so scrolling up walks the
 // youngest back into their parents and they vanish there (spec S3).
 // Homes: N3 evenly spread points covering the WHOLE viewport (R2 low-discrepancy sequence, jittered), sorted by distance
-// from the founder's spot, so the swarm grows outward from it until it fills the screen edge to edge at p 0.85.
+// from the founder's spot, so the swarm grows outward from it until it fills the screen edge to edge at p 0.78.
 // The founder (pool 0) leaves its S2 idle circle and shrinks from s 36 to swarm size over p 0–0.3 (Vali 2026-11-12).
-// Text (Vali 2026-11-12): how many joined the movement, metrics row "Online sign-ups" (CJP claim), p 0.55–0.94.
+// Text (Vali 2026-11-12): how many joined the movement, metrics row "Online sign-ups" (CJP claim). In at p 0.45–0.52 and
+// held until 0.92 (well after the swarm is full), out by 0.98. S3 is 260 vh (was 180) to give it that time.
 // Every pose is a pure function of (p, clock.t): clock.t only adds the standing jitter (idle()).
 // `mult.poses(p, t, P)` is exported: S3.5 starts from mult.poses(1, t).
 import { tok } from '../lib/dom.js';
@@ -16,14 +17,14 @@ import { star } from '../lib/star.js';
 import { roach } from '../roach/roach.js';
 import { hash01, idle, clamp01, lerp, ease, angDiff, fleeStep, TAU } from '../roach/swarm.js';
 import { spawn } from './s02-spawn.js';
-import { loadCss } from './s00-hero.js';
+import { loadCss, backdrop } from './s00-hero.js';
 
 const CSS = new URL('./s03-multiply.css', import.meta.url).href;
 export const N3 = 1000;
 const LN = Math.log(N3);
-// spec S3: first split at p 0.10, full swarm 0.85–1.00 → n(p) = round(N3^(p / 0.85)), so everyone is born, grown and
-// home by p 1 (the youngest is born at 0.85 and walks until 0.99): S3 p 1 = S3.5 p 0
-const FULL = .85;
+// spec S3: first split at p 0.10, full swarm before the end → n(p) = round(N3^(p / 0.78)); everyone is born, grown and
+// home by p 0.92, so S3 p 1 = S3.5 p 0
+const FULL = .78;   // full swarm at p 0.78, home by 0.92; first split still at 0.10 (round(1000^(0.1/0.78)) = 2)
 export const bornAt = i => i === 0 ? -1 : FULL * Math.log(i + .5) / LN;
 export const parentOf = i => (i - 1) >> 1;
 export const sizeOf = i => 5 * (1 + (hash01(i, 23) - .5) * .6);
@@ -85,7 +86,7 @@ export default def => {
     resize(w, h) { W = w; H = h; mult.layout(w, h); },
     enter() {},
     exit() { ctx.layers.swarm.ctx.clearRect(0, 0, W, H); },
-    update(q) { p = q; render(); },
+    update(q) { p = q; backdrop.scroll(def, p); render(); },
     tick(t, dt) {
       if (p < .3) spawn.tf += dt * (1 - p / .3);        // the founder's circle winds down as it leaves it
       // cursor flee (spec S3 0.85–1: "cursor flee on"), eased in so it never yanks a walking newborn
@@ -95,7 +96,7 @@ export default def => {
     },
   };
   function render() {
-    if (note) { const a = clamp01((p - .55) / .06) * (1 - clamp01((p - .9) / .06)); note.style.opacity = a; note.style.visibility = a > 0 ? '' : 'hidden'; note.style.transform = `translateY(${(1 - ease.outCubic(clamp01((p - .55) / .06))) * 10}px)`; }
+    if (note) { const a = clamp01((p - .45) / .07) * (1 - clamp01((p - .92) / .06)); note.style.opacity = a; note.style.visibility = a > 0 ? '' : 'hidden'; note.style.transform = `translateY(${(1 - ease.outCubic(clamp01((p - .45) / .07))) * 10}px)`; }
     const g = ctx.layers.swarm.ctx;
     mult.poses(p, ctx.clock.t, P, ctx.swarm.list);
     g.clearRect(0, 0, W, H);

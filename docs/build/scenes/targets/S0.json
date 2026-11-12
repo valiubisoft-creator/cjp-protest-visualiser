@@ -1,23 +1,23 @@
 {
  "scene": "S0",
  "brief": "docs/build/scenes/S0.md",
- "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image. Prologue chat 2026-11-12 (Vali): smaller word (--fs-hero 150), faster roaches, the word is cleaned away by roaches as the reader scrolls, Scroll cue on a label.",
+ "note": "Prologue chat 2026-11-12 (Vali, review 3): the whole swarm walks to the word, scrubs it away and dissolves; the backdrop scrolls with the reader; a quiet Scroll cue with animated arrows.",
  "targets": [
   {
    "name": "S0-0",
    "at": "S0:0",
    "frame": "S0",
-   "expect": "About 420 roaches roam over meta.title (Protest Revolution, --fs-hero 150 px); glitch slices where a roach stands on a glyph; 'Scroll' cue on a label, bottom-centre."
+   "expect": "About 420 roaches roam over meta.title (Protest Revolution, --fs-hero 150 px) with glitch slices; quiet 'Scroll' label with two chevrons, bottom-centre."
   },
   {
-   "name": "S0-0.4",
-   "at": "S0:0.4",
-   "expect": "Cleaning in progress: a crew of roaches sweeping across the word band by band; wiped where they have walked; cue gone."
+   "name": "S0-0.35",
+   "at": "S0:0.35",
+   "expect": "Every roach is on the word scrubbing; the letters are mostly wiped; cue gone."
   },
   {
-   "name": "S0-0.8",
-   "at": "S0:0.8",
-   "expect": "Word nearly all wiped, last cleaners leaving; swarm thinning toward 40% and fading toward 25%."
+   "name": "S0-0.75",
+   "at": "S0:0.75",
+   "expect": "Word gone; the roaches dissolving (shrinking, fading) in place of it."
   }
  ]
 }

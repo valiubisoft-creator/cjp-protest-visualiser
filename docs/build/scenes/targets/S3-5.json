@@ -6,7 +6,7 @@
   {
    "name": "S3-5-0.32",
    "at": "S3.5:0.32",
-   "expect": "The pause: 1000 roaches sorted into two clusters, the right one already red; no text."
+   "expect": "The pause: 1000 roaches in two clusters, the right one red, with their labels (Indian 51% / Pakistani 49%, minister, disputed); no caption yet."
   },
   {
    "name": "S3-5-0.54",

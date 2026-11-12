@@ -9,7 +9,7 @@
    "at": "S3:0.1",
    "frame": null,
    "ok": true,
-   "y": 2772,
+   "y": 2844,
    "current": "S3",
    "p": 0.1,
    "live": "S3@0.100",
@@ -21,7 +21,7 @@
    "at": "S3:0.3",
    "frame": null,
    "ok": true,
-   "y": 3096,
+   "y": 3312,
    "current": "S3",
    "p": 0.3,
    "live": "S3@0.300",
@@ -33,7 +33,7 @@
    "at": "S3:0.8",
    "frame": "S3",
    "ok": true,
-   "y": 3906,
+   "y": 4482,
    "current": "S3",
    "p": 0.8,
    "live": "S3@0.800",
@@ -42,8 +42,8 @@
   {
    "monotonic": {
     "leg": "down",
-    "samples": 127,
-    "scenes": 3,
+    "samples": 126,
+    "scenes": 2,
     "nonMonotonic": []
    }
   },
@@ -53,7 +53,7 @@
    "at": "S3:0.8",
    "frame": "S3",
    "ok": true,
-   "y": 3906,
+   "y": 4482,
    "current": "S3",
    "p": 0.8,
    "live": "S3@0.800",
@@ -65,7 +65,7 @@
    "at": "S3:0.3",
    "frame": null,
    "ok": true,
-   "y": 3096,
+   "y": 3312,
    "current": "S3",
    "p": 0.3,
    "live": "S3@0.300",
@@ -77,7 +77,7 @@
    "at": "S3:0.1",
    "frame": null,
    "ok": true,
-   "y": 2772,
+   "y": 2844,
    "current": "S3",
    "p": 0.1,
    "live": "S3@0.100",
@@ -86,7 +86,7 @@
   {
    "monotonic": {
     "leg": "up",
-    "samples": 127,
+    "samples": 126,
     "scenes": 2,
     "nonMonotonic": []
    }

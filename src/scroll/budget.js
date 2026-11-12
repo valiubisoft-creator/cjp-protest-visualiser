@@ -1,6 +1,7 @@
 // Scroll budget: scene order and lengths. THE single source of truth (F3, 2026-11-12).
 // Change lengths here only, and record the change in docs/build/STATUS.md ("Scroll budget").
-// 2026-11-12 (Vali, prologue chat): S3.5 160 → 240 vh, more scroll before the minister's claim.
+// 2026-11-12 (Vali, prologue chat): S3.5 160 → 240 vh (more scroll before the minister's claim); S3 180 → 260 vh
+// (the sign-ups figure stays up longer after the swarm is full).
 //
 // len   scroll distance in vh (percent of viewport height) over which the scene's p runs 0 → 1.
 //       'auto' = the scene's own content height (flow scenes only).
@@ -22,7 +23,7 @@ export function buildBudget({ quoteCount = 3 } = {}) {
     { id: 'S0',   name: 'Hero: the swarm and the glitch word', len: 80,  block: 'main', stage: 'prologue', file: 's00-hero.js' },
     { id: 'S1',   name: 'The CJI quote and the click',         len: 150, block: 'main', stage: 'prologue', file: 's01-quote.js' },
     { id: 'S2',   name: 'Collapse and spawn',                  len: 60,  block: 'main', stage: 'prologue', file: 's02-spawn.js', timed: true },
-    { id: 'S3',   name: 'Multiply',                            len: 180, block: 'main', stage: 'prologue', file: 's03-multiply.js' },
+    { id: 'S3',   name: 'Multiply',                            len: 260, block: 'main', stage: 'prologue', file: 's03-multiply.js' },
     { id: 'S3.5', name: 'The claim and the correction',        len: 240, block: 'main', stage: 'prologue', file: 's03-5-claim.js' },
     { id: 'S4',   name: 'The date on the skeleton',            len: 180, block: 'main', stage: 'prologue', file: 's04-date.js' },
     { id: 'S5',   name: 'Map stage: day by day',               len: 810, block: 'main', stage: 'map',      file: 's05-map.js',

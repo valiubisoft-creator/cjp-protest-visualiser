@@ -17,58 +17,58 @@
   },
   {
    "leg": "down",
-   "name": "S0-0.4",
-   "at": "S0:0.4",
+   "name": "S0-0.35",
+   "at": "S0:0.35",
    "frame": null,
    "ok": true,
-   "y": 230,
+   "y": 202,
    "current": "S0",
-   "p": 0.3993,
-   "live": "S0@0.399",
+   "p": 0.3507,
+   "live": "S0@0.351",
    "overflowX": false
   },
   {
    "leg": "down",
-   "name": "S0-0.8",
-   "at": "S0:0.8",
+   "name": "S0-0.75",
+   "at": "S0:0.75",
    "frame": null,
    "ok": true,
-   "y": 461,
+   "y": 432,
    "current": "S0",
-   "p": 0.8003,
-   "live": "S0@0.800",
+   "p": 0.75,
+   "live": "S0@0.750",
    "overflowX": false
   },
   {
    "monotonic": {
     "leg": "down",
-    "samples": 84,
+    "samples": 83,
     "scenes": 1,
     "nonMonotonic": []
    }
   },
   {
    "leg": "up",
-   "name": "S0-0.8",
-   "at": "S0:0.8",
+   "name": "S0-0.75",
+   "at": "S0:0.75",
    "frame": null,
    "ok": true,
-   "y": 461,
+   "y": 432,
    "current": "S0",
-   "p": 0.8003,
-   "live": "S0@0.800",
+   "p": 0.75,
+   "live": "S0@0.750",
    "overflowX": false
   },
   {
    "leg": "up",
-   "name": "S0-0.4",
-   "at": "S0:0.4",
+   "name": "S0-0.35",
+   "at": "S0:0.35",
    "frame": null,
    "ok": true,
-   "y": 230,
+   "y": 202,
    "current": "S0",
-   "p": 0.3993,
-   "live": "S0@0.399",
+   "p": 0.3507,
+   "live": "S0@0.351",
    "overflowX": false
   },
   {
@@ -86,7 +86,7 @@
   {
    "monotonic": {
     "leg": "up",
-    "samples": 98,
+    "samples": 97,
     "scenes": 2,
     "nonMonotonic": []
    }

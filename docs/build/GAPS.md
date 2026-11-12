@@ -123,3 +123,4 @@ Sources: Scroll, The Wire, Free Press Journal, Kashmir Life, Al Jazeera, Newslau
 - No new data gaps: every on-screen string in S0–S4 comes from `data/story`.
 - **S3 "how many joined"**: uses the metrics row `Online sign-ups` (350,000+, CJP claim, claimed). The other candidate is `Members 'within days'` (over 100,000, media, claimed). Vali can swap it.
 - **Body face changed to Redaction** (Vali 2026-11-12). DESIGN.md still says Public Sans; update it if this sticks. Redaction has only 400/700, so `--w-medium` and `--w-black` render as Bold.
+- **Founder portrait** uses `people[abhijeet-dipke].image` (CC BY 4.0 screenshot, LetsUpp Marathi via Commons), with its credit on screen. It isn't on S1–S2's allowed-keys list; Vali asked for it (2026-11-12).

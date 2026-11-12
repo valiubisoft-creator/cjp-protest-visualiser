@@ -8,9 +8,19 @@
 .kw-brush { position: absolute; left: -.1em; right: -.12em; top: .08em; bottom: -.02em; width: calc(100% + .22em); height: calc(100% - .06em); pointer-events: none; }
 .kw:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .kw-roach { position: absolute; left: 62%; bottom: -12px; width: 28px; height: 17px; pointer-events: none; }
-.s1-hint { position: absolute; display: flex; align-items: center; gap: var(--s-2); color: var(--accent-text); white-space: nowrap; pointer-events: none; }
-.s1-hint::before { content: ''; width: 40px; height: 1px; background: currentColor; }
 .s1-attr { margin-top: var(--s-6); display: flex; gap: var(--s-4); align-items: baseline; font-size: var(--fs-small); }
 .s1-attr b { font-size: var(--fs-body); }
 .s1-attr span { color: var(--muted); }
 .s1 .star { pointer-events: auto; }
+/* typewriter (Vali 2026-11-12): every character is a span; untyped ones keep their space, so nothing reflows */
+.s1 blockquote .c { visibility: hidden; }
+.s1 blockquote .c.on { visibility: visible; }
+.s1 blockquote .c.cur { position: relative; }
+.s1 blockquote .c.cur::after { content: ''; position: absolute; right: -4px; top: .14em; bottom: .02em; width: 2px; background: var(--accent); animation: s1-caret 1s steps(1) infinite; }
+.s1.is-still blockquote .c.cur::after { animation: none; }
+@keyframes s1-caret { 50% { opacity: 0; } }
+.s1-attr { transition: none; }
+/* hint: a red brush arrow drawn into a canvas, text at its tail */
+.s1-hint { position: absolute; left: 0; top: 0; width: 0; height: 0; pointer-events: none; }
+.s1-hint canvas { position: absolute; }
+.s1-hint span { position: absolute; white-space: nowrap; color: var(--accent-text); font: italic var(--w-regular) var(--fs-lead)/1 var(--font-text); }
