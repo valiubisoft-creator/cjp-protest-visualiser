@@ -73,7 +73,7 @@ Agents drift and invent when three things combine: facts that aren't in a file, 
 - A **storyboard**: one static key frame per scene at its key `p` values (for example S4 at p 0, 0.45, 0.6 and 0.9), as a single scrollable page plus screenshots.
 - **Exit:** you approve the board and storyboard. These frames become the visual target each scene chat is checked against.
 
-**F3. Shell and harness (Opus 5.5, medium).**
+**F3. Shell and harness (Opus 5.5, high: Vali 2026-11-12).**
 
 - Split into modules with no behaviour change to anything reused:
 
@@ -99,17 +99,17 @@ Agents drift and invent when three things combine: facts that aren't in a file, 
 |---|---|---|---|
 | S0 | Hero: port the existing glitch hero into the module and tune it to spec | Mostly reuse, but it sets the visual tone | high |
 | S1–S2 | Quote, keyword click, collapse, founder spawn | One chat because they're coupled by the timed sequence and its reset rule | high |
-| S3 | Multiply (scrub-safe birth and death order) | Determinism is the hard part | medium |
-| S4a | Skeleton bake tool. A **spike first**: prove the date is legible before building the scene | Highest technical risk. Do it early, even before S0 | medium |
+| S3 | Multiply (scrub-safe birth and death order) | Determinism is the hard part | high |
+| S4a | Skeleton bake tool. A **spike first**: prove the date is legible before building the scene | Highest technical risk. Do it early, even before S0 | high |
 | S4b | Date scene: converge, shimmer, release into the map | | high |
-| S5a | Map bake (OSM, wider bbox), line-art base map, projection, camera driven by `p` | Reuses Within Earshot prep | medium |
+| S5a | Map bake (OSM, wider bbox), line-art base map, projection, camera driven by `p` | Reuses Within Earshot prep | high |
 | S5b | Scrubber (scroll is the single source of truth), rail cards, YouTube click-to-load | | high |
-| S5c | Roach encodings (tiers × days), per-node beats from `timeline.json` | | medium |
+| S5c | Roach encodings (tiers × days), per-node beats from `timeline.json` | | high |
 | S6 | Finale (reuses the S4 engine) | Small once S4 exists | high |
 | S7 | Three charts. One chat, or one per chart if they turn out heavy | Mapping chosen in F1 | high |
-| S6.5 | October epilogue: a plain text piece after the finale | Text only, no map or roach set-piece | medium |
-| S8–S10 | Quotes (placeholders for now), CTA, footer, `[n]` and `*` linking | Activist and poet quotes stay as visible placeholders | medium |
-| M9 | Polish: architect review agent, GPU/perf agent, a11y, reduced motion, 4 viewports | Per your usual review process | medium for fixes; review agents run as usual |
+| S6.5 | October epilogue: a plain text piece after the finale | Text only, no map or roach set-piece | high |
+| S8–S10 | Quotes (placeholders for now), CTA, footer, `[n]` and `*` linking | Activist and poet quotes stay as visible placeholders | high |
+| M9 | Polish: architect review agent, GPU/perf agent, a11y, reduced motion, 4 viewports | Per your usual review process | high |
 
 **Order:** F1 → F2 → F3 → **S4a spike** → S0 → S1–S2 → S3 → S4b → S5a → S5b → S5c → S6 → S6.5 → S7 → S8–S10 → M9.
 
@@ -149,7 +149,7 @@ Run the prologue scenes (S0 to S4) **sequentially**, because they share one swar
 
 ## 4. Decisions
 
-Default model: **Opus 5.5 at medium effort**, and **high** for design-heavy chats (F2, S0, S1–S2, S4b, S5b, S6, S7). The effort column in section 2 follows this.
+**Update (Vali, 2026-11-12): every chat from F3 on, including all Phase 1 scene chats and M9, runs on Opus 5.5 at high effort.** Original rule: Opus 5.5 at medium effort, and **high** for design-heavy chats (F2, S0, S1–S2, S4b, S5b, S6, S7). The effort column in section 2 follows this.
 
 ### Resolved (2026-11-11)
 

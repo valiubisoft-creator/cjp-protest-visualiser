@@ -52,6 +52,7 @@ _2026-11-11: checked against OpenStreetMap. 16 of 18 sites are now `verified` wi
 ## Spec items the data can't supply
 
 - **S4 caption** (`meta.protest_start_caption`), **S9 headline** (`meta.cta.headline`), **S6.5 heading** (`epilogue_october.title`): not in the data. Vali (2026-11-12): leave these slots empty, no `[MISSING]` tag; Vali will add text if needed.
+- **S3.5 “Indian 51%”** is derived (100 − the minister's 49%), shown with the minister as claimant at Vali's request (2026-11-12). It is not a separate row in `metrics.json`.
 - **S3.5 cluster labels**: "Indian" and "Pakistani" come from the `start_pushback` fact; "Elsewhere" (the small remainder cluster) is UI wording, not data.
 - **S7 kicker**: "Media engagement" is the spec's default for O3, taken from the sketch, not from data. Vali to confirm.
 

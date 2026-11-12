@@ -6,20 +6,20 @@ Branch: `build/scene-by-scene`. Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions 
 |---|---|---|---|
 | Plan | done 2026-11-11 | — | Decisions D2–D8, D12 and D13 resolved |
 | F1 Editorial and data ledger | **done** 2026-11-12 | medium | Kickoff: [kickoffs/F1.md](kickoffs/F1.md). Output: `data/story/*.json`, generator `f1/build_story.py`, [GAPS.md](GAPS.md) |
-| F2 Design system and storyboard | **revised after review 1**: awaiting sign-off on the new frames | high | Brief: [kickoffs/F2.md](kickoffs/F2.md). Theme: **ink** |
-| F3 Shell and harness | waiting on F2 | medium | Writes the per-scene briefs in `scenes/` |
-| S4a Skeleton spike | waiting on F3 | medium | |
+| F2 Design system and storyboard | **done** 2026-11-12 | high | Brief: [kickoffs/F2.md](kickoffs/F2.md). Theme: **ink**. Visual target: `design/storyboard` + `design/shots/frames/` (19 frames) |
+| F3 Shell and harness | **next**: kickoff ready, [kickoffs/F3.md](kickoffs/F3.md) | high | Writes the per-scene briefs in `scenes/`. Must add S3.5 to the scene list and scroll budget |
+| S4a Skeleton spike | waiting on F3 | high | |
 | S0 | — | high | |
 | S1–S2 | — | high | |
-| S3 | — | medium | |
-| S3.5 The claim and the correction | — | medium | **New scene** (Vali 2026-11-12). Suggest it rides with the S3 chat |
+| S3 | — | high | |
+| S3.5 The claim and the correction | — | high | **New scene** (Vali 2026-11-12). Suggest it rides with the S3 chat |
 | S4b | — | high | |
-| S5a / S5b / S5c | — | medium / high / medium | |
+| S5a / S5b / S5c | — | high | |
 | S6 | — | high | |
-| S6.5 October epilogue (text) | — | medium | |
+| S6.5 October epilogue (text) | — | high | |
 | S7 | — | high | |
-| S8–S10 | — | medium | Quotes are placeholders |
-| M9 | — | medium | Plus architect and GPU review agents |
+| S8–S10 | — | high | Quotes are placeholders |
+| M9 | — | high | Plus architect and GPU review agents |
 
 ## Contracts in force
 **Data ledger (F1).** Scenes read only `data/story/*.json`, never the PDF.
@@ -132,3 +132,8 @@ _F3 defines the scene module, controller and roach contracts here._
   - **S8 quotes are centred**, with no role label (“POET”).
   - **New scene S3.5, “The claim and the correction”**, between S3 and S4. It ports v2's swarm split (`index.html` “01 · The swarm”, SPLITS 2 → 3: phyllotaxis clusters, anime.js `stagger({ from: 'random' })`, `inOutQuart`). The 380 roaches sort into “Indian” / “Pakistani” at the minister's 49 % (red cluster), then re-sort to Dipke's >94 % Indian. Facts: `start_pushback` (both sentences verbatim) and metrics rows `Share of Pakistani followers` / `Share of Indian audience`, both `disputed`. The unclaimed complements (51 %, ≤6 %) are drawn but carry no number. S4's converge starts from S3.5's end layout. Key frames: p 0.30, 0.60, 0.90.
   - Storyboard is now 20 frames; shots re-taken in both themes (`design/shots/frames/`).
+- 2026-11-12, **Vali's review 2: F2 signed off.**
+  - **“Victory” appears only in S6** (the finale with the Pradhan line). The standalone Victory frame is removed, and the S5 scrubber has no Victory marker (`S5_NODES` filters it out). S5 ends at node 5 (20–24 Jul). The `victory` node stays in `timeline.json` for its facts; S6 may draw on them. The scrubber axis still runs to 25 Jul (`parts.js`); S5b can trim it.
+  - **S3.5 claim frame uses the minister's numbers on both sides:** Pakistani 49 % (data) and Indian 51 % (= 100 − 49, attributed to the same claimant and status). The correction frame keeps “Elsewhere” without a number.
+  - Storyboard final: 19 frames, both themes, in `design/shots/frames/`.
+- 2026-11-12: F3 kickoff written. **Vali: every chat from F3 on (F3, all scene chats, M9) runs on Opus 5.5 at high effort.** BUILD_PLAN's effort column is updated to match.

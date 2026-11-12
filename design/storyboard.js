@@ -229,8 +229,8 @@ function s35Frame(id, code, title, why, t, labels, caption) {
   layer(F, labels + `<p class="cl-cap">${caption}</p>`);
 }
 s35Frame('S3-5-claim', 'S3.5 · p 0.30', 'The claim: sorted as “Pakistani” and “Indian”',
-  `The S3 swarm sorts into two phyllotaxis clusters at the minister's split. The claimed-Pakistani cluster is red (state action). Caption is the first sentence of the <code>start_pushback</code> fact, verbatim. In motion: v2's <code>animate(pts, …, delay: stagger([0, 700], { from: 'random' }), ease: 'inOutQuart')</code>.`,
-  0, label35(CLAIM.cxL, CLAIM.cy + CLAIM.rL + 28, 'Indian') + label35(CLAIM.cxR, CLAIM.cy + CLAIM.rR + 28, 'Pakistani', PAK),
+  `The S3 swarm sorts into two phyllotaxis clusters at the minister's split. Both numbers follow the minister's claim (Vali, 2026-11-12): 49 % from the data, Indian = the remaining ${100 - PAK.value} %, attributed to the same claimant. The claimed-Pakistani cluster is red (state action). Caption is the first sentence of the <code>start_pushback</code> fact, verbatim. In motion: v2's <code>animate(pts, …, delay: stagger([0, 700], { from: 'random' }), ease: 'inOutQuart')</code>.`,
+  0, label35(CLAIM.cxL, CLAIM.cy + CLAIM.rL + 28, 'Indian', { value_text: `${100 - PAK.value}%`, claimant: PAK.claimant, status: PAK.status }) + label35(CLAIM.cxR, CLAIM.cy + CLAIM.rR + 28, 'Pakistani', PAK),
   `${esc(CLAIM_TXT)}${star(PUSH.claimant)} <span class="cl-a">${esc(PUSH.attribution)} · <span class="st st-${PUSH.status}">${esc(PUSH.status)}</span></span>`);
 s35Frame('S3-5-mid', 'S3.5 · p 0.60', 'The correction, in transit',
   `Mid-transition: roaches leave the red cluster in random stagger, arcing left and dropping the red as they cross. Same roaches, re-sorted; nothing is born or killed here.`,
@@ -300,6 +300,8 @@ const tierCount = id => {
   let t = null; for (const n of timeline.nodes) { if (n.crowd_tier != null) t = n.crowd_tier; if (n.id === id) break; }
   return t;
 };
+// Victory is not part of the map stage (Vali, 2026-11-12): it lives only in S6.
+const S5_NODES = timeline.nodes.filter(n => n.id !== 'victory');
 async function s5Frame({ id, code, title, why, node, beat = null, dateISO, kinetic = false }) {
   const F = frame(id, code, title, why);
   const MW = 893, MH = 804, ids = beat?.site_ids?.length ? beat.site_ids : node.site_ids;
@@ -349,33 +351,17 @@ async function s5Frame({ id, code, title, why, node, beat = null, dateISO, kinet
       <div class="facts">${KF.slice(0, 2).map(f => factBlock(f, ++starN)).join('')}</div>`;
   } else rail.innerHTML = railCard(pick(node), beat && pick(beat), { nStart: starN + 1, maxFacts: 2 });
   rail.insertAdjacentHTML('beforeend', '<div class="rail-more"></div>');
-  layer(F, scrubber(timeline.nodes, { activeId: node.id, dateISO, width: 1440, height: 96 }), 's5-scrub');
+  layer(F, scrubber(S5_NODES, { activeId: node.id, dateISO, width: 1440, height: 96 }), 's5-scrub');
 }
 await s5Frame({ id: 'S5-start', code: 'S5 · node 1 (Start), hold', title: 'Map stage: how it began', node: NODE.start, dateISO: NODE.start.date,
   why: `Camera fitted to <code>start.site_ids</code> (single site, close zoom). Tier ${NODE.start.crowd_tier} → ${TIERS[NODE.start.crowd_tier].roaches} roaches at day 0 size. Rail card = <code>railCard(node)</code>, two featured facts (hold, unverified and web-unconfirmed facts are skipped). HUD top-left and legend bottom-left sit in map margins, never over the rail.` });
 await s5Frame({ id: 'S5-0720', code: 'S5 · node 5, sub-beat 20 Jul, hold', title: 'Map stage: Sansad Chalo, 20 Jul', node: NODE.protest_arrest, beat: NODE.protest_arrest.sub_beats[0], dateISO: '2026-07-20',
   why: `Camera fits the eleven 20 Jul <code>site_ids</code>; tier 4 → ${TIERS[4].roaches} roaches, weighted to Jantar Mantar Road; red dots mark the sites. Barricade dashed and labelled illustrative (label moved clear of Patel Chowk: board nit). <b>Decision for Vali:</b> map roach s = spec size ÷ 1.9 (size read as body length), then × √(zoom ÷ close zoom) so wide shots don't drown in ink. Without the zoom factor this frame is a solid black mass.` });
 
-/* ════════════════ Victory · standalone kinetic frame (Vali 2026-11-12: not inside the map stage) ════════════════ */
-{
-  const v = NODE.victory, day = dayN(v.date), KF = v.facts.filter(featured).slice(0, 2);
-  const F = frame('Victory', 'Victory · p 0.85', 'Victory: standalone kinetic type',
-    `Leaves the map stage: full-bleed dramatic stage like S6, no map, no rail, no scrubber. <code>node.label</code> and the words of <code>node.title</code> in Protest Revolution, frozen mid-entrance (a trailing ghost, the title still sliding in). Day-49 roaches (the largest) walk the bottom margin only. Two featured facts, bottom-right. <b>Open:</b> S6 follows with “Victory” again under the date; merge the two, or keep both?`, { cls: 'stage-dramatic' });
-  back(F, { bias: .05 });
-  const c = ctxAbs(F); c.fillStyle = c.strokeStyle = ink(F); const r = rng(49), s = mapSize(day) * S_PER_PX;
-  for (let i = 0; i < 26; i++) roach(c, 40 + r() * 760, 800 + r() * 80, (r() - .5) * .8 + (i % 2 ? Math.PI : 0), s, r() * TAU);
-  const words = v.title.split(' ');
-  layer(F, `<p class="t-micro t-num" style="position:absolute;left:112px;top:96px">${esc(fmtDate(v.date))} 2026 · Day ${day}</p>
-    <span class="kin-word kin-ghost" style="left:96px;top:150px;font-size:260px;transform:translate(-26px,14px) rotate(-3deg)">${esc(v.label)}</span>
-    <span class="kin-word" style="left:96px;top:136px;font-size:260px">${esc(v.label)}</span>
-    ${words.map((w, i) => `<span class="kin-word" style="left:${110 + i * 40}px;top:${400 + i * 150}px;font-size:${170 - i * 10}px;transform:translateX(${i * 120}px) rotate(${i ? -2 : 0}deg);${i ? 'opacity:.9' : ''}">${esc(w)}</span>`).join('')}
-    <div class="vic-facts">${KF.map(f => factBlock(f, ++starN)).join('')}</div>`);
-}
-
 /* ════════════════ S6 · Finale ════════════════ */
 {
   const fin = meta.finale, d = ddmmyyyy(fin.date);
-  const F = frame('S6', 'S6 · p 0.85', 'Finale: the date returns, Victory', `Dramatic stage (<code>.stage-dramatic</code>: black on paper, red on ink). <code>meta.finale.date</code> re-formed by the larger map roaches, brackets drawn, <code>finale.headline</code> in display type, then <code>finale.line</code> verbatim with its *. The first roaches peel away downward toward S7.`, { cls: 'stage-dramatic' });
+  const F = frame('S6', 'S6 · p 0.85', 'Finale: the date returns, Victory', `The only place “Victory” appears (Vali, 2026-11-12): the map stage ends at node 5 and its scrubber has no Victory marker. Dramatic stage (<code>.stage-dramatic</code>: black on paper, red on ink). <code>meta.finale.date</code> re-formed by the larger map roaches, brackets drawn, <code>finale.headline</code> in display type, then <code>finale.line</code> verbatim with its *. The first roaches peel away downward toward S7.`, { cls: 'stage-dramatic' });
   back(F, { bias: .05 });
   const box = { x: 170, y: 150, w: 1100, h: 290 };
   const sk = skeleton(d, { w: box.w, h: box.h, spacing: 8.5 });
