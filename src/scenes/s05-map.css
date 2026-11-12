@@ -1,0 +1,48 @@
+/* S5 · map stage (S5 chat, 2026-11-12). Geometry from JS: --s5-mw / --s5-mh (map box), --s5-mx / --s5-my (lead-in
+   mask: S4's soft right and bottom edges at 70% / 80%, hard at 100%). Tokens only. */
+.s5 { pointer-events: none; }
+.s5 > * { position: absolute; }
+.s5-back, .s5-roach { left: 0; top: 0; display: block; }
+.s5-mapbox { left: 0; top: 0; width: var(--s5-mw); height: var(--s5-mh); overflow: hidden; will-change: opacity;
+  -webkit-mask-image: linear-gradient(90deg, #000 var(--s5-mx, 70%), transparent var(--s5-mx2, 100%)), linear-gradient(#000 var(--s5-my, 80%), transparent); -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, #000 var(--s5-mx, 70%), transparent var(--s5-mx2, 100%)), linear-gradient(#000 var(--s5-my, 80%), transparent); mask-composite: intersect; }
+.s5-mapbox canvas { position: absolute; left: 0; top: 0; display: block; }
+.s5-marks { left: 0; top: 0; width: var(--s5-mw); height: var(--s5-mh); overflow: hidden; }
+.s5-marks canvas { position: absolute; left: 0; top: 0; display: block; }
+.s5-labs { position: absolute; inset: 0; }
+.s5-lab { position: absolute; left: 0; top: 0; background: var(--map-label-bg); color: var(--map-label-fg); font: var(--w-bold) 11px/1 var(--font-text); letter-spacing: .06em; text-transform: uppercase; padding: 5px 7px; white-space: nowrap; will-change: transform, opacity; }
+.s5-lab.illus { background: var(--bg); color: var(--map-illustrative); border: 1px dashed currentColor; }
+.s5-lab .off-t { font-weight: var(--w-regular); }
+/* HUD: the S4 readout, same box (S4 p 1 = S5 p 0) */
+.s5-hud { left: var(--hud-inset); top: var(--hud-inset); background: var(--bg); border: var(--rule) solid var(--fg); padding: 10px 14px 9px; display: flex; flex-direction: column; gap: var(--s-1); z-index: 2; }
+.s5-hud .d { font: var(--w-black) 28px/1 var(--font-text); letter-spacing: -.01em; }
+.s5-hud .t-micro { color: var(--muted); }
+.s5-hud .t-micro b { color: var(--accent-text); }
+/* legend: bottom-left of the map, inside its margin */
+.s5-legend { left: var(--hud-inset); bottom: calc(var(--scrubber-h) + var(--hud-inset)); width: 300px; background: var(--bg); border: var(--rule) solid var(--fg); padding: 10px 14px; font-size: 11px; line-height: 1.5; z-index: 2; pointer-events: auto; }
+.s5-legend .lg-h { display: block; font-size: var(--fs-micro); margin-bottom: 2px; }
+.s5-legend .lg-row { display: flex; gap: 8px; align-items: center; }
+.s5-legend .lg-ico { width: 44px; height: 26px; flex: none; }
+.s5-legend .lg-n { margin: 2px 0 0; }
+.s5-legend .nc { color: var(--accent-text); font-weight: var(--w-bold); }
+/* rail panel (cards come from s05/rail.js) and the scrubber strip (s05/scrubber.js) */
+.s5-rail { left: 0; top: 0; width: var(--s5-mw); height: var(--s5-mh); overflow: hidden; pointer-events: none; z-index: 3; }   /* the narrative card floats on the map (rail.js) */
+.s5-scrub { left: 0; right: 0; bottom: 0; height: var(--scrubber-h); background: var(--bg); box-shadow: 0 calc(-1 * var(--rule-heavy)) 0 var(--fg); pointer-events: auto; z-index: 4; }
+.s5-legend .star { font-size: .95em; }
+/* 20 Jul hour-by-hour: symbol key inside the legend (shown on hour beats), police strength labels */
+.s5-legend .lg-key { display: none; flex-wrap: wrap; gap: 4px 12px; margin-top: 6px; padding-top: 6px; border-top: var(--rule) solid var(--rule-c); }
+.s5-legend.hour .lg-key { display: flex; }
+.s5-legend .k { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.s5-legend .k i { display: inline-block; width: 16px; height: 8px; }
+.s5-legend .k-police i { background: repeating-linear-gradient(90deg, var(--muted) 0 5px, transparent 5px 7px); height: 5px; }
+.s5-legend .k-barricade i { height: 6px; background: repeating-linear-gradient(90deg, var(--red) 0 4px, var(--white) 4px 8px); outline: 2px solid var(--black); }
+.s5-legend .k-route i { border-top: 3px dashed var(--accent); height: 0; }
+.s5-legend .k-tear_gas i { background: radial-gradient(circle, var(--fg) 1.2px, transparent 1.6px) 0 0 / 4px 4px; height: 10px; }
+.s5-legend .k-lathi_charge i, .s5-legend .k-pellets i { color: var(--accent); width: auto; height: auto; font-style: normal; }
+.s5-legend .k-lathi_charge i::before { content: '✳'; } .s5-legend .k-pellets i::before { content: '✕✕'; font-size: 9px; }
+.s5-legend .k-detention i { width: auto; height: auto; font-style: normal; } .s5-legend .k-detention i::before { content: '[ ]'; font-weight: var(--w-bold); }
+.s5-legend .k-closed i { width: 10px; height: 10px; border: 2px solid var(--fg); border-radius: 50%; background: linear-gradient(135deg, transparent 44%, var(--fg) 44% 56%, transparent 56%); }
+.s5-legend .k-note { color: var(--muted); }
+.s5-lab.police { background: var(--surface); color: var(--fg); border: var(--rule) solid var(--muted); text-transform: none; letter-spacing: 0; font-weight: var(--w-medium); }
+.s5-lab.place { background: transparent; color: var(--fg); border: 1px solid var(--fg); }
+.s5-hud .clk { color: var(--accent-text); margin-left: 6px; }

@@ -1,0 +1,3510 @@
+{
+ "status": "draft",
+ "date": "2026-07-20",
+ "collected": "2026-11-12",
+ "note": "Hour-by-hour account of the 'Sansad Chalo' march, compiled 2026-11-12 for Vali's review. Sources: the dossier (Claude.pdf pp1, 6, 13, 15, 19, 21; it has no clock times for 20 Jul) plus public, non-paywalled outlets, mainly the Tribune and ThePrint live blogs, ThePrint's 'top 10 developments', PTI copy, Newslaundry, Outlook, The Caravan, The South First, Deccan Chronicle and Wikipedia. Rule: primary source wins; paywalled pages excluded. Times are IST as displayed; live-blog stamps are posting times, so an event may be earlier than its stamp. Map positions: 'approx' = from OSM or known geography; 'illustrative' = no source gives the position. Crowd shares are illustrative only. fact_ref indexes summary_facts within the same step. 'in_ledger' names the existing ledger fact (null = new). Snippets marked 'summarising fetch' were read through a summarising web tool; check them on the page before quoting.",
+ "new_sources": [
+  {
+   "id": "theprint_0720_live",
+   "title": "CJP Parliament march live updates",
+   "publisher": "ThePrint",
+   "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+   "date": "2026-07-20",
+   "note": "Live blog; ThePrint lists entries out of order. Timestamps as displayed (IST). Two '12.10 am' entries at the top probably belong to 21 Jul."
+  },
+  {
+   "id": "theprint_0720_top10",
+   "title": "What happened during CJP's 'Chalo Sansad': Top 10 developments, as they unfolded",
+   "publisher": "ThePrint",
+   "url": "https://theprint.in/india/what-happened-during-cjps-chalo-sansad-top-10-developments-as-they-unfolded/2991429/",
+   "date": "2026-07-20",
+   "note": "Published 20 Jul 2026, 8:40 pm IST. ThePrint Team. Gives clock times for 7.20 am, 7.30 am and 10 am only."
+  },
+  {
+   "id": "businesstoday_0720",
+   "title": "CJP's 'Chalo Sansad' march: Anti-riot vehicles, 5,000 personnel deployed; traffic advisory in Delhi",
+   "publisher": "Business Today",
+   "url": "https://www.businesstoday.in/india/story/cjps-chalo-sansad-march-anti-riot-vehicles-5000-personnel-deployed-traffic-advisory-in-delhi-543826-2026-07-20",
+   "date": "2026-07-20",
+   "note": "Published 20 Jul 2026, 8:23 am IST. The 5,000 figure is not attributed to a named official."
+  },
+  {
+   "id": "newslaundry_0720",
+   "title": "Under shadow of lathis and barricades: The day the Modi govt finally engaged the CJP",
+   "publisher": "Newslaundry (also on The News Minute)",
+   "url": "https://newslaundry.com/2026/07/20/under-shadow-of-lathis-and-barricades-the-day-the-modi-govt-finally-engaged-the-cjp",
+   "date": "2026-07-20",
+   "note": "NL Team, 20 Jul 2026. Mirrored on The News Minute (https://www.thenewsminute.com/news/under-shadow-of-lathis-and-barricades-the-day-the-modi-govt-finally-engaged-the-cjp). Deployment figures credited to The Indian Express."
+  },
+  {
+   "id": "newslaundry_0727",
+   "title": "4 victims, 1 pattern: July 20 injuries put RAF's 'sensitive policing' motto and manual under spotlight",
+   "publisher": "Newslaundry",
+   "url": "https://www.newslaundry.com/2026/07/27/4-victims-1-pattern-july-20-injuries-put-rafs-sensitive-policing-motto-and-manual-under-spotlight",
+   "date": "2026-07-27",
+   "note": "Astha Savyasachi and Prateek Goyal, 27 Jul 2026. Pellet victims with approximate times and places."
+  },
+  {
+   "id": "newslaundry_0728",
+   "title": "A truck full of stones appeared near the CJP protest. We found out how",
+   "publisher": "Newslaundry",
+   "url": "https://www.newslaundry.com/2026/07/28/from-accident-to-malkhana-to-protest-site-tracing-the-mysterious-stone-laden-truck",
+   "date": "2026-07-28",
+   "note": "Avdhesh Kumar, 28 Jul 2026 (updated 29 Jul). Stone-laden truck trace."
+  },
+  {
+   "id": "outlook_0720",
+   "title": "From Barricades To Talks, Inside Delhi's Chalo Sansad Protest",
+   "publisher": "Outlook India",
+   "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest",
+   "date": "2026-07-20",
+   "note": "Fozia Yasin, published 20 Jul 2026, 10:07 pm (updated 21 Jul, 9:05 am)."
+  },
+  {
+   "id": "deccanchronicle_0720_live",
+   "title": "Live: Dipke detained, thousands brave tear gas at CJP march",
+   "publisher": "Deccan Chronicle",
+   "url": "https://www.deccanchronicle.com/live-dipke-detained-thousands-brave-tear-gas-at-cjp-march",
+   "date": "2026-07-20",
+   "note": "Live page; timestamped entries from 9:34 pm on 20 Jul. Carries AFP and PTI copy."
+  },
+  {
+   "id": "deccanchronicle_0720_shastri",
+   "title": "CJP March Turns Tense: Tear Gas Deployed Near Shastri Bhawan",
+   "publisher": "Deccan Chronicle (PTI)",
+   "url": "https://www.deccanchronicle.com/nation/tear-gas-flies-at-cjp-protest-near-shastri-bhawan-high-alert-across-key-areas-1972433",
+   "date": "2026-07-20",
+   "note": "PTI copy, published 20 Jul 2026, 3:22 pm IST. Lists police barricade points."
+  },
+  {
+   "id": "deccanchronicle_0720_detained",
+   "title": "Over 50 Police, Protesters Injured During CJP March; 100+ Detained",
+   "publisher": "Deccan Chronicle (PTI)",
+   "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502",
+   "date": "2026-07-20",
+   "note": "PTI copy, published 20 Jul 2026, 8:25 pm IST. '100+ detained' from police sources; '50+ injured' unattributed."
+  },
+  {
+   "id": "dynamitenews_0720",
+   "title": "Barricades Breached, Tear Gas Fired: Chaos Erupts As CJP Protesters March Towards Parliament",
+   "publisher": "Dynamite News",
+   "url": "https://www.dynamitenews.com/national/barricades-breached-tear-gas-fired-chaos-erupts-as-cjp-protesters-march-towards-parliament",
+   "date": "2026-07-20",
+   "note": "Published 20 Jul 2026, 1:57 pm IST. Bounds the Shastri Bhawan tear gas to before 1:57 pm."
+  },
+  {
+   "id": "orissapost_0720",
+   "title": "From children to elderly, thousands brave rain, tear gas and lathis at CJP's march to Parliament",
+   "publisher": "PTI (via OrissaPOST)",
+   "url": "https://www.orissapost.com/from-children-to-elderly-thousands-brave-rain-tear-gas-and-lathis-at-cjps-march-to-parliament/",
+   "date": "2026-07-20",
+   "note": "PTI copy, published 20 Jul 2026, 16:11 IST."
+  },
+  {
+   "id": "dtnext_0720",
+   "title": "Thousands join CJP's 'Sansad Chalo' march as police lathi-charge protesters in Delhi",
+   "publisher": "DT Next (PTI)",
+   "url": "https://www.dtnext.in/news/national/lathi-charge-reported-as-students-march-towards-jantar-mantar",
+   "date": "2026-07-20",
+   "note": "PTI copy. Page stamp 'Updated on: 20 Jul 2026, 5:23 am' (time zone not stated; could be UTC). Mandi House march."
+  },
+  {
+   "id": "southfirst_0720",
+   "title": "Delhi Police lathi-charge, fire tear gas at 'Sansad Chalo' march, detain Abhijeet Dipke, Dimple Yadav and others",
+   "publisher": "The South First",
+   "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/",
+   "date": "2026-07-20",
+   "note": "South First Desk, published 20 Jul 2026, 3:48 pm; updated 8:55 pm."
+  },
+  {
+   "id": "caravan_0723",
+   "title": "People vs Police (CJP Sansad march reportage)",
+   "publisher": "The Caravan",
+   "url": "https://caravanmagazine.in/politics/defiance-chaos-repression-cjp-sansad-march",
+   "date": "2026-07-23",
+   "note": "Amrita Singh, Nikita Saxena, Puja Sen and Shahid Tantray, 23 Jul 2026. Subscriber prompts on the page, but the text was readable without login. Check before publishing that it is not paywalled."
+  },
+  {
+   "id": "tribune_0721_gurdwara",
+   "title": "Gurdwara Bangla Sahib shelters injured, stranded",
+   "publisher": "The Tribune",
+   "url": "https://www.tribuneindia.com/news/india/gurdwara-bangla-sahib-shelters-injured-stranded",
+   "date": "2026-07-21",
+   "note": "Anshita Mehra, Tribune News Service, updated 21 Jul 2026, 9:19 am."
+  },
+  {
+   "id": "tribune_0722_rml",
+   "title": "The human cost of police crackdown",
+   "publisher": "The Tribune",
+   "url": "https://www.tribuneindia.com/news/delhi/the-human-cost-of-police-crackdown/",
+   "date": "2026-07-22",
+   "note": "Manikant Mishra, Tribune News Service, updated 22 Jul 2026, 5:54 am."
+  },
+  {
+   "id": "theweek_0720",
+   "title": "Delhi Police lathi-charge CJP protesters at Jantar Mantar as thousands join Parliament march",
+   "publisher": "The Week",
+   "url": "https://www.theweek.in/news/india/2026/07/20/cjp-neet-protest-jantar-mantar-parliament-march.html",
+   "date": "2026-07-20",
+   "note": "The Week News Desk, published 20 Jul 2026, 11:32 am IST."
+  },
+  {
+   "id": "wiki_sansad_chalo",
+   "title": "Sansad Chalo march",
+   "publisher": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Sansad_Chalo_march",
+   "date": null,
+   "note": "Separate Wikipedia article with a flashpoint list and pellet times (citing Newslaundry 27 Jul)."
+  },
+  {
+   "id": "commons_0720",
+   "title": "Commons set: Students ... Jantar Mantar on 20 July 2026 ahead of Parliament March (photos 01-31)",
+   "publisher": "Wikimedia Commons (Sumita Roy Dutta)",
+   "url": "https://commons.wikimedia.org/wiki/File:Students_from_All_Over_India_protesting_against_2026_NEET_UG_paper_leak_place_Jantar_Mantar_on_20_July_2026_ahead_of_Parliament_March_01.jpg",
+   "date": "2026-07-20",
+   "note": "EXIF times of the 31-photo Commons set in media/cjp-public-images/sources.json: 07:35:37 to 07:56:07 on 20 Jul. Shows the morning gathering only."
+  }
+ ],
+ "steps": [
+  {
+   "id": "0720_0000",
+   "time": "00:00",
+   "time_end": "07:00",
+   "time_basis": "approx",
+   "time_note": "Night of 19–20 July. No clock times except ThePrint's 7.00 am deployment entry. Bounded by Caravan ('night of 19 July', 'shortly after midnight') and the first dated morning entries.",
+   "title": "Overnight: a welded khaki zone",
+   "summary_facts": [
+    {
+     "text": "Overnight, Jantar Mantar became a 'khaki zone' with hundreds of police, 8-foot barricades welded together and riot-control vehicles.",
+     "value_text": "8-foot",
+     "unit": "barricade height",
+     "claimant": "ThePrint (reporters)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "theprint_0720_top10"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint_0720_top10",
+       "url": "https://theprint.in/india/what-happened-during-cjps-chalo-sansad-top-10-developments-as-they-unfolded/2991429/",
+       "title": "What happened during CJP's 'Chalo Sansad': Top 10 developments, as they unfolded",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "barricades welded together",
+       "verified": true
+      }
+     ],
+     "note": "Height conflicts: Newslaundry 'some over six feet tall'; CPI's D Raja 'seven-foot barricades' (Deccan Chronicle live 9:39 pm). See open_questions.",
+     "in_ledger": null
+    },
+    {
+     "text": "Barricades at the Jantar Mantar entrance, some over six feet tall, were welded shut; the site was 'cordoned off by police barricades on both sides'.",
+     "claimant": "Newslaundry (reporters on site)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "newslaundry_0720"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "newslaundry_0720",
+       "url": "https://newslaundry.com/2026/07/20/under-shadow-of-lathis-and-barricades-the-day-the-modi-govt-finally-engaged-the-cjp",
+       "title": "Under shadow of lathis and barricades: The day the Modi govt finally engaged the CJP",
+       "publisher": "Newslaundry (also on The News Minute)",
+       "date": "2026-07-20",
+       "snippet": "barricades at the Jantar Mantar entrance – some over six feet tall – were welded shut",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "On the night of 19 July, several Delhi Police buses, some carrying barricades, on Sansad Marg, Tolstoy Marg and Jantar Mantar Road.",
+     "claimant": "The Caravan (reporters)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "caravan_0723"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "caravan_0723",
+       "url": "https://caravanmagazine.in/politics/defiance-chaos-repression-cjp-sansad-march",
+       "title": "People vs Police (CJP Sansad march reportage)",
+       "publisher": "The Caravan",
+       "date": "2026-07-23",
+       "snippet": "several buses of the Delhi Police, some of them carrying barricades",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Paramilitary forces in riot gear were stationed the night before, and many more companies were deployed on Monday.",
+     "claimant": "PTI",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "theprint"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint",
+       "url": "https://theprint.in/india/clashes-tear-gas-thwart-students-march-to-parliament-several-injured-detained/2991284/",
+       "title": "Clashes, tear gas thwart students' march to Parliament; several injured, detained",
+       "publisher": "ThePrint (PTI)",
+       "date": "2026-07-20",
+       "snippet": "Paramilitary forces in riot gear were stationed the night before, and many more companies were deployed on Monday.",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Over 300 police personnel stationed at the site, with layered screening, tear gas vehicles and barricades (7.00 am entry).",
+     "time": "07:00",
+     "value": 300,
+     "value_text": "300+",
+     "unit": "police personnel at the site",
+     "claimant": "ThePrint (live blog)",
+     "attribution": "reported",
+     "status": "claimed",
+     "source_ids": [
+      "theprint",
+      "theprint_0720_live"
+     ],
+     "page": 6,
+     "links": [
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "over 300 police personnel",
+       "verified": true
+      },
+      {
+       "source_id": "theprint",
+       "url": "https://theprint.in/india/delhi-police-puts-blockades-jantar-mantar-ahead-of-cjps-protest-march-to-parliament/2990640/",
+       "title": "Delhi Police puts blockades Jantar Mantar ahead of CJP's protest march to Parliament",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "riot-control vehicles with teargas mounts guard the barricades",
+       "verified": true
+      }
+     ],
+     "in_ledger": "detention.sub_beats.detention_0719 (300+ personnel, attributed there to 'Delhi Police (official)')"
+    },
+    {
+     "text": "Thousands of activists had gathered overnight at Jantar Mantar.",
+     "claimant": "Al Jazeera, AP, Reuters",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "aljazeera"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "aljazeera",
+       "url": "https://www.aljazeera.com/news/2026/7/20/police-attack-cockroach-activists-as-thousands-march-on-indian-parliament",
+       "title": "Police attack Cockroach activists as thousands march on Indian parliament",
+       "publisher": "Al Jazeera (with AP, Reuters)",
+       "date": "2026-07-20",
+       "snippet": "Thousands of activists had gathered overnight at the Jantar Mantar",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Several thousand people were present at the protest site, with more streaming in.",
+     "claimant": "The Caravan (reporters)",
+     "attribution": "reported",
+     "status": "claimed",
+     "source_ids": [
+      "caravan_0723"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "caravan_0723",
+       "url": "https://caravanmagazine.in/politics/defiance-chaos-repression-cjp-sansad-march",
+       "title": "People vs Police (CJP Sansad march reportage)",
+       "publisher": "The Caravan",
+       "date": "2026-07-23",
+       "snippet": "Several thousand people were present at the protest site, with more streaming in.",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    }
+   ],
+   "map": {
+    "focus_sites": [
+     "jantar_mantar_road",
+     "parliament_street",
+     "tolstoy_jmr",
+     "jm_entrance_south"
+    ],
+    "places": [
+     {
+      "id": "tolstoy_jmr",
+      "name": "Tolstoy Marg / Sansad Marg junction (north end of Jantar Mantar Road)",
+      "lat": 28.62694,
+      "lon": 77.2153,
+      "position": "approx",
+      "basis": "OSM west end of Tolstoy Marg. ThePrint live 8.14 am: entry 'allowed only through Tolstoy Marg'; 10.16 am police vehicles parked in front of Tolstoy Marg; Outlook: tear gas at 'the Tolstoy Marg junction'."
+     },
+     {
+      "id": "jm_entrance_south",
+      "name": "Jantar Mantar Road, south cordon",
+      "lat": 28.6235,
+      "lon": 77.21575,
+      "position": "illustrative",
+      "basis": "Newslaundry: site 'cordoned off by police barricades on both sides'. No source gives the exact line; placed on Jantar Mantar Road south of the site."
+     }
+    ],
+    "crowd": [
+     {
+      "at": "jantar_mantar_road",
+      "share": 1.0,
+      "moving_to": null
+     }
+    ],
+    "police": [
+     {
+      "at": "jantar_mantar_road",
+      "strength_text": "300+ personnel (ThePrint)",
+      "units": "Delhi Police; paramilitary in riot gear (PTI)",
+      "fact_ref": 4,
+      "position": "approx"
+     },
+     {
+      "at": "parliament_street",
+      "strength_text": null,
+      "units": "Delhi Police buses carrying barricades (Caravan)",
+      "fact_ref": 2,
+      "position": "illustrative"
+     }
+    ],
+    "barricades": [
+     {
+      "from": null,
+      "to": null,
+      "at": "tolstoy_jmr",
+      "kind": "welded barricade",
+      "position": "illustrative",
+      "basis": "Newslaundry: entrance barricades welded shut, site cordoned 'on both sides'; ThePrint: 8-foot barricades welded together. Exact lines not given."
+     },
+     {
+      "from": null,
+      "to": null,
+      "at": "jm_entrance_south",
+      "kind": "welded barricade",
+      "position": "illustrative",
+      "basis": "Same: 'cordoned off by police barricades on both sides' (Newslaundry)."
+     }
+    ],
+    "incidents": [],
+    "route": null,
+    "closures": []
+   }
+  },
+  {
+   "id": "0720_0720",
+   "time": "07:20",
+   "time_end": "08:45",
+   "time_basis": "documented",
+   "time_note": "7.20 am and 7.30 am stated by ThePrint; 07:35–07:56 by Commons EXIF; 8 am truck (Newslaundry); 8.14 and 8:34 live-blog stamps. Mandi House lathi charge has no time.",
+   "title": "Morning crowd, first baton charge",
+   "summary_facts": [
+    {
+     "text": "CJP leaders told supporters 'one lakh supporters are on the streets of Delhi' (7.20 am).",
+     "time": "07:20",
+     "value": 100000,
+     "value_text": "1 lakh",
+     "unit": "supporters",
+     "claimant": "CJP",
+     "attribution": "CJP claims",
+     "status": "claimed",
+     "source_ids": [
+      "theprint_0720_live",
+      "theprint_0720_top10"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "one lakh supporters are on the streets of Delhi",
+       "verified": true
+      },
+      {
+       "source_id": "theprint_0720_top10",
+       "url": "https://theprint.in/india/what-happened-during-cjps-chalo-sansad-top-10-developments-as-they-unfolded/2991429/",
+       "title": "What happened during CJP's 'Chalo Sansad': Top 10 developments, as they unfolded",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "a lakh supporters",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Photos of the morning gathering at Jantar Mantar, timestamped 07:35 to 07:56.",
+     "time": "07:35",
+     "claimant": "Wikimedia Commons (EXIF, photographer Sumita Roy Dutta)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "commons_0720"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "commons_0720",
+       "url": "https://commons.wikimedia.org/wiki/File:Students_from_All_Over_India_protesting_against_2026_NEET_UG_paper_leak_place_Jantar_Mantar_on_20_July_2026_ahead_of_Parliament_March_01.jpg",
+       "title": "Commons set: Students ... Jantar Mantar on 20 July 2026 ahead of Parliament March (photos 01-31)",
+       "publisher": "Wikimedia Commons (Sumita Roy Dutta)",
+       "date": "2026-07-20",
+       "snippet": "2026-07-20 07:35:37 … 07:56:07 (EXIF, 31 photos)",
+       "verified": true
+      }
+     ],
+     "in_ledger": "protest_arrest.media (photos _01 and _11)"
+    },
+    {
+     "text": "At 7.30 am the first of many baton charges began near Park Hotel, adjoining Jantar Mantar, pushing marchers towards Palika Bazaar as they moved towards Parliament.",
+     "time": "07:30",
+     "claimant": "ThePrint (reporters)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "theprint_0720_live",
+      "theprint_0720_top10"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint_0720_top10",
+       "url": "https://theprint.in/india/what-happened-during-cjps-chalo-sansad-top-10-developments-as-they-unfolded/2991429/",
+       "title": "What happened during CJP's 'Chalo Sansad': Top 10 developments, as they unfolded",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "the first of many baton-charges by security personnel began, near Park Hotel",
+       "verified": true
+      },
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "Police use lathis on the crowd near Park Hotel",
+       "verified": true
+      }
+     ],
+     "note": "Police later denied using force (see step 0720_1015).",
+     "in_ledger": null
+    },
+    {
+     "text": "Police used sticks and batons to disperse hundreds of students and youth activists marching from Mandi House Metro Station towards the protest site, according to eyewitnesses and videos.",
+     "claimant": "eyewitnesses and social-media videos (via PTI)",
+     "attribution": "reported",
+     "status": "claimed",
+     "source_ids": [
+      "dtnext_0720",
+      "wiki_protests"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "dtnext_0720",
+       "url": "https://www.dtnext.in/news/national/lathi-charge-reported-as-students-march-towards-jantar-mantar",
+       "title": "Thousands join CJP's 'Sansad Chalo' march as police lathi-charge protesters in Delhi",
+       "publisher": "DT Next (PTI)",
+       "date": "2026-07-20",
+       "snippet": "marching from Mandi House Metro Station towards the protest site",
+       "verified": true
+      },
+      {
+       "source_id": "wiki_protests",
+       "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests",
+       "title": "2026 Delhi Jantar Mantar protests",
+       "publisher": "Wikipedia",
+       "date": null,
+       "snippet": "marching from Mandi House Metro Station to Jantar Mantar",
+       "verified": true
+      }
+     ],
+     "note": "No clock time. Page stamp 'Updated 5:23 am' may be UTC (10:53 IST); the text says protesters kept arriving 'through the morning'. Ledger flashpoint row lists 'Mandi House → Parliament Street'.",
+     "in_ledger": "protest_arrest.sub_beats.pa_0720 (flashpoints list, as a place only)"
+    },
+    {
+     "text": "A stone-laden truck was seen at 8 am on the road linking Sansad Marg to the protest site; police say it had been seized in an accident case and was moved after the video went viral.",
+     "time": "08:00",
+     "claimant": "Newslaundry; Delhi Police",
+     "attribution": "reported",
+     "status": "disputed",
+     "source_ids": [
+      "newslaundry_0728"
+     ],
+     "page": 2,
+     "links": [
+      {
+       "source_id": "newslaundry_0728",
+       "url": "https://www.newslaundry.com/2026/07/28/from-accident-to-malkhana-to-protest-site-tracing-the-mysterious-stone-laden-truck",
+       "title": "A truck full of stones appeared near the CJP protest. We found out how",
+       "publisher": "Newslaundry",
+       "date": "2026-07-28",
+       "snippet": "8 am on July 20, as the Cockroach Janta Party assembled at Jantar Mantar",
+       "verified": true
+      }
+     ],
+     "in_ledger": "protest_arrest.sub_beats.pa_0720 (truck fact)"
+    },
+    {
+     "text": "Entry to Jantar Mantar 'allowed only through Tolstoy Marg'; police said gathering outside the site violated Section 163 BNSS (8.14 am).",
+     "time": "08:14",
+     "claimant": "Delhi Police (via ThePrint live blog)",
+     "attribution": "police said",
+     "status": "documented",
+     "source_ids": [
+      "theprint_0720_live"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "allowed only through Tolstoy Marg",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "'Delhi Police categorically clarifies that no permission has been sought or granted for any such protest march/procession.' (8:34 am)",
+     "time": "08:34",
+     "claimant": "Delhi Police",
+     "attribution": "police said",
+     "status": "documented",
+     "source_ids": [
+      "theprint",
+      "tribuneindia"
+     ],
+     "page": 6,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "Delhi Police categorically clarifies that no permission has been sought or granted for any such protest march/procession.",
+       "verified": true
+      },
+      {
+       "source_id": "theprint",
+       "url": "https://theprint.in/india/delhi-police-puts-blockades-jantar-mantar-ahead-of-cjps-protest-march-to-parliament/2990640/",
+       "title": "Delhi Police puts blockades Jantar Mantar ahead of CJP's protest march to Parliament",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "no permission has been sought or granted for any such protest march/procession",
+       "verified": true
+      }
+     ],
+     "in_ledger": "detention.sub_beats.detention_0719 (DCP Sachin Sharma, Section 163)"
+    }
+   ],
+   "map": {
+    "focus_sites": [
+     "jantar_mantar_road",
+     "park_hotel",
+     "palika_bazar",
+     "mandi_house",
+     "tolstoy_jmr"
+    ],
+    "places": [
+     {
+      "id": "park_hotel",
+      "name": "The Park hotel, Parliament Street",
+      "lat": 28.62889,
+      "lon": 77.2161,
+      "position": "approx",
+      "basis": "OSM building 'The Park'. ThePrint: first baton charge 'near Park Hotel, adjoining Jantar Mantar' at 7.30 am."
+     },
+     {
+      "id": "tolstoy_jmr",
+      "name": "Tolstoy Marg / Sansad Marg junction (north end of Jantar Mantar Road)",
+      "lat": 28.62694,
+      "lon": 77.2153,
+      "position": "approx",
+      "basis": "OSM west end of Tolstoy Marg. ThePrint live 8.14 am: entry 'allowed only through Tolstoy Marg'; 10.16 am police vehicles parked in front of Tolstoy Marg; Outlook: tear gas at 'the Tolstoy Marg junction'."
+     }
+    ],
+    "crowd": [
+     {
+      "at": "jantar_mantar_road",
+      "share": 0.7,
+      "moving_to": null
+     },
+     {
+      "at": "park_hotel",
+      "share": 0.2,
+      "moving_to": "palika_bazar"
+     },
+     {
+      "at": "mandi_house",
+      "share": 0.1,
+      "moving_to": "jantar_mantar_road"
+     }
+    ],
+    "police": [
+     {
+      "at": "jantar_mantar_road",
+      "strength_text": "300+ personnel (ThePrint)",
+      "units": "Delhi Police",
+      "fact_ref": null,
+      "position": "approx"
+     },
+     {
+      "at": "park_hotel",
+      "strength_text": null,
+      "units": "security personnel (ThePrint)",
+      "fact_ref": 2,
+      "position": "approx"
+     }
+    ],
+    "barricades": [
+     {
+      "from": null,
+      "to": null,
+      "at": "tolstoy_jmr",
+      "kind": "welded barricade; only entry via Tolstoy Marg",
+      "position": "illustrative",
+      "basis": "ThePrint live 8.14 am: entry only through Tolstoy Marg."
+     }
+    ],
+    "incidents": [
+     {
+      "at": "park_hotel",
+      "kind": "lathi_charge",
+      "fact_ref": 2
+     },
+     {
+      "at": "mandi_house",
+      "kind": "lathi_charge",
+      "fact_ref": 3
+     }
+    ],
+    "route": [
+     "mandi_house",
+     "jantar_mantar_road"
+    ],
+    "closures": []
+   }
+  },
+  {
+   "id": "0720_0900",
+   "time": "09:00",
+   "time_end": "10:15",
+   "time_basis": "documented",
+   "time_note": "Live-blog stamps 9:15–9:42 (ThePrint, Tribune). The metro closures happened 'earlier' than 9.15 am; exact time not stated.",
+   "title": "Sealed in: metro and internet cut",
+   "summary_facts": [
+    {
+     "text": "DMRC closed five stations: Rajiv Chowk, Janpath, Patel Chowk, Central Secretariat and Seva Teerth (formerly Udyog Bhawan).",
+     "value": 5,
+     "unit": "metro stations",
+     "claimant": "DMRC (via PTI, Newslaundry, The Week)",
+     "attribution": "officials said",
+     "status": "documented",
+     "source_ids": [
+      "theprint",
+      "theweek_0720"
+     ],
+     "page": 19,
+     "links": [
+      {
+       "source_id": "theprint",
+       "url": "https://theprint.in/india/clashes-tear-gas-thwart-students-march-to-parliament-several-injured-detained/2991284/",
+       "title": "Clashes, tear gas thwart students' march to Parliament; several injured, detained",
+       "publisher": "ThePrint (PTI)",
+       "date": "2026-07-20",
+       "snippet": "The Delhi Metro Rail Corporation closed five stations – Rajiv Chowk, Janpath, Patel Chowk,",
+       "verified": true
+      },
+      {
+       "source_id": "theweek_0720",
+       "url": "https://www.theweek.in/news/india/2026/07/20/cjp-neet-protest-jantar-mantar-parliament-march.html",
+       "title": "Delhi Police lathi-charge CJP protesters at Jantar Mantar as thousands join Parliament march",
+       "publisher": "The Week",
+       "date": "2026-07-20",
+       "snippet": "closed five metro stations—Rajiv Chowk, Janpath, Patel Chowk, Central Secretariat and Seva Teerth",
+       "verified": true
+      }
+     ],
+     "note": "Seva Teerth is the renamed Udyog Bhawan station (renamed Feb 2026), i.e. sites.json metro_udyog_bhawan.",
+     "in_ledger": "protest_arrest.sub_beats.pa_0720 (5 stations)"
+    },
+    {
+     "text": "'The interchange facilities and gates are now open at Rajiv Chowk and Central Secretariat metro stations.' (9.15 am)",
+     "time": "09:15",
+     "claimant": "DMRC (via ThePrint live blog)",
+     "attribution": "officials said",
+     "status": "documented",
+     "source_ids": [
+      "theprint_0720_live"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "The interchange facilities and gates are now open at Rajiv Chowk and Central Secretariat metro stations.",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "DMRC kept Janpath, Patel Chowk and Seva Teerth shut (9:26 am).",
+     "time": "09:26",
+     "claimant": "DMRC (via The Tribune live blog)",
+     "attribution": "officials said",
+     "status": "documented",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "kept Janpath, Patel Chowk and Seva Teerth shut",
+       "verified": true
+      }
+     ],
+     "note": "Snippet from a summarising fetch of the live blog; wording may be paraphrase. Re-check on the page.",
+     "in_ledger": null
+    },
+    {
+     "text": "'Mobile internet services are unavailable at Jantar Mantar.' (9:23 am)",
+     "time": "09:23",
+     "claimant": "The Tribune (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": 6,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "Mobile internet services are unavailable at Jantar Mantar.",
+       "verified": true
+      }
+     ],
+     "in_ledger": "protest_arrest.facts ('internet suspended', no time)"
+    },
+    {
+     "text": "'protesters are not being allowed to leave the site' behind barricades and a tight cordon (9:33 am).",
+     "time": "09:33",
+     "claimant": "The Tribune (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "protesters are not being allowed to leave the site",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Heavy security deployed on Raisina Road and at Parliament Circle (9:34 am).",
+     "time": "09:34",
+     "claimant": "The Tribune (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "Heavy security was deployed on Raisina Road and at Parliament Circle",
+       "verified": true
+      }
+     ],
+     "note": "Snippet from a summarising fetch; may be paraphrase.",
+     "in_ledger": null
+    },
+    {
+     "text": "'New Delhi DCP Sachin Sharma met CJP members at Jantar Mantar on Monday.' (9:42 am)",
+     "time": "09:42",
+     "claimant": "The Tribune (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "New Delhi DCP Sachin Sharma met CJP members at Jantar Mantar on Monday.",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "'The procession, scheduled to begin at 9 am, never formally started.'",
+     "claimant": "Outlook India (reporter)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "outlook_0720"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "outlook_0720",
+       "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest",
+       "title": "From Barricades To Talks, Inside Delhi's Chalo Sansad Protest",
+       "publisher": "Outlook India",
+       "date": "2026-07-20",
+       "snippet": "The procession, scheduled to begin at 9 am, never formally started.",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    }
+   ],
+   "map": {
+    "focus_sites": [
+     "jantar_mantar_road",
+     "metro_rajiv_chowk",
+     "metro_janpath",
+     "metro_patel_chowk",
+     "metro_central_secretariat",
+     "metro_udyog_bhawan",
+     "parliament_circle",
+     "raisina_rd_roundabout"
+    ],
+    "places": [
+     {
+      "id": "parliament_circle",
+      "name": "Parliament gates / Parliament Circle",
+      "lat": 28.619,
+      "lon": 77.2115,
+      "position": "illustrative",
+      "basis": "Tribune 9:34 am: heavy security 'on Raisina Road and at Parliament Circle'; South First: firing positions 'aimed at the Parliament gates'. Placed where Sansad Marg meets the Parliament estate (OSM south end of Sansad Marg 28.61897, 77.20954 is further west; this point is between)."
+     },
+     {
+      "id": "raisina_rd_roundabout",
+      "name": "Raisina Road roundabout (Windsor Place end)",
+      "lat": 28.61975,
+      "lon": 77.21825,
+      "position": "illustrative",
+      "basis": "ThePrint top 10: protesters 'reached the Raisina Road roundabout and Constitution Club'. Which roundabout is not stated; placed at Raisina Road's north-east end (OSM), nearest the Press Club. Could instead be the Rail Bhawan end."
+     },
+     {
+      "id": "tolstoy_jmr",
+      "name": "Tolstoy Marg / Sansad Marg junction (north end of Jantar Mantar Road)",
+      "lat": 28.62694,
+      "lon": 77.2153,
+      "position": "approx",
+      "basis": "OSM west end of Tolstoy Marg. ThePrint live 8.14 am: entry 'allowed only through Tolstoy Marg'; 10.16 am police vehicles parked in front of Tolstoy Marg; Outlook: tear gas at 'the Tolstoy Marg junction'."
+     },
+     {
+      "id": "jm_entrance_south",
+      "name": "Jantar Mantar Road, south cordon",
+      "lat": 28.6235,
+      "lon": 77.21575,
+      "position": "illustrative",
+      "basis": "Newslaundry: site 'cordoned off by police barricades on both sides'. No source gives the exact line; placed on Jantar Mantar Road south of the site."
+     }
+    ],
+    "crowd": [
+     {
+      "at": "jantar_mantar_road",
+      "share": 1.0,
+      "moving_to": null
+     }
+    ],
+    "police": [
+     {
+      "at": "jantar_mantar_road",
+      "strength_text": null,
+      "units": "Delhi Police cordon",
+      "fact_ref": 4,
+      "position": "approx"
+     },
+     {
+      "at": "parliament_circle",
+      "strength_text": null,
+      "units": "heavy security (Tribune)",
+      "fact_ref": 5,
+      "position": "illustrative"
+     },
+     {
+      "at": "raisina_rd_roundabout",
+      "strength_text": null,
+      "units": "heavy security (Tribune)",
+      "fact_ref": 5,
+      "position": "illustrative"
+     }
+    ],
+    "barricades": [
+     {
+      "from": null,
+      "to": null,
+      "at": "tolstoy_jmr",
+      "kind": "barricades and tight cordon",
+      "position": "illustrative",
+      "basis": "Tribune 9:33 am: protesters not allowed to leave the site."
+     },
+     {
+      "from": null,
+      "to": null,
+      "at": "jm_entrance_south",
+      "kind": "barricades and tight cordon",
+      "position": "illustrative",
+      "basis": "Same."
+     }
+    ],
+    "incidents": [],
+    "route": null,
+    "closures": [
+     {
+      "kind": "metro",
+      "ids": [
+       "metro_janpath",
+       "metro_patel_chowk",
+       "metro_udyog_bhawan"
+      ],
+      "fact_ref": 2
+     },
+     {
+      "kind": "metro",
+      "ids": [
+       "metro_rajiv_chowk",
+       "metro_central_secretariat"
+      ],
+      "fact_ref": 0,
+      "note": "Closed early; gates and interchange reopened by 9.15 am (fact 1)."
+     },
+     {
+      "kind": "internet",
+      "ids": [
+       "jantar_mantar_road"
+      ],
+      "fact_ref": 3
+     }
+    ]
+   }
+  },
+  {
+   "id": "0720_1015",
+   "time": "10:15",
+   "time_end": "11:10",
+   "time_basis": "documented",
+   "time_note": "Live-blog stamps 10.16, 10:37, 10.50, 11:07.",
+   "title": "Barricades toppled at Tolstoy Marg",
+   "summary_facts": [
+    {
+     "text": "Police vehicles were parked in front of Tolstoy Marg to stop protesters moving beyond Jantar Mantar; protesters toppled barricades (10.16 am).",
+     "time": "10:16",
+     "claimant": "ThePrint (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "theprint_0720_live"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "Police vehicles were parked in front of Tolstoy Marg",
+       "verified": true
+      }
+     ],
+     "note": "Snippet from a summarising fetch; may be paraphrase.",
+     "in_ledger": null
+    },
+    {
+     "text": "Protesters clashed with RAF and police, and 'security personnel resorted to a lathi-charge to disperse the crowd' (10:37 am).",
+     "time": "10:37",
+     "claimant": "The Tribune (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "security personnel resorted to a lathi-charge to disperse the crowd",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "'RPF personnel & police use lathis for crowd control' after clashes at Jantar Mantar (10.50 am).",
+     "time": "10:50",
+     "claimant": "ANI (via ThePrint live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "theprint_0720_live"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "RPF personnel & police use lathis for crowd control",
+       "verified": true
+      }
+     ],
+     "note": "'RPF' as written by ANI; other outlets say RAF. Keep as quoted.",
+     "in_ledger": null
+    },
+    {
+     "text": "Lathis used 'in several spots', including near the Kerala House lane.",
+     "claimant": "Newslaundry (citing reports)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "newslaundry_0720"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "newslaundry_0720",
+       "url": "https://newslaundry.com/2026/07/20/under-shadow-of-lathis-and-barricades-the-day-the-modi-govt-finally-engaged-the-cjp",
+       "title": "Under shadow of lathis and barricades: The day the Modi govt finally engaged the CJP",
+       "publisher": "Newslaundry (also on The News Minute)",
+       "date": "2026-07-20",
+       "snippet": "RPF personnel and Delhi Police used lathis for crowd control in several spots",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Police denied violence at Jantar Mantar: 'the protest is being handled professionally.' (11:07 am)",
+     "time": "11:07",
+     "claimant": "Delhi Police",
+     "attribution": "police said",
+     "status": "disputed",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "the protest is being handled professionally",
+       "verified": true
+      }
+     ],
+     "note": "Contradicted by facts 1–3 and by ThePrint's 7.30 am account.",
+     "in_ledger": null
+    },
+    {
+     "text": "Delhi Police resorted to 'a mild lathi charge to disperse the protesters'.",
+     "time": "11:32",
+     "claimant": "The Week",
+     "attribution": "reported",
+     "status": "disputed",
+     "source_ids": [
+      "theweek_0720"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theweek_0720",
+       "url": "https://www.theweek.in/news/india/2026/07/20/cjp-neet-protest-jantar-mantar-parliament-march.html",
+       "title": "Delhi Police lathi-charge CJP protesters at Jantar Mantar as thousands join Parliament march",
+       "publisher": "The Week",
+       "date": "2026-07-20",
+       "snippet": "prompting Delhi Police to resort to a mild lathi charge to disperse the protesters.",
+       "verified": true
+      }
+     ],
+     "note": "Published 11:32 am. 'Mild' is The Week's word; compare protesters' accounts in Newslaundry.",
+     "in_ledger": null
+    }
+   ],
+   "map": {
+    "focus_sites": [
+     "jantar_mantar_road",
+     "tolstoy_jmr",
+     "kerala_house",
+     "parliament_street"
+    ],
+    "places": [
+     {
+      "id": "kerala_house",
+      "name": "Kerala House lane, Jantar Mantar Road",
+      "lat": 28.6225,
+      "lon": 77.2157,
+      "position": "illustrative",
+      "basis": "Kerala House is on Jantar Mantar Road; exact point not taken from OSM (not tagged in our dump). Newslaundry (citing reports): lathis 'near the Kerala House lane'; Deccan Chronicle live 10:55 pm: CJP sit-in 'near Kerala House'."
+     },
+     {
+      "id": "tolstoy_jmr",
+      "name": "Tolstoy Marg / Sansad Marg junction (north end of Jantar Mantar Road)",
+      "lat": 28.62694,
+      "lon": 77.2153,
+      "position": "approx",
+      "basis": "OSM west end of Tolstoy Marg. ThePrint live 8.14 am: entry 'allowed only through Tolstoy Marg'; 10.16 am police vehicles parked in front of Tolstoy Marg; Outlook: tear gas at 'the Tolstoy Marg junction'."
+     }
+    ],
+    "crowd": [
+     {
+      "at": "jantar_mantar_road",
+      "share": 0.6,
+      "moving_to": null
+     },
+     {
+      "at": "tolstoy_jmr",
+      "share": 0.4,
+      "moving_to": "parliament_street"
+     }
+    ],
+    "police": [
+     {
+      "at": "tolstoy_jmr",
+      "strength_text": null,
+      "units": "Delhi Police vehicles; RAF and police (Tribune)",
+      "fact_ref": 0,
+      "position": "approx"
+     },
+     {
+      "at": "kerala_house",
+      "strength_text": null,
+      "units": "Delhi Police; 'RPF' (as reported)",
+      "fact_ref": 3,
+      "position": "illustrative"
+     }
+    ],
+    "barricades": [
+     {
+      "from": null,
+      "to": null,
+      "at": "tolstoy_jmr",
+      "kind": "police vehicles parked across the road; barricades toppled",
+      "position": "approx",
+      "basis": "ThePrint live 10.16 am: vehicles 'in front of Tolstoy Marg'."
+     }
+    ],
+    "incidents": [
+     {
+      "at": "jantar_mantar_road",
+      "kind": "lathi_charge",
+      "fact_ref": 1
+     },
+     {
+      "at": "kerala_house",
+      "kind": "lathi_charge",
+      "fact_ref": 3
+     }
+    ],
+    "route": [
+     "jantar_mantar_road",
+     "tolstoy_jmr",
+     "parliament_street"
+    ],
+    "closures": []
+   }
+  },
+  {
+   "id": "0720_1115",
+   "time": "11:15",
+   "time_end": "12:30",
+   "time_basis": "documented",
+   "time_note": "11.15 and 11.25 am stated by PTI; 12:12 pm Tribune. SBI crossing, Outlook tear gas and the Parliament-gate visuals have no time; placed here because they follow the Parliament Street breach.",
+   "title": "Breach on Parliament Street",
+   "summary_facts": [
+    {
+     "text": "Around 11.15 am protesters broke through a major barricade; around 11.25 am they tried to push through multiple barricades in the high-security zone.",
+     "time": "11:15",
+     "claimant": "PTI",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "theprint",
+      "wiki_sansad_chalo"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint",
+       "url": "https://theprint.in/india/clashes-tear-gas-thwart-students-march-to-parliament-several-injured-detained/2991284/",
+       "title": "Clashes, tear gas thwart students' march to Parliament; several injured, detained",
+       "publisher": "ThePrint (PTI)",
+       "date": "2026-07-20",
+       "snippet": "Situation turned tense around 11.15 am when protesters broke through a major barricade",
+       "verified": true
+      },
+      {
+       "source_id": "wiki_sansad_chalo",
+       "url": "https://en.wikipedia.org/wiki/Sansad_Chalo_march",
+       "title": "Sansad Chalo march",
+       "publisher": "Wikipedia",
+       "date": null,
+       "snippet": "Around 11:25 am, protesters reached Parliament Street and attempted to push through barricades",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Protesters broke through, crossed the SBI building on Sansad Marg and continued towards Parliament; police later removed the barricades themselves after a brief scuffle.",
+     "claimant": "The Indian Express (via Newslaundry)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "newslaundry_0720"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "newslaundry_0720",
+       "url": "https://newslaundry.com/2026/07/20/under-shadow-of-lathis-and-barricades-the-day-the-modi-govt-finally-engaged-the-cjp",
+       "title": "Under shadow of lathis and barricades: The day the Modi govt finally engaged the CJP",
+       "publisher": "Newslaundry (also on The News Minute)",
+       "date": "2026-07-20",
+       "snippet": "broke through, crossed the SBI building on Sansad Marg, and continued towards Parliament",
+       "verified": true
+      }
+     ],
+     "note": "Original Indian Express report not fetched (paywall policy); relayed by Newslaundry.",
+     "in_ledger": null
+    },
+    {
+     "text": "Tear-gas shells went up near the Sansad Marg–Parliament Street stretch and the Tolstoy Marg junction.",
+     "claimant": "Outlook India (reporter)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "outlook_0720"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "outlook_0720",
+       "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest",
+       "title": "From Barricades To Talks, Inside Delhi's Chalo Sansad Protest",
+       "publisher": "Outlook India",
+       "date": "2026-07-20",
+       "snippet": "Tear-gas shells went up near the Sansad Marg–Parliament Street stretch and the Tolstoy Marg junction",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Several entry gates to Parliament were shut; police parked vehicles across key roads and closed Parliament's gates.",
+     "claimant": "Newslaundry; ThePrint",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "newslaundry_0720",
+      "theprint_0720_top10"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "newslaundry_0720",
+       "url": "https://newslaundry.com/2026/07/20/under-shadow-of-lathis-and-barricades-the-day-the-modi-govt-finally-engaged-the-cjp",
+       "title": "Under shadow of lathis and barricades: The day the Modi govt finally engaged the CJP",
+       "publisher": "Newslaundry (also on The News Minute)",
+       "date": "2026-07-20",
+       "snippet": "Several entry gates to Parliament were shut.",
+       "verified": true
+      },
+      {
+       "source_id": "theprint_0720_top10",
+       "url": "https://theprint.in/india/what-happened-during-cjps-chalo-sansad-top-10-developments-as-they-unfolded/2991429/",
+       "title": "What happened during CJP's 'Chalo Sansad': Top 10 developments, as they unfolded",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "closed Parliament's gates",
+       "verified": true
+      }
+     ],
+     "note": "ThePrint snippet from a summarising fetch.",
+     "in_ledger": null
+    },
+    {
+     "text": "Visuals from Parliament showed security forces taking up firing positions with machine guns aimed at the Parliament gates, while firefighters stood ready with water cannons.",
+     "claimant": "The South First (visuals)",
+     "attribution": "reported",
+     "status": "claimed",
+     "source_ids": [
+      "southfirst_0720",
+      "wiki_protests"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "southfirst_0720",
+       "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/",
+       "title": "Delhi Police lathi-charge, fire tear gas at 'Sansad Chalo' march, detain Abhijeet Dipke, Dimple Yadav and others",
+       "publisher": "The South First",
+       "date": "2026-07-20",
+       "snippet": "Visuals from Parliament showed security forces taking up firing positions aimed at the Parliament gates",
+       "verified": true
+      },
+      {
+       "source_id": "wiki_protests",
+       "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests",
+       "title": "2026 Delhi Jantar Mantar protests",
+       "publisher": "Wikipedia",
+       "date": null,
+       "snippet": "Security forces took firing positions with machine guns aimed at the Parliament gates.",
+       "verified": true
+      }
+     ],
+     "note": "Single outlet (Wikipedia cites The South First). No time. Water cannons here are deployment, not use; metrics.json says no credible source for water-cannon use.",
+     "in_ledger": null
+    },
+    {
+     "text": "Dipke ended his hunger strike at Wangchuk's request.",
+     "time": "11:38",
+     "claimant": "The Tribune (live blog); ThePrint (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "outlook_0720",
+      "tribuneindia"
+     ],
+     "page": 6,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "call it off so that they could conserve their energy",
+       "verified": true
+      },
+      {
+       "source_id": "outlook_0720",
+       "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest",
+       "title": "From Barricades To Talks, Inside Delhi's Chalo Sansad Protest",
+       "publisher": "Outlook India",
+       "date": "2026-07-20",
+       "snippet": "Dipke ended his own fast around midday",
+       "verified": true
+      }
+     ],
+     "note": "Times differ: Tribune 11:38 am, ThePrint 12.58 pm, Outlook 'around midday'.",
+     "in_ledger": "protest_arrest.summary (Dipke ends his fast)"
+    },
+    {
+     "text": "'CJP supporters assembled at Rajiv Chowk Metro Station ahead of their proposed march to Parliament.' (12:12 pm)",
+     "time": "12:12",
+     "claimant": "The Tribune (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "CJP supporters assembled at Rajiv Chowk Metro Station ahead of their proposed march to Parliament.",
+       "verified": true
+      }
+     ],
+     "note": "ThePrint live: 12.10 pm, 'inside Rajiv Chowk metro station'.",
+     "in_ledger": null
+    }
+   ],
+   "map": {
+    "focus_sites": [
+     "parliament_street",
+     "sbi_sansad_marg",
+     "patel_chowk",
+     "parliament",
+     "parliament_circle",
+     "metro_rajiv_chowk"
+    ],
+    "places": [
+     {
+      "id": "sbi_sansad_marg",
+      "name": "SBI building, Sansad Marg",
+      "lat": 28.6248,
+      "lon": 77.214,
+      "position": "illustrative",
+      "basis": "Newslaundry citing The Indian Express: protesters 'crossed the SBI building on Sansad Marg'. Building not located in our OSM dump; placed on Sansad Marg between Jantar Mantar and Patel Chowk."
+     },
+     {
+      "id": "tolstoy_jmr",
+      "name": "Tolstoy Marg / Sansad Marg junction (north end of Jantar Mantar Road)",
+      "lat": 28.62694,
+      "lon": 77.2153,
+      "position": "approx",
+      "basis": "OSM west end of Tolstoy Marg. ThePrint live 8.14 am: entry 'allowed only through Tolstoy Marg'; 10.16 am police vehicles parked in front of Tolstoy Marg; Outlook: tear gas at 'the Tolstoy Marg junction'."
+     },
+     {
+      "id": "parliament_circle",
+      "name": "Parliament gates / Parliament Circle",
+      "lat": 28.619,
+      "lon": 77.2115,
+      "position": "illustrative",
+      "basis": "Tribune 9:34 am: heavy security 'on Raisina Road and at Parliament Circle'; South First: firing positions 'aimed at the Parliament gates'. Placed where Sansad Marg meets the Parliament estate (OSM south end of Sansad Marg 28.61897, 77.20954 is further west; this point is between)."
+     }
+    ],
+    "crowd": [
+     {
+      "at": "jantar_mantar_road",
+      "share": 0.4,
+      "moving_to": null
+     },
+     {
+      "at": "parliament_street",
+      "share": 0.35,
+      "moving_to": "sbi_sansad_marg"
+     },
+     {
+      "at": "sbi_sansad_marg",
+      "share": 0.15,
+      "moving_to": "parliament"
+     },
+     {
+      "at": "metro_rajiv_chowk",
+      "share": 0.1,
+      "moving_to": null
+     }
+    ],
+    "police": [
+     {
+      "at": "parliament_street",
+      "strength_text": null,
+      "units": "Delhi Police; paramilitary",
+      "fact_ref": 0,
+      "position": "approx"
+     },
+     {
+      "at": "parliament_circle",
+      "strength_text": null,
+      "units": "security forces with machine guns; firefighters with water cannons (South First)",
+      "fact_ref": 4,
+      "position": "illustrative"
+     }
+    ],
+    "barricades": [
+     {
+      "from": null,
+      "to": null,
+      "at": "parliament_street",
+      "kind": "multiple barricades in the high-security zone (breached)",
+      "position": "illustrative",
+      "basis": "PTI: 'major barricade' broken at 11.15 am; 'multiple barricades in the high-security zone' at 11.25 am. Exact line not given."
+     },
+     {
+      "from": null,
+      "to": null,
+      "at": "sbi_sansad_marg",
+      "kind": "barricade removed by police",
+      "position": "illustrative",
+      "basis": "Indian Express via Newslaundry: police removed barricades after a brief scuffle."
+     },
+     {
+      "from": null,
+      "to": null,
+      "at": "parliament_circle",
+      "kind": "Parliament gates shut",
+      "position": "illustrative",
+      "basis": "Newslaundry; ThePrint."
+     }
+    ],
+    "incidents": [
+     {
+      "at": "parliament_street",
+      "kind": "tear_gas",
+      "fact_ref": 2
+     },
+     {
+      "at": "tolstoy_jmr",
+      "kind": "tear_gas",
+      "fact_ref": 2
+     }
+    ],
+    "route": [
+     "jantar_mantar_road",
+     "tolstoy_jmr",
+     "parliament_street",
+     "sbi_sansad_marg",
+     "patel_chowk",
+     "parliament"
+    ],
+    "closures": []
+   }
+  },
+  {
+   "id": "0720_1300",
+   "time": "13:00",
+   "time_end": "14:30",
+   "time_basis": "documented",
+   "time_note": "Tribune stamps 1:20, 1:25 and 1:55 pm; PTI 'around 1 pm'. Shastri Bhawan tear gas bounded by Dynamite News publication at 1:57 pm.",
+   "title": "Tear gas around Central Secretariat",
+   "summary_facts": [
+    {
+     "text": "At around 1 pm police imposed Section 163 BNSS in the area, banning any gathering.",
+     "time": "13:00",
+     "claimant": "PTI",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "theprint"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint",
+       "url": "https://theprint.in/india/clashes-tear-gas-thwart-students-march-to-parliament-several-injured-detained/2991284/",
+       "title": "Clashes, tear gas thwart students' march to Parliament; several injured, detained",
+       "publisher": "ThePrint (PTI)",
+       "date": "2026-07-20",
+       "snippet": "At around 1 pm, police imposed Section 163 of Bharatiya Nagarik Suraksha Sanhita (BNSS) in the area, banning any gathering.",
+       "verified": true
+      }
+     ],
+     "note": "Conflicts with DCP Sachin Sharma's statement that Section 163 was already in force (ThePrint 19–20 Jul; Business Today 8:23 am). See open_questions.",
+     "in_ledger": null
+    },
+    {
+     "text": "'Police personnel at Central Secretariat Metro Station resorted to firing teargas shells to disperse the swelling crowd.' Several protesters were detained. (1:20 pm)",
+     "time": "13:20",
+     "claimant": "The Tribune (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "theprint",
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "Police personnel at Central Secretariat Metro Station resorted to firing teargas shells to disperse the swelling crowd.",
+       "verified": true
+      },
+      {
+       "source_id": "theprint",
+       "url": "https://theprint.in/india/clashes-tear-gas-thwart-students-march-to-parliament-several-injured-detained/2991284/",
+       "title": "Clashes, tear gas thwart students' march to Parliament; several injured, detained",
+       "publisher": "ThePrint (PTI)",
+       "date": "2026-07-20",
+       "snippet": "Tear gas shells were also lobbed outside Gate 2 of the Central Secretariat Metro Station.",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Several police and protesters were injured, and 'police carried out a baton charge to disperse the crowd' (1:25 pm).",
+     "time": "13:25",
+     "claimant": "The Tribune (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "police carried out a baton charge to disperse the crowd",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Protesters were pushed back from Raisina Road with tear gas and gathered outside the Press Club (1:55 pm).",
+     "time": "13:55",
+     "claimant": "The Tribune (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "newslaundry_0720",
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "resorted to firing teargas shells and pushed them back",
+       "verified": true
+      },
+      {
+       "source_id": "newslaundry_0720",
+       "url": "https://newslaundry.com/2026/07/20/under-shadow-of-lathis-and-barricades-the-day-the-modi-govt-finally-engaged-the-cjp",
+       "title": "Under shadow of lathis and barricades: The day the Modi govt finally engaged the CJP",
+       "publisher": "Newslaundry (also on The News Minute)",
+       "date": "2026-07-20",
+       "snippet": "tear gas shells were fired near the Press Club of India to disperse the crowd",
+       "verified": true
+      }
+     ],
+     "note": "Press Club tear gas credited by Newslaundry to The Hindu.",
+     "in_ledger": null
+    },
+    {
+     "text": "Police fired tear gas shells near Shastri Bhawan after protesters tried to push through barricades.",
+     "claimant": "PTI (via Dynamite News, Deccan Chronicle)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "deccanchronicle_0720_shastri",
+      "dynamitenews_0720"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "dynamitenews_0720",
+       "url": "https://www.dynamitenews.com/national/barricades-breached-tear-gas-fired-chaos-erupts-as-cjp-protesters-march-towards-parliament",
+       "title": "Barricades Breached, Tear Gas Fired: Chaos Erupts As CJP Protesters March Towards Parliament",
+       "publisher": "Dynamite News",
+       "date": "2026-07-20",
+       "snippet": "Police fired tear gas shells near Shastri Bhawan after protesters tried to push through barricades.",
+       "verified": true
+      },
+      {
+       "source_id": "deccanchronicle_0720_shastri",
+       "url": "https://www.deccanchronicle.com/nation/tear-gas-flies-at-cjp-protest-near-shastri-bhawan-high-alert-across-key-areas-1972433",
+       "title": "CJP March Turns Tense: Tear Gas Deployed Near Shastri Bhawan",
+       "publisher": "Deccan Chronicle (PTI)",
+       "date": "2026-07-20",
+       "snippet": "near Constitution Club, Press Club of India, near Parliament, Parliament Street, Shankar Road, Jantar Mantar",
+       "verified": true
+      }
+     ],
+     "note": "No clock time; Dynamite News published it at 1:57 pm, so it happened before then. The DC (PTI) snippet lists police barricade points.",
+     "in_ledger": null
+    },
+    {
+     "text": "Near Constitution Club, tear gas affected commuters at Central Secretariat metro station.",
+     "claimant": "Wikipedia (citing The Wire)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "wiki_protests"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "wiki_protests",
+       "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests",
+       "title": "2026 Delhi Jantar Mantar protests",
+       "publisher": "Wikipedia",
+       "date": null,
+       "snippet": "Near Constitution Club, tear gas affected commuters at Central Secretariat metro station",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "AISA said 'Rovin, an office-bearer of its Delhi University unit, suffered a fracture in his left arm.' (1:55 pm)",
+     "time": "13:55",
+     "claimant": "AISA",
+     "attribution": "alleged",
+     "status": "alleged",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "Rovin, an office-bearer of its Delhi University unit, suffered a fracture in his left arm.",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    }
+   ],
+   "map": {
+    "focus_sites": [
+     "metro_central_secretariat",
+     "shastri_bhawan",
+     "constitution_club",
+     "raisina_rd_roundabout",
+     "press_club",
+     "parliament_street"
+    ],
+    "places": [
+     {
+      "id": "press_club",
+      "name": "Press Club of India, Raisina Road",
+      "lat": 28.6193,
+      "lon": 77.217,
+      "position": "approx",
+      "basis": "Address 1 Raisina Road (known geography, not in our OSM dump). Tribune 1:55 pm: crowd gathered outside the Press Club; The Hindu via Newslaundry: tear gas near the Press Club of India."
+     },
+     {
+      "id": "raisina_rd_roundabout",
+      "name": "Raisina Road roundabout (Windsor Place end)",
+      "lat": 28.61975,
+      "lon": 77.21825,
+      "position": "illustrative",
+      "basis": "ThePrint top 10: protesters 'reached the Raisina Road roundabout and Constitution Club'. Which roundabout is not stated; placed at Raisina Road's north-east end (OSM), nearest the Press Club. Could instead be the Rail Bhawan end."
+     }
+    ],
+    "crowd": [
+     {
+      "at": "jantar_mantar_road",
+      "share": 0.3,
+      "moving_to": null
+     },
+     {
+      "at": "metro_central_secretariat",
+      "share": 0.2,
+      "moving_to": null
+     },
+     {
+      "at": "raisina_rd_roundabout",
+      "share": 0.15,
+      "moving_to": "press_club"
+     },
+     {
+      "at": "shastri_bhawan",
+      "share": 0.15,
+      "moving_to": "parliament"
+     },
+     {
+      "at": "parliament_street",
+      "share": 0.2,
+      "moving_to": "parliament"
+     }
+    ],
+    "police": [
+     {
+      "at": "metro_central_secretariat",
+      "strength_text": null,
+      "units": "police personnel (Tribune)",
+      "fact_ref": 1,
+      "position": "approx"
+     },
+     {
+      "at": "shastri_bhawan",
+      "strength_text": null,
+      "units": "security personnel",
+      "fact_ref": 4,
+      "position": "approx"
+     },
+     {
+      "at": "constitution_club",
+      "strength_text": null,
+      "units": "Delhi Police barricade point (PTI)",
+      "fact_ref": 4,
+      "position": "approx"
+     },
+     {
+      "at": "press_club",
+      "strength_text": null,
+      "units": "Delhi Police barricade point (PTI)",
+      "fact_ref": 4,
+      "position": "approx"
+     }
+    ],
+    "barricades": [
+     {
+      "from": null,
+      "to": null,
+      "at": "constitution_club",
+      "kind": "barricade",
+      "position": "illustrative",
+      "basis": "PTI via Deccan Chronicle (3:22 pm): barricades 'near Constitution Club, Press Club of India, near Parliament, Parliament Street, Shankar Road, Jantar Mantar'."
+     },
+     {
+      "from": null,
+      "to": null,
+      "at": "press_club",
+      "kind": "barricade",
+      "position": "illustrative",
+      "basis": "Same PTI list."
+     },
+     {
+      "from": null,
+      "to": null,
+      "at": "shastri_bhawan",
+      "kind": "barricade",
+      "position": "illustrative",
+      "basis": "Dynamite News: protesters 'tried to push through barricades' near Shastri Bhawan."
+     }
+    ],
+    "incidents": [
+     {
+      "at": "metro_central_secretariat",
+      "kind": "tear_gas",
+      "fact_ref": 1
+     },
+     {
+      "at": "metro_central_secretariat",
+      "kind": "detention",
+      "fact_ref": 1
+     },
+     {
+      "at": "raisina_rd_roundabout",
+      "kind": "tear_gas",
+      "fact_ref": 3
+     },
+     {
+      "at": "press_club",
+      "kind": "tear_gas",
+      "fact_ref": 3
+     },
+     {
+      "at": "shastri_bhawan",
+      "kind": "tear_gas",
+      "fact_ref": 4
+     },
+     {
+      "at": "constitution_club",
+      "kind": "tear_gas",
+      "fact_ref": 5
+     }
+    ],
+    "route": null,
+    "closures": []
+   }
+  },
+  {
+   "id": "0720_1430",
+   "time": "14:30",
+   "time_end": "16:00",
+   "time_basis": "documented",
+   "time_note": "Live-blog stamps 2:47–3:55 pm; pellet 'around 3 pm' (Newslaundry); Raisina/Constitution Club 'mid-afternoon' (ThePrint). Rail Bhawan has no time.",
+   "title": "Patel Chowk: the heaviest charges",
+   "summary_facts": [
+    {
+     "text": "Heavy lathi charge and tear gas near Patel Chowk metro station; protesters threw glass and plastic bottles at security forces (3.08 pm).",
+     "time": "15:08",
+     "claimant": "ThePrint (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "theprint_0720_live",
+      "theprint_0720_top10"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "Heavy lathicharge and tear gas near Patel Chowk metro station",
+       "verified": true
+      },
+      {
+       "source_id": "theprint_0720_top10",
+       "url": "https://theprint.in/india/what-happened-during-cjps-chalo-sansad-top-10-developments-as-they-unfolded/2991429/",
+       "title": "What happened during CJP's 'Chalo Sansad': Top 10 developments, as they unfolded",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "Patel Chowk metro station saw the heaviest lathi charges",
+       "verified": true
+      }
+     ],
+     "note": "Snippets from a summarising fetch; may be paraphrase.",
+     "in_ledger": null
+    },
+    {
+     "text": "'Police fired multiple rounds of teargas shells in quick succession', clearing the area near Parliament Street (3:19 pm).",
+     "time": "15:19",
+     "claimant": "The Tribune (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "Police fired multiple rounds of teargas shells in quick succession",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Mid-afternoon, protesters reached the Raisina Road roundabout and Constitution Club, where police fired tear gas.",
+     "time": "15:00",
+     "claimant": "ThePrint (reporters)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "theprint_0720_top10"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint_0720_top10",
+       "url": "https://theprint.in/india/what-happened-during-cjps-chalo-sansad-top-10-developments-as-they-unfolded/2991429/",
+       "title": "What happened during CJP's 'Chalo Sansad': Top 10 developments, as they unfolded",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "reached the Raisina Road roundabout and Constitution Club",
+       "verified": true
+      }
+     ],
+     "note": "'Mid-afternoon', no clock time.",
+     "in_ledger": null
+    },
+    {
+     "text": "Police fired tear gas and lathi-charged near Parliament Street, Patel Chowk, Rail Bhawan and other areas.",
+     "claimant": "PTI",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "orissapost_0720"
+     ],
+     "page": 6,
+     "links": [
+      {
+       "source_id": "orissapost_0720",
+       "url": "https://www.orissapost.com/from-children-to-elderly-thousands-brave-rain-tear-gas-and-lathis-at-cjps-march-to-parliament/",
+       "title": "From children to elderly, thousands brave rain, tear gas and lathis at CJP's march to Parliament",
+       "publisher": "PTI (via OrissaPOST)",
+       "date": "2026-07-20",
+       "snippet": "Police fired tear-gas and resorted to lathi-charge near Parliament Street, Patel Chowk, Rail Bhawan and other areas",
+       "verified": true
+      }
+     ],
+     "note": "No time; PTI copy published 16:11 IST. This confirms Rail Bhawan, which the 2026-11-12 web check could not.",
+     "in_ledger": "protest_arrest.facts (lathi charges, tear gas at Parliament Street, Patel Chowk and Rail Bhawan; Rail Bhawan was unconfirmed there)"
+    },
+    {
+     "text": "'Abhijeet Dipke has been detained by Delhi Police' (2:47 pm); later Das said Dipke was 'not in detention or arrest' (3:55 pm).",
+     "time": "14:47",
+     "claimant": "Saurav Das (CJP)",
+     "attribution": "CJP claims",
+     "status": "disputed",
+     "source_ids": [
+      "theprint_0720_live",
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "Abhijeet Dipke has been detained by Delhi Police",
+       "verified": true
+      },
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "DIPKE HAS BEEN PICKED UP BY THE POLICE!",
+       "verified": true
+      }
+     ],
+     "note": "The South First reports Dipke and Dimple Yadav were detained and 'released later in the day'. ThePrint live: claim 2.56 pm, retraction 3.38 pm.",
+     "in_ledger": null
+    },
+    {
+     "text": "SP said 'Lok Sabha MP Dimple Yadav and other party MPs were detained by the police.' (3:17 pm)",
+     "time": "15:17",
+     "claimant": "Samajwadi Party",
+     "attribution": "reported",
+     "status": "claimed",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "Lok Sabha MP Dimple Yadav and other party MPs were detained by the police.",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Delhi Police denied 'sporadic use of violence/detentions at Jantar Mantar' (3.29 pm).",
+     "time": "15:29",
+     "claimant": "Delhi Police",
+     "attribution": "police said",
+     "status": "disputed",
+     "source_ids": [
+      "theprint_0720_live"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "sporadic use of violence/detentions at Jantar Mantar",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "'More than 20 protesters were detained, officials said.'",
+     "time": "16:45",
+     "value": 20,
+     "value_text": "20+",
+     "unit": "detained",
+     "claimant": "officials (via PTI)",
+     "attribution": "officials said",
+     "status": "disputed",
+     "source_ids": [
+      "theprint"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint",
+       "url": "https://theprint.in/india/clashes-tear-gas-thwart-students-march-to-parliament-several-injured-detained/2991284/",
+       "title": "Clashes, tear gas thwart students' march to Parliament; several injured, detained",
+       "publisher": "ThePrint (PTI)",
+       "date": "2026-07-20",
+       "snippet": "More than 20 protesters were detained, officials said.",
+       "verified": true
+      }
+     ],
+     "note": "Published 4:45 pm. Later figures: 100+ (police sources, 8:25 pm), ~70 (police statement, 11:54 pm).",
+     "in_ledger": null
+    },
+    {
+     "text": "A 19-year-old Delhi University student, Sahil Lochab, was hit near his face around 3 pm at Palika Bazar; doctors removed metallic pellet fragments from his right eye.",
+     "time": "15:00",
+     "claimant": "Newslaundry (victim's family, reports)",
+     "attribution": "reported",
+     "status": "alleged",
+     "source_ids": [
+      "newslaundry_0727",
+      "wiki_sansad_chalo"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "newslaundry_0727",
+       "url": "https://www.newslaundry.com/2026/07/27/4-victims-1-pattern-july-20-injuries-put-rafs-sensitive-policing-motto-and-manual-under-spotlight",
+       "title": "4 victims, 1 pattern: July 20 injuries put RAF's 'sensitive policing' motto and manual under spotlight",
+       "publisher": "Newslaundry",
+       "date": "2026-07-27",
+       "snippet": "Around 3 pm",
+       "verified": true
+      },
+      {
+       "source_id": "wiki_sansad_chalo",
+       "url": "https://en.wikipedia.org/wiki/Sansad_Chalo_march",
+       "title": "Sansad Chalo march",
+       "publisher": "Wikipedia",
+       "date": null,
+       "snippet": "Pellet injury to a 19-year-old at Palika Bazar",
+       "verified": true
+      }
+     ],
+     "note": "Snippets from a summarising fetch.",
+     "in_ledger": null
+    }
+   ],
+   "map": {
+    "focus_sites": [
+     "patel_chowk",
+     "metro_patel_chowk",
+     "parliament_street",
+     "rail_bhawan",
+     "constitution_club",
+     "raisina_rd_roundabout",
+     "palika_bazar"
+    ],
+    "places": [
+     {
+      "id": "raisina_rd_roundabout",
+      "name": "Raisina Road roundabout (Windsor Place end)",
+      "lat": 28.61975,
+      "lon": 77.21825,
+      "position": "illustrative",
+      "basis": "ThePrint top 10: protesters 'reached the Raisina Road roundabout and Constitution Club'. Which roundabout is not stated; placed at Raisina Road's north-east end (OSM), nearest the Press Club. Could instead be the Rail Bhawan end."
+     }
+    ],
+    "crowd": [
+     {
+      "at": "jantar_mantar_road",
+      "share": 0.25,
+      "moving_to": null
+     },
+     {
+      "at": "patel_chowk",
+      "share": 0.25,
+      "moving_to": "parliament"
+     },
+     {
+      "at": "rail_bhawan",
+      "share": 0.15,
+      "moving_to": "parliament"
+     },
+     {
+      "at": "constitution_club",
+      "share": 0.15,
+      "moving_to": null
+     },
+     {
+      "at": "palika_bazar",
+      "share": 0.2,
+      "moving_to": null
+     }
+    ],
+    "police": [
+     {
+      "at": "metro_patel_chowk",
+      "strength_text": null,
+      "units": "security forces",
+      "fact_ref": 0,
+      "position": "approx"
+     },
+     {
+      "at": "rail_bhawan",
+      "strength_text": null,
+      "units": "Delhi Police",
+      "fact_ref": 3,
+      "position": "approx"
+     },
+     {
+      "at": "palika_bazar",
+      "strength_text": null,
+      "units": "security personnel (unit not named by Newslaundry)",
+      "fact_ref": 8,
+      "position": "approx"
+     }
+    ],
+    "barricades": [
+     {
+      "from": null,
+      "to": null,
+      "at": "patel_chowk",
+      "kind": "barricade",
+      "position": "illustrative",
+      "basis": "PTI: police stopped protesters 'at several points using multiple layers of barricades'; Patel Chowk not individually described."
+     },
+     {
+      "from": null,
+      "to": null,
+      "at": "rail_bhawan",
+      "kind": "barricade",
+      "position": "illustrative",
+      "basis": "Dynamite News: protesters 'allegedly attempted to cross police barricades' near Rail Bhawan."
+     }
+    ],
+    "incidents": [
+     {
+      "at": "metro_patel_chowk",
+      "kind": "lathi_charge",
+      "fact_ref": 0
+     },
+     {
+      "at": "metro_patel_chowk",
+      "kind": "tear_gas",
+      "fact_ref": 0
+     },
+     {
+      "at": "metro_patel_chowk",
+      "kind": "stone_throwing",
+      "fact_ref": 0
+     },
+     {
+      "at": "parliament_street",
+      "kind": "tear_gas",
+      "fact_ref": 1
+     },
+     {
+      "at": "constitution_club",
+      "kind": "tear_gas",
+      "fact_ref": 2
+     },
+     {
+      "at": "rail_bhawan",
+      "kind": "lathi_charge",
+      "fact_ref": 3
+     },
+     {
+      "at": "palika_bazar",
+      "kind": "pellets",
+      "fact_ref": 8
+     },
+     {
+      "at": "parliament_street",
+      "kind": "detention",
+      "fact_ref": 7,
+      "position": "illustrative",
+      "note": "PTI gives no place for the 20+ detentions; Deccan Chronicle (PTI) names Parliament Street, Patel Chowk, Constitution Club and Shastri Bhawan."
+     }
+    ],
+    "route": null,
+    "closures": []
+   }
+  },
+  {
+   "id": "0720_1600",
+   "time": "16:00",
+   "time_end": "17:30",
+   "time_basis": "documented",
+   "time_note": "Pellet hits 'around 4 pm' and 'around 5 pm' (Newslaundry); Tribune stamps 4:56 and 5:22 pm. The Regal-complex video and the LIC stampede have no time.",
+   "title": "Pellets in Connaught Place",
+   "summary_facts": [
+    {
+     "text": "An Outlook India reporter was hit around 4 pm at Palika Bazar; a Safdarjung Hospital assessment recorded '26 small, round wounds'.",
+     "time": "16:00",
+     "claimant": "Newslaundry (citing Outlook India)",
+     "attribution": "reported",
+     "status": "alleged",
+     "source_ids": [
+      "newslaundry_0727"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "newslaundry_0727",
+       "url": "https://www.newslaundry.com/2026/07/27/4-victims-1-pattern-july-20-injuries-put-rafs-sensitive-policing-motto-and-manual-under-spotlight",
+       "title": "4 victims, 1 pattern: July 20 injuries put RAF's 'sensitive policing' motto and manual under spotlight",
+       "publisher": "Newslaundry",
+       "date": "2026-07-27",
+       "snippet": "26 small, round wounds",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Shaikh Irshad Mansoori, 25, was hit around 5 pm near Palika Bazar; surgeons removed pellets from his face and neck.",
+     "time": "17:00",
+     "claimant": "Newslaundry (victim's account)",
+     "attribution": "reported",
+     "status": "alleged",
+     "source_ids": [
+      "newslaundry_0727",
+      "wiki_sansad_chalo"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "newslaundry_0727",
+       "url": "https://www.newslaundry.com/2026/07/27/4-victims-1-pattern-july-20-injuries-put-rafs-sensitive-policing-motto-and-manual-under-spotlight",
+       "title": "4 victims, 1 pattern: July 20 injuries put RAF's 'sensitive policing' motto and manual under spotlight",
+       "publisher": "Newslaundry",
+       "date": "2026-07-27",
+       "snippet": "Near Palika Bazar",
+       "verified": true
+      },
+      {
+       "source_id": "wiki_sansad_chalo",
+       "url": "https://en.wikipedia.org/wiki/Sansad_Chalo_march",
+       "title": "Sansad Chalo march",
+       "publisher": "Wikipedia",
+       "date": null,
+       "snippet": "Pellet injury to a 25-year-old near Palika Bazar",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "A video reportedly shows an RAF member firing a 12-bore pump-action shotgun outside the Pind Balluchi restaurant at the Regal cinema complex, Connaught Place.",
+     "claimant": "Newslaundry (video)",
+     "attribution": "reported",
+     "status": "alleged",
+     "source_ids": [
+      "newslaundry_0727"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "newslaundry_0727",
+       "url": "https://www.newslaundry.com/2026/07/27/4-victims-1-pattern-july-20-injuries-put-rafs-sensitive-policing-motto-and-manual-under-spotlight",
+       "title": "4 victims, 1 pattern: July 20 injuries put RAF's 'sensitive policing' motto and manual under spotlight",
+       "publisher": "Newslaundry",
+       "date": "2026-07-27",
+       "snippet": "outside the Pind Balluchi restaurant at the Regal cinema complex",
+       "verified": true
+      }
+     ],
+     "note": "No time stated.",
+     "in_ledger": null
+    },
+    {
+     "text": "RAF personnel fired seven pellet gun rounds on July 20; five hit protesters.",
+     "value": 7,
+     "unit": "pellet rounds",
+     "claimant": "CRPF report (via The Wire)",
+     "attribution": "reported",
+     "status": "disputed",
+     "source_ids": [
+      "thewire"
+     ],
+     "page": 6,
+     "links": [
+      {
+       "source_id": "thewire",
+       "url": "https://thewire.in/rights/raf-personnel-fired-seven-pellet-gun-rounds-on-july-20-five-hit-protesters-crpf-report-finds",
+       "title": "RAF Fired Seven Pellet Gun Rounds on July 20, Five Hit Protesters, CRPF Report Finds",
+       "publisher": "The Wire",
+       "date": null,
+       "snippet": null,
+       "verified": true
+      }
+     ],
+     "in_ledger": "protest_arrest.facts (7 rounds / 5 hits)"
+    },
+    {
+     "text": "The General Diary records the RAF firing 'two rounds using ballistic cartridges with plastic pellets from an anti-riot gun' on the instructions of a DCP-rank officer in Zone 1 of Jantar Mantar.",
+     "value": 2,
+     "unit": "pellet rounds",
+     "claimant": "Delhi Police General Diary (via The Tribune)",
+     "attribution": "police said",
+     "status": "disputed",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": 13,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/news/delhi/raf-fired-pellet-gun-on-order-of-dcp-at-cjp-protest-general-diary-details-reveal/",
+       "title": "RAF fired pellet gun on order of DCP at CJP protest, general diary details reveal",
+       "publisher": "The Tribune",
+       "date": "2026-07-28",
+       "snippet": "two rounds using ballistic cartridges with plastic pellets from an anti-riot gun",
+       "verified": true
+      }
+     ],
+     "note": "Same GD: 'RAF fired 55 rounds of non-electrical shells, 15 rounds of electrical shells, five tear gas grenades'. GD registered at 1:24 am (per Tribune); firing time not given.",
+     "in_ledger": "protest_arrest.facts (2 rounds)"
+    },
+    {
+     "text": "'Reports of stone pelting and lathi charge have emerged from the Connaught Place area', with shops closing early (4:56 pm).",
+     "time": "16:56",
+     "claimant": "The Tribune (live blog)",
+     "attribution": "reported",
+     "status": "claimed",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "Reports of stone pelting and lathi charge have emerged from the Connaught Place area",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "A lathi charge near the LIC building at Rajiv Chowk; 'There was such a severe lathi charge that a stampede broke out.'",
+     "claimant": "protester (via The Tribune)",
+     "attribution": "alleged",
+     "status": "alleged",
+     "source_ids": [
+      "tribune_0722_rml"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribune_0722_rml",
+       "url": "https://www.tribuneindia.com/news/delhi/the-human-cost-of-police-crackdown/",
+       "title": "The human cost of police crackdown",
+       "publisher": "The Tribune",
+       "date": "2026-07-22",
+       "snippet": "There was such a severe lathi charge that a stampede broke out.",
+       "verified": true
+      }
+     ],
+     "note": "No time stated.",
+     "in_ledger": null
+    },
+    {
+     "text": "Gurdwara Bangla Sahib offered shelter; 'Emergency services are reportedly facing difficulties accessing the area.' (5:22 pm)",
+     "time": "17:22",
+     "claimant": "The Tribune (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "tribune_0721_gurdwara",
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "Emergency services are reportedly facing difficulties accessing the area.",
+       "verified": true
+      },
+      {
+       "source_id": "tribune_0721_gurdwara",
+       "url": "https://www.tribuneindia.com/news/india/gurdwara-bangla-sahib-shelters-injured-stranded",
+       "title": "Gurdwara Bangla Sahib shelters injured, stranded",
+       "publisher": "The Tribune",
+       "date": "2026-07-21",
+       "snippet": "Parliament Street, Connaught Place and Shivaji Stadium",
+       "verified": true
+      }
+     ],
+     "in_ledger": "protest_arrest.sub_beats.pa_0720 (Gurdwara refuge, no time)"
+    },
+    {
+     "text": "Nadda said talks had been held and asked protesters to end the sit-in (4.53 pm).",
+     "time": "16:53",
+     "claimant": "ThePrint (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "theprint_0720_live"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "Nadda said talks had been held",
+       "verified": true
+      }
+     ],
+     "note": "Snippet from a summarising fetch; may be paraphrase. Not a map item.",
+     "in_ledger": null
+    }
+   ],
+   "map": {
+    "focus_sites": [
+     "palika_bazar",
+     "regal_cp",
+     "lic_rajiv_chowk",
+     "metro_rajiv_chowk",
+     "gurdwara_bangla_sahib",
+     "shivaji_stadium"
+    ],
+    "places": [
+     {
+      "id": "regal_cp",
+      "name": "Regal cinema complex, Connaught Place",
+      "lat": 28.6298,
+      "lon": 77.2166,
+      "position": "approx",
+      "basis": "Known geography (Regal building, CP outer circle at Sansad Marg). Newslaundry 27 Jul: video of RAF member firing a shotgun 'outside the Pind Balluchi restaurant at the Regal cinema complex'."
+     },
+     {
+      "id": "lic_rajiv_chowk",
+      "name": "LIC building (Jeevan Bharti), Rajiv Chowk",
+      "lat": 28.62943,
+      "lon": 77.2185,
+      "position": "approx",
+      "basis": "OSM 'Jeevan Bharti'. Tribune 22 Jul: panic 'near the LIC building at Rajiv Chowk', a lathi charge and a stampede (time not given)."
+     },
+     {
+      "id": "shivaji_stadium",
+      "name": "Shivaji Stadium",
+      "lat": 28.632,
+      "lon": 77.2155,
+      "position": "approx",
+      "basis": "OSM 'Shivaji Stadium Time Keeper Booth'. Tribune: roads around 'Parliament Street, Connaught Place and Shivaji Stadium' choked with protesters, barricades and tear gas."
+     }
+    ],
+    "crowd": [
+     {
+      "at": "jantar_mantar_road",
+      "share": 0.3,
+      "moving_to": null
+     },
+     {
+      "at": "palika_bazar",
+      "share": 0.25,
+      "moving_to": null
+     },
+     {
+      "at": "lic_rajiv_chowk",
+      "share": 0.15,
+      "moving_to": null
+     },
+     {
+      "at": "shivaji_stadium",
+      "share": 0.1,
+      "moving_to": "gurdwara_bangla_sahib"
+     },
+     {
+      "at": "gurdwara_bangla_sahib",
+      "share": 0.2,
+      "moving_to": null
+     }
+    ],
+    "police": [
+     {
+      "at": "regal_cp",
+      "strength_text": null,
+      "units": "RAF (video, per Newslaundry)",
+      "fact_ref": 2,
+      "position": "approx"
+     },
+     {
+      "at": "palika_bazar",
+      "strength_text": null,
+      "units": "security personnel",
+      "fact_ref": 0,
+      "position": "approx"
+     }
+    ],
+    "barricades": [],
+    "incidents": [
+     {
+      "at": "palika_bazar",
+      "kind": "pellets",
+      "fact_ref": 0
+     },
+     {
+      "at": "palika_bazar",
+      "kind": "pellets",
+      "fact_ref": 1
+     },
+     {
+      "at": "regal_cp",
+      "kind": "pellets",
+      "fact_ref": 2
+     },
+     {
+      "at": "palika_bazar",
+      "kind": "stone_throwing",
+      "fact_ref": 5,
+      "position": "illustrative",
+      "note": "Source says 'Connaught Place area' only."
+     },
+     {
+      "at": "lic_rajiv_chowk",
+      "kind": "lathi_charge",
+      "fact_ref": 6
+     }
+    ],
+    "route": null,
+    "closures": []
+   }
+  },
+  {
+   "id": "0720_1730",
+   "time": "17:30",
+   "time_end": "20:40",
+   "time_basis": "documented",
+   "time_note": "RML counts at 5.30 pm and 7 pm; internet 5:38 pm; stage 6:25/6:43 pm; detention figure published 8:25 pm. 'Late evening' (Tribune RML) and 'Monday evening' (South First) have no clock time.",
+   "title": "Hospitals fill; stage comes down",
+   "summary_facts": [
+    {
+     "text": "Around 100 injured, including 10 police personnel, had been brought to RML Hospital's emergency by 5.30 pm; four protesters in the ICU.",
+     "time": "17:30",
+     "value": 100,
+     "value_text": "~100",
+     "unit": "injured at RML",
+     "claimant": "Newslaundry, citing Indian Express hospital sources",
+     "attribution": "reported",
+     "status": "disputed",
+     "source_ids": [
+      "newslaundry"
+     ],
+     "page": 1,
+     "links": [
+      {
+       "source_id": "newslaundry",
+       "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures",
+       "title": "Lathis, tear gas and injured protesters: The 'Chalo Sansad' crackdown in pictures",
+       "publisher": "Newslaundry",
+       "date": "2026-07-21",
+       "snippet": "Around 100 of them, including 10 police personnel, had been brought to Ram Manohar Lohia Hospital’s emergency by 5.30 pm.",
+       "verified": true
+      }
+     ],
+     "in_ledger": "protest_arrest.facts (~100 at RML)"
+    },
+    {
+     "text": "RML stopped admitting patients once its emergency was overwhelmed; many injured were diverted to Lady Hardinge Hospital.",
+     "claimant": "Newslaundry",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "newslaundry"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "newslaundry",
+       "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures",
+       "title": "Lathis, tear gas and injured protesters: The 'Chalo Sansad' crackdown in pictures",
+       "publisher": "Newslaundry",
+       "date": "2026-07-21",
+       "snippet": "many of the injured were diverted to Lady Hardinge Hospital",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "Ram Manohar Lohia Hospital recorded 65 medico-legal cases, involving both protesters and police, by 7 pm.",
+     "time": "19:00",
+     "value": 65,
+     "unit": "medico-legal cases",
+     "claimant": "Hospital authorities and police sources (via Wikipedia)",
+     "attribution": "reported",
+     "status": "claimed",
+     "source_ids": [
+      "wiki_protests"
+     ],
+     "page": 19,
+     "links": [
+      {
+       "source_id": "wiki_protests",
+       "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests",
+       "title": "2026 Delhi Jantar Mantar protests",
+       "publisher": "Wikipedia",
+       "date": null,
+       "snippet": "Ram Manohar Lohia Hospital alone recorded 65 medico-legal cases involving both protesters and police by 7 pm.",
+       "verified": true
+      }
+     ],
+     "in_ledger": "protest_arrest.sub_beats.pa_0720 (65 MLCs)"
+    },
+    {
+     "text": "By late evening, 'more than 200 people were brought to the emergency block'; around 10–12 police personnel were treated, according to a senior doctor.",
+     "value": 200,
+     "value_text": "200+",
+     "unit": "brought to RML emergency",
+     "claimant": "The Tribune (senior doctor for the police figure)",
+     "attribution": "reported",
+     "status": "disputed",
+     "source_ids": [
+      "tribune_0722_rml"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribune_0722_rml",
+       "url": "https://www.tribuneindia.com/news/delhi/the-human-cost-of-police-crackdown/",
+       "title": "The human cost of police crackdown",
+       "publisher": "The Tribune",
+       "date": "2026-07-22",
+       "snippet": "more than 200 people were brought to the emergency block after clashes broke out between protesters and the police.",
+       "verified": true
+      }
+     ],
+     "note": "Larger than the ledger's figures (~100 by 5.30 pm; 65 MLCs by 7 pm). The '200' is not attributed to a named person; officials at the RML police post declined to give numbers.",
+     "in_ledger": null
+    },
+    {
+     "text": "The CJP claims about 150 protesters were hospitalised.",
+     "value": 150,
+     "value_text": "~150",
+     "unit": "protesters hospitalised",
+     "claimant": "CJP",
+     "attribution": "CJP claims",
+     "status": "disputed",
+     "source_ids": [
+      "wiki_protests"
+     ],
+     "page": 1,
+     "links": [
+      {
+       "source_id": "wiki_protests",
+       "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests",
+       "title": "2026 Delhi Jantar Mantar protests",
+       "publisher": "Wikipedia",
+       "date": null,
+       "snippet": "around 150 protesters were hospitalised and roughly 70 were detained",
+       "verified": true
+      }
+     ],
+     "in_ledger": "protest_arrest.facts (~150, CJP)"
+    },
+    {
+     "text": "'Disruptions to internet services in the area have affected app-based cab services.' (5:38 pm); the suspension 'remained in effect until the evening of July 20'.",
+     "time": "17:38",
+     "claimant": "The Tribune (live blog); The Week",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "repo_iff_central_delhi",
+      "repo_theweek_0722",
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "Disruptions to internet services in the area have affected app-based cab services.",
+       "verified": true
+      },
+      {
+       "source_id": "repo_theweek_0722",
+       "url": "https://www.theweek.in/news/india/2026/07/22/blanket-blackout-no-order-sudden-internet-shutdown-amid-cjp-s-chalo-sansad-protest-raises-questions.html",
+       "title": "Blanket blackout, no order: sudden internet shutdown amid CJP's Chalo Sansad protest raises questions",
+       "publisher": "The Week",
+       "date": "2026-07-22",
+       "snippet": "remained in effect until the evening of July 20",
+       "verified": true
+      },
+      {
+       "source_id": "repo_iff_central_delhi",
+       "url": "https://internetfreedom.in/iff-condemns-the-internet-shutdown-in-parts-of-central-delhi-no-suspension-order-has-been-made-public/",
+       "title": "IFF condemns the internet shutdown in parts of Central Delhi",
+       "publisher": "Internet Freedom Foundation",
+       "date": "2026-07-20",
+       "snippet": "no copy of any suspension order has been published",
+       "verified": true
+      }
+     ],
+     "note": "No published order (IFF). The South First reports jammers and 'a near-total internet shutdown across a 5-km radius from Jantar Mantar' (single source, unverified).",
+     "in_ledger": null
+    },
+    {
+     "text": "Police dismantled the stage at Jantar Mantar (Tribune 6:25 pm; ThePrint 6.43 pm: tents and stage cleared).",
+     "time": "18:25",
+     "claimant": "The Tribune (live blog); ThePrint (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "theprint_0720_live",
+      "tribuneindia"
+     ],
+     "page": 6,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "The stage at Jantar Mantar that had become the symbol",
+       "verified": true
+      },
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "Police cleared tents and the stage",
+       "verified": true
+      }
+     ],
+     "in_ledger": "protest_arrest.facts ('stage and tents dismantled', no time)"
+    },
+    {
+     "text": "Dipke, Das, Ranka and Gitanjali Angmo returned to Jantar Mantar on Monday evening.",
+     "claimant": "The South First",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "southfirst_0720"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "southfirst_0720",
+       "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/",
+       "title": "Delhi Police lathi-charge, fire tear gas at 'Sansad Chalo' march, detain Abhijeet Dipke, Dimple Yadav and others",
+       "publisher": "The South First",
+       "date": "2026-07-20",
+       "snippet": "Dipke, Das, Ashutosh Ranka and Dr Gitanjali Angmo returned to Jantar Mantar on Monday evening",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "'According to police sources, more than 100 protesters were detained', taken to 'different police stations and temporary detention centres across Delhi'.",
+     "time": "20:25",
+     "value": 100,
+     "value_text": "100+",
+     "unit": "detained",
+     "claimant": "police sources (via PTI)",
+     "attribution": "police said",
+     "status": "disputed",
+     "source_ids": [
+      "deccanchronicle_0720_detained"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "deccanchronicle_0720_detained",
+       "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502",
+       "title": "Over 50 Police, Protesters Injured During CJP March; 100+ Detained",
+       "publisher": "Deccan Chronicle (PTI)",
+       "date": "2026-07-20",
+       "snippet": "According to police sources, more than 100 protesters were detained.",
+       "verified": true
+      }
+     ],
+     "note": "Published 8:25 pm. Same piece: '50+ injured (police and protesters)', unattributed.",
+     "in_ledger": null
+    },
+    {
+     "text": "Detainees said they were beaten in the Parliament Street police station before being released that evening.",
+     "claimant": "detained protesters (via The Caravan)",
+     "attribution": "alleged",
+     "status": "alleged",
+     "source_ids": [
+      "caravan_0723"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "caravan_0723",
+       "url": "https://caravanmagazine.in/politics/defiance-chaos-repression-cjp-sansad-march",
+       "title": "People vs Police (CJP Sansad march reportage)",
+       "publisher": "The Caravan",
+       "date": "2026-07-23",
+       "snippet": "they had been beaten during the hours they spent in the Parliament Street police station",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    }
+   ],
+   "map": {
+    "focus_sites": [
+     "rml_hospital",
+     "lady_hardinge",
+     "jantar_mantar_road",
+     "parliament_street_ps"
+    ],
+    "places": [
+     {
+      "id": "lady_hardinge",
+      "name": "Lady Hardinge Medical College and hospital",
+      "lat": 28.6345,
+      "lon": 77.209,
+      "position": "approx",
+      "basis": "Known geography (Shaheed Bhagat Singh Marg). Newslaundry: injured 'diverted to Lady Hardinge Hospital' when RML was overwhelmed; Mansoori operated on there 21 Jul."
+     },
+     {
+      "id": "parliament_street_ps",
+      "name": "Parliament Street police station",
+      "lat": 28.6233,
+      "lon": 77.2133,
+      "position": "illustrative",
+      "basis": "On Sansad Marg near Patel Chowk; exact point not in our OSM dump. Caravan: detainees beaten 'in the Parliament Street police station' before release that evening."
+     }
+    ],
+    "crowd": [
+     {
+      "at": "jantar_mantar_road",
+      "share": 0.5,
+      "moving_to": null
+     },
+     {
+      "at": "rml_hospital",
+      "share": 0.3,
+      "moving_to": null
+     },
+     {
+      "at": "lady_hardinge",
+      "share": 0.1,
+      "moving_to": null
+     },
+     {
+      "at": "parliament_street_ps",
+      "share": 0.1,
+      "moving_to": null
+     }
+    ],
+    "police": [
+     {
+      "at": "jantar_mantar_road",
+      "strength_text": null,
+      "units": "Delhi Police (stage removal)",
+      "fact_ref": 6,
+      "position": "approx"
+     },
+     {
+      "at": "parliament_street_ps",
+      "strength_text": null,
+      "units": "Delhi Police",
+      "fact_ref": 9,
+      "position": "illustrative"
+     }
+    ],
+    "barricades": [],
+    "incidents": [
+     {
+      "at": "rml_hospital",
+      "kind": "injury",
+      "fact_ref": 0
+     },
+     {
+      "at": "lady_hardinge",
+      "kind": "injury",
+      "fact_ref": 1
+     },
+     {
+      "at": "parliament_street_ps",
+      "kind": "detention",
+      "fact_ref": 9
+     }
+    ],
+    "route": null,
+    "closures": [
+     {
+      "kind": "internet",
+      "ids": [
+       "jantar_mantar_road",
+       "parliament_street",
+       "palika_bazar"
+      ],
+      "fact_ref": 5
+     }
+    ]
+   }
+  },
+  {
+   "id": "0720_2040",
+   "time": "20:40",
+   "time_end": "23:59",
+   "time_basis": "documented",
+   "time_note": "Stamps 8.40, 9:45, 10:44, 10:55 and 11:54 pm are publication stamps. The events they describe may be earlier.",
+   "title": "Night: site cleared, police tally",
+   "summary_facts": [
+    {
+     "text": "Protesters described being 'trapped' in tear gas near Patel Chowk, with barricades placed at all ends.",
+     "time": "20:40",
+     "claimant": "protesters (via ThePrint live blog)",
+     "attribution": "alleged",
+     "status": "alleged",
+     "source_ids": [
+      "theprint_0720_live"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "trapped",
+       "verified": true
+      }
+     ],
+     "note": "Entry stamped 8.40 pm; the event may be earlier. Snippet from a summarising fetch.",
+     "in_ledger": null
+    },
+    {
+     "text": "Protesters pelted stones after police fired tear gas; 'Dozens of protesters and police personnel were injured', witnesses said.",
+     "time": "21:45",
+     "claimant": "AFP (via Deccan Chronicle live)",
+     "attribution": "reported",
+     "status": "disputed",
+     "source_ids": [
+      "deccanchronicle_0720_live"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "deccanchronicle_0720_live",
+       "url": "https://www.deccanchronicle.com/live-dipke-detained-thousands-brave-tear-gas-at-cjp-march",
+       "title": "Live: Dipke detained, thousands brave tear gas at CJP march",
+       "publisher": "Deccan Chronicle",
+       "date": "2026-07-20",
+       "snippet": "Dozens of protesters and police personnel were injured",
+       "verified": true
+      }
+     ],
+     "note": "Posted 9:45 pm; event time not given. CJP released videos it said showed police throwing stones (Wikipedia, citing Mathrubhumi).",
+     "in_ledger": null
+    },
+    {
+     "text": "'police wiped clean the protest site at Jantar Mantar', removing the stage and tents, citing Section 163 BNSS (10:44 pm).",
+     "time": "22:44",
+     "claimant": "The Tribune (live blog)",
+     "attribution": "reported",
+     "status": "documented",
+     "source_ids": [
+      "tribuneindia"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "tribuneindia",
+       "url": "https://www.tribuneindia.com/liveblog/delhi/live-updates-thousands-gather-at-jantar-mantar-ahead-of-cjps-march-to-parliament/",
+       "title": "'Sansad Chalo' march live updates",
+       "publisher": "The Tribune",
+       "date": "2026-07-20",
+       "snippet": "police wiped clean the protest site at Jantar Mantar",
+       "verified": true
+      }
+     ],
+     "in_ledger": null
+    },
+    {
+     "text": "The CJP alleged excessive force; a sit-in continued near Kerala House (10:55 pm).",
+     "time": "22:55",
+     "claimant": "CJP (via Deccan Chronicle live)",
+     "attribution": "CJP claims",
+     "status": "claimed",
+     "source_ids": [
+      "deccanchronicle_0720_live"
+     ],
+     "page": null,
+     "links": [
+      {
+       "source_id": "deccanchronicle_0720_live",
+       "url": "https://www.deccanchronicle.com/live-dipke-detained-thousands-brave-tear-gas-at-cjp-march",
+       "title": "Live: Dipke detained, thousands brave tear gas at CJP march",
+       "publisher": "Deccan Chronicle",
+       "date": "2026-07-20",
+       "snippet": "sit-in continued near Kerala House",
+       "verified": true
+      }
+     ],
+     "note": "Snippet from a summarising fetch; Tribune live-blog headline also says 'continues sit-in near Kerala House'.",
+     "in_ledger": null
+    },
+    {
+     "text": "A Delhi Police statement said more than 118 personnel were injured, around 60 protesters were injured, about 70 protesters were detained and 15–20 government vehicles were vandalised; protesters 'attacked police personnel with stones and other objects'.",
+     "time": "23:54",
+     "value": 118,
+     "value_text": "118+",
+     "unit": "police injured",
+     "claimant": "Delhi Police (via PTI)",
+     "attribution": "police said",
+     "status": "disputed",
+     "source_ids": [
+      "pti",
+      "theprint_0720_live"
+     ],
+     "page": 1,
+     "links": [
+      {
+       "source_id": "pti",
+       "url": "https://telanganatoday.com/violent-cjp-protest-leaves-118-police-personnel-injured-70-detained",
+       "title": "Violent CJP protest leaves 118 police personnel injured, 70 detained",
+       "publisher": "PTI (via Telangana Today)",
+       "date": "2026-07-20",
+       "snippet": "Around 70 protesters have been detained.",
+       "verified": true
+      },
+      {
+       "source_id": "theprint_0720_live",
+       "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+       "title": "CJP Parliament march live updates",
+       "publisher": "ThePrint",
+       "date": "2026-07-20",
+       "snippet": "attacked police personnel with stones and other objects",
+       "verified": true
+      }
+     ],
+     "note": "PTI published 11:54 pm. Police later denied detaining anyone (dossier p19/p21; not re-checked).",
+     "in_ledger": "protest_arrest.facts (118+, ~60, ~70) and pa_0720 (15–20 vehicles)"
+    }
+   ],
+   "map": {
+    "focus_sites": [
+     "jantar_mantar_road",
+     "kerala_house",
+     "patel_chowk"
+    ],
+    "places": [
+     {
+      "id": "kerala_house",
+      "name": "Kerala House lane, Jantar Mantar Road",
+      "lat": 28.6225,
+      "lon": 77.2157,
+      "position": "illustrative",
+      "basis": "Kerala House is on Jantar Mantar Road; exact point not taken from OSM (not tagged in our dump). Newslaundry (citing reports): lathis 'near the Kerala House lane'; Deccan Chronicle live 10:55 pm: CJP sit-in 'near Kerala House'."
+     }
+    ],
+    "crowd": [
+     {
+      "at": "kerala_house",
+      "share": 0.7,
+      "moving_to": null
+     },
+     {
+      "at": "patel_chowk",
+      "share": 0.3,
+      "moving_to": "kerala_house"
+     }
+    ],
+    "police": [
+     {
+      "at": "jantar_mantar_road",
+      "strength_text": null,
+      "units": "Delhi Police",
+      "fact_ref": 2,
+      "position": "approx"
+     }
+    ],
+    "barricades": [
+     {
+      "from": null,
+      "to": null,
+      "at": "patel_chowk",
+      "kind": "barricades 'at all ends'",
+      "position": "illustrative",
+      "basis": "Protesters' account via ThePrint live, 8.40 pm."
+     }
+    ],
+    "incidents": [
+     {
+      "at": "patel_chowk",
+      "kind": "tear_gas",
+      "fact_ref": 0
+     },
+     {
+      "at": "jantar_mantar_road",
+      "kind": "stone_throwing",
+      "fact_ref": 1,
+      "position": "approx",
+      "note": "AFP: tear gas 'at Jantar Mantar', protesters responded by pelting stones."
+     },
+     {
+      "at": "parliament_street",
+      "kind": "vehicle_damage",
+      "fact_ref": 4,
+      "position": "illustrative",
+      "note": "Police statement gives only 'the New Delhi area'."
+     }
+    ],
+    "route": null,
+    "closures": []
+   }
+  }
+ ],
+ "deployment": [
+  {
+   "text": "More than 5,000 Delhi Police and paramilitary personnel deployed, with 'Vajra' anti-riot vehicles, water cannons and other specialised equipment at sensitive points.",
+   "time": "08:23",
+   "value": 5000,
+   "value_text": "5,000+",
+   "unit": "personnel",
+   "claimant": "Business Today (unattributed)",
+   "attribution": "reported",
+   "status": "claimed",
+   "source_ids": [
+    "businesstoday_0720"
+   ],
+   "page": null,
+   "links": [
+    {
+     "source_id": "businesstoday_0720",
+     "url": "https://www.businesstoday.in/india/story/cjps-chalo-sansad-march-anti-riot-vehicles-5000-personnel-deployed-traffic-advisory-in-delhi-543826-2026-07-20",
+     "title": "CJP's 'Chalo Sansad' march: Anti-riot vehicles, 5,000 personnel deployed; traffic advisory in Delhi",
+     "publisher": "Business Today",
+     "date": "2026-07-20",
+     "snippet": "More than 5,000 Delhi Police and paramilitary personnel have been deployed",
+     "verified": true
+    }
+   ],
+   "note": "Published 8:23 am. No named official.",
+   "in_ledger": null
+  },
+  {
+   "text": "Over 5,000 personnel from the Delhi Police and paramilitary forces, and over 25 battalions of the Central Armed Police Forces (CAPF).",
+   "value": 5000,
+   "value_text": "5,000+ plus 25+ CAPF battalions",
+   "unit": "personnel",
+   "claimant": "India.com",
+   "attribution": "reported",
+   "status": "claimed",
+   "source_ids": [
+    "india"
+   ],
+   "page": 6,
+   "links": [
+    {
+     "source_id": "india",
+     "url": "https://www.india.com/news/india/chalo-sansad-march-delhi-security-home-miinistry-delhi-police-parliament-monsoon-session-cjp-protest-cockroach-janta-party-sachin-sharma-sonam-wangchuk-abhijeet-dipke-dharmendra-pradhan-ne-8478659/",
+     "title": "Chalo Sansad March: Delhi Police on HIGH ALERT ... deploys over 5000 security personnel",
+     "publisher": "India.com",
+     "date": "2026-07-20",
+     "snippet": "over 5,000 personnel from the Delhi Police and paramilitary forces ... over 25 battalions of the Central Armed Police Forces (CAPF)",
+     "verified": true
+    }
+   ],
+   "in_ledger": "protest_arrest.facts (5,000+ and 25+ CAPF battalions)"
+  },
+  {
+   "text": "'over 5,000 police personnel' deployed, plus additional Delhi Police companies, paramilitary personnel and rapid response teams.",
+   "value": 5000,
+   "value_text": "5,000+",
+   "unit": "personnel",
+   "claimant": "police sources (via PTI)",
+   "attribution": "police said",
+   "status": "claimed",
+   "source_ids": [
+    "deccanchronicle_0720_detained"
+   ],
+   "page": null,
+   "links": [
+    {
+     "source_id": "deccanchronicle_0720_detained",
+     "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502",
+     "title": "Over 50 Police, Protesters Injured During CJP March; 100+ Detained",
+     "publisher": "Deccan Chronicle (PTI)",
+     "date": "2026-07-20",
+     "snippet": "over 5,000 police personnel",
+     "verified": true
+    }
+   ],
+   "in_ledger": null
+  },
+  {
+   "text": "Delhi Police called in reinforcements from all 14 districts, each sending an ACP-rank officer and 100 personnel, in addition to 32 companies of paramilitary forces already deployed.",
+   "value_text": "14 districts × (1 ACP + 100); 32 paramilitary companies",
+   "unit": "personnel",
+   "claimant": "The Indian Express (via Newslaundry)",
+   "attribution": "reported",
+   "status": "claimed",
+   "source_ids": [
+    "newslaundry_0720"
+   ],
+   "page": null,
+   "links": [
+    {
+     "source_id": "newslaundry_0720",
+     "url": "https://newslaundry.com/2026/07/20/under-shadow-of-lathis-and-barricades-the-day-the-modi-govt-finally-engaged-the-cjp",
+     "title": "Under shadow of lathis and barricades: The day the Modi govt finally engaged the CJP",
+     "publisher": "Newslaundry (also on The News Minute)",
+     "date": "2026-07-20",
+     "snippet": "call in reinforcements from all 14 districts, with each asked to send an ACP-rank officer and 100 personnel",
+     "verified": true
+    }
+   ],
+   "note": "Do not multiply out on screen (14 × 100 = 1,400 is our arithmetic, not a sourced figure). Company size not given.",
+   "in_ledger": null
+  },
+  {
+   "text": "Over 300 police personnel at the protest site.",
+   "value": 300,
+   "value_text": "300+",
+   "unit": "personnel at the site",
+   "claimant": "ThePrint",
+   "attribution": "reported",
+   "status": "claimed",
+   "source_ids": [
+    "theprint_0720_live"
+   ],
+   "page": 6,
+   "links": [
+    {
+     "source_id": "theprint_0720_live",
+     "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/",
+     "title": "CJP Parliament march live updates",
+     "publisher": "ThePrint",
+     "date": "2026-07-20",
+     "snippet": "over 300 police personnel",
+     "verified": true
+    }
+   ],
+   "in_ledger": "detention.sub_beats.detention_0719"
+  },
+  {
+   "text": "The RAF, a CRPF unit, was deployed at Jantar Mantar and acted 'On instructions of the DCP'.",
+   "claimant": "Delhi Police General Diary (via The Tribune)",
+   "attribution": "police said",
+   "status": "documented",
+   "source_ids": [
+    "tribuneindia"
+   ],
+   "page": null,
+   "links": [
+    {
+     "source_id": "tribuneindia",
+     "url": "https://www.tribuneindia.com/news/delhi/raf-fired-pellet-gun-on-order-of-dcp-at-cjp-protest-general-diary-details-reveal/",
+     "title": "RAF fired pellet gun on order of DCP at CJP protest, general diary details reveal",
+     "publisher": "The Tribune",
+     "date": "2026-07-28",
+     "snippet": "The RAF is a special unit of the CRPF deployed for maintaining law and order.",
+     "verified": true
+    }
+   ],
+   "in_ledger": null
+  },
+  {
+   "text": "Plain-clothes personnel detained protesters and put them onto buses near the front line.",
+   "claimant": "Newslaundry (reporters)",
+   "attribution": "reported",
+   "status": "documented",
+   "source_ids": [
+    "newslaundry_0720"
+   ],
+   "page": 13,
+   "links": [
+    {
+     "source_id": "newslaundry_0720",
+     "url": "https://newslaundry.com/2026/07/20/under-shadow-of-lathis-and-barricades-the-day-the-modi-govt-finally-engaged-the-cjp",
+     "title": "Under shadow of lathis and barricades: The day the Modi govt finally engaged the CJP",
+     "publisher": "Newslaundry (also on The News Minute)",
+     "date": "2026-07-20",
+     "snippet": "police personnel, including some in plainclothes, detained protesters and put them onto buses",
+     "verified": true
+    }
+   ],
+   "in_ledger": "metrics.tactics (missing name badges; plain-clothes men with batons)"
+  },
+  {
+   "text": "Prohibitory orders under Section 163 BNSS remain in force (DCP New Delhi Sachin Sharma).",
+   "claimant": "DCP Sachin Sharma",
+   "attribution": "police said",
+   "status": "documented",
+   "source_ids": [
+    "businesstoday_0720"
+   ],
+   "page": 6,
+   "links": [
+    {
+     "source_id": "businesstoday_0720",
+     "url": "https://www.businesstoday.in/india/story/cjps-chalo-sansad-march-anti-riot-vehicles-5000-personnel-deployed-traffic-advisory-in-delhi-543826-2026-07-20",
+     "title": "CJP's 'Chalo Sansad' march: Anti-riot vehicles, 5,000 personnel deployed; traffic advisory in Delhi",
+     "publisher": "Business Today",
+     "date": "2026-07-20",
+     "snippet": "Deputy Commissioner of Police, New Delhi, Sachin Sharma, said prohibitory orders under Section 163",
+     "verified": true
+    }
+   ],
+   "in_ledger": "detention.sub_beats.detention_0719"
+  }
+ ],
+ "open_questions": [
+  "First baton charge: ThePrint says 7.30 am near Park Hotel; the Tribune live blog's first lathi-charge entry is 10:37 am; Delhi Police denied any violence at 11:07 am and 3.29 pm. All three can be true (separate incidents), but no source reconciles them.",
+  "Dipke's 'detention': Das claimed it at 2:47 pm (ThePrint 2.56 pm) and retracted it at 3:38–3:55 pm; The South First says Dipke and Dimple Yadav were detained and released later in the day.",
+  "Detention count over the day: 'more than 20' (officials, PTI, 4:45 pm) → 'more than 100' (police sources, PTI, 8:25 pm) → 'about 70' (Delhi Police statement, 11:54 pm) → later police denial (dossier p19/p21, not re-checked). CJP also cited ~70 (Wikipedia).",
+  "RML: ~100 by 5.30 pm incl. 10 police (Newslaundry citing IE); 65 MLCs by 7 pm (Wikipedia, hospital and police sources); 'more than 200' brought to emergency by late evening (Tribune). The Tribune figure is new and larger; its source is unclear.",
+  "Crowd: CJP 'one lakh' (7.20 am); 'over fifty thousand' (Caravan reporters); 'tens of thousands' (Guardian); 'more than 10,000' (DCP via Al Jazeera); 'close to 1,000' reached near Parliament (South First). The last is a sub-group, not the total.",
+  "Section 163 BNSS: PTI says police 'imposed' it 'at around 1 pm'; DCP Sharma and the 19–20 July reports say it was already in force. Possibly a fresh order for a wider area; unresolved.",
+  "Barricade height: '8-foot' (ThePrint), 'some over six feet tall' (Newslaundry), 'seven-foot' (CPI's D Raja). Show no number, or show each with its claimant.",
+  "Pellets: 2 rounds (police GD via Tribune) vs 7 rounds, 5 hits (CRPF report via The Wire). Newslaundry places 3 pellet victims at or near Palika Bazar at about 3, 4 and 5 pm, and an RAF shotgun video at the Regal complex. No source gives the firing positions.",
+  "Who fired: ANI says 'RPF' (Railway Protection Force); the Tribune, the GD and Newslaundry say RAF. Probably an ANI error, but keep as quoted.",
+  "Raisina Road roundabout (ThePrint) is not identified; it may be the Windsor Place end or the Rail Bhawan end. Placed illustratively at the Windsor Place end.",
+  "No source gives barricade coordinates. Named barricade points: Jantar Mantar entrance (both sides), Tolstoy Marg, Parliament Street/high-security zone, SBI building on Sansad Marg, Constitution Club, Press Club, near Parliament, Shankar Road (PTI list), Shastri Bhawan, Rail Bhawan, Janpath (Dynamite News). Lines on the map stay 'illustrative'.",
+  "No hour-by-hour police strength exists in any source. Only day totals (5,000+; 32 companies + 14 district contingents; 25+ CAPF battalions) and 300+ at the site at 7 am. The map should show the totals once, not per step.",
+  "Internet: no source gives a start time (earliest mention 9:23 am, Tribune) or an exact end ('until the evening', The Week). Area: 'parts of Central Delhi, including the area around Jantar Mantar' (IFF). South First's '5-km radius' and jammers are single-source.",
+  "Mandi House lathi charge (PTI eyewitnesses) has no time; DT Next's '5:23 am' stamp may be UTC.",
+  "Blocked or not fetched: Hindustan Times, Times of India, News18, Business Standard and Deccan Herald (403 or blocked); The Wire's pellet article body (headline only); Indian Express (paywall policy). Their details are used only where relayed by another outlet.",
+  "Several snippets come from a summarising fetch tool, not a raw page read. Those carry a note; re-check wording on the page before quoting on screen."
+ ]
+}

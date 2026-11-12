@@ -35,6 +35,11 @@ const ROAD_ORDER = ['path', 'service', 'minor', 'tertiary', 'secondary', 'major'
 // walking pace, then a short settle onto the slot (slope stays continuous: linear to 0.8, quadratic ease-out after)
 const landing = t => t < .8 ? t * .9 / .8 : .9 + .1 * (1 - (1 - (t - .8) / .2) ** 2) * 1;
 
+// S5 handover (S5 chat, 2026-11-12, additive; no change to S4's own frames): the roaches that stay on the map at
+// S4 p 1, in pool order, with their exact p 1 pose (same expressions as render()), plus the release camera.
+// S5 p 0 draws exactly these, so the stages hand over in place.
+export const release = { landed: () => null };
+
 export default def => {
   let ctx, W = 0, H = 0, p = 0, DATE = '', host, mapCv, hud, map = null, paths = null, landN = 0;
   let L = null;                                             // layout for the current viewport
@@ -63,6 +68,21 @@ export default def => {
     exit() { host.hidden = true; ctx.layers.swarm.ctx.clearRect(0, 0, W, H); },
     update(q) { p = q; backdrop.scroll(def, p); render(); },
     tick() { render(); },
+  };
+
+  release.landed = (t = 0) => {
+    if (!L) return null;
+    const P = [], Q = [], { slots, R, n, S } = L, list = ctx.swarm.list;
+    claim.poses(1, t, P, list, Q);
+    const out = [];
+    for (let i = 0; i < n; i++) {
+      const o = R[i]; if (!o || !o.stay) continue;
+      const s = slots[o.slot], sx = o.joiner ? o.sx : P[i].x, sy = o.joiner ? o.sy : P[i].y;
+      const tx = o.lx, ty = o.ly, dirA = Math.atan2(ty - s.y, tx - s.x);
+      const legs = (o.joiner ? list[i].legs0 : P[i].legs) + o.d / S * 1.2 + Math.hypot(tx - s.x, ty - s.y) / S * 1.2;
+      out.push({ i, x: tx, y: ty, rot: dirA + angDiff(dirA, o.lrot), s: MAP_S, legs, sx, sy });
+    }
+    return { roaches: out, land: L.land, cam: L.cam, s: MAP_S };
   };
 
   /* ── layout: slots, assignment, paths (per viewport) ── */

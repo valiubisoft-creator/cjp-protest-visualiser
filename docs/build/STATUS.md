@@ -10,7 +10,7 @@ Branch: `build/scene-by-scene`. Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions 
 | F3 Shell and harness | **done** 2026-11-12 (Vali approved) | high | Kickoff: [kickoffs/F3.md](kickoffs/F3.md). Shell at http://localhost:5173/v3/. Briefs + targets: [scenes/](scenes/README.md). QA: `qa/v3/` |
 | S4a Skeleton spike | **done** 2026-11-12 (Vali approved) | high | Brief: [scenes/S4a.md](scenes/S4a.md). Spike: http://localhost:5173/design/spike-s4a. Shots: `qa/v3/S4a/`. **Lanes 3**, runtime skeleton |
 | **Prologue (S0–S4b, one chat)** | **built** 2026-11-12, awaiting Vali's review | high | Vali 2026-11-12: one chat for S0, S1–S2, S3, S3.5 and S4b. Gate 1 approved and pushed (`2084092`). Shots: `qa/v3/{S0,S1,S2,S3,S3-5,S4}`, `qa/v3/prologue-gate1`, `qa/v3/handover`, `qa/v3/S2/seq` |
-| S5a / S5b / S5c | — | high | |
+| **S5 map stage (S5a+b+c, one chat)** | **gate 1 in review** 2026-11-12 (motion not started) | high | Vali: one chat for S5a, S5b, S5c. Gate-1 shots: `qa/v3/S5/gate1c`. Rail + scrubber and the 20 Jul research/imagery built by sub-agents, reviewed by the lead |
 | S6 | — | high | |
 | S6.5 October epilogue (text) | — | high | |
 | S7 | — | high | |
@@ -82,6 +82,15 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
 - **S4:** the 1000 S3.5 roaches take the centre lane plus an even share of the outer lanes (sorted by x). **Joiners: ~140 at 1440×900, ~7 at 1280×720**, entering from the nearest edge; any surplus (slots < 1000) crawls off the nearest edge. Converge ends at p **0.52**; **no corner brackets** (Vali 2026-11-12); release 0.80–1.
 - **S4 p 1 = the S5 p 0 contract (for S5a).** The map at the start camera: map box 62% × (h − scrubber); single site centred at zoom 2.4 × (map width ÷ 893); the kit `mapSVG` look drawn to a canvas, with soft right and bottom edges. 120 roaches (the start node's crowd tier) stay loosely round the `jantar_mantar_road` anchor at s 6/1.9; the other ~1,020 fade into them as they land. HUD `06/06/2026 · Day 0` top-left (`.s4-hud`). No rail, scrubber or site label yet. Reference: `qa/v3/S4/S4-1-down.png`, `qa/v3/handover/S4-1_vs_S5-0-*-A.png`.
 - **S2 sequence:** runs on its own rAF clock (so it also runs under `?still`), locked ≤ 3.2 s. It ends by seeking to S2 p 0 unless the reader is already past it. Leaving S1 mid-sequence finishes it at once. A deep link to S2 or later sets `done`.
+
+**S5 contracts (S5 chat, 2026-11-12; gate 1, Vali reviewing).**
+- **Budget:** S5 810 → **2070 vh** (Vali's narrative + 20 Jul hour-by-hour; `src/scroll/budget.js` edited, needs Vali's OK): lead_in 60 · start 160 · protest 180 · wangchuk 240 · detention 170 · protest_arrest 1200 · lead_out 60.
+- **Beats** (`src/scenes/s05/beats.js`, the one model every part reads): per node, the node beat (merged with a same-date sub-beat), its on-map sub-beats in date order, and after `pa_0720` the ten 20 Jul **hour beats** (`data/story/sansad_chalo.json` steps). In/hold/out 0.20/0.85 per beat; transitions move camera, roaches, date, card together. `reslot()` splits each node's segment by the measured card heights (floor 380 px), on the first visible frame per viewport. `phase(p)`, `dateAt(p)` (hours on 20 Jul), `pAt(t)`.
+- **Layout:** full-screen map (Vali 2026-11-12); narrative in one floating card top-right (400 px at ≥1440, 360 px below) with leader lines to the beat's sites/incidents; sources as small footnotes in the card (no big stat blocks). The camera keeps the card's area clear (`reserve`). Zoom/size scale stays on S4's 62% box (`scaleW`).
+- **New data files** (drafts for Vali): `data/story/narrative.json` (body copy per beat/step; star tokens `{*ids|claimant}`), `data/story/sansad_chalo.json` (10 steps, 75 facts, 20 `new_sources` merged into `data.sources` at runtime after sources.json's numbering), `data/story/imagery.json` (picks + catalogue; web copies in `media/web/`). Loaded by S5 with `story()`; `load.js` untouched.
+- **Handover in:** `release.landed()` exported from `s04-date.js` (additive; S4 frames unchanged; needs Vali's OK). S4→S5 0.033% / 0.043%.
+- **Handover out (for S6):** S5 p 1 = the S4-p-1 backdrop offset + the last beat's 400 roaches; poses from `s5End.poses()` (`s05/roaches.js`). No map, card, HUD.
+- `src/lib/map.js`: promoted `mapSVG/anchorXY/fitSites` (kit re-exports; storyboard byte-identical to HEAD) + `fitCam` (optional per-side pads), `interpolateZoom` (hand-rolled van Wijk), canvas `drawMap`.
 
 **Harness.** `tools/cdp-scroll.mjs` (legacy list mode unchanged; a targets file → down pass then up pass, p checked per target, per-scene monotonic check, `qa-log.json`), `tools/compare.mjs` (storyboard | down | up sheet + down/up pixel diff), `tools/qa-shell.mjs` (shell regression), `tools/lib/cdp.mjs` (shared driver, exact viewport via Emulation). New in the prologue chat: `tools/shoot-frames.mjs` (deep-link key frames at any `SIZE`; keep for now, Vali may delete it later), `tools/qa-sequence.mjs` (the S1→S2 click, keyboard, auto-trigger, lock, reset and replay), `tools/qa-handover.mjs` (in-block A p 1 vs B p 0 pixel diff). Targets: `docs/build/scenes/targets/*.json` `{ scene, brief, note, targets: [{ name, at: "S4:0.6", frame?, expect }] }`.
 
@@ -249,3 +258,8 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
   - QA: every target passes both ways at both sizes, down≠up 0.000%. Handovers S0→…→S4 are ≤ 0.11% (the half-pixel backdrop move over the 1 px between the shots). `qa-sequence` and `qa-shell` ALL PASS. 60 fps idle and while scrolling (headless).
 - 2026-11-12, **Vali: the charts reuse v2's "07 · The apparatus" spokes network** (13 state actors around the CJP). Recorded in `scenes/S7.md` → Vali's notes. The actor data has to be ported into `data/story` with sources first.
 - 2026-11-12: **next chat is the map (S5a + S5b + S5c in one chat)**, run by Vali in a new chat.
+- 2026-11-12, **S5 chat (map stage S5a+b+c), gate 1** (Vali reviewing; motion not started; committed at Vali's request):
+  - Built: beat model, map + camera (van Wijk zoom, single-site pull-back as roaches grow), roach encodings + legend, scrubber (drag/keys/marker glide, release snaps to the nearest hold), narrative card, 20 Jul hour-by-hour overlay (route, police cordons with sourced strength labels, red/white barricades, tear gas, lathi charges, pellets, detentions, closed stations; all positions illustrative), HUD clock on 20 Jul.
+  - Vali's review 1: narrative body copy instead of facts only; taller video; hour-by-hour Sansad Chalo; more imagery. Review 2: sources as small footnotes; full-screen map with the narrative in small boxes and pointer lines; contrasting barricades.
+  - Sub-agents: rail/scrubber/card (built, lead-reviewed), 20 Jul research, imagery catalogue.
+

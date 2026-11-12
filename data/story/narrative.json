@@ -1,0 +1,103 @@
+{
+ "status": "draft",
+ "author": "S5 chat (builder draft, 2026-11-12) for Vali's edit",
+ "note": "Map-stage body copy, one entry per S5 beat (ids as in src/scenes/s05/beats.js). Built ONLY from facts already in data/story/timeline.json (no new facts, no numbers from memory). Quotes are verbatim; claimant wording is kept (police said, CJP claims, reported, alleged). Held and unverified facts are not used. Every claim carries a star token {*source_id,source_id|claimant}, rendered by star() with the footer number. The 20 Jul hour-by-hour account lives in sansad_chalo.json. Vali asked for narrative body copy on 2026-11-12 (this relaxes CLAUDE.md's no-paraphrase rule for these paragraphs only; facts in the stat blocks stay verbatim).",
+ "beats": {
+  "start": [
+   "It began with a word. After the Chief Justice’s remark in mid-May, Abhijeet Dipke launched the Cockroach Janta Party online on 16 May{*wikipedia|reported}. The account drew 3 million Instagram followers within 78 hours{*businesstoday|reported} and over 20 million by 22 May{*economictimes,wikipedia|reported}.",
+   "The state pushed back fast. On 21 May MeitY ordered the CJP’s X account withheld in India, citing “national security”{*dossier,repo_indiacom_xblock|officials said}; it reappeared within minutes as “Cockroach is Back”{*wikipedia|reported}. A Union minister claimed 49% of its followers were Pakistani; Dipke’s screen recording showed over 94% were Indian{*wikipedia|claimed}.",
+   "On 6 June the movement stepped off the screen and onto Jantar Mantar Road, with a one-day exemption from the police{*thestatesman|police said}. Reports put the crowd at “Hundreds”{*aljazeera,theweek|reported}; one later account said “a few dozen students”{*outlookindia|reported}. Sonam Wangchuk joined them: “I don't like protests, but we have to do it for justice.”{*fpj_0606|said}"
+  ],
+  "protest_2a": [
+   "Two weeks later they came back, and this time they stayed. The second protest began at 1pm; when the permitted hours ran out at 5pm, Dipke refused to leave, thalis were banged, and an indefinite sit-in began{*wikipedia,cnn|reported}.",
+   "Police declared the protest past its permitted hours{*wikipedia,dynamitenews|police said}. Reports described “Hundreds”, mostly students{*wikipedia,deccanherald|reported}."
+  ],
+  "protest_2c": [
+   "The first nights tested the camp. The CJP alleges water, lights, food and washroom access were cut, and later restored{*wikipedia,dynamitenews|CJP claims}. Police tried to disperse the sit-in, then withdrew{*wikipedia,dynamitenews|reported}."
+  ],
+  "protest_2b": [
+   "The camp held. Reports described “Hundreds” camping on the road{*yahoo,independent|reported}, but for nearly three weeks the movement stayed, in Outlook’s words, a fringe story{*outlookindia|reported}. That changed with a fast."
+  ],
+  "wangchuk_day1": [
+   "On 28 June Sonam Wangchuk began an indefinite fast at the site, with six students from the All India Students’ Association, including Neha Bora{*wire_0630,scroll_0718|reported}. He had already said, in May: “But I consider myself an honorary cockroach”{*theprint_0523|said}.",
+   "The CJP alleges water and sanitation were cut again{*thefederal|CJP claims}. The crowd was reported as “Hundreds”{*thefederal|reported}."
+  ],
+  "wangchuk_march_called": [
+   "With the fast in its second week, the CJP called a march on Parliament for 20 July{*wikipedia,pti,thehindu|reported}: “Sansad Chalo”."
+  ],
+  "wangchuk_day17": [
+   "By day 17, more than 1,800 members of civil society urged Wangchuk to withdraw his hunger strike{*scroll_0714|reported}."
+  ],
+  "wangchuk_day19": [
+   "By day 19 he had lost more than nine kg{*dtnext_0716|reported}. “The next stage can be alarming. Organs can be impacted.”{*dtnext_0716|said}"
+  ],
+  "wangchuk_day20": [
+   "On day 20, the government told the Delhi High Court it would intervene if his health worsened{*dossier|officials said}."
+  ],
+  "detention_0718": [
+   "Two days before the march, police removed Wangchuk to Safdarjung Hospital{*wikipedia|reported}. Police said it was on medical advice and per High Court directions{*wikipedia,scroll_0718|police said}; the CJP said “he has been forcefully kidnapped by the Police and taken away.”{*newslaundry_0718,scroll_0718|CJP claims}",
+   "Dipke started a fast of his own and alleges he was beaten and detained{*wikipedia|alleged}. SFI leaders joined the fast{*wikipedia|reported}. A change of leadership in Delhi Police was reported, and barricades were removed{*dossier|reported}."
+  ],
+  "detention_0719": [
+   "On the eve of the march the crowds swelled{*dossier|reported}: “Thousands”, per the Tribune’s live blog{*tribuneindia|reported}. Police said 300+ personnel were at the site, with bag scanners, frisking, plain-clothes officers and riot vehicles with tear-gas mounts{*theprint|police said}.",
+   "The DCP said no permission had been sought or granted, and Section 163 BNSS was in force{*theprint|police said}."
+  ],
+  "pa_0720": [
+   "Monday 20 July, the first day of Parliament’s Monsoon Session. Police said “More than 10,000” marched{*aljazeera|police said}; the CJP claimed “one lakh”{*theprint_0720_live,theprint_0720_top10|CJP claims}. No source records where every police unit stood, so the cordons and barricades drawn on the map are illustrative. The times are from live blogs. Hour by hour:"
+  ],
+  "pa_0721": [
+   "The next morning protesters rebuilt the camp in the rain{*wikipedia,pbs,theprint_0721|reported}. The Delhi High Court ordered Wangchuk moved to Medanta, Gurugram; Rahul Gandhi and other MPs protested outside the PM’s residence, and Rahul Gandhi was detained{*wikipedia,pbs,theprint_0721|reported}.",
+   "The state reinforced: 20 CRPF companies were airlifted from Kolkata{*wikipedia|officials said}, and 16, then 17, metro stations were closed{*wikipedia|officials said}. In court, the ASG said videos showed stone-throwing; the High Court declined an urgent hearing{*wikipedia|reported}."
+  ],
+  "pa_0722": [
+   "About 65 opposition MPs wrote to Wangchuk{*theprint,wikipedia|reported}."
+  ],
+  "pa_0723": [
+   "On the night of 23–24 July, Wangchuk ended his fast after 26 days, in the presence of J.P. Nadda and Jitendra Singh, after assurances: cases withdrawn, compensation, a debate on the leaks{*scroll_0724,outlook_0724,dtnext_0724,wikipedia|reported}. Parliament was adjourned for a fourth day{*wikipedia|reported}.",
+   "Dipke vowed to continue{*dossier|reported}."
+  ],
+  "pa_0724": [
+   "The camp held on. A government source said resigning “equates to running away”{*christiandaily|reported}. 18 metro stations were closed{*wikipedia|officials said}, and Ranka alleges checkpoints about 5 km out{*outlookindia|alleged}. In Kolkata, a solidarity march{*altnews|reported}."
+  ],
+  "0720_0000": [
+   "Overnight, Jantar Mantar became a ‘khaki zone’: hundreds of police, 8-foot barricades welded together, riot-control vehicles{*theprint_0720_top10|reported}. Barricades at the entrance were welded shut; the site was ‘cordoned off by police barricades on both sides’{*newslaundry_0720|reported}.",
+   "Police buses, some carrying barricades, lined Sansad Marg, Tolstoy Marg and Jantar Mantar Road{*caravan_0723|reported}. Paramilitary forces in riot gear were stationed through the night{*theprint|reported}. Inside the cordon, thousands of activists had gathered{*aljazeera|reported}."
+  ],
+  "0720_0720": [
+   "At 7.20 am CJP leaders told supporters that “one lakh supporters are on the streets of Delhi”{*theprint_0720_live,theprint_0720_top10|CJP claims}. Photographs from the site between 07:35 and 07:56 show a crowd in the rain, flags up{*commons_0720|reported}.",
+   "At 7.30 am the first of many baton charges began near Park Hotel, pushing marchers towards Palika Bazaar{*theprint_0720_live,theprint_0720_top10|reported}. Police said entry was ‘allowed only through Tolstoy Marg’ and that gathering outside the site violated Section 163{*theprint_0720_live|police said}. At 8.34 am: ‘no permission has been sought or granted for any such protest march/procession.’{*theprint,tribuneindia|police said}"
+  ],
+  "0720_0900": [
+   "By nine the area was sealed. DMRC closed five stations: Rajiv Chowk, Janpath, Patel Chowk, Central Secretariat and Seva Teerth{*theprint,theweek_0720|officials said}. At 9.23 am: ‘Mobile internet services are unavailable at Jantar Mantar.’{*tribuneindia|reported}",
+   "Protesters were ‘not being allowed to leave the site’{*tribuneindia|reported}, and heavy security lined Raisina Road and Parliament Circle{*tribuneindia|reported}. The procession, scheduled for 9 am, ‘never formally started.’{*outlook_0720|reported}"
+  ],
+  "0720_1015": [
+   "At 10.16 am police vehicles were parked across Tolstoy Marg to hold the crowd at Jantar Mantar. Protesters toppled the barricades{*theprint_0720_live|reported}. By 10.37 am, after clashes with RAF and police, ‘security personnel resorted to a lathi-charge’{*tribuneindia|reported}, in several spots, including near the Kerala House lane{*newslaundry_0720|reported}.",
+   "At 11.07 am police denied any violence: ‘the protest is being handled professionally.’{*tribuneindia|police said}"
+  ],
+  "0720_1115": [
+   "Around 11.15 am protesters broke through a major barricade{*theprint,wiki_sansad_chalo|reported}, crossed the SBI building on Sansad Marg and kept going towards Parliament{*newslaundry_0720|reported}. Tear-gas shells went up over the Sansad Marg–Parliament Street stretch and the Tolstoy Marg junction{*outlook_0720|reported}.",
+   "Parliament’s gates were shut and police vehicles were parked across the roads{*newslaundry_0720,theprint_0720_top10|reported}. That morning Dipke ended his hunger strike, at Wangchuk’s request{*outlook_0720,tribuneindia|reported}."
+  ],
+  "0720_1300": [
+   "Around 1 pm police imposed Section 163 BNSS, banning any gathering{*theprint|reported}. At Central Secretariat metro, police ‘resorted to firing teargas shells to disperse the swelling crowd’, and several protesters were detained{*theprint,tribuneindia|reported}.",
+   "Pushed back from Raisina Road with tear gas, protesters regrouped outside the Press Club{*newslaundry_0720,tribuneindia|reported}. More shells fell near Shastri Bhawan{*deccanchronicle_0720_shastri,dynamitenews_0720|reported} and Constitution Club, where commuters in the metro were caught by the gas{*wiki_protests|reported}."
+  ],
+  "0720_1430": [
+   "The heaviest charges came at Patel Chowk. At 3.08 pm police lathi-charged and fired tear gas near the metro station; protesters threw glass and plastic bottles{*theprint_0720_live,theprint_0720_top10|reported}. At 3.19 pm, ‘multiple rounds of teargas shells in quick succession’{*tribuneindia|reported}.",
+   "At 2.47 pm the CJP said Dipke had been detained; by 3.55 pm Das said he was ‘not in detention or arrest’{*theprint_0720_live,tribuneindia|CJP claims}. Officials said more than 20 protesters were detained{*theprint|officials said}; police denied any detentions at Jantar Mantar{*theprint_0720_live|police said}. Around 3 pm at Palika Bazar, a 19-year-old student was hit near the eye with pellet fragments{*newslaundry_0727,wiki_sansad_chalo|reported}."
+  ],
+  "0720_1600": [
+   "In Connaught Place, pellets. An Outlook reporter was hit around 4 pm at Palika Bazar; a hospital assessment recorded ‘26 small, round wounds’{*newslaundry_0727|reported}. Around 5 pm a 25-year-old was hit near Palika Bazar; surgeons removed pellets from his face and neck{*newslaundry_0727,wiki_sansad_chalo|reported}.",
+   "The Wire reported seven pellet rounds, five of which hit protesters{*thewire|reported}; the police General Diary records two{*tribuneindia|police said}. Near the LIC building at Rajiv Chowk: ‘There was such a severe lathi charge that a stampede broke out.’{*tribune_0722_rml|alleged} Gurdwara Bangla Sahib opened its doors as shelter{*tribune_0721_gurdwara,tribuneindia|reported}."
+  ],
+  "0720_1730": [
+   "By 5.30 pm around 100 injured people, 10 of them police, had been brought to RML Hospital’s emergency, four protesters in the ICU{*newslaundry|reported}. RML stopped admitting; the injured were diverted to Lady Hardinge{*newslaundry|reported}. By 7 pm RML had recorded 65 medico-legal cases{*wiki_protests|reported}. The CJP claims about 150 were hospitalised{*wiki_protests|CJP claims}.",
+   "At Jantar Mantar police dismantled the stage and tents{*theprint_0720_live,tribuneindia|reported}. Police sources said more than 100 protesters were detained across Delhi{*deccanchronicle_0720_detained|police said}; detainees say they were beaten in the Parliament Street police station{*caravan_0723|alleged}."
+  ],
+  "0720_2040": [
+   "Night. Protesters described being ‘trapped’ in tear gas near Patel Chowk, barricades at all ends{*theprint_0720_live|alleged}. At 10.44 pm ‘police wiped clean the protest site at Jantar Mantar’{*tribuneindia|reported}; a sit-in carried on near Kerala House{*deccanchronicle_0720_live|CJP claims}.",
+   "The police tally: more than 118 personnel injured, around 60 protesters injured, about 70 detained, 15–20 government vehicles vandalised{*pti,theprint_0720_live|police said}. Police later denied detaining anyone{*theprint,pti,telanganatoday,wikipedia|reported; police later denied}."
+  ]
+ }
+}

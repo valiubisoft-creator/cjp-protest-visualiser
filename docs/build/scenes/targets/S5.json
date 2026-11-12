@@ -1,11 +1,64 @@
 {
  "scene": "S5",
  "brief": "docs/build/scenes/S5a.md",
- "note": "Key frames from the F2 storyboard (design/storyboard.js); targets without \"frame\" are spec boundary frames with no storyboard image. S5 p values come from budget.js segments: segmentP(S5, \"start\", 0.5) = 0.1358; protest_arrest local 0.3 = 0.8309. S5b may move the 20 Jul sub-beat and update this file.",
+ "note": "S5 chat (2026-11-12, Vali's review: narrative rail, 20 Jul hour-by-hour). S5 is 2070 vh; beat slots are split by the rail's measured section heights (beats.js reslot), so targets sit inside holds at both 1440x900 and 1280x720. Storyboard frames S5-start and S5-0720 are kept for the map side; the rail is now a narrative column.",
  "targets": [
-  {"name": "S5-0", "at": "S5:0", "expect": "Handover: must look exactly like S4 p 1 (no jump)."},
-  {"name": "S5-start", "at": "S5:0.1358", "frame": "S5-start", "expect": "Node 1 Start, hold: camera fitted to start.site_ids; tier → roach count at day-0 size; rail card (two featured facts); HUD top-left, legend bottom-left; scrubber at the bottom."},
-  {"name": "S5-0720", "at": "S5:0.8309", "frame": "S5-0720", "expect": "Node 5, sub-beat 20 Jul, hold: camera fits the eleven 20 Jul site_ids; tier 4 roaches weighted to Jantar Mantar Road; red site dots; barricade dashed and labelled illustrative; map roach s = size ÷ 1.9 × √(zoom ÷ 2.4)."},
-  {"name": "S5-1", "at": "S5:1", "expect": "End of lead-out: must look exactly like S6 p 0. No Victory node or marker anywhere in S5."}
+  {
+   "name": "S5-0",
+   "at": "S5:0",
+   "expect": "Handover: must look exactly like S4 p 1 (no jump)."
+  },
+  {
+   "name": "S5-lead",
+   "at": "S5:0.015",
+   "expect": "Lead-in: soft S4 edges hardening, rail and legend fading in, scrubber sliding up; roaches unmoved."
+  },
+  {
+   "name": "S5-start",
+   "at": "S5:0.048",
+   "frame": "S5-start",
+   "expect": "Node 1 Start, hold start: camera on Jantar Mantar Road, 120 roaches at day-0 size; rail opens 'How it began' with the flag image and the narrative."
+  },
+  {
+   "name": "S5-0718",
+   "at": "S5:0.3357",
+   "expect": "18 Jul hold: close-up pulled back for day-42 roaches; Safdarjung off-map arrow clear of the legend; 'no count reported'."
+  },
+  {
+   "name": "S5-0720",
+   "at": "S5:0.41",
+   "frame": "S5-0720",
+   "expect": "20 Jul intro: camera fits the eleven 20 Jul sites; 400 roaches; red site dots; rail intro paragraph."
+  },
+  {
+   "name": "S5-0720-0720",
+   "at": "S5:0.507",
+   "expect": "07:20 step: Mandi House → Jantar Mantar route, lathi charges at Park Hotel and Mandi House, 300+ personnel label; morning photo 07:35 in the rail; HUD clock 07:20."
+  },
+  {
+   "name": "S5-0720-1115",
+   "at": "S5:0.63",
+   "expect": "11:15 step: breach on Parliament Street, route to Parliament, tear gas, barricades."
+  },
+  {
+   "name": "S5-0720-1430",
+   "at": "S5:0.692",
+   "expect": "14:30 step: Patel Chowk charges, pellets at Palika Bazar, detentions."
+  },
+  {
+   "name": "S5-0720-1600",
+   "at": "S5:0.727",
+   "expect": "16:00 step: pellets in Connaught Place, Gurdwara Bangla Sahib shelter."
+  },
+  {
+   "name": "S5-0720-2040",
+   "at": "S5:0.803",
+   "expect": "20:40 step: site cleared; the police tally."
+  },
+  {
+   "name": "S5-1",
+   "at": "S5:1",
+   "expect": "End of lead-out: must look exactly like S6 p 0 (backdrop + roaches; s5End.poses()). No Victory anywhere in S5."
+  }
  ]
 }

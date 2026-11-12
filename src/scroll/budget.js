@@ -26,9 +26,11 @@ export function buildBudget({ quoteCount = 3 } = {}) {
     { id: 'S3',   name: 'Multiply',                            len: 260, block: 'main', stage: 'prologue', file: 's03-multiply.js' },
     { id: 'S3.5', name: 'The claim and the correction',        len: 240, block: 'main', stage: 'prologue', file: 's03-5-claim.js' },
     { id: 'S4',   name: 'The date on the skeleton',            len: 180, block: 'main', stage: 'prologue', file: 's04-date.js' },
-    { id: 'S5',   name: 'Map stage: day by day',               len: 810, block: 'main', stage: 'map',      file: 's05-map.js',
-      // spec §6 880vh minus the 70vh Victory node (Vali, 2026-11-12: Victory lives only in S6)
-      segments: [['lead_in', 60], ['start', 100], ['protest', 260], ['wangchuk', 110], ['detention', 110], ['protest_arrest', 110], ['lead_out', 60]] },
+    { id: 'S5',   name: 'Map stage: day by day',               len: 2070, block: 'main', stage: 'map',      file: 's05-map.js',
+      // spec §6 880vh minus the 70vh Victory node (Vali, 2026-11-12: Victory lives only in S6) = 810; then the S5 chat
+      // (Vali 2026-11-12: narrative body copy + the 20 Jul hour-by-hour) sized each node to its rail copy at ~1.25×
+      // page-scroll reading pace: protest_arrest holds the ten hour beats of 20 Jul (~770 vh of its 1200)
+      segments: [['lead_in', 60], ['start', 160], ['protest', 180], ['wangchuk', 240], ['detention', 170], ['protest_arrest', 1200], ['lead_out', 60]] },
     { id: 'S6',   name: 'Finale: the date returns, Victory',  len: 260, block: 'main', stage: 'finale',   file: 's06-finale.js' },
     // ── reading and charts ──
     { id: 'S6.5', name: 'October epilogue',                    len: 'auto', block: null, file: 's06-5-epilogue.js' },

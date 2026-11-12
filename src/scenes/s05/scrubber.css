@@ -1,0 +1,17 @@
+/* S5 · scrubber strip (S5b, 2026-11-12). Look ported from design/lib/parts.js scrubber(). Tokens only.
+   The host (.s5-scrub) belongs to s05-map.css (position, bg, top rule, slide). */
+.s5s .s5s-svg { display: block; cursor: pointer; touch-action: none; user-select: none; -webkit-user-select: none; outline: none; }
+.s5s.is-drag .s5s-svg { cursor: grabbing; }
+.s5s .s5s-svg:focus-visible { outline: 2px solid var(--accent); outline-offset: -4px; }
+.s5s .hit { fill: transparent; }
+.s5s #s5s-hatch line { stroke: var(--fg); stroke-width: 1.1; opacity: .55; }
+.s5s .dim { fill: var(--bg); opacity: .72; }
+.s5s .frame { fill: none; stroke: var(--fg); stroke-width: 1; }
+.s5s .ticks line { stroke: var(--fg); stroke-width: .6; }
+.s5s .ticks line.wk { stroke-width: 1.2; }
+.s5s .mk circle { fill: var(--bg); stroke: var(--fg); stroke-width: 2; }
+.s5s .mk text { fill: var(--fg); font: 600 12px var(--font-text); }
+.s5s .mk.on circle { fill: var(--accent); stroke: var(--accent); r: 7px; }
+.s5s .mk.on text { fill: var(--accent-text); font-weight: var(--w-bold); }
+.s5s .handle line { stroke: var(--accent); stroke-width: 3; }
+.s5s .handle { pointer-events: none; }

@@ -124,3 +124,12 @@ Sources: Scroll, The Wire, Free Press Journal, Kashmir Life, Al Jazeera, Newslau
 - **S3 "how many joined"**: uses the metrics row `Online sign-ups` (350,000+, CJP claim, claimed). The other candidate is `Members 'within days'` (over 100,000, media, claimed). Vali can swap it.
 - **Body face changed to Redaction** (Vali 2026-11-12). DESIGN.md still says Public Sans; update it if this sticks. Redaction has only 400/700, so `--w-medium` and `--w-black` render as Bold.
 - **Founder portrait** uses `people[abhijeet-dipke].image` (CC BY 4.0 screenshot, LetsUpp Marathi via Commons), with its credit on screen. It isn't on S1–S2's allowed-keys list; Vali asked for it (2026-11-12).
+
+## S5 map stage (2026-11-12)
+- **Narrative copy is a builder draft** (`data/story/narrative.json`): built only from ledger facts + the 20 Jul research, quotes verbatim, claimants kept, but it paraphrases. Needs Vali's edit.
+- **20 Jul research** (`data/story/sansad_chalo.json`, `docs/build/research/sansad-chalo-0720.md`): some snippets came via a summarising fetch tool (facts carry a re-check note); HT/TOI/News18/BS/Deccan Herald blocked; The Wire pellet article headline-only; Caravan may be paywalled. Conflicts open: first baton charge 7.30 am vs 10.37 am; detentions 20+/100+/~70/denied; RML ~100/65 MLC/200+; crowd one lakh/50,000+/10,000+; barricade heights 6/7/8 ft. **No source positions barricades or police units**: all drawn illustrative. South First's machine-gun positions rest on one outlet.
+- **20 new sources** are merged at runtime; S10 (or the F1 generator) must absorb them into the footer properly.
+- **Imagery:** all 31 open 20 Jul photos are 07:35–07:56 (morning gathering); none of the march or clashes. Most show identifiable young faces. 11 of 17 Raydann 21 Jul photos not downloaded (Commons 429); Raydann and Alnitak-Alnilam-Mintaka may be one photographer. Bengaluru photo still under deletion request; LA photo EXIF date wrong.
+- **Flagged video** (`eAmtVu_Sqhk`, "funded by Pakistan?") flagged by id in `rail.js`; a `flag` field in the data would be cleaner. It never renders (first-media rule).
+- Long place labels overlap on some 20 Jul hour frames; late-day roaches at close zoom crowd the incident glyphs.
+
