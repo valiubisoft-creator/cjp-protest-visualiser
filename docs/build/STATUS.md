@@ -247,3 +247,5 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
   - **S3:** 260 vh. The full swarm at 0.78; the sign-ups label stays up until 0.92.
   - **S3.5:** the cluster labels arrive with the sort (0.17–0.23), and the claim caption follows at 0.40.
   - QA: every target passes both ways at both sizes, down≠up 0.000%. Handovers S0→…→S4 are ≤ 0.11% (the half-pixel backdrop move over the 1 px between the shots). `qa-sequence` and `qa-shell` ALL PASS. 60 fps idle and while scrolling (headless).
+- 2026-11-12, **Vali: the charts reuse v2's "07 · The apparatus" spokes network** (13 state actors around the CJP). Recorded in `scenes/S7.md` → Vali's notes. The actor data has to be ported into `data/story` with sources first.
+- 2026-11-12: **next chat is the map (S5a + S5b + S5c in one chat)**, run by Vali in a new chat.
