@@ -14,6 +14,8 @@ import { roach } from '../roach/roach.js';
 import { clamp01, TAU } from '../roach/swarm.js';
 import { loadCss, backdrop } from './s00-hero.js';
 
+const ROOT = new URL('../../', import.meta.url); // repo root, so paths work under a subpath too
+
 const CSS = new URL('./s02-spawn.css', import.meta.url).href;
 
 export const spawn = {
@@ -39,7 +41,7 @@ export const spawn = {
     const person = data.timeline.nodes.flatMap(n => [...(n.people || []), ...(n.sub_beats || []).flatMap(b => b.people || [])]).find(q => q.name === f.name);
     const img = person?.image;
     this.el = document.createElement('figure'); this.el.className = 's2-spawn'; this.el.hidden = true;
-    this.el.innerHTML = `${img ? `<img class="s2-face" src="/${esc(img.src)}" alt="${esc(f.name)}">` : '<span class="s2-face"></span>'}
+    this.el.innerHTML = `${img ? `<img class="s2-face" src="${esc(new URL(img.src, ROOT).href)}" alt="${esc(f.name)}">` : '<span class="s2-face"></span>'}
       <figcaption><p class="s2-label"><b>${esc(f.name)}</b> is spawned${star(fd.source_ids, data.byId.source, fd.claimant)}</p>
       <p class="s2-attr t-micro">${esc(fd.attribution)} · ${esc(fd.value_text)}</p>
       ${img ? `<p class="s2-credit">Photo: ${esc(img.credit)}</p>` : ''}</figcaption>`;

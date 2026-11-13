@@ -6,16 +6,19 @@
 <title>Cockroaches</title>
 <link rel="icon" href="data:,">
 <!-- v3 shell (F3). Built here and promoted to /index.html at the end of the project (D1).
-     Paths are root-absolute so /v3 and /v3/ both work; serve with: npx serve . -l 5173 → http://localhost:5173/v3/ -->
+     Paths are relative so the piece also works under a subpath (GitHub Pages: /cjp-protest-visualiser/v3/).
+     /v3 without the slash is redirected to /v3/ first so the relative paths resolve.
+     Serve with: npx serve . -l 5173 → http://localhost:5173/v3/ -->
+<script>if (!/(\/|\.html)$/.test(location.pathname)) location.replace(location.pathname + '/' + location.search + location.hash);</script>
 <script type="importmap">
 { "imports": {
   "animejs": "https://cdn.jsdelivr.net/npm/animejs@4.5.0/dist/bundles/anime.esm.min.js",
   "d3-scale": "https://cdn.jsdelivr.net/npm/d3-scale@4.0.2/+esm"
 } }
 </script>
-<link rel="stylesheet" href="/styles/tokens.css">
-<link rel="stylesheet" href="/src/shell.css">
-<script type="module" src="/src/main.js"></script>
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="../src/shell.css">
+<script type="module" src="../src/main.js"></script>
 </head>
 <body>
 <main id="piece"></main>
