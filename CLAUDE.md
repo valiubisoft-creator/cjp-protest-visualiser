@@ -35,6 +35,9 @@ Read `docs/build/BUILD_PLAN.md` only if the brief points to it. Do **not** read 
 
 ## Scope and git
 - Stay on `build/hybrid`. **Pushing to `main` deploys to Vercel; never push there.**
+- **`build/hybrid` is live on GitHub Pages** (repo root, no Jekyll): https://valiubisoft-creator.github.io/cjp-protest-visualiser/v3/. Every push to `build/hybrid` redeploys that public site within a minute or so, so only push QA'd work.
+  - Keep every path relative (or resolve it with `import.meta.url`); a path starting with `/` breaks under the `/cjp-protest-visualiser/` subpath.
+  - Check the deploy with `gh api repos/valiubisoft-creator/cjp-protest-visualiser/pages/builds/latest --jq .status`.
 - Commit and push only when Vali says so, and push only to `build/hybrid`.
 - Shared modules (`roach`, `controller`, `tokens.css`, `data/story`) change only with a clear reason, and the change is logged in STATUS.md.
 - Sub-agents get narrow, file-scoped briefs. The lead reviews their output before it reaches Vali.
