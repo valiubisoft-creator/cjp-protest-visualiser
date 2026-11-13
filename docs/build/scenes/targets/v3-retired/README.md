@@ -1,0 +1,1 @@
+v3 targets for scenes the hybrid (build/hybrid, 2026-11-13) took out of the reading flow (S6.5, S7a-d) or re-cut (S5: see ../S5-hybrid.json). Kept for reference; qa-shell reads only the parent folder.

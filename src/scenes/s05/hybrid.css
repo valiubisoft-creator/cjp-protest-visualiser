@@ -1,0 +1,38 @@
+/* S5 · hybrid mode (build/hybrid, Vali 2026-11-13). Tokens only. The rail panel is not used. */
+.s5.hy .s5-rail { display: none; }
+.s5.hy .s5-hud { top: calc(var(--hud-inset) + 94px * var(--s5h-dock, 0)); }   /* docks under the chapter lockup during the lead-in (S4's HUD is at the inset: handover) */
+.s5.hy .s5-lab.police { display: none !important; }               /* ≤ 3 labels per beat: no per-hour police strength labels */
+.s5.hy .hy-title { z-index: 22; }
+.s5.hy .hy-lock { z-index: 21; }
+
+/* caption cards: top-right on the map; the ledgers' cards sit level with the first scale */
+.s5h-cap { right: var(--hud-inset); top: var(--hud-inset); visibility: hidden; pointer-events: auto; z-index: 15; }
+.s5h-cap.ledger { top: calc(33% - 38px); }
+
+/* notes: the dead-signal zone, the 1.5 km order ring, the grouped metro label */
+.s5h-zone { position: absolute; left: 0; top: 0; pointer-events: none; z-index: 3; }
+.s5h-tag { position: absolute; left: 0; top: 0; z-index: 4; visibility: hidden; font: var(--w-bold) 12px/1.35 var(--font-ui); letter-spacing: .1em; text-transform: uppercase;
+  padding: 6px 9px; box-shadow: 0 0 0 3px var(--black); white-space: nowrap; pointer-events: auto; }
+.s5h-tag.red { background: var(--red); color: var(--white); }
+.s5h-tag.red .star { color: var(--white); }
+.s5h-tag.metro { background: var(--white); color: var(--black); border: 1px solid var(--black); }
+.s5h-tag.ill { background: none; box-shadow: none; padding: 0; color: var(--muted); font: var(--w-regular) 11px/1.3 var(--font-ui); letter-spacing: 0; text-transform: none; }
+
+/* the ledgers: a veil over the map, three scales */
+.s5h-veil { position: absolute; inset: 0; background: var(--black); visibility: hidden; z-index: 12; pointer-events: none; }
+.s5h-ledgers { position: absolute; inset: 0; z-index: 13; visibility: hidden; pointer-events: none; }
+.s5h-ledgers .s5h-lsvg { position: absolute; inset: 0; overflow: visible; }
+.s5h-ledgers .axis { stroke: var(--grey-2-ink); stroke-width: 2; }
+.s5h-ledgers text { fill: var(--muted); font: var(--w-regular) 11px var(--font-ui); }
+.s5h-ledgers .tick { stroke: var(--grey-1); }
+.s5h-ledgers .lq { position: absolute; width: 170px; }
+.s5h-ledgers .lq .q { font: 400 34px/1 var(--font-display); }
+.s5h-ledgers .lq .u { font: var(--w-regular) 12px/1.4 var(--font-ui); color: var(--muted); margin-top: 4px; }
+.s5h-ledgers .ll { position: absolute; text-align: center; font: var(--w-regular) 12px/1.3 var(--font-ui); pointer-events: auto; }
+.s5h-ledgers .ll b { font: var(--w-bold) 15px/1 var(--font-ui); font-variant-numeric: tabular-nums; }
+.s5h-ledgers .ll span { color: var(--muted); }
+.s5h-ledgers .lkey { position: absolute; left: 120px; bottom: calc(var(--scrubber-h) + 20px); display: flex; gap: 28px; font: var(--w-regular) 13px/1 var(--font-ui); color: var(--muted); }
+.s5h-ledgers .lkey i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; vertical-align: -2px; margin-right: 7px; box-sizing: border-box; }
+.s5h-ledgers .lkey .st { background: var(--red); }
+.s5h-ledgers .lkey .rec { background: repeating-linear-gradient(45deg, var(--white) 0 2px, transparent 2px 4px); border: 1.5px solid var(--white); }
+.s5h-ledgers .lkey .mv { border: 2px solid var(--white); }

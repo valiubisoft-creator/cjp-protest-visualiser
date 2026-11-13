@@ -1,0 +1,50 @@
+[
+ {
+  "name": "OCT-0.06",
+  "at": "OCT:0.06",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "OCT-0.25",
+  "at": "OCT:0.25",
+  "frame": "new (2 Oct pen)",
+  "downUpDiff": 0
+ },
+ {
+  "name": "OCT-0.40",
+  "at": "OCT:0.40",
+  "frame": "07c-october-dawn",
+  "downUpDiff": 0
+ },
+ {
+  "name": "OCT-0.56",
+  "at": "OCT:0.56",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "OCT-0.68",
+  "at": "OCT:0.68",
+  "frame": "07-october",
+  "downUpDiff": 0
+ },
+ {
+  "name": "OCT-0.765",
+  "at": "OCT:0.765",
+  "frame": null,
+  "downUpDiff": 0
+ },
+ {
+  "name": "OCT-0.91",
+  "at": "OCT:0.91",
+  "frame": "07b-october-cell",
+  "downUpDiff": 0
+ },
+ {
+  "name": "OCT-0.97",
+  "at": "OCT:0.97",
+  "frame": null,
+  "downUpDiff": 0
+ }
+]

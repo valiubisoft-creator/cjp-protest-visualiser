@@ -1,0 +1,13 @@
+{
+ "scene": "WATCH",
+ "brief": "docs/build/hybrid/BUILD_BRIEF.md",
+ "note": "WATCH · chapter 'watched', 'Four days, most of the views.' Own pinned block, 260 vh. Port of design/hybrid/watched.js (Gate 0 frames 06a–06d). p: 0–0.14 title card · 0.11–0.16 cell grid, counter and ticker fade in · 0.14–0.92 calendar run (23 May → 21 Jul; quiet weeks fast, 18–21 Jul slow) · 0.92–1 hold on 93%. Captions: 0 (quiet weeks) 0.16–0.55, 1 (four days) 0.58–1. Hover (manual, not in this harness): qa/hybrid/WATCH/hover/ (scratchpad CDP script on tools/lib/cdp.mjs).",
+ "targets": [
+  {"name": "WATCH-0.08", "at": "WATCH:0.08", "expect": "Title card: '07 · 23 May – 21 Jul', 'Four days, most of the views.' on one line, red rule, dek. No dots, counter or ticker yet; halftone backdrop only."},
+  {"name": "WATCH-0.2", "at": "WATCH:0.2", "frame": "06a", "expect": "Lockup top-left. Faint 1,000-cell roach grid; a handful of grey dots scattered at random. Counter (right) shows an early-June date and a low single-digit %, with a red *. Caption 0 (23 May – 17 Jul, '7% of all the views*') under it. Ticker marker near the left."},
+  {"name": "WATCH-0.4", "at": "WATCH:0.4", "expect": "Still the quiet weeks: ~5 Jul, about 3%; more grey dots, still scattered (no roach yet). Caption 0. Ticker marker past 'Fast', before the red window band."},
+  {"name": "WATCH-0.7", "at": "WATCH:0.7", "frame": "06b", "expect": "20 Jul: white dots fill a disc from the centre out over the grey noise; counter about 26%, 'uploaded so far'. Caption 1 (18 – 21 Jul, 93%*). Ticker marker inside the red band."},
+  {"name": "WATCH-0.85", "at": "WATCH:0.85", "expect": "21 Jul: the roach has nearly resolved (body, legs, feelers), counter high and climbing; caption 1; nothing over the roach."},
+  {"name": "WATCH-0.96", "at": "WATCH:0.96", "frame": "06c", "expect": "Hold: the full white roach (a few grey dots inside). Counter '18 – 21 Jul · 93%*', 'of all the views, from videos uploaded in those four days'. Caption 1. Ticker marker at 21 Jul."}
+ ]
+}

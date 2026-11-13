@@ -1,0 +1,9 @@
+/* NEET (hybrid, 2026-11-13): the answer sheet, its header and the stamp. Tokens only. */
+.hneet { pointer-events: none; }
+.hneet > canvas.hneet-sheet { position: absolute; left: 0; top: 0; display: block; }
+.hneet-head { position: absolute; display: flex; justify-content: space-between; color: var(--muted); opacity: 0; }
+.hneet-stamp { position: absolute; border: 5px solid var(--red); color: var(--red); padding: .17em .3em .12em; text-align: center; background: rgba(11, 11, 11, .86);
+  transform-origin: 50% 50%; visibility: hidden; }
+.hneet-stamp .big { font: 400 1em/1 var(--font-display); }
+.hneet-stamp .sub { font: var(--w-bold) 14px/1.4 var(--font-ui); letter-spacing: .18em; text-transform: uppercase; margin-top: 4px; }
+.hneet .hy-cap { pointer-events: auto; }

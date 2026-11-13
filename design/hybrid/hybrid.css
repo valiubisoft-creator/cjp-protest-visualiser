@@ -1,0 +1,43 @@
+/* Hybrid Gate 0 storyboard chrome (build/hybrid, 2026-11-13). Tokens only.
+   Three pieces every hybrid chapter shares:
+   .hy-title  the chapter's opening card: kicker, claim headline (Protest Revolution), rule, dek
+   .hy-lock   the same headline, docked top-left while the chapter plays (signposting, never over content)
+   .hy-cap    one caption card: date kicker + ≤ 40 words + at most one starred figure                       */
+
+.hy-root { position: fixed; inset: 0; pointer-events: none; z-index: 50; font-family: var(--font-text); color: var(--fg); }
+.hy-root * { box-sizing: border-box; }
+
+/* kicker: chapter number in red, then the date span */
+.hy-kick { font: var(--w-bold, 700) var(--fs-micro)/1.3 var(--font-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.hy-kick .n { color: var(--accent-text); margin-right: .9em; }
+
+/* ── title card ── */
+.hy-title { position: absolute; left: 120px; top: 50%; transform: translateY(-50%); max-width: 940px; }
+.hy-title h2 { font: 400 var(--fs-d1)/1.02 var(--font-display); margin: 18px 0 0; color: var(--fg); letter-spacing: 0; }
+.hy-title .rule { width: 84px; height: var(--rule-heavy); background: var(--accent); margin: 30px 0 26px; }
+.hy-title .dek { font: 400 var(--fs-lead)/1.5 var(--font-text); color: var(--muted); max-width: 33em; margin: 0; }
+.hy-title .dek b { color: var(--fg); font-weight: 700; }
+
+/* ── docked lockup ── */
+.hy-lock { position: absolute; left: var(--hud-inset, 24px); top: var(--hud-inset, 24px); }
+.hy-lock h2 { font: 400 34px/1.05 var(--font-display); margin: 6px 0 0; color: var(--fg); }
+.hy-lock.boxed { background: var(--bg); border: var(--rule) solid var(--fg); padding: 10px 14px 12px; }
+
+/* ── caption card ── */
+.hy-cap { position: absolute; width: 360px; background: var(--bg); border: var(--rule) solid var(--fg); padding: 14px 18px 16px; }
+.hy-cap .when { font: var(--w-bold, 700) var(--fs-micro)/1.3 var(--font-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--accent-text); margin: 0 0 8px; font-variant-numeric: tabular-nums; }
+.hy-cap .when span { color: var(--muted); }
+.hy-cap h3 { font: 700 var(--fs-lead)/1.2 var(--font-text); margin: 0 0 8px; }
+.hy-cap p { font: 400 var(--fs-body)/1.5 var(--font-text); margin: 0; }
+.hy-cap p + p { margin-top: 8px; }
+.hy-cap b { font-weight: 700; }
+.hy-cap .q { font-style: italic; }
+.star { color: var(--accent); text-decoration: none; font-weight: 700; margin-left: 1px; }
+
+/* the word count badge on every storyboard caption (storyboard only, removed in the build) */
+.hy-wc { position: absolute; right: 8px; bottom: -18px; font: 600 10px/1 var(--font-ui); color: var(--muted); letter-spacing: .06em; }
+
+/* storyboard stamp: frame id, bottom-right, small (storyboard only) */
+.hy-stamp { position: absolute; right: 10px; bottom: 8px; font: 600 10px/1 var(--font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); opacity: .8; }
+
+.missing { color: var(--accent-text); font-weight: 700; }

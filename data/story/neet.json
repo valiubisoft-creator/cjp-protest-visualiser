@@ -1,0 +1,900 @@
+{
+  "status": "draft",
+  "collected": "2026-11-13",
+  "note": "NEET-UG 2026 leak chapter. Fetched raw HTML with curl; verified:true only where snippet seen verbatim in fetched page text. The Week, Statesman, Deccan Herald returned 403/Access Denied. NTA/PIB primary notices not fetched (nta.ac.in not tested); NTA statements are quoted via press copy.",
+  "new_sources": [
+    {
+      "id": "neet_quint_0512",
+      "title": "NEET-UG 2026 Cancelled After Paper Leak, CBI Probe Ordered",
+      "publisher": "The Quint",
+      "url": "https://www.thequint.com/news/breaking-news/neet-ug-2026-cancelled-paper-leak-cbi-probe",
+      "date": "2026-05-12",
+      "note": "Quotes NTA statement; note says article is AI-assisted and secondary (cites HT, DH, IE)."
+    },
+    {
+      "id": "neet_scroll_0512",
+      "title": "Undergraduate NEET 2026 cancelled after alleged paper leak",
+      "publisher": "Scroll.in",
+      "url": "https://scroll.in/latest/1092784/undergraduate-neet-2026-cancelled-after-alleged-paper-leak",
+      "date": "2026-05-12",
+      "note": "Guess-paper figures (ADG Vishal Bansal via Economic Times), 45+ detained, Nashik custody."
+    },
+    {
+      "id": "neet_tnm_0512",
+      "title": "Why NEET UG 2026 has been cancelled",
+      "publisher": "The News Minute",
+      "url": "https://www.thenewsminute.com/amp/story/news/why-neet-ug-2026-has-been-cancelled",
+      "date": "2026-05-12",
+      "note": "Quotes NTA press release; Rajasthan police on Kerala origin. Republished at Newslaundry."
+    },
+    {
+      "id": "neet_careers360_0512",
+      "title": "CBI registers FIR in alleged NEET UG 2026 paper leak case after NTA cancels examination",
+      "publisher": "Careers360 (PTI)",
+      "url": "https://news.careers360.com/cbi-registers-fir-in-alleged-neet-ug-2026-paper-leak-case-after-nta-cancels-examination/amp",
+      "date": "2026-05-12",
+      "note": "PTI copy; NTA timeline of inputs 7-8 May, 551 cities, 14 abroad, nearly 23 lakh registered."
+    },
+    {
+      "id": "neet_tnm_0515",
+      "title": "NEET (UG) 2026 re-examination scheduled for June 21, announces NTA",
+      "publisher": "The News Minute (IANS)",
+      "url": "https://www.thenewsminute.com/news/neet-ug-2026-re-examination-scheduled-for-june-21-announces-nta",
+      "date": "2026-05-15",
+      "note": "NTA X post quoted; 22.79 lakh registered; CBI questioning accused."
+    },
+    {
+      "id": "neet_dtnext_0515",
+      "title": "NTA announces NEET-UG 2026 re-examination on June 21 after paper leak row",
+      "publisher": "DT Next (ANI)",
+      "url": "https://www.dtnext.in/news/national/nta-announces-neet-ug-2026-re-examination-on-june-21-after-paper-leak-row",
+      "date": "2026-05-15",
+      "note": "NTA X post quoted verbatim."
+    },
+    {
+      "id": "neet_wire_cji_0516",
+      "title": "After Outrage over His 'Cockroaches' 'Parasites' Remarks, CJI Surya Kant Says Media 'Misquoted' Him",
+      "publisher": "The Wire",
+      "url": "https://m.thewire.in/article/government/offends-spirit-of-democracy-outrage-over-cji-surya-kants-cockroaches-parasites-remarks",
+      "date": "2026-05-16",
+      "note": "CJI remark of 15 May, made in a senior-designation (law degree) case; CJI clarification via LiveLaw."
+    },
+    {
+      "id": "neet_dtnext_0522",
+      "title": "'Cockroach Janata Party' launches campaign seeking Dharmendra Pradhan's resignation",
+      "publisher": "DT Next (PTI)",
+      "url": "https://www.dtnext.in/news/national/cockroach-janata-party-launches-campaign-seeking-dharmendra-pradhans-resignation",
+      "date": "2026-05-22",
+      "note": "First dated CJP demand for Pradhan's resignation, tied to NEET-UG paper-leak controversy. PTI."
+    },
+    {
+      "id": "neet_fpj_0606",
+      "title": "'Make In India To Leak In India': CJP Protests At Jantar Mantar Over NEET 2026 Paper Leak",
+      "publisher": "Free Press Journal (ANI)",
+      "url": "https://www.freepressjournal.in/india/make-in-india-to-leak-in-india-cjp-protests-at-jantar-mantar-over-neet-2026-paper-leak-demands-dharmendra-pradhans-resignation-video",
+      "date": "2026-06-06",
+      "note": "ANI agency copy; slogan, NEET demand, CBI status."
+    },
+    {
+      "id": "neet_dynamite_0612",
+      "title": "CJP releases reform Manifesto: Rs 10,000 Compensation for Paper Leaks, Age Relaxation, Exam Audits",
+      "publisher": "Dynamite News",
+      "url": "https://www.dynamitenews.com/national/cockroach-janta-party-releases-reform-manifesto-10000-compensation-for-paper-leaks-age-relaxation-exam-audits",
+      "date": "2026-06-12",
+      "note": "Exam manifesto at SPPU Pune (Thursday 11 Jun). Dipke quote: only demand since inception."
+    },
+    {
+      "id": "neet_bridge_0611",
+      "title": "Cockroach Janata Party five demands Pune protest",
+      "publisher": "The Bridge Chronicle",
+      "url": "https://www.thebridgechronicle.com/amp/story/pune/cockroach-janata-party-five-demands-pune-protest-mp99",
+      "date": "2026-06-11",
+      "note": "Lists the five exam-manifesto points."
+    },
+    {
+      "id": "neet_aj_0616",
+      "title": "'My voice is being heard': A month of India's Cockroach Janta Party",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/6/16/my-voice-is-being-heard-a-month-of-indias-cockroach-janta-party",
+      "date": "2026-06-16",
+      "note": "Founding on 16 May from CJI remark; Dipke's 'What if all cockroaches came together?'; 6 Jun rally under 2,000 per media."
+    },
+    {
+      "id": "neet_siasat_0621",
+      "title": "NEET retest held for 20 lakh aspirants after paper leak row",
+      "publisher": "Siasat (NTA statement)",
+      "url": "https://www.siasat.com/neet-retest-held-for-20-lakh-aspirants-after-paper-leak-row-3493652/",
+      "date": "2026-06-21",
+      "note": "Re-test numbers per NTA statement."
+    },
+    {
+      "id": "neet_theprint_0720",
+      "title": "Release Wangchuk, sack Pradhan, pay Rs 1 cr to NEET suicide victims' kin: CJP's demands in memo to Nadda",
+      "publisher": "ThePrint",
+      "url": "https://theprint.in/politics/release-wangchuk-sack-pradhan-pay-rs-1-cr-to-neet-suicide-victims-kin-cjps-demands-in-memo-to-nadda/2991314/",
+      "date": "2026-07-20",
+      "note": "CJP memorandum: core demand from Day 1; 21 suicides per CJP records."
+    },
+    {
+      "id": "neet_theprint_0725",
+      "title": "Pradhan resigns as education minister, CJP says two more demands pending",
+      "publisher": "ThePrint (PTI)",
+      "url": "https://theprint.in/india/pradhan-resigns-as-education-minister-cjp-says-two-more-demands-pending/2996684/",
+      "date": "2026-07-25",
+      "note": "PTI copy; resignation 35 days after clamour; Pradhan's quote."
+    },
+    {
+      "id": "neet_nl_0725",
+      "title": "Dharmendra Pradhan resigns under pressure from student protests",
+      "publisher": "Newslaundry",
+      "url": "https://newslaundry.com/2026/07/25/dharmendra-pradhan-resigns-under-pressure-from-student-protests",
+      "date": "2026-07-25",
+      "note": "Three CJP demands; 47 NTA officials dismissed; Pradhan letter summary."
+    },
+    {
+      "id": "neet_fpj_0725",
+      "title": "'Thanks For Calling Us Cockroaches': How A CJI Remark Snowballed Into A Movement",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/amp/education/thanks-for-calling-us-cockroaches-how-a-cji-remark-snowballed-into-a-movement-that-forced-dharmendra-pradhans-resignation",
+      "date": "2026-07-25",
+      "note": "Dipke quote thanking CJI; link of remark to founding."
+    },
+    {
+      "id": "neet_theprint_0728",
+      "title": "CBI files charge sheet in NEET UG 2026 paper leak case",
+      "publisher": "ThePrint (PTI)",
+      "url": "https://theprint.in/india/cbi-files-charge-sheet-in-neet-ug-2026-paper-leak-case/2999453/",
+      "date": "2026-07-28",
+      "note": "CBI chargesheet: 13 arrested accused; 360 witnesses."
+    },
+    {
+      "id": "neet_bt_0728",
+      "title": "CBI files chargesheet against 13 accused in NEET-UG 2026 paper leak case; cites 360 witnesses",
+      "publisher": "Business Today",
+      "url": "https://www.businesstoday.in/india/story/cbi-files-chargesheet-against-13-accused-in-neet-ug-2026-paper-leak-case-cites-360-witnesses-545823-2026-07-28",
+      "date": "2026-07-28",
+      "note": "Chargesheet: NTA subject experts, middlemen, coaching associates alleged."
+    },
+    {
+      "id": "neet_barandbench_0724",
+      "title": "Exclusive: CJI Surya Kant clarifies 'cockroach' remark",
+      "publisher": "Bar & Bench",
+      "url": "https://www.barandbench.com/news/litigation/exclusive-cji-surya-kant-clarifies-cockroach-remark-calls-for-protocol-on-reporting-oral-court-observations",
+      "date": "2026-07-24",
+      "note": "Only headline/standfirst captured (body not in raw HTML)."
+    }
+  ],
+  "facts": [
+    {
+      "id": "neet01",
+      "date": "2026-05-03",
+      "text": "NEET-UG 2026 was held on 3 May 2026 by the National Testing Agency across 551 cities in India and 14 cities abroad.",
+      "value": 551,
+      "value_text": "551 cities + 14 abroad",
+      "unit": "cities",
+      "claimant": "PTI / NTA",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "neet_careers360_0512"
+      ],
+      "links": [
+        {
+          "source_id": "neet_careers360_0512",
+          "url": "https://news.careers360.com/cbi-registers-fir-in-alleged-neet-ug-2026-paper-leak-case-after-nta-cancels-examination/amp",
+          "title": "CBI registers FIR in alleged NEET UG 2026 paper leak case after NTA cancels examination",
+          "publisher": "Careers360 (PTI)",
+          "date": "2026-05-12",
+          "snippet": "The examination was held on May 3 across 551 cities in India and 14 cities abroad. The examination was organised by the NTA for nearly 23 lakh registered candidates at centres across the country.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Care: 'the examination was held' sentence is PTI's, not an NTA quote. NTA primary notice (nta.ac.in) not fetched."
+      ]
+    },
+    {
+      "id": "neet02",
+      "date": "2026-05-03",
+      "text": "NEET-UG 2026 registered candidates: 22.79 lakh (NTA, as reported by IANS); other outlets say 'nearly 23 lakh' or 'over 22 lakh' took it.",
+      "value": 2279000,
+      "value_text": "22.79 lakh",
+      "unit": "candidates",
+      "claimant": "NTA (via IANS/TNM)",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "neet_tnm_0515",
+        "neet_careers360_0512",
+        "neet_quint_0512"
+      ],
+      "links": [
+        {
+          "source_id": "neet_tnm_0515",
+          "url": "https://www.thenewsminute.com/news/neet-ug-2026-re-examination-scheduled-for-june-21-announces-nta",
+          "title": "NEET (UG) 2026 re-examination scheduled for June 21, announces NTA",
+          "publisher": "The News Minute (IANS)",
+          "date": "2026-05-15",
+          "snippet": "With 22.79 lakh candidates registered for the exam this year, the NTA had stated that the examination conducted on May 3, 2026, was cancelled",
+          "verified": true
+        },
+        {
+          "source_id": "neet_quint_0512",
+          "url": "https://www.thequint.com/news/breaking-news/neet-ug-2026-cancelled-paper-leak-cbi-probe",
+          "title": "NEET-UG 2026 Cancelled After Paper Leak, CBI Probe Ordered",
+          "publisher": "The Quint",
+          "date": "2026-05-12",
+          "snippet": "The exam, which saw participation from over 22 lakh candidates across India and abroad",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "22.79 lakh is registered, not appeared: TNM/Scroll say 'around 22 lakh appeared'. Use 'registered' for 22.79 lakh. Resolves m01 deccanherald unverified link: IANS/TNM is a fetched replacement."
+      ]
+    },
+    {
+      "id": "neet03",
+      "date": "2026-05-03",
+      "text": "NEET-UG 2026 was held in more than 5,400 centres in 551 Indian cities and 14 abroad, for over 22 lakh candidates, per DT Next (ANI copy). Not an NTA primary figure.",
+      "value": 5400,
+      "value_text": "5,400+ centres",
+      "unit": "centres",
+      "claimant": "DT Next (ANI)",
+      "attribution": "reported",
+      "status": "claimed",
+      "source_ids": [
+        "neet_dtnext_0515"
+      ],
+      "links": [
+        {
+          "source_id": "neet_dtnext_0515",
+          "url": "https://www.dtnext.in/news/national/nta-announces-neet-ug-2026-re-examination-on-june-21-after-paper-leak-row",
+          "title": "NTA announces NEET-UG 2026 re-examination on June 21 after paper leak row",
+          "publisher": "DT Next (ANI)",
+          "date": "2026-05-15",
+          "snippet": "The exam, considered the country's largest undergraduate medical entrance test, was held across 551 cities in India and 14 cities abroad, covering more than 5,400 centres and involving over 22 lakh candidates.",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "Verbatim in fetched page; agency copy, not an NTA notice. NTA figure itself still unfetched."
+      ]
+    },
+    {
+      "id": "neet04",
+      "date": "2026-05-07",
+      "text": "NTA said it received inputs about alleged malpractice on the evening of 7 May (four days after the exam), escalated them to central agencies on the morning of 8 May, and cancelled the exam with Government of India approval.",
+      "claimant": "NTA",
+      "attribution": "NTA said",
+      "status": "documented",
+      "source_ids": [
+        "neet_careers360_0512"
+      ],
+      "links": [
+        {
+          "source_id": "neet_careers360_0512",
+          "url": "https://news.careers360.com/cbi-registers-fir-in-alleged-neet-ug-2026-paper-leak-case-after-nta-cancels-examination/amp",
+          "title": "CBI registers FIR in alleged NEET UG 2026 paper leak case after NTA cancels examination",
+          "publisher": "Careers360 (PTI)",
+          "date": "2026-05-12",
+          "snippet": "According to the NTA, inputs regarding alleged malpractice activity were received on the evening of May 7, four days after the examination, and were escalated to central agencies on the morning of May 8 for \"independent verification and necessary action\".",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Quote is PTI paraphrasing the NTA release; NTA release itself not fetched."
+      ]
+    },
+    {
+      "id": "neet05",
+      "date": "2026-05-12",
+      "text": "NTA cancelled NEET-UG 2026 on 12 May after allegations of a paper leak; re-exam to follow, fees refunded, no fresh registration.",
+      "claimant": "NTA",
+      "attribution": "NTA said",
+      "status": "documented",
+      "source_ids": [
+        "neet_scroll_0512",
+        "neet_tnm_0512",
+        "neet_quint_0512"
+      ],
+      "links": [
+        {
+          "source_id": "neet_scroll_0512",
+          "url": "https://scroll.in/latest/1092784/undergraduate-neet-2026-cancelled-after-alleged-paper-leak",
+          "title": "Undergraduate NEET 2026 cancelled after alleged paper leak",
+          "publisher": "Scroll.in",
+          "date": "2026-05-12",
+          "snippet": "The National Testing Agency on Tuesday cancelled the 2026 undergraduate National Eligibility cum Entrance Test following allegations of a paper leak.",
+          "verified": true
+        },
+        {
+          "source_id": "neet_tnm_0512",
+          "url": "https://www.thenewsminute.com/amp/story/news/why-neet-ug-2026-has-been-cancelled",
+          "title": "Why NEET UG 2026 has been cancelled",
+          "publisher": "The News Minute",
+          "date": "2026-05-12",
+          "snippet": "The inputs received by NTA, taken together with the findings shared by the law enforcement agencies, established that the present examination process could not be allowed to stand.",
+          "verified": true
+        },
+        {
+          "source_id": "neet_quint_0512",
+          "url": "https://www.thequint.com/news/breaking-news/neet-ug-2026-cancelled-paper-leak-cbi-probe",
+          "title": "NEET-UG 2026 Cancelled After Paper Leak, CBI Probe Ordered",
+          "publisher": "The Quint",
+          "date": "2026-05-12",
+          "snippet": "this is the first time the NTA has cancelled the NEET-UG in its entirety due to malpractice",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "'First full cancellation' is the Quint citing Indian Express; Quint's piece is flagged AI-assisted. Use only if Vali accepts it; else drop."
+      ]
+    },
+    {
+      "id": "neet06",
+      "date": "2026-05-12",
+      "text": "What was alleged: a 'guess paper' of about 410 questions, about 120 of which matched the chemistry section, circulated before the exam, said Rajasthan SOG ADG Vishal Bansal (to The Economic Times, per Scroll). Quint (citing Deccan Herald) says it went round on WhatsApp and Telegram.",
+      "value": 120,
+      "value_text": "about 120 chemistry questions matched",
+      "unit": "questions",
+      "claimant": "Rajasthan Police SOG (via Scroll, ET)",
+      "attribution": "police said",
+      "status": "alleged",
+      "source_ids": [
+        "neet_scroll_0512",
+        "neet_quint_0512"
+      ],
+      "links": [
+        {
+          "source_id": "neet_scroll_0512",
+          "url": "https://scroll.in/latest/1092784/undergraduate-neet-2026-cancelled-after-alleged-paper-leak",
+          "title": "Undergraduate NEET 2026 cancelled after alleged paper leak",
+          "publisher": "Scroll.in",
+          "date": "2026-05-12",
+          "snippet": "The \"guess paper\" contained around 410 questions, of which about 120 matched the questions asked in the chemistry section, Rajasthan Police Special Operations Group Additional Director General Vishal Bansal told The Economic Times.",
+          "verified": true
+        },
+        {
+          "source_id": "neet_quint_0512",
+          "url": "https://www.thequint.com/news/breaking-news/neet-ug-2026-cancelled-paper-leak-cbi-probe",
+          "title": "NEET-UG 2026 Cancelled After Paper Leak, CBI Probe Ordered",
+          "publisher": "The Quint",
+          "date": "2026-05-12",
+          "snippet": "the paper leak was linked to a “guess paper” containing over 120 questions identical to those in the actual exam, which was circulated via WhatsApp and Telegram before the test",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "Scroll says 410 questions / 120 matched in chemistry; Quint (secondary) says 'over 120 questions identical'. Prefer Scroll wording. WhatsApp/Telegram only in Quint (AI-assisted, secondhand); BusinessToday headline in meta.json also says WhatsApp. Keep as 'reported'."
+      ]
+    },
+    {
+      "id": "neet07",
+      "date": "2026-05-12",
+      "text": "More than 45 people were detained in Rajasthan (India Today, per Scroll); a Nashik man was taken into custody on request of Rajasthan Police (The Hindu, per Scroll).",
+      "value": 45,
+      "value_text": "more than 45 detained",
+      "unit": "people",
+      "claimant": "India Today / The Hindu (via Scroll)",
+      "attribution": "reported",
+      "status": "claimed",
+      "source_ids": [
+        "neet_scroll_0512",
+        "neet_tnm_0512"
+      ],
+      "links": [
+        {
+          "source_id": "neet_scroll_0512",
+          "url": "https://scroll.in/latest/1092784/undergraduate-neet-2026-cancelled-after-alleged-paper-leak",
+          "title": "Undergraduate NEET 2026 cancelled after alleged paper leak",
+          "publisher": "Scroll.in",
+          "date": "2026-05-12",
+          "snippet": "More than 45 persons have been detained in the state as part of the investigation, India Today reported.",
+          "verified": true
+        },
+        {
+          "source_id": "neet_tnm_0512",
+          "url": "https://www.thenewsminute.com/amp/story/news/why-neet-ug-2026-has-been-cancelled",
+          "title": "Why NEET UG 2026 has been cancelled",
+          "publisher": "The News Minute",
+          "date": "2026-05-12",
+          "snippet": "over 45 people have reportedly been detained in connection with the case",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "Detentions, not arrests; second-hand. 'Detained' only."
+      ]
+    },
+    {
+      "id": "neet08",
+      "date": "2026-05-12",
+      "text": "Rajasthan Police DGP (Operations Cell) said the 'guess paper' had been traced to Kerala: 'a student of a medical college in Kerala sent the material'. No FIR had been registered by Rajasthan at that point.",
+      "claimant": "Anand Kumar Shrivastava, DGP Operations Cell, Rajasthan Police (via Onmanorama/TNM)",
+      "attribution": "police said",
+      "status": "alleged",
+      "source_ids": [
+        "neet_tnm_0512"
+      ],
+      "links": [
+        {
+          "source_id": "neet_tnm_0512",
+          "url": "https://www.thenewsminute.com/amp/story/news/why-neet-ug-2026-has-been-cancelled",
+          "title": "Why NEET UG 2026 has been cancelled",
+          "publisher": "The News Minute",
+          "date": "2026-05-12",
+          "snippet": "Initial probe reveals that a student of a medical college in Kerala sent the material. We have not registered an FIR so far.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Conflicts in detail with 'printing press' lead (TNM: 'may have originated from a printing press'). Both preliminary; do not state an origin as fact."
+      ]
+    },
+    {
+      "id": "neet09",
+      "date": "2026-05-12",
+      "text": "The Union government referred the case to the CBI, which registered an FIR on 12 May.",
+      "claimant": "PTI / NTA",
+      "attribution": "officials said",
+      "status": "documented",
+      "source_ids": [
+        "neet_careers360_0512",
+        "neet_scroll_0512"
+      ],
+      "links": [
+        {
+          "source_id": "neet_careers360_0512",
+          "url": "https://news.careers360.com/cbi-registers-fir-in-alleged-neet-ug-2026-paper-leak-case-after-nta-cancels-examination/amp",
+          "title": "CBI registers FIR in alleged NEET UG 2026 paper leak case after NTA cancels examination",
+          "publisher": "Careers360 (PTI)",
+          "date": "2026-05-12",
+          "snippet": "The CBI on Tuesday registered an FIR in the alleged paper leak of the NEET (UG) 2026 examination held on May 3, officials said.",
+          "verified": true
+        },
+        {
+          "source_id": "neet_scroll_0512",
+          "url": "https://scroll.in/latest/1092784/undergraduate-neet-2026-cancelled-after-alleged-paper-leak",
+          "title": "Undergraduate NEET 2026 cancelled after alleged paper leak",
+          "publisher": "Scroll.in",
+          "date": "2026-05-12",
+          "snippet": "The Union government has referred the matter to the Central Bureau of Investigation, the statement added.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Resolves meta.json PARTIAL for 'CBI probe ordered 12 May'."
+      ]
+    },
+    {
+      "id": "neet10",
+      "date": "2026-05-15",
+      "text": "NTA announced the re-examination for Sunday 21 June 2026, with Government of India approval.",
+      "value_text": "21 June 2026",
+      "claimant": "NTA (X post)",
+      "attribution": "NTA said",
+      "status": "documented",
+      "source_ids": [
+        "neet_dtnext_0515",
+        "neet_tnm_0515"
+      ],
+      "links": [
+        {
+          "source_id": "neet_dtnext_0515",
+          "url": "https://www.dtnext.in/news/national/nta-announces-neet-ug-2026-re-examination-on-june-21-after-paper-leak-row",
+          "title": "NTA announces NEET-UG 2026 re-examination on June 21 after paper leak row",
+          "publisher": "DT Next (ANI)",
+          "date": "2026-05-15",
+          "snippet": "NEET (UG) 2026 -- Examination Date Announced. The National Testing Agency, with the approval of the Government of India, has scheduled the re-examination of NEET (UG) 2026 on Sunday, 21 June 2026.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": []
+    },
+    {
+      "id": "neet11",
+      "date": "2026-06-21",
+      "text": "Re-exam held 21 June: more than 20 lakh candidates appeared across 5,440 centres in India and 14 abroad, per an NTA statement.",
+      "value": 2000000,
+      "value_text": "more than 20 lakh; 5,440 centres",
+      "unit": "candidates",
+      "claimant": "NTA statement (via Siasat)",
+      "attribution": "NTA said",
+      "status": "documented",
+      "source_ids": [
+        "neet_siasat_0621"
+      ],
+      "links": [
+        {
+          "source_id": "neet_siasat_0621",
+          "url": "https://www.siasat.com/neet-retest-held-for-20-lakh-aspirants-after-paper-leak-row-3493652/",
+          "title": "NEET retest held for 20 lakh aspirants after paper leak row",
+          "publisher": "Siasat (NTA statement)",
+          "date": "2026-06-21",
+          "snippet": "In a statement, NTA said more than 20 lakh candidates appeared for the NEET (UG) 2026 re-examination across 5,440 centres in India and 14 centres abroad.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Upgrades m21/m22 from 'Secondary righttoinformation' to NTA statement via Siasat."
+      ]
+    },
+    {
+      "id": "neet12",
+      "date": "2026-05-23",
+      "text": "Fee refunds of more than Rs 300 crore expected for about 22.79 lakh candidates (ETV Bharat).",
+      "value_text": "more than Rs 300 crore",
+      "claimant": "ETV Bharat",
+      "attribution": "reported",
+      "status": "claimed",
+      "source_ids": [
+        "etvbharat"
+      ],
+      "links": [
+        {
+          "source_id": "etvbharat",
+          "url": "https://www.etvbharat.com/en/bharat/neet-ug-2026-cancellation-after-paper-leak-nta-opens-refund-portal-for-over-22-lakh-candidates-enn26052301074",
+          "title": "NEET UG 2026 Cancellation After Paper Leak: NTA Opens Refund Portal For Over 22 Lakh Candidates",
+          "publisher": "ETV Bharat",
+          "date": "2026-05-23",
+          "snippet": "Around 22.79 lakh registered candidates are expected to receive refunds amounting to more than Rs 300 crore.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Carried over from existing metrics.json m12 / meta.json; not re-fetched this run."
+      ]
+    },
+    {
+      "id": "neet13",
+      "date": "2026-07-28",
+      "text": "CBI filed a chargesheet against 13 arrested accused alleging a conspiracy involving NTA subject experts, middlemen and coaching-institute associates; it cited 360 witnesses. All 13 in judicial custody.",
+      "value": 13,
+      "value_text": "13 accused",
+      "unit": "people",
+      "claimant": "CBI",
+      "attribution": "CBI said",
+      "status": "alleged",
+      "source_ids": [
+        "neet_theprint_0728",
+        "neet_bt_0728"
+      ],
+      "links": [
+        {
+          "source_id": "neet_theprint_0728",
+          "url": "https://theprint.in/india/cbi-files-charge-sheet-in-neet-ug-2026-paper-leak-case/2999453/",
+          "title": "CBI files charge sheet in NEET UG 2026 paper leak case",
+          "publisher": "ThePrint (PTI)",
+          "date": "2026-07-28",
+          "snippet": "The CBI cited 360 witnesses, 422 documents and 43 material objects in this charge sheet. All 13 chargesheeted persons are in judicial custody as on date,",
+          "verified": true
+        },
+        {
+          "source_id": "neet_bt_0728",
+          "url": "https://www.businesstoday.in/india/story/cbi-files-chargesheet-against-13-accused-in-neet-ug-2026-paper-leak-case-cites-360-witnesses-545823-2026-07-28",
+          "title": "CBI files chargesheet against 13 accused in NEET-UG 2026 paper leak case; cites 360 witnesses",
+          "publisher": "Business Today",
+          "date": "2026-07-28",
+          "snippet": "alleging a well-organised conspiracy involving NTA subject experts, middlemen and coaching institute associates",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Allegations until trial; a supplementary chargesheet (14 Oct) was reported by search summary, not fetched."
+      ]
+    },
+    {
+      "id": "neet14",
+      "date": "2026-05-15",
+      "text": "The CJI's 'cockroaches' remark was made on 15 May 2026 in a Supreme Court hearing on Senior Advocate designation (law degrees), not in a NEET case. He said it was aimed at holders of fake law degrees, not youth.",
+      "claimant": "Chief Justice Surya Kant (via LiveLaw/The Wire)",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "neet_wire_cji_0516",
+        "neet_fpj_0725"
+      ],
+      "links": [
+        {
+          "source_id": "neet_wire_cji_0516",
+          "url": "https://m.thewire.in/article/government/offends-spirit-of-democracy-outrage-over-cji-surya-kants-cockroaches-parasites-remarks",
+          "title": "After Outrage over His 'Cockroaches' 'Parasites' Remarks, CJI Surya Kant Says Media 'Misquoted' Him",
+          "publisher": "The Wire",
+          "date": "2026-05-16",
+          "snippet": "There are youngsters like cockroaches, who don’t get any employment and don’t have any place in profession,",
+          "verified": true
+        },
+        {
+          "source_id": "neet_wire_cji_0516",
+          "url": "https://m.thewire.in/article/government/offends-spirit-of-democracy-outrage-over-cji-surya-kants-cockroaches-parasites-remarks",
+          "title": "After Outrage over His 'Cockroaches' 'Parasites' Remarks, CJI Surya Kant Says Media 'Misquoted' Him",
+          "publisher": "The Wire",
+          "date": "2026-05-16",
+          "snippet": "What I had specifically criticised were those who have entered professions like the Bar (legal profession) with the aid of fake and bogus degrees.",
+          "verified": true
+        },
+        {
+          "source_id": "neet_fpj_0725",
+          "url": "https://www.freepressjournal.in/amp/education/thanks-for-calling-us-cockroaches-how-a-cji-remark-snowballed-into-a-movement-that-forced-dharmendra-pradhans-resignation",
+          "title": "'Thanks For Calling Us Cockroaches': How A CJI Remark Snowballed Into A Movement",
+          "publisher": "Free Press Journal",
+          "date": "2026-07-25",
+          "snippet": "The movement traces its roots to a Supreme Court hearing on May 15 regarding Senior Advocate designation.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "No source links the remark to NEET itself. The NEET connection is only via the CJP's later campaign. Wire says 'The CJI's remarks came on Friday while questioning the genuineness of the law degrees of some advocates'. Quote punctuation differs by outlet (FPJ: 'in the profession')."
+      ]
+    },
+    {
+      "id": "neet15",
+      "date": "2026-05-16",
+      "text": "CJP founded 16 May as a satirical party after the CJI remark; Dipke asked 'What if all cockroaches came together?'. The founding was about the remark and unemployment, not NEET. NEET is not mentioned in the founding coverage found.",
+      "claimant": "Al Jazeera",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "neet_aj_0616",
+        "neet_fpj_0725"
+      ],
+      "links": [
+        {
+          "source_id": "neet_aj_0616",
+          "url": "https://www.aljazeera.com/news/2026/6/16/my-voice-is-being-heard-a-month-of-indias-cockroach-janta-party",
+          "title": "'My voice is being heard': A month of India's Cockroach Janta Party",
+          "publisher": "Al Jazeera",
+          "date": "2026-06-16",
+          "snippet": "On May 16, he announced the launch of CJP, an evident jibe at Prime Minister Narendra Modi’s Bharatiya Janata Party (BJP).",
+          "verified": true
+        },
+        {
+          "source_id": "neet_aj_0616",
+          "url": "https://www.aljazeera.com/news/2026/6/16/my-voice-is-being-heard-a-month-of-indias-cockroach-janta-party",
+          "title": "'My voice is being heard': A month of India's Cockroach Janta Party",
+          "publisher": "Al Jazeera",
+          "date": "2026-06-16",
+          "snippet": "casually asked on social media: “What if all cockroaches came together?”",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Important for storyline: CJP did not form over NEET; it was repurposed. Date of first NEET-linked CJP statement: 22 May (PTI). Dipke's later claim: 'Our only demand since the inception of this movement has been the resignation of Dharmendra Pradhan' (Dynamite News, 12 Jun) conflicts with the 16 May satire origin and with the 22 May start."
+      ]
+    },
+    {
+      "id": "neet16",
+      "date": "2026-05-22",
+      "text": "On 22 May the CJP began a campaign demanding Education Minister Pradhan's resignation, centred on the NEET-UG 2026 'paper-leak' controversy; Dipke: 'It was the fault of the system that over 22 lakh students' future was impacted, it was the fault of the system that NEET students committed suicide.'",
+      "claimant": "PTI (Dipke quoted)",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "neet_dtnext_0522"
+      ],
+      "links": [
+        {
+          "source_id": "neet_dtnext_0522",
+          "url": "https://www.dtnext.in/news/national/cockroach-janata-party-launches-campaign-seeking-dharmendra-pradhans-resignation",
+          "title": "'Cockroach Janata Party' launches campaign seeking Dharmendra Pradhan's resignation",
+          "publisher": "DT Next (PTI)",
+          "date": "2026-05-22",
+          "snippet": "centres on alleged systemic failures in the education sector, particularly concerns surrounding the NEET-UG 2026 \"paper-leak\" controversy.",
+          "verified": true
+        },
+        {
+          "source_id": "neet_dtnext_0522",
+          "url": "https://www.dtnext.in/news/national/cockroach-janata-party-launches-campaign-seeking-dharmendra-pradhans-resignation",
+          "title": "'Cockroach Janata Party' launches campaign seeking Dharmendra Pradhan's resignation",
+          "publisher": "DT Next (PTI)",
+          "date": "2026-05-22",
+          "snippet": "It was the fault of the system that over 22 lakh students' future was impacted, it was the fault of the system that NEET students committed suicide. Whatever happens, Dharmendra Pradhan will have to resign",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "PTI dates launch to 'Friday' (22 May 2026)."
+      ]
+    },
+    {
+      "id": "neet17",
+      "date": "2026-06-06",
+      "text": "At the 6 June Jantar Mantar protest, CJP demanded Pradhan's resignation over the NEET 2026 paper leak and CBSE OSM irregularities; slogan: 'We asked for 'Make in India', you gave us 'Leak in India'.'",
+      "claimant": "ANI (via FPJ)",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "neet_fpj_0606"
+      ],
+      "links": [
+        {
+          "source_id": "neet_fpj_0606",
+          "url": "https://www.freepressjournal.in/india/make-in-india-to-leak-in-india-cjp-protests-at-jantar-mantar-over-neet-2026-paper-leak-demands-dharmendra-pradhans-resignation-video",
+          "title": "'Make In India To Leak In India': CJP Protests At Jantar Mantar Over NEET 2026 Paper Leak",
+          "publisher": "Free Press Journal (ANI)",
+          "date": "2026-06-06",
+          "snippet": "The protestors pressed on their demand, raising slogans, \"Dharmendra Pradhan Istifa do (Dharmendra Pradhan step down). We asked for 'Make in India', you gave us 'Leak in India'.\"",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Existing timeline cites The Week for the slogan; ANI/FPJ is an independent second source."
+      ]
+    },
+    {
+      "id": "neet18",
+      "date": "2026-06-11",
+      "text": "CJP unveiled a five-point 'exam manifesto' at Savitribai Phule Pune University, including Rs 10,000 compensation per candidate when an exam is cancelled, leaked or disrupted, backup exams within 72 hours, physical evaluation of answer sheets, automatic age-limit extension, and third-party audits of online test centres.",
+      "value": 10000,
+      "value_text": "Rs 10,000 per candidate",
+      "unit": "INR",
+      "claimant": "CJP (Dynamite News, Bridge Chronicle)",
+      "attribution": "CJP says",
+      "status": "claimed",
+      "source_ids": [
+        "neet_dynamite_0612",
+        "neet_bridge_0611"
+      ],
+      "links": [
+        {
+          "source_id": "neet_dynamite_0612",
+          "url": "https://www.dynamitenews.com/national/cockroach-janta-party-releases-reform-manifesto-10000-compensation-for-paper-leaks-age-relaxation-exam-audits",
+          "title": "CJP releases reform Manifesto: Rs 10,000 Compensation for Paper Leaks, Age Relaxation, Exam Audits",
+          "publisher": "Dynamite News",
+          "date": "2026-06-12",
+          "snippet": "unveiled a five-point “exam manifesto” during an agitation held at Savitribai Phule Pune University",
+          "verified": true
+        },
+        {
+          "source_id": "neet_bridge_0611",
+          "url": "https://www.thebridgechronicle.com/amp/story/pune/cockroach-janata-party-five-demands-pune-protest-mp99",
+          "title": "Cockroach Janata Party five demands Pune protest",
+          "publisher": "The Bridge Chronicle",
+          "date": "2026-06-11",
+          "snippet": "Financial compensation of ₹10,000 per candidate whenever an examination is cancelled, leaked, or disrupted",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Dynamite says 'on Thursday' (page dated 12 Jun) = 11 Jun, matching timeline start_pune. Bridge Chronicle snippet is the list item text."
+      ]
+    },
+    {
+      "id": "neet19",
+      "date": "2026-07-20",
+      "text": "CJP memorandum to Health Minister Nadda: core demand 'from Day 1' was Pradhan's resignation/sacking; CJP claims 'Due to the NEET paper leak, 21 students (as per our records) committed suicide'; demands included Rs 1 crore compensation per family and Wangchuk's release.",
+      "value": 21,
+      "value_text": "21 students (CJP records)",
+      "unit": "deaths",
+      "claimant": "CJP",
+      "attribution": "CJP claims",
+      "status": "claimed",
+      "source_ids": [
+        "neet_theprint_0720"
+      ],
+      "links": [
+        {
+          "source_id": "neet_theprint_0720",
+          "url": "https://theprint.in/politics/release-wangchuk-sack-pradhan-pay-rs-1-cr-to-neet-suicide-victims-kin-cjps-demands-in-memo-to-nadda/2991314/",
+          "title": "Release Wangchuk, sack Pradhan, pay Rs 1 cr to NEET suicide victims' kin: CJP's demands in memo to Nadda",
+          "publisher": "ThePrint",
+          "date": "2026-07-20",
+          "snippet": "Our core demand from Day 1 has been the resignation/sacking of Mr Dharmendra Pradhan’s, the current Minister of Education.",
+          "verified": true
+        },
+        {
+          "source_id": "neet_theprint_0720",
+          "url": "https://theprint.in/politics/release-wangchuk-sack-pradhan-pay-rs-1-cr-to-neet-suicide-victims-kin-cjps-demands-in-memo-to-nadda/2991314/",
+          "title": "Release Wangchuk, sack Pradhan, pay Rs 1 cr to NEET suicide victims' kin: CJP's demands in memo to Nadda",
+          "publisher": "ThePrint",
+          "date": "2026-07-20",
+          "snippet": "Due to the NEET paper leak, 21 students (as per our records) committed suicide.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "21 is CJP's own count; Medical Dialogues reports 11 in the open letter to PM; not independently verified. Do not state as fact."
+      ]
+    },
+    {
+      "id": "neet20",
+      "date": "2026-07-25",
+      "text": "Pradhan resigned on 25 July, 35 days after the clamour for his resignation began (PTI count); his note: 'I took responsibility of NEET paper leak from day one'. CJP kept two demands (Rs 1 crore to families; no action against protesters) marked 'PENDING'.",
+      "claimant": "PTI; Dharmendra Pradhan",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "neet_theprint_0725",
+        "neet_nl_0725"
+      ],
+      "links": [
+        {
+          "source_id": "neet_theprint_0725",
+          "url": "https://theprint.in/india/pradhan-resigns-as-education-minister-cjp-says-two-more-demands-pending/2996684/",
+          "title": "Pradhan resigns as education minister, CJP says two more demands pending",
+          "publisher": "ThePrint (PTI)",
+          "date": "2026-07-25",
+          "snippet": "Union Education Minister Dharmendra Pradhan stepped down from his post on Saturday, 35 days after a clamour for his resignation over irregularities in the exam system and the NEET paper leak galvanised thousands of students",
+          "verified": true
+        },
+        {
+          "source_id": "neet_theprint_0725",
+          "url": "https://theprint.in/india/pradhan-resigns-as-education-minister-cjp-says-two-more-demands-pending/2996684/",
+          "title": "Pradhan resigns as education minister, CJP says two more demands pending",
+          "publisher": "ThePrint (PTI)",
+          "date": "2026-07-25",
+          "snippet": "“I took responsibility of NEET paper leak from day one,” he said.",
+          "verified": true
+        },
+        {
+          "source_id": "neet_nl_0725",
+          "url": "https://newslaundry.com/2026/07/25/dharmendra-pradhan-resigns-under-pressure-from-student-protests",
+          "title": "Dharmendra Pradhan resigns under pressure from student protests",
+          "publisher": "Newslaundry",
+          "date": "2026-07-25",
+          "snippet": "the CJP said its three demands – Pradhan’s resignation, monetary compensation for the families of students who died by suicide following the NEET-UG paper leak, and no legal action against protesters – were “non-negotiable”",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "'35 days' from PTI conflicts with ThePrint's own 'protests at Jantar Mantar started on June 20' (35 days before 25 Jul is 20 Jun). It counts the sit-in, not 22 May or 6 Jun."
+      ]
+    },
+    {
+      "id": "neet21",
+      "date": "2026-07-25",
+      "text": "Dipke on stage after the resignation: 'If you had not called us cockroaches, I would not have returned to India.' (links the CJI remark to the movement, not to NEET.)",
+      "claimant": "Abhijeet Dipke (via PTI/ThePrint, FPJ)",
+      "attribution": "reported",
+      "status": "documented",
+      "source_ids": [
+        "neet_theprint_0725",
+        "neet_fpj_0725"
+      ],
+      "links": [
+        {
+          "source_id": "neet_theprint_0725",
+          "url": "https://theprint.in/india/pradhan-resigns-as-education-minister-cjp-says-two-more-demands-pending/2996684/",
+          "title": "Pradhan resigns as education minister, CJP says two more demands pending",
+          "publisher": "ThePrint (PTI)",
+          "date": "2026-07-25",
+          "snippet": "If you had not called us ‘cockroaches’, I would not have returned to India.",
+          "verified": true
+        },
+        {
+          "source_id": "neet_fpj_0725",
+          "url": "https://www.freepressjournal.in/amp/education/thanks-for-calling-us-cockroaches-how-a-cji-remark-snowballed-into-a-movement-that-forced-dharmendra-pradhans-resignation",
+          "title": "'Thanks For Calling Us Cockroaches': How A CJI Remark Snowballed Into A Movement",
+          "publisher": "Free Press Journal",
+          "date": "2026-07-25",
+          "snippet": "If he hadn't called us cockroaches, I wouldn't have come to India. This movement would not have started,",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Two renderings of the quote differ in wording (PTI vs FPJ); quote only one verbatim."
+      ]
+    }
+  ]
+}

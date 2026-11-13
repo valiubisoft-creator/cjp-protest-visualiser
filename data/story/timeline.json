@@ -482,7 +482,8 @@
           "hunger_strike_day": null,
           "facts": [
             {
-              "text": "The CJP reappeared within minutes as “Cockroach is Back” (@Cockroachisback).",
+              "text": "Hours after the block, the CJP was back as “Cockroach is Back” (@Cockroachisback).",
+              "resolution": "Hybrid chat 2026-11-13 (Vali: primary source wins): Business Today, 21 May, 'back in a new avatar hours after being withheld on X in India' (read verbatim). 'Within minutes' (via Wikipedia) is unsupported; see data/story/withheld.json cib_launch_2026_05_21.",
               "claimant": "media",
               "attribution": "reported",
               "status": "documented",

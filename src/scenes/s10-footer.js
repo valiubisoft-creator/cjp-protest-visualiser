@@ -32,7 +32,7 @@ export default def => {
       // same merge as s05-map.js init (idempotent; whichever runs first wins, the numbering is identical)
       for (const ns of sansad?.new_sources || []) if (!c.data.byId.source[ns.id]) { c.data.sources.sources.push(ns); c.data.byId.source[ns.id] = { ...ns, n: c.data.sources.sources.length }; }
 
-      const r = c.root; r.classList.add('s10', 'reading'); r.id = 'sources-footer';
+      const r = c.root; r.classList.add('s10'); r.id = 'sources-footer';   // ink, not .reading paper (Vali 2026-11-13, hybrid: the whole piece in black)
       r.innerHTML = `<div class="s10-in">
         <div class="s10-cols">
           <section class="s10-credit" aria-labelledby="s10-h-credit"><h2 id="s10-h-credit">Credit</h2>${credit(c.data, imagery)}</section>

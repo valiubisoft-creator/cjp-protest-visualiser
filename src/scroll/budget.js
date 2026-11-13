@@ -1,5 +1,7 @@
 // Scroll budget: scene order and lengths. THE single source of truth (F3, 2026-11-12).
 // Change lengths here only, and record the change in docs/build/STATUS.md ("Scroll budget").
+// 2026-11-13 (Vali, hybrid Gate 0 sign-off): the hybrid running order: NEET + HELD in the prologue stage, S5 1,370,
+//   WATCH / OCT / ROLL / CAGE / CLOSE added, S6.5 and S7a–d out of the flow (files kept). See docs/build/hybrid/GATE0.md.
 // 2026-11-12 (Vali, prologue chat): S3.5 160 → 240 vh (more scroll before the minister's claim); S3 180 → 260 vh
 // (the sign-ups figure stays up longer after the swarm is full).
 //
@@ -25,30 +27,33 @@ export function buildBudget({ quoteCount = 3 } = {}) {
     { id: 'S2',   name: 'Collapse and spawn',                  len: 60,  block: 'main', stage: 'prologue', file: 's02-spawn.js', timed: true },
     { id: 'S3',   name: 'Multiply',                            len: 260, block: 'main', stage: 'prologue', file: 's03-multiply.js' },
     { id: 'S3.5', name: 'The claim and the correction',        len: 240, block: 'main', stage: 'prologue', file: 's03-5-claim.js' },
+    // ── hybrid (build/hybrid, Vali 2026-11-13): NEET and Withheld join the prologue stage; both start and end on
+    //    S3.5's last frame (claim.poses(1, t)), so S3.5 → NEET → HELD → S4 hand over in place ──
+    { id: 'NEET', name: 'The grievance: the NEET leak',         len: 200, block: 'main', stage: 'prologue', file: 'h-neet.js' },
+    { id: 'HELD', name: 'Withheld: blocked 48 days, back in hours', len: 240, block: 'main', stage: 'prologue', file: 'h-held.js' },
     { id: 'S4',   name: 'The date on the skeleton',            len: 180, block: 'main', stage: 'prologue', file: 's04-date.js' },
-    { id: 'S5',   name: 'Map stage: day by day',               len: 2070, block: 'main', stage: 'map',      file: 's05-map.js',
-      // spec §6 880vh minus the 70vh Victory node (Vali, 2026-11-12: Victory lives only in S6) = 810; then the S5 chat
-      // (Vali 2026-11-12: narrative body copy + the 20 Jul hour-by-hour) sized each node to its rail copy at ~1.25×
-      // page-scroll reading pace: protest_arrest holds the ten hour beats of 20 Jul (~770 vh of its 1200)
-      segments: [['lead_in', 60], ['start', 160], ['protest', 180], ['wangchuk', 240], ['detention', 170], ['protest_arrest', 1200], ['lead_out', 60]] },
+    // hybrid S5 (Vali 2026-11-13, Gate 0): street cut to four beats + chapter titles, 20 July cut to three hours + 23 Jul,
+    // the three ledgers on the dimmed map. Was 2,070 vh. Beat slots inside each node segment: s05/hybrid.js
+    { id: 'S5',   name: 'Map stage: street, 20 July, ledgers', len: 1370, block: 'main', stage: 'map',      file: 's05-map.js',
+      segments: [['lead_in', 60], ['start', 140], ['protest', 90], ['wangchuk', 90], ['detention', 90], ['protest_arrest', 840], ['lead_out', 60]] },
     { id: 'S6',   name: 'Finale: the date returns, Victory',  len: 260, block: 'main', stage: 'finale',   file: 's06-finale.js' },
-    // ── reading and charts ──
-    { id: 'S6.5', name: 'October epilogue',                    len: 'auto', block: null, file: 's06-5-epilogue.js' },
-    { id: 'S7a',  name: 'Chart A: views over time',            len: 170, block: 'S7a', stage: 'chart', file: 's07-charts.js', sub: 0 },
-    { id: 'S7b',  name: 'Chart B: channels',                   len: 170, block: 'S7b', stage: 'chart', file: 's07-charts.js', sub: 1 },
-    { id: 'S7c',  name: 'Chart C: source type per day',        len: 170, block: 'S7c', stage: 'chart', file: 's07-charts.js', sub: 2 },
-    // Vali 2026-11-12 (remaining-scenes chat): v2's "07 · The apparatus" spokes network, ported with sourced data
-    { id: 'S7d',  name: 'The apparatus: state actors',         len: 300, block: 'S7d', stage: 'chart', file: 's07-apparatus.js' },
+    // ── hybrid second act (S6.5, S7a–c and the S7d spokes leave the flow; their files stay) ──
+    { id: 'WATCH', name: 'The country watched: 1,000-dot screen', len: 260, block: 'WATCH', stage: 'watch', file: 'h-watch.js' },
+    { id: 'OCT',   name: 'October: count them one by one',     len: 500, block: 'OCT',   stage: 'oct',   file: 'h-oct.js' },
+    { id: 'ROLL',  name: 'Why they marched: the voter roll',   len: 380, block: 'ROLL',  stage: 'roll',  file: 'h-roll.js' },
+    { id: 'CAGE',  name: 'The apparatus: the cage',            len: 340, block: 'CAGE',  stage: 'cage',  file: 'h-cage.js' },
     // one 100vh scene per selected quote (quotes.json `selected: true`), crossfading in one pinned stage
     // Vali 2026-11-12: Ambedkar only, typed out like a typewriter, so each quote scene gets 160 vh (was 100)
     ...quoteIds.map((id, i) => ({ id, name: `Quote ${i + 1} of ${quoteCount}`, len: 160, block: 'S8', stage: 'quotes', file: 's08-quotes.js', sub: i })),
+    // Vali 2026-11-13: the closing line on its own scene, not inside the footer
+    { id: 'CLOSE', name: 'The closing line',                   len: 140, block: 'CLOSE', stage: 'close', file: 'h-close.js' },
     { id: 'S9',   name: 'Follow and share',                    len: 100, block: null, file: 's09-cta.js' },
     { id: 'S10',  name: 'Credit, methodology, disclaimer',     len: 'auto', block: null, file: 's10-footer.js' },
   ];
 }
 
 // group aliases for deep links: ?p=S7:0.5 → S7a, ?p=S8:0.5 → S8a
-export const ALIAS = { S7: 'S7a', S8: 'S8a' };
+export const ALIAS = { S8: 'S8a' };   // hybrid: S7a–d left the flow (2026-11-13)
 
 // S5 helpers: p ↔ (segment, local p). Pure; S5a/S5b/S5c use these instead of hard-coding vh.
 export function segmentAt(def, p) {

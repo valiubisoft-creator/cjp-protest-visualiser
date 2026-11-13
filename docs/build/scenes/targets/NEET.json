@@ -1,0 +1,32 @@
+{
+ "scene": "NEET",
+ "brief": "docs/build/hybrid/GATE0.md",
+ "note": "Hybrid ch. 02 (Vali 2026-11-13). Starts and ends on S3.5 p 1.",
+ "targets": [
+  {
+   "name": "NEET-0.1",
+   "at": "NEET:0.1",
+   "expect": "Title card mid-entry: kicker 02 · 3 – 22 May, headline \"22 lakh students, one cancelled exam.\" on one line, rule, dek with *; the S3.5 clusters dimmed behind."
+  },
+  {
+   "name": "NEET-0.35",
+   "at": "NEET:0.35",
+   "expect": "Lockup top-left; answer sheet filling with bubbles; roaches ringing the sheet; caption 0 (3 May · the exam) top-right."
+  },
+  {
+   "name": "NEET-0.55",
+   "at": "NEET:0.55",
+   "expect": "Sheet full; red \"Cancelled · 12 May 2026 · NTA\" stamp; caption 1."
+  },
+  {
+   "name": "NEET-0.76",
+   "at": "NEET:0.76",
+   "expect": "Caption 2 (22 May · the demand) with the slogan; sheet and stamp still up."
+  },
+  {
+   "name": "NEET-0.995",
+   "at": "NEET:0.995",
+   "expect": "Sheet and lockup gone; roaches back on S3.5's end layout (handover to HELD)."
+  }
+ ]
+}

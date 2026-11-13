@@ -1,0 +1,24 @@
+/* Hybrid chapter chrome (build/hybrid, 2026-11-13): title card, docked lockup, caption card. Tokens only.
+   Promoted from design/hybrid/hybrid.css (the Gate 0 storyboard). Scenes position .hy-cap with their own CSS. */
+.hy-ch { display: contents; }
+.hy-kick { font: var(--w-bold) var(--fs-micro)/1.3 var(--font-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.hy-kick .n { color: var(--accent-text); margin-right: .9em; }
+
+.hy-title { position: absolute; left: 120px; right: 120px; top: 50%; transform: translateY(-50%); pointer-events: none; z-index: 20; }
+.hy-title h2 { font: 400 var(--fs-d1)/1.06 var(--font-display); margin: 18px 0 0; color: var(--fg); white-space: nowrap; }
+.hy-title h2 .w { display: inline-block; }
+.hy-title .rule { width: 84px; height: var(--rule-heavy); background: var(--accent); margin: 30px 0 26px; transform-origin: 0 50%; }
+.hy-title .dek { font: var(--w-regular) var(--fs-lead)/1.5 var(--font-text); color: var(--muted); max-width: 33em; margin: 0; }
+.hy-title .dek .star { pointer-events: auto; }
+
+.hy-lock { position: absolute; left: var(--hud-inset); top: var(--hud-inset); z-index: 20; pointer-events: none; }
+.hy-lock h2 { font: 400 34px/1.05 var(--font-display); margin: 6px 0 0; color: var(--fg); white-space: nowrap; }
+.hy-lock.boxed { background: var(--bg); border: var(--rule) solid var(--fg); padding: 10px 14px 12px; }
+
+.hy-cap { position: absolute; width: 360px; box-sizing: border-box; background: var(--bg); border: var(--rule) solid var(--fg); padding: 14px 18px 16px; z-index: 15; }
+.hy-cap .when { font: var(--w-bold) var(--fs-micro)/1.3 var(--font-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--accent-text); margin: 0 0 8px; font-variant-numeric: tabular-nums; }
+.hy-cap p { font: var(--w-regular) var(--fs-body)/1.5 var(--font-text); margin: 0; }
+.hy-cap p + p { margin-top: 8px; }
+.hy-cap h3 { font: var(--w-bold) var(--fs-lead)/1.2 var(--font-text); margin: 0 0 8px; }
+.hy-cap .q { font-style: italic; }
+.hy-cap .meta { font: var(--w-regular) 12px/1.4 var(--font-ui); color: var(--muted); margin-top: 8px; }

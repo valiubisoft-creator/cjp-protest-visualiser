@@ -1,0 +1,897 @@
+{
+  "status": "draft",
+  "collected": "2026-11-13",
+  "note": "Detentions of CJP leaders and Dhruv Rathee, 2026. Verified = snippet found verbatim in the fetched page text. ThePrint pages were blocked to curl (Cloudflare) and The Week returned 403; neither was read. Sources oct_aj_1010 and oct_businesstoday_1010 already exist in october_counts.json and are reused. Rathee image licence is CC BY 3.0 on a YouTube screenshot: marked caution.",
+  "new_sources": [
+    {
+      "id": "det_bt_rathee_1010",
+      "title": "Jantar Mantar protest: YouTuber Dhruv Rathee detained from his Gurugram residence, claims CJP",
+      "publisher": "Business Today",
+      "url": "https://www.businesstoday.in/india/story/jantar-mantar-protest-youtuber-dhruv-rathee-detained-at-his-gurugram-residence-claims-cjp-560788-2026-10-10",
+      "date": "2026-10-10",
+      "note": "Quotes the CJP post on X (8 AM, ~50 police in civilian attire); also says Rathee was at the 8 Oct Bengaluru Freedom Park protest."
+    },
+    {
+      "id": "det_outlook_rathee_1010",
+      "title": "YouTuber Dhruv Rathee Reportedly Detained At Gurugram Residence Ahead Of CJP Protest",
+      "publisher": "Outlook India",
+      "url": "https://www.outlookindia.com/national/youtuber-dhruv-rathee-reportedly-detained-at-gurugram-residence-ahead-of-cjp-protest",
+      "date": "2026-10-10",
+      "note": "Cites a News18 report (7.48 am entry). Says detention not officially confirmed at time of writing."
+    },
+    {
+      "id": "det_oneindia_rathee_why_1010",
+      "title": "YouTuber Dhruv Rathee Detained In Gurugram Hours Before Delhi's Jantar Mantar Protest: Why?",
+      "publisher": "Oneindia",
+      "url": "https://www.oneindia.com/new-delhi/youtuber-dhruv-rathee-detained-in-gurugram-hours-before-delhi-s-jantar-mantar-protest-why-8230701.html",
+      "date": "2026-10-10",
+      "note": "Gives 7:10 am without attribution."
+    },
+    {
+      "id": "det_oneindia_rathee_release_1011",
+      "title": "Dhruv Rathee Released At 3 AM After Detention, Warned Against Joining CJP Protest; Wife Juli Expresses Concern",
+      "publisher": "Oneindia",
+      "url": "https://www.oneindia.com/india/dhruv-rathee-released-at-3-am-after-detention-warned-against-joining-cjp-protest-wife-juli-express-8231599.html",
+      "date": "2026-10-11",
+      "note": "Cites PTI (three Crime Branch teams, about 6 am) and a Gurugram Police post (released 3 AM). Page text is partly garbled (calls it 'arrested' and 'behind bars'); use only the quoted lines."
+    },
+    {
+      "id": "det_telanganatoday_rathee_1010",
+      "title": "Dhruv Rathee detained at Gurugram residence ahead of Delhi protest",
+      "publisher": "Telangana Today (IANS)",
+      "url": "https://telanganatoday.com/dhruv-rathee-detained-at-gurugram-residence-ahead-of-delhi-protest",
+      "date": "2026-10-10",
+      "note": "Says Gurugram Police; attributes 8 am to the CJP X post."
+    },
+    {
+      "id": "det_pioneer_rathee_1010",
+      "title": "YouTuber Dhruv Rathee detained ahead of CJP protest at Jantar Mantar",
+      "publisher": "The Pioneer",
+      "url": "https://www.dailypioneer.com/news/dhruv-rathee-detained-cjp-protest-delhi",
+      "date": "2026-10-10",
+      "note": "Says Delhi Police, citing police sources."
+    },
+    {
+      "id": "det_outlook_kidnapped_1011",
+      "title": "'Not Detained, I was Kidnapped': Dhruv Rathee Shows Indian Passport, Criticises Govt After Release",
+      "publisher": "Outlook India",
+      "url": "https://www.outlookindia.com/national/not-detained-i-was-kidnapped-dhruv-rathee-shows-indian-passport-criticise-govt-after-release",
+      "date": "2026-10-11",
+      "note": "Rathee's own account; also notes 'Officials said Gurugram Police had detained him'."
+    },
+    {
+      "id": "det_hansindia_kidnapped_1011",
+      "title": "'Sent Goons To Kidnap Me': Dhruv Rathee Speaks Out After Release From Detention",
+      "publisher": "The Hans India",
+      "url": "https://www.thehansindia.com/news/national/sent-goons-to-kidnap-me-dhruv-rathee-speaks-out-after-release-from-detention-1131288",
+      "date": "2026-10-11",
+      "note": "Rathee's allegations (22-23 hours without phone or lawyer; 3 am release); police response not included."
+    },
+    {
+      "id": "det_ibtimes_kidnapped_1011",
+      "title": "I was kidnapped: Dhruv Rathee shows Indian passport amid German citizenship row (first video)",
+      "publisher": "IBTimes India",
+      "url": "https://www.ibtimes.co.in/i-was-kidnapped-dhruv-rathee-shows-indian-passport-amid-german-citizenship-row-first-video-907325",
+      "date": "2026-10-11",
+      "note": "Quotes a police officer to PTI: released late at night; could be detained again."
+    },
+    {
+      "id": "det_oneindia_noida_1016",
+      "title": "Is Dhruv Rathee Arrested? Noida Police Shoots Down The Rumours",
+      "publisher": "Oneindia",
+      "url": "https://www.oneindia.com/india/is-dhruv-rathee-arrested-noida-police-shoots-down-the-rumours-8237081.html",
+      "date": "2026-10-16",
+      "note": "Noida Police denial of an arrest rumour."
+    },
+    {
+      "id": "det_tnm_rathee_bengaluru",
+      "title": "I came to Bengaluru to meet deleted voters: Dhruv Rathee to TNM",
+      "publisher": "The News Minute",
+      "url": "https://www.thenewsminute.com/amp/story/videos/i-came-to-bengaluru-to-meet-deleted-voters-dhruv-rathee-to-tnm",
+      "date": "2026-10-08",
+      "note": "Page carries no visible date in the extracted text; the Bengaluru protest was 8 Oct per Business Today."
+    },
+    {
+      "id": "det_onmanorama_rathee_1017",
+      "title": "Ultimately, the power in a democracy rests with the people: Dhruv Rathee",
+      "publisher": "Onmanorama",
+      "url": "https://www.onmanorama.com/news/india/2026/10/17/ultimately-the-power-in-a-democracy-rests-with-the-people-dhruv-rathee.amp.html",
+      "date": "2026-10-17",
+      "note": "Interview; Rathee's own words."
+    },
+    {
+      "id": "det_oneindia_lockdown_1010",
+      "title": "Delhi Lockdown? 41,000 Security Personnel Deployed, 7,000 Detained As CJP Protest Rocks Capital",
+      "publisher": "Oneindia",
+      "url": "https://www.oneindia.com/new-delhi/delhi-lockdown-41-000-security-personnel-deployed-7-000-detained-as-cjp-protest-rocks-capital-8231573.html",
+      "date": "2026-10-11",
+      "note": "Only source seen giving a clock time for the airport detention (around 10.30 am); also an airport official on the remote bay."
+    },
+    {
+      "id": "det_bt_flight_1010",
+      "title": "I was on flight when Dipke, CJP leaders were detained: Here's what unfolded",
+      "publisher": "Business Today",
+      "url": "https://www.businesstoday.in/india/story/i-was-on-flight-when-dipke-cjp-leaders-were-detained-heres-what-unfolded-560821-2026-10-10",
+      "date": "2026-10-10",
+      "note": "First-person account by a fellow passenger/journalist."
+    },
+    {
+      "id": "det_dtnext_flight_1010",
+      "title": "Dipke, 2 more CJP leaders detained by police as flight lands in Delhi",
+      "publisher": "DT Next (PTI)",
+      "url": "https://www.dtnext.in/amp/story/news/national/dipke-2-more-cjp-leaders-detained-by-police-as-flight-lands-in-delhi",
+      "date": "2026-10-10",
+      "note": "CJP claim plus police sources on where each was taken."
+    },
+    {
+      "id": "det_dtnext_dipke_1016",
+      "title": "'What law have I broken?': CJP leader Abhijeet Dipke detained en route to CP protest",
+      "publisher": "DT Next (PTI)",
+      "url": "https://www.dtnext.in/news/national/cjp-leader-abhijeet-dipke-detained-while-leaving-for-cp-protest",
+      "date": "2026-10-16",
+      "note": "Text extracted from a longer page; no clock time for the pick-up."
+    },
+    {
+      "id": "det_telanganatoday_dipke_1016",
+      "title": "Delhi Police detain CJP leader Dipke, AISA chief Neha Bohra",
+      "publisher": "Telangana Today (IANS)",
+      "url": "https://telanganatoday.com/delhi-police-detain-cjp-leader-dipke-aisa-chief-neha-bohra",
+      "date": "2026-10-16",
+      "note": "Published 5:56 PM per page."
+    },
+    {
+      "id": "det_oneindia_dipke_1016",
+      "title": "'Maine Abhi Violation Kaise Kiya Hai?': CJP Founder Abhijeet Dipke Questions Delhi Police Before Detention",
+      "publisher": "Oneindia",
+      "url": "https://www.oneindia.com/india/cjp-founder-abhijeet-dipke-questions-delhi-police-before-detention-8237577.html",
+      "date": "2026-10-16",
+      "note": "Published 19:41 IST per page."
+    },
+    {
+      "id": "det_bt_dipke_1017",
+      "title": "Delhi Police arrests Abhijeet Dipke ahead of Tiranga march, CJP claims lawyers unable to contact him",
+      "publisher": "Business Today",
+      "url": "https://www.businesstoday.in/india/story/delhi-police-arrests-abhijeet-dipke-ahead-of-tiranga-march-cjp-claims-lawyers-unable-to-contact-him-562210-2026-10-17",
+      "date": "2026-10-17",
+      "note": null
+    },
+    {
+      "id": "det_devdiscourse_dipke_1017",
+      "title": "Abhijeet Dipke released after being granted conditional bail, Kejriwal welcomes move",
+      "publisher": "Devdiscourse (ANI)",
+      "url": "https://www.devdiscourse.com/article/headlines/3994233-abhijeet-dipke-released-after-being-granted-conditional-bail-kejriwal-welcomes-move",
+      "date": "2026-10-17",
+      "note": null
+    },
+    {
+      "id": "det_fpj_dipke_0718",
+      "title": "CJP Founder Abhijeet Dipke Claims Delhi Police Detained, Assaulted Him After Sonam Wangchuk Removed From Jantar Mantar Protest Site",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/amp/india/cjp-founder-abhijeet-dipke-claims-delhi-police-detained-assaulted-him-after-sonam-wangchuk-removed-from-jantar-mantar-protest-site",
+      "date": "2026-07-18",
+      "note": null
+    },
+    {
+      "id": "det_bt_dipke_0720",
+      "title": "'Dipke has been picked up by the police': CJP alleges crackdown as Delhi protests erupt",
+      "publisher": "Business Today",
+      "url": "https://www.businesstoday.in/india/story/dipke-has-been-picked-up-by-the-police-cjp-alleges-crackdown-as-delhi-protests-erupt-543985-2026-07-20",
+      "date": "2026-07-20",
+      "note": null
+    },
+    {
+      "id": "det_ians_dipke_0720",
+      "title": "Delhi Police dismiss report of CJP founder's detention, call it misleading",
+      "publisher": "IANS (ianslive.in)",
+      "url": "https://ianslive.in/delhi-police-dismiss-report-of-cjp-founders-detention-call-it-misleading--20260720155749",
+      "date": "2026-07-20",
+      "note": null
+    },
+    {
+      "id": "det_uni_dipke_1001",
+      "title": "Maha: CJP founder Dipke briefly detained at Marine Drive ahead of Oct 2 protest",
+      "publisher": "UNI",
+      "url": "https://www.uniindia.com/west-india/crime-maha-dipke-detention/200020",
+      "date": "2026-10-01",
+      "note": "Page truncated behind a subscriber wall after two sentences; only the visible lede was used."
+    }
+  ],
+  "people": [
+    {
+      "id": "abhijeet-dipke",
+      "name": "Abhijeet Dipke",
+      "role": "CJP founder and convenor",
+      "events": [
+        {
+          "id": "dipke-2026-07-18",
+          "date": "2026-07-18",
+          "time_text": "not stated (report updated 09:09 AM IST; post made 'on Saturday')",
+          "place": "Jantar Mantar, Delhi",
+          "text": "Dipke wrote on X that he had been beaten up and put under detention by Delhi Police; the report says Delhi Police had not responded.",
+          "claimant": "Abhijeet Dipke (post on X)",
+          "attribution": "Dipke alleged; the Free Press Journal reports Delhi Police had not issued an official statement",
+          "status": "alleged",
+          "source_ids": [
+            "det_fpj_dipke_0718",
+            "det_fpj_dipke_0718"
+          ],
+          "links": [
+            {
+              "source_id": "det_fpj_dipke_0718",
+              "url": "https://www.freepressjournal.in/amp/india/cjp-founder-abhijeet-dipke-claims-delhi-police-detained-assaulted-him-after-sonam-wangchuk-removed-from-jantar-mantar-protest-site",
+              "title": "CJP Founder Abhijeet Dipke Claims Delhi Police Detained, Assaulted Him After Sonam Wangchuk Removed From Jantar Mantar Protest Site",
+              "publisher": "Free Press Journal",
+              "date": "2026-07-18",
+              "snippet": "\"I have been beaten up and put under detention by Delhi Police,\" Dipke alleged.",
+              "verified": true
+            },
+            {
+              "source_id": "det_fpj_dipke_0718",
+              "url": "https://www.freepressjournal.in/amp/india/cjp-founder-abhijeet-dipke-claims-delhi-police-detained-assaulted-him-after-sonam-wangchuk-removed-from-jantar-mantar-protest-site",
+              "title": "CJP Founder Abhijeet Dipke Claims Delhi Police Detained, Assaulted Him After Sonam Wangchuk Removed From Jantar Mantar Protest Site",
+              "publisher": "Free Press Journal",
+              "date": "2026-07-18",
+              "snippet": "As of Saturday, Delhi Police had not issued any official statement confirming or responding to Dipke's allegations regarding either the alleged attack on Wangchuk or the reported detention and use of force against protesters.",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "Claim only; no corroboration seen; no clock time. Not usable as a 'detained' fact without 'alleged'."
+          ]
+        },
+        {
+          "id": "dipke-2026-07-20",
+          "date": "2026-07-20",
+          "time_text": "not stated",
+          "place": "Near Parliament, Delhi ('Sansad Chalo' march)",
+          "text": "CJP spokesperson Saurav Das posted that Dipke had been 'picked up'; Delhi Police called the reports false ('available on stage') and Das then retracted.",
+          "claimant": "CJP spokesperson Saurav Das (claim); Delhi Police (denial)",
+          "attribution": "CJP claimed, then retracted after Delhi Police denied (IANS)",
+          "status": "disputed",
+          "source_ids": [
+            "det_bt_dipke_0720",
+            "det_ians_dipke_0720",
+            "det_ians_dipke_0720"
+          ],
+          "links": [
+            {
+              "source_id": "det_bt_dipke_0720",
+              "url": "https://www.businesstoday.in/india/story/dipke-has-been-picked-up-by-the-police-cjp-alleges-crackdown-as-delhi-protests-erupt-543985-2026-07-20",
+              "title": "'Dipke has been picked up by the police': CJP alleges crackdown as Delhi protests erupt",
+              "publisher": "Business Today",
+              "date": "2026-07-20",
+              "snippet": "\"Dipke has been picked up by the police!",
+              "verified": true
+            },
+            {
+              "source_id": "det_ians_dipke_0720",
+              "url": "https://ianslive.in/delhi-police-dismiss-report-of-cjp-founders-detention-call-it-misleading--20260720155749",
+              "title": "Delhi Police dismiss report of CJP founder's detention, call it misleading",
+              "publisher": "IANS (ianslive.in)",
+              "date": "2026-07-20",
+              "snippet": "It is formally clarified that these allegations are entirely false and he is available on stage.\"",
+              "verified": true
+            },
+            {
+              "source_id": "det_ians_dipke_0720",
+              "url": "https://ianslive.in/delhi-police-dismiss-report-of-cjp-founders-detention-call-it-misleading--20260720155749",
+              "title": "Delhi Police dismiss report of CJP founder's detention, call it misleading",
+              "publisher": "IANS (ianslive.in)",
+              "date": "2026-07-20",
+              "snippet": "\"Dipke not in detention or arrest.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Do NOT present as a detention. Retracted by the claimant."
+          ]
+        },
+        {
+          "id": "dipke-2026-10-01",
+          "date": "2026-10-01",
+          "time_text": "'today evening' (UNI); a search-result summary of The Week says Mumbai Police put him at Marine Drive about 5 pm (page not readable)",
+          "place": "Marine Drive, Mumbai",
+          "text": "UNI reported Mumbai Police briefly detained Dipke at Marine Drive and released him after brief questioning; a search-result summary of The Week says Mumbai Police denied detaining him.",
+          "claimant": "UNI (reporting); Mumbai Police denial reported by The Week (not read)",
+          "attribution": "UNI reported; denial per The Week (unverified, page returned 403)",
+          "status": "disputed",
+          "source_ids": [
+            "det_uni_dipke_1001"
+          ],
+          "links": [
+            {
+              "source_id": "det_uni_dipke_1001",
+              "url": "https://www.uniindia.com/west-india/crime-maha-dipke-detention/200020",
+              "title": "Maha: CJP founder Dipke briefly detained at Marine Drive ahead of Oct 2 protest",
+              "publisher": "UNI",
+              "date": "2026-10-01",
+              "snippet": "Cockroach Janta Party (CJP) founder Abhijeet Dipke was briefly detained by Mumbai Police at Marine Drive today evening ahead of the party's proposed protest tomorrow, but released after brief questioning.",
+              "verified": true
+            }
+          ],
+          "web_check": "partial",
+          "web_notes": [
+            "The Week article (theweek.in/news/india/2026/10/02/election-commission-protest-cjp-election-protest-mumbai-student-union-election-protest-delhi.html) blocked by the site (HTTP 403 to curl); denial known only from a search-result summary.",
+            "Not an early-morning event."
+          ]
+        },
+        {
+          "id": "dipke-2026-10-10",
+          "date": "2026-10-10",
+          "time_text": "around 10.30 am (Oneindia); 'minutes after' landing (Al Jazeera, Business Today); 'as soon as their flight landed' (CJP claim via PTI)",
+          "place": "Delhi (IGI) airport, aboard an Air India flight from Mumbai, at a remote bay",
+          "text": "Delhi Police detained Dipke, Saurav Das and Ashutosh Ranka inside the plane after it landed from Mumbai; Delhi Police said the action was precautionary under BNSS 126 and 170. They were released on Sunday 11 Oct by an executive magistrate's court on a condition of 'no breach of peace for one year' (CJP lawyer Ratna Singh).",
+          "claimant": "Delhi Police (action); Al Jazeera; CJP (framing)",
+          "attribution": "Al Jazeera reports the detention in its own voice; release terms per CJP legal head Ratna Singh; legal sections per Delhi Police statement as relayed by Oneindia",
+          "status": "documented",
+          "source_ids": [
+            "oct_aj_1010",
+            "oct_aj_1010",
+            "det_oneindia_lockdown_1010",
+            "det_oneindia_lockdown_1010",
+            "det_dtnext_flight_1010",
+            "det_bt_flight_1010",
+            "det_oneindia_rathee_release_1011"
+          ],
+          "links": [
+            {
+              "source_id": "oct_aj_1010",
+              "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+              "title": "India's 'Cockroach' leaders released from detention after police crackdown (URL slug: indias-cockroach-leaders-detained-new-delhi-in-lockdown)",
+              "publisher": "Al Jazeera",
+              "date": "2026-10-11",
+              "snippet": "Police had detained CJP founder Dipke, as well as his associates, Saurav Das and Ashutosh Ranka, in an airplane upon arrival in New Delhi from Mumbai.",
+              "verified": true
+            },
+            {
+              "source_id": "oct_aj_1010",
+              "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+              "title": "India's 'Cockroach' leaders released from detention after police crackdown (URL slug: indias-cockroach-leaders-detained-new-delhi-in-lockdown)",
+              "publisher": "Al Jazeera",
+              "date": "2026-10-11",
+              "snippet": "She said they had been released on the condition that they made \"no breach of peace for one year\".",
+              "verified": true
+            },
+            {
+              "source_id": "det_oneindia_lockdown_1010",
+              "url": "https://www.oneindia.com/new-delhi/delhi-lockdown-41-000-security-personnel-deployed-7-000-detained-as-cjp-protest-rocks-capital-8231573.html",
+              "title": "Delhi Lockdown? 41,000 Security Personnel Deployed, 7,000 Detained As CJP Protest Rocks Capital",
+              "publisher": "Oneindia",
+              "date": "2026-10-11",
+              "snippet": "One of the most striking incidents took place at Delhi's Indira Gandhi International Airport at around 10.30 am.",
+              "verified": true
+            },
+            {
+              "source_id": "det_oneindia_lockdown_1010",
+              "url": "https://www.oneindia.com/new-delhi/delhi-lockdown-41-000-security-personnel-deployed-7-000-detained-as-cjp-protest-rocks-capital-8231573.html",
+              "title": "Delhi Lockdown? 41,000 Security Personnel Deployed, 7,000 Detained As CJP Protest Rocks Capital",
+              "publisher": "Oneindia",
+              "date": "2026-10-11",
+              "snippet": "According to an airport official, the aircraft was directed to a remote parking bay.",
+              "verified": true
+            },
+            {
+              "source_id": "det_dtnext_flight_1010",
+              "url": "https://www.dtnext.in/amp/story/news/national/dipke-2-more-cjp-leaders-detained-by-police-as-flight-lands-in-delhi",
+              "title": "Dipke, 2 more CJP leaders detained by police as flight lands in Delhi",
+              "publisher": "DT Next (PTI)",
+              "date": "2026-10-10",
+              "snippet": "The Cockroach Janta Party (CJP) on Saturday claimed that its leaders Abhijeet Dipke, Saurav Das and Ashutosh Ranka were detained from inside the aircraft by Delhi Police as soon as their flight landed in the national capital.",
+              "verified": true
+            },
+            {
+              "source_id": "det_bt_flight_1010",
+              "url": "https://www.businesstoday.in/india/story/i-was-on-flight-when-dipke-cjp-leaders-were-detained-heres-what-unfolded-560821-2026-10-10",
+              "title": "I was on flight when Dipke, CJP leaders were detained: Here's what unfolded",
+              "publisher": "Business Today",
+              "date": "2026-10-10",
+              "snippet": "Minutes later, a team of Delhi Police officers entered the aircraft.",
+              "verified": true
+            },
+            {
+              "source_id": "det_oneindia_rathee_release_1011",
+              "url": "https://www.oneindia.com/india/dhruv-rathee-released-at-3-am-after-detention-warned-against-joining-cjp-protest-wife-juli-express-8231599.html",
+              "title": "Dhruv Rathee Released At 3 AM After Detention, Warned Against Joining CJP Protest; Wife Juli Expresses Concern",
+              "publisher": "Oneindia",
+              "date": "2026-10-11",
+              "snippet": "As per the statement from the Delhi Police, the three were arrested as a precautionary measure and would be produced before an executive magistrate.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "10.30 am is single-sourced (Oneindia); other outlets say only 'shortly/minutes after landing'. Not 'early morning' for the three leaders: mid-morning, on landing.",
+            "Wording: Oneindia says 'arrested'; Al Jazeera and PTI say 'detained'. Use 'detained'.",
+            "Police sources (DT Next/PTI) said Dipke was taken to Gurugram, Ranka to Dwarka.",
+            "Release clock time not found; only 'Sunday'."
+          ]
+        },
+        {
+          "id": "dipke-2026-10-16",
+          "date": "2026-10-16",
+          "time_text": "not stated; afternoon/evening, not early morning (protest scheduled 'Friday evening'; Telangana Today piece published 5:56 PM IST; earlier in the day 20+ police served a notice at his door)",
+          "place": "His residence in Jhandewalan, Delhi (as he stepped out for the Connaught Place 'Lehra Do Tiranga' protest)",
+          "text": "After 20+ Delhi Police personnel served a notice at his Jhandewalan residence earlier in the day, police detained him from his residence as he left for the Connaught Place protest; police said it was preventive (BNSS 126 and 170). He was released on conditional bail on Saturday 17 Oct, from Mandir Marg police station, after a peace bond.",
+          "claimant": "Delhi Police (PTI: 'police said'); CJP (undisclosed location, no lawyer access)",
+          "attribution": "Detention per PTI citing police; 'two notices' per Business Today; CJP claims on whereabouts are CJP's",
+          "status": "documented",
+          "source_ids": [
+            "det_dtnext_dipke_1016",
+            "det_dtnext_dipke_1016",
+            "det_telanganatoday_dipke_1016",
+            "det_bt_dipke_1017",
+            "det_devdiscourse_dipke_1017",
+            "det_oneindia_dipke_1016"
+          ],
+          "links": [
+            {
+              "source_id": "det_dtnext_dipke_1016",
+              "url": "https://www.dtnext.in/news/national/cjp-leader-abhijeet-dipke-detained-while-leaving-for-cp-protest",
+              "title": "'What law have I broken?': CJP leader Abhijeet Dipke detained en route to CP protest",
+              "publisher": "DT Next (PTI)",
+              "date": "2026-10-16",
+              "snippet": "NEW DELHI: Cockroach Janta Party (CJP) leader Abhijeet Dipke was detained from his residence here on Friday while he was leaving to participate in the party's proposed 'Lehra Do Tiranga' protest at Connaught Place, police said.",
+              "verified": true
+            },
+            {
+              "source_id": "det_dtnext_dipke_1016",
+              "url": "https://www.dtnext.in/news/national/cjp-leader-abhijeet-dipke-detained-while-leaving-for-cp-protest",
+              "title": "'What law have I broken?': CJP leader Abhijeet Dipke detained en route to CP protest",
+              "publisher": "DT Next (PTI)",
+              "date": "2026-10-16",
+              "snippet": "Earlier in the day, more than 20 Delhi Police personnel visited Dipke's residence in Jhandewalan and served him a notice",
+              "verified": true
+            },
+            {
+              "source_id": "det_telanganatoday_dipke_1016",
+              "url": "https://telanganatoday.com/delhi-police-detain-cjp-leader-dipke-aisa-chief-neha-bohra",
+              "title": "Delhi Police detain CJP leader Dipke, AISA chief Neha Bohra",
+              "publisher": "Telangana Today (IANS)",
+              "date": "2026-10-16",
+              "snippet": "The police action came amid heightened security arrangements in the national capital ahead of the protest scheduled for Friday evening.",
+              "verified": true
+            },
+            {
+              "source_id": "det_bt_dipke_1017",
+              "url": "https://www.businesstoday.in/india/story/delhi-police-arrests-abhijeet-dipke-ahead-of-tiranga-march-cjp-claims-lawyers-unable-to-contact-him-562210-2026-10-17",
+              "title": "Delhi Police arrests Abhijeet Dipke ahead of Tiranga march, CJP claims lawyers unable to contact him",
+              "publisher": "Business Today",
+              "date": "2026-10-17",
+              "snippet": "Police said Dipke had been served two notices directing him not to visit Central Park in Connaught Place, but allegedly failed to comply.",
+              "verified": true
+            },
+            {
+              "source_id": "det_devdiscourse_dipke_1017",
+              "url": "https://www.devdiscourse.com/article/headlines/3994233-abhijeet-dipke-released-after-being-granted-conditional-bail-kejriwal-welcomes-move",
+              "title": "Abhijeet Dipke released after being granted conditional bail, Kejriwal welcomes move",
+              "publisher": "Devdiscourse (ANI)",
+              "date": "2026-10-17",
+              "snippet": "Dipke was released from the Mandir Marg Police Station.",
+              "verified": true
+            },
+            {
+              "source_id": "det_oneindia_dipke_1016",
+              "url": "https://www.oneindia.com/india/cjp-founder-abhijeet-dipke-questions-delhi-police-before-detention-8237577.html",
+              "title": "'Maine Abhi Violation Kaise Kiya Hai?': CJP Founder Abhijeet Dipke Questions Delhi Police Before Detention",
+              "publisher": "Oneindia",
+              "date": "2026-10-16",
+              "snippet": "Police detained him shortly after he stepped out of the house where he was staying in Delhi.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "PTI says 'a notice' (one); Business Today says 'two notices'; ThePrint headline (theprint.in/...3074187) also says 20 cops and 2 notices but ThePrint blocked curl (Cloudflare challenge), so not re-read.",
+            "Oneindia says he was 'staying' at the house; PTI says 'his residence'.",
+            "No clock time for the pick-up in any source read. Cannot be called 'early morning'."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dhruv-rathee",
+      "name": "Dhruv Rathee",
+      "role": "YouTuber and political commentator; supporter of the CJP protests (not described as a CJP office-holder)",
+      "image": {
+        "src": "media/people/dhruv-rathee.jpg",
+        "credit": "NewsClick (YouTube), CC BY 3.0, via Wikimedia Commons; cropped by Benmite",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "commons_page": "https://commons.wikimedia.org/wiki/File:Dhruv_Rathee_(cropped).jpg",
+        "license_ok": "caution"
+      },
+      "events": [
+        {
+          "id": "rathee-2026-10-08",
+          "date": "2026-10-08",
+          "time_text": "not stated",
+          "place": "Freedom Park, Bengaluru",
+          "text": "Rathee attended the CJP-linked protest in Bengaluru demanding Chief Election Commissioner Gyanesh Kumar's resignation, alongside Prakash Raj and CJP founder Dipke; he describes it as his first protest.",
+          "claimant": "Business Today (reporting); Rathee (own words, Onmanorama and TNM)",
+          "attribution": "Reported by Business Today; first-protest claim is Rathee's own",
+          "status": "documented",
+          "source_ids": [
+            "det_bt_rathee_1010",
+            "det_onmanorama_rathee_1017",
+            "det_tnm_rathee_bengaluru"
+          ],
+          "links": [
+            {
+              "source_id": "det_bt_rathee_1010",
+              "url": "https://www.businesstoday.in/india/story/jantar-mantar-protest-youtuber-dhruv-rathee-detained-at-his-gurugram-residence-claims-cjp-560788-2026-10-10",
+              "title": "Jantar Mantar protest: YouTuber Dhruv Rathee detained from his Gurugram residence, claims CJP",
+              "publisher": "Business Today",
+              "date": "2026-10-10",
+              "snippet": "Before this, Rathee was spotted at the protest against SIR in Bengaluru's Freedom Park on October 8 organised by a coalition of progressive groups and various civil society organisations.",
+              "verified": true
+            },
+            {
+              "source_id": "det_onmanorama_rathee_1017",
+              "url": "https://www.onmanorama.com/news/india/2026/10/17/ultimately-the-power-in-a-democracy-rests-with-the-people-dhruv-rathee.amp.html",
+              "title": "Ultimately, the power in a democracy rests with the people: Dhruv Rathee",
+              "publisher": "Onmanorama",
+              "date": "2026-10-17",
+              "snippet": "I had never taken part in a protest before, nor had I ever addressed a crowd from a stage.",
+              "verified": true
+            },
+            {
+              "source_id": "det_tnm_rathee_bengaluru",
+              "url": "https://www.thenewsminute.com/amp/story/videos/i-came-to-bengaluru-to-meet-deleted-voters-dhruv-rathee-to-tnm",
+              "title": "I came to Bengaluru to meet deleted voters: Dhruv Rathee to TNM",
+              "publisher": "The News Minute",
+              "date": "2026-10-08",
+              "snippet": "This is the first time that Dhruv Rathee is attending a physical protest.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Involvement before the detention is documented. No separate 'support video' was read first-hand; a search summary mentions one shared by Dipke, unverified."
+          ]
+        },
+        {
+          "id": "rathee-2026-10-10-detention",
+          "date": "2026-10-10",
+          "time_text": "Disputed: about 6 am (PTI via Oneindia: three Crime Branch teams); about 7 am (Rathee); 7:10 am (Oneindia); 7.48 am entry (News18 via Outlook); about 8 am (CJP post). All early morning.",
+          "place": "His family residence, Sector 56, Gurugram (Haryana)",
+          "text": "Plainclothes police took Dhruv Rathee from his home in Gurugram on the morning of the Jantar Mantar protest, before he could join it; per PTI he was taken to a Crime Branch office and questioned for about an hour.",
+          "claimant": "Delhi Police (CJP, Pioneer police sources, Oneindia) vs Gurugram Police / Crime Branch (PTI via Oneindia, IANS via Telangana Today, Outlook)",
+          "attribution": "The detention itself is reported by PTI/IANS and confirmed by a police officer's statement on his release; clock time and detaining force are disputed; 'around 50' plainclothes police is the CJP's claim",
+          "status": "documented",
+          "source_ids": [
+            "det_oneindia_rathee_release_1011",
+            "det_oneindia_rathee_why_1010",
+            "det_outlook_rathee_1010",
+            "det_bt_rathee_1010",
+            "det_telanganatoday_rathee_1010",
+            "det_pioneer_rathee_1010",
+            "oct_aj_1010"
+          ],
+          "links": [
+            {
+              "source_id": "det_oneindia_rathee_release_1011",
+              "url": "https://www.oneindia.com/india/dhruv-rathee-released-at-3-am-after-detention-warned-against-joining-cjp-protest-wife-juli-express-8231599.html",
+              "title": "Dhruv Rathee Released At 3 AM After Detention, Warned Against Joining CJP Protest; Wife Juli Expresses Concern",
+              "publisher": "Oneindia",
+              "date": "2026-10-11",
+              "snippet": "According to a PTI report, three Crime Branch teams detained him at around 6 am and took him to a Crime Branch office, where he was questioned for approximately an hour.",
+              "verified": true
+            },
+            {
+              "source_id": "det_oneindia_rathee_why_1010",
+              "url": "https://www.oneindia.com/new-delhi/youtuber-dhruv-rathee-detained-in-gurugram-hours-before-delhi-s-jantar-mantar-protest-why-8230701.html",
+              "title": "YouTuber Dhruv Rathee Detained In Gurugram Hours Before Delhi's Jantar Mantar Protest: Why?",
+              "publisher": "Oneindia",
+              "date": "2026-10-10",
+              "snippet": "According to the available information, the detention took place at around 7:10 am.",
+              "verified": true
+            },
+            {
+              "source_id": "det_outlook_rathee_1010",
+              "url": "https://www.outlookindia.com/national/youtuber-dhruv-rathee-reportedly-detained-at-gurugram-residence-ahead-of-cjp-protest",
+              "title": "YouTuber Dhruv Rathee Reportedly Detained At Gurugram Residence Ahead Of CJP Protest",
+              "publisher": "Outlook India",
+              "date": "2026-10-10",
+              "snippet": "Police personnel reportedly entered the premises at 7.48 am on Saturday after his mother opened the door and took him into custody.",
+              "verified": true
+            },
+            {
+              "source_id": "det_bt_rathee_1010",
+              "url": "https://www.businesstoday.in/india/story/jantar-mantar-protest-youtuber-dhruv-rathee-detained-at-his-gurugram-residence-claims-cjp-560788-2026-10-10",
+              "title": "Jantar Mantar protest: YouTuber Dhruv Rathee detained from his Gurugram residence, claims CJP",
+              "publisher": "Business Today",
+              "date": "2026-10-10",
+              "snippet": "\"Amid the protests, Delhi Police detained YouTuber @dhruv_rathee from his home in Gurugram.....Around 8 AM, approximately 50 police personnel in civilian attire arrived at Dhruv Rathee's house,\" the CJP said in a post on X.",
+              "verified": true
+            },
+            {
+              "source_id": "det_telanganatoday_rathee_1010",
+              "url": "https://telanganatoday.com/dhruv-rathee-detained-at-gurugram-residence-ahead-of-delhi-protest",
+              "title": "Dhruv Rathee detained at Gurugram residence ahead of Delhi protest",
+              "publisher": "Telangana Today (IANS)",
+              "date": "2026-10-10",
+              "snippet": "Social media influencer Dhruv Rathee was detained by Gurugram Police at his residence on Saturday ahead of the protest at Jantar Mantar in Delhi.",
+              "verified": true
+            },
+            {
+              "source_id": "det_pioneer_rathee_1010",
+              "url": "https://www.dailypioneer.com/news/dhruv-rathee-detained-cjp-protest-delhi",
+              "title": "YouTuber Dhruv Rathee detained ahead of CJP protest at Jantar Mantar",
+              "publisher": "The Pioneer",
+              "date": "2026-10-10",
+              "snippet": "YouTuber Dhruv Rathee was detained by Delhi Police from his residence in Sector 56 of Gurugram on Saturday ahead of the Cockroach Janta Party's (CJP) proposed protest at Jantar Mantar, police sources said.",
+              "verified": true
+            },
+            {
+              "source_id": "oct_aj_1010",
+              "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+              "title": "India's 'Cockroach' leaders released from detention after police crackdown (URL slug: indias-cockroach-leaders-detained-new-delhi-in-lockdown)",
+              "publisher": "Al Jazeera",
+              "date": "2026-10-11",
+              "snippet": "Delhi police also detained other CJP members: YouTuber and Modi critic Dhruv Rathee;",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Safe wording: 'detained at his Gurugram home in the early morning' and, for a clock time, 'before 8 am'. Do not give one exact time.",
+            "Not detained at an airport; he was at home. Rathee himself says he was asleep.",
+            "Al Jazeera calls him 'CJP members' loosely; other sources describe him as a supporter, not a CJP member."
+          ]
+        },
+        {
+          "id": "rathee-2026-10-10-allegations",
+          "date": "2026-10-10",
+          "time_text": "about 7 am (Rathee's account)",
+          "place": "Gurugram home; then 'multiple police stations'",
+          "text": "In a video after his release Rathee said around 20 plainclothes men entered while he slept, dragged him from his bedroom, injured him and kept him from his lawyer and phone for about 22 to 23 hours, and called it a 'kidnapping' not a detention.",
+          "claimant": "Dhruv Rathee (video statement 11 Oct)",
+          "attribution": "Rathee alleged; Hans India notes no detailed police response was in the report",
+          "status": "alleged",
+          "source_ids": [
+            "det_outlook_kidnapped_1011",
+            "det_outlook_kidnapped_1011",
+            "det_hansindia_kidnapped_1011"
+          ],
+          "links": [
+            {
+              "source_id": "det_outlook_kidnapped_1011",
+              "url": "https://www.outlookindia.com/national/not-detained-i-was-kidnapped-dhruv-rathee-shows-indian-passport-criticise-govt-after-release",
+              "title": "'Not Detained, I was Kidnapped': Dhruv Rathee Shows Indian Passport, Criticises Govt After Release",
+              "publisher": "Outlook India",
+              "date": "2026-10-11",
+              "snippet": "Rathee said that the incident began around 7 am on October 10 while he was asleep.",
+              "verified": true
+            },
+            {
+              "source_id": "det_outlook_kidnapped_1011",
+              "url": "https://www.outlookindia.com/national/not-detained-i-was-kidnapped-dhruv-rathee-shows-indian-passport-criticise-govt-after-release",
+              "title": "'Not Detained, I was Kidnapped': Dhruv Rathee Shows Indian Passport, Criticises Govt After Release",
+              "publisher": "Outlook India",
+              "date": "2026-10-11",
+              "snippet": "\"They dragged me straight away and took me away. I mean, just imagine how a criminal is taken away. They dragged me from the bedroom.",
+              "verified": true
+            },
+            {
+              "source_id": "det_hansindia_kidnapped_1011",
+              "url": "https://www.thehansindia.com/news/national/sent-goons-to-kidnap-me-dhruv-rathee-speaks-out-after-release-from-detention-1131288",
+              "title": "'Sent Goons To Kidnap Me': Dhruv Rathee Speaks Out After Release From Detention",
+              "publisher": "The Hans India",
+              "date": "2026-10-11",
+              "snippet": "According to his account, he was taken to multiple police stations and was not allowed to contact his lawyer or access a phone for approximately 22 to 23 hours.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "His 22-23 hours sits oddly with a 3 am Sunday release if he was taken at about 7 am Saturday (about 20 hours); keep as his claim, not a computed duration.",
+            "Injury and beating allegations are Rathee's; no police response read."
+          ]
+        },
+        {
+          "id": "rathee-2026-10-11-release",
+          "date": "2026-10-11",
+          "time_text": "about 3 am Sunday (Gurugram Police, per Oneindia; Rathee); 'late at night' on Saturday (police officer to PTI)",
+          "place": "Gurugram (Crime Branch office)",
+          "text": "Rathee was released by Gurugram Police and warned he could be detained again if he went to Jantar Mantar despite prohibitory orders; he says he signed no bond or undertaking.",
+          "claimant": "Gurugram Police / a police officer (PTI); Rathee",
+          "attribution": "Release per police; 'no undertaking' is Rathee's claim",
+          "status": "documented",
+          "source_ids": [
+            "det_oneindia_rathee_release_1011",
+            "det_ibtimes_kidnapped_1011",
+            "det_ibtimes_kidnapped_1011"
+          ],
+          "links": [
+            {
+              "source_id": "det_oneindia_rathee_release_1011",
+              "url": "https://www.oneindia.com/india/dhruv-rathee-released-at-3-am-after-detention-warned-against-joining-cjp-protest-wife-juli-express-8231599.html",
+              "title": "Dhruv Rathee Released At 3 AM After Detention, Warned Against Joining CJP Protest; Wife Juli Expresses Concern",
+              "publisher": "Oneindia",
+              "date": "2026-10-11",
+              "snippet": "YouTuber Dhruv Rathee was released from detention at 3 AM after being advised by Gurugram Police not to participate in the protest: Gurugram Police",
+              "verified": true
+            },
+            {
+              "source_id": "det_ibtimes_kidnapped_1011",
+              "url": "https://www.ibtimes.co.in/i-was-kidnapped-dhruv-rathee-shows-indian-passport-amid-german-citizenship-row-first-video-907325",
+              "title": "I was kidnapped: Dhruv Rathee shows Indian passport amid German citizenship row (first video)",
+              "publisher": "IBTimes India",
+              "date": "2026-10-11",
+              "snippet": "YouTube activist Dhruv Rathee, who was detained by Delhi Police ahead of the Cockroach Janta Party's (CJP) protest at Jantar Mantar on Saturday, was released late at night yesterday, a police officer said.",
+              "verified": true
+            },
+            {
+              "source_id": "det_ibtimes_kidnapped_1011",
+              "url": "https://www.ibtimes.co.in/i-was-kidnapped-dhruv-rathee-shows-indian-passport-amid-german-citizenship-row-first-video-907325",
+              "title": "I was kidnapped: Dhruv Rathee shows Indian passport amid German citizenship row (first video)",
+              "publisher": "IBTimes India",
+              "date": "2026-10-11",
+              "snippet": "\"He can be detained again or further legal action might be taken if he tries to go to Jantar Mantar despite prohibitory orders,\" a police officer told news agency PTI.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Release time conflicts: 'late Saturday night' (PTI officer) vs '3 AM Sunday' (Gurugram Police post, Rathee). They are compatible only if 'late at night' means close to 3 am."
+          ]
+        },
+        {
+          "id": "rathee-2026-10-16-noida-denial",
+          "date": "2026-10-16",
+          "time_text": "not stated",
+          "place": "Gautam Buddh Nagar (Noida)",
+          "text": "Noida Police said claims that it had arrested Rathee were false; this is a rumour, not a detention.",
+          "claimant": "Police Commissionerate Gautam Buddh Nagar (X post)",
+          "attribution": "Police denial",
+          "status": "disputed",
+          "source_ids": [
+            "det_oneindia_noida_1016"
+          ],
+          "links": [
+            {
+              "source_id": "det_oneindia_noida_1016",
+              "url": "https://www.oneindia.com/india/is-dhruv-rathee-arrested-noida-police-shoots-down-the-rumours-8237081.html",
+              "title": "Is Dhruv Rathee Arrested? Noida Police Shoots Down The Rumours",
+              "publisher": "Oneindia",
+              "date": "2026-10-16",
+              "snippet": "Noida Police has not arrested Dhruv Rathee in any manner.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Do not use as a detention."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saurav-das",
+      "name": "Saurav Das",
+      "role": "CJP co-convenor / spokesperson",
+      "events": [
+        {
+          "id": "das-2026-10-10",
+          "date": "2026-10-10",
+          "time_text": "around 10.30 am (Oneindia); minutes after landing",
+          "place": "Delhi (IGI) airport, aboard an Air India flight from Mumbai",
+          "text": "Detained with Dipke and Ranka inside the plane on landing.",
+          "claimant": "Delhi Police; Al Jazeera",
+          "attribution": "Al Jazeera in its own voice",
+          "status": "documented",
+          "source_ids": [
+            "oct_aj_1010"
+          ],
+          "links": [
+            {
+              "source_id": "oct_aj_1010",
+              "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+              "title": "India's 'Cockroach' leaders released from detention after police crackdown (URL slug: indias-cockroach-leaders-detained-new-delhi-in-lockdown)",
+              "publisher": "Al Jazeera",
+              "date": "2026-10-11",
+              "snippet": "Police had detained CJP founder Dipke, as well as his associates, Saurav Das and Ashutosh Ranka, in an airplane upon arrival in New Delhi from Mumbai.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Same event as Dipke 10 Oct. Time single-sourced."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ashutosh-ranka",
+      "name": "Ashutosh Ranka",
+      "role": "CJP co-convenor",
+      "events": [
+        {
+          "id": "ranka-2026-10-10",
+          "date": "2026-10-10",
+          "time_text": "around 10.30 am (Oneindia); minutes after landing",
+          "place": "Delhi (IGI) airport, aboard an Air India flight from Mumbai",
+          "text": "Detained with Dipke and Das inside the plane on landing. Police sources said he was taken to Dwarka.",
+          "claimant": "Delhi Police; police sources (PTI)",
+          "attribution": "Al Jazeera in its own voice; destination per police sources",
+          "status": "documented",
+          "source_ids": [
+            "oct_aj_1010",
+            "det_dtnext_flight_1010"
+          ],
+          "links": [
+            {
+              "source_id": "oct_aj_1010",
+              "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+              "title": "India's 'Cockroach' leaders released from detention after police crackdown (URL slug: indias-cockroach-leaders-detained-new-delhi-in-lockdown)",
+              "publisher": "Al Jazeera",
+              "date": "2026-10-11",
+              "snippet": "Police had detained CJP founder Dipke, as well as his associates, Saurav Das and Ashutosh Ranka, in an airplane upon arrival in New Delhi from Mumbai.",
+              "verified": true
+            },
+            {
+              "source_id": "det_dtnext_flight_1010",
+              "url": "https://www.dtnext.in/amp/story/news/national/dipke-2-more-cjp-leaders-detained-by-police-as-flight-lands-in-delhi",
+              "title": "Dipke, 2 more CJP leaders detained by police as flight lands in Delhi",
+              "publisher": "DT Next (PTI)",
+              "date": "2026-10-10",
+              "snippet": "Dipke was taken to Gurugram, Ranka to Delhi's Dwarka, and Das to some other location in Delhi, they said.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "A 27 Sep Guwahati detention of Ranka (Assam Police) appears in search results; ThePrint page blocked and not read, so not recorded."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neha-bora",
+      "name": "Neha Bora",
+      "role": "AISA national president",
+      "events": [
+        {
+          "id": "bora-2026-10-16",
+          "date": "2026-10-16",
+          "time_text": "not stated; shortly after Dipke, on a Friday-evening march (her post said Mandi House, 5 PM)",
+          "place": "Mandi House, Delhi",
+          "text": "Detained shortly after Dipke while starting a march from Mandi House; released on Saturday 17 Oct after formalities under Section 65 of the Delhi Police Act (police).",
+          "claimant": "Delhi Police",
+          "attribution": "Per PTI and Oneindia; release per police via ANI",
+          "status": "documented",
+          "source_ids": [
+            "det_telanganatoday_dipke_1016",
+            "det_oneindia_dipke_1016"
+          ],
+          "links": [
+            {
+              "source_id": "det_telanganatoday_dipke_1016",
+              "url": "https://telanganatoday.com/delhi-police-detain-cjp-leader-dipke-aisa-chief-neha-bohra",
+              "title": "Delhi Police detain CJP leader Dipke, AISA chief Neha Bohra",
+              "publisher": "Telangana Today (IANS)",
+              "date": "2026-10-16",
+              "snippet": "While Dipke was picked up from his residence in Jhandewalan, Bohra was detained at Mandi House, both in central Delhi.",
+              "verified": true
+            },
+            {
+              "source_id": "det_oneindia_dipke_1016",
+              "url": "https://www.oneindia.com/india/cjp-founder-abhijeet-dipke-questions-delhi-police-before-detention-8237577.html",
+              "title": "'Maine Abhi Violation Kaise Kiya Hai?': CJP Founder Abhijeet Dipke Questions Delhi Police Before Detention",
+              "publisher": "Oneindia",
+              "date": "2026-10-16",
+              "snippet": "AISA president Neha Bora was also detained shortly after Dipke.",
+              "verified": true
+            }
+          ],
+          "web_check": "verified",
+          "web_notes": [
+            "Not an early-morning event. Spelling 'Bohra' (PTI/IANS) vs 'Bora' (Oneindia, Al Jazeera)."
+          ]
+        }
+      ]
+    }
+  ]
+}

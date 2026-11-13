@@ -13,6 +13,7 @@ Branch: `build/scene-by-scene`. Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions 
 | **S5 map stage (S5a+b+c, one chat)** | **built** 2026-11-12, awaiting Vali's review | high | Vali: one chat for S5a, S5b, S5c. Gate-1 shots: `qa/v3/S5/gate1c`. Rail + scrubber and the 20 Jul research/imagery built by sub-agents, reviewed by the lead |
 | **Remaining scenes (S6, S6.5, S7a–d, S8–S10, one chat)** | gate 1 in review 2026-11-12 | high | Kickoff: [kickoffs/remaining.md](kickoffs/remaining.md). Gate-1 shots: `qa/v3/gate1-S6`, `qa/v3/gate1-S7`, `qa/v3/gate1-S7d`, `qa/v3/gate1-S8-S10`. Sub-agents: S7 charts, S7d apparatus, S8–S10, apparatus data |
 | M9 | — | high | Plus architect and GPU review agents |
+| **Hybrid (branch `build/hybrid`)** | **built** 2026-11-13 (Gate 0 signed off; motion built, QA'd; committed and pushed to `build/hybrid` at Vali's request) | high | Kickoff: [kickoffs/hybrid.md](kickoffs/hybrid.md). Gate 0: [hybrid/GATE0.md](hybrid/GATE0.md), copy [hybrid/COPY.md](hybrid/COPY.md), frames `qa/hybrid/gate0/`, board http://localhost:5173/design/hybrid/gate0. `src/` untouched |
 
 ## Contracts in force
 **Data ledger (F1).** Scenes read only `data/story/*.json`, never the PDF.
@@ -91,6 +92,22 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
 - **Handover in:** `release.landed()` exported from `s04-date.js` (additive; S4 frames unchanged; needs Vali's OK). S4→S5 0.033% / 0.043%.
 - **Handover out (for S6):** S5 p 1 = the S4-p-1 backdrop offset + the last beat's 400 roaches; poses from `s5End.poses()` (`s05/roaches.js`). No map, card, HUD.
 - `src/lib/map.js`: promoted `mapSVG/anchorXY/fitSites` (kit re-exports; storyboard byte-identical to HEAD) + `fitCam` (optional per-side pads), `interpolateZoom` (hand-rolled van Wijk), canvas `drawMap`.
+
+**Hybrid contracts (build/hybrid, 2026-11-13; supersede the v3 running order on this branch).**
+- **Running order** (`budget.js`): S0–S3.5 · **NEET 200** · **HELD 240** · S4 180 · **S5 1,370** · S6 260 · **WATCH 260** · **OCT 500** · **ROLL 380** · **CAGE 340** · S8a 160 · **CLOSE 140** · S9 100 · S10.
+  - S6.5, S7a–c and S7d are out of the flow; their files stay.
+  - `main` block: 3,140 vh incl. scroll-away. Whole piece: ≈ 5,620 vh + S10.
+- **Copy:** `src/data/copy.js` is the one source for every chapter headline, dek and caption (`{*ids|claimant}` star tokens, `{{var}}` slots). `docs/build/hybrid/COPY.md` is generated from it (`tools/hybrid/copy-md.mjs`).
+- **Chapter chrome:** `src/lib/chapter.js/.css`, `createChapter(host, id, data, { title: [in0, in1, out0, out1], caps: [[k, a, b]], lock, vars })`.
+  - Title card: words rise in a seeked anime.js timeline, the headline stays on one line (fitted lazily on the first visible frame), then the card docks to a top-left lockup.
+  - Caption cards crossfade by p. Each chapter sits in its own `.hy-ch` wrapper (display: contents).
+- **Data:** `loadStory()` merges the `new_sources` of `EXTRA_FILES` once, in a fixed order: sansad_chalo, apparatus, withheld, october_counts, voter_roll, neet, detentions.
+  - Drafts are exposed as `data.extra.<file>`. S5's and S7d's own merges are now no-ops.
+- **Prologue-stage scenes NEET and HELD:** both start and end on `claim.poses(1, t)`, and their walk legs use whole cycles, so S3.5 → NEET → HELD → S4 hand over in place.
+- **S5 hybrid mode** (`s05/hybrid.js` `HY`): `buildModel(..., { hybrid: HY })` replaces each node's beats with `[id, vh, opts]`.
+  - `title:<chapter>` and `ledger:<k>` are pseudo-beats; `opts.labels` caps the labels at three; `opts.notes` takes `signal`, `order` or `metro`.
+  - The rail is replaced; `reslot` is off.
+  - The HUD docks under the lockup over the lead-in (`--s5h-dock`). The ledger veil lifts in the lead-out, so the S4→S5 and S5→S6 contracts hold.
 
 **Harness.** `tools/cdp-scroll.mjs` (legacy list mode unchanged; a targets file → down pass then up pass, p checked per target, per-scene monotonic check, `qa-log.json`), `tools/compare.mjs` (storyboard | down | up sheet + down/up pixel diff), `tools/qa-shell.mjs` (shell regression), `tools/lib/cdp.mjs` (shared driver, exact viewport via Emulation). New in the prologue chat: `tools/shoot-frames.mjs` (deep-link key frames at any `SIZE`; keep for now, Vali may delete it later), `tools/qa-sequence.mjs` (the S1→S2 click, keyboard, auto-trigger, lock, reset and replay), `tools/qa-handover.mjs` (in-block A p 1 vs B p 0 pixel diff). Targets: `docs/build/scenes/targets/*.json` `{ scene, brief, note, targets: [{ name, at: "S4:0.6", frame?, expect }] }`.
 
@@ -283,4 +300,42 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
   - **S8:** Ambedkar only; typewriter pure in p (rule 0–0.08, typing 0.08–0.70, attribution 0.72–0.80, fade 0.92–1); the roach walks the rule with the typing; caret blink tick-only. **S9:** two plain solid follow buttons + plain share row.
   - **QA:** `cdp-scroll` targets S5, S6, S6-5, S7 (9), S7d, S8, S9, S10 at 1440×900 and 1280×720: **0 FAIL**, monotonic both ways (`qa/v3/final/`). `qa-shell` **ALL PASS** (49/49 deep links). Handovers S4→S5 0.033% / 0.043%, S5→S6 **0.000%** at both sizes.
   - **Still gate 1 (static, Vali to approve before motion):** S6 and S6.5 motion polish (S6 already scrubs pure in p), S10. Open questions are in GAPS.md "Remaining scenes".
+- 2026-11-13, **Vali: build a hybrid on a new branch `build/hybrid`** (v2's thematic narrative spine + v3's visual system, roach engine and sourcing). Evaluation and running order: [kickoffs/hybrid.md](kickoffs/hybrid.md); comparison sheets `qa/hybrid-eval/`. Starts with a Gate 0 storyboard.
+- 2026-11-13, **hybrid chat, Gate 0** (branch `build/hybrid` from `daea514`; `src/` and `budget.js` untouched; awaiting Vali):
+  - **X-account conflict resolved from primary sources:** the original handle @CJP_2029 was withheld 21 May → order revoked by the Delhi HC 7 Jul (Day 48); @Cockroachisback opened **"hours after"** the block (Business Today, verbatim), not "within minutes" (ledger, via Wikipedia). "Forty-eight days of silence" is wrong; proposed "Blocked for 48 days. Back within hours." Ledger correction proposed, not applied (needs Vali's OK).
+  - **Proposed running order** (GATE0.md §2): prologue (unchanged) → **Withheld, new scene W between S3.5 and S4** → S4 → S5 cut to street 4 beats + 20 Jul 3 hours + 23 Jul + **three ledgers on the map stage** → S6 (in-place handover kept) → S7a only → **October (new block, replaces S6.5)** → **the roll (new block)** → S7d → S8a → S9 (v2 closing line) → S10. S5 2,070 → 1,370 vh; `main` block 3,300 → 2,840 vh. S7b/S7c out of the flow (Vali decides).
+  - **New data drafts** (research sub-agents on Sonnet, lead spot-checked): `data/story/withheld.json`, `october_counts.json`, `voter_roll.json` + notes in `docs/build/research/`. Not yet read by any scene. New sources merge at runtime after sansad and apparatus.
+  - **Storyboard tooling (storyboard only, nothing ships):** `design/hybrid/{copy,chrome,overlay,frames}.js`, `hybrid.css`, `frames.html`, `gate0.html`; `tools/hybrid/shoot-gate0.mjs` (live v3 + injected chrome, or the frames page), `tools/hybrid/copy-md.mjs` (COPY.md from copy.js). `npx serve` redirects `*.html` to clean URLs and drops the query: link `/design/hybrid/frames?f=…`.
+- 2026-11-13, **hybrid Gate 0, revision 1** (Vali's review; still awaiting sign-off; nothing committed). Details: [hybrid/GATE0.md](hybrid/GATE0.md) "Revision 1".
+  - **Redesigns (anime.js prototypes in `design/hybrid/`, to move into `src/` at Gate 2):** ch. 07 "watched" = a 1,000-dot halftone roach screen (`watched.js`), 0.1% of corpus views per dot, hover to see a dot's video. Ch. 10 apparatus = the cage (`cage.js`): radial calendar, four group rings, 31 action bars drawn by a sweep hand, hover a bar or a roster actor. Both seek a paused timeline (`update(p)` pure).
+  - **`src/` edits at Vali's request:**
+    - `s06-finale.js/.css`: brackets removed, "Victory" black.
+    - `s09-cta.js/.css`: follow buttons with inline Instagram and X icons on a 640 px grid; no headline slot.
+    - `s10-footer.js/.css`: ink (no `.reading`).
+    - `qa-shell` ALL PASS.
+  - **New chapters and beats:** ch. 02 NEET "The joke found its grievance." (`data/story/neet.json`); October beat "10 October, one day" (`data/story/detentions.json`, `media/people/dhruv-rathee.jpg` CC BY 3.0). Rathee was taken from home before 8 am; Dipke, Das and Ranka were detained on landing at about 10.30 am. Dipke was not detained at dawn.
+  - **Chapters renumbered:** 02 NEET, 03 Withheld, 04 street, 05 20 July, 06 ledgers, 07 watched, 08 October, 09 roll, 10 apparatus.
+  - **Other changes:** title headlines are one line; map labels are capped at 3 per beat with one leader line; the closing line gets its own 140 vh scene.
+  - **Proposed `main` block:** 3,040 vh. **Whole piece:** 5,620 vh + S10.
+- 2026-11-13, **hybrid build** (Vali signed off Gate 0 with decisions: lead's call on 4b/4c placement → ledgers on the map stage, YouTube after Victory; NEET headline "22 lakh students, one cancelled exam."; Rathee photo as is; length fine; "build with motion and anime.js; commit and push when done").
+  - **Lead built:**
+    - shared chrome and copy (`src/lib/chapter.*`, `src/data/copy.js`);
+    - the budget;
+    - `load.js` source merging;
+    - NEET (answer sheet, stamp, swarm rings the sheet);
+    - HELD (two accounts, withheld notice, movers, 48-day tally);
+    - S5 hybrid mode (4 street beats, 3 hours of 20 Jul plus 23 Jul with the dead-signal zone, the 1.5 km order ring and a grouped metro label, 3 labels per beat, one leader line, the three ledgers on a veil with anime.js-seeked dots);
+    - CLOSE (the line typed in word by word).
+  - **Sub-agents built (lead reviewed):**
+    - WATCH (the 1,000-dot roach screen, 93%, hover a dot for its video);
+    - CAGE (radial calendar, 31 bars drawn by a sweep hand, roster and bar hover, pin and keyboard);
+    - OCT (2 Oct pen, 10 Oct one-day strip with Rathee / plane, 15,000-roach field with 8 count lines and hover tips, Mumbai, the cell, Amnesty);
+    - ROLL (pick yourself on a 100-entry roll, 13 struck, 9,688 marks with 1,300 struck).
+  - **Ledger fix** (Vali: primary source wins): timeline `start_pushback` "reappeared within minutes" → "Hours after the block…" (Business Today). Applied in `timeline.json`, `narrative.json` and `build_story.py`. The S10 disclaimer scope now runs 16 May – 7 Nov 2026.
+  - **QA:**
+    - `cdp-scroll` targets for NEET, HELD, S5-hybrid, CLOSE, WATCH, CAGE, OCT and ROLL: 0 FAIL, p monotonic down and up, at 1440×900 and 1280×720.
+    - Handovers S3.5→NEET 0.095%, NEET→HELD 0.078%, HELD→S4 0.083%, S4→S5 0.001%, S5→S6 0.000%.
+    - `qa-shell`: ALL PASS (18 scenes, 77/77 deep links).
+    - The v3 targets for removed or re-cut scenes moved to `targets/v3-retired/`.
+  - `.gitignore`: raw down/up shots, dev `shots/` and compare sheets under `qa/hybrid` (as for `qa/v3`).
 

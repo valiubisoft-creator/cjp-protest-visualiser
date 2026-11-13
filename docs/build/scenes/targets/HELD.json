@@ -1,0 +1,37 @@
+{
+ "scene": "HELD",
+ "brief": "docs/build/hybrid/GATE0.md",
+ "note": "Hybrid ch. 03 (Vali 2026-11-13). Starts and ends on S3.5 p 1.",
+ "targets": [
+  {
+   "name": "HELD-0.1",
+   "at": "HELD:0.1",
+   "expect": "Title card: \"Blocked for 48 days. Back within hours.\" on one line, dek."
+  },
+  {
+   "name": "HELD-0.3",
+   "at": "HELD:0.3",
+   "expect": "Box @CJP_2029 (red) with the roaches inside; red \"Withheld in India\" notice; caption 0 (21 May · Day 1); tally at 1."
+  },
+  {
+   "name": "HELD-0.5",
+   "at": "HELD:0.5",
+   "expect": "Second box @Cockroachisback filling with white roaches streaming from the first; first box's roaches grey; caption 1."
+  },
+  {
+   "name": "HELD-0.66",
+   "at": "HELD:0.66",
+   "expect": "Tally counting (about Day 20+); caption 2 (29 May)."
+  },
+  {
+   "name": "HELD-0.8",
+   "at": "HELD:0.8",
+   "expect": "Tally 48 with 48 strokes; notice lifted, first box's roaches white again; caption 3 (7 Jul · Day 48)."
+  },
+  {
+   "name": "HELD-0.995",
+   "at": "HELD:0.995",
+   "expect": "Boxes gone; roaches back on S3.5's end layout (handover to S4)."
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1440x900",
+ "targets": "docs/build/scenes/targets/S10.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S10-top",
+   "at": "S10:top",
+   "frame": "S10",
+   "ok": true,
+   "y": 50580,
+   "current": "S10",
+   "p": 0.2012,
+   "live": "S10@0.201",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S10-1",
+   "at": "S10:1",
+   "frame": null,
+   "ok": true,
+   "y": 54153,
+   "current": "S10",
+   "p": 1,
+   "live": "S10@1.000",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 71,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S10-1",
+   "at": "S10:1",
+   "frame": null,
+   "ok": true,
+   "y": 54153,
+   "current": "S10",
+   "p": 1,
+   "live": "S10@1.000",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S10-top",
+   "at": "S10:top",
+   "frame": "S10",
+   "ok": true,
+   "y": 50580,
+   "current": "S10",
+   "p": 0.2012,
+   "live": "S10@0.201",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 57,
+    "scenes": 1,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

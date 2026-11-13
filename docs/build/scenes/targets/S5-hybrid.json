@@ -1,0 +1,62 @@
+{
+ "scene": "S5",
+ "brief": "docs/build/hybrid/GATE0.md",
+ "note": "Hybrid S5 (Vali 2026-11-13): street 4 beats, 20 July 3 hours + 23 Jul, three ledgers. Mid-hold p values from __s5model.",
+ "targets": [
+  {
+   "name": "S5-0.062",
+   "at": "S5:0.062",
+   "expect": "Street title card over the dimmed map: \"Off the feed, onto the road.\""
+  },
+  {
+   "name": "S5-0.115",
+   "at": "S5:0.115",
+   "expect": "6 Jun: lockup + HUD under it; caption 0; one label (Jantar Mantar Road) and one leader line."
+  },
+  {
+   "name": "S5-0.246",
+   "at": "S5:0.246",
+   "expect": "28 Jun: caption 2 (Wangchuk's fast); one label."
+  },
+  {
+   "name": "S5-0.312",
+   "at": "S5:0.312",
+   "expect": "18 Jul: caption 3; labels Jantar Mantar Road + Safdarjung (edge arrow)."
+  },
+  {
+   "name": "S5-0.362",
+   "at": "S5:0.362",
+   "expect": "July title card: \"No signal, no order.\""
+  },
+  {
+   "name": "S5-0.422",
+   "at": "S5:0.422",
+   "expect": "20 Jul 09:23: dead-signal zone (dashed, illustrative note), red tag, grouped metro label, caption 0, HUD clock."
+  },
+  {
+   "name": "S5-0.582",
+   "at": "S5:0.582",
+   "expect": "20 Jul 17:38: caption 2; labels RML + Jantar Mantar Road; zone still up."
+  },
+  {
+   "name": "S5-0.663",
+   "at": "S5:0.663",
+   "expect": "23 Jul: the solid 1.5 km order ring with its sourced tag; caption 3."
+  },
+  {
+   "name": "S5-0.72",
+   "at": "S5:0.72",
+   "expect": "Ledgers title card over a dark veil."
+  },
+  {
+   "name": "S5-0.849",
+   "at": "S5:0.849",
+   "expect": "Ledgers: Injured and Detained scales drawn; caption 1 (Detained) right; key bottom-left."
+  },
+  {
+   "name": "S5-0.927",
+   "at": "S5:0.927",
+   "expect": "All three scales; caption 2 (Pellets)."
+  }
+ ]
+}

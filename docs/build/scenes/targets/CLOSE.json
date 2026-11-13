@@ -1,0 +1,17 @@
+{
+ "scene": "CLOSE",
+ "brief": "docs/build/hybrid/GATE0.md",
+ "note": "Hybrid closing line, own scene (Vali 2026-11-13).",
+ "targets": [
+  {
+   "name": "CLOSE-0.3",
+   "at": "CLOSE:0.3",
+   "expect": "Kicker \"As of 7 November 2026\"; the line half written, words rising and un-blurring; margin roaches."
+  },
+  {
+   "name": "CLOSE-0.8",
+   "at": "CLOSE:0.8",
+   "expect": "The whole line with its red *; margin roaches only outside the text box."
+  }
+ ]
+}

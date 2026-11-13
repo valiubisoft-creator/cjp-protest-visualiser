@@ -1,0 +1,8 @@
+/* CLOSE (hybrid, 2026-11-13): the closing line on its own scene. Tokens only. */
+.hclose { background: var(--bg); color: var(--fg); }
+.hclose > canvas { position: absolute; left: 0; top: 0; display: block; pointer-events: none; }
+.hclose-in { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.hclose .hy-kick { font: var(--w-bold) var(--fs-micro)/1.3 var(--font-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 22px; }
+.hclose-line { font: 400 60px/1.12 var(--font-display); margin: 0; text-wrap: balance; }
+.hclose-line .w { display: inline-block; }
+.hclose-star .star { font-size: .6em; vertical-align: super; }

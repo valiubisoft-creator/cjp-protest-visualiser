@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="ink">
+<head>
+<meta charset="utf-8">
+<title>Cockroaches · hybrid Gate 0 storyboard</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/styles/tokens.css">
+<style>
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 400 15px/1.5 var(--font-ui); }
+  header { padding: 40px 48px 8px; max-width: 1100px; }
+  h1 { font: 400 56px/1 var(--font-display); margin: 0 0 12px; }
+  header p { color: var(--muted); margin: 4px 0; }
+  a { color: var(--fg); }
+  section { padding: 28px 48px 8px; border-top: 1px solid var(--rule-c); }
+  section h2 { font: 400 34px/1.1 var(--font-display); margin: 6px 0 4px; }
+  .k { font: 760 12px/1.3 var(--font-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .k b { color: var(--accent-text); margin-right: .8em; }
+  .meta { color: var(--muted); margin: 0 0 14px; max-width: 980px; }
+  .shots { display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+  .shots figure { margin: 0; }
+  .shots img { display: block; width: 720px; border: 1px solid var(--rule-c); }
+  .shots img.s { width: 640px; }
+  figcaption { font-size: 12px; color: var(--muted); margin-top: 4px; }
+</style>
+</head>
+<body>
+<header>
+  <p class="k">Hybrid · Gate 0 · static key frames</p>
+  <h1>The hybrid running order</h1>
+  <p>v2's spine, v3's look, engine and sourcing. One frame per chapter (1440×900; 1280×720 too where text is heavy). Lengths, decisions and data notes: <code>docs/build/hybrid/GATE0.md</code>. Every line of copy: <code>docs/build/hybrid/COPY.md</code>.</p>
+  <p>Revision 1 (Vali's review, 2026-11-13): 06 and 09 redesigned in anime.js, the whole piece in black, one-line chapter headlines, at most three map labels, Victory without brackets, the closing line on its own scene, simple follow buttons with icons, the NEET context and the dawn/on-landing detentions.</p>
+  <p>Storyboard marks: the small “N words” under each caption and the stamp bottom-right are not part of the design.</p>
+</header>
+<main id="m"></main>
+<script type="module">
+import { CHAPTERS } from '/design/hybrid/copy.js';
+const SHOTS = {
+  prologue: ['01-prologue'], neet: ['01b-neet'], withheld: ['02a-withheld-title', '02b-withheld'], street: ['03-street'], july: ['04-july'],
+  ledgers: ['05-ledgers'], victory: ['05x-victory'], watched: ['06a-watched-p035', '06b-watched-p070', '06c-watched-p100', '06d-watched-hover'],
+  october: ['07-october', '07c-october-dawn', '07b-october-cell'], roll: ['08-roll'],
+  apparatus: ['09a-apparatus-p045', '09b-apparatus-p100', '09c-apparatus-hover'], close: ['10a-closing-line', '10b-follow', 's10/S10-top'] };
+const SIZES = ['1440x900', '1280x720'];
+const m = document.getElementById('m');
+for (const c of CHAPTERS) {
+  const imgs = (SHOTS[c.id] || []).flatMap(n => SIZES.map(s => [n, s]));
+  const figs = imgs.map(([n, s]) => `<figure data-src="/qa/hybrid/gate0/${n}-${s}.png"><img class="${s === '1280x720' ? 's' : ''}" src="/qa/hybrid/gate0/${n}-${s}.png" alt="${n} at ${s}" onerror="this.parentNode.remove()"><figcaption>${n} · ${s}</figcaption></figure>`).join('');
+  m.insertAdjacentHTML('beforeend', `<section><p class="k">${c.n !== '—' ? `<b>${c.n}</b>` : ''}${c.label}${c.kicker ? ' · ' + c.kicker : ''}</p>
+    ${c.headline ? `<h2>${c.headline}</h2>` : ''}<p class="meta">${c.scenes}${c.note ? ' · ' + c.note : ''}</p><div class="shots">${figs}</div></section>`);
+}
+</script>
+</body>
+</html>

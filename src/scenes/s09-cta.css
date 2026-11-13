@@ -1,22 +1,28 @@
-/* S9 · Follow and share (S8-S10 chat, 2026-11-12). Plain buttons (Vali review 2026-11-12: "very simple and straightforward").
-   Two rows, a label column and the buttons; content vertically centred, roaches only in the margins. */
+/* S9 · Follow and share. Hybrid restyle (Vali 2026-11-13): one centred column on an 8 px grid; two equal follow buttons
+   with icons; the share row on the same width below; labels above each group. Roaches only in the margins. */
 .s9 { position: relative; overflow: hidden; background: var(--bg); color: var(--fg); }
 .s9-back { position: absolute; inset: 0; display: block; pointer-events: none; }
-.s9-in { position: absolute; left: 10%; right: 10%; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: var(--s-7); }
-.s9-head:empty { display: none; }   /* headline slot: empty until Vali supplies one (2026-11-12) */
-.s9-row { display: grid; grid-template-columns: 220px 1fr; column-gap: var(--s-6); align-items: center; }
-.s9-l { color: var(--muted); }
-.s9-handles { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); }
-.s9-h { display: flex; align-items: baseline; justify-content: center; gap: .6em; padding: 18px 24px; background: var(--fg); color: var(--bg); border: 2px solid var(--fg);
-  text-decoration: none; font: var(--w-regular) var(--fs-lead)/1.2 var(--font-text); white-space: nowrap; border-radius: var(--radius); }
-.s9-h b { font-weight: var(--w-bold); }
-.s9-h:hover { background: transparent; color: var(--fg); }
+.s9-in { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(640px, calc(100% - 2 * var(--s-9)));
+  display: grid; grid-template-columns: 1fr; row-gap: var(--s-4); }
+.s9-l { margin: 0; color: var(--muted); }
+.s9-l + .s9-handles, .s9-l + .s9-share { margin-top: calc(-1 * var(--s-1)); }
+.s9-share + .s9-toast { margin-top: calc(-1 * var(--s-2)); }
+.s9-handles { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); margin-bottom: var(--s-7); }
+.s9-h, .s9-b { box-sizing: border-box; }
+.s9-h { display: grid; grid-template-columns: 24px 1fr; column-gap: var(--s-4); align-items: center; height: 72px; padding: 0 var(--s-5);
+  border: 2px solid var(--fg); color: var(--fg); background: var(--bg); text-decoration: none; border-radius: var(--radius); }
+.s9-ico { display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; }
+.s9-ht { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.s9-ht b { font: var(--w-bold) var(--fs-micro)/1.2 var(--font-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.s9-ht span { font: var(--w-regular) var(--fs-lead)/1.15 var(--font-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.s9-h:hover { background: var(--fg); color: var(--bg); }
+.s9-h:hover .s9-ht b { color: inherit; }
 .s9-h:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-.s9-share { display: flex; gap: var(--s-3); align-items: center; flex-wrap: wrap; }
-.s9-b { font: var(--w-bold) var(--fs-small)/1 var(--font-text); padding: 14px 18px; border: 2px solid var(--fg); background: transparent; color: var(--fg);
-  text-decoration: none; cursor: pointer; border-radius: var(--radius); }
+.s9-share { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: var(--s-3); }
+.s9-b { display: flex; align-items: center; justify-content: center; height: 48px; padding: 0 var(--s-3); font: var(--w-bold) var(--fs-small)/1 var(--font-text);
+  border: 2px solid var(--fg); background: transparent; color: var(--fg); text-decoration: none; cursor: pointer; border-radius: var(--radius); white-space: nowrap; }
 .s9-b:hover { background: var(--fg); color: var(--bg); }
 .s9-b:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .s9-b.primary { background: var(--accent); border-color: var(--accent); color: var(--white); }
 .s9-b.primary:hover { background: var(--red-deep); border-color: var(--red-deep); }
-.s9-toast { min-height: 1.3em; margin: calc(var(--s-4) - var(--s-7)) 0 0 calc(220px + var(--s-6)); color: var(--fg); }
+.s9-toast { min-height: 1.3em; margin: 0; color: var(--fg); }

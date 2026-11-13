@@ -1,0 +1,50 @@
+/* CAGE · "Thirteen hands on one protest." (build/hybrid, 2026-11-13). Tokens only.
+   --rw (right column width) and --dek-w are set by JS per viewport (380 / 420 at ≥ 1400 px, 340 / 300 below). */
+.h-cage { --rw: 380px; --dek-w: 420px; color: var(--fg); overflow: hidden; }
+.h-cage > canvas { position: absolute; left: 0; top: 0; display: block; pointer-events: none; }
+.h-cage .hc-back { z-index: 0; }
+.h-cage .hc-svghost { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.h-cage .hc-svg { position: absolute; left: 0; top: 0; overflow: visible; }
+.h-cage .hc-roach { z-index: 2; }
+
+/* the cage */
+.h-cage .hc-band { fill: none; stroke: var(--grey-3); }
+.h-cage .hc-edge { fill: none; stroke: var(--rule-c); stroke-width: 1; }
+.h-cage .hc-ring { fill: var(--muted); font: var(--w-bold) 10px/1 var(--font-ui); letter-spacing: 1.2px; }
+.h-cage .hc-tick { stroke: var(--grey-1); stroke-width: 1.5; }
+.h-cage .hc-month { fill: var(--muted); font: var(--w-regular) 11px/1 var(--font-ui); }
+.h-cage .bar { stroke-linecap: round; fill: none; }
+.h-cage .k-restrict, .h-cage .k-court-restrict { stroke: var(--red); }
+.h-cage .k-court-restore { stroke: var(--white); }
+.h-cage .k-trigger, .h-cage .k-court-mixed { stroke: var(--grey-1-ink); }
+.h-cage .hc-hand { stroke: var(--fg); stroke-width: 1; }
+.h-cage .hc-glow { stroke: var(--fg); stroke-width: 5; stroke-linecap: round; }
+.h-cage .hc-hub { fill: var(--bg); stroke: var(--rule-c); }
+.h-cage .hc-hit { stroke: transparent; stroke-width: 14; pointer-events: stroke; cursor: pointer; }
+
+/* the dek, under the lockup */
+.h-cage .hc-dek { position: absolute; left: var(--hud-inset); top: 112px; width: var(--dek-w); margin: 0; z-index: 5;
+  font: var(--w-regular) var(--fs-small)/1.5 var(--font-text); color: var(--muted); }
+
+/* the roster: thirteen bodies by group, right column */
+.h-cage .hc-roster { position: absolute; right: var(--hud-inset); top: 112px; width: var(--rw); z-index: 5; font: var(--w-regular) 13px/1.25 var(--font-ui); }
+.h-cage .hc-rg + .hc-rg { margin-top: 10px; }
+.h-cage .hc-rg .hy-kick { margin: 0 0 4px; }
+.h-cage .hc-chip { display: inline-block; margin: 0 6px 5px 0; padding: 4px 8px; border: var(--rule) solid var(--rule-c); background: var(--bg);
+  color: var(--fg); font: inherit; cursor: pointer; }
+.h-cage .hc-chip b { color: var(--muted); font-weight: var(--w-bold); font-variant-numeric: tabular-nums; }
+.h-cage .hc-chip.on, .h-cage .hc-chip:hover { border-color: var(--fg); }
+.h-cage .hc-chip[aria-pressed="true"] { border-color: var(--red); }
+.h-cage .hc-chip:focus-visible { outline: 2px solid var(--red-bright); outline-offset: 1px; }
+
+/* the record / actor card: right column under the roster; max-height set by JS, scrolls inside */
+.h-cage .hc-card { right: var(--hud-inset); width: var(--rw); z-index: 16; overflow-y: auto; overscroll-behavior: contain;
+  scrollbar-width: thin; scrollbar-color: var(--rule-c) transparent; }
+.h-cage .hc-card[hidden] { display: none; }
+.h-cage .hc-card h3 { font-size: 20px; }
+.h-cage .hc-card p:not(.when):not(.meta) { font-size: var(--fs-small); line-height: 1.45; }
+/* more below: a soft fade at the bottom edge while the card can still scroll */
+.h-cage .hc-card.more { -webkit-mask-image: linear-gradient(#000 calc(100% - 28px), transparent); mask-image: linear-gradient(#000 calc(100% - 28px), transparent); }
+.h-cage .hc-card .act + .act { margin-top: 8px; }
+.h-cage .hc-card .d { font: var(--w-bold) 12px/1 var(--font-ui); font-variant-numeric: tabular-nums; margin-right: 2px; }
+.h-cage .hc-card .att { font: var(--w-regular) 12px/1 var(--font-ui); color: var(--muted); white-space: nowrap; }

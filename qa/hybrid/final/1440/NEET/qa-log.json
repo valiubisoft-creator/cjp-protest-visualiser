@@ -1,0 +1,144 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1440x900",
+ "targets": "docs/build/scenes/targets/NEET.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "NEET-0.1",
+   "at": "NEET:0.1",
+   "frame": null,
+   "ok": true,
+   "y": 7290,
+   "current": "NEET",
+   "p": 0.1,
+   "live": "NEET@0.100",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "NEET-0.35",
+   "at": "NEET:0.35",
+   "frame": null,
+   "ok": true,
+   "y": 7740,
+   "current": "NEET",
+   "p": 0.35,
+   "live": "NEET@0.350",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "NEET-0.55",
+   "at": "NEET:0.55",
+   "frame": null,
+   "ok": true,
+   "y": 8100,
+   "current": "NEET",
+   "p": 0.55,
+   "live": "NEET@0.550",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "NEET-0.76",
+   "at": "NEET:0.76",
+   "frame": null,
+   "ok": true,
+   "y": 8478,
+   "current": "NEET",
+   "p": 0.76,
+   "live": "NEET@0.760",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "NEET-0.995",
+   "at": "NEET:0.995",
+   "frame": null,
+   "ok": true,
+   "y": 8901,
+   "current": "NEET",
+   "p": 0.995,
+   "live": "NEET@0.995",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 211,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "NEET-0.995",
+   "at": "NEET:0.995",
+   "frame": null,
+   "ok": true,
+   "y": 8901,
+   "current": "NEET",
+   "p": 0.995,
+   "live": "NEET@0.995",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "NEET-0.76",
+   "at": "NEET:0.76",
+   "frame": null,
+   "ok": true,
+   "y": 8478,
+   "current": "NEET",
+   "p": 0.76,
+   "live": "NEET@0.760",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "NEET-0.55",
+   "at": "NEET:0.55",
+   "frame": null,
+   "ok": true,
+   "y": 8100,
+   "current": "NEET",
+   "p": 0.55,
+   "live": "NEET@0.550",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "NEET-0.35",
+   "at": "NEET:0.35",
+   "frame": null,
+   "ok": true,
+   "y": 7740,
+   "current": "NEET",
+   "p": 0.35,
+   "live": "NEET@0.350",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "NEET-0.1",
+   "at": "NEET:0.1",
+   "frame": null,
+   "ok": true,
+   "y": 7290,
+   "current": "NEET",
+   "p": 0.1,
+   "live": "NEET@0.100",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 210,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

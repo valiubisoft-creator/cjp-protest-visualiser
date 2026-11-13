@@ -151,3 +151,28 @@ Sources: Scroll, The Wire, Free Press Journal, Kashmir Life, Al Jazeera, Newslau
 - **S9 `<head>` tags:** no share image (1200×630) and no production URL. Proposed tags are in the S8–S10 report (STATUS).
 - **S10 shows builder-facing text** from `methodology.json`: `roach_size` starts "Spec S5:"; `collection_dates` mentions "the PDF", `IMAGE_SOURCES.md`, `timeline_clips.json`; some caveats are instructions ("verify against the originals before publishing"); the `dossier` source reads "Research dossier (Claude.pdf, supplied by Vali)"; ~50 entries read "Outlet, Outlet (article not specified)". Needs reader-facing wording.
 - **S10 open:** url-null sources by outlet only (`methodology.asterisk`)? Claimant/status appear only in each star's aria-label; YouTube videos credited only in S5 cards; "no unused sources" not yet checked (65 of 116 not seen in a coarse sweep).
+
+## Hybrid, Gate 0 (build/hybrid, 2026-11-13)
+- **Ledger error:** `timeline.json` start_pushback and `narrative.json` say the CJP "reappeared within minutes" (Wikipedia). Business Today (primary, 21 May): "hours after being withheld". Fix pending Vali's OK.
+- **X account:** actual date @CJP_2029 became visible again is disputed (PTI: shortly after the 7 Jul order; Reuters: still withheld that evening). PTI names the handle "CJP_for_India"; the order says @CJP_2029. Outcome of the 24 Jun MeitY review-committee hearing not found. Dipke's 23 May claim that the backup account was taken down is unconfirmed.
+- **October counts:** Delhi 10 Oct has eight published counts (about 200 to more than 15,000), never summed; `epilogue_october.json`'s "2,000 to 15,000" understates the range. v2 errors dropped: 2 Oct "500+" (unattributed), Mumbai internet, "about 1,200 across three cities", de-listing on 13 Oct (it was 12 Oct). Bengaluru: Amnesty "at least 100" vs South First "about 50–60". CNN, Zee, Deccan Herald, Statesman unfetchable.
+- **Voter roll:** 130M+ is a cumulative draft-roll count reported via the BJP's use of ECI data; no ECI national total found. Final-roll net (Bihar + Phase 2) about 6 crore (about 10 in 100), for the footer. ECI 2024 electorate 96,88,21,926 confirmed only via news. The ECI reasons snippet and several others are fetch-tool paraphrases (`verified: false`).
+- **All three new drafts:** much web text came through a summarising fetch tool; every `verified: false` snippet needs a verbatim re-check before it reaches the screen (each group's Gate 1).
+- **Copy:** every hybrid headline, dek and caption is listed for sign-off in `docs/build/hybrid/COPY.md`; "Thirteen hands" counts the Election Commission, which S7d draws as a trigger; the close kicker "As of 7 November 2026" is new.
+- **Storyboard only:** the 20 Jul dead-signal zone is drawn by eye round the Jantar Mantar label (no source maps the cut); the S5 scrubber in the frames still shows v3's six nodes; ledger labels sit close at 1280×720.
+- **Revision 1 (2026-11-13):**
+  - **NEET:** the CJP was not founded over NEET; it took up the leak on 22 May (PTI). NTA, PIB and nta.ac.in were not fetched, so every NTA quote is via press copy. Open conflicts: suicide counts (CJP 21 vs one open letter 11); the leak's origin (a Kerala student vs a printing press); 5,400 centres is from ANI copy only.
+  - **Detentions:** Rathee's clock time (6, 7, 7:10, 7.48 or 8 am) and the detaining force (Delhi vs Gurugram police) are disputed; his "kidnapped" account is his own (alleged). Dipke's 10.30 am time rests on one outlet (Oneindia). ThePrint and The Week were unreadable.
+  - **Rathee photo:** `license_ok: caution` (CC BY 3.0 rests on a YouTube CC label).
+  - **S10 disclaimer** still says the piece covers "16 May to 25 July 2026"; the hybrid runs to 7 Nov.
+- **Hybrid build (2026-11-13):**
+  - **S5 hybrid** drops v3's narrative body copy, media cards and people chips from the reading flow (restraint budget). `narrative.json` and `imagery.json` are still loaded but unused on screen.
+  - **Rail code** (`rail.js`) is still imported but unused.
+  - **20 Jul dead-signal zone** is still illustrative (no source maps the cut).
+  - **The 1.5 km ring** is drawn to scale from the ISOC-reported order, centred on the Jantar Mantar Road anchor.
+  - **Ledger dot labels** shorten the claimant wording; the `*` aria-label carries the full claimant.
+  - **ROLL's new UI copy** ("You were struck off." / "You're still on it. Thirteen others aren't.") is for Vali's sign-off.
+  - **OCT's short claimant labels** abbreviate `october_counts` claimants; the hover tips show them in full.
+  - **S10** still lists sources by number; the footer now carries the hybrid drafts' new sources (merged in `load.js`).
+  - **Verified verbatim by the lead (2026-11-13):** the 2024 roll size (now Free Press Journal; The Statesman 403s), the ECI's removal reasons (ThePrint/Reuters), and Business Today's "hours after". Every fact the hybrid puts on screen now has at least one verified link. The `verified: false` snippets that remain are on off-screen facts: the 13.37 crore draft count, phase electorates, the final-roll net, the HRW and Yadav counter-figures, and the Instagram events.
+

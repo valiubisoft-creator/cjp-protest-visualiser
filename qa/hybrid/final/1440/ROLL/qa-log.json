@@ -1,0 +1,216 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1440x900",
+ "targets": "docs/build/scenes/targets/ROLL.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "ROLL-title",
+   "at": "ROLL:0.08",
+   "frame": null,
+   "ok": true,
+   "y": 37174,
+   "current": "ROLL",
+   "p": 0.0801,
+   "live": "ROLL@0.080",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "ROLL-pick",
+   "at": "ROLL:0.22",
+   "frame": null,
+   "ok": true,
+   "y": 37652,
+   "current": "ROLL",
+   "p": 0.2199,
+   "live": "ROLL@0.220",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "ROLL-default",
+   "at": "ROLL:0.32",
+   "frame": null,
+   "ok": true,
+   "y": 37994,
+   "current": "ROLL",
+   "p": 0.3199,
+   "live": "ROLL@0.320",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "ROLL-strike",
+   "at": "ROLL:0.44",
+   "frame": null,
+   "ok": true,
+   "y": 38405,
+   "current": "ROLL",
+   "p": 0.4401,
+   "live": "ROLL@0.440",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "ROLL-revision",
+   "at": "ROLL:0.54",
+   "frame": "08-roll",
+   "ok": true,
+   "y": 38747,
+   "current": "ROLL",
+   "p": 0.5401,
+   "live": "ROLL@0.540",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "ROLL-scale",
+   "at": "ROLL:0.66",
+   "frame": null,
+   "ok": true,
+   "y": 39157,
+   "current": "ROLL",
+   "p": 0.6599,
+   "live": "ROLL@0.660",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "ROLL-wave",
+   "at": "ROLL:0.78",
+   "frame": null,
+   "ok": true,
+   "y": 39568,
+   "current": "ROLL",
+   "p": 0.7801,
+   "live": "ROLL@0.780",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "ROLL-commission",
+   "at": "ROLL:0.92",
+   "frame": null,
+   "ok": true,
+   "y": 40046,
+   "current": "ROLL",
+   "p": 0.9199,
+   "live": "ROLL@0.920",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 330,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "ROLL-commission",
+   "at": "ROLL:0.92",
+   "frame": null,
+   "ok": true,
+   "y": 40046,
+   "current": "ROLL",
+   "p": 0.9199,
+   "live": "ROLL@0.920",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "ROLL-wave",
+   "at": "ROLL:0.78",
+   "frame": null,
+   "ok": true,
+   "y": 39568,
+   "current": "ROLL",
+   "p": 0.7801,
+   "live": "ROLL@0.780",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "ROLL-scale",
+   "at": "ROLL:0.66",
+   "frame": null,
+   "ok": true,
+   "y": 39157,
+   "current": "ROLL",
+   "p": 0.6599,
+   "live": "ROLL@0.660",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "ROLL-revision",
+   "at": "ROLL:0.54",
+   "frame": "08-roll",
+   "ok": true,
+   "y": 38747,
+   "current": "ROLL",
+   "p": 0.5401,
+   "live": "ROLL@0.540",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "ROLL-strike",
+   "at": "ROLL:0.44",
+   "frame": null,
+   "ok": true,
+   "y": 38405,
+   "current": "ROLL",
+   "p": 0.4401,
+   "live": "ROLL@0.440",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "ROLL-default",
+   "at": "ROLL:0.32",
+   "frame": null,
+   "ok": true,
+   "y": 37994,
+   "current": "ROLL",
+   "p": 0.3199,
+   "live": "ROLL@0.320",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "ROLL-pick",
+   "at": "ROLL:0.22",
+   "frame": null,
+   "ok": true,
+   "y": 37652,
+   "current": "ROLL",
+   "p": 0.2199,
+   "live": "ROLL@0.220",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "ROLL-title",
+   "at": "ROLL:0.08",
+   "frame": null,
+   "ok": true,
+   "y": 37174,
+   "current": "ROLL",
+   "p": 0.0801,
+   "live": "ROLL@0.080",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 334,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

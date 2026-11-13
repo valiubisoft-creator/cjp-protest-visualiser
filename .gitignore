@@ -43,3 +43,9 @@ data/map/raw/
 # QA raw shots (regenerate with tools/cdp-scroll.mjs); logs and compare sheets are kept
 qa/v3*/**/*-down.png
 qa/v3*/**/*-up.png
+qa/hybrid/**/*-down.png
+qa/hybrid/**/*-up.png
+qa/hybrid/*/dev/
+qa/hybrid/*/shots/
+qa/hybrid/*/compare-*.png
+qa/hybrid/*/*/compare-*.png

@@ -419,7 +419,8 @@ node("start", 1, "Start", "2026-06-06", ("2026-05-16", "2026-06-19"), "How it be
      [DIPKE], [IMG("cjp_flag_variant-a.png", note="CJP flag on Commons, dated 16 May. Symbol, not a protest photo.")],
      sub_beats=[
         SB("start_pushback", "2026-05-21", "State pushback and disinformation", [
-            F("The CJP reappeared within minutes as “Cockroach is Back” (@Cockroachisback).", "media", "reported", "documented", "wikipedia", 3),
+            # hybrid 2026-11-13: was "reappeared within minutes" (unsupported); Business Today 21 May says "hours after" (primary source wins)
+            F("Hours after the block, the CJP was back as “Cockroach is Back” (@Cockroachisback).", "media", "reported", "documented", "wikipedia", 3),
             F("Dipke approached the Delhi High Court against the block (Bar and Bench, 25 May).", "Bar and Bench", "reported", "documented", "barandbench", 3, value_text="25 May",
               resolution="Vali 2026-11-12: primary source wins. Dossier said 26 May; the Bar and Bench article is dated 25 May. First hearing reported as 29 May (search only)."),
             F("A Supreme Court plea seeking a CBI probe into the CJP, and an Allahabad HC (Lucknow) PIL by a Karnataka BJP worker seeking NIA/ED probes and Dipke’s extradition, were both dismissed.",
@@ -993,7 +994,7 @@ methodology = {
     "disclaimer": {
         "status": "approved by Vali 2026-11-12",
         "paragraphs": [
-            "Cockroaches is an independent visual reconstruction of the Cockroach Janta Party protest at Jantar Mantar, New Delhi, from 16 May to 25 July 2026. It is not affiliated with, commissioned by or endorsed by the Cockroach Janta Party, any political party or any government body.",
+            "Cockroaches is an independent visual reconstruction of the Cockroach Janta Party protests at Jantar Mantar, New Delhi, and beyond, from 16 May to 7 November 2026. It is not affiliated with, commissioned by or endorsed by the Cockroach Janta Party, any political party or any government body.",
             "Every figure, date and quotation on this page comes from publicly available reporting, linked in the sources below. We did not use paywalled material. Some facts rely on Wikipedia's summaries of news reports; where we could reach the original report, we link it.",
             "Many figures are contested. Where the police, the organisers and the press disagree, we show each claim separately with who made it. We do not average or reconcile them, and an asterisk beside a number leads to its source.",
             "The cockroaches on the map are a visual device. Their number reflects reported crowd descriptions in broad bands, not headcounts; their size reflects days elapsed. The labelled founder roach is a symbolic marker, not a location. Barricades and other drawn map elements are illustrative.",

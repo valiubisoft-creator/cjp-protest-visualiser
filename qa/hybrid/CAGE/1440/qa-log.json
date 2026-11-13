@@ -1,0 +1,168 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1440x900",
+ "targets": "docs/build/scenes/targets/CAGE.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "CAGE-0.08",
+   "at": "CAGE:0.08",
+   "frame": null,
+   "ok": true,
+   "y": 41465,
+   "current": "CAGE",
+   "p": 0.0801,
+   "live": "CAGE@0.080",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "CAGE-0.17",
+   "at": "CAGE:0.17",
+   "frame": null,
+   "ok": true,
+   "y": 41740,
+   "current": "CAGE",
+   "p": 0.1699,
+   "live": "CAGE@0.170",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "CAGE-0.35",
+   "at": "CAGE:0.35",
+   "frame": null,
+   "ok": true,
+   "y": 42291,
+   "current": "CAGE",
+   "p": 0.35,
+   "live": "CAGE@0.350",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "CAGE-0.5",
+   "at": "CAGE:0.5",
+   "frame": "09a",
+   "ok": true,
+   "y": 42750,
+   "current": "CAGE",
+   "p": 0.5,
+   "live": "CAGE@0.500",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "CAGE-0.75",
+   "at": "CAGE:0.75",
+   "frame": null,
+   "ok": true,
+   "y": 43515,
+   "current": "CAGE",
+   "p": 0.75,
+   "live": "CAGE@0.750",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "CAGE-0.95",
+   "at": "CAGE:0.95",
+   "frame": "09b",
+   "ok": true,
+   "y": 44127,
+   "current": "CAGE",
+   "p": 0.95,
+   "live": "CAGE@0.950",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 252,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "CAGE-0.95",
+   "at": "CAGE:0.95",
+   "frame": "09b",
+   "ok": true,
+   "y": 44127,
+   "current": "CAGE",
+   "p": 0.95,
+   "live": "CAGE@0.950",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "CAGE-0.75",
+   "at": "CAGE:0.75",
+   "frame": null,
+   "ok": true,
+   "y": 43515,
+   "current": "CAGE",
+   "p": 0.75,
+   "live": "CAGE@0.750",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "CAGE-0.5",
+   "at": "CAGE:0.5",
+   "frame": "09a",
+   "ok": true,
+   "y": 42750,
+   "current": "CAGE",
+   "p": 0.5,
+   "live": "CAGE@0.500",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "CAGE-0.35",
+   "at": "CAGE:0.35",
+   "frame": null,
+   "ok": true,
+   "y": 42291,
+   "current": "CAGE",
+   "p": 0.35,
+   "live": "CAGE@0.350",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "CAGE-0.17",
+   "at": "CAGE:0.17",
+   "frame": null,
+   "ok": true,
+   "y": 41740,
+   "current": "CAGE",
+   "p": 0.1699,
+   "live": "CAGE@0.170",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "CAGE-0.08",
+   "at": "CAGE:0.08",
+   "frame": null,
+   "ok": true,
+   "y": 41465,
+   "current": "CAGE",
+   "p": 0.0801,
+   "live": "CAGE@0.080",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 252,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

@@ -1,0 +1,544 @@
+{
+ "status": "draft",
+ "collected": "2026-11-13",
+ "note": "Voter-roll chapter sourcing. 130M is a cumulative DRAFT-roll deletion count across three phases (Bihar, Phase 2, Phase 3 drafts), not final-roll net change, and no ECI-published national total was found. Wire (Reuters) attributes the figure to ECI data cited by the BJP. Final-roll net reduction for Bihar+Phase 2 is about 6 crore. Several fetches failed (403): Deccan Herald, Business Standard, PIB, Statesman.",
+ "new_sources": [
+  {
+   "id": "reuters_0109_explainer",
+   "title": "EXPLAINER-Why India's tens of millions of voter deletions have led to widespread protests",
+   "publisher": "Reuters (via ThePrint)",
+   "url": "https://theprint.in/world/explainer-why-indias-tens-of-millions-of-voter-deletions-have-led-to-widespread-protests/3066480/",
+   "date": "2026-10-09",
+   "note": "Reuters, Arpan Chaturvedi and Krishna N. Das, datelined New Delhi 9 Oct. Fetched via ThePrint reprint."
+  },
+  {
+   "id": "nyt_bostonglobe_1006",
+   "title": "India cuts 130 million from voter rolls, fueling protests against Modi",
+   "publisher": "New York Times (via Boston Globe)",
+   "url": "https://www.bostonglobe.com/2026/10/06/world/india-cuts-130-million-voter-rolls-fueling-protests-against-modi/",
+   "date": "2026-10-06",
+   "note": "Date taken from the URL; article body carries no date. Fetched via Boston Globe syndication."
+  },
+  {
+   "id": "hrw_1028",
+   "title": "India: Mass Voter Roll Exclusions Deeply Flawed",
+   "publisher": "Human Rights Watch",
+   "url": "https://www.hrw.org/news/2026/10/28/india-mass-voter-roll-exclusions-deeply-flawed",
+   "date": "2026-10-28",
+   "note": "Advocacy organisation; presents findings as its own assessment. Says 960 million registered voters before 2024 (differs from ECI 968.8M)."
+  },
+  {
+   "id": "outlook_0903_13crore",
+   "title": "EC draft rolls: 13.37 crore deletions across India, re-inclusion window opens",
+   "publisher": "Outlook India",
+   "url": "https://www.outlookindia.com/national/ec-draft-rolls-1337-crore-deletions-across-india-re-inclusion-window-opens",
+   "date": "2026-09-03",
+   "note": "Gives 13.37 crore (an 'estimate', no source) = about 14.1% of pre-SIR rolls, 30 States/UTs, draft rolls."
+  },
+  {
+   "id": "deccanherald_133crore",
+   "title": "SIR: 13.3 crore names wiped out of draft voter lists so far, triggering opposition backlash",
+   "publisher": "Deccan Herald",
+   "url": "https://www.deccanherald.com/india/sir-133-crore-names-wiped-out-of-draft-voter-lists-so-far-triggering-opposition-backlash-4164836",
+   "date": "2026-09",
+   "note": "WebFetch returned 403; content known only from a search-result summary (not verbatim). Treat as unconfirmed. Month approximate."
+  },
+  {
+   "id": "quint_0923_dissent",
+   "title": "2/3 Election Commissioners Objected to SIR Process 14 Times in 10 Months: Report",
+   "publisher": "The Quint",
+   "url": "https://www.thequint.com/amp/story/news/breaking-news/election-commission-sir-dissent-sandhu-gyanesh-kumar",
+   "date": "2026-09-23",
+   "note": "Cites Indian Express investigation; names Sandhu and Joshi."
+  },
+  {
+   "id": "tnm_0923_ie",
+   "title": "SIR process: IE investigation raises critical questions on EC's conduct",
+   "publisher": "The News Minute",
+   "url": "https://www.thenewsminute.com/news/sir-process-ie-investigation-raises-critical-questions-on-ecs-conduct",
+   "date": "2026-09-23",
+   "note": "Names IE reporter Ritika Chopra and the 23 Sept date; carries ECI response."
+  },
+  {
+   "id": "wire_ie_14objections",
+   "title": "Inside the ECI: Two Commissioners, 14 Objections and No Answers",
+   "publisher": "The Wire",
+   "url": "https://m.thewire.in/article/government/inside-the-eci-two-commissioners-14-objections-and-no-answers",
+   "date": "2026-09",
+   "note": "Date not given on fetched page."
+  },
+  {
+   "id": "decchronicle_sixcrore",
+   "title": "Mother of Democracy: Six Crore Voter Names Deleted in a Year of SIR",
+   "publisher": "Deccan Chronicle (PTI)",
+   "url": "https://www.deccanchronicle.com/nation/current-affairs/mother-of-democracy-six-crore-voter-names-deleted-in-a-year-of-sir-1966410",
+   "date": "2026-06",
+   "note": "Final-roll count for Bihar plus Phase 2; date approximate (one-year mark of SIR, around June 2026)."
+  },
+  {
+   "id": "sabrang_0619",
+   "title": "Exclusive investigation: SIR - how many voters did the ECI actually disenfranchise",
+   "publisher": "SabrangIndia",
+   "url": "https://sabrangindia.in/exclusive-investigation-sir-how-many-voters-did-the-eci-actually-disenfranchise-why-do-final-figures-show-inexplicable-additions/",
+   "date": "2026-06-19",
+   "note": "Advocacy-adjacent analysis (with Vote for Democracy) of ECI/CEO data; internally inconsistent in places."
+  },
+  {
+   "id": "livelaw_yadav_0128",
+   "title": "SIR | Lack Of Formal Appeals Doesn't Mean There Were No Wrongful Deletions: Yogendra Yadav To Supreme Court",
+   "publisher": "LiveLaw",
+   "url": "https://www.livelaw.in/top-stories/sir-lack-of-formal-appeals-doesnt-mean-there-were-no-wrongful-deletions-yogendra-yadav-to-supreme-court-520963",
+   "date": "2026-01-28",
+   "note": "Hearing before CJI Surya Kant and Justice Joymalya Bagchi."
+  },
+  {
+   "id": "wiki_sir",
+   "title": "Special Intensive Revision",
+   "publisher": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Special_Intensive_Revision",
+   "date": "2026-11-13",
+   "note": "Tertiary; used for phase scope and pre/post elector counts. Cross-checked against Sabrang/Deccan Chronicle."
+  },
+  {
+   "id": "pib_sir_safeguards",
+   "title": "ECI's Special Intensive Revision of Electoral Rolls Being Conducted in Phases with Multiple Safeguards to Protect Eligible Voters",
+   "publisher": "PIB (Government of India)",
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2289473&reg=48&lang=1",
+   "date": "2026",
+   "note": "Primary. WebFetch returned 403; wording known only from search-result summary, not verbatim. Date unconfirmed."
+  },
+  {
+   "id": "statesman_9688",
+   "title": "96.88 crore eligible to vote in Lok Sabha elections: EC",
+   "publisher": "The Statesman",
+   "url": "https://www.thestatesman.com/india/96-88-crore-eligible-to-vote-in-lok-sabha-elections-ec-1503268206.html",
+   "date": "2024-02-09",
+   "note": "WebFetch 403; figure confirmed across many outlets via search (96,88,21,926 as of 8 Feb 2024). ECI primary press note not retrieved."
+  },
+  {
+   "id": "fpj_0209_9688",
+   "title": "96.88 crore people registered to vote for Lok Sabha elections 2024: EC",
+   "publisher": "Free Press Journal",
+   "url": "https://www.freepressjournal.in/india/9688-crore-people-registered-to-vote-for-lok-sabha-elections-2024-ec",
+   "date": "2024-02-09",
+   "note": "Lead verified verbatim 2026-11-13 (The Statesman returned 403)."
+  }
+ ],
+ "facts": [
+  {
+   "id": "vr_removed_130m",
+   "date": "2026-10-08",
+   "text": "India's Election Commission has so far removed more than 130 million names from the voter lists.",
+   "value": 130000000,
+   "value_text": "more than 130 million",
+   "unit": "names",
+   "claimant": "AP and Reuters (via Al Jazeera); Reuters attributes the figure to Election Commission data cited by the BJP",
+   "attribution": "reported",
+   "status": "claimed",
+   "source_ids": [
+    "repo_aljazeera_1008",
+    "reuters_0109_explainer",
+    "nyt_bostonglobe_1006",
+    "hrw_1028"
+   ],
+   "links": [
+    {
+     "source_id": "repo_aljazeera_1008",
+     "url": "https://www.aljazeera.com/news/2026/10/8/indias-cockroach-movement-says-members-detained-as-protests-continue",
+     "title": "‘Cockroach’ movement says members detained as protests continue",
+     "publisher": "Al Jazeera (AP, Reuters)",
+     "date": "2026-10-08",
+     "snippet": "India’s Election Commission has so far removed more than 130 million names from the voter lists",
+     "verified": true
+    },
+    {
+     "source_id": "reuters_0109_explainer",
+     "url": "https://theprint.in/world/explainer-why-indias-tens-of-millions-of-voter-deletions-have-led-to-widespread-protests/3066480/",
+     "title": "Explainer: Why India's tens of millions of voter deletions have led to widespread protests",
+     "publisher": "Reuters via ThePrint",
+     "date": "2026-10-09",
+     "snippet": "Election Commission data cited by Modi's Bharatiya Janata Party shows about 130 million names",
+     "verified": true
+    },
+    {
+     "source_id": "nyt_bostonglobe_1006",
+     "url": "https://www.bostonglobe.com/2026/10/06/world/india-cuts-130-million-voter-rolls-fueling-protests-against-modi/",
+     "title": "India cuts 130 million from voter rolls",
+     "publisher": "NYT via Boston Globe",
+     "date": "2026-10-06",
+     "snippet": "So far, it has expunged more than 130 million names",
+     "verified": true
+    },
+    {
+     "source_id": "hrw_1028",
+     "url": "https://www.hrw.org/news/2026/10/28/india-mass-voter-roll-exclusions-deeply-flawed",
+     "title": "India: Mass Voter Roll Exclusions Deeply Flawed",
+     "publisher": "Human Rights Watch",
+     "date": "2026-10-28",
+     "snippet": "removal of over 130 million names from the country's electoral rolls",
+     "verified": true
+    }
+   ],
+   "web_check": "verified",
+   "web_notes": [
+    "No outlet gives an as-of date; 'so far' as of early Oct 2026.",
+    "Counts draft-roll deletions cumulative over three phases (Bihar, Phase 2, Phase 3 drafts); not final-roll net change. Phase 3 is ongoing; HRW says 'ongoing in 16 states and 3 union territories'.",
+    "Reuters attributes the figure to ECI data cited by the BJP; no ECI press note giving a national total was found.",
+    "Scope: Al Jazeera/NYT say 'country'; Outlook says 30 States/UTs."
+   ]
+  },
+  {
+   "id": "vr_removed_1337cr_draft",
+   "date": "2026-09-03",
+   "text": "The SIR has so far resulted in an estimated 13.37 crore names deleted from draft voter lists across three phases, about 14.1% of pre-SIR rolls (30 States/UTs).",
+   "value": 133700000,
+   "value_text": "13.37 crore (estimated)",
+   "unit": "names",
+   "claimant": "Outlook India (estimate; unattributed)",
+   "attribution": "reported",
+   "status": "claimed",
+   "source_ids": [
+    "outlook_0903_13crore",
+    "deccanherald_133crore"
+   ],
+   "links": [
+    {
+     "source_id": "outlook_0903_13crore",
+     "url": "https://www.outlookindia.com/national/ec-draft-rolls-1337-crore-deletions-across-india-re-inclusion-window-opens",
+     "title": "EC draft rolls: 13.37 crore deletions across India",
+     "publisher": "Outlook India",
+     "date": "2026-09-03",
+     "snippet": "(fetch summary, paraphrased) an estimated 13.37 crore names removed from draft electoral rolls across three phases, about 14.1% of pre-SIR rolls, 30 States and UTs",
+     "verified": false
+    },
+    {
+     "source_id": "deccanherald_133crore",
+     "url": "https://www.deccanherald.com/india/sir-133-crore-names-wiped-out-of-draft-voter-lists-so-far-triggering-opposition-backlash-4164836",
+     "title": "SIR: 13.3 crore names wiped out of draft voter lists so far",
+     "publisher": "Deccan Herald",
+     "date": "2026-09",
+     "snippet": "(not fetched; search summary only) Election Commission data shows 13.3 crore names removed from draft rolls",
+     "verified": false
+    }
+   ],
+   "web_check": "partial",
+   "web_notes": [
+    "Snippets are from tool summaries, not verbatim page text: do not quote on screen.",
+    "Provides the only pre-SIR denominator percentage (14.1%)."
+   ]
+  },
+  {
+   "id": "vr_breakdown_bjp",
+   "date": "2026-10-09",
+   "text": "Of about 130 million names, 28 million are dead, 63 million relocated, 10 million are duplicates and 30 million untraceable.",
+   "value": 130000000,
+   "value_text": "28M dead; 63M relocated; 10M duplicates; 30M untraceable",
+   "unit": "names",
+   "claimant": "BJP, citing Election Commission data (per Reuters)",
+   "attribution": "BJP said, citing ECI data",
+   "status": "claimed",
+   "source_ids": [
+    "reuters_0109_explainer"
+   ],
+   "links": [
+    {
+     "source_id": "reuters_0109_explainer",
+     "url": "https://theprint.in/world/explainer-why-indias-tens-of-millions-of-voter-deletions-have-led-to-widespread-protests/3066480/",
+     "title": "Explainer: Why India's tens of millions of voter deletions have led to widespread protests",
+     "publisher": "Reuters via ThePrint",
+     "date": "2026-10-09",
+     "snippet": "Election Commission data cited by Modi's Bharatiya Janata Party shows about 130 million names",
+     "verified": true
+    }
+   ],
+   "web_check": "partial",
+   "web_notes": [
+    "Fetch summary reported the four figures, which sum to 131M (rounding). The four-category snippet is a summary, not verified verbatim.",
+    "Deccan Herald (unfetched) reports ~21% deceased (2.8 crore) and 7.5% multiple-enrolment (1.01 crore): consistent with 28M and 10M.",
+    "No ECI-published national breakdown found."
+   ]
+  },
+  {
+   "id": "vr_denominator_2024",
+   "date": "2024-02-08",
+   "text": "The Election Commission said 96.88 crore people were registered to vote for the 2024 Lok Sabha elections.",
+   "value": 968821926,
+   "value_text": "96,88,21,926 registered electors (about 969 million)",
+   "unit": "electors",
+   "claimant": "Election Commission of India",
+   "attribution": "ECI said",
+   "status": "documented",
+   "source_ids": [
+    "fpj_0209_9688",
+    "statesman_9688"
+   ],
+   "links": [
+    {
+     "source_id": "fpj_0209_9688",
+     "url": "https://www.freepressjournal.in/india/9688-crore-people-registered-to-vote-for-lok-sabha-elections-2024-ec",
+     "title": "96.88 crore people registered to vote for Lok Sabha elections 2024: EC",
+     "publisher": "Free Press Journal",
+     "date": "2024-02-09",
+     "snippet": "The Election Commission of India has announced that a staggering 96.88 crore electors are registered to vote in the upcoming General Elections",
+     "verified": true
+    },
+    {
+     "source_id": "statesman_9688",
+     "url": "https://www.thestatesman.com/india/96-88-crore-eligible-to-vote-in-lok-sabha-elections-ec-1503268206.html",
+     "title": "96.88 crore eligible to vote in Lok Sabha elections: EC",
+     "publisher": "The Statesman",
+     "date": "2024-02-09",
+     "snippet": "96.88 crore eligible to vote in Lok Sabha elections: EC",
+     "verified": false
+    }
+   ],
+   "web_check": "verified",
+   "web_notes": [
+    "Exact 96,88,21,926 figure from search summaries of multiple outlets; ECI press note not fetched.",
+    "Reuters says 'nearly one billion'; NYT says 'about 970 million names before the recent revisions'; HRW says 960 million (outlier)."
+   ]
+  },
+  {
+   "id": "vr_phase_electorates",
+   "date": "2026-06",
+   "text": "SIR phases: Bihar 7.89 crore electors before; Phase 2 50.99 crore before (12 States/UTs); Phase 3 36.73 crore electors (16 States, 3 UTs).",
+   "value": 956100000,
+   "value_text": "7.89 + 50.99 + 36.73 = 95.61 crore",
+   "unit": "electors",
+   "claimant": "ECI figures as reported (Wikipedia, Deccan Chronicle/PTI, SabrangIndia)",
+   "attribution": "reported",
+   "status": "documented",
+   "source_ids": [
+    "wiki_sir",
+    "decchronicle_sixcrore",
+    "sabrang_0619"
+   ],
+   "links": [
+    {
+     "source_id": "decchronicle_sixcrore",
+     "url": "https://www.deccanchronicle.com/nation/current-affairs/mother-of-democracy-six-crore-voter-names-deleted-in-a-year-of-sir-1966410",
+     "title": "Six Crore Voter Names Deleted in a Year of SIR",
+     "publisher": "Deccan Chronicle (PTI)",
+     "date": "2026-06",
+     "snippet": "The base was more than 50.99 crore before the clean-up and stands at 45.81 crore after it.",
+     "verified": false
+    }
+   ],
+   "web_check": "partial",
+   "web_notes": [
+    "Sum 95.61 crore is my arithmetic and includes Phase 3 states where drafts were not published (Himachal, J&K deferred; Assam awaits NRC), so the real base for the 13.37 crore is slightly lower; Outlook's 14.1% implies about 94.8 crore.",
+    "Verbatim snippet is a fetch-summary paraphrase."
+   ]
+  },
+  {
+   "id": "vr_final_net_phase12",
+   "date": "2026-06",
+   "text": "Final rolls: Bihar fell from 7.89 crore to 7.42 crore; the Phase 2 combined list fell from 50.99 crore to 45.81 crore (over 5.18 crore, 10.2%). The SIR had deleted nearly six crore voters in its first year.",
+   "value": 60000000,
+   "value_text": "nearly six crore (final rolls, Bihar + Phase 2)",
+   "unit": "names",
+   "claimant": "PTI via Deccan Chronicle",
+   "attribution": "reported",
+   "status": "claimed",
+   "source_ids": [
+    "decchronicle_sixcrore",
+    "sabrang_0619"
+   ],
+   "links": [
+    {
+     "source_id": "decchronicle_sixcrore",
+     "url": "https://www.deccanchronicle.com/nation/current-affairs/mother-of-democracy-six-crore-voter-names-deleted-in-a-year-of-sir-1966410",
+     "title": "Six Crore Voter Names Deleted in a Year of SIR",
+     "publisher": "Deccan Chronicle (PTI)",
+     "date": "2026-06",
+     "snippet": "nearly six crore voters",
+     "verified": false
+    }
+   ],
+   "web_check": "partial",
+   "web_notes": [
+    "Final-roll net figure is about half the 130M draft-stage figure; Phase 3 finals not yet in (Manipur, Sikkim finals 6 Sep per Wikipedia).",
+    "SabrangIndia: Phase 1-2 pre-SIR 61.38 crore, published final 55.17 crore (net about 6.21 crore); 5.29 crore final deletions; 7.33 crore at draft stage."
+   ]
+  },
+  {
+   "id": "vr_eci_reasons",
+   "date": "2026-10-09",
+   "text": "The Commission says names are only removed when a voter has died, is mentioned more than once on the rolls, has moved to another region or is untraceable.",
+   "value": null,
+   "value_text": "deceased; duplicate; permanently shifted; untraceable/absent",
+   "unit": "categories",
+   "claimant": "Election Commission of India",
+   "attribution": "ECI said",
+   "status": "claimed",
+   "source_ids": [
+    "reuters_0109_explainer",
+    "pib_sir_safeguards",
+    "hrw_1028"
+   ],
+   "links": [
+    {
+     "source_id": "reuters_0109_explainer",
+     "url": "https://theprint.in/world/explainer-why-indias-tens-of-millions-of-voter-deletions-have-led-to-widespread-protests/3066480/",
+     "title": "Explainer: Why India's tens of millions of voter deletions have led to widespread protests",
+     "publisher": "Reuters via ThePrint",
+     "date": "2026-10-09",
+     "snippet": "The Election Commission says names are only removed when a voter has died, is mentioned more than once on the rolls, has moved to another region or is untraceable.",
+     "verified": true
+    },
+    {
+     "source_id": "hrw_1028",
+     "url": "https://www.hrw.org/news/2026/10/28/india-mass-voter-roll-exclusions-deeply-flawed",
+     "title": "India: Mass Voter Roll Exclusions Deeply Flawed",
+     "publisher": "Human Rights Watch",
+     "date": "2026-10-28",
+     "snippet": "purportedly removed dead, duplicate, or ineligible voters",
+     "verified": false
+    },
+    {
+     "source_id": "pib_sir_safeguards",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2289473&reg=48&lang=1",
+     "title": "ECI's SIR ... Multiple Safeguards to Protect Eligible Voters",
+     "publisher": "PIB",
+     "date": "2026",
+     "snippet": "(search summary, unverified) death, permanent shifting, duplicate entries in more than one place, and electors untraceable after repeated visits",
+     "verified": false
+    }
+   ],
+   "web_check": "verified",
+   "web_notes": [
+    "Verbatim wording only partly captured; Reuters fetch gave a paraphrase and HRW a verbatim fragment. PIB primary page returned 403.",
+    "Bihar official breakdown (enumeration phase, PIB): 18 lakh deceased, 26 lakh shifted, 7 lakh enrolled at two places (search summary).",
+    "Delhi draft: 29.86% absent/shifted/others, 1.95% deceased, 0.98% multiple (Outlook, CEO data)."
+   ]
+  },
+  {
+   "id": "vr_commissioners_14",
+   "date": "2026-09-23",
+   "text": "Two election commissioners, Sukhbir Singh Sandhu and Vivek Joshi, formally objected on record at least 14 times over roughly ten months to SIR-related decisions.",
+   "value": 14,
+   "value_text": "at least 14 times in about 10 months",
+   "unit": "objections",
+   "claimant": "The Indian Express (investigation, reporter Ritika Chopra, 23 Sep 2026); reported by The Quint, TNM, The Wire, Al Jazeera",
+   "attribution": "reported",
+   "status": "claimed",
+   "source_ids": [
+    "repo_aljazeera_1002",
+    "quint_0923_dissent",
+    "tnm_0923_ie",
+    "wire_ie_14objections"
+   ],
+   "links": [
+    {
+     "source_id": "repo_aljazeera_1002",
+     "url": "https://www.aljazeera.com/news/2026/10/2/indian-authorities-clamp-down-as-cockroach-movement-launches-new-protests",
+     "title": "Authorities clamp down as ‘cockroach’ movement launches new protests",
+     "publisher": "Al Jazeera",
+     "date": "2026-10-02",
+     "snippet": "had formally raised concerns at least 14 times in the past 10 months over revisions to voter lists",
+     "verified": true
+    },
+    {
+     "source_id": "tnm_0923_ie",
+     "url": "https://www.thenewsminute.com/news/sir-process-ie-investigation-raises-critical-questions-on-ecs-conduct",
+     "title": "SIR process: IE investigation raises critical questions on EC's conduct",
+     "publisher": "The News Minute",
+     "date": "2026-09-23",
+     "snippet": "at least 14 times to decisions related to the Special Intensive Revisions (SIR)",
+     "verified": false
+    },
+    {
+     "source_id": "quint_0923_dissent",
+     "url": "https://www.thequint.com/amp/story/news/breaking-news/election-commission-sir-dissent-sandhu-gyanesh-kumar",
+     "title": "2/3 Election Commissioners Objected to SIR Process 14 Times in 10 Months",
+     "publisher": "The Quint",
+     "date": "2026-09-23",
+     "snippet": "formally objected on record at least 14 times",
+     "verified": false
+    },
+    {
+     "source_id": "wire_ie_14objections",
+     "url": "https://m.thewire.in/article/government/inside-the-eci-two-commissioners-14-objections-and-no-answers",
+     "title": "Inside the ECI: Two Commissioners, 14 Objections and No Answers",
+     "publisher": "The Wire",
+     "date": "2026-09",
+     "snippet": "two election commissioners, Sukhbir Singh Sandhu and Vivek Joshi, raised at least 14 formal objections over 10 months",
+     "verified": false
+    }
+   ],
+   "web_check": "verified",
+   "web_notes": [
+    "Names and date come from The Quint/TNM/Wire fetch summaries (quotes partly paraphrased); Indian Express original not fetched.",
+    "ECI/officials' reply: 'all decisions, including those related to SIR, were unanimous' (via HT/Quint); ECI described the concerns as operational queries or inputs (via The Wire). ECI did not deny the objections per TNM.",
+    "Al Jazeera wording says 'deputies of Gyanesh Kumar' with no names; use Al Jazeera snippet (verified) on screen and names from Quint/TNM."
+   ]
+  },
+  {
+   "id": "vr_counter_hrw_bengal",
+   "date": "2026-10-28",
+   "text": "Human Rights Watch: in West Bengal about 93 percent of decided appeals led to restoration, meaning 9 out of every 10 voters removed from the voter list were wrongfully removed.",
+   "value": 93,
+   "value_text": "about 93 percent of decided appeals restored (West Bengal)",
+   "unit": "percent",
+   "claimant": "Human Rights Watch",
+   "attribution": "HRW said",
+   "status": "claimed",
+   "source_ids": [
+    "hrw_1028"
+   ],
+   "links": [
+    {
+     "source_id": "hrw_1028",
+     "url": "https://www.hrw.org/news/2026/10/28/india-mass-voter-roll-exclusions-deeply-flawed",
+     "title": "India: Mass Voter Roll Exclusions Deeply Flawed",
+     "publisher": "Human Rights Watch",
+     "date": "2026-10-28",
+     "snippet": "9 out of every 10 voters removed from the voter list were wrongfully removed",
+     "verified": false
+    }
+   ],
+   "web_check": "partial",
+   "web_notes": [
+    "Applies to West Bengal decided appeals only, not national. Selection effect: appellants are a subset of the deleted.",
+    "Wikipedia: Over 100,000 West Bengal tribunal cases decided by Oct 2026, 80-90% success for appellants.",
+    "Supreme Court May 2026: data did not indicate 'systemic disenfranchisement' (HRW's account); upheld ECI power to conduct SIR."
+   ]
+  },
+  {
+   "id": "vr_counter_yadav",
+   "date": "2026-01-28",
+   "text": "Yogendra Yadav told the Supreme Court that lack of formal appeals does not mean there were no wrongful deletions; his team found 2.97 lakh initially excluded Bihar names reappeared on the final roll against the Commission's 36,475 inclusion claims.",
+   "value": 297000,
+   "value_text": "2.97 lakh names reappeared (Bihar)",
+   "unit": "names",
+   "claimant": "Yogendra Yadav (petitioner)",
+   "attribution": "Yadav told the court",
+   "status": "disputed",
+   "source_ids": [
+    "livelaw_yadav_0128"
+   ],
+   "links": [
+    {
+     "source_id": "livelaw_yadav_0128",
+     "url": "https://www.livelaw.in/top-stories/sir-lack-of-formal-appeals-doesnt-mean-there-were-no-wrongful-deletions-yogendra-yadav-to-supreme-court-520963",
+     "title": "SIR | Lack Of Formal Appeals Doesn't Mean There Were No Wrongful Deletions",
+     "publisher": "LiveLaw",
+     "date": "2026-01-28",
+     "snippet": "The idea that there was no appeal is absolutely false.",
+     "verified": false
+    }
+   ],
+   "web_check": "partial",
+   "web_notes": [
+    "Quote is from fetch summary. Bihar only. Wikipedia reports ADR apprehended disenfranchisement of nearly three crore voters (2025)."
+   ]
+  }
+ ],
+ "ratio": {
+  "removed_fact_id": "vr_removed_130m",
+  "denominator_fact_id": "vr_denominator_2024",
+  "per_100": 13,
+  "arithmetic": "130 / 968.8 = 13.4 per 100 (2024 electorate). Cross-check on the pre-SIR base: 13.37 crore / about 94.8 to 95.6 crore = 14.0 to 14.1 per 100 (Outlook: 14.1%). Final-roll view, Bihar + Phase 2 only: about 5.65 to 6.2 crore / 58.9 to 61.4 crore = about 9.6 to 10 per 100.",
+  "caveat": "The SIR now covers almost the whole country (30 States/UTs; only Assam, J&K, Himachal deferred), so dividing by the national electorate is defensible, but 13 is the draft-stage ratio: names deleted from draft rolls, some later restored, Phase 3 not final. Label as 'about 13 in 100 ... so far' and attribute: 'reported', with the BJP/ECI-data caveat. 969M is the Feb 2024 roll, not the roll at SIR start."
+ }
+}

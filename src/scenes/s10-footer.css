@@ -1,4 +1,4 @@
-/* S10 · Credit, methodology, disclaimer + sources (S8-S10 chat, 2026-11-12, gate 1). Reading section: paper inside ink.
+/* S10 · Credit, methodology, disclaimer + sources (S8-S10 chat, 2026-11-12, gate 1). Ink (hybrid, Vali 2026-11-13: the whole piece in black; was a paper reading section).
    Geometry from design/storyboard.css .s10 at 1440×900 (padding 72, columns 300 / 1fr / 1.25fr, gap 48). */
 .s10 { background: var(--bg); color: var(--fg); }
 .s10-in { padding: 72px 5% var(--s-9); }
@@ -31,6 +31,6 @@
 .s10-list li { font-size: 12px; margin: 0 0 6px; break-inside: avoid; display: grid; grid-template-columns: auto 1fr; column-gap: 6px; align-items: baseline;
   scroll-margin-top: 30vh; overflow-wrap: anywhere; }
 .s10-list li b { color: var(--accent-text); }
-.s10-list li:target { background: var(--paper-2); outline: 2px solid var(--accent); outline-offset: 2px; }
+.s10-list li:target { background: var(--surface); outline: 2px solid var(--accent); outline-offset: 2px; }
 .s10-back { text-decoration: none !important; color: var(--muted) !important; font-size: 12px; padding: 0 2px; }
 .s10-back:hover, .s10-back:focus-visible { color: var(--accent-text) !important; }

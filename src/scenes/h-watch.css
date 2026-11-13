@@ -1,0 +1,30 @@
+/* WATCH · "Four days, most of the views." (build/hybrid, 2026-11-13). Tokens only. --k = min(W/1440, H/900), set by JS. */
+.h-watch { --k: 1; color: var(--fg); overflow: hidden; }
+.h-watch > canvas { position: absolute; left: 0; top: 0; display: block; }
+.h-watch .hw-back { z-index: 0; pointer-events: none; }
+.h-watch .hw-dots { z-index: 1; }
+
+/* the running counter: right column, top */
+.h-watch .hw-big { position: absolute; right: 24px; top: calc(120px * var(--k)); width: 360px; z-index: 5; }
+.h-watch .hw-pct { font: var(--w-black) calc(76px * var(--k))/1 var(--font-ui); font-variant-numeric: tabular-nums; margin: 8px 0 0; }
+.h-watch .hw-pct .star { font-size: .32em; vertical-align: top; margin-left: 1px; }
+.h-watch .hw-lab { font: var(--w-regular) var(--fs-small)/1.4 var(--font-text); color: var(--muted); margin: 6px 0 0; }
+
+/* the date ticker */
+.h-watch .hw-tick { position: absolute; height: 44px; z-index: 4; pointer-events: none; }
+.h-watch .hw-tick svg { overflow: visible; display: block; }
+.h-watch .hw-tick .win { fill: var(--red); }
+.h-watch .hw-tick .axis { stroke: var(--rule-c); stroke-width: 2; }
+.h-watch .hw-tick .day { stroke: var(--rule-c); }
+.h-watch .hw-tick text { fill: var(--muted); font: var(--w-regular) 11px/1 var(--font-ui); }
+.h-watch .hw-tick .mark line { stroke: var(--fg); stroke-width: 2; }
+
+/* captions: right column, under the counter (never over the roach) */
+.h-watch .hy-cap.hw-cap { right: 24px; top: calc(330px * var(--k)); width: 360px; }
+
+/* hover card: right column, under the caption; red rule = "this video" */
+.h-watch .hw-card { right: 24px; width: 360px; border-color: var(--red); z-index: 16; pointer-events: none; }
+.h-watch .hw-card[hidden] { display: none; }
+.h-watch .hw-card .t { font: var(--w-regular) var(--fs-body)/1.45 var(--font-text); }
+.h-watch .hw-card .meta { font: var(--w-regular) 12px/1.4 var(--font-ui); color: var(--muted); margin-top: 8px; font-variant-numeric: tabular-nums; }
+.h-watch .hw-card .star { pointer-events: auto; }

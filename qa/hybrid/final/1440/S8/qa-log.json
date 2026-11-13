@@ -1,0 +1,72 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1440x900",
+ "targets": "docs/build/scenes/targets/S8.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S8a-0.3",
+   "at": "S8a:0.3",
+   "frame": null,
+   "ok": true,
+   "y": 45612,
+   "current": "S8a",
+   "p": 0.3,
+   "live": "S8a@0.300",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S8a-0.8",
+   "at": "S8a:0.8",
+   "frame": null,
+   "ok": true,
+   "y": 46332,
+   "current": "S8a",
+   "p": 0.8,
+   "live": "S8a@0.800",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 84,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S8a-0.8",
+   "at": "S8a:0.8",
+   "frame": null,
+   "ok": true,
+   "y": 46332,
+   "current": "S8a",
+   "p": 0.8,
+   "live": "S8a@0.800",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S8a-0.3",
+   "at": "S8a:0.3",
+   "frame": null,
+   "ok": true,
+   "y": 45612,
+   "current": "S8a",
+   "p": 0.3,
+   "live": "S8a@0.300",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 84,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

@@ -1,0 +1,538 @@
+{
+ "status": "draft",
+ "collected": "2026-11-13",
+ "note": "Research on the 'Forty-eight days of silence' claim. Primary-source anchors: LawBeat (court order text: handle @CJP_2029, blocking email dated 21.05.2026) and PTI. Many fetches returned tool paraphrases, flagged verified:false. Open conflicts: restoration date, PTI handle 'CJP_for_India', status of @Cockroachisback on 23 May.",
+ "new_sources": [
+  {
+   "id": "withheld_patriot_pti",
+   "title": "Delhi HC orders unblocking of CJP's X handle, account back online in India",
+   "publisher": "The Patriot (PTI)",
+   "url": "https://thepatriot.in/delhi-ncr/delhi-hc-orders-unblocking-of-cjps-x-handle-account-back-online-in-india-87397",
+   "date": "2026-07-07",
+   "note": "Fetched 2026-11-13."
+  },
+  {
+   "id": "withheld_khaleej_reuters",
+   "title": "India court orders government to unblock Cockroach party X account",
+   "publisher": "Khaleej Times (Reuters)",
+   "url": "https://www.khaleejtimes.com/world/asia/india-court-orders-government-unblock-cockroach-party-x-account?amp=1",
+   "date": "2026-07-07",
+   "note": "Fetched 2026-11-13."
+  },
+  {
+   "id": "withheld_bt_newavatar",
+   "title": "'You thought you can...': Cockroach Janta Party comes back in a new avatar on X",
+   "publisher": "Business Today",
+   "url": "https://www.businesstoday.in/india/story/you-thought-you-can-cockroach-janta-party-comes-back-in-a-new-avatar-on-x-532687-2026-05-21",
+   "date": "2026-05-21",
+   "note": "Fetched 2026-11-13."
+  },
+  {
+   "id": "withheld_bt_crackdown",
+   "title": "Cockroach Janta Party founder alleges social media crackdown, claims accounts blocked, hacked",
+   "publisher": "Business Today",
+   "url": "https://www.businesstoday.in/india/story/cockroach-janta-party-founder-alleges-social-media-crackdown-claims-accounts-blocked-hacked-532986-2026-05-23",
+   "date": "2026-05-23",
+   "note": "Fetched 2026-11-13."
+  },
+  {
+   "id": "withheld_fpj_insta_restored",
+   "title": "CJP Founder Abhijeet Dipke Confirms Instagram Account Restored After Brief Legal Restriction",
+   "publisher": "Free Press Journal",
+   "url": "https://www.freepressjournal.in/india/cjp-founder-abhijeet-dipke-confirms-instagram-account-restored-after-legal-request-restriction",
+   "date": "2026-07-22",
+   "note": "Fetched 2026-11-13."
+  },
+  {
+   "id": "withheld_nationalherald",
+   "title": "Cockroach Janata Party's X account withheld in India; Instagram disruption claims remain unverified",
+   "publisher": "National Herald",
+   "url": "https://www.nationalheraldindia.com/national/cockroach-janata-partys-x-account-withheld-in-india-instagram-disruption-claims-remain-unverified",
+   "date": "2026-05-21",
+   "note": "Fetched 2026-11-13."
+  },
+  {
+   "id": "withheld_fpj_order",
+   "title": "Delhi High Court Orders Unblocking Of CJP's X Account After Centre Drops Objection",
+   "publisher": "Free Press Journal",
+   "url": "https://www.freepressjournal.in/india/delhi-high-court-orders-unblocking-of-cjps-x-account-after-centre-drops-objection",
+   "date": "2026-07-07",
+   "note": "Fetched 2026-11-13."
+  },
+  {
+   "id": "withheld_quint",
+   "title": "Delhi High Court Restores Cockroach Janta Party X Account After NEET Exam",
+   "publisher": "The Quint",
+   "url": "https://www.thequint.com/news/breaking-news/delhi-high-court-orders-cjp-x-restoration",
+   "date": "2026-07-07",
+   "note": "Fetched 2026-11-13."
+  },
+  {
+   "id": "withheld_theprint",
+   "title": "Delhi HC orders restoration of Cockroach Janata Party's X account following conclusion of NEET exam",
+   "publisher": "ThePrint",
+   "url": "https://theprint.in/india/delhi-hc-orders-restoration-of-cockroach-janata-partys-x-account-following-conclusion-of-neet-exam/2979634/",
+   "date": "2026-07-07",
+   "note": "Fetched 2026-11-13."
+  },
+  {
+   "id": "withheld_telanganatoday",
+   "title": "Abhijeet Dipke to appear before MeitY panel over blocked CJP X account",
+   "publisher": "Telangana Today",
+   "url": "https://telanganatoday.com/abhijeet-dipke-to-appear-before-meity-panel-over-blocked-cjp-x-account",
+   "date": "2026-06-24",
+   "note": "Fetched 2026-11-13."
+  },
+  {
+   "id": "withheld_southfirst",
+   "title": "'As expected': Cockroach Janta Party's X account withheld in India amid soaring popularity",
+   "publisher": "The South First",
+   "url": "https://thesouthfirst.com/beyond-south/as-expected-cockroach-janta-partys-x-account-withheld-in-india-amid-soaring-popularity/",
+   "date": "2026-05-21",
+   "note": "Fetched 2026-11-13."
+  },
+  {
+   "id": "withheld_iff",
+   "title": "IFF Statement: Blocking of the Cockroach Janta Party's Instagram account",
+   "publisher": "Internet Freedom Foundation (on X)",
+   "url": "https://x.com/internetfreedom/status/2079914473008267587",
+   "date": "2026-07-22",
+   "note": "Not fetchable (HTTP 402); text seen only in a web-search result snippet."
+  },
+  {
+   "id": "withheld_boom",
+   "title": "The Cockroach Janta Party: how a CJI comment became a movement",
+   "publisher": "BOOM",
+   "url": "https://www.boomlive.in/explainers/the-cockroach-janta-party-how-a-cji-comment-became-a-movement-31586",
+   "date": "2026-05",
+   "note": "Raw HTML fetched; used only to confirm the original handle @CJP_2029 via an embedded post dated 17 May 2026."
+  }
+ ],
+ "facts": [
+  {
+   "id": "x_withheld_2026_05_21",
+   "date": "2026-05-21",
+   "text": "The CJP's original X account (@CJP_2029, 200,000+ followers) was withheld in India under Section 69A of the IT Act, by a MeitY order dated 21 May 2026, reportedly on Intelligence Bureau inputs citing national security. Users saw 'Account Withheld in IN in response to a legal demand.'",
+   "claimant": "Delhi High Court order (email dated 21.05.2026); MeitY/IB per Indian Express via India.com",
+   "attribution": "reported",
+   "status": "documented",
+   "source_ids": [
+    "repo_lawbeat",
+    "repo_indiacom_xblock",
+    "withheld_southfirst"
+   ],
+   "links": [
+    {
+     "source_id": "repo_lawbeat",
+     "url": "https://lawbeat.in/news-updates/delhi-high-court-orders-restoration-of-cockroach-janta-partys-x-account-1610149",
+     "title": "Delhi High Court Orders Restoration Of Cockroach Janta Party's X Account",
+     "publisher": "LawBeat",
+     "date": "2026-07-08",
+     "snippet": "the impugned blocking order communicated through an email dated May 21, 2026, and restore the X handle @CJP_2029",
+     "verified": true
+    },
+    {
+     "source_id": "withheld_southfirst",
+     "url": "https://thesouthfirst.com/beyond-south/as-expected-cockroach-janta-partys-x-account-withheld-in-india-amid-soaring-popularity/",
+     "title": "'As expected': Cockroach Janta Party's X account withheld in India amid soaring popularity",
+     "publisher": "The South First",
+     "date": "2026-05-21",
+     "snippet": "Account Withheld in IN in response to a legal demand.",
+     "verified": true
+    },
+    {
+     "source_id": "repo_indiacom_xblock",
+     "url": "https://www.india.com/news/india/cockroach-janta-party-x-account-blocked-india-over-alleged-security-concerns-by-intelligence-bureau-abhijeet-dipke-receives-death-threats-8423047/",
+     "title": "X account blocked over IB security concerns",
+     "publisher": "India.com",
+     "date": "2026-05-22",
+     "snippet": "MeitY invoked Section 69A; IB inputs citing 'national security concerns' (summary by fetch tool, article said to be citing Indian Express; page possibly truncated)",
+     "verified": false
+    }
+   ],
+   "web_check": "verified",
+   "web_notes": [
+    "Exact weekday conflict: India.com says 'on Thursday' (21 May) but also that X users in India found it inaccessible 'on Wednesday'; Outlook (per search summary) said Tuesday. Court order email date 21.05.2026 is the primary anchor.",
+    "Handle: LawBeat (court-order text) and BOOM embed give @CJP_2029. PTI/The Patriot says 'CJP_for_India' - treated as a PTI error/unverified; see conflicts."
+   ]
+  },
+  {
+   "id": "cib_launch_2026_05_21",
+   "date": "2026-05-21",
+   "text": "Hours after the withholding, the CJP launched a new X account, 'Cockroach is Back' (@Cockroachisback), caption 'cockroaches don't die'; first post: 'You thought you can get rid of us? Lol!' Reports say 'hours' (Business Today) / 'less than two hours' (India.com), not 'minutes'. 49,100 followers within hours (FPJ, as of 7:10 pm).",
+   "value": 49100,
+   "unit": "followers (as of 21 May, 7:10 pm per FPJ)",
+   "claimant": "Free Press Journal / Business Today / India.com",
+   "attribution": "reported",
+   "status": "documented",
+   "source_ids": [
+    "fpj_cockroachisback",
+    "withheld_bt_newavatar",
+    "repo_indiacom_xblock"
+   ],
+   "links": [
+    {
+     "source_id": "withheld_bt_newavatar",
+     "url": "https://www.businesstoday.in/india/story/you-thought-you-can-cockroach-janta-party-comes-back-in-a-new-avatar-on-x-532687-2026-05-21",
+     "title": "'You thought you can...': Cockroach Janta Party comes back in a new avatar on X",
+     "publisher": "Business Today",
+     "date": "2026-05-21",
+     "snippet": "The Cockroach Janta Party (CJP) is back in a new avatar hours after being withheld on X in India.",
+     "verified": true
+    },
+    {
+     "source_id": "fpj_cockroachisback",
+     "url": "https://www.freepressjournal.in/india/cockroach-janata-party-launches-new-x-handle-cockroach-is-back-after-original-account-withheld-in-india",
+     "title": "Cockroach Janata Party launches new X handle 'Cockroach is Back' after original account withheld in India",
+     "publisher": "Free Press Journal",
+     "date": "2026-05-22",
+     "snippet": "Gained 49,100 followers within hours, as of 7:10 pm (fetch-tool paraphrase of page; Thursday 21 May launch)",
+     "verified": false
+    },
+    {
+     "source_id": "repo_indiacom_xblock",
+     "url": "https://www.india.com/news/india/cockroach-janta-party-x-account-blocked-india-over-alleged-security-concerns-by-intelligence-bureau-abhijeet-dipke-receives-death-threats-8423047/",
+     "title": "X account blocked over IB security concerns",
+     "publisher": "India.com",
+     "date": "2026-05-22",
+     "snippet": "Dipke announced a new handle, 'Cockroach Is Back,' less than two hours after the withholding (fetch-tool paraphrase)",
+     "verified": false
+    }
+   ],
+   "web_check": "partial",
+   "web_notes": [
+    "Ledger phrase 'within minutes' is NOT supported by any source fetched: sources say 'hours' or 'less than two hours'.",
+    "Fetch tool returned paraphrases, not verbatim page text, for these three; marked verified:false for snippets.",
+    "Lead verified Business Today verbatim 2026-11-13."
+   ]
+  },
+  {
+   "id": "insta_overnight_2026_05_21",
+   "date": "2026-05-21",
+   "text": "Users reported the CJP Instagram account 'temporarily inaccessible on multiple occasions overnight' around 20-21 May, then it reappeared; claims of suspension, hacking or restriction had no official confirmation from Meta or Instagram.",
+   "claimant": "National Herald (citing users)",
+   "attribution": "reported",
+   "status": "unverified",
+   "source_ids": [
+    "withheld_nationalherald"
+   ],
+   "links": [
+    {
+     "source_id": "withheld_nationalherald",
+     "url": "https://www.nationalheraldindia.com/national/cockroach-janata-partys-x-account-withheld-in-india-instagram-disruption-claims-remain-unverified",
+     "title": "Cockroach Janata Party's X account withheld in India; Instagram disruption claims remain unverified",
+     "publisher": "National Herald",
+     "date": "2026-05-21",
+     "snippet": "temporarily inaccessible on multiple occasions overnight; no official confirmation from Meta or Instagram (fetch-tool paraphrase)",
+     "verified": false
+    }
+   ],
+   "web_check": "partial",
+   "web_notes": [
+    "No duration given. This is NOT the 'two hours' event."
+   ]
+  },
+  {
+   "id": "dipke_backup_taken_down_2026_05_23",
+   "date": "2026-05-23",
+   "text": "Dipke posted on X on 23 May that the party's Instagram page and his personal Instagram were 'hacked', the Twitter account 'withheld' and the 'Back up account also taken down.' Business Today identifies the backup as the 'Cockroach is Back' handle. No outlet fetched confirms the backup being withheld or its duration.",
+   "claimant": "Abhijeet Dipke (per Business Today)",
+   "attribution": "CJP claims",
+   "status": "claimed",
+   "source_ids": [
+    "withheld_bt_crackdown"
+   ],
+   "links": [
+    {
+     "source_id": "withheld_bt_crackdown",
+     "url": "https://www.businesstoday.in/india/story/cockroach-janta-party-founder-alleges-social-media-crackdown-claims-accounts-blocked-hacked-532986-2026-05-23",
+     "title": "Cockroach Janta Party founder alleges social media crackdown, claims accounts blocked, hacked",
+     "publisher": "Business Today",
+     "date": "2026-05-23",
+     "snippet": "'Instagram page hacked' / 'My personal Instagram hacked' / 'Twitter account withheld' / 'Back up account also taken down' (quoted via fetch tool; page said to identify the backup as the 'Cockroach is Back' handle)",
+     "verified": false
+    }
+   ],
+   "web_check": "partial",
+   "web_notes": [
+    "Contradicted by later reports: PTI on 7 Jul says 'Cockroach is Back' had over 2,80,000 followers; Quint 2,82,000; Wikipedia says the alternative account remained operational. Whether it was briefly down is unresolved."
+   ]
+  },
+  {
+   "id": "dipke_petition_2026_05_25",
+   "date": "2026-05-25",
+   "text": "Abhijeet Dipke moved the Delhi High Court against the blocking of the CJP X account (Bar and Bench, published 25 May 2026, 1:59 pm).",
+   "claimant": "Bar and Bench",
+   "attribution": "reported",
+   "status": "documented",
+   "source_ids": [
+    "barandbench"
+   ],
+   "links": [
+    {
+     "source_id": "barandbench",
+     "url": "https://www.barandbench.com/news/cockroach-janta-party-founder-abhijeet-dipke-moves-delhi-high-court-against-blocking-of-x-account",
+     "title": "Cockroach Janta Party founder Abhijeet Dipke moves Delhi High Court against blocking of X account",
+     "publisher": "Bar and Bench",
+     "date": "2026-05-25",
+     "snippet": "Published '25 May 2026, 1:59 pm' (fetch-tool summary; article body only two sentences, page showed 'Loading content', so partially fetched)",
+     "verified": false
+    }
+   ],
+   "web_check": "partial",
+   "web_notes": [
+    "Filing date vs reporting date not distinguished; the 25 May date is the article's publication date."
+   ]
+  },
+  {
+   "id": "hc_29_may_no_interim_relief",
+   "date": "2026-05-29",
+   "text": "On 29 May the Delhi High Court (Justice Purushaindra Kumar Kaurav) refused to order restoration, asked the MeitY Review Committee under the 2009 IT Blocking Rules to examine the grievance and decide before 7 July.",
+   "claimant": "PTI/The Patriot; ThePrint",
+   "attribution": "reported",
+   "status": "documented",
+   "source_ids": [
+    "withheld_patriot_pti",
+    "withheld_theprint"
+   ],
+   "links": [
+    {
+     "source_id": "withheld_patriot_pti",
+     "url": "https://thepatriot.in/delhi-ncr/delhi-hc-orders-unblocking-of-cjps-x-handle-account-back-online-in-india-87397",
+     "title": "Delhi HC orders unblocking of CJP's X handle, account back online in India",
+     "publisher": "The Patriot (PTI)",
+     "date": "2026-07-07",
+     "snippet": "On May 29, the high court had refused to order the restoration of the CJP's handle, but asked a review committee under the IT Rules to examine the issue and take a decision before July 7.",
+     "verified": true
+    },
+    {
+     "source_id": "withheld_theprint",
+     "url": "https://theprint.in/india/delhi-hc-orders-restoration-of-cockroach-janata-partys-x-account-following-conclusion-of-neet-exam/2979634/",
+     "title": "Delhi HC orders restoration of Cockroach Janata Party's X account following conclusion of NEET exam",
+     "publisher": "ThePrint",
+     "date": "2026-07-07",
+     "snippet": "Justice Purushaindra Kumar Kaurav declined interim relief... statutory Review Committee (fetch-tool paraphrase)",
+     "verified": false
+    }
+   ],
+   "web_check": "verified",
+   "web_notes": [
+    "Dipke appeared before the MeitY Review Committee on 24 June (Telangana Today); outcome not reported in fetched pages."
+   ]
+  },
+  {
+   "id": "hc_order_2026_07_07",
+   "date": "2026-07-07",
+   "text": "Delhi High Court (Justice Swarana Kanta Sharma) allowed Dipke's writ petition against the blocking order of 21.05.2026, ordering it revoked because NEET was over. Solicitor General Tushar Mehta: 'It was blocked at a time when NEET examination was to take place.' ... 'Now the examination is over.' ... 'I have no difficulty. I just want everyone to be more circumspect.' (FPJ). Court: 'Since NEET is already over, the primary concern is no longer of any relevance. In these circumstances, the order is revoked. The petition is allowed.' (PTI). LawBeat reports the order as: 'since the NEET Examinations are already over, the aforesaid primary concern of respondent no. 1 does not survive' and 'the impugned blocking order as referred in Email dated 21.05.2026' 'is directed to be revoked.'",
+   "claimant": "Delhi High Court; Solicitor General for the Union",
+   "attribution": "court order",
+   "status": "documented",
+   "source_ids": [
+    "repo_lawbeat",
+    "repo_medianama",
+    "withheld_patriot_pti",
+    "withheld_fpj_order"
+   ],
+   "links": [
+    {
+     "source_id": "withheld_patriot_pti",
+     "url": "https://thepatriot.in/delhi-ncr/delhi-hc-orders-unblocking-of-cjps-x-handle-account-back-online-in-india-87397",
+     "title": "Delhi HC orders unblocking of CJP's X handle, account back online in India",
+     "publisher": "The Patriot (PTI)",
+     "date": "2026-07-07",
+     "snippet": "Of course, now the examination is over,",
+     "verified": true
+    },
+    {
+     "source_id": "withheld_patriot_pti",
+     "url": "https://thepatriot.in/delhi-ncr/delhi-hc-orders-unblocking-of-cjps-x-handle-account-back-online-in-india-87397",
+     "title": "Delhi HC orders unblocking of CJP's X handle, account back online in India",
+     "publisher": "The Patriot (PTI)",
+     "date": "2026-07-07",
+     "snippet": "Since NEET is already over, the primary concern is no longer of any relevance. In these circumstances, the order is revoked. The petition is allowed.",
+     "verified": true
+    },
+    {
+     "source_id": "repo_lawbeat",
+     "url": "https://lawbeat.in/news-updates/delhi-high-court-orders-restoration-of-cockroach-janta-partys-x-account-1610149",
+     "title": "Delhi High Court Orders Restoration Of Cockroach Janta Party's X Account",
+     "publisher": "LawBeat",
+     "date": "2026-07-08",
+     "snippet": "the impugned blocking order as referred in Email dated 21.05.2026 is directed to be revoked",
+     "verified": true
+    },
+    {
+     "source_id": "withheld_fpj_order",
+     "url": "https://www.freepressjournal.in/india/delhi-high-court-orders-unblocking-of-cjps-x-account-after-centre-drops-objection",
+     "title": "Delhi High Court Orders Unblocking Of CJP's X Account After Centre Drops Objection",
+     "publisher": "Free Press Journal",
+     "date": "2026-07-07",
+     "snippet": "Now the examination is over,  / I have no difficulty. I just want everyone to be more circumspect. (fetch-tool quotation)",
+     "verified": false
+    },
+    {
+     "source_id": "repo_medianama",
+     "url": "https://www.medianama.com/2026/07/223-delhi-hc-cockroach-janta-party-x-account-unblocked/",
+     "title": "Delhi HC orders unblocking of CJP X account",
+     "publisher": "MediaNama",
+     "date": "2026-07-07",
+     "snippet": "no difficulty with the unblocking of the account / Now the examination is over, (fetch-tool quotation)",
+     "verified": false
+    }
+   ],
+   "web_check": "verified",
+   "web_notes": [
+    "Mehta quotes vary by outlet: PTI 'Several posts would have created chaos among the students and their parents. Of course, now the examination is over'; FPJ 'It was blocked at a time when NEET examination was to take place.' LawBeat paraphrases (does not quote) him as saying it was 'allegedly attempting to mislead students and their parents regarding the cancellation of the NEET 2026 examination'.",
+    "Full order text not fetched; LiveLaw paywalled/truncated; Wire and Bar and Bench pages did not load."
+   ]
+  },
+  {
+   "id": "x_restored_2026_07_07",
+   "date": "2026-07-07",
+   "text": "Compliance on the original handle is reported inconsistently: PTI says that 'Shortly after the court order, the CJP's original handle ... could be accessed on X.' Reuters (via Khaleej Times) says that as of Tuesday evening 7 July the account 'remained withheld in India'. No outlet fetched reports a later confirmed restoration date.",
+   "claimant": "PTI vs Reuters",
+   "attribution": "reported",
+   "status": "disputed",
+   "source_ids": [
+    "withheld_patriot_pti",
+    "withheld_khaleej_reuters"
+   ],
+   "links": [
+    {
+     "source_id": "withheld_patriot_pti",
+     "url": "https://thepatriot.in/delhi-ncr/delhi-hc-orders-unblocking-of-cjps-x-handle-account-back-online-in-india-87397",
+     "title": "Delhi HC orders unblocking of CJP's X handle, account back online in India",
+     "publisher": "The Patriot (PTI)",
+     "date": "2026-07-07",
+     "snippet": "Shortly after the court order, the CJP's original handle, CJP_for_India, could be accessed on X.",
+     "verified": true
+    },
+    {
+     "source_id": "withheld_khaleej_reuters",
+     "url": "https://www.khaleejtimes.com/world/asia/india-court-orders-government-unblock-cockroach-party-x-account?amp=1",
+     "title": "India court orders government to unblock Cockroach party X account",
+     "publisher": "Khaleej Times (Reuters)",
+     "date": "2026-07-07",
+     "snippet": "as of Tuesday evening the account 'remained withheld in India... in response to a legal demand' (fetch-tool paraphrase)",
+     "verified": false
+    }
+   ],
+   "web_check": "partial",
+   "web_notes": [
+    "Dipke called it a 'big win' (Reuters via Khaleej Times; Statesman quotes his X post naming @CJP_2029 per a search summary, page itself 403).",
+    "Restoration date can only be bracketed: 7 July (PTI) or later (Reuters evening of 7 July). Needs a manual look at the @CJP_2029 timeline."
+   ]
+  },
+  {
+   "id": "cib_status_2026_07_07",
+   "date": "2026-07-07",
+   "text": "By 7 July the replacement 'Cockroach is Back' account was operating with over 2,80,000 followers (PTI/Patriot) / 2,82,000 (The Quint).",
+   "value": 280000,
+   "unit": "followers",
+   "claimant": "PTI; The Quint",
+   "attribution": "reported",
+   "status": "documented",
+   "source_ids": [
+    "withheld_patriot_pti",
+    "withheld_quint"
+   ],
+   "links": [
+    {
+     "source_id": "withheld_patriot_pti",
+     "url": "https://thepatriot.in/delhi-ncr/delhi-hc-orders-unblocking-of-cjps-x-handle-account-back-online-in-india-87397",
+     "title": "Delhi HC orders unblocking of CJP's X handle, account back online in India",
+     "publisher": "The Patriot (PTI)",
+     "date": "2026-07-07",
+     "snippet": "the group soon resurfaced with a new handle, 'Cockroach is Back', which has over 2,80,000 followers.",
+     "verified": true
+    },
+    {
+     "source_id": "withheld_quint",
+     "url": "https://www.thequint.com/news/breaking-news/delhi-high-court-orders-cjp-x-restoration",
+     "title": "Delhi High Court Restores Cockroach Janta Party X Account After NEET Exam",
+     "publisher": "The Quint",
+     "date": "2026-07-07",
+     "snippet": "'Cockroach is Back,' which has over 2,82,000 followers (fetch-tool paraphrase)",
+     "verified": false
+    }
+   ],
+   "web_check": "verified",
+   "web_notes": [
+    "An undated search-result snapshot of x.com/Cockroachisback showed about 448.4K followers and described it as the only official account; page itself returned HTTP 402 and could not be verified."
+   ]
+  },
+  {
+   "id": "insta_restricted_2026_07_22",
+   "date": "2026-07-22",
+   "text": "On 22 July the CJP Instagram account (@cockroachjantaparty) showed 'Account not available in India. This is because we complied with a legal request to restrict this content.' It was restored the same day, per Dipke ('It has been restored now'). IFF said no order had been published and the legal basis was unknown. Duration not stated.",
+   "claimant": "Meta notice; Business Today; Free Press Journal; IFF",
+   "attribution": "reported",
+   "status": "documented",
+   "source_ids": [
+    "businesstoday",
+    "withheld_fpj_insta_restored",
+    "withheld_iff"
+   ],
+   "links": [
+    {
+     "source_id": "businesstoday",
+     "url": "https://www.businesstoday.in/india/story/cockroach-janta-partys-instagram-account-banned-in-india-heres-why-544552-2026-07-22",
+     "title": "Cockroach Janta Party's Instagram account banned in India; here's why",
+     "publisher": "Business Today",
+     "date": "2026-07-22",
+     "snippet": "Account not available in India. This is because we complied with a legal request to restrict this content.",
+     "verified": true
+    },
+    {
+     "source_id": "withheld_fpj_insta_restored",
+     "url": "https://www.freepressjournal.in/india/cjp-founder-abhijeet-dipke-confirms-instagram-account-restored-after-legal-request-restriction",
+     "title": "CJP Founder Abhijeet Dipke Confirms Instagram Account Restored After Brief Legal Restriction",
+     "publisher": "Free Press Journal",
+     "date": "2026-07-22",
+     "snippet": "It has been restored now. (Dipke on X; restricted 'earlier in the day'; no start/end times)",
+     "verified": true
+    },
+    {
+     "source_id": "withheld_iff",
+     "url": "https://x.com/internetfreedom/status/2079914473008267587",
+     "title": "IFF Statement: Blocking of the Cockroach Janta Party's Instagram account",
+     "publisher": "Internet Freedom Foundation (on X)",
+     "date": "2026-07-22",
+     "snippet": "Meta's notice states only that it complied with 'a legal request to restrict this content'. No order has been published (search-result snippet; page not fetchable)",
+     "verified": false
+    }
+   ],
+   "web_check": "partial",
+   "web_notes": [
+    "This is the event meta.json's Business Today (22 Jul) note refers to. Business Today does not mention restoration; FPJ does."
+   ]
+  },
+  {
+   "id": "insta_two_hours_2026_08_15",
+   "date": "2026-08-15",
+   "text": "On Saturday 15 August 2026 the CJP Instagram was inaccessible in India for about two hours; the CJP said it recovered access. Meta did not respond to queries. This is the 'two hours' event Outlook reports, not a 21 May event.",
+   "claimant": "Outlook (CJP statement)",
+   "attribution": "CJP claims",
+   "status": "claimed",
+   "source_ids": [
+    "repo_outlook_instagram"
+   ],
+   "links": [
+    {
+     "source_id": "repo_outlook_instagram",
+     "url": "https://www.outlookindia.com/national/cockroach-janta-partys-instagram-account-blocked-in-india-for-two-hours",
+     "title": "Cockroach Janta Party's Instagram Account Blocked In India For Two Hours",
+     "publisher": "Outlook",
+     "date": "2026-08-15",
+     "snippet": "About two hours, in the early hours of Saturday (fetch-tool paraphrase; article dated 15 August 2026, 7:19 pm; screen read 'This page isn't available at the moment')",
+     "verified": false
+    }
+   ],
+   "web_check": "partial",
+   "web_notes": [
+    "Outlook calls it the second India block and refers to a prior brief block on 22 July with no legal notice (CJP spokesperson).",
+    "v2's 'Instagram blocked for two hours' therefore belongs to 15 Aug, not May."
+   ]
+  }
+ ]
+}

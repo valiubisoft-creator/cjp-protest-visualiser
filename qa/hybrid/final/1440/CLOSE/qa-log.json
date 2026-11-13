@@ -1,0 +1,72 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1440x900",
+ "targets": "docs/build/scenes/targets/CLOSE.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "CLOSE-0.3",
+   "at": "CLOSE:0.3",
+   "frame": null,
+   "ok": true,
+   "y": 47898,
+   "current": "CLOSE",
+   "p": 0.3,
+   "live": "CLOSE@0.300",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "CLOSE-0.8",
+   "at": "CLOSE:0.8",
+   "frame": null,
+   "ok": true,
+   "y": 48528,
+   "current": "CLOSE",
+   "p": 0.8,
+   "live": "CLOSE@0.800",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 75,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "CLOSE-0.8",
+   "at": "CLOSE:0.8",
+   "frame": null,
+   "ok": true,
+   "y": 48528,
+   "current": "CLOSE",
+   "p": 0.8,
+   "live": "CLOSE@0.800",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "CLOSE-0.3",
+   "at": "CLOSE:0.3",
+   "frame": null,
+   "ok": true,
+   "y": 47898,
+   "current": "CLOSE",
+   "p": 0.3,
+   "live": "CLOSE@0.300",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 84,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

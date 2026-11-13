@@ -28,24 +28,28 @@ import { createRoaches, clusterExtent } from './s05/roaches.js';
 import { createRail } from './s05/rail.js';
 import { createScrubber } from './s05/scrubber.js';
 import { createOverlay, pointsFor } from './s05/overlay.js';
+import { createHybrid, HY } from './s05/hybrid.js';
+
+const HYCSS = new URL('./s05/hybrid.css', import.meta.url).href;
 
 const CSS = new URL('./s05-map.css', import.meta.url).href;
 
 export default def => {
-  let ctx, W = 0, H = 0, MW = 0, MH = 0, M62 = 0, CARD = 400, p = 0, model, mapApi, roaches, rail, scrub, overlay, points, ready = false;
+  let ctx, W = 0, H = 0, MW = 0, MH = 0, M62 = 0, CARD = 400, p = 0, model, mapApi, roaches, rail, scrub, overlay, points, ready = false, hy = null;
   let el = {}, g = {};
   const scene = {
     id: def.id,
     async init(c) {
-      ctx = c; loadCss(CSS);
+      ctx = c; loadCss(CSS); loadCss(HYCSS);
       // body copy, extra imagery and the 20 Jul hour-by-hour (S5 chat; optional files, small)
       const opt = n => story(n).catch(() => null);
       const [narrative, imagery, sansad] = await Promise.all(['narrative', 'imagery', 'sansad_chalo'].map(opt));
       // sources the 20 Jul research added (sansad_chalo.json new_sources): appended to the shared ledger so every *
       // resolves; footer numbers continue after sources.json (S10 renders data.sources.sources, so they appear there too)
       for (const ns of sansad?.new_sources || []) if (!c.data.byId.source[ns.id]) { c.data.sources.sources.push(ns); c.data.byId.source[ns.id] = { ...ns, n: c.data.sources.sources.length }; }
-      model = buildModel(def, c.data, { narrative, imagery, sansad });
-      const r = c.root; r.classList.add('s5');
+      // hybrid (build/hybrid, Vali 2026-11-13): the cut beat list, chapter titles, ≤ 3 labels, the ledgers (s05/hybrid.js)
+      model = buildModel(def, c.data, { narrative, imagery, sansad, hybrid: HY });
+      const r = c.root; r.classList.add('s5', 'hy');
       r.innerHTML = `
         <canvas class="s5-back" aria-hidden="true"></canvas>
         <div class="s5-mapbox" aria-hidden="true"><canvas class="s5-base"></canvas></div>
@@ -58,13 +62,15 @@ export default def => {
         <p class="sr-only s5-live" aria-live="polite"></p>`;
       const q = s => r.querySelector(s);
       el = { back: q('.s5-back'), box: q('.s5-mapbox'), marks: q('.s5-marks'), base: q('.s5-base'), ov: q('.s5-ov'), labs: q('.s5-labs'), roach: q('.s5-roach'), hud: q('.s5-hud'), hudD: q('.s5-hud .d'), hudT: q('.s5-hud .t-micro'), legend: q('.s5-legend'), rail: q('.s5-rail'), scrub: q('.s5-scrub'), live: q('.s5-live') };
-      rail = createRail({ host: el.rail, model, data: c.data, ctx: c, onMeasure: h => model.reslot(h) });
+      // hybrid: the rail is replaced by s05/hybrid.js (built once the map points exist); this stub keeps the rail's API
+      rail = { update() {}, resize() {}, unload() {}, metrics: () => [], anchor: () => hy?.anchor(p) ?? null, cardBox: () => hy?.cardBox() ?? { x: 0, y: 0, w: 0, h: 0 } };
       if (c.debug) Object.assign(window, { __s5rail: rail, __s5model: model });   // QA: rail.metrics(), beat slots
       scrub = createScrubber({ host: el.scrub, model, controller: c.controller, sceneId: def.id });
       // the base map is the one big asset (~540 KB): lazy, never blocks boot (S4's release asks for it first)
       baseMap().then(base => {
         points = pointsFor(model, base, c.data.byId.site);
         overlay = createOverlay({ model, pts: points, data: c.data, labelHost: el.labs });
+        hy = createHybrid({ host: c.root, model, data: c.data, pts: points });
         mapApi = createMap({ model, data: c.data, base, points, labelHost: el.labs, legend: b => ({ w: el.legend.offsetWidth, h: Math.max(el.legend.offsetHeight, 62) + (b?.kind === 'hour' ? 18 : 0) }), extent: (b, k, sc) => clusterExtent(b, k, sc, M62, MH) });
         roaches = createRoaches({ model, data: c.data, mapApi, anchors: points, legendHost: el.legend, landed: () => release.landed(0) });
         el.legend.querySelector('.lg-more').insertAdjacentHTML('beforeend', overlay.keyHTML());
@@ -78,14 +84,14 @@ export default def => {
       if (!ready) return;
       // full-screen map (Vali 2026-11-12); M62 = S4's 62% map box: the handover frame and the zoom/size scale
       MW = w; MH = h - (px('--scrubber-h') || 96); M62 = Math.round(w * (parseFloat(tok('--map-w')) || 62) / 100);
-      CARD = w >= 1440 ? 400 : 360;
+      CARD = 360;                                         // hybrid caption card (was the 400/360 rail)
       const r = ctx.root.style;
       r.setProperty('--s5-mw', MW + 'px'); r.setProperty('--s5-mh', MH + 'px'); r.setProperty('--s5-card-w', CARD + 'px');
       g.back = fitCanvas(el.back, w, h); g.roach = fitCanvas(el.roach, w, h);
       g.base = fitCanvas(el.base, MW, MH); g.ov = fitCanvas(el.ov, MW, MH);
       mapApi.resize(MW, MH, { scaleW: M62, reserve: CARD + 48 }); mapApi.dirty(); overlay.resize(MW, MH);
       roaches.resize(MW, MH, { scaleW: M62 });
-      rail.resize(MW, MH); scrub.resize(w, h - MH);
+      rail.resize(MW, MH); hy.resize(w, h, MW, MH); scrub.resize(w, h - MH);
       drawBackdrop();
     },
     enter() {},
@@ -131,13 +137,17 @@ export default def => {
     const scrA = ease.outCubic(clamp01((li - .1) / .9));
     el.scrub.style.transform = `translateY(calc(${((1 - scrA) * 100 + eOut * 100).toFixed(2)}% + ${((1 - scrA) + eOut) * 4}px))`;
     el.scrub.style.visibility = scrA > 0 && eOut < 1 ? '' : 'hidden';
-    const legA = clamp01((li - .4) / .6) * stage;
+    s.setProperty('--s5h-dock', eIn.toFixed(4));          // hybrid: HUD slides under the lockup over the lead-in
+    const ledA = hy.ledgerAlpha(p);                       // the ledgers: map chrome steps back under the veil
+    const legA = clamp01((li - .4) / .6) * stage * (1 - ledA);
     el.legend.style.opacity = legA.toFixed(3); el.legend.style.visibility = legA > 0 ? '' : 'hidden';
-    el.hud.style.opacity = stage.toFixed(3); el.hud.style.visibility = stage > 0 ? '' : 'hidden';
+    el.hud.style.opacity = (stage * (1 - ledA)).toFixed(3); el.hud.style.visibility = stage * (1 - ledA) > 0 ? '' : 'hidden';
+    el.marks.style.opacity = (stage * (1 - ledA)).toFixed(3);
     // map + marks
     const cam = mapApi.camAt(p);
     mapApi.drawBase(g.base, cam);
-    linkAlpha = linkA; drawMarks(t, cam);
+    linkAlpha = linkA * (1 - ledA); drawMarks(t, cam);
+    hy.update(p, cam);
     const hour = hourLive;
     el.legend.classList.toggle('hour', hour);
     drawRoaches(t);
@@ -149,7 +159,8 @@ export default def => {
   function leaders(g2, cam, A) {
     const an = rail.anchor?.(); if (!an || A * an.alpha <= .01) return;
     const { a, b, t } = model.phase(p), k = a === b || t < .5 ? a : b;
-    const T = overlay.targets(k).map(id => overlay.at(id, cam)).filter(q => q && q.x < an.x - 30 && q.x > 0 && q.y > 0 && q.y < MH);
+    const tg = hy ? [hy.target(k)].filter(Boolean) : overlay.targets(k);   // hybrid: one leader, to the beat's first label
+    const T = tg.map(id => overlay.at(id, cam)).filter(q => q && q.x < an.x - 30 && q.x > 0 && q.y > 0 && q.y < MH);
     if (!T.length) return;
     const fade = a === b ? 1 : Math.abs(t - .5) * 2;                 // lines blink off at the card swap
     g2.save(); g2.globalAlpha = A * an.alpha * fade; g2.strokeStyle = tok('--fg'); g2.fillStyle = tok('--fg'); g2.lineWidth = 1.25;

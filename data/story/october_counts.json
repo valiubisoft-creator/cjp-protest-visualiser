@@ -1,0 +1,1093 @@
+{
+  "status": "draft",
+  "collected": "2026-11-13",
+  "note": "Detention counts for October 2026 from original articles, fetched 2026-11-13 via WebFetch (page text summarised by a small model: snippets are the tool's verbatim extracts; treat any marked 'paraphrase' as not quotable). Disputed counts are kept side by side; never average, never sum across claimants. Paywalled sources excluded. Reuters, The Hindu, CNN (HTTP 451), Zee (404), Deccan Herald and The Statesman (403) could not be read directly.",
+  "new_sources": [
+    {
+      "id": "oct_aj_1010",
+      "title": "India's 'Cockroach' leaders detained; New Delhi in lockdown (updated 11 Oct)",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+      "date": "2026-10-10",
+      "note": "Same URL already used in epilogue_october.json under ids reuters/aljazeera; given a real id here. Fetched 2026-11-13 (WebFetch, page-text summary)."
+    },
+    {
+      "id": "oct_aj_1011",
+      "title": "India's crackdown on youth protesters: What next?",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/10/11/indias-crackdown-on-youth-protesters-what-next",
+      "date": "2026-10-11",
+      "note": "Fetched via WebFetch summary."
+    },
+    {
+      "id": "oct_aj_1013",
+      "title": "Police detain leaders of India's 'cockroach' movement at New Delhi protest",
+      "publisher": "Al Jazeera (with Reuters)",
+      "url": "https://www.aljazeera.com/news/2026/10/13/police-detain-leaders-of-indias-cockroach-movement-at-new-delhi-protest",
+      "date": "2026-10-13",
+      "note": ""
+    },
+    {
+      "id": "oct_aj_1016",
+      "title": "Founder of India's 'Cockroach' movement detained amid police crackdown",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/10/16/indian-police-launch-new-delhi-clampdown-for-cockroach-party-rally",
+      "date": "2026-10-16",
+      "note": "No count given."
+    },
+    {
+      "id": "oct_theprint_1002_1000",
+      "title": "Delhi Police detains nearly 1,000 protesters during Jantar Mantar protest",
+      "publisher": "ThePrint (PTI)",
+      "url": "https://theprint.in/india/delhi-police-detains-nearly-1000-protesters-during-jantar-mantar-protest/3060666/",
+      "date": "2026-10-03",
+      "note": "Dateline New Delhi, Oct 2 (PTI); posted 3 Oct 12:46 am IST."
+    },
+    {
+      "id": "oct_theprint_1002_500",
+      "title": "Protest against CEC: AAP's Atishi, Bharadwaj, Sanjay Singh and students among 500 detained",
+      "publisher": "ThePrint (PTI)",
+      "url": "https://theprint.in/india/protest-against-cec-aaps-atishi-bharadwaj-sanjay-singh-and-students-among-500-detained/3059966/",
+      "date": "2026-10-02",
+      "note": "Posted 2 Oct 12:47 pm IST."
+    },
+    {
+      "id": "oct_theweek_1002",
+      "title": "Jantar Mantar protest: Atishi, Neha Bora among 700 detained",
+      "publisher": "The Week",
+      "url": "https://www.theweek.in/news/india/2026/10/02/jantar-mantar-protest-atishi-neha-bora-among-700-detained-cjp-says-govt-resorts-to-same-old-tactics.amp.html",
+      "date": "2026-10-02",
+      "note": "Count is The Week's own narration, no attribution."
+    },
+    {
+      "id": "oct_openmag_1010",
+      "title": "Around 500 Detained as Delhi Tightens Security at Jantar Mantar Protest",
+      "publisher": "Open Magazine",
+      "url": "https://openthemagazine.com/india/around-500-detained-as-delhi-tightens-security-at-jantar-mantar-protest",
+      "date": "2026-10-10",
+      "note": "Last updated 10:39 IST on the day: an early count."
+    },
+    {
+      "id": "oct_dailystar_1010",
+      "title": "Hundreds detained, stadiums turned holding centres (Delhi's Jantar Mantar protest live updates)",
+      "publisher": "The Daily Star (Bangladesh)",
+      "url": "https://www.thedailystar.net/news/world/news/hundreds-detained-stadiums-turned-holding-centres-4294876",
+      "date": "2026-10-10",
+      "note": "Live blog, updated 17:14."
+    },
+    {
+      "id": "oct_dc_1010",
+      "title": "CJP Protest Against CEC: Delhi Police Detains Over 3,000 Demonstrators",
+      "publisher": "Deccan Chronicle (PTI)",
+      "url": "https://www.deccanchronicle.com/nation/cjp-protest-against-cec-delhi-police-detains-over-3000-demonstrators-1994669",
+      "date": "2026-10-10",
+      "note": "Published 5:21 pm IST."
+    },
+    {
+      "id": "oct_fpj_1011",
+      "title": "Delhi Police reportedly detain nearly 7,000 during CJP protest, Jantar Mantar sealed amid heavy security",
+      "publisher": "Free Press Journal (PTI)",
+      "url": "https://www.freepressjournal.in/india/delhi-police-reportedly-detain-nearly-7000-during-cjp-protest-jantar-mantar-sealed-amid-heavy-security",
+      "date": "2026-10-11",
+      "note": "Updated Sun 11 Oct 10:47 IST. Figure refers to Sat 10 Oct."
+    },
+    {
+      "id": "oct_oneindia_1011",
+      "title": "CJP Protest: 41,000 Security Personnel Deployed, 7,000 Detained",
+      "publisher": "OneIndia",
+      "url": "https://www.oneindia.com/india/cjp-protest-41-000-security-personnel-deployed-7-000-detained-delhis-massive-protest-crackdown-8231621.html",
+      "date": "2026-10-11",
+      "note": "Says authorities maintained very few were detained and all freed by evening."
+    },
+    {
+      "id": "oct_gulfnews_1010",
+      "title": "CJP Protests in Delhi: Detentions, Leadership Changes, and Rising Tensions Explained",
+      "publisher": "Gulf News",
+      "url": "https://gulfnews.com/world/asia/india/indias-cjp-protests-explained-why-leaders-were-detained-and-what-happens-next-1.500705895",
+      "date": "2026-10-10",
+      "note": "Source of the Shinde 15,000 claim and of the statement that conflicting figures should not be treated as a single confirmed total."
+    },
+    {
+      "id": "oct_businesstoday_1010",
+      "title": "Delhi protest: police release all detained except CJP leaders",
+      "publisher": "Business Today",
+      "url": "https://www.businesstoday.in/india/story/delhi-protest-police-release-all-detained-except-cjp-leaders-key-faces-detained-released-560838-2026-10-10",
+      "date": "2026-10-10",
+      "note": ""
+    },
+    {
+      "id": "oct_canberra_1011",
+      "title": "India detains thousands of protesters, locks down Delhi",
+      "publisher": "Canberra Times (AAP wire)",
+      "url": "https://www.canberratimes.com.au/story/9366122/india-detains-thousands-of-protesters-locks-down-delhi/",
+      "date": "2026-10-11",
+      "note": "Wire copy credited AAP, not Reuters."
+    },
+    {
+      "id": "oct_dtnext_1010_mumbai",
+      "title": "Cops detain around 200 people for protesting at Mumbai's August Kranti Maidan in support of CJP stir",
+      "publisher": "DT Next (PTI)",
+      "url": "https://www.dtnext.in/news/national/cops-detain-around-200-people-for-protesting-at-mumbais-august-kranti-maidan-in-support-of-cjp-stir",
+      "date": "2026-10-10",
+      "note": "Updated 1:46 pm: earliest count."
+    },
+    {
+      "id": "oct_tnm_1010_mumbai",
+      "title": "Actor Imran Khan, activist Tushar Gandhi among 400 detained at Mumbai protest",
+      "publisher": "The News Minute",
+      "url": "https://www.thenewsminute.com/news/actor-imran-khan-activist-tushar-gandhi-among-400-detained-at-mumbai-protest",
+      "date": "2026-10-10",
+      "note": "Published 2:04 pm; cites India Today."
+    },
+    {
+      "id": "oct_theprint_1010_mumbai600",
+      "title": "Tushar Gandhi, actor Imran Khan among 600 people detained for protesting in Mumbai in CJP's support",
+      "publisher": "ThePrint (PTI)",
+      "url": "https://theprint.in/india/tushar-gandhi-actor-imran-khan-among-600-people-detained-for-protesting-in-mumbai-in-cjps-support/3067990/",
+      "date": "2026-10-10",
+      "note": "Later PTI update of the 200 and 400 versions."
+    },
+    {
+      "id": "oct_tnm_1012_bengaluru",
+      "title": "Bengaluru protesters, journalists detained before march demanding scrapping of SIR",
+      "publisher": "The News Minute",
+      "url": "https://www.thenewsminute.com/karnataka/bengaluru-protesters-journalists-detained-before-march-demanding-scrapping-of-sir",
+      "date": "2026-10-12",
+      "note": "No total given for 12 Oct. Organiser named: My Vote, My Right campaign."
+    },
+    {
+      "id": "southfirst_1012_bengaluru",
+      "title": "Anti-SIR protesters detained near CEO office in Bengaluru; women allege police excesses",
+      "publisher": "South First",
+      "url": "https://thesouthfirst.com/karnataka/anti-sir-protesters-detained-near-ceo-office-in-bengaluru-women-allege-police-excesses/",
+      "date": "2026-10-12",
+      "note": "Same id as in apparatus.json; not in sources.json so declared here."
+    },
+    {
+      "id": "oct_tribune_1016",
+      "title": "CJP's 'Lehra Do Tiranga' march: Dipke, Neha Bora among over 150 detained",
+      "publisher": "The Tribune",
+      "url": "https://www.tribuneindia.com/abhijeetdipke/cjp-lehra-do-tiranga-march-live-abhijeet-dipke-detained-by-delhi-police",
+      "date": "2026-10-16",
+      "note": "Updated 9:59 pm IST."
+    },
+    {
+      "id": "oct_zee_1016",
+      "title": "CJP's Tiranga march: 2,000 gather at Connaught Place, 150 detained",
+      "publisher": "Zee News",
+      "url": "https://zeenews.india.com/india/delhi-tiranga-march-abhijeet-dipke-neha-bora-150-detained-3076222.html",
+      "date": "2026-10-16",
+      "note": "Crowd estimate 'about 2,000' is police, via Indian Express."
+    },
+    {
+      "id": "oct_theprint_1021_release",
+      "title": "Das and Ranka to walk out of Tihar after 7 days in judicial custody",
+      "publisher": "ThePrint",
+      "url": "https://theprint.in/judiciary/cjps-saurav-das-ashutosh-ranka-to-walk-out-of-tihar-after-7-days-in-judicial-custody/3077987/",
+      "date": "2026-10-21",
+      "note": ""
+    }
+  ],
+  "counts": [
+    {
+      "id": "oc_1002_delhi_150",
+      "date": "2026-10-02",
+      "city": "Delhi",
+      "text": "Early on 2 October an official put the number of detainees at about 150.",
+      "value": 150,
+      "value_text": "about 150",
+      "unit": "people detained",
+      "claimant": "unnamed Delhi Police official",
+      "attribution": "police said",
+      "status": "documented",
+      "source_ids": [
+        "oct_theprint_1002_500"
+      ],
+      "links": [
+        {
+          "source_id": "oct_theprint_1002_500",
+          "url": "https://theprint.in/india/protest-against-cec-aaps-atishi-bharadwaj-sanjay-singh-and-students-among-500-detained/3059966/",
+          "title": "Protest against CEC: AAP's Atishi, Bharadwaj, Sanjay Singh and students among 500 detained",
+          "publisher": "ThePrint (PTI)",
+          "date": "2026-10-02",
+          "snippet": "Earlier, an official had said the number of detainees was about 150.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Earliest count of the day; superseded within hours."
+      ]
+    },
+    {
+      "id": "oc_1002_delhi_500",
+      "date": "2026-10-02",
+      "city": "Delhi",
+      "text": "Reports around 3pm on 2 October suggested more than 500 people, including Atishi, had been arrested in New Delhi.",
+      "value": 500,
+      "value_text": "more than 500",
+      "unit": "people detained",
+      "claimant": "unspecified 'reports' (Al Jazeera, Reuters); PTI says 'another police official said around 500'",
+      "attribution": "reported",
+      "status": "unverified",
+      "source_ids": [
+        "repo_aljazeera_1002",
+        "oct_theprint_1002_500"
+      ],
+      "links": [
+        {
+          "source_id": "repo_aljazeera_1002",
+          "url": "https://www.aljazeera.com/news/2026/10/2/indian-authorities-clamp-down-as-cockroach-movement-launches-new-protests",
+          "title": "Authorities clamp down as 'cockroach' movement launches new protests",
+          "publisher": "Al Jazeera (with Reuters)",
+          "date": "2026-10-02",
+          "snippet": "Reports about 3pm (09:30 GMT) suggested that more than 500 people – including former Delhi Chief Minister Atishi Marlena, members of the Aam Aadmi opposition party and members of student organisations – had been arrested in New Delhi.",
+          "verified": true
+        },
+        {
+          "source_id": "oct_theprint_1002_500",
+          "url": "https://theprint.in/india/protest-against-cec-aaps-atishi-bharadwaj-sanjay-singh-and-students-among-500-detained/3059966/",
+          "title": "Protest against CEC: AAP's Atishi, Bharadwaj, Sanjay Singh and students among 500 detained",
+          "publisher": "ThePrint (PTI)",
+          "date": "2026-10-02",
+          "snippet": "Another police official said around 500 protesters, including AAP leaders",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "AJ verb is 'arrested'; PTI/ThePrint says detained. AJ attributes to unnamed 'reports'. This is the v2 figure."
+      ]
+    },
+    {
+      "id": "oc_1002_delhi_700",
+      "date": "2026-10-02",
+      "city": "Delhi",
+      "text": "Police said more than 700 protesters were detained from Jantar Mantar and surrounding areas on 2 October.",
+      "value": 700,
+      "value_text": "more than 700",
+      "unit": "people detained",
+      "claimant": "Delhi Police (PTI)",
+      "attribution": "police said",
+      "status": "claimed",
+      "source_ids": [
+        "oct_theprint_1002_1000",
+        "oct_theweek_1002"
+      ],
+      "links": [
+        {
+          "source_id": "oct_theprint_1002_1000",
+          "url": "https://theprint.in/india/delhi-police-detains-nearly-1000-protesters-during-jantar-mantar-protest/3060666/",
+          "title": "Delhi Police detains nearly 1,000 protesters during Jantar Mantar protest",
+          "publisher": "ThePrint (PTI)",
+          "date": "2026-10-03",
+          "snippet": "Earlier in the day, police said more than 700 protesters were detained from Jantar Mantar and surrounding areas.",
+          "verified": true
+        },
+        {
+          "source_id": "oct_theweek_1002",
+          "url": "https://www.theweek.in/news/india/2026/10/02/jantar-mantar-protest-atishi-neha-bora-among-700-detained-cjp-says-govt-resorts-to-same-old-tactics.amp.html",
+          "title": "Jantar Mantar protest: Atishi, Neha Bora among 700 detained",
+          "publisher": "The Week",
+          "date": "2026-10-02",
+          "snippet": "Over 700 protesters were detained by Delhi Police at Jantar Mantar on Friday",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "The Week states it without attribution."
+      ]
+    },
+    {
+      "id": "oc_1002_delhi_1000",
+      "date": "2026-10-02",
+      "city": "Delhi",
+      "text": "The 2 October count later rose to nearly 1,000, according to police sources.",
+      "value": 1000,
+      "value_text": "nearly 1,000",
+      "unit": "people detained",
+      "claimant": "police sources (PTI)",
+      "attribution": "police said",
+      "status": "claimed",
+      "source_ids": [
+        "oct_theprint_1002_1000"
+      ],
+      "links": [
+        {
+          "source_id": "oct_theprint_1002_1000",
+          "url": "https://theprint.in/india/delhi-police-detains-nearly-1000-protesters-during-jantar-mantar-protest/3060666/",
+          "title": "Delhi Police detains nearly 1,000 protesters during Jantar Mantar protest",
+          "publisher": "ThePrint (PTI)",
+          "date": "2026-10-03",
+          "snippet": "The number later rose to nearly 1,000 as the day's action continued, according to police sources.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Best-sourced end-of-day Delhi figure for 2 Oct. No CJP tally found."
+      ]
+    },
+    {
+      "id": "oc_1008_national_10000",
+      "date": "2026-10-08",
+      "city": "nationwide",
+      "text": "On 8 October CJP spokesperson Ashutosh Ranka said on X that at least 10,000 people had been detained across the country. Al Jazeera could not immediately verify.",
+      "value": 10000,
+      "value_text": "at least 10,000",
+      "unit": "people detained",
+      "claimant": "CJP (Ashutosh Ranka, spokesperson, X post)",
+      "attribution": "CJP claims",
+      "status": "unverified",
+      "source_ids": [
+        "repo_aljazeera_1008"
+      ],
+      "links": [
+        {
+          "source_id": "repo_aljazeera_1008",
+          "url": "https://www.aljazeera.com/news/2026/10/8/indias-cockroach-movement-says-members-detained-as-protests-continue",
+          "title": "'Cockroach' movement says members detained as protests continue",
+          "publisher": "Al Jazeera",
+          "date": "2026-10-08",
+          "snippet": "Ashutosh Ranka, a spokesperson for the CJP movement, made the claim in a post on X on Thursday. He said \"at least 10,000\" people had been detained across the country. [WebFetch paraphrase; verbatim fragments: \"at least 10,000\"; \"Al Jazeera could not immediately verify the claims\"]",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "Ranka's name and title came from a WebFetch summary (asked twice, consistent). Verbatim fragments only.",
+        "Cumulative claim to 8 Oct, not a single-day count. Not comparable with 10 Oct counts."
+      ]
+    },
+    {
+      "id": "oc_1010_delhi_500",
+      "date": "2026-10-10",
+      "city": "Delhi",
+      "text": "Delhi Police said around 500 people arriving in groups from different locations had been detained on 10 October (early count).",
+      "value": 500,
+      "value_text": "around 500",
+      "unit": "people detained",
+      "claimant": "Delhi Police (via Open Magazine, Daily Star)",
+      "attribution": "police said",
+      "status": "claimed",
+      "source_ids": [
+        "oct_openmag_1010",
+        "oct_dailystar_1010"
+      ],
+      "links": [
+        {
+          "source_id": "oct_openmag_1010",
+          "url": "https://openthemagazine.com/india/around-500-detained-as-delhi-tightens-security-at-jantar-mantar-protest",
+          "title": "Around 500 Detained as Delhi Tightens Security at Jantar Mantar Protest",
+          "publisher": "Open Magazine",
+          "date": "2026-10-10",
+          "snippet": "Around 500 people coming in different groups from various locations have been detained",
+          "verified": true
+        },
+        {
+          "source_id": "oct_dailystar_1010",
+          "url": "https://www.thedailystar.net/news/world/news/hundreds-detained-stadiums-turned-holding-centres-4294876",
+          "title": "Hundreds detained, stadiums turned holding centres (Delhi's Jantar Mantar protest live updates)",
+          "publisher": "The Daily Star (Bangladesh)",
+          "date": "2026-10-10",
+          "snippet": "Police said around 500 people who had arrived in separate groups were detained",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Early-day count; superseded."
+      ]
+    },
+    {
+      "id": "oc_1010_delhi_200_reuters",
+      "date": "2026-10-10",
+      "city": "Delhi",
+      "text": "A police source told Reuters about 200 protesters were detained in the Jantar Mantar area on 10 October.",
+      "value": 200,
+      "value_text": "about 200",
+      "unit": "people detained",
+      "claimant": "police source (Reuters, via The Daily Star live blog)",
+      "attribution": "reported",
+      "status": "claimed",
+      "source_ids": [
+        "oct_dailystar_1010"
+      ],
+      "links": [
+        {
+          "source_id": "oct_dailystar_1010",
+          "url": "https://www.thedailystar.net/news/world/news/hundreds-detained-stadiums-turned-holding-centres-4294876",
+          "title": "Hundreds detained, stadiums turned holding centres (Delhi's Jantar Mantar protest live updates)",
+          "publisher": "The Daily Star (Bangladesh)",
+          "date": "2026-10-10",
+          "snippet": "About 200 protesters were detained in the area, a police source told Reuters.",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "Second-hand via live blog; Reuters original not fetched (reuters.com blocked)."
+      ]
+    },
+    {
+      "id": "oc_1010_delhi_1000",
+      "date": "2026-10-10",
+      "city": "Delhi",
+      "text": "Delhi Police sources put the number detained across the capital on 10 October at around 1,000.",
+      "value": 1000,
+      "value_text": "around 1,000",
+      "unit": "people detained",
+      "claimant": "Delhi Police sources (via Gulf News)",
+      "attribution": "police said",
+      "status": "claimed",
+      "source_ids": [
+        "oct_gulfnews_1010"
+      ],
+      "links": [
+        {
+          "source_id": "oct_gulfnews_1010",
+          "url": "https://gulfnews.com/world/asia/india/indias-cjp-protests-explained-why-leaders-were-detained-and-what-happens-next-1.500705895",
+          "title": "CJP Protests in Delhi: Detentions, Leadership Changes, and Rising Tensions Explained",
+          "publisher": "Gulf News",
+          "date": "2026-10-10",
+          "snippet": "Delhi Police sources put the number of people detained across the capital at around 1,000.",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "Single outlet, early count."
+      ]
+    },
+    {
+      "id": "oc_1010_delhi_2000_mha",
+      "date": "2026-10-10",
+      "city": "Delhi",
+      "text": "Reuters, citing a Ministry of Home Affairs official, put the number detained on 10 October at about 2,000.",
+      "value": 2000,
+      "value_text": "about 2,000",
+      "unit": "people detained",
+      "claimant": "MHA official (via Reuters, Al Jazeera)",
+      "attribution": "reported",
+      "status": "claimed",
+      "source_ids": [
+        "oct_aj_1010"
+      ],
+      "links": [
+        {
+          "source_id": "oct_aj_1010",
+          "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+          "title": "India's 'Cockroach' leaders detained; New Delhi in lockdown (updated 11 Oct)",
+          "publisher": "Al Jazeera",
+          "date": "2026-10-10",
+          "snippet": "The Reuters news agency, meanwhile, citing a Ministry of Home Affairs official, put the figure at about 2,000.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "AJ's own lede says 'More than 2,000 people ... were detained by the police.' Business Today and AAP wire also say more than 2,000 (see oc_1010_india_2000)."
+      ]
+    },
+    {
+      "id": "oc_1010_delhi_2500_hindu",
+      "date": "2026-10-10",
+      "city": "Delhi",
+      "text": "The Hindu, citing Delhi Police sources, said nearly 2,500 protesters were detained across the capital on 10 October.",
+      "value": 2500,
+      "value_text": "nearly 2,500",
+      "unit": "people detained",
+      "claimant": "Delhi Police sources (The Hindu, via Al Jazeera)",
+      "attribution": "reported",
+      "status": "claimed",
+      "source_ids": [
+        "oct_aj_1010"
+      ],
+      "links": [
+        {
+          "source_id": "oct_aj_1010",
+          "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+          "title": "India's 'Cockroach' leaders detained; New Delhi in lockdown (updated 11 Oct)",
+          "publisher": "Al Jazeera",
+          "date": "2026-10-10",
+          "snippet": "The Hindu newspaper, citing Delhi police sources, said nearly 2,500 protesters were detained across the capital.",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "The Hindu original not found/fetched; only via Al Jazeera. Search for the original did not surface it."
+      ]
+    },
+    {
+      "id": "oc_1010_india_2000",
+      "date": "2026-10-10",
+      "city": "Delhi",
+      "text": "Business Today and an AAP wire copy reported more than 2,000 detained on 10 October.",
+      "value": 2000,
+      "value_text": "more than 2,000",
+      "unit": "people detained",
+      "claimant": "Business Today desk; AAP wire citing police",
+      "attribution": "reported",
+      "status": "claimed",
+      "source_ids": [
+        "oct_businesstoday_1010",
+        "oct_canberra_1011"
+      ],
+      "links": [
+        {
+          "source_id": "oct_businesstoday_1010",
+          "url": "https://www.businesstoday.in/india/story/delhi-protest-police-release-all-detained-except-cjp-leaders-key-faces-detained-released-560838-2026-10-10",
+          "title": "Delhi protest: police release all detained except CJP leaders",
+          "publisher": "Business Today",
+          "date": "2026-10-10",
+          "snippet": "More than 2,000 people were detained in India on October 10",
+          "verified": true
+        },
+        {
+          "source_id": "oct_canberra_1011",
+          "url": "https://www.canberratimes.com.au/story/9366122/india-detains-thousands-of-protesters-locks-down-delhi/",
+          "title": "India detains thousands of protesters, locks down Delhi",
+          "publisher": "Canberra Times (AAP wire)",
+          "date": "2026-10-11",
+          "snippet": "Police detained more than 2000 people and locked down Delhi's city centre to thwart Saturday's protest",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Business Today scope is 'in India' (nationwide); AAP says Delhi."
+      ]
+    },
+    {
+      "id": "oc_1010_delhi_3000_pti",
+      "date": "2026-10-10",
+      "city": "Delhi",
+      "text": "PTI reported Delhi Police detained more than 3,000 protesters on 10 October.",
+      "value": 3000,
+      "value_text": "more than 3,000",
+      "unit": "people detained",
+      "claimant": "Delhi Police (PTI, via Deccan Chronicle)",
+      "attribution": "police said",
+      "status": "claimed",
+      "source_ids": [
+        "oct_dc_1010"
+      ],
+      "links": [
+        {
+          "source_id": "oct_dc_1010",
+          "url": "https://www.deccanchronicle.com/nation/cjp-protest-against-cec-delhi-police-detains-over-3000-demonstrators-1994669",
+          "title": "CJP Protest Against CEC: Delhi Police Detains Over 3,000 Demonstrators",
+          "publisher": "Deccan Chronicle (PTI)",
+          "date": "2026-10-10",
+          "snippet": "Delhi Police on Saturday detained more than 3,000 protesters",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Gulf News also carries 'at least 3,000' unattributed."
+      ]
+    },
+    {
+      "id": "oc_1010_delhi_7000_pti",
+      "date": "2026-10-10",
+      "city": "Delhi",
+      "text": "PTI, via Free Press Journal, reported Delhi Police detained nearly 7,000 protesters on 10 October. OneIndia said 'around 7,000 reportedly'. Authorities maintained very few were detained.",
+      "value": 7000,
+      "value_text": "nearly 7,000",
+      "unit": "people detained",
+      "claimant": "Delhi Police (PTI, via Free Press Journal); OneIndia 'reportedly'",
+      "attribution": "reported",
+      "status": "disputed",
+      "source_ids": [
+        "oct_fpj_1011",
+        "oct_oneindia_1011"
+      ],
+      "links": [
+        {
+          "source_id": "oct_fpj_1011",
+          "url": "https://www.freepressjournal.in/india/delhi-police-reportedly-detain-nearly-7000-during-cjp-protest-jantar-mantar-sealed-amid-heavy-security",
+          "title": "Delhi Police reportedly detain nearly 7,000 during CJP protest, Jantar Mantar sealed amid heavy security",
+          "publisher": "Free Press Journal (PTI)",
+          "date": "2026-10-11",
+          "snippet": "The Delhi Police detained nearly 7,000 protesters from various parts of the national capital on Saturday",
+          "verified": true
+        },
+        {
+          "source_id": "oct_oneindia_1011",
+          "url": "https://www.oneindia.com/india/cjp-protest-41-000-security-personnel-deployed-7-000-detained-delhis-massive-protest-crackdown-8231621.html",
+          "title": "CJP Protest: 41,000 Security Personnel Deployed, 7,000 Detained",
+          "publisher": "OneIndia",
+          "date": "2026-10-11",
+          "snippet": "Around 7,000 people were reportedly detained in Delhi on Saturday as nearly 41,000 security personnel were on duty",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Highest media/police-attributed count. Zee News headline 'Over 7,000 detained' (ledger link) 404'd on fetch today; ledger marked it verified earlier."
+      ]
+    },
+    {
+      "id": "oc_1010_delhi_prev_600",
+      "date": "2026-10-10",
+      "city": "Delhi",
+      "text": "Police sources said over 600 people with criminal records were also detained in preventive action across Delhi's districts on 10 October; police separately cited nearly 50 more.",
+      "value": 600,
+      "value_text": "over 600",
+      "unit": "people detained",
+      "claimant": "Delhi Police sources (PTI)",
+      "attribution": "police said",
+      "status": "claimed",
+      "source_ids": [
+        "oct_dc_1010",
+        "oct_fpj_1011",
+        "oct_openmag_1010"
+      ],
+      "links": [
+        {
+          "source_id": "oct_dc_1010",
+          "url": "https://www.deccanchronicle.com/nation/cjp-protest-against-cec-delhi-police-detains-over-3000-demonstrators-1994669",
+          "title": "CJP Protest Against CEC: Delhi Police Detains Over 3,000 Demonstrators",
+          "publisher": "Deccan Chronicle (PTI)",
+          "date": "2026-10-10",
+          "snippet": "over 600 people with criminal records were also detained across all the districts of the national capital",
+          "verified": true
+        },
+        {
+          "source_id": "oct_openmag_1010",
+          "url": "https://openthemagazine.com/india/around-500-detained-as-delhi-tightens-security-at-jantar-mantar-protest",
+          "title": "Around 500 Detained as Delhi Tightens Security at Jantar Mantar Protest",
+          "publisher": "Open Magazine",
+          "date": "2026-10-10",
+          "snippet": "nearly 50 additional people with criminal antecedents had been apprehended as a preventive measure.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Separate category; check whether the 7,000 and 3,000 totals include or exclude it before adding."
+      ]
+    },
+    {
+      "id": "oc_1010_delhi_cjp_15000",
+      "date": "2026-10-10",
+      "city": "Delhi",
+      "text": "CJP leader Ajinkya Shinde claimed at a news conference that more than 15,000 protesters had been detained.",
+      "value": 15000,
+      "value_text": "more than 15,000",
+      "unit": "people detained",
+      "claimant": "CJP (Ajinkya Shinde)",
+      "attribution": "CJP claims",
+      "status": "unverified",
+      "source_ids": [
+        "oct_gulfnews_1010"
+      ],
+      "links": [
+        {
+          "source_id": "oct_gulfnews_1010",
+          "url": "https://gulfnews.com/world/asia/india/indias-cjp-protests-explained-why-leaders-were-detained-and-what-happens-next-1.500705895",
+          "title": "CJP Protests in Delhi: Detentions, Leadership Changes, and Rising Tensions Explained",
+          "publisher": "Gulf News",
+          "date": "2026-10-10",
+          "snippet": "CJP leader Ajinkya Shinde separately claimed at a news conference that more than 15,000 protesters had been detained.",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "Ledger (epilogue_october.json) says 'about 15,000' via Zee, which 404'd today. Gulf News gives 'more than 15,000' and names Shinde. Scope (Delhi vs nationwide) not stated. Not on the Al Jazeera page."
+      ]
+    },
+    {
+      "id": "oc_1010_delhi_amnesty_thousands",
+      "date": "2026-10-10",
+      "city": "Delhi",
+      "text": "Amnesty said that over the weekend of 10-11 October police detained thousands of protesters, per media reports and rights groups.",
+      "value": null,
+      "value_text": "thousands",
+      "unit": "people detained",
+      "claimant": "Amnesty International (citing media reports and rights groups)",
+      "attribution": "Amnesty said",
+      "status": "reported",
+      "source_ids": [
+        "repo_amnesty_1014"
+      ],
+      "links": [
+        {
+          "source_id": "repo_amnesty_1014",
+          "url": "https://www.amnesty.org/en/latest/news/2026/10/india-release-cjp-leaders-arrested-after-attempting-peaceful-protests-at-jantar-mantar/",
+          "title": "India: Release CJP leaders arrested at Jantar Mantar",
+          "publisher": "Amnesty International",
+          "date": "2026-10-14",
+          "snippet": "police detained thousands of protesters and imposed restrictions affecting access to protest sites",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "No number. value is null: do not plot. Date range 10-11 Oct confirmed on re-fetch (paraphrase)."
+      ]
+    },
+    {
+      "id": "oc_1010_mumbai_200",
+      "date": "2026-10-10",
+      "city": "Mumbai",
+      "text": "Police detained around 200 people at August Kranti Maidan on 10 October, an official said (first PTI count).",
+      "value": 200,
+      "value_text": "around 200",
+      "unit": "people detained",
+      "claimant": "Mumbai Police official (PTI)",
+      "attribution": "police said",
+      "status": "claimed",
+      "source_ids": [
+        "oct_dtnext_1010_mumbai"
+      ],
+      "links": [
+        {
+          "source_id": "oct_dtnext_1010_mumbai",
+          "url": "https://www.dtnext.in/news/national/cops-detain-around-200-people-for-protesting-at-mumbais-august-kranti-maidan-in-support-of-cjp-stir",
+          "title": "Cops detain around 200 people for protesting at Mumbai's August Kranti Maidan in support of CJP stir",
+          "publisher": "DT Next (PTI)",
+          "date": "2026-10-10",
+          "snippet": "around 200 of them were detained for protesting, an official said.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Superseded by later PTI update (600 overall). Location-specific (August Kranti Maidan only)."
+      ]
+    },
+    {
+      "id": "oc_1010_mumbai_400",
+      "date": "2026-10-10",
+      "city": "Mumbai",
+      "text": "More than 400 people were detained across Mumbai, with at least 200 at August Kranti Maidan, per The News Minute citing India Today.",
+      "value": 400,
+      "value_text": "more than 400",
+      "unit": "people detained",
+      "claimant": "The News Minute, citing India Today",
+      "attribution": "reported",
+      "status": "claimed",
+      "source_ids": [
+        "oct_tnm_1010_mumbai"
+      ],
+      "links": [
+        {
+          "source_id": "oct_tnm_1010_mumbai",
+          "url": "https://www.thenewsminute.com/news/actor-imran-khan-activist-tushar-gandhi-among-400-detained-at-mumbai-protest",
+          "title": "Actor Imran Khan, activist Tushar Gandhi among 400 detained at Mumbai protest",
+          "publisher": "The News Minute",
+          "date": "2026-10-10",
+          "snippet": "More than 400 people were detained across Mumbai, according to an India Today report.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Mid-day count."
+      ]
+    },
+    {
+      "id": "oc_1010_mumbai_600_police",
+      "date": "2026-10-10",
+      "city": "Mumbai",
+      "text": "A Mumbai police official told PTI around 600 people were detained from various spots across the city on 10 October.",
+      "value": 600,
+      "value_text": "around 600",
+      "unit": "people detained",
+      "claimant": "Mumbai Police official (PTI)",
+      "attribution": "police said",
+      "status": "claimed",
+      "source_ids": [
+        "oct_theprint_1010_mumbai600"
+      ],
+      "links": [
+        {
+          "source_id": "oct_theprint_1010_mumbai600",
+          "url": "https://theprint.in/india/tushar-gandhi-actor-imran-khan-among-600-people-detained-for-protesting-in-mumbai-in-cjps-support/3067990/",
+          "title": "Tushar Gandhi, actor Imran Khan among 600 people detained for protesting in Mumbai in CJP's support",
+          "publisher": "ThePrint (PTI)",
+          "date": "2026-10-10",
+          "snippet": "Overall, around 600 people were detained from various spots across the city",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Best-sourced Mumbai count (police, later update). Consistent with Amnesty and ANI."
+      ]
+    },
+    {
+      "id": "oc_1010_mumbai_600_ani",
+      "date": "2026-10-10",
+      "city": "Mumbai",
+      "text": "ANI reported some 600 people were arrested in Mumbai.",
+      "value": 600,
+      "value_text": "some 600",
+      "unit": "people detained",
+      "claimant": "ANI (via Al Jazeera)",
+      "attribution": "reported",
+      "status": "claimed",
+      "source_ids": [
+        "oct_aj_1010",
+        "oct_aj_1011"
+      ],
+      "links": [
+        {
+          "source_id": "oct_aj_1010",
+          "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+          "title": "India's 'Cockroach' leaders detained; New Delhi in lockdown (updated 11 Oct)",
+          "publisher": "Al Jazeera",
+          "date": "2026-10-10",
+          "snippet": "Some 600 people were also arrested in the city of Mumbai",
+          "verified": true
+        },
+        {
+          "source_id": "oct_aj_1011",
+          "url": "https://www.aljazeera.com/news/2026/10/11/indias-crackdown-on-youth-protesters-what-next",
+          "title": "India's crackdown on youth protesters: What next?",
+          "publisher": "Al Jazeera",
+          "date": "2026-10-11",
+          "snippet": "some 600 people were also arrested in Mumbai, India's financial hub",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Verb 'arrested' vs police 'detained': use 'detained'."
+      ]
+    },
+    {
+      "id": "oc_1010_mumbai_amnesty",
+      "date": "2026-10-10",
+      "city": "Mumbai",
+      "text": "Amnesty said police in Mumbai detained more than 600 people on 10 October as they tried to gather at August Kranti Maidan.",
+      "value": 600,
+      "value_text": "more than 600",
+      "unit": "people detained",
+      "claimant": "Amnesty International",
+      "attribution": "Amnesty said",
+      "status": "reported",
+      "source_ids": [
+        "repo_amnesty_1014"
+      ],
+      "links": [
+        {
+          "source_id": "repo_amnesty_1014",
+          "url": "https://www.amnesty.org/en/latest/news/2026/10/india-release-cjp-leaders-arrested-after-attempting-peaceful-protests-at-jantar-mantar/",
+          "title": "India: Release CJP leaders arrested at Jantar Mantar",
+          "publisher": "Amnesty International",
+          "date": "2026-10-14",
+          "snippet": "In Mumbai, police detained more than 600 people on 10 October as they tried to gather at August Kranti Maidan.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Verbatim snippet from epilogue/apparatus ledger; re-fetch 13 Nov returned a paraphrase with the quoted phrase 'more than 600 people'. Amnesty places all 600 at the Maidan; police put ~200 there and ~600 city-wide."
+      ]
+    },
+    {
+      "id": "oc_1012_bengaluru_southfirst",
+      "date": "2026-10-12",
+      "city": "Bengaluru",
+      "text": "South First reported police detained around 50-60 protesters at about 3:30 pm on 12 October near the CEO office. Organiser: My Vote My Right coalition.",
+      "value": 55,
+      "value_max": 60,
+      "value_text": "around 50-60",
+      "unit": "people detained",
+      "claimant": "South First (own reporting); DCP Central said they were taken into preventive custody and released",
+      "attribution": "reported",
+      "status": "claimed",
+      "source_ids": [
+        "southfirst_1012_bengaluru"
+      ],
+      "links": [
+        {
+          "source_id": "southfirst_1012_bengaluru",
+          "url": "https://thesouthfirst.com/karnataka/anti-sir-protesters-detained-near-ceo-office-in-bengaluru-women-allege-police-excesses/",
+          "title": "Anti-SIR protesters detained near CEO office in Bengaluru; women allege police excesses",
+          "publisher": "South First",
+          "date": "2026-10-12",
+          "snippet": "Police detained around 50–60 protesters around 3:30 pm on Monday, 12 October.",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Range reported as 'around 50-60', so value 55 is a midpoint: display value_text only.",
+        "Event organiser is the My Vote My Right coalition of 40+ civil-society groups; CJP is not named."
+      ]
+    },
+    {
+      "id": "oc_1012_bengaluru_amnesty",
+      "date": "2026-10-12",
+      "city": "Bengaluru",
+      "text": "Amnesty said police detained at least 100 people marching towards the Karnataka Chief Electoral Officer's office on 12 October.",
+      "value": 100,
+      "value_text": "at least 100",
+      "unit": "people detained",
+      "claimant": "Amnesty International",
+      "attribution": "Amnesty said",
+      "status": "reported",
+      "source_ids": [
+        "repo_amnesty_1014"
+      ],
+      "links": [
+        {
+          "source_id": "repo_amnesty_1014",
+          "url": "https://www.amnesty.org/en/latest/news/2026/10/india-release-cjp-leaders-arrested-after-attempting-peaceful-protests-at-jantar-mantar/",
+          "title": "India: Release CJP leaders arrested at Jantar Mantar",
+          "publisher": "Amnesty International",
+          "date": "2026-10-14",
+          "snippet": "police detained at least 100 people who were marching towards the Karnataka Chief Electoral Officer",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "Verbatim fragment from fetch; the date 12 October is from the article. Conflicts with South First 50-60."
+      ]
+    },
+    {
+      "id": "oc_1016_delhi_150",
+      "date": "2026-10-16",
+      "city": "Delhi",
+      "text": "Delhi Police said around 150 people were detained on 16 October during 'Lehra Do Tiranga' protests; police estimated the crowd at about 2,000.",
+      "value": 150,
+      "value_text": "around 150",
+      "unit": "people detained",
+      "claimant": "Delhi Police officer (PTI, Tribune, Zee)",
+      "attribution": "police said",
+      "status": "claimed",
+      "source_ids": [
+        "theprint",
+        "oct_tribune_1016",
+        "oct_zee_1016"
+      ],
+      "links": [
+        {
+          "source_id": "theprint",
+          "url": "https://theprint.in/india/abhijeet-dipke-neha-bora-among-over-150-detained-amid-lehra-do-tiranga-protests/3074067/",
+          "title": "Abhijeet Dipke, Neha Bora among over 150 detained amid 'Lehra Do Tiranga' protests",
+          "publisher": "ThePrint",
+          "date": "2026-10-16",
+          "snippet": "around 150 people have been detained so far",
+          "verified": true
+        },
+        {
+          "source_id": "oct_tribune_1016",
+          "url": "https://www.tribuneindia.com/abhijeetdipke/cjp-lehra-do-tiranga-march-live-abhijeet-dipke-detained-by-delhi-police",
+          "title": "CJP's 'Lehra Do Tiranga' march: Dipke, Neha Bora among over 150 detained",
+          "publisher": "The Tribune",
+          "date": "2026-10-16",
+          "snippet": "Those attempting to disrupt law and order are being detained, a police officer said, adding that around 150 people have been detained so far.",
+          "verified": true
+        },
+        {
+          "source_id": "oct_zee_1016",
+          "url": "https://zeenews.india.com/india/delhi-tiranga-march-abhijeet-dipke-neha-bora-150-detained-3076222.html",
+          "title": "CJP's Tiranga march: 2,000 gather at Connaught Place, 150 detained",
+          "publisher": "Zee News",
+          "date": "2026-10-16",
+          "snippet": "Delhi Police detained around 150 people on Friday",
+          "verified": true
+        }
+      ],
+      "web_check": "verified",
+      "web_notes": [
+        "'so far': not a final count. Headline says 'over 150', body 'around 150'.",
+        "Fair Observer 'more than 100' (ledger, published 7 Nov) is an undated, secondary figure; kept in epilogue_october.json only."
+      ]
+    },
+    {
+      "id": "oc_1011_released_thousands",
+      "date": "2026-10-11",
+      "city": "Delhi",
+      "text": "Al Jazeera reported thousands of other protesters were released on 11 October, after what it said was a Supreme Court ruling calling the detentions illegal.",
+      "value": null,
+      "value_text": "thousands",
+      "unit": "people detained",
+      "claimant": "Al Jazeera",
+      "attribution": "reported",
+      "status": "reported",
+      "source_ids": [
+        "oct_aj_1011"
+      ],
+      "links": [
+        {
+          "source_id": "oct_aj_1011",
+          "url": "https://www.aljazeera.com/news/2026/10/11/indias-crackdown-on-youth-protesters-what-next",
+          "title": "India's crackdown on youth protesters: What next?",
+          "publisher": "Al Jazeera",
+          "date": "2026-10-11",
+          "snippet": "Thousands of other protesters, some of whom are members of left-wing student groups, were released on Sunday.",
+          "verified": true
+        }
+      ],
+      "web_check": "partial",
+      "web_notes": [
+        "Contextual, no number. The 'Supreme Court ruling' attribution is from a summary: confirm before using."
+      ]
+    }
+  ],
+  "people": [
+    {
+      "name": "Saurav Das",
+      "held_from": "2026-10-13",
+      "held_to": "2026-10-21",
+      "days": 7,
+      "days_basis": "7 days in judicial custody (remanded 14 Oct for 5 days; +2 days on 19 Oct; released 21 Oct). Police detention from 13 Oct makes it 8 calendar days.",
+      "fact_ids": [],
+      "source_ids": [
+        "repo_amnesty_1014",
+        "repo_aljazeera_1019",
+        "oct_theprint_1021_release",
+        "thelogicalindian"
+      ],
+      "ledger_fact": "epilogue_october.json facts dated 2026-10-14 (remand), 2026-10-19 (extension), 2026-10-21 (release); facts there have no ids"
+    },
+    {
+      "name": "Ashutosh Ranka",
+      "held_from": "2026-10-13",
+      "held_to": "2026-10-21",
+      "days": 7,
+      "days_basis": "same as Saurav Das",
+      "fact_ids": [],
+      "source_ids": [
+        "repo_amnesty_1014",
+        "repo_aljazeera_1019",
+        "oct_theprint_1021_release",
+        "thelogicalindian"
+      ],
+      "ledger_fact": "epilogue_october.json facts dated 2026-10-14 (remand), 2026-10-19 (extension), 2026-10-21 (release); facts there have no ids"
+    }
+  ],
+  "quotes": [
+    {
+      "text": "Authorities cannot use the criminal justice system to punish people for exercising their right to peaceful assembly.",
+      "speaker": "Aakar Patel",
+      "role": "Chair of Board, Amnesty International India",
+      "date": "2026-10-14",
+      "source_ids": [
+        "repo_amnesty_1014"
+      ],
+      "links": [
+        {
+          "source_id": "repo_amnesty_1014",
+          "url": "https://www.amnesty.org/en/latest/news/2026/10/india-release-cjp-leaders-arrested-after-attempting-peaceful-protests-at-jantar-mantar/",
+          "title": "India: Release CJP leaders arrested at Jantar Mantar",
+          "publisher": "Amnesty International",
+          "date": "2026-10-14",
+          "snippet": "Authorities cannot use the criminal justice system to punish people for exercising their right to peaceful assembly.",
+          "verified": true
+        }
+      ],
+      "note": "Verbatim confirmed on the Amnesty page; role confirmed ('Chair of Board, Amnesty International India'). Second quote in the same release: \"We call for the immediate release of the CJP leaders and an end to the crackdown on peaceful dissent\" (fetch excerpt, may be truncated)."
+    }
+  ]
+}

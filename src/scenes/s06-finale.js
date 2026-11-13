@@ -6,7 +6,7 @@
 //               lanes LANES) and grow to finale size; joiners walk in from the nearest screen edge to fill the rest.
 //               From FLOOD0 the dramatic stage floods out from the date as a circle: red ground and dark halftone
 //               inside it, and roaches inside it turn black (ink: .stage-dramatic = red stage, black roaches).
-// p 0.30–0.55   hold: brackets draw out from the corners (0.30–0.40); roaches shimmer along their stroke (tick only).
+// p 0.30–0.55   hold: roaches shimmer along their stroke (tick only). (Brackets removed, Vali 2026-11-13.)
 // p 0.55–0.75   "Victory" (meta.finale.headline) wipes in beneath, left to right, in the display face; shimmer calms.
 // p 0.75–1.00   meta.finale.line (verbatim, with its *) rises in; roaches start to peel away downward, a few at
 //               first (p 0.85 ≈ 8%), ~45% by p 1, toward the reading section that scrolls up next.
@@ -15,7 +15,7 @@ import { tok, px, fitCanvas } from '../lib/dom.js';
 import { esc } from '../lib/text.js';
 import { ddmmyyyy } from '../lib/dates.js';
 import { star } from '../lib/star.js';
-import { skeleton, fitScale, skeletonReady, brackets } from '../lib/skeleton.js';
+import { skeleton, fitScale, skeletonReady } from '../lib/skeleton.js';
 import { roach } from '../roach/roach.js';
 import { hash01, clamp01, lerp, ease, angDiff, TAU } from '../roach/swarm.js';
 import { loadCss, backdrop } from './s00-hero.js';
@@ -26,7 +26,7 @@ const CSS = new URL('./s06-finale.css', import.meta.url).href;
 // the storyboard's S6 date box at 1440×900 (x 170, y 150, 1100 × 290), as fractions of the viewport
 const BOX = { x: 170 / 1440, y: 150 / 900, w: 1100 / 1440, h: 290 / 900 };
 const S_F = 7.2, SPACING = 9.2, LANES = 2, AMP = 3;   // finale roaches: larger than S4's 5.6 (the "larger map roaches")
-const CONV = .30, FLOOD0 = .14, FLOOD1 = .30, BR0 = .30, BR1 = .40, VIC0 = .55, VIC1 = .72, LINE0 = .75, LINE1 = .83;
+const CONV = .30, FLOOD0 = .14, FLOOD1 = .30, VIC0 = .55, VIC1 = .72, LINE0 = .75, LINE1 = .83;
 const PEEL0 = .76, PEEL_MAX = .45;                      // peel: rank r < PEEL_MAX starts at PEEL0 + .24 (r / PEEL_MAX)^.6
 
 // the victory node's fact that carries the finale line (for the star's attribution wording)
@@ -227,9 +227,7 @@ export default def => {
     if (rad > 0) {
       g.save(); g.globalCompositeOperation = 'source-atop'; g.fillStyle = col.dRoach; g.fill(floodPath(rad)); g.restore();
     }
-    // brackets (dramatic --fg, drawn out from each corner)
-    const br = ease.outCubic(clamp01((p - BR0) / (BR1 - BR0)));
-    if (br > 0) brackets(g, box, 30 * Math.max(1, k), 46 * Math.max(1, k) * br, tok('--stage-dramatic-fg'));
+    // brackets: removed (Vali, hybrid Gate 0 review 2026-11-13: "remove the target crosshairs"; S4 dropped them too)
     // text
     const v = ease.inOutSine(clamp01((p - VIC0) / (VIC1 - VIC0)));
     const pad = 30 * Math.max(1, k), vy = box.y1 + pad + 22 * H / 900;   // below the bottom brackets (storyboard: +60 at 900)

@@ -75,7 +75,7 @@ export function createMap({ model, data, base, labelHost, legend, extent, points
     const wOf = {}; for (const [id, el] of Object.entries(labs)) { el.style.visibility = 'hidden'; el.style.display = ''; wOf[id] = el.offsetWidth + 10; }
     place = model.beats.map((b, k) => {
       const cam = cams[k], out = {}, boxes = [];
-      for (const id of b.sites) {
+      for (const id of b.labelSites || b.sites) {          // hybrid: ≤ 3 labels per beat (labelSites)
         const a = A[id]; if (!a || !labs[id]) continue;
         if (!a.in_frame) { out[id] = edgeArrow(cam, a); continue; }
         const p = project(cam, w, h, a.x, a.y), lw = wOf[id], flip = p.x + 14 + lw > w - reserveR - 8;
