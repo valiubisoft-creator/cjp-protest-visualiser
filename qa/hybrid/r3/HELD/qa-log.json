@@ -1,0 +1,168 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1280x720",
+ "targets": "docs/build/scenes/targets/HELD.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "HELD-0.086",
+   "at": "HELD:0.086",
+   "frame": null,
+   "ok": true,
+   "y": 7589,
+   "current": "HELD",
+   "p": 0.0858,
+   "live": "HELD@0.086",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "HELD-0.4",
+   "at": "HELD:0.4",
+   "frame": null,
+   "ok": true,
+   "y": 8222,
+   "current": "HELD",
+   "p": 0.3998,
+   "live": "HELD@0.400",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "HELD-0.571",
+   "at": "HELD:0.571",
+   "frame": null,
+   "ok": true,
+   "y": 8567,
+   "current": "HELD",
+   "p": 0.5709,
+   "live": "HELD@0.571",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "HELD-0.709",
+   "at": "HELD:0.709",
+   "frame": null,
+   "ok": true,
+   "y": 8845,
+   "current": "HELD",
+   "p": 0.7088,
+   "live": "HELD@0.709",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "HELD-0.829",
+   "at": "HELD:0.829",
+   "frame": null,
+   "ok": true,
+   "y": 9087,
+   "current": "HELD",
+   "p": 0.8289,
+   "live": "HELD@0.829",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "HELD-0.996",
+   "at": "HELD:0.996",
+   "frame": null,
+   "ok": true,
+   "y": 9424,
+   "current": "HELD",
+   "p": 0.996,
+   "live": "HELD@0.996",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 251,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "HELD-0.996",
+   "at": "HELD:0.996",
+   "frame": null,
+   "ok": true,
+   "y": 9424,
+   "current": "HELD",
+   "p": 0.996,
+   "live": "HELD@0.996",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "HELD-0.829",
+   "at": "HELD:0.829",
+   "frame": null,
+   "ok": true,
+   "y": 9087,
+   "current": "HELD",
+   "p": 0.8289,
+   "live": "HELD@0.829",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "HELD-0.709",
+   "at": "HELD:0.709",
+   "frame": null,
+   "ok": true,
+   "y": 8845,
+   "current": "HELD",
+   "p": 0.7088,
+   "live": "HELD@0.709",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "HELD-0.571",
+   "at": "HELD:0.571",
+   "frame": null,
+   "ok": true,
+   "y": 8567,
+   "current": "HELD",
+   "p": 0.5709,
+   "live": "HELD@0.571",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "HELD-0.4",
+   "at": "HELD:0.4",
+   "frame": null,
+   "ok": true,
+   "y": 8222,
+   "current": "HELD",
+   "p": 0.3998,
+   "live": "HELD@0.400",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "HELD-0.086",
+   "at": "HELD:0.086",
+   "frame": null,
+   "ok": true,
+   "y": 7589,
+   "current": "HELD",
+   "p": 0.0858,
+   "live": "HELD@0.086",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 251,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

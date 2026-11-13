@@ -1,6 +1,6 @@
 # Build status
 
-Branch: `build/scene-by-scene`. Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions are in BUILD_PLAN section 4.
+Branch: `build/scene-by-scene` (frozen); current work is on `build/hybrid` (last row). Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions are in BUILD_PLAN section 4.
 
 | Chat | State | Effort (Opus 5.5) | Notes |
 |---|---|---|---|
@@ -13,7 +13,7 @@ Branch: `build/scene-by-scene`. Plan: [BUILD_PLAN.md](BUILD_PLAN.md). Decisions 
 | **S5 map stage (S5a+b+c, one chat)** | **built** 2026-11-12, awaiting Vali's review | high | Vali: one chat for S5a, S5b, S5c. Gate-1 shots: `qa/v3/S5/gate1c`. Rail + scrubber and the 20 Jul research/imagery built by sub-agents, reviewed by the lead |
 | **Remaining scenes (S6, S6.5, S7a–d, S8–S10, one chat)** | gate 1 in review 2026-11-12 | high | Kickoff: [kickoffs/remaining.md](kickoffs/remaining.md). Gate-1 shots: `qa/v3/gate1-S6`, `qa/v3/gate1-S7`, `qa/v3/gate1-S7d`, `qa/v3/gate1-S8-S10`. Sub-agents: S7 charts, S7d apparatus, S8–S10, apparatus data |
 | M9 | — | high | Plus architect and GPU review agents |
-| **Hybrid (branch `build/hybrid`)** | **built** 2026-11-13 (Gate 0 signed off; motion built, QA'd; committed and pushed to `build/hybrid` at Vali's request) | high | Kickoff: [kickoffs/hybrid.md](kickoffs/hybrid.md). Gate 0: [hybrid/GATE0.md](hybrid/GATE0.md), copy [hybrid/COPY.md](hybrid/COPY.md), frames `qa/hybrid/gate0/`, board http://localhost:5173/design/hybrid/gate0. `src/` untouched |
+| **Hybrid (branch `build/hybrid`)** | **built** 2026-11-13 (Gate 0 signed off; motion built, QA'd; build `789e5bf`, review 2 `c5242b4` and review 3 pushed to `build/hybrid`). **Next chat starts here:** open decisions in GAPS "Hybrid, review 3", then M9 (performance, self-hosting) | high | Kickoff: [kickoffs/hybrid.md](kickoffs/hybrid.md). Gate 0: [hybrid/GATE0.md](hybrid/GATE0.md), copy [hybrid/COPY.md](hybrid/COPY.md), frames `qa/hybrid/gate0/`, board http://localhost:5173/design/hybrid/gate0. `src/` untouched |
 
 ## Contracts in force
 **Data ledger (F1).** Scenes read only `data/story/*.json`, never the PDF.
@@ -94,12 +94,16 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
 - `src/lib/map.js`: promoted `mapSVG/anchorXY/fitSites` (kit re-exports; storyboard byte-identical to HEAD) + `fitCam` (optional per-side pads), `interpolateZoom` (hand-rolled van Wijk), canvas `drawMap`.
 
 **Hybrid contracts (build/hybrid, 2026-11-13; supersede the v3 running order on this branch).**
-- **Running order** (`budget.js`): S0–S3.5 · **NEET 200** · **HELD 240** · S4 180 · **S5 1,370** · S6 260 · **WATCH 260** · **OCT 500** · **ROLL 380** · **CAGE 340** · S8a 160 · S9 100 · S10.
+- **Running order** (`budget.js`, review 3): S0–S3.5 · **NEET 240** · **HELD 280** · S4 180 · **S5 1,430** · S6 260 · **WATCH 310** · **OCT 550** · **ROLL 430** · **CAGE 390** · S8a 160 · S9 55 · S10.
+  - **Title gaps** (`def.gap = [t, vh]`, `src/scroll/gap.js`, applied in `main.js`): NEET, HELD, WATCH, OCT, ROLL and CAGE hold their own p at the end of the opening card for 40–50 vh, so the card and the first beat don't run together. Ends map 0→0 and 1→1, so handovers hold. Deep links and targets use the controller's (outer) p.
+  - **No docked lockups** (review 3): `.hy-lock` is hidden everywhere; the S5 HUD stays at the inset.
+  - **S5:** no opening card before the map (street opens on it); the July and ledgers cards are 80 vh beats, card in the first 62.5%, then the map alone.
+  - **S1 click gate:** without `?still`, scrolling down holds at S1 p 0.55 until the keyword is clicked (exit downward snaps back). Under `?still` the old p 0.92 auto-trigger remains for the QA sweeps.
   - S6.5, S7a–c, S7d and (review 2) CLOSE are out of the flow; their files stay.
-  - `main` block: 3,140 vh incl. scroll-away. Whole piece: ≈ 5,380 vh + S10.
+  - `main` block: 3,140 vh incl. scroll-away. Whole piece: ≈ 5,640 vh + S10.
 - **Layout grid (review 2):** 12 columns inside an outer margin `--g-m` = 8.333% of the width clamped to 96–160 px, 24 px gutters (`src/shell.css` :root; `src/lib/grid.js` mirrors it in px). Content sits in columns 1–8; the caption column stays at the right inset (24 px, 360 wide) and the lockup at the top-left inset. Opening cards, NEET, HELD, the ledgers, the OCT quote, S8a, S9 and S10 are on it.
 - **Opening cards (review 2):** `createChapter` adds `.hy-open`, a full-bleed page-colour card behind the title (in with the kicker, out as the title docks), so each chapter opens on its own frame. p 0 of every chapter is unchanged (card alpha 0), so the handovers hold.
-- **Living halftone (review 2):** `src/lib/alive.js`. `halftone()` and the prologue backdrop register their canvas; a sibling `.ht-live` canvas above it animates slow dots (appear, drift, fade; some erase). Idle-only, ~30 fps, only while on screen; never drawn under `?still` or reduced motion, so QA frames and handovers are unaffected.
+- **Living backdrop (review 2; grunge since review 3):** `src/lib/alive.js`. `halftone()` and the prologue backdrop register their canvas; a sibling `.ht-live` canvas above it animates slow dots (appear, drift, fade; some erase). Idle-only, ~30 fps, only while on screen; never drawn under `?still` or reduced motion, so QA frames and handovers are unaffected.
 - **Reading progress (review 2):** `src/lib/progress.js`, a 3 px bar on the window's top edge with a notch at each chapter start (shell UI, mounted in `main.js`).
 - **Footer (review 2):** S10 is compact: the disclaimer always visible; References and map/image credits in `<dialog>` modals; methodology and caveats in `<details>`. Any `a.star` click opens References on its entry without scrolling the page (`id="src-N"` kept).
 - **Copy:** `src/data/copy.js` is the one source for every chapter headline, dek and caption (`{*ids|claimant}` star tokens, `{{var}}` slots). `docs/build/hybrid/COPY.md` is generated from it (`tools/hybrid/copy-md.mjs`).
@@ -344,3 +348,4 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
     - The v3 targets for removed or re-cut scenes moved to `targets/v3-retired/`.
   - `.gitignore`: raw down/up shots, dev `shots/` and compare sheets under `qa/hybrid` (as for `qa/v3`).
 - 2026-11-13 (hybrid, review 2, Vali): chapter openings get their own full-bleed card; Mumbai beat cut from OCT and the Amnesty quote stands alone; HELD notice centred; ledgers on the grid with collision-free labels (caption no longer over the scales); Victory roaches drift and fade back after the date; CLOSE out of the flow; S8a quote in Protest Revolution; S9 follow-only (share row removed); S10 compact (accordions + modals); 12-column grid; living halftone; reading-progress bar. From the UX review agent: WATCH counter reads exact view shares (7% matches the caption; climbs to 93% for the window, never 100%), HELD tally parks on Day 9 under the 29 May caption, NEET sheet and HELD boxes clear of the caption column at 1280, stars ≥ 12 px with a 24 px hit box.
+- 2026-11-13 (hybrid, review 3, Vali): docked chapter titles removed; S1 click gate (scroll holds at the word until clicked; the clicked word no longer shows behind the portrait); Dipke portrait in black and white, its credit wraps; title gaps after every opening card; no title card before the map; chapters renumbered 02–09 (street has no number); S9 55 vh with moving margin roaches; S10 tighter (disclaimer in two columns); ledger key placed under the last row (1280 overlap). Copywriter agent pass on `copy.js` (narrative, attribution, fixes: October caption range, detention order, guess-paper wording, RML evening caption star) and scene-copy fixes (S5 notes starred, metro 'before 9.15 am', OCT note and Rathee release date). Grunge texture agent: `src/lib/grunge.js` (seeded stains, splats with droplets/streaks/drips, dry-brush scuffs, scratches, grain; `wrapY` for the prologue tile) replaces the halftone in `halftone()` and the prologue backdrop; seed salted per scene; `alive.js` now animates specks, chips and the odd small splat. Build 18–54 ms. `qa-shell` sweep now records each leg's starting frame (S10 is shorter than two sweep steps).

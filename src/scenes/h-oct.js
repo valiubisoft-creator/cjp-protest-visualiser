@@ -250,13 +250,13 @@ export default def => {
           <div class="oct-in oct-t" style="font-size:${fs}px">About 10.30 am${star(['det_oneindia_lockdown_1010', 'oct_aj_1010'], src(), 'reported')}</div>
           <div class="oct-in oct-d">Detained inside the plane, minutes after it landed from Mumbai.</div>
         </div>
-        <div class="oct-relL" style="left:${R(hx(27)) - 160}px;top:${Y - 74}px"><b>About 3 am</b>${star(['det_oneindia_rathee_release_1011'], src(), 'police said')}<br>Rathee released</div>
+        <div class="oct-relL" style="left:${R(hx(27)) - 160}px;top:${Y - 74}px"><b>About 3 am, 11 Oct</b>${star(['det_oneindia_rathee_release_1011'], src(), 'police said')}<br>Rathee released</div>
         <p class="oct-cred" style="left:${X0}px;width:${fw}px">Photos: ${credLine}</p>
       </div>
       <div class="oct-field-ui">
         ${fLabels}
         <div class="oct-loupeL" style="left:${lz.x + lz.r + 8}px;top:${lz.y - 9}px">One roach, one person</div>
-        <p class="oct-note oct-fnote" style="left:${X0}px;top:${loTop + lo.length * loStep + 10}px">10 Oct, Delhi. One roach = one person. White: up to the lowest official count · grey: up to the highest police count · dark: the CJP’s count</p>
+        <p class="oct-note oct-fnote" style="left:${X0}px;top:${loTop + lo.length * loStep + 10}px">10 Oct, Delhi. One roach = one person. White: up to the MHA official’s count · grey: up to the highest reported police count (PTI) · dark: the CJP’s count</p>
       </div>
       <div class="oct-cell-ui">
         <div class="oct-days" style="left:${tallyX}px;top:${tallyY}px"><span class="n" style="font-size:${R(64 * k)}px">1</span><span class="hy-kick">days in judicial custody${days ? star(people[0].source_ids, src(), 'reported') : miss('october_counts.people[0].days')}<br>14 – 21 Oct</span>${tally}</div>

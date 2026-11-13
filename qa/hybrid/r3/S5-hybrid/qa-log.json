@@ -1,0 +1,288 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1280x720",
+ "targets": "docs/build/scenes/targets/S5-hybrid.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S5-0.059",
+   "at": "S5:0.059",
+   "frame": null,
+   "ok": true,
+   "y": 11335,
+   "current": "S5",
+   "p": 0.059,
+   "live": "S5@0.059",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S5-0.11",
+   "at": "S5:0.11",
+   "frame": null,
+   "ok": true,
+   "y": 11861,
+   "current": "S5",
+   "p": 0.11,
+   "live": "S5@0.110",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S5-0.236",
+   "at": "S5:0.236",
+   "frame": null,
+   "ok": true,
+   "y": 13158,
+   "current": "S5",
+   "p": 0.236,
+   "live": "S5@0.236",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S5-0.299",
+   "at": "S5:0.299",
+   "frame": null,
+   "ok": true,
+   "y": 13807,
+   "current": "S5",
+   "p": 0.299,
+   "live": "S5@0.299",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S5-0.358",
+   "at": "S5:0.358",
+   "frame": null,
+   "ok": true,
+   "y": 14414,
+   "current": "S5",
+   "p": 0.358,
+   "live": "S5@0.358",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S5-0.425",
+   "at": "S5:0.425",
+   "frame": null,
+   "ok": true,
+   "y": 15104,
+   "current": "S5",
+   "p": 0.425,
+   "live": "S5@0.425",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S5-0.579",
+   "at": "S5:0.579",
+   "frame": null,
+   "ok": true,
+   "y": 16689,
+   "current": "S5",
+   "p": 0.579,
+   "live": "S5@0.579",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S5-0.656",
+   "at": "S5:0.656",
+   "frame": null,
+   "ok": true,
+   "y": 17482,
+   "current": "S5",
+   "p": 0.656,
+   "live": "S5@0.656",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S5-0.722",
+   "at": "S5:0.722",
+   "frame": null,
+   "ok": true,
+   "y": 18162,
+   "current": "S5",
+   "p": 0.722,
+   "live": "S5@0.722",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S5-0.855",
+   "at": "S5:0.855",
+   "frame": null,
+   "ok": true,
+   "y": 19531,
+   "current": "S5",
+   "p": 0.855,
+   "live": "S5@0.855",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S5-0.93",
+   "at": "S5:0.93",
+   "frame": null,
+   "ok": true,
+   "y": 20303,
+   "current": "S5",
+   "p": 0.93,
+   "live": "S5@0.930",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 464,
+    "scenes": 1,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S5-0.93",
+   "at": "S5:0.93",
+   "frame": null,
+   "ok": true,
+   "y": 20303,
+   "current": "S5",
+   "p": 0.93,
+   "live": "S5@0.930",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S5-0.855",
+   "at": "S5:0.855",
+   "frame": null,
+   "ok": true,
+   "y": 19531,
+   "current": "S5",
+   "p": 0.855,
+   "live": "S5@0.855",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S5-0.722",
+   "at": "S5:0.722",
+   "frame": null,
+   "ok": true,
+   "y": 18162,
+   "current": "S5",
+   "p": 0.722,
+   "live": "S5@0.722",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S5-0.656",
+   "at": "S5:0.656",
+   "frame": null,
+   "ok": true,
+   "y": 17482,
+   "current": "S5",
+   "p": 0.656,
+   "live": "S5@0.656",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S5-0.579",
+   "at": "S5:0.579",
+   "frame": null,
+   "ok": true,
+   "y": 16689,
+   "current": "S5",
+   "p": 0.579,
+   "live": "S5@0.579",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S5-0.425",
+   "at": "S5:0.425",
+   "frame": null,
+   "ok": true,
+   "y": 15104,
+   "current": "S5",
+   "p": 0.425,
+   "live": "S5@0.425",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S5-0.358",
+   "at": "S5:0.358",
+   "frame": null,
+   "ok": true,
+   "y": 14414,
+   "current": "S5",
+   "p": 0.358,
+   "live": "S5@0.358",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S5-0.299",
+   "at": "S5:0.299",
+   "frame": null,
+   "ok": true,
+   "y": 13807,
+   "current": "S5",
+   "p": 0.299,
+   "live": "S5@0.299",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S5-0.236",
+   "at": "S5:0.236",
+   "frame": null,
+   "ok": true,
+   "y": 13158,
+   "current": "S5",
+   "p": 0.236,
+   "live": "S5@0.236",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S5-0.11",
+   "at": "S5:0.11",
+   "frame": null,
+   "ok": true,
+   "y": 11861,
+   "current": "S5",
+   "p": 0.11,
+   "live": "S5@0.110",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S5-0.059",
+   "at": "S5:0.059",
+   "frame": null,
+   "ok": true,
+   "y": 11335,
+   "current": "S5",
+   "p": 0.059,
+   "live": "S5@0.059",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 464,
+    "scenes": 1,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

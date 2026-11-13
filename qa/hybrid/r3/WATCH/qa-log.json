@@ -1,0 +1,168 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1280x720",
+ "targets": "docs/build/scenes/targets/WATCH.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "WATCH-0.067",
+   "at": "WATCH:0.067",
+   "frame": null,
+   "ok": true,
+   "y": 23766,
+   "current": "WATCH",
+   "p": 0.0672,
+   "live": "WATCH@0.067",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "WATCH-0.329",
+   "at": "WATCH:0.329",
+   "frame": "06a",
+   "ok": true,
+   "y": 24350,
+   "current": "WATCH",
+   "p": 0.3289,
+   "live": "WATCH@0.329",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "WATCH-0.497",
+   "at": "WATCH:0.497",
+   "frame": null,
+   "ok": true,
+   "y": 24725,
+   "current": "WATCH",
+   "p": 0.4969,
+   "live": "WATCH@0.497",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "WATCH-0.748",
+   "at": "WATCH:0.748",
+   "frame": "06b",
+   "ok": true,
+   "y": 25286,
+   "current": "WATCH",
+   "p": 0.7482,
+   "live": "WATCH@0.748",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "WATCH-0.874",
+   "at": "WATCH:0.874",
+   "frame": null,
+   "ok": true,
+   "y": 25567,
+   "current": "WATCH",
+   "p": 0.8741,
+   "live": "WATCH@0.874",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "WATCH-0.966",
+   "at": "WATCH:0.966",
+   "frame": "06c",
+   "ok": true,
+   "y": 25772,
+   "current": "WATCH",
+   "p": 0.9659,
+   "live": "WATCH@0.966",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 253,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "WATCH-0.966",
+   "at": "WATCH:0.966",
+   "frame": "06c",
+   "ok": true,
+   "y": 25772,
+   "current": "WATCH",
+   "p": 0.9659,
+   "live": "WATCH@0.966",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "WATCH-0.874",
+   "at": "WATCH:0.874",
+   "frame": null,
+   "ok": true,
+   "y": 25567,
+   "current": "WATCH",
+   "p": 0.8741,
+   "live": "WATCH@0.874",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "WATCH-0.748",
+   "at": "WATCH:0.748",
+   "frame": "06b",
+   "ok": true,
+   "y": 25286,
+   "current": "WATCH",
+   "p": 0.7482,
+   "live": "WATCH@0.748",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "WATCH-0.497",
+   "at": "WATCH:0.497",
+   "frame": null,
+   "ok": true,
+   "y": 24725,
+   "current": "WATCH",
+   "p": 0.4969,
+   "live": "WATCH@0.497",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "WATCH-0.329",
+   "at": "WATCH:0.329",
+   "frame": "06a",
+   "ok": true,
+   "y": 24350,
+   "current": "WATCH",
+   "p": 0.3289,
+   "live": "WATCH@0.329",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "WATCH-0.067",
+   "at": "WATCH:0.067",
+   "frame": null,
+   "ok": true,
+   "y": 23766,
+   "current": "WATCH",
+   "p": 0.0672,
+   "live": "WATCH@0.067",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 252,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

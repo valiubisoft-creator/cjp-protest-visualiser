@@ -8,6 +8,7 @@ import { buildBudget } from './scroll/budget.js';
 import { createController } from './scroll/controller.js';
 import { createSwarm } from './roach/swarm.js';
 import { mountProgress } from './lib/progress.js';
+import { gapMap } from './scroll/gap.js';
 
 const params = new URLSearchParams(location.search);
 history.scrollRestoration = 'manual';
@@ -22,6 +23,10 @@ const scenes = budget.map(def => {
   const m = mods[def.file];
   const s = typeof m === 'function' ? m(def) : m;
   s.id ??= def.id;
+  if (def.gap) {                                    // title gap (review 3): the scene sees its own p, held at t over the gap
+    const { inner } = gapMap(def), up = s.update.bind(s);
+    s.update = p => up(inner(p));
+  }
   return s;
 });
 

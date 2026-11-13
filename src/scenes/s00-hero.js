@@ -18,6 +18,7 @@ import { esc } from '../lib/text.js';
 import { roach } from '../roach/roach.js';
 import { rng } from '../lib/rng.js';
 import { alive } from '../lib/alive.js';
+import { grunge } from '../lib/grunge.js';
 import { hash01, heroCount, heroSize, wander, fleeStep, clamp01, lerp, ease, angDiff, TAU } from '../roach/swarm.js';
 import { glitchOn, glitchSlices, drawSlices } from '../lib/glitch.js';
 
@@ -25,8 +26,8 @@ const CSS = new URL('./s00-hero.css', import.meta.url).href;
 export const loadCss = href => { if (!document.querySelector(`link[href="${href}"]`)) document.head.insertAdjacentHTML('beforeend', `<link rel="stylesheet" href="${href}">`); };
 
 /* ── the scrolling backdrop (shared by S0–S4) ── */
-// A 45° dot screen (row pitch 5 px, dot pitch 10 px ≈ the F2 7 px cell) over value noise that wraps every TILE px in y,
-// so one tile repeats seamlessly. Same look as lib/halftone.js (thresholded noise, jittered radius, grain).
+// Grunge / splattered paint (lib/grunge.js, the same texture as lib/halftone.js) drawn with wrapY = TILE: stains, splats,
+// scuffs and scratches near the top or bottom edge are drawn twice (±TILE), so one tile repeats seamlessly in y.
 const TILE = 1250, SPEED = .5;
 export const backdrop = {
   ctx: null, tile: null, w: 0, h: 0, last: NaN, starts: null,
@@ -37,22 +38,8 @@ export const backdrop = {
       for (const d of budget) if (d.stage === 'prologue') { this.starts[d.id] = acc; acc += d.len; }
     }
     const c = document.createElement('canvas'); c.width = w; c.height = TILE;
-    const g = c.getContext('2d'), r = rng(11), ink = tok('--ht-ink'), cell = px('--ht-cell') || 7;
-    const GX = 128, GY = 60, grid = Array.from({ length: GX * GY }, r), s = 60 / TILE;   // noise: y wraps at GY cells = TILE px
-    const at = (x, y) => grid[((y % GY + GY) % GY) * GX + ((x % GX + GX) % GX)], sm = t => t * t * (3 - 2 * t);
-    const noise = (x, y) => { const xi = Math.floor(x), yi = Math.floor(y), xf = sm(x - xi), yf = sm(y - yi), a = at(xi, yi), b = at(xi + 1, yi), cc = at(xi, yi + 1), d = at(xi + 1, yi + 1); return a + (b - a) * xf + (cc - a) * yf + (a - b - cc + d) * xf * yf; };
-    g.fillStyle = ink;
-    for (let j = -1; j <= TILE / 5 + 1; j++) for (let i = -1; i <= w / 10 + 1; i++) {
-      const x = i * 10 + (j & 1) * 5, y = j * 5;
-      const t = Math.min(1, Math.max(0, noise(x * s, y * s) * 1.15 - .2));
-      const jj = ((j % (TILE / 5)) + TILE / 5) % (TILE / 5);   // the same jitter for a dot and its wrapped twin
-      const rr = cell * .42 * t * (1 + (hash01(i * 977 + jj, 90) - .5) * .3);
-      if (rr < .35) continue;
-      g.beginPath(); g.arc(x, y, rr, 0, TAU); g.fill();
-      if (y < rr) { g.beginPath(); g.arc(x, y + TILE, rr, 0, TAU); g.fill(); }
-      if (y > TILE - rr) { g.beginPath(); g.arc(x, y - TILE, rr, 0, TAU); g.fill(); }
-    }
-    for (let k = 0; k < w * TILE / 90; k++) { g.globalAlpha = r() * .35; g.fillRect(r() * w, r() * TILE, 1, 1); }
+    const g = c.getContext('2d'), ink = tok('--ht-ink'), cell = px('--ht-cell') || 7;
+    grunge(g, w, TILE, { seed: 11, ink, wrapY: TILE });   // every layer wraps at TILE, so the tile repeats seamlessly
     this.tile = c;
     alive(back.canvas, { cell, ink });   // the living layer over the prologue backdrop (lib/alive.js)
   },

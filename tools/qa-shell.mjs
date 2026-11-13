@@ -24,6 +24,9 @@ const ids = await ev('__v3.budget.map(d => d.id)');
 const maxY = await ev('document.documentElement.scrollHeight - innerHeight');
 for (const leg of ['down', 'up']) {
   await ev(`scrollTo(0, ${leg === 'down' ? 0 : maxY})`); await sleep(200); await ev('__v3.trace.length = 0');
+  // record the leg's starting frame (no scroll event fires there, so the trace would miss it): since review 3 the last
+  // section (S10) is shorter than two sweep steps, and without this it never shows its p 1 on the way up
+  await ev(`__v3.trace.push({ y: scrollY, dir: '${leg}', live: __v3.state().live.map(l => [l.id, l.p]) })`);
   const step = b.h / 8, n = Math.ceil(maxY / step);
   for (let k = 1; k <= n; k++) { await ev(`scrollTo(0, ${leg === 'down' ? Math.min(maxY, k * step) : Math.max(0, maxY - k * step)})`); await sleep(40); }
   await sleep(200);

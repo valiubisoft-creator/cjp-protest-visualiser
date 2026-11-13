@@ -1,0 +1,168 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1280x720",
+ "targets": "docs/build/scenes/targets/S4.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S4-0",
+   "at": "S4:0",
+   "frame": null,
+   "ok": true,
+   "y": 9432,
+   "current": "S4",
+   "p": 0,
+   "live": "S4@0.000",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S4-0.08",
+   "at": "S4:0.08",
+   "frame": "S4-0",
+   "ok": true,
+   "y": 9536,
+   "current": "S4",
+   "p": 0.0802,
+   "live": "S4@0.080",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S4-0.45",
+   "at": "S4:0.45",
+   "frame": "S4-0.45",
+   "ok": true,
+   "y": 10015,
+   "current": "S4",
+   "p": 0.4498,
+   "live": "S4@0.450",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S4-0.6",
+   "at": "S4:0.6",
+   "frame": "S4-0.6",
+   "ok": true,
+   "y": 10210,
+   "current": "S4",
+   "p": 0.6003,
+   "live": "S4@0.600",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S4-0.9",
+   "at": "S4:0.9",
+   "frame": "S4-0.9",
+   "ok": true,
+   "y": 10598,
+   "current": "S4",
+   "p": 0.8997,
+   "live": "S4@0.900",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S4-1",
+   "at": "S4:1",
+   "frame": null,
+   "ok": true,
+   "y": 10727,
+   "current": "S4",
+   "p": 0.9992,
+   "live": "S4@0.999",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 252,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S4-1",
+   "at": "S4:1",
+   "frame": null,
+   "ok": true,
+   "y": 10727,
+   "current": "S4",
+   "p": 0.9992,
+   "live": "S4@0.999",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S4-0.9",
+   "at": "S4:0.9",
+   "frame": "S4-0.9",
+   "ok": true,
+   "y": 10598,
+   "current": "S4",
+   "p": 0.8997,
+   "live": "S4@0.900",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S4-0.6",
+   "at": "S4:0.6",
+   "frame": "S4-0.6",
+   "ok": true,
+   "y": 10210,
+   "current": "S4",
+   "p": 0.6003,
+   "live": "S4@0.600",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S4-0.45",
+   "at": "S4:0.45",
+   "frame": "S4-0.45",
+   "ok": true,
+   "y": 10015,
+   "current": "S4",
+   "p": 0.4498,
+   "live": "S4@0.450",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S4-0.08",
+   "at": "S4:0.08",
+   "frame": "S4-0",
+   "ok": true,
+   "y": 9536,
+   "current": "S4",
+   "p": 0.0802,
+   "live": "S4@0.080",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S4-0",
+   "at": "S4:0",
+   "frame": null,
+   "ok": true,
+   "y": 9432,
+   "current": "S4",
+   "p": 0,
+   "live": "S4@0.000",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 251,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

@@ -6,7 +6,10 @@
 //   time-driven    ~55 characters a second from entering S1 (idle reading; frozen under ?still; reset on leaving upward)
 // The keyword types on a red dry-brush stroke that grows with it; the attribution follows the last character.
 // p 0.38–0.46  the hint: a red brush ARROW draws in from "click the word" to the keyword (Vali 2026-11-12)
-// p 0.92       auto-trigger if the keyword hasn't been clicked
+// p 0.55       THE CLICK GATE (Vali 2026-11-13, review 3: "the scroll stops till someone clicks on the word"): until the
+//              keyword is clicked, scrolling down holds at p 0.55 (the quote typed, the hint drawn); scrolling up is free.
+//              Leaving S1 downward any other way (scrollbar drag, End) snaps back to the gate.
+// p 0.92       auto-trigger if the keyword hasn't been clicked: ONLY under ?still (the QA harness sweeps through S1)
 //
 // THE S2 TIMED SEQUENCE (spec S2; the determinism exception, spec §3). Click / Enter / Space on the keyword, or the
 // auto-trigger, runs it on its own rAF clock (it runs under ?still too), with scroll locked (controller.lock, ≤ 3.2 s):
@@ -30,7 +33,7 @@ import { spawn } from './s02-spawn.js';
 
 const CSS = new URL('./s01-quote.css', import.meta.url).href;
 const fmtLong = iso => new Date(iso + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
-const AUTO = .92, RESET = .5, SEQ_MS = 3200, TYPE_P = .3, CPS = 55, HINT = [.38, .46];
+const AUTO = .92, GATE = .55, RESET = .5, SEQ_MS = 3200, TYPE_P = .3, CPS = 55, HINT = [.38, .46];
 const seg = (ms, a, b) => clamp01((ms - a) / (b - a));
 const chars = s => [...s].map(ch => /\s/.test(ch) ? ch : `<span class="c">${esc(ch)}</span>`).join('');
 
@@ -67,6 +70,7 @@ export default def => {
     exit(dir) {
       if (seq) finish(false);                             // left mid-sequence (a deep link or a programmatic scroll)
       if (dir === 'up') { spawn.hide(); typedT = 0; }     // re-entering from S0 types the quote again
+      if (dir === 'down' && gated()) hold();              // jumped past the gate without clicking: back to the word
       heroWord.hide();
       ctx.layers.swarm.ctx.clearRect(0, 0, W, H);
     },
@@ -75,7 +79,8 @@ export default def => {
       if (seq) return;                                    // the sequence owns the frame (scroll is locked)
       backdrop.scroll(def, p);
       if (spawn.done && p <= RESET) spawn.done = false;   // spec S2: scrolling back above S1 p 0.5 restores the quote
-      if (!spawn.done && p >= AUTO) { start('auto'); return; }
+      if (gated() && p > GATE) { p = GATE; hold(); }        // the gate: hold at the word until it is clicked
+      if (!spawn.done && p >= AUTO && ctx.clock.still) { start('auto'); return; }
       render();
     },
     tick(t, dt) {
@@ -84,6 +89,15 @@ export default def => {
       render();
     },
   };
+
+  /* ── the click gate (not under ?still: QA sweeps through on the auto-trigger) ── */
+  const gated = () => !ctx.clock.still && !spawn.done && !seq;
+  let holding = false;
+  function hold() {
+    if (holding) return; holding = true;
+    requestAnimationFrame(() => { holding = false; if (gated()) scrollTo(0, ctx.controller.yFor(def.id, GATE)); });
+    kw?.classList.add('is-waiting');                      // nudge: the keyword pulses while the reader is held
+  }
 
   /* ── layout-dependent pieces: the brush behind the keyword, the hint arrow ── */
   function layout() {
@@ -177,12 +191,12 @@ export default def => {
     g.clearRect(0, 0, W, H);
     heroWord.hide();
     if (spawn.done) {                                    // after the sequence: S2's p 0 frame
-      quote.style.visibility = 'hidden';
+      quote.style.visibility = 'hidden'; quote.style.opacity = '0';   // opacity too: typed .c.on chars set visibility: visible
       spawn.drawDone(g, 1);
       return;
     }
     spawn.hide();
-    quote.style.visibility = '';
+    quote.style.visibility = ''; quote.style.opacity = '';
     if (needLayout) layout();
     kw.style.opacity = ''; attr.style.transform = '';
     for (const sg of segs) sg.style.opacity = '';          // undo a finished sequence's fade (replay after reset)

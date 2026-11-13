@@ -1,0 +1,96 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1280x720",
+ "targets": "docs/build/scenes/targets/S3.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S3-0.1",
+   "at": "S3:0.1",
+   "frame": null,
+   "ok": true,
+   "y": 2275,
+   "current": "S3",
+   "p": 0.0999,
+   "live": "S3@0.100",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S3-0.3",
+   "at": "S3:0.3",
+   "frame": null,
+   "ok": true,
+   "y": 2650,
+   "current": "S3",
+   "p": 0.3002,
+   "live": "S3@0.300",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S3-0.8",
+   "at": "S3:0.8",
+   "frame": "S3",
+   "ok": true,
+   "y": 3586,
+   "current": "S3",
+   "p": 0.8002,
+   "live": "S3@0.800",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 127,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S3-0.8",
+   "at": "S3:0.8",
+   "frame": "S3",
+   "ok": true,
+   "y": 3586,
+   "current": "S3",
+   "p": 0.8002,
+   "live": "S3@0.800",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S3-0.3",
+   "at": "S3:0.3",
+   "frame": null,
+   "ok": true,
+   "y": 2650,
+   "current": "S3",
+   "p": 0.3002,
+   "live": "S3@0.300",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S3-0.1",
+   "at": "S3:0.1",
+   "frame": null,
+   "ok": true,
+   "y": 2275,
+   "current": "S3",
+   "p": 0.0999,
+   "live": "S3@0.100",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 127,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

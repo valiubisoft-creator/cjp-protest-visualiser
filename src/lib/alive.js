@@ -1,35 +1,44 @@
-// The living halftone (hybrid, Vali 2026-11-13: "dots randomly moving, fading, appearing at a slow pace so that it
-// feels like the visualisation is alive"). Purely decorative idle motion over the static halftone backdrops.
+// The living backdrop (hybrid, Vali 2026-11-13: "randomly moving, fading, appearing at a slow pace so that it feels
+// like the visualisation is alive"). Since the backdrop became grunge / splattered paint (lib/grunge.js), the life is
+// paint too: purely decorative idle motion over the static backdrops.
 //
 // alive(canvas, { cell, ink }) registers a backdrop canvas (lib/halftone.js and the prologue backdrop call it). The
 // first time the canvas is on screen, a sibling canvas (.ht-live) is inserted directly after it, so it sits above the
-// backdrop and below everything the scene draws on top. One shared loop (~30 fps) animates a slow population of dots
-// on the same 45° screen: most appear (ink), drift a few px and fade out; some "erase" an existing dot (page colour)
-// and give it back. Nothing here depends on scroll, and no scene's p reads it.
-// ?still (QA) and prefers-reduced-motion: the layer is never drawn, so key frames and handovers are unaffected.
+// backdrop and below everything the scene draws on top. One shared loop (~30 fps, only for canvases on screen) draws:
+//   specks   a slow population of paint specks and small droplets (some stretched): each fades in, creeps a few px,
+//            fades out; about a quarter are "chips" in the page colour that knock a speck out of the paint and give it back
+//   blooms   now and then (every ~6 s per canvas, at most two at once) a faint small splat lands: it spreads from 60 %
+//            to full size as it appears, holds, and fades away
+// Everything stays within the ink token's alpha range, so text over it reads as before. Nothing depends on scroll,
+// and no scene's p reads it. ?still (QA) and prefers-reduced-motion: the layer is never drawn.
+import { splat, parseInk } from './grunge.js';
+
 const TAU = Math.PI * 2;
 const params = new URLSearchParams(location.search);
 const OFF = params.has('still') || matchMedia('(prefers-reduced-motion: reduce)').matches;
-const reg = new Map();   // canvas → { cell, ink, live, g, w, h, dots, seen }
+const reg = new Map();   // canvas → { cell, ink, live, g, w, h, specks, blooms, seen }
 let raf = 0, last = 0;
 
 export function alive(canvas, { cell = 7, ink = 'rgba(250,250,247,.07)' } = {}) {
   if (OFF || !canvas || !canvas.getContext) return;
   const e = reg.get(canvas) || { seen: performance.now() };
-  Object.assign(e, { cell, ink }); e.w = 0;   // size again next frame
+  const I = parseInk(ink);
+  Object.assign(e, { cell, ink, rgb: `${I.r},${I.g},${I.b}`, a: I.a }); e.w = 0;   // size again next frame
   reg.set(canvas, e);
   if (!raf) raf = requestAnimationFrame(loop);
 }
 
 const rnd = (a, b) => a + Math.random() * (b - a);
-function spawn(e, t, born = t) {
-  const s = e.cell * Math.SQRT1_2, erase = Math.random() < .3;
-  // snap to the backdrop's 45° screen so new dots sit where dots belong
-  const u = Math.round(rnd(-e.w, e.w) / s), v = Math.round(rnd(-e.h, e.h) / s);
-  let x = (u - v) * s * Math.SQRT1_2 + e.w / 2, y = (u + v) * s * Math.SQRT1_2 + e.h / 2;
-  if (x < 0 || y < 0 || x > e.w || y > e.h) { x = rnd(0, e.w); y = rnd(0, e.h); }
-  const a = rnd(0, TAU), sp = rnd(1.5, 5);                  // px per second: slow
-  return { x, y, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp, r: e.cell * .42 * rnd(.45, 1), t0: born, life: rnd(5, 11), erase };
+function speck(e, t) {
+  const chip = Math.random() < .25, ang = rnd(0, TAU), sp = rnd(.6, 3);   // px per second: barely moving
+  const r = chip ? rnd(1, 2.6) : rnd(.5, 1) * (Math.random() < .2 ? rnd(2, 3.4) : 1.6);
+  return { x: rnd(0, e.w), y: rnd(0, e.h), vx: Math.cos(ang) * sp, vy: Math.sin(ang) * sp + .4, r, st: Math.random() < .3 ? rnd(1.3, 2.2) : 1,
+    rot: ang, k: chip ? rnd(.5, .9) : rnd(.7, 1.8), t0: t, life: rnd(5, 12), chip };
+}
+function bloom(e, t) {
+  const R = rnd(6, 20), P = new Path2D();
+  splat(P, null, Math.random, 0, 0, R, rnd(0, TAU));
+  return { P, x: rnd(R, e.w - R), y: rnd(R, e.h - R), t0: t, life: rnd(7, 11), k: rnd(.7, 1.1) };
 }
 
 function size(e, cv) {
@@ -45,8 +54,9 @@ function size(e, cv) {
   e.g = e.live.getContext('2d'); e.g.setTransform(d, 0, 0, d, 0, 0);
   e.w = w; e.h = h;
   e.bg = getComputedStyle(cv).getPropertyValue('--bg').trim() || '#0B0B0B';
-  const n = Math.round(w * h / 4200), t = performance.now() / 1000;
-  e.dots = Array.from({ length: n }, () => { const o = spawn(e, t); o.t0 = t - Math.random() * o.life; return o; });   // mid-life at start
+  const n = Math.round(w * h / 6000), t = performance.now() / 1000;
+  e.specks = Array.from({ length: n }, () => { const o = speck(e, t); o.t0 = t - Math.random() * o.life; return o; });   // mid-life at start
+  e.blooms = []; e.next = t + rnd(1, 4);
   return true;
 }
 
@@ -61,13 +71,26 @@ function loop(now) {
     if (!cv.offsetParent) continue;                         // its scene is not live
     const b = cv.getBoundingClientRect(); if (b.bottom < 0 || b.top > vh) continue;
     if ((!e.w || e.w !== cv.offsetWidth || e.h !== cv.offsetHeight) && !size(e, cv)) continue;
-    const g = e.g; g.clearRect(0, 0, e.w, e.h);
-    for (let i = 0; i < e.dots.length; i++) {
-      let o = e.dots[i], age = t - o.t0;
-      if (age > o.life) { o = e.dots[i] = spawn(e, t); age = 0; }
+    const g = e.g, ink = `rgb(${e.rgb})`; g.clearRect(0, 0, e.w, e.h);
+    // blooms first, so specks and chips sit over them
+    if (t > e.next) { if (e.blooms.length < 2) e.blooms.push(bloom(e, t)); e.next = t + rnd(3, 9); }
+    g.fillStyle = ink;
+    e.blooms = e.blooms.filter(o => {
+      const u = (t - o.t0) / o.life; if (u >= 1) return false;
+      const sc = .6 + .4 * (1 - Math.pow(1 - Math.min(1, u / .3), 3));                    // spreads as it lands
+      const f = u < .12 ? u / .12 : u < .5 ? 1 : 1 - (u - .5) / .5;                       // in fast, hold, fade slowly
+      g.globalAlpha = Math.min(1, e.a * o.k * f * f * (3 - 2 * f));
+      g.save(); g.translate(o.x, o.y); g.scale(sc, sc); g.fill(o.P); g.restore();
+      return true;
+    });
+    for (let i = 0; i < e.specks.length; i++) {
+      let o = e.specks[i], age = t - o.t0;
+      if (age > o.life) { o = e.specks[i] = speck(e, t); age = 0; }
       const f = Math.sin(Math.PI * age / o.life), x = o.x + o.vx * age, y = o.y + o.vy * age;
-      if (o.erase) { g.globalAlpha = f; g.fillStyle = e.bg; g.beginPath(); g.arc(x, y, o.r * 1.15, 0, TAU); g.fill(); }
-      else { g.globalAlpha = 1; g.fillStyle = e.ink; const r = o.r * (.35 + .65 * f); g.globalAlpha = f; g.beginPath(); g.arc(x, y, r, 0, TAU); g.fill(); }
+      g.fillStyle = o.chip ? e.bg : ink;
+      g.globalAlpha = o.chip ? f * o.k : Math.min(1, e.a * o.k * f);
+      const r = o.r * (o.chip ? 1 : .5 + .5 * f);
+      g.beginPath(); g.ellipse(x, y, r * o.st, r, o.rot, 0, TAU); g.fill();
     }
     g.globalAlpha = 1;
   }

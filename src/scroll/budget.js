@@ -14,6 +14,9 @@
 //       the map stage, the finale stage). Stages in one block hand over in place, with no slide:
 //       S4 p 1 must look exactly like S5 p 0, and S5 p 1 like S6 p 0.
 // file  the scene module in src/scenes/.
+// gap  [t, vh] (review 3, Vali 2026-11-13: "sufficient gaps between the title frames and the next scenes"): after the
+//       chapter's opening card ends at the scene's own p t, the scene holds that frame for vh more scroll before it goes
+//       on. len includes the gap; main.js remaps p (src/scroll/gap.js), so the scene still sees its own 0–1.
 // segments (S5 only) named sub-ranges in vh, in order; they must sum to len. Node ids match timeline.json.
 
 export const VH = 100;
@@ -29,25 +32,25 @@ export function buildBudget({ quoteCount = 3 } = {}) {
     { id: 'S3.5', name: 'The claim and the correction',        len: 240, block: 'main', stage: 'prologue', file: 's03-5-claim.js' },
     // ── hybrid (build/hybrid, Vali 2026-11-13): NEET and Withheld join the prologue stage; both start and end on
     //    S3.5's last frame (claim.poses(1, t)), so S3.5 → NEET → HELD → S4 hand over in place ──
-    { id: 'NEET', name: 'The grievance: the NEET leak',         len: 200, block: 'main', stage: 'prologue', file: 'h-neet.js' },
-    { id: 'HELD', name: 'Withheld: blocked 48 days, back in hours', len: 240, block: 'main', stage: 'prologue', file: 'h-held.js' },
+    { id: 'NEET', name: 'The grievance: the NEET leak',         len: 240, gap: [.22, 40], block: 'main', stage: 'prologue', file: 'h-neet.js' },
+    { id: 'HELD', name: 'Withheld: blocked 48 days, back in hours', len: 280, gap: [.20, 40], block: 'main', stage: 'prologue', file: 'h-held.js' },
     { id: 'S4',   name: 'The date on the skeleton',            len: 180, block: 'main', stage: 'prologue', file: 's04-date.js' },
     // hybrid S5 (Vali 2026-11-13, Gate 0): street cut to four beats + chapter titles, 20 July cut to three hours + 23 Jul,
     // the three ledgers on the dimmed map. Was 2,070 vh. Beat slots inside each node segment: s05/hybrid.js
-    { id: 'S5',   name: 'Map stage: street, 20 July, ledgers', len: 1370, block: 'main', stage: 'map',      file: 's05-map.js',
-      segments: [['lead_in', 60], ['start', 140], ['protest', 90], ['wangchuk', 90], ['detention', 90], ['protest_arrest', 840], ['lead_out', 60]] },
+    { id: 'S5',   name: 'Map stage: street, 20 July, ledgers', len: 1430, block: 'main', stage: 'map',      file: 's05-map.js',
+      segments: [['lead_in', 60], ['start', 140], ['protest', 90], ['wangchuk', 90], ['detention', 90], ['protest_arrest', 900], ['lead_out', 60]] },
     { id: 'S6',   name: 'Finale: the date returns, Victory',  len: 260, block: 'main', stage: 'finale',   file: 's06-finale.js' },
     // ── hybrid second act (S6.5, S7a–c and the S7d spokes leave the flow; their files stay) ──
-    { id: 'WATCH', name: 'The country watched: 1,000-dot screen', len: 260, block: 'WATCH', stage: 'watch', file: 'h-watch.js' },
-    { id: 'OCT',   name: 'October: count them one by one',     len: 500, block: 'OCT',   stage: 'oct',   file: 'h-oct.js' },
-    { id: 'ROLL',  name: 'Why they marched: the voter roll',   len: 380, block: 'ROLL',  stage: 'roll',  file: 'h-roll.js' },
-    { id: 'CAGE',  name: 'The apparatus: the cage',            len: 340, block: 'CAGE',  stage: 'cage',  file: 'h-cage.js' },
+    { id: 'WATCH', name: 'The country watched: 1,000-dot screen', len: 310, gap: [.14, 50], block: 'WATCH', stage: 'watch', file: 'h-watch.js' },
+    { id: 'OCT',   name: 'October: count them one by one',     len: 550, gap: [.12, 50], block: 'OCT',   stage: 'oct',   file: 'h-oct.js' },
+    { id: 'ROLL',  name: 'Why they marched: the voter roll',   len: 430, gap: [.14, 50], block: 'ROLL',  stage: 'roll',  file: 'h-roll.js' },
+    { id: 'CAGE',  name: 'The apparatus: the cage',            len: 390, gap: [.14, 50], block: 'CAGE',  stage: 'cage',  file: 'h-cage.js' },
     // one 100vh scene per selected quote (quotes.json `selected: true`), crossfading in one pinned stage
     // Vali 2026-11-12: Ambedkar only, typed out like a typewriter, so each quote scene gets 160 vh (was 100)
     ...quoteIds.map((id, i) => ({ id, name: `Quote ${i + 1} of ${quoteCount}`, len: 160, block: 'S8', stage: 'quotes', file: 's08-quotes.js', sub: i })),
     // CLOSE (the closing line) left the flow (Vali 2026-11-13, review 2: the Ambedkar quote is the only closing quote;
     // h-close.js is kept)
-    { id: 'S9',   name: 'Follow the CJP',                      len: 100, block: null, file: 's09-cta.js' },
+    { id: 'S9',   name: 'Follow the CJP',                      len: 55,  block: null, file: 's09-cta.js' },   // review 3: was 100 (less empty space)
     { id: 'S10',  name: 'Credit, methodology, disclaimer',     len: 'auto', block: null, file: 's10-footer.js' },
   ];
 }

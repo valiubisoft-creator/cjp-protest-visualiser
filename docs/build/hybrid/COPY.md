@@ -16,14 +16,14 @@ _new scene on the prologue stage, after S3.5 (before Withheld)_
 - **Kicker:** 3 – 22 May
 - **Headline** (new): **22 lakh students, one cancelled exam.**
 - Alternatives: “The joke found its grievance.”
-- **Dek** (new): The party began on 16 May as satire about a slur. Four days earlier, an exam 22.79 lakh students had registered for was cancelled\* <sub>[neet_scroll_0512 · NTA said]</sub>.
+- **Dek** (new): The party began on 16 May as satire about a slur. It found its grievance in an exam: four days earlier, a test 22.79 lakh students had registered for\* <sub>[neet_tnm_0515 · reported]</sub> was cancelled after an alleged leak\* <sub>[neet_scroll_0512 · NTA said]</sub>.
 - **Legend:** One bubble = 1,000 registered candidates (2,279 bubbles)
 
 | # | When | Caption | Words | Origin | Ledger |
 |---|---|---|---|---|---|
-| 1 | 3 May · the exam | NEET-UG was held on 3 May; 22.79 lakh students registered\* <sub>[neet_tnm_0515 · reported]</sub>. Police in Rajasthan later said a “guess paper” had matched about 120 chemistry questions\* <sub>[neet_scroll_0512 · police said]</sub>. | 24 | new | neet.json neet02, neet06 |
-| 2 | 12 May · cancelled | Nine days after the exam, the testing agency cancelled it\* <sub>[neet_scroll_0512 · NTA said]</sub>, and the CBI registered a case\* <sub>[neet_careers360_0512 · officials said]</sub>. A re-test was set for 21 June\* <sub>[neet_tnm_0515 · NTA said]</sub>. | 23 | new | neet.json neet05, neet09, neet10 |
-| 3 | 22 May · the demand | The party had begun as satire. On 22 May it took up the leak and demanded the education minister’s resignation\* <sub>[neet_dtnext_0522 · reported]</sub>. Its slogan: “We asked for Make in India, you gave us Leak in India.”\* <sub>[neet_fpj_0606 · reported]</sub> | 34 | new | neet.json neet16, neet17 |
+| 1 | 3 May · the exam | NEET-UG, India’s undergraduate medical entrance exam, was held on 3 May; 22.79 lakh students registered\* <sub>[neet_tnm_0515 · reported]</sub>. Rajasthan police later said a “guess paper” had circulated beforehand, and about 120 of its questions matched the chemistry section\* <sub>[neet_scroll_0512 · police said]</sub>. | 35 | new | neet.json neet02, neet06 |
+| 2 | 12 May · cancelled | On 12 May, nine days after the exam, the National Testing Agency cancelled it\* <sub>[neet_scroll_0512 · NTA said]</sub>. The Central Bureau of Investigation registered a case that day\* <sub>[neet_careers360_0512 · officials said]</sub>, and a re-test was set for 21 June\* <sub>[neet_tnm_0515 · NTA said]</sub>. | 32 | new | neet.json neet05, neet09, neet10 |
+| 3 | 22 May · the demand | On 22 May the party took up the leak and demanded the resignation of the education minister, Dharmendra Pradhan\* <sub>[neet_dtnext_0522 · reported]</sub>. Its founder, Abhijeet Dipke: “It was the fault of the system that over 22 lakh students’ future was impacted”\* <sub>[neet_dtnext_0522 · reported]</sub>. | 38 | new | neet.json neet16 (Dipke quote, PTI via DT Next); the slogan moved to street[0] (6 Jun) |
 
 Sourced in data/story/neet.json (research/neet.md). The CJP was not founded over NEET (the CJI remark came in a non-NEET hearing); the copy keeps that order. Pradhan’s resignation note ties it back at Victory.
 
@@ -34,16 +34,16 @@ _new scene W (prologue stage, between S3.5 and S4)_
 - **Headline** (new): **Blocked for 48 days. Back within hours.**
 - Alternatives: “Forty-eight days under a block.” · “Silenced in India, not online.”
 - **Not used:** “Forty-eight days of silence.” Sources: the party posted throughout from a second handle, @Cockroachisback, opened hours after the block (Business Today, 21 May, read verbatim). The 48-day span itself holds: 21 May withholding (Day 1) → 7 Jul High Court order (Day 48).
-- **Dek** (new): On 21 May the government had the party’s X account withheld in India. It took a court 48 days to lift the order. It took the party hours to open another.
+- **Dek** (new): On 21 May the government had the party’s X account withheld in India. A court took 48 days to lift the order. The party took hours to open another.
 
 | # | When | Caption | Words | Origin | Ledger |
 |---|---|---|---|---|---|
-| 1 | 21 May · Day 1 | The IT ministry had the party’s X account, @CJP_2029, withheld in India under Section 69A of the IT Act\* <sub>[repo_lawbeat, repo_indiacom_xblock · reported]</sub>, reportedly on Intelligence Bureau inputs\* <sub>[repo_indiacom_xblock · reported]</sub>. | 24 | new | withheld.json x_withheld_2026_05_21 |
-| 2 | 21 May · hours later | Hours later the party was back as “Cockroach is Back”\* <sub>[withheld_bt_newavatar · reported]</sub>. Its first post: “You thought you can get rid of us? Lol!” | 22 | new | withheld.json cib_launch_2026_05_21 (Business Today verbatim) |
-| 3 | 29 May · Day 9 | The Delhi High Court declined to restore the account and sent the case to the IT ministry’s review committee\* <sub>[withheld_patriot_pti · reported]</sub>. | 19 | new | withheld.json hc_29_may_no_interim_relief |
-| 4 | 7 Jul · Day 48 | The court revoked the order\* <sub>[repo_lawbeat · court order]</sub>. The government’s lawyer said why the block could end: “Now the examination is over.”\* <sub>[repo_medianama · reported]</sub> By then the second account had over 2,80,000 followers\* <sub>[withheld_patriot_pti · reported]</sub>. | 28 | v2, edited to the sources | apparatus.json meity[1], delhi_high_court[0]; withheld.json cib_status_2026_07_07 |
+| 1 | 21 May · Day 1 | The IT ministry had the party’s X account, @CJP_2029, withheld in India under Section 69A of the IT Act\* <sub>[repo_lawbeat, repo_indiacom_xblock · reported]</sub>, reportedly on Intelligence Bureau inputs citing “national security concerns”\* <sub>[repo_indiacom_xblock · reported]</sub>. | 28 | new | withheld.json x_withheld_2026_05_21 |
+| 2 | 21 May · hours later | Hours later the party was back on X as “Cockroach is Back”\* <sub>[withheld_bt_newavatar · reported]</sub>. Its first post: “You thought you can get rid of us? Lol!” | 24 | new | withheld.json cib_launch_2026_05_21 (Business Today verbatim) |
+| 3 | 29 May · Day 9 | Dipke took the block to the Delhi High Court\* <sub>[barandbench · reported]</sub>. On 29 May the court declined to restore the account and asked the IT ministry’s review committee to decide before 7 July\* <sub>[withheld_patriot_pti · reported]</sub>. | 31 | new | withheld.json dipke_petition_2026_05_25, hc_29_may_no_interim_relief |
+| 4 | 7 Jul · Day 48 | The court revoked the order: “Since NEET is already over, the primary concern is no longer of any relevance.”\* <sub>[withheld_patriot_pti · court order]</sub> The Solicitor General had told it: “Now the examination is over.”\* <sub>[repo_medianama · reported]</sub> By then the second account had over 2,80,000 followers\* <sub>[withheld_patriot_pti · reported]</sub>. | 39 | v2, edited to the sources | withheld.json hc_order_2026_07_07 (court via PTI, verified snippet), cib_status_2026_07_07; apparatus.json meity[1] |
 
-## 04 · The street
+## The street
 _S4 (date) → S5 map, cut to four beats_
 
 - **Kicker:** 6 Jun – 19 Jul
@@ -53,26 +53,26 @@ _S4 (date) → S5 map, cut to four beats_
 
 | # | When | Caption | Words | Origin | Ledger |
 |---|---|---|---|---|---|
-| 1 | 6 Jun · Day 0 | The first street protest at Jantar Mantar. Reports counted “Hundreds”\* <sub>[aljazeera, theweek · reported]</sub>. Sonam Wangchuk came too: “I don’t like protests, but we have to do it for justice.”\* <sub>[fpj_0606 · said]</sub> | 26 | new | timeline start: “Hundreds”, fpj_0606 quote |
-| 2 | 20 Jun · Day 14 | Two weeks later they came back. Police declared the protest past its permitted hours\* <sub>[wikipedia, dynamitenews · police said]</sub>. Dipke refused to leave, thalis were banged, and an indefinite sit-in began\* <sub>[wikipedia, cnn · reported]</sub>. | 26 | new | timeline protest_2a |
-| 3 | 28 Jun · Day 22 · Fast day 1 | For nearly three weeks it was, in Outlook’s words, a fringe story\* <sub>[outlookindia · reported]</sub>. Then Sonam Wangchuk began an indefinite fast at the site\* <sub>[wire_0630, scroll_0718 · reported]</sub>. In May he had said: “But I consider myself an honorary cockroach.”\* <sub>[theprint_0523 · said]</sub> | 34 | new | timeline protest_2b (Outlook), wangchuk |
-| 4 | 18 Jul · Day 42 · Fast day 21 | Two days before the march on Parliament, police removed Wangchuk to Safdarjung Hospital\* <sub>[wikipedia · reported]</sub>, on medical advice, they said\* <sub>[wikipedia, scroll_0718 · police said]</sub>. The CJP: “he has been forcefully kidnapped by the Police and taken away.”\* <sub>[newslaundry_0718, scroll_0718 · CJP claims]</sub> | 31 | new | timeline detention |
+| 1 | 6 Jun · Day 0 | On 6 June the party took to the street at Jantar Mantar, New Delhi. Reports counted “Hundreds”\* <sub>[aljazeera, theweek · reported]</sub>; the bigger the reported crowd, the more roaches. The slogan: “We asked for Make in India, you gave us Leak in India”\* <sub>[theweek · reported]</sub>. | 39 | new | timeline start: “Hundreds” (aljazeera, theweek), slogan (theweek); folds in the street dek (no title card) |
+| 2 | 20 Jun · Day 14 | On 20 June the party came back. When police said its permission had run out at 5 pm\* <sub>[wikipedia, dynamitenews · police said]</sub>, Dipke refused to leave. Protesters banged metal plates, and an indefinite sit-in began\* <sub>[wikipedia, cnn · reported]</sub>. | 31 | new | timeline protest_2a (Wikipedia: “permission ran only until 5 P.M.”; metal plates) |
+| 3 | 28 Jun · Day 22 · Fast day 1 | For nearly three weeks the protest was, in Outlook’s words, a fringe story\* <sub>[outlookindia · reported]</sub>. Then the activist Sonam Wangchuk began an indefinite fast there\* <sub>[wire_0630, scroll_0718 · reported]</sub>. In May he had said: “But I consider myself an honorary cockroach.”\* <sub>[theprint_0523 · said]</sub> | 35 | new | timeline protest_2b (Outlook), wangchuk; “activist” per scroll_0714 |
+| 4 | 18 Jul · Day 42 · Fast day 21 | Two days before the march on Parliament, police removed Wangchuk to Safdarjung Hospital\* <sub>[wikipedia · reported]</sub>, on medical advice and under High Court directions, they said\* <sub>[wikipedia, scroll_0718 · police said]</sub>. The CJP: “he has been forcefully kidnapped by the Police and taken away.”\* <sub>[newslaundry_0718, scroll_0718 · CJP claims]</sub> | 36 | new | timeline detention (police: medical advice and HC directions) |
 
-## 05 · 20 July
+## 04 · 20 July
 _S5 map, 20 Jul hours cut to three + 23 Jul_
 
 - **Kicker:** 20 – 24 Jul
 - **Headline** (v2 verbatim): **No signal, no order.**
-- **Dek** (new): The march on Parliament. Phones went dark around the site and the metro shut its gates. On 20 July no order was published. On 23 July there was one.
+- **Dek** (new): On 20 July, the monsoon session’s first day, the CJP tried to march on Parliament. Around Jantar Mantar, mobile internet went dark and metro stations shut. No order was published that day. On 23 July there was one.
 
 | # | When | Caption | Words | Origin | Ledger |
 |---|---|---|---|---|---|
-| 1 | 20 Jul · 09:23 | By nine the area was sealed. The metro closed five stations\* <sub>[theprint, theweek_0720 · officials said]</sub>. At 9.23 am: “Mobile internet services are unavailable at Jantar Mantar.”\* <sub>[tribuneindia · reported]</sub> | 22 | new | sansad_chalo 0720_0900; apparatus delhi_metro[0] |
-| 2 | 20 Jul · 15:08 | “No copy of any suspension order has been published by the Ministry of Home Affairs.”\* <sub>[repo_iff_central_delhi · IFF]</sub> Near Patel Chowk metro station, police lathi-charged and fired tear gas\* <sub>[theprint_0720_live · reported]</sub>. | 26 | new | apparatus telecom_operators[0]; sansad_chalo 0720_1430 |
-| 3 | 20 Jul · 17:38 | “Disruptions to internet services in the area have affected app-based cab services.” The suspension “remained in effect until the evening of July 20”\* <sub>[repo_iff_central_delhi, tribuneindia · reported]</sub>. | 23 | new | sansad_chalo 0720_1730 |
-| 4 | 23 Jul | This time the order was written down: no mobile internet within 1.5 km of Jantar Mantar, 9.30 am to 4 pm\* <sub>[repo_isoc_0723 · reported]</sub>. By 24 July the metro was shutting 18 stations\* <sub>[wikipedia · officials said]</sub>. | 30 | v2, edited to the sources | apparatus home_ministry[1]; metrics m44 |
+| 1 | 20 Jul · 09:23 | The procession was due to start at 9 am; it never formally started\* <sub>[outlook_0720 · reported]</sub>. By 9.15 the metro had closed five stations\* <sub>[theprint, theweek_0720 · officials said]</sub>. At 9.23 The Tribune reported: “Mobile internet services are unavailable at Jantar Mantar.”\* <sub>[tribuneindia · reported]</sub> | 34 | new | sansad_chalo 0720_0900 (Outlook: never formally started; DMRC closures before 9.15 am; Tribune 9:23); apparatus delhi_metro[0] |
+| 2 | 20 Jul · 15:08 | At 3.08 pm police lathi-charged and fired tear gas near Patel Chowk metro station, and protesters threw bottles\* <sub>[theprint_0720_live, theprint_0720_top10 · reported]</sub>. The Internet Freedom Foundation said: “No copy of any suspension order has been published by the Ministry of Home Affairs.”\* <sub>[repo_iff_central_delhi · IFF]</sub> | 38 | new | sansad_chalo 0720_1430 (3.08 pm: lathi charge, tear gas, bottles); apparatus telecom_operators[0] |
+| 3 | 20 Jul · evening | By evening RML hospital’s emergency was overwhelmed: it stopped admitting patients, and many injured were diverted to Lady Hardinge Hospital\* <sub>[newslaundry · reported]</sub>. The internet shutdown “remained in effect until the evening of July 20”\* <sub>[repo_theweek_0722 · reported]</sub>. | 32 | new | sansad_chalo 0720_1730 (Newslaundry: RML stopped admitting, Lady Hardinge; The Week: until the evening) |
+| 4 | 23 Jul | On 23 July there was an order: the Home Ministry suspended mobile internet within 1.5 km of Jantar Mantar, 9.30 am to 4 pm\* <sub>[repo_isoc_0723 · reported]</sub>. By 24 July the metro was closing 18 stations\* <sub>[wikipedia · officials said]</sub>. | 33 | v2, edited to the sources | apparatus home_ministry[1]; metrics m44 |
 
-## 06 · 20 July, again
+## 05 · 20 July, again
 _S5 map stage, after the hours (map dimmed under three scales)_
 
 - **Kicker:** 20 July, again
@@ -82,9 +82,9 @@ _S5 map stage, after the hours (map dimmed under three scales)_
 
 | # | When | Caption | Words | Origin | Ledger |
 |---|---|---|---|---|---|
-| 1 | Injured | Police said 118 officers were hurt\* <sub>[theprint, pti · police said]</sub>. By 7 pm RML hospital had logged 65 medico-legal cases\* <sub>[wikipedia · reported]</sub>. The CJP says about 150 protesters were hospitalised\* <sub>[wikipedia · CJP claims]</sub>. | 24 | v2, edited to the sources | metrics m29, m32, m33 (dots also m30, m31) |
-| 2 | Detained | Police later said no protesters were detained\* <sub>[wikipedia · police said]</sub>. On the day, police sources told reporters “more than 100”\* <sub>[deccanchronicle_0720_detained · police said]</sub>; police and the CJP had put it at about 70\* <sub>[theprint, pti · police said / CJP claims]</sub>. | 27 | v2, edited to the sources | metrics m34, m35; sansad_chalo 0720_1730 |
-| 3 | Pellets | Police called pellet reports “completely false and misleading”\* <sub>[theprint_0721_pellet_denial · police said]</sub>. Their own diary records two rounds\* <sub>[tribuneindia · police records]</sub>. A CRPF report, via The Wire, says seven rounds, five hits\* <sub>[thewire · reported]</sub>. | 25 | v2, edited to the sources | apparatus delhi_police[2], raf[0], raf[1] |
+| 1 | Injured | Police said more than 118 police personnel were hurt\* <sub>[theprint, pti · police said]</sub>. By 7 pm RML hospital had logged 65 medico-legal cases, protesters and police together\* <sub>[wikipedia · reported]</sub>. The CJP says about 150 protesters were hospitalised\* <sub>[wikipedia · CJP claims]</sub>. | 31 | v2, edited to the sources | metrics m29, m32, m33 (dots also m30, m31) |
+| 2 | Detained | That evening, police sources said “more than 100” protesters were detained\* <sub>[deccanchronicle_0720_detained · police said]</sub>. Late that night a police statement put it at about 70, as did the CJP\* <sub>[theprint, pti · police said / CJP claims]</sub>. Later, police said no protesters were detained\* <sub>[wikipedia · police said]</sub>. | 33 | v2, edited to the sources | metrics m34, m35; sansad_chalo 0720_1730 (8.25 pm “more than 100”; 11.54 pm police statement ~70) and open_questions (the day’s sequence) |
+| 3 | Pellets | The next day police called reports of pellet guns “completely false and misleading”\* <sub>[theprint_0721_pellet_denial · police said]</sub>. Their own General Diary records two rounds of plastic pellets\* <sub>[tribuneindia · police said]</sub>. A CRPF report, via The Wire, says seven rounds were fired and five hit protesters\* <sub>[thewire · reported]</sub>. | 38 | v2, edited to the sources | apparatus delhi_police[2], raf[0], raf[1] |
 
 ## Victory
 _S6 (v3, unchanged; in-place handover from the map)_
@@ -93,56 +93,56 @@ _S6 (v3, unchanged; in-place handover from the map)_
 
 “Victory” + “Education Minister Dharmendra Pradhan resigned on 25 July*” (meta.finale), unchanged.
 
-## 07 · The country watched
+## 06 · The country watched
 _new anime.js scene (replaces S7a–c in the reading flow): a 1,000-dot screen in the shape of a roach_
 
 - **Kicker:** 23 May – 21 Jul
 - **Headline** (new): **Four days, most of the views.**
 - Alternatives: “The country watched.”
-- **Dek** (new): Each dot is one-thousandth of every view the movement’s YouTube videos drew. A dot lights up on the day its video was uploaded.
+- **Dek** (new): Each of these 1,000 dots is 0.1% of all the views drawn by YouTube videos about the movement, up to 21 July. A dot lights up on the day its video was uploaded.
 
 | # | When | Caption | Words | Origin | Ledger |
 |---|---|---|---|---|---|
-| 1 | 23 May – 17 Jul | For eight weeks the videos came in a trickle. By 17 July they had drawn {{beforePct}} of all the views\* <sub>[timeline_clips · computed from the YouTube clip corpus]</sub>. | 20 | new | timeline_clips.json (computed live: window.before.views / total) |
-| 2 | 18 – 21 Jul | Then Wangchuk was removed and the march went ahead. Videos uploaded in those four days drew {{winPct}} of all the views\* <sub>[timeline_clips · computed from the YouTube clip corpus]</sub>. | 21 | new | timeline_clips.json (window.viewsShare); the S7a callout |
+| 1 | 23 May – 17 Jul | Through the X block, the sit-in and Wangchuk’s fast, the videos came in a trickle. Those uploaded by 17 July drew {{beforePct}} of all the views\* <sub>[timeline_clips · computed from the YouTube clip corpus]</sub>. | 26 | new | timeline_clips.json (computed live: window.before.views / total) |
+| 2 | 18 – 21 Jul | Then police removed Wangchuk, and two days later came the march on Parliament. Videos uploaded in those four days drew {{winPct}} of all the views\* <sub>[timeline_clips · computed from the YouTube clip corpus]</sub>. | 25 | new | timeline_clips.json (window.viewsShare); the S7a callout |
 
 Hover any dot: its video, channel and views; that video’s other dots pulse. The corpus is machine-collected and stops at 21 Jul (said in the footer entry). S7b and S7c leave the reading flow (Vali to decide: cut, or an appendix).
 
-## 08 · October
+## 07 · October
 _new pinned block (replaces the S6.5 text epilogue)_
 
 - **Kicker:** October
 - **Headline** (v2 verbatim): **Count them one by one.**
-- **Dek** (v2, edited to the sources): In October the demand moved to the Election Commission, and so did the crackdown. Here every roach is one person.
+- **Dek** (v2, edited to the sources): In October the party marched again, now against the Election Commission. Amnesty says police detained thousands\* <sub>[repo_amnesty_1014 · Amnesty said]</sub>, and the published counts disagree. Here every roach is one person.
 
 | # | When | Caption | Words | Origin | Ledger |
 |---|---|---|---|---|---|
-| 1 | 2 Oct · Delhi | The first day in Delhi. Police counts climbed through the afternoon, to nearly 1,000 by evening\* <sub>[oct_theprint_1002_1000 · police said]</sub>. | 16 | v2, edited to the sources | october_counts.json oc_1002_delhi_150 → _1000 (v2’s “500+” was unattributed; corrected) |
-| 2 | 10 Oct · before the protest | Police took Dhruv Rathee from his family home in Gurugram before 8 am\* <sub>[det_oneindia_rathee_release_1011 · reported]</sub>. Minutes after their flight landed in Delhi, police detained Dipke, Das and Ranka inside the plane\* <sub>[oct_aj_1010 · reported]</sub>. | 29 | new | detentions.json rathee-2026-10-10-detention, dipke-2026-10-10 (Vali 2026-11-13: expose the dawn / on-landing detentions) |
-| 3 | 10 Oct · Delhi | The biggest day has no single number. Each red line is one published count, and each roach one person: from about 2,000, an MHA official’s\* <sub>[oct_aj_1010 · reported]</sub>, to more than 15,000, the CJP’s\* <sub>[oct_gulfnews_1010 · CJP claims]</sub>. | 31 | new | october_counts.json oc_1010_delhi_* (eight counts, eight claimants) |
-| 4 | 13 – 21 Oct | Jantar Mantar was struck off the list of permitted protest sites\* <sub>[repo_amnesty_1014 · reported]</sub>. Saurav Das and Ashutosh Ranka protested there anyway. They were held seven days in judicial custody\* <sub>[repo_amnesty_1014, thelogicalindian · reported]</sub>. | 27 | v2, edited to the sources | october_counts.json people; apparatus delhi_police[3], [4] |
-| 5 | 14 Oct | “Authorities cannot use the criminal justice system to punish people for exercising their right to peaceful assembly.” Aakar Patel, Amnesty International India\* <sub>[repo_amnesty_1014 · said]</sub> | 22 | v2 verbatim | october_counts.json quotes[0] (verbatim) |
+| 1 | 2 Oct · Delhi | On 2 October the party protested at Jantar Mantar. Police counts of those detained rose through the day: about 150\* <sub>[oct_theprint_1002_500 · police said]</sub>, then more than 700\* <sub>[oct_theprint_1002_1000, oct_theweek_1002 · police said]</sub>, then nearly 1,000\* <sub>[oct_theprint_1002_1000 · police said]</sub>. | 27 | v2, edited to the sources | october_counts.json oc_1002_delhi_150, _700, _1000 (the pen’s three counts; v2’s “500+” was unattributed; corrected) |
+| 2 | 10 Oct · before the protest | Early that morning, police took the YouTuber Dhruv Rathee from his family home in Gurugram\* <sub>[det_oneindia_rathee_release_1011 · reported]</sub>. Minutes after their flight from Mumbai landed in Delhi, police detained Dipke and the co-convenors Saurav Das and Ashutosh Ranka inside the plane\* <sub>[oct_aj_1010 · reported]</sub>. | 38 | new | detentions.json rathee-2026-10-10-detention (time disputed, 6–8 am: “early”), dipke-2026-10-10, das/ranka roles (co-convenors) (Vali 2026-11-13: expose the dawn / on-landing detentions) |
+| 3 | 10 Oct · Delhi | The biggest day has no single number. Each red line is one published count, each roach one person. An MHA official put it at about 2,000\* <sub>[oct_aj_1010 · reported]</sub>; PTI reported police detained nearly 7,000\* <sub>[oct_fpj_1011 · reported]</sub>; the CJP claims more than 15,000\* <sub>[oct_gulfnews_1010 · CJP claims]</sub>. | 38 | new | october_counts.json oc_1010_delhi_2000_mha, _7000_pti, _cjp_15000 (the three tones of the fill; all eight lines are labelled on screen) |
+| 4 | 13 – 21 Oct | Police struck Jantar Mantar off the list of protest sites\* <sub>[repo_amnesty_1014 · reported]</sub>. On 13 October Das and Ranka tried to protest there. After seven days in judicial custody they were freed, promising not to call protests there while it stays de-listed\* <sub>[thelogicalindian · reported]</sub>. | 39 | v2, edited to the sources | apparatus delhi_police[3], [4]; october_counts.json people (7 days in judicial custody); epilogue_october 21 Oct (thelogicalindian: undertaking while de-notified) |
+| 5 | 14 Oct | “Authorities cannot use the criminal justice system to punish people for exercising their right to peaceful assembly.” Aakar Patel, chair of the board, Amnesty International India\* <sub>[repo_amnesty_1014 · said]</sub> | 26 | v2 verbatim | october_counts.json quotes[0] (verbatim; role “Chair of Board, Amnesty International India”) |
 
-## 09 · Why they marched
+## 08 · Why they marched
 _new pinned block_
 
 - **Kicker:** Why they marched in October
 - **Headline** (v2 verbatim): **Find yourself on the roll.**
-- **Dek** (v2, edited to the sources): Below are a hundred people registered to vote in 2024. One of them is you.
+- **Dek** (v2, edited to the sources): The October marches were over the Election Commission’s revision of the voter rolls. Below are a hundred people registered to vote in 2024. One of them is you.
 
 | # | When | Caption | Words | Origin | Ledger |
 |---|---|---|---|---|---|
-| 1 | Pick one | Click any name. That’s you, registered to vote in 2024. | 10 | v2, edited to the sources | — |
+| 1 | Pick one | Click any entry. That’s you, registered to vote in 2024. | 10 | v2, edited to the sources | — (the entries are numbered, not named: h-roll.js) |
 | 2 | The revision | The revision has removed more than 130 million names from draft rolls so far\* <sub>[repo_aljazeera_1008 · reported]</sub>. Against the 2024 roll\* <sub>[fpj_0209_9688 · ECI said]</sub>, that is about 13 in every 100. | 25 | v2, edited to the sources | voter_roll.json vr_removed_130m, vr_denominator_2024, ratio |
-| 3 | At scale | Now each mark is 100,000 voters: 9,688 of them. 1,300 are struck off. | 13 | v2, edited to the sources | same, ÷ 100,000 |
-| 4 | The Commission | The Commission says it removes only voters who died, moved, were listed twice or can’t be traced\* <sub>[reuters_0109_explainer · ECI said]</sub>. Two of its own commissioners objected at least 14 times in ten months\* <sub>[repo_aljazeera_1002 · reported]</sub>. | 30 | v2, edited to the sources | voter_roll.json vr_eci_reasons, vr_commissioners_14 |
+| 3 | At scale | Now each mark is 100,000 voters, and the 2024 roll is 9,688 marks\* <sub>[fpj_0209_9688 · ECI said]</sub>. The revision has struck off 1,300 of them\* <sub>[repo_aljazeera_1008 · reported]</sub>. | 21 | v2, edited to the sources | same, ÷ 100,000 (96,88,21,926 → 9,688 marks; 130 million → 1,300) |
+| 4 | The Commission | The Commission says it removes only voters who have died, moved, are listed twice or can’t be traced\* <sub>[reuters_0109_explainer · ECI said]</sub>. Two of its own commissioners formally objected to revision decisions at least 14 times in ten months\* <sub>[repo_aljazeera_1002 · reported]</sub>. | 35 | v2, edited to the sources | voter_roll.json vr_eci_reasons, vr_commissioners_14 |
 
-## 10 · The apparatus
+## 09 · The apparatus
 _new anime.js scene (replaces the S7d spokes): the cage, a radial calendar of every documented action_
 
 - **Kicker:** 21 May – 13 Oct
 - **Headline** (v2 verbatim): **Thirteen hands on one protest.**
-- **Dek** (new): Every documented action against the movement, on a calendar that runs clockwise from 21 May. Red bars restrict. Courts are dashed: white where they restored, red where they restricted.
+- **Dek** (new): Every documented action by the state, on a calendar that runs clockwise from 21 May. Red bars restrict. Court bars are dashed: white where judges restored, red where they restricted. Grey marks the Election Commission.
 
 Hover a bar for its record; hover a body in the list to light its bars. The Election Commission is drawn grey, a trigger rather than a restriction (GAPS, open): Vali to decide whether the headline stays “Thirteen hands”.
 

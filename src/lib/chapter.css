@@ -12,7 +12,8 @@
 .hy-title .dek { font: var(--w-regular) var(--fs-lead)/1.5 var(--font-text); color: var(--muted); max-width: calc(7 * var(--g-col) + 6 * var(--g-gut)); margin: 0; }
 .hy-title .dek .star { pointer-events: auto; }
 
-.hy-lock { position: absolute; left: var(--hud-inset); top: var(--hud-inset); z-index: 20; pointer-events: none; }
+.hy-lock { display: none !important; }   /* Vali 2026-11-13 (review 3): no docked titles, they crowded the scenes */
+.hy-lock-off { position: absolute; left: var(--hud-inset); top: var(--hud-inset); z-index: 20; pointer-events: none; }
 .hy-lock h2 { font: 400 34px/1.05 var(--font-display); margin: 6px 0 0; color: var(--fg); white-space: nowrap; }
 .hy-lock.boxed { background: var(--bg); border: var(--rule) solid var(--fg); padding: 10px 14px 12px; }
 

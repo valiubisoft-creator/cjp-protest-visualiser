@@ -1,33 +1,17 @@
-// Halftone backdrop. Promoted from design/lib/kit.js in F3, no behaviour change.
-import { rng } from './rng.js';
+// The backdrop texture. Was a 45° halftone dot screen (F3); since hybrid 2026-11-13 it is grunge / splattered paint
+// (lib/grunge.js), at the client's request. The name and signature stay so no caller changes.
+//   cell, maxR, jitter   kept for compatibility (ignored by the paint texture)
+//   bias                 < 0 thins the paint (fewer splats, scuffs, scratches), > 0 adds; −0.08 ≈ 70 %
+//   scale                the stain field's feature size, relative to the old 0.006 default
+// The seed is salted with the owning scene's id (data-scene), so each chapter gets its own splats (still deterministic:
+// same scene, seed and size → same pixels).
+import { grunge } from './grunge.js';
 import { alive } from './alive.js';
 
-const TAU = Math.PI * 2;
+const salt = s => { let h = 2166136261; for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 16777619); return h >>> 0; };
 
-// ── halftone: noise field thresholded into a 45° dot screen, jittered radius (spec §5) ──
-function valueNoise(r) {
-  const G = 64, g = Array.from({ length: G * G }, r);
-  const at = (x, y) => g[((y % G + G) % G) * G + ((x % G + G) % G)];
-  const sm = t => t * t * (3 - 2 * t);
-  return (x, y) => {
-    const xi = Math.floor(x), yi = Math.floor(y), xf = sm(x - xi), yf = sm(y - yi);
-    const a = at(xi, yi), b = at(xi + 1, yi), c = at(xi, yi + 1), d = at(xi + 1, yi + 1);
-    return a + (b - a) * xf + (c - a) * yf + (a - b - c + d) * xf * yf;
-  };
-}
 export function halftone(ctx, w, h, { seed = 7, cell = 7, maxR = 0.42, jitter = 0.15, ink = 'rgba(0,0,0,.075)', scale = 0.006, bias = 0, grain = true } = {}) {
-  const r = rng(seed), n = valueNoise(r);
-  ctx.save(); ctx.fillStyle = ink;
-  const diag = Math.hypot(w, h), cs = Math.SQRT1_2;
-  for (let v = -diag; v < diag; v += cell) for (let u = -diag; u < diag; u += cell) {
-    const x = (u - v) * cs + w / 2, y = (u + v) * cs + h / 2;   // 45° screen
-    if (x < -cell || y < -cell || x > w + cell || y > h + cell) continue;
-    const t = Math.min(1, Math.max(0, n(x * scale * 8, y * scale * 8) * 1.15 - 0.2 + bias));
-    const rr = cell * maxR * t * (1 + (r() - .5) * 2 * jitter);
-    if (rr < .35) continue;
-    ctx.beginPath(); ctx.arc(x, y, rr, 0, TAU); ctx.fill();
-  }
+  const id = ctx.canvas?.closest?.('[data-scene]')?.dataset.scene || '';
+  grunge(ctx, w, h, { seed: (seed ^ salt(id)) >>> 0, ink, density: Math.max(.2, 1 + bias * 4), scale: .006 / scale, grain });
   if (ctx.canvas) alive(ctx.canvas, { cell, ink });   // the living layer above it (lib/alive.js; off under ?still)
-  if (grain) { for (let i = 0; i < w * h / 90; i++) { ctx.globalAlpha = r() * .35; ctx.fillRect(r() * w, r() * h, 1, 1); } }
-  ctx.restore();
 }

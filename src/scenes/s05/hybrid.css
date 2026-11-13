@@ -1,6 +1,6 @@
 /* S5 · hybrid mode (build/hybrid, Vali 2026-11-13). Tokens only. The rail panel is not used. */
 .s5.hy .s5-rail { display: none; }
-.s5.hy .s5-hud { top: calc(var(--hud-inset) + 94px * var(--s5h-dock, 0)); }   /* docks under the chapter lockup during the lead-in (S4's HUD is at the inset: handover) */
+.s5.hy .s5-hud { top: var(--hud-inset); }   /* no lockup to dock under (review 3); S4's HUD is at the inset too: handover */
 .s5.hy .s5-lab.police { display: none !important; }               /* ≤ 3 labels per beat: no per-hour police strength labels */
 .s5.hy .hy-title { z-index: 22; }
 .s5.hy .hy-lock { z-index: 21; }

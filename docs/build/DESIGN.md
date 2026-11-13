@@ -32,7 +32,7 @@ Inspired by the Electronic Frontier Foundation's look: a stark, poster-like syst
 Rules:
 - Red is used sparingly, for meaning only. Big red areas are reserved for major beats (the click, the 20 Jul crackdown, Victory).
 - Black roaches on white paper is the default stage, as the spec recommends. Black full-bleed stages are allowed for dramatic beats.
-- The halftone backdrop is black dots on white at low contrast. Behind text it must stay faint enough for WCAG AA.
+- The backdrop is a grunge, splattered-paint texture (`src/lib/grunge.js`, Vali 2026-11-13, review 3; it replaced the halftone dots) in the `--ht-ink` token at low contrast, with a slow living layer (`src/lib/alive.js`). Behind text it must stay faint enough for WCAG AA.
 - Red text on black, and red body text on white, must pass AA. Use `--red-deep` for small red text on white.
 - Charts are black and grey series with red highlights only. No rainbow palettes. Claimant colours are distinguished by pattern or shade (solid, hatched, outline), not by new hues.
 

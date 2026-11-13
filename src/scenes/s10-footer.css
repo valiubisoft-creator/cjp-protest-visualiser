@@ -4,7 +4,7 @@
    Long material (references, image credits) lives in native <dialog> modals. */
 .s10 { --s10-m: var(--g-m, clamp(96px, 8.333vw, 160px)); --s10-g: var(--g-gut, 24px); background: var(--bg); color: var(--fg); }
 .s10-in { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--s10-g); align-items: start;
-  margin: 0 var(--s10-m); padding: var(--s-8) 0 var(--s-9); border-top: var(--rule-heavy) solid var(--fg); }
+  margin: 0 var(--s10-m); padding: var(--s-6) 0 var(--s-6); border-top: var(--rule) solid var(--rule-c); }   /* review 3: tighter */
 .s10 h2 { margin: 0 0 var(--s-4); font: var(--w-bold) var(--fs-h2)/1.1 var(--font-text); }
 .s10 p, .s10 li, .s10 dd { font-size: 14px; line-height: 1.5; margin: 0 0 var(--s-3); }
 .s10 a { color: inherit; text-decoration: underline; text-decoration-color: var(--rule-c); text-underline-offset: 2px; }
@@ -14,12 +14,13 @@
 .s10-k { color: var(--muted); margin: var(--s-5) 0 var(--s-2) !important; }
 
 /* disclaimer: cols 1–7, the readable column */
-.s10-disc { grid-column: 1 / 8; }
-.s10-disc p { font-size: var(--fs-small); line-height: 1.55; max-width: 68ch; text-wrap: pretty; }
+.s10-disc { grid-column: 1 / 9; columns: 2; column-gap: var(--s10-g); }   /* review 3: two text columns, half the height */
+.s10-disc h2 { column-span: all; }
+.s10-disc p { font-size: 13px; line-height: 1.5; text-wrap: pretty; break-inside: avoid; }
 .s10-disc p:last-child { margin-bottom: 0; }
 
 /* side: cols 9–12 */
-.s10-side { grid-column: 9 / 13; }
+.s10-side { grid-column: 10 / 13; }
 .s10-side > .s10-k:first-child { margin-top: 0 !important; }
 .s10-me { font-size: var(--fs-small) !important; font-weight: var(--w-bold); margin-bottom: var(--s-5) !important; }
 .s10-btns { display: grid; row-gap: var(--s-3); margin-bottom: var(--s-6); }

@@ -2,12 +2,12 @@
 .s2-spawn { position: absolute; margin: 0; pointer-events: none; display: flex; flex-direction: column; align-items: center; text-align: center; }
 .s2-spawn[hidden] { display: none; }
 .s2-face { display: block; width: var(--face); height: var(--face); border-radius: 50%; object-fit: cover; object-position: 50% 25%;
-  border: 2px solid var(--fg); background: var(--surface); }
+  border: 2px solid var(--fg); background: var(--surface); filter: grayscale(1) contrast(1.08); }   /* black and white (Vali 2026-11-13) */
 .s2-spawn figcaption { margin-top: var(--s-4); }
 .s2-spawn .s2-attr { margin-top: var(--s-2); }
 .s2-spawn p { margin: 0; }
 .s2-label { font: var(--w-regular) var(--fs-h2)/1.2 var(--font-text); white-space: nowrap; }
 .s2-label b { font-weight: var(--w-bold); }
 .s2-attr { margin-top: var(--s-2); color: var(--muted); }
-.s2-credit { margin-top: var(--s-1); color: var(--muted); font: var(--w-regular) var(--fs-micro)/1.35 var(--font-text); }
+.s2-credit { margin-top: var(--s-1); color: var(--muted); font: var(--w-regular) var(--fs-micro)/1.35 var(--font-text); white-space: normal; max-width: 34em; margin-inline: auto; }   /* wraps instead of running off-screen */
 .s2-spawn .star { pointer-events: auto; }

@@ -17,18 +17,19 @@ import { createChapter, captionHTML } from '../../lib/chapter.js';
 import { grid } from '../../lib/grid.js';
 
 export const HY = {
-  start: [['title:street', 50], ['start', 90, { cap: ['street', 0], labels: ['jantar_mantar_road'] }]],
+  // review 3 (Vali 2026-11-13): no title card before the map (it read as arbitrary); the street chapter opens on the map
+  start: [['start', 140, { cap: ['street', 0], labels: ['jantar_mantar_road'] }]],
   protest: [['protest_2a', 90, { cap: ['street', 1], labels: ['jantar_mantar_road'] }]],
   wangchuk: [['wangchuk_day1', 90, { cap: ['street', 2], labels: ['jantar_mantar_road'] }]],
   detention: [['detention_0718', 90, { cap: ['street', 3], labels: ['jantar_mantar_road', 'safdarjung_hospital'] }]],
   protest_arrest: [
-    ['title:july', 50],
+    ['title:july', 80],                          // 80 vh: the card in the first 62.5%, then ~30 vh of map before the first caption
     ['0720_0900', 110, { cap: ['july', 0], labels: ['jantar_mantar_road'], notes: ['signal', 'metro'] }],
     ['0720_1430', 110, { cap: ['july', 1], labels: ['metro_patel_chowk', 'parliament_street'], notes: ['signal'] }],
     ['0720_1730', 110, { cap: ['july', 2], labels: ['rml_hospital', 'jantar_mantar_road'], notes: ['signal'] }],
     ['pa_0723', 110, { cap: ['july', 3], labels: ['jantar_mantar_road'], notes: ['order'],
       sites: ['jantar_mantar_road', 'metro_rajiv_chowk', 'metro_central_secretariat', 'parliament_circle', 'metro_udyog_bhawan'] }],
-    ['title:ledgers', 50, { camera: 'pa_0720' }],
+    ['title:ledgers', 80, { camera: 'pa_0720' }],
     ['ledger:0', 100, { camera: 'pa_0720', cap: ['ledgers', 0] }],
     ['ledger:1', 100, { camera: 'pa_0720', cap: ['ledgers', 1] }],
     ['ledger:2', 100, { camera: 'pa_0720', cap: ['ledgers', 2] }],
@@ -56,10 +57,12 @@ const LEDGERS = [
 
 export function createHybrid({ host, model, data, pts }) {
   const src = data.byId.source, B = model.beats;
-  const chapters = ['street', 'july', 'ledgers'].map(id => {
-    const t = B.find(b => b.hy?.chapter === id);
+  // chapters with an opening card (street has none since review 3). The card plays in the first 62.5% of its 80 vh beat;
+  // the rest is a gap (the map alone) before the chapter's first caption (Vali: "sufficient gaps")
+  const chapters = ['july', 'ledgers'].map(id => {
+    const t = B.find(b => b.hy?.chapter === id), L = t.b - t.a;
     const last = [...B].reverse().find(b => b.hy?.cap?.[0] === id);
-    return { id, t, last, c: createChapter(host, id, data, { title: [t.a, t.a + (t.b - t.a) * .3, t.b - (t.b - t.a) * .25, t.b], lock: { boxed: true } }) };
+    return { id, t, last, c: createChapter(host, id, data, { title: [t.a, t.a + L * .19, t.a + L * .47, t.a + L * .625], lock: { boxed: true } }) };
   });
   // caption cards: one per captioned beat
   const cards = B.map(b => {
@@ -70,10 +73,10 @@ export function createHybrid({ host, model, data, pts }) {
   });
   // notes (DOM tags) and the ledger layer
   host.insertAdjacentHTML('beforeend', `<svg class="s5h-zone" aria-hidden="true"></svg>
-    <div class="s5h-tag red sig" aria-hidden="true">No mobile internet, 9.23 am.<br>No order published.</div>
+    <div class="s5h-tag red sig" aria-hidden="true">Mobile internet down, 9.23 am${star(['tribuneindia'], src, 'reported')}<br>No order published${star(['repo_iff_central_delhi'], src, 'IFF said')}</div>
     <div class="s5h-tag ill sig-ill" aria-hidden="true">Zone illustrative: no source maps the cut</div>
-    <div class="s5h-tag red ord" aria-hidden="true">Ordered in writing: no mobile internet<br>within 1.5 km, 9.30 am to 4 pm${star(['repo_isoc_0723'], src, 'reported')}</div>
-    <div class="s5h-tag metro" aria-hidden="true">Metro: five stations<br>shut by 9 am${star(['theprint', 'theweek_0720'], src, 'officials said')}</div>
+    <div class="s5h-tag red ord" aria-hidden="true">Home Ministry order: no mobile internet<br>within 1.5 km, 9.30 am to 4 pm${star(['repo_isoc_0723'], src, 'reported')}</div>
+    <div class="s5h-tag metro" aria-hidden="true">Metro: five stations<br>shut before 9.15 am${star(['theprint', 'theweek_0720'], src, 'officials said')}</div>
     <div class="s5h-veil" aria-hidden="true"></div><div class="s5h-ledgers"></div>`);
   const q = s => host.querySelector(s);
   const el = { zone: q('.s5h-zone'), sig: q('.s5h-tag.sig'), sigI: q('.s5h-tag.sig-ill'), ord: q('.s5h-tag.ord'), metro: q('.s5h-tag.metro'), veil: q('.s5h-veil'), led: q('.s5h-ledgers') };
@@ -85,7 +88,7 @@ export function createHybrid({ host, model, data, pts }) {
   const textW = (t, px, wt) => { mctx.font = `${wt} ${px}px ${getComputedStyle(document.documentElement).getPropertyValue('--font-ui') || 'sans-serif'}`; return mctx.measureText(t).width; };
   function buildLedgers() {
     // on the grid (Vali 2026-11-13): row names in columns 1–2, scales in 3–8, the caption in 9–12. Labels never cross col 8
-    const G = grid(W), X0 = Math.round(G.x(2) + 12), RX = Math.round(G.end(7)), X1 = RX - 16, Y0 = Math.round(H * .33), DY = Math.round(H * .205), lw = W < 1400 ? 128 : 170;
+    const G = grid(W), X0 = Math.round(G.x(2) + 12), RX = Math.round(G.end(7)), X1 = RX - 16, Y0 = Math.round(H * .31), DY = Math.round(H * .195), lw = W < 1400 ? 128 : 170;
     for (const c of host.querySelectorAll('.s5h-cap.ledger')) Object.assign(c.style, { left: Math.round(G.x(8)) + 'px', right: 'auto', width: Math.round(G.span(4)) + 'px' });
     let svg = `<svg width="${W}" height="${H}" class="s5h-lsvg"><defs><pattern id="s5h-hatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="4" fill="#FAFAF7"/></pattern></defs>`;
     let html = '';
@@ -123,7 +126,8 @@ export function createHybrid({ host, model, data, pts }) {
       }
       svg += '</g>';
     });
-    html += `<div class="lkey" style="left:${Math.round(G.m)}px"><span><i class="st"></i>what the state said</span><span><i class="rec"></i>what a record shows</span><span><i class="mv"></i>what the movement said</span></div>`;
+    // the key sits under the last row's lower labels (two lines max), not at a fixed bottom offset (1280×720 overlap)
+    html += `<div class="lkey" style="left:${Math.round(G.m)}px;top:${Y0 + (LEDGERS.length - 1) * DY + 80}px;bottom:auto"><span><i class="st"></i>what the state said</span><span><i class="rec"></i>what a record shows</span><span><i class="mv"></i>what the movement said</span></div>`;
     el.led.innerHTML = svg + '</svg>' + html;
     // one paused timeline over the ledger region: row k's axis, label and dots arrive during ledger beat k
     L0 = lt.a; L1 = lb.at(-1).b;

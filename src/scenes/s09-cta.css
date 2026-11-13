@@ -2,7 +2,7 @@
    S10 uses (shell.css --g-m outer margin, --g-gut gutters): label cols 3–10, two equal buttons 3–6 and 7–10.
    Roaches only in the margins. */
 .s9 { --s9-m: var(--g-m, clamp(96px, 8.333vw, 160px)); position: relative; overflow: hidden; background: var(--bg); color: var(--fg); }
-.s9-back { position: absolute; inset: 0; display: block; pointer-events: none; }
+.s9-back, .s9-roach { position: absolute; left: 0; top: 0; display: block; pointer-events: none; }
 .s9-in { position: absolute; left: var(--s9-m); right: var(--s9-m); top: 50%; transform: translateY(-50%);
   display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--g-gut, 24px); row-gap: var(--s-4); }
 .s9-l { grid-column: 3 / 11; margin: 0; color: var(--muted); text-align: center; }

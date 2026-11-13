@@ -1,0 +1,72 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1280x720",
+ "targets": "docs/build/scenes/targets/S6.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S6-0",
+   "at": "S6:0",
+   "frame": null,
+   "ok": true,
+   "y": 21024,
+   "current": "S6",
+   "p": 0,
+   "live": "S6@0.000",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S6-0.85",
+   "at": "S6:0.85",
+   "frame": "S6",
+   "ok": true,
+   "y": 22615,
+   "current": "S6",
+   "p": 0.8499,
+   "live": "S6@0.850",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 85,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S6-0.85",
+   "at": "S6:0.85",
+   "frame": "S6",
+   "ok": true,
+   "y": 22615,
+   "current": "S6",
+   "p": 0.8499,
+   "live": "S6@0.850",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S6-0",
+   "at": "S6:0",
+   "frame": null,
+   "ok": true,
+   "y": 21024,
+   "current": "S6",
+   "p": 0,
+   "live": "S6@0.000",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 87,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}
