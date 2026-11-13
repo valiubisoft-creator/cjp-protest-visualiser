@@ -45,7 +45,7 @@ const pct = x => Math.round(x * 100) + '%';
 const fmtIN = n => Math.round(n).toLocaleString('en-IN');
 
 export default def => {
-  let ctx, m, dots, days, preDays, winDays, from, tl, chapter, srcStar, rangeTxt;
+  let ctx, m, dots, days, preDays, winDays, from, tl, chapter, srcStar, rangeTxt, viewsTo;
   const el = {}, col = {};
   let W = 0, H = 0, L = null, dirty = true, lastP = 0, ms = 0, hover = null, pulseT = 0;
   const hs = { k: 0 };                                   // hover pulse 0 → 1 (one anime tween for all of a video's dots)
@@ -65,6 +65,10 @@ export default def => {
     for (const o of q) for (let i = 0; i < o.n; i++) dots.push({ clip: o.c, day: istDay(o.c.date), r: 0, x: 0, y: 0 });
     dots.sort((a, b) => a.clip.date.localeCompare(b.clip.date));
     for (const d of dots) d.n = q.find(o => o.c === d.clip).n;
+    // the counter reads exact view shares (not lit dots ÷ 1,000, which round differently from the captions): before the
+    // window, all uploads so far; from the window's first day, the window's uploads so far, landing on its share
+    // (UX review 2026-11-13: one number per fact, and never 100% then 93%)
+    viewsTo = (d, a = '') => clips.reduce((t, c) => { const cd = istDay(c.date); return t + (cd >= a && cd <= d ? c.views : 0); }, 0) / total;
     from = m.window.from; days = m.series.map(x => x.d);
     preDays = days.filter(d => d < from); winDays = days.filter(d => d >= from);
     const to = m.window.to;
@@ -172,12 +176,12 @@ export default def => {
   }
   function ticker() {
     const hold = lastP >= RUN[1], fa = seg(lastP, FADE[0], FADE[1]);
-    const d = dateAt(ms), lit = dots.reduce((a, o) => a + (o.r > .5), 0) / N;
+    const d = dateAt(ms), inWin = d >= from, lit = inWin ? Math.min(m.window.viewsShare, viewsTo(d, from)) : viewsTo(d);
     el.big.style.opacity = el.tick.style.opacity = fa.toFixed(3);
     el.big.style.visibility = el.tick.style.visibility = fa > .001 ? '' : 'hidden';
     el.date.textContent = hold ? rangeTxt : fmtDate(d);
     el.val.textContent = pct(hold ? m.window.viewsShare : lit);
-    el.lab.textContent = hold ? 'of all the views, from videos uploaded in those four days' : 'of all the views, from videos uploaded so far';
+    el.lab.textContent = hold ? 'of all the views, from videos uploaded in those four days' : inWin ? `of all the views, from videos uploaded since ${fmtDate(from)}` : 'of all the views, from videos uploaded so far';
     el.big.classList.toggle('hold', hold);
     el.mark.setAttribute('transform', `translate(${L.tx(Math.max(0, days.indexOf(hold ? days.at(-1) : d))).toFixed(1)},0)`);
   }

@@ -7,6 +7,7 @@ import { loadStory } from './data/load.js';
 import { buildBudget } from './scroll/budget.js';
 import { createController } from './scroll/controller.js';
 import { createSwarm } from './roach/swarm.js';
+import { mountProgress } from './lib/progress.js';
 
 const params = new URLSearchParams(location.search);
 history.scrollRestoration = 'manual';
@@ -31,7 +32,8 @@ const controller = createController({
   shared: { data, swarm: createSwarm() },   // swarm: the prologue's shared pool (S0–S4); other scenes ignore it
 });
 await controller.start();
-window.__v3 = controller;   // QA harness and console: __v3.state(), __v3.seek('S4', .6), __v3.yFor(…), __v3.trace
+window.__v3 = controller;
+mountProgress(controller);   // the reading-progress bar (Vali 2026-11-13)   // QA harness and console: __v3.state(), __v3.seek('S4', .6), __v3.yFor(…), __v3.trace
 
 // deep link: ?p=S4:0.6
 const deep = params.get('p');

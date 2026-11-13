@@ -1,7 +1,7 @@
 {
  "scene": "S8",
  "brief": "docs/build/scenes/S8-S10.md",
- "note": "Vali's review 2026-11-12: Ambedkar only (quotes.json selected), typed like a typewriter, pure in p. One 160 vh scene, S8a. Rule draws 0-0.08; typing 0.08-0.70 (roach walks the rule in step); attribution fades in 0.72-0.80; hold; fade out 0.92-1.",
+ "note": "Vali's review 2026-11-12: Ambedkar only (quotes.json selected), typed like a typewriter, pure in p. One 160 vh scene, S8a. Rule draws 0-0.08; typing 0.08-0.70 (roach walks the rule in step); attribution fades in 0.72-0.80; hold; fade out 0.92-1. Hybrid (Vali 2026-11-13): the quote is set in Protest Revolution on 10 of 12 grid columns; attribution in Public Sans.",
  "targets": [
   {"name": "S8a-0.3", "at": "S8a:0.3", "expect": "Ambedkar quote mid-typing (about a third typed, red caret on the last typed character), centred, no role label; the rule drawn, the roach part-way along it; no attribution yet."},
   {"name": "S8a-0.8", "at": "S8a:0.8", "expect": "Quote fully typed, no caret; roach at rest on the rule; author, work and source shown. No role label, no year."}

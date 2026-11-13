@@ -94,9 +94,14 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
 - `src/lib/map.js`: promoted `mapSVG/anchorXY/fitSites` (kit re-exports; storyboard byte-identical to HEAD) + `fitCam` (optional per-side pads), `interpolateZoom` (hand-rolled van Wijk), canvas `drawMap`.
 
 **Hybrid contracts (build/hybrid, 2026-11-13; supersede the v3 running order on this branch).**
-- **Running order** (`budget.js`): S0–S3.5 · **NEET 200** · **HELD 240** · S4 180 · **S5 1,370** · S6 260 · **WATCH 260** · **OCT 500** · **ROLL 380** · **CAGE 340** · S8a 160 · **CLOSE 140** · S9 100 · S10.
-  - S6.5, S7a–c and S7d are out of the flow; their files stay.
-  - `main` block: 3,140 vh incl. scroll-away. Whole piece: ≈ 5,620 vh + S10.
+- **Running order** (`budget.js`): S0–S3.5 · **NEET 200** · **HELD 240** · S4 180 · **S5 1,370** · S6 260 · **WATCH 260** · **OCT 500** · **ROLL 380** · **CAGE 340** · S8a 160 · S9 100 · S10.
+  - S6.5, S7a–c, S7d and (review 2) CLOSE are out of the flow; their files stay.
+  - `main` block: 3,140 vh incl. scroll-away. Whole piece: ≈ 5,380 vh + S10.
+- **Layout grid (review 2):** 12 columns inside an outer margin `--g-m` = 8.333% of the width clamped to 96–160 px, 24 px gutters (`src/shell.css` :root; `src/lib/grid.js` mirrors it in px). Content sits in columns 1–8; the caption column stays at the right inset (24 px, 360 wide) and the lockup at the top-left inset. Opening cards, NEET, HELD, the ledgers, the OCT quote, S8a, S9 and S10 are on it.
+- **Opening cards (review 2):** `createChapter` adds `.hy-open`, a full-bleed page-colour card behind the title (in with the kicker, out as the title docks), so each chapter opens on its own frame. p 0 of every chapter is unchanged (card alpha 0), so the handovers hold.
+- **Living halftone (review 2):** `src/lib/alive.js`. `halftone()` and the prologue backdrop register their canvas; a sibling `.ht-live` canvas above it animates slow dots (appear, drift, fade; some erase). Idle-only, ~30 fps, only while on screen; never drawn under `?still` or reduced motion, so QA frames and handovers are unaffected.
+- **Reading progress (review 2):** `src/lib/progress.js`, a 3 px bar on the window's top edge with a notch at each chapter start (shell UI, mounted in `main.js`).
+- **Footer (review 2):** S10 is compact: the disclaimer always visible; References and map/image credits in `<dialog>` modals; methodology and caveats in `<details>`. Any `a.star` click opens References on its entry without scrolling the page (`id="src-N"` kept).
 - **Copy:** `src/data/copy.js` is the one source for every chapter headline, dek and caption (`{*ids|claimant}` star tokens, `{{var}}` slots). `docs/build/hybrid/COPY.md` is generated from it (`tools/hybrid/copy-md.mjs`).
 - **Chapter chrome:** `src/lib/chapter.js/.css`, `createChapter(host, id, data, { title: [in0, in1, out0, out1], caps: [[k, a, b]], lock, vars })`.
   - Title card: words rise in a seeked anime.js timeline, the headline stays on one line (fitted lazily on the first visible frame), then the card docks to a top-left lockup.
@@ -338,4 +343,4 @@ Changes from spec §6: S3.5 added (160); S5 880 → 810 (Victory node removed); 
     - `qa-shell`: ALL PASS (18 scenes, 77/77 deep links).
     - The v3 targets for removed or re-cut scenes moved to `targets/v3-retired/`.
   - `.gitignore`: raw down/up shots, dev `shots/` and compare sheets under `qa/hybrid` (as for `qa/v3`).
-
+- 2026-11-13 (hybrid, review 2, Vali): chapter openings get their own full-bleed card; Mumbai beat cut from OCT and the Amnesty quote stands alone; HELD notice centred; ledgers on the grid with collision-free labels (caption no longer over the scales); Victory roaches drift and fade back after the date; CLOSE out of the flow; S8a quote in Protest Revolution; S9 follow-only (share row removed); S10 compact (accordions + modals); 12-column grid; living halftone; reading-progress bar. From the UX review agent: WATCH counter reads exact view shares (7% matches the caption; climbs to 93% for the window, never 100%), HELD tally parks on Day 9 under the 29 May caption, NEET sheet and HELD boxes clear of the caption column at 1280, stars ≥ 12 px with a 24 px hit box.

@@ -1,16 +1,15 @@
-/* S9 · Follow and share. Hybrid restyle (Vali 2026-11-13): one centred column on an 8 px grid; two equal follow buttons
-   with icons; the share row on the same width below; labels above each group. Roaches only in the margins. */
-.s9 { position: relative; overflow: hidden; background: var(--bg); color: var(--fg); }
+/* S9 · Follow the CJP. Hybrid (Vali 2026-11-13): follow buttons only (no share row), centred on the 12-column grid
+   S10 uses (shell.css --g-m outer margin, --g-gut gutters): label cols 3–10, two equal buttons 3–6 and 7–10.
+   Roaches only in the margins. */
+.s9 { --s9-m: var(--g-m, clamp(96px, 8.333vw, 160px)); position: relative; overflow: hidden; background: var(--bg); color: var(--fg); }
 .s9-back { position: absolute; inset: 0; display: block; pointer-events: none; }
-.s9-in { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(640px, calc(100% - 2 * var(--s-9)));
-  display: grid; grid-template-columns: 1fr; row-gap: var(--s-4); }
-.s9-l { margin: 0; color: var(--muted); }
-.s9-l + .s9-handles, .s9-l + .s9-share { margin-top: calc(-1 * var(--s-1)); }
-.s9-share + .s9-toast { margin-top: calc(-1 * var(--s-2)); }
-.s9-handles { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); margin-bottom: var(--s-7); }
-.s9-h, .s9-b { box-sizing: border-box; }
-.s9-h { display: grid; grid-template-columns: 24px 1fr; column-gap: var(--s-4); align-items: center; height: 72px; padding: 0 var(--s-5);
-  border: 2px solid var(--fg); color: var(--fg); background: var(--bg); text-decoration: none; border-radius: var(--radius); }
+.s9-in { position: absolute; left: var(--s9-m); right: var(--s9-m); top: 50%; transform: translateY(-50%);
+  display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--g-gut, 24px); row-gap: var(--s-4); }
+.s9-l { grid-column: 3 / 11; margin: 0; color: var(--muted); text-align: center; }
+.s9-handles { grid-column: 3 / 11; display: grid; grid-template-columns: subgrid; row-gap: var(--s-4); }
+.s9-h { grid-column: span 4; box-sizing: border-box; display: grid; grid-template-columns: 24px minmax(0, 1fr); column-gap: var(--s-4); align-items: center;
+  height: 72px; padding: 0 var(--s-5); border: 2px solid var(--fg); color: var(--fg); background: var(--bg); text-decoration: none; border-radius: var(--radius); }
+.s9-h:only-child { grid-column: 3 / 7; }
 .s9-ico { display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; }
 .s9-ht { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .s9-ht b { font: var(--w-bold) var(--fs-micro)/1.2 var(--font-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
@@ -18,11 +17,3 @@
 .s9-h:hover { background: var(--fg); color: var(--bg); }
 .s9-h:hover .s9-ht b { color: inherit; }
 .s9-h:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-.s9-share { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: var(--s-3); }
-.s9-b { display: flex; align-items: center; justify-content: center; height: 48px; padding: 0 var(--s-3); font: var(--w-bold) var(--fs-small)/1 var(--font-text);
-  border: 2px solid var(--fg); background: transparent; color: var(--fg); text-decoration: none; cursor: pointer; border-radius: var(--radius); white-space: nowrap; }
-.s9-b:hover { background: var(--fg); color: var(--bg); }
-.s9-b:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-.s9-b.primary { background: var(--accent); border-color: var(--accent); color: var(--white); }
-.s9-b.primary:hover { background: var(--red-deep); border-color: var(--red-deep); }
-.s9-toast { min-height: 1.3em; margin: 0; color: var(--fg); }

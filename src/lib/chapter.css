@@ -4,11 +4,12 @@
 .hy-kick { font: var(--w-bold) var(--fs-micro)/1.3 var(--font-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0; }
 .hy-kick .n { color: var(--accent-text); margin-right: .9em; }
 
-.hy-title { position: absolute; left: 120px; right: 120px; top: 50%; transform: translateY(-50%); pointer-events: none; z-index: 20; }
+.hy-open { position: absolute; inset: 0; background: var(--bg); z-index: 19; pointer-events: none; visibility: hidden; }   /* the opening card: its own scene (Vali 2026-11-13) */
+.hy-title { position: absolute; left: var(--g-m); right: var(--g-m); top: 50%; transform: translateY(-50%); pointer-events: none; z-index: 20; }
 .hy-title h2 { font: 400 var(--fs-d1)/1.06 var(--font-display); margin: 18px 0 0; color: var(--fg); white-space: nowrap; }
 .hy-title h2 .w { display: inline-block; }
 .hy-title .rule { width: 84px; height: var(--rule-heavy); background: var(--accent); margin: 30px 0 26px; transform-origin: 0 50%; }
-.hy-title .dek { font: var(--w-regular) var(--fs-lead)/1.5 var(--font-text); color: var(--muted); max-width: 33em; margin: 0; }
+.hy-title .dek { font: var(--w-regular) var(--fs-lead)/1.5 var(--font-text); color: var(--muted); max-width: calc(7 * var(--g-col) + 6 * var(--g-gut)); margin: 0; }
 .hy-title .dek .star { pointer-events: auto; }
 
 .hy-lock { position: absolute; left: var(--hud-inset); top: var(--hud-inset); z-index: 20; pointer-events: none; }

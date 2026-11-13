@@ -1,6 +1,9 @@
 /* v3 shell (F3): page frame, pinned blocks, stages, desktop gate, debug HUD, placeholders.
    Colours and type come from styles/tokens.css. Scenes put their own CSS in their own files. */
 html { scrollbar-gutter: stable; }
+/* layout grid (hybrid, Vali 2026-11-13: "a proper column based layout"): 12 columns inside an outer margin.
+   --g-m is 120 px at 1440 and ~107 px at 1280; --g-col is one column; span n = n·col + (n−1)·gutter. */
+:root { --g-m: clamp(96px, 8.333vw, 160px); --g-gut: 24px; --g-col: calc((100vw - 2 * var(--g-m) - 11 * var(--g-gut)) / 12); }
 html.is-locked { overflow: hidden; }            /* controller.lock(): S2 timed sequence */
 body { margin: 0; background: var(--bg); color: var(--fg); font: var(--w-regular) var(--fs-body)/var(--lh-body) var(--font-text); }
 
@@ -38,3 +41,9 @@ html.gated #gate { display: grid; place-items: center; min-height: 100vh; paddin
 .ph-bar { margin-top: 20px; height: 8px; background: var(--rule-c); }
 .ph-bar i { display: block; height: 100%; background: var(--accent); transform-origin: 0 50%; transform: scaleX(0); }
 .ph-p { margin-top: 8px; font-size: var(--fs-small); }
+
+/* ── reading progress (src/lib/progress.js): 3 px on the top edge, never over content ── */
+.progress { position: fixed; left: 0; right: 0; top: 0; height: 3px; z-index: 900; pointer-events: none; background: rgba(250, 250, 247, .1); }
+.progress .fill { position: absolute; inset: 0; background: var(--red); transform-origin: 0 50%; transform: scaleX(0); }
+.progress .notch { position: absolute; top: 0; width: 2px; height: 3px; margin-left: -1px; background: var(--black); }
+html.gated .progress { display: none; }

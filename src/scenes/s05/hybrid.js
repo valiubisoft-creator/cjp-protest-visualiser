@@ -14,6 +14,7 @@ import { star } from '../../lib/star.js';
 import { project } from '../../lib/map.js';
 import { clamp01, ease } from '../../roach/swarm.js';
 import { createChapter, captionHTML } from '../../lib/chapter.js';
+import { grid } from '../../lib/grid.js';
 
 export const HY = {
   start: [['title:street', 50], ['start', 90, { cap: ['street', 0], labels: ['jantar_mantar_road'] }]],
@@ -79,25 +80,50 @@ export function createHybrid({ host, model, data, pts }) {
   let W = 0, H = 0, MW = 0, MH = 0, tl = null, L0 = 0, L1 = 1, rows = [];
   const lb = B.filter(b => b.kind === 'ledger'), lt = B.find(b => b.hy?.chapter === 'ledgers');
 
+  // text width in the ledger label fonts (Public Sans), for collision-free placement before the layer is visible
+  const mctx = document.createElement('canvas').getContext('2d');
+  const textW = (t, px, wt) => { mctx.font = `${wt} ${px}px ${getComputedStyle(document.documentElement).getPropertyValue('--font-ui') || 'sans-serif'}`; return mctx.measureText(t).width; };
   function buildLedgers() {
-    const X0 = 300, X1 = W - 420, Y0 = Math.round(H * .33), DY = Math.round(H * .205), lw = W < 1400 ? 128 : 180;
+    // on the grid (Vali 2026-11-13): row names in columns 1–2, scales in 3–8, the caption in 9–12. Labels never cross col 8
+    const G = grid(W), X0 = Math.round(G.x(2) + 12), RX = Math.round(G.end(7)), X1 = RX - 16, Y0 = Math.round(H * .33), DY = Math.round(H * .205), lw = W < 1400 ? 128 : 170;
+    for (const c of host.querySelectorAll('.s5h-cap.ledger')) Object.assign(c.style, { left: Math.round(G.x(8)) + 'px', right: 'auto', width: Math.round(G.span(4)) + 'px' });
     let svg = `<svg width="${W}" height="${H}" class="s5h-lsvg"><defs><pattern id="s5h-hatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="4" fill="#FAFAF7"/></pattern></defs>`;
     let html = '';
     LEDGERS.forEach((r, i) => {
       const y = Y0 + i * DY, x = v => X0 + (X1 - X0) * v / r.max;
       svg += `<g class="row" data-r="${i}"><line class="axis" x1="${X0}" x2="${X1}" y1="${y}" y2="${y}"/>${[0, r.max].map(t => `<text x="${x(t)}" y="${y + 26}" text-anchor="middle">${t}</text>`).join('')}`;
-      html += `<div class="lq" data-r="${i}" style="left:120px;top:${y - 22}px"><div class="q">${esc(r.q)}</div><div class="u">${esc(r.unit)}, one scale each</div></div>`;
-      r.dots.forEach((d, j) => {
-        const cx = x(d.v), R = 9, up = j % 2 === 0, ly = up ? y - 22 : y + 22;
+      html += `<div class="lq" data-r="${i}" style="left:${Math.round(G.m)}px;width:${Math.round(G.span(2))}px;top:${y - 22}px"><div class="q">${esc(r.q)}</div><div class="u">${esc(r.unit)}, one scale each</div></div>`;
+      // labels: measured, each dot's label on the side (above / below) with more room, then pushed apart so no two
+      // labels on a side overlap and none crosses the scale's column (Vali 2026-11-13: no overlap). A leader joins a
+      // label that had to move to its dot.
+      const R = 9, P0 = X0 - 40, last = { up: -1e9, dn: -1e9 }, sides = { up: [], dn: [] };
+      const lab = r.dots.map((d, j) => {
+        const tw = Math.max(textW(String(d.v), 15, 700) + 10, textW(d.l, 12, 400)) + 2, w = Math.min(lw, Math.ceil(tw)), two = tw > lw;
+        return { d, j, cx: x(d.v), w, two };
+      }).sort((a, b) => a.cx - b.cx);
+      let prev = 'dn';
+      for (const L of lab) {
+        const l0 = L.cx - L.w / 2, cu = Math.max(0, last.up + 10 - l0), cd = Math.max(0, last.dn + 10 - l0);
+        const side = cu < cd ? 'up' : cd < cu ? 'dn' : (prev === 'up' ? 'dn' : 'up');
+        L.up = side === 'up'; prev = side; last[side] = L.cx + L.w / 2; sides[side].push(L);
+      }
+      for (const arr of Object.values(sides)) {
+        let edge = P0;
+        for (const L of arr) { L.lx = Math.max(L.cx - L.w / 2, edge); edge = L.lx + L.w + 10; }
+        edge = RX;
+        for (let n = arr.length - 1; n >= 0; n--) { const L = arr[n]; L.lx = Math.min(L.lx, edge - L.w); edge = L.lx - 10; }
+      }
+      for (const L of lab) {
+        const { d, j, cx, w, two, up, lx } = L, ly = up ? y - 22 : y + 22, lxc = Math.max(lx + 8, Math.min(lx + w - 8, cx));
         const fill = d.k === 'state' ? '#E0201B' : d.k === 'record' ? 'url(#s5h-hatch)' : 'none', stroke = d.k === 'state' ? '#E0201B' : '#FAFAF7';
         svg += `<g class="dot" data-r="${i}" data-d="${j}" style="transform-origin:${cx}px ${y}px">` + (d.k === 'split'
           ? `<path d="M${cx} ${y - R} A${R} ${R} 0 0 0 ${cx} ${y + R} Z" fill="#E0201B"/><circle cx="${cx}" cy="${y}" r="${R}" fill="none" stroke="#FAFAF7" stroke-width="2"/>`
-          : `<circle cx="${cx}" cy="${y}" r="${R}" fill="${fill}" stroke="${stroke}" stroke-width="2"/>`) + `<line x1="${cx}" x2="${cx}" y1="${y + (up ? -R : R)}" y2="${ly + (up ? 6 : -6)}" class="tick"/></g>`;
-        html += `<div class="ll" data-r="${i}" data-d="${j}" style="left:${cx - lw / 2}px;top:${up ? ly - (lw < 180 ? 50 : 36) : ly + 4}px;width:${lw}px"><b>${d.v}</b>${star(d.ids, src, d.who)}<br><span>${esc(d.l)}</span></div>`;
-      });
+          : `<circle cx="${cx}" cy="${y}" r="${R}" fill="${fill}" stroke="${stroke}" stroke-width="2"/>`) + `<line x1="${cx}" x2="${lxc.toFixed(1)}" y1="${y + (up ? -R : R)}" y2="${ly + (up ? 6 : -6)}" class="tick"/></g>`;
+        html += `<div class="ll" data-r="${i}" data-d="${j}" style="left:${lx.toFixed(1)}px;top:${up ? ly - (two ? 50 : 36) : ly + 4}px;width:${w}px"><b>${d.v}</b>${star(d.ids, src, d.who)}<br><span>${esc(d.l)}</span></div>`;
+      }
       svg += '</g>';
     });
-    html += `<div class="lkey"><span><i class="st"></i>what the state said</span><span><i class="rec"></i>what a record shows</span><span><i class="mv"></i>what the movement said</span></div>`;
+    html += `<div class="lkey" style="left:${Math.round(G.m)}px"><span><i class="st"></i>what the state said</span><span><i class="rec"></i>what a record shows</span><span><i class="mv"></i>what the movement said</span></div>`;
     el.led.innerHTML = svg + '</svg>' + html;
     // one paused timeline over the ledger region: row k's axis, label and dots arrive during ledger beat k
     L0 = lt.a; L1 = lb.at(-1).b;

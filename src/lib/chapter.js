@@ -1,6 +1,7 @@
 // Hybrid chapter chrome (build/hybrid, 2026-11-13; Gate 0 frames 02a / 02b). Shared by every hybrid chapter.
 //   title card  kicker (number + dates), claim headline (Protest Revolution, ONE line, fitted to the width:
 //               Vali 2026-11-13), red rule, dek. Enters with an anime.js stagger (words rise), then docks:
+//   opening     a full-bleed card in the page colour behind the title: the chapter opening is its own scene
 //   lockup      the same headline small, top-left, for the rest of the chapter (signposting; never over content)
 //   captions    one card at a time (date kicker + ≤ 40 words + stars), crossfaded by p
 // Purity: one paused anime.js timeline per chapter, 1000 ms long; update(p) maps the scene's p into the title window
@@ -30,11 +31,12 @@ export function createChapter(host, id, data, { title = [0, .06, .12, .17], lock
   const words = c.headline.split(' ').map(w => `<span class="w">${esc(w)}</span>`).join(' ');
   // each chapter in its own wrapper (display: contents, so children still position against host): S5 hosts three
   host.insertAdjacentHTML('beforeend', `<div class="hy-ch" data-ch="${esc(id)}">
+    <div class="hy-open" aria-hidden="true"></div>
     <div class="hy-title"><div class="in">${kick(c)}<h2>${words}</h2><div class="rule"></div><p class="dek">${render(esc(c.dek || ''), src, star)}</p></div></div>
     <div class="hy-lock${lock.boxed ? ' boxed' : ''}" aria-hidden="true">${kick(c)}<h2>${esc(c.headline)}</h2></div>
     ${caps.map(([k], i) => `<div class="hy-cap ${capClass}" data-cap="${i}">${captionHTML(id, k, src, vars)}</div>`).join('')}</div>`);
   const box = host.lastElementChild;
-  const el = { box, title: box.querySelector(':scope > .hy-title'), lock: box.querySelector(':scope > .hy-lock'), caps: [...box.querySelectorAll(':scope > .hy-cap')] };
+  const el = { box, open: box.querySelector(':scope > .hy-open'), title: box.querySelector(':scope > .hy-title'), lock: box.querySelector(':scope > .hy-lock'), caps: [...box.querySelectorAll(':scope > .hy-cap')] };
   const h2 = el.title.querySelector('h2'), ws = [...h2.querySelectorAll('.w')];
   // the timeline: 0–450 in (kicker, words, rule, dek), 450–700 hold, 700–1000 out (title up and away, lockup in)
   const tl = createTimeline({ autoplay: false, defaults: { ease: 'outQuart', duration: 260 } });
@@ -45,6 +47,10 @@ export function createChapter(host, id, data, { title = [0, .06, .12, .17], lock
   set(el.title.querySelector('.rule'), { scaleX: 0 }, { scaleX: 1 }, 260, { duration: 220 });
   set(el.title.querySelector('.dek'), { opacity: 0, translateY: 18 }, { opacity: 1, translateY: 0 }, 320, { duration: 200 });
   set(el.title.querySelector('.in'), { opacity: 1, translateY: 0 }, { opacity: 0, translateY: -40 }, 700, { duration: 240, ease: 'inQuad' });   // inner: .hy-title keeps its CSS centring
+  // the opening card covers the scene while the title holds (Vali 2026-11-13: chapter openings get their own scene)
+  utils.set(el.open, { opacity: 0 });
+  tl.add(el.open, { opacity: [0, 1], duration: 140, ease: 'linear' }, 0);
+  tl.add(el.open, { opacity: [1, 0], duration: 240, ease: 'inOutSine' }, 720);
   set(el.lock, { opacity: 0, translateY: -8 }, { opacity: 1, translateY: 0 }, 820, { duration: 180 });
   const fit = w => {   // one line, fitted (Vali 2026-11-13); balanced wrap only if even 56 px can't fit
     h2.style.fontSize = ''; h2.style.whiteSpace = 'nowrap'; h2.style.textWrap = '';
@@ -70,6 +76,7 @@ export function createChapter(host, id, data, { title = [0, .06, .12, .17], lock
       if (fitted !== fitW && el.title.offsetParent) { fit(fitW || innerWidth); fitted = fitW; }
       tl.seek(msAt(p));
       el.title.style.visibility = p > title[3] ? 'hidden' : '';
+      el.open.style.visibility = +el.open.style.opacity > .001 ? 'visible' : 'hidden';
       if (lockAlpha !== 1) el.lock.style.opacity = String(Math.min(+el.lock.style.opacity || 0, lockAlpha));
       el.lock.style.visibility = +el.lock.style.opacity > .001 ? '' : 'hidden';
       caps.forEach(([, a, b], i) => {

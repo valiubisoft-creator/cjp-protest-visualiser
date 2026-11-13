@@ -1,0 +1,96 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1280x720",
+ "targets": "docs/build/scenes/targets/S0.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S0-0",
+   "at": "S0:0",
+   "frame": "S0",
+   "ok": true,
+   "y": 0,
+   "current": "S0",
+   "p": 0,
+   "live": "S0@0.000",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S0-0.35",
+   "at": "S0:0.35",
+   "frame": null,
+   "ok": true,
+   "y": 202,
+   "current": "S0",
+   "p": 0.3507,
+   "live": "S0@0.351",
+   "overflowX": false
+  },
+  {
+   "leg": "down",
+   "name": "S0-0.75",
+   "at": "S0:0.75",
+   "frame": null,
+   "ok": true,
+   "y": 432,
+   "current": "S0",
+   "p": 0.75,
+   "live": "S0@0.750",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 42,
+    "scenes": 1,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S0-0.75",
+   "at": "S0:0.75",
+   "frame": null,
+   "ok": true,
+   "y": 432,
+   "current": "S0",
+   "p": 0.75,
+   "live": "S0@0.750",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S0-0.35",
+   "at": "S0:0.35",
+   "frame": null,
+   "ok": true,
+   "y": 202,
+   "current": "S0",
+   "p": 0.3507,
+   "live": "S0@0.351",
+   "overflowX": false
+  },
+  {
+   "leg": "up",
+   "name": "S0-0",
+   "at": "S0:0",
+   "frame": "S0",
+   "ok": true,
+   "y": 0,
+   "current": "S0",
+   "p": 0,
+   "live": "S0@0.000",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 50,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

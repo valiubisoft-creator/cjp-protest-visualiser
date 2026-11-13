@@ -1,0 +1,48 @@
+{
+ "url": "http://localhost:5173/v3/?still=&trace=",
+ "size": "1280x720",
+ "targets": "docs/build/scenes/targets/S1.json",
+ "results": [
+  {
+   "leg": "down",
+   "name": "S1-0.5",
+   "at": "S1:0.5",
+   "frame": "S1",
+   "ok": true,
+   "y": 1116,
+   "current": "S1",
+   "p": 0.5,
+   "live": "S1@0.500",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "down",
+    "samples": 22,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  },
+  {
+   "leg": "up",
+   "name": "S1-0.5",
+   "at": "S1:0.5",
+   "frame": "S1",
+   "ok": true,
+   "y": 1116,
+   "current": "S1",
+   "p": 0.5,
+   "live": "S1@0.500",
+   "overflowX": false
+  },
+  {
+   "monotonic": {
+    "leg": "up",
+    "samples": 22,
+    "scenes": 2,
+    "nonMonotonic": []
+   }
+  }
+ ],
+ "console": []
+}

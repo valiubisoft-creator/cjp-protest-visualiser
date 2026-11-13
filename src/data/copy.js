@@ -110,8 +110,6 @@ export const CHAPTERS = [
         html: 'Police took Dhruv Rathee from his family home in Gurugram before 8 am{*det_oneindia_rathee_release_1011|reported}. Minutes after their flight landed in Delhi, police detained Dipke, Das and Ranka inside the plane{*oct_aj_1010|reported}.' },
       { when: '10 Oct · Delhi', origin: 'new', facts: 'october_counts.json oc_1010_delhi_* (eight counts, eight claimants)',
         html: 'The biggest day has no single number. Each red line is one published count, and each roach one person: from about 2,000, an MHA official’s{*oct_aj_1010|reported}, to more than 15,000, the CJP’s{*oct_gulfnews_1010|CJP claims}.' },
-      { when: '10 Oct · Mumbai', origin: 'v2*', facts: 'october_counts.json oc_1010_mumbai_amnesty (v2’s “internet restricted” dropped: unsupported)',
-        html: 'In Mumbai, more than 600 were detained as they tried to gather at August Kranti Maidan{*repo_amnesty_1014|Amnesty said}.' },
       { when: '13 – 21 Oct', origin: 'v2*', facts: 'october_counts.json people; apparatus delhi_police[3], [4]',
         html: 'Jantar Mantar was struck off the list of permitted protest sites{*repo_amnesty_1014|reported}. Saurav Das and Ashutosh Ranka protested there anyway. They were held seven days in judicial custody{*repo_amnesty_1014,thelogicalindian|reported}.' },
       { when: '14 Oct', origin: 'v2', facts: 'october_counts.json quotes[0] (verbatim)',

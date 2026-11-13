@@ -45,9 +45,9 @@ export function buildBudget({ quoteCount = 3 } = {}) {
     // one 100vh scene per selected quote (quotes.json `selected: true`), crossfading in one pinned stage
     // Vali 2026-11-12: Ambedkar only, typed out like a typewriter, so each quote scene gets 160 vh (was 100)
     ...quoteIds.map((id, i) => ({ id, name: `Quote ${i + 1} of ${quoteCount}`, len: 160, block: 'S8', stage: 'quotes', file: 's08-quotes.js', sub: i })),
-    // Vali 2026-11-13: the closing line on its own scene, not inside the footer
-    { id: 'CLOSE', name: 'The closing line',                   len: 140, block: 'CLOSE', stage: 'close', file: 'h-close.js' },
-    { id: 'S9',   name: 'Follow and share',                    len: 100, block: null, file: 's09-cta.js' },
+    // CLOSE (the closing line) left the flow (Vali 2026-11-13, review 2: the Ambedkar quote is the only closing quote;
+    // h-close.js is kept)
+    { id: 'S9',   name: 'Follow the CJP',                      len: 100, block: null, file: 's09-cta.js' },
     { id: 'S10',  name: 'Credit, methodology, disclaimer',     len: 'auto', block: null, file: 's10-footer.js' },
   ];
 }

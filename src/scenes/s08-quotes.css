@@ -1,11 +1,13 @@
 /* S8 · Quotes on protest (S8-S10 chat, 2026-11-12). Centred, no role label (Vali 2026-11-12); typewriter (Vali review).
-   Geometry follows design/storyboard.css .s8 at 1440×900; sizes cap by viewport height so 1280×720 fits. */
-.s8 { background: var(--bg); color: var(--fg); }
+   Hybrid (Vali 2026-11-13): the quote is set in Protest Revolution (the piece's only display-face quote); the
+   attribution stays in Public Sans. The quote's measure is 10 of the 12 grid columns (shell.css --g-m outer margin,
+   --g-gut gutters, as S9/S10), so its longest line stays inside the grid; the size caps by viewport height for 1280×720. */
+.s8 { --s8-m: var(--g-m, clamp(96px, 8.333vw, 160px)); background: var(--bg); color: var(--fg); }
 .s8-back { position: absolute; inset: 0; display: block; }
-.s8-q { position: absolute; inset: 0; margin: 0; padding: 0 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.s8-q { position: absolute; inset: 0; margin: 0; padding: 0 var(--s8-m); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
 .s8-orig { margin: 0 0 min(var(--s-7), 3.6vh); font: 400 min(60px, 6.6vh)/2 var(--font-urdu); }
-.s8-en { margin: 0; font: var(--w-bold) min(52px, 6vh)/1.2 var(--font-text); letter-spacing: -.01em; max-width: 24ch; text-wrap: balance; }
-.s8-q.is-en .s8-en { font-size: min(48px, 5.6vh); max-width: 30ch; }
+.s8-en { margin: 0; font: 400 min(60px, 7vh)/1.12 var(--font-display); letter-spacing: var(--track-display); text-wrap: balance;
+  max-width: calc((100% - 11 * var(--g-gut, 24px)) / 12 * 10 + 9 * var(--g-gut, 24px)); }   /* 10 of 12 columns */
 /* typewriter: every character is a span; untyped ones keep their space, so nothing reflows */
 .s8-en .c { visibility: hidden; }
 .s8-en .c.on { visibility: visible; }
@@ -16,7 +18,7 @@
 .s8-rule { position: relative; width: 640px; max-width: 100%; height: var(--rule); margin-top: min(var(--s-7), 5vh); }
 .s8-rule i { position: absolute; inset: 0; background: var(--fg); transform-origin: 50% 50%; }
 .s8-roach { position: absolute; left: -24px; top: -14px; pointer-events: none; }
-.s8-attr { padding-top: var(--s-4); width: 640px; max-width: 100%; display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: var(--fs-small); line-height: 1.35; }
+.s8-attr { font-family: var(--font-ui); padding-top: var(--s-4); width: 640px; max-width: 100%; display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: var(--fs-small); line-height: 1.35; }
 .s8-name { font-size: var(--fs-lead); font-weight: var(--w-bold); }
 .s8-note, .s8-work, .s8-src { color: var(--muted); }
 .s8-note { font-size: var(--fs-small); max-width: 56ch; }

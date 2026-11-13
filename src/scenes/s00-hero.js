@@ -17,6 +17,7 @@ import { tok, px, dpr } from '../lib/dom.js';
 import { esc } from '../lib/text.js';
 import { roach } from '../roach/roach.js';
 import { rng } from '../lib/rng.js';
+import { alive } from '../lib/alive.js';
 import { hash01, heroCount, heroSize, wander, fleeStep, clamp01, lerp, ease, angDiff, TAU } from '../roach/swarm.js';
 import { glitchOn, glitchSlices, drawSlices } from '../lib/glitch.js';
 
@@ -53,6 +54,7 @@ export const backdrop = {
     }
     for (let k = 0; k < w * TILE / 90; k++) { g.globalAlpha = r() * .35; g.fillRect(r() * w, r() * TILE, 1, 1); }
     this.tile = c;
+    alive(back.canvas, { cell, ink });   // the living layer over the prologue backdrop (lib/alive.js)
   },
   offset(id, p) { return ((this.starts?.[id] ?? 0) + p * (this.lens?.[id] ?? 0)) / 100 * this.h * SPEED; },
   // draw at a prologue scroll offset (px); only when it changed

@@ -1,36 +1,85 @@
-/* S10 · Credit, methodology, disclaimer + sources (S8-S10 chat, 2026-11-12, gate 1). Ink (hybrid, Vali 2026-11-13: the whole piece in black; was a paper reading section).
-   Geometry from design/storyboard.css .s10 at 1440×900 (padding 72, columns 300 / 1fr / 1.25fr, gap 48). */
-.s10 { background: var(--bg); color: var(--fg); }
-.s10-in { padding: 72px 5% var(--s-9); }
-.s10 h2 { margin: 0 0 var(--s-4); font: var(--w-bold) var(--fs-h2)/1.1 var(--font-text); text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 7px; }
-.s10 p, .s10 li, .s10 dd { font-size: 13.5px; line-height: 1.5; margin: 0 0 var(--s-3); }
+/* S10 · Disclaimer, credit, methodology + sources. Compact footer (Vali 2026-11-13, hybrid; ink theme).
+   One 12-column grid: outer margin = the shared --g-m (shell.css: 120 px at 1440, ~107 at 1280),
+   --g-gut gutters. Disclaimer cols 1–7 (always visible); credit, modal buttons and accordions cols 9–12.
+   Long material (references, image credits) lives in native <dialog> modals. */
+.s10 { --s10-m: var(--g-m, clamp(96px, 8.333vw, 160px)); --s10-g: var(--g-gut, 24px); background: var(--bg); color: var(--fg); }
+.s10-in { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--s10-g); align-items: start;
+  margin: 0 var(--s10-m); padding: var(--s-8) 0 var(--s-9); border-top: var(--rule-heavy) solid var(--fg); }
+.s10 h2 { margin: 0 0 var(--s-4); font: var(--w-bold) var(--fs-h2)/1.1 var(--font-text); }
+.s10 p, .s10 li, .s10 dd { font-size: 14px; line-height: 1.5; margin: 0 0 var(--s-3); }
 .s10 a { color: inherit; text-decoration: underline; text-decoration-color: var(--rule-c); text-underline-offset: 2px; }
 .s10 a:hover, .s10 a:focus-visible { text-decoration-color: currentColor; }
-.s10 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.s10 a:focus-visible, .s10 button:focus-visible, .s10 summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .s10 ul, .s10 ol { margin: 0; padding: 0; list-style: none; }
-.s10-cols { display: grid; grid-template-columns: minmax(260px, 300px) 1fr 1.25fr; column-gap: 48px; align-items: start; }
 .s10-k { color: var(--muted); margin: var(--s-5) 0 var(--s-2) !important; }
-.s10-me { margin-bottom: 0 !important; }
-.s10-small, .s10-small li { color: var(--muted); font-size: 12px !important; }
-.s10-small li { margin-bottom: var(--s-2); }
-.s10-files { white-space: normal; }
-.s10-f { display: inline-block; min-width: 1.4em; text-align: center; }
+
+/* disclaimer: cols 1–7, the readable column */
+.s10-disc { grid-column: 1 / 8; }
+.s10-disc p { font-size: var(--fs-small); line-height: 1.55; max-width: 68ch; text-wrap: pretty; }
+.s10-disc p:last-child { margin-bottom: 0; }
+
+/* side: cols 9–12 */
+.s10-side { grid-column: 9 / 13; }
+.s10-side > .s10-k:first-child { margin-top: 0 !important; }
+.s10-me { font-size: var(--fs-small) !important; font-weight: var(--w-bold); margin-bottom: var(--s-5) !important; }
+.s10-btns { display: grid; row-gap: var(--s-3); margin-bottom: var(--s-6); }
+.s10-open { display: flex; justify-content: space-between; align-items: center; gap: var(--s-3); height: 48px; padding: 0 var(--s-4);
+  box-sizing: border-box; width: 100%; border: 2px solid var(--fg); border-radius: var(--radius); background: transparent; color: var(--fg);
+  font: var(--w-bold) var(--fs-small)/1 var(--font-text); text-align: left; cursor: pointer; }
+.s10-open::after { content: ''; width: 9px; height: 9px; border-top: 2px solid currentColor; border-right: 2px solid currentColor; margin-left: auto; transform: translateX(-2px) rotate(45deg); flex: none; }
+.s10-count { color: var(--muted); font-weight: var(--w-regular); }
+.s10-open:hover { background: var(--fg); color: var(--bg); }
+.s10-open:hover .s10-count { color: inherit; }
+
+/* accordions (native <details>) */
+.s10-acc { border-top: var(--rule) solid var(--rule-c); }
+.s10-acc:last-child { border-bottom: var(--rule) solid var(--rule-c); }
+.s10-acc summary { display: flex; justify-content: space-between; align-items: center; min-height: 48px; cursor: pointer; list-style: none;
+  font: var(--w-bold) var(--fs-small)/1.2 var(--font-text); }
+.s10-acc summary::-webkit-details-marker { display: none; }
+.s10-acc summary::after { content: '+'; font: var(--w-regular) 22px/1 var(--font-ui); color: var(--muted); }
+.s10-acc[open] summary::after { content: '−'; }
+.s10-acc summary:hover::after { color: var(--fg); }
+.s10-acc-in { padding: 0 0 var(--s-5); }
+.s10-acc-in > .s10-k:first-child, .s10-acc-in > .s10-tiers:first-child { margin-top: 0 !important; }
 .s10-tiers { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: var(--s-4); }
 .s10-tiers td { border-top: var(--rule) solid var(--rule-c); padding: 5px 0; }
-.s10-tiers td:last-child { text-align: right; font-weight: var(--w-bold); }
-.s10-dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; column-gap: var(--s-4); }
+.s10-tiers td:last-child { text-align: right; font-weight: var(--w-bold); white-space: nowrap; }
+.s10-dl { margin: 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); column-gap: var(--s-4); }
 .s10-dl dt { font-size: 13px; font-weight: var(--w-bold); }
 .s10-dl dd { margin: 0 0 var(--s-2); }
-/* caveats + disputed claims: under the methodology and disclaimer columns */
-.s10-notes { grid-column: 2 / 4; display: grid; grid-template-columns: 1fr 1.25fr; column-gap: 48px; margin-top: var(--s-5); border-top: var(--rule) solid var(--rule-c); }
 .s10-ul li { padding-left: 14px; position: relative; }
-.s10-ul li::before { content: ''; position: absolute; left: 0; top: .62em; width: 6px; height: 1px; background: var(--fg); }
-/* sources */
-.s10-src { margin-top: var(--s-7); border-top: var(--rule-heavy) solid var(--fg); padding-top: var(--s-5); }
-.s10-list { columns: 3; column-gap: 40px; }
-.s10-list li { font-size: 12px; margin: 0 0 6px; break-inside: avoid; display: grid; grid-template-columns: auto 1fr; column-gap: 6px; align-items: baseline;
-  scroll-margin-top: 30vh; overflow-wrap: anywhere; }
-.s10-list li b { color: var(--accent-text); }
-.s10-list li:target { background: var(--surface); outline: 2px solid var(--accent); outline-offset: 2px; }
-.s10-back { text-decoration: none !important; color: var(--muted) !important; font-size: 12px; padding: 0 2px; }
+.s10-ul li::before { content: ''; position: absolute; left: 0; top: .72em; width: 6px; height: 1px; background: var(--fg); }
+
+/* modals: native <dialog>, top layer; the box has no padding, so a click on it (not its content) is the backdrop */
+.s10-dlg { box-sizing: border-box; padding: 0; margin: auto; border: 2px solid var(--fg); border-radius: var(--radius);
+  background: var(--bg); color: var(--fg); width: min(960px, calc(100vw - 2 * var(--s10-m))); height: calc(100vh - 2 * var(--s-8));
+  max-width: none; max-height: none; overflow: hidden; }
+.s10-dlg::backdrop { background: rgba(11, 11, 11, .82); }
+.s10-dlg-in { display: grid; grid-template-rows: auto minmax(0, 1fr); height: 100%; }
+.s10-dlg-head { display: flex; justify-content: space-between; align-items: center; gap: var(--s-4); padding: var(--s-4) var(--s-6);
+  border-bottom: var(--rule) solid var(--rule-c); }
+.s10-dlg-head h2 { margin: 0; }
+.s10-x { display: inline-flex; align-items: center; gap: var(--s-3); height: 40px; padding: 0 var(--s-4); box-sizing: border-box; cursor: pointer;
+  border: 2px solid var(--fg); border-radius: var(--radius); background: transparent; color: var(--fg); font: var(--w-bold) var(--fs-small)/1 var(--font-text); }
+.s10-x i { position: relative; width: 12px; height: 12px; }
+.s10-x i::before, .s10-x i::after { content: ''; position: absolute; left: 50%; top: 50%; width: 15px; height: 2px; background: currentColor; transform: translate(-50%, -50%) rotate(45deg); }
+.s10-x i::after { transform: translate(-50%, -50%) rotate(-45deg); }
+.s10-x:hover { background: var(--fg); color: var(--bg); }
+.s10-dlg-body { position: relative; overflow: auto; overscroll-behavior: contain; padding: var(--s-5) var(--s-6) var(--s-7); }
+
+/* references: one numbered column */
+.s10-list { max-width: 76ch; }
+.s10-list li { font-size: 14px; margin: 0; padding: 5px 8px; display: grid; grid-template-columns: 4.2ch minmax(0, 1fr); column-gap: 6px; align-items: baseline;
+  overflow-wrap: anywhere; outline: none; }
+.s10-list li b { color: var(--accent-text); text-align: right; }
+.s10-list li.is-hit, .s10-list li:target { background: var(--surface); box-shadow: inset 3px 0 0 var(--accent); }
+.s10-back { text-decoration: none !important; color: var(--muted) !important; padding: 0 2px; }
 .s10-back:hover, .s10-back:focus-visible { color: var(--accent-text) !important; }
+
+/* map and image credits: two columns inside the modal */
+.s10-cred { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--s-7); }
+.s10-cred .s10-k:first-child { margin-top: 0 !important; }
+.s10-small, .s10-small li { color: var(--muted); font-size: 13px !important; }
+.s10-small li { margin-bottom: var(--s-2); }
+.s10-f { display: inline-block; min-width: 1.4em; text-align: center; }

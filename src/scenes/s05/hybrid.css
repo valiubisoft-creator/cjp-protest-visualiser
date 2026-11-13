@@ -4,6 +4,7 @@
 .s5.hy .s5-lab.police { display: none !important; }               /* ≤ 3 labels per beat: no per-hour police strength labels */
 .s5.hy .hy-title { z-index: 22; }
 .s5.hy .hy-lock { z-index: 21; }
+.s5.hy .hy-open { z-index: 20; }
 
 /* caption cards: top-right on the map; the ledgers' cards sit level with the first scale */
 .s5h-cap { right: var(--hud-inset); top: var(--hud-inset); visibility: hidden; pointer-events: auto; z-index: 15; }

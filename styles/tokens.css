@@ -170,7 +170,8 @@
 .t-display { font-family: var(--font-display); font-weight: 400; line-height: var(--lh-tight); letter-spacing: var(--track-display); }
 .t-micro { font: var(--w-bold) var(--fs-micro)/1.3 var(--font-text); letter-spacing: var(--track-micro); text-transform: uppercase; }
 .t-num { font-variant-numeric: tabular-nums lining-nums; }
-.star { color: var(--accent-text); font-weight: var(--w-bold); text-decoration: none; margin-left: 0.08em; font-size: 0.6em; vertical-align: super; }
+.star { color: var(--accent-text); font-weight: var(--w-bold); text-decoration: none; margin-left: 0.08em; font-size: max(0.6em, 12px); position: relative; vertical-align: super; }
+.star::after { content: ''; position: absolute; inset: -7px -6px; }   /* ≥ 24 px hit box without moving the layout (UX review 2026-11-13) */
 .star:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .missing { color: var(--accent-text); font: var(--w-bold) var(--fs-micro)/1.3 var(--font-text); letter-spacing: .04em; border: 1px dashed currentColor; padding: 1px 4px; }
 .hatch { background-image: repeating-linear-gradient(-45deg, var(--fg) 0 1px, transparent 1px 6px); }

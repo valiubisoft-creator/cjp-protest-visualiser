@@ -1,5 +1,6 @@
 // Halftone backdrop. Promoted from design/lib/kit.js in F3, no behaviour change.
 import { rng } from './rng.js';
+import { alive } from './alive.js';
 
 const TAU = Math.PI * 2;
 
@@ -26,6 +27,7 @@ export function halftone(ctx, w, h, { seed = 7, cell = 7, maxR = 0.42, jitter = 
     if (rr < .35) continue;
     ctx.beginPath(); ctx.arc(x, y, rr, 0, TAU); ctx.fill();
   }
+  if (ctx.canvas) alive(ctx.canvas, { cell, ink });   // the living layer above it (lib/alive.js; off under ?still)
   if (grain) { for (let i = 0; i < w * h / 90; i++) { ctx.globalAlpha = r() * .35; ctx.fillRect(r() * w, r() * h, 1, 1); } }
   ctx.restore();
 }

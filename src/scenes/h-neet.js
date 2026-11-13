@@ -19,6 +19,7 @@ import { claim } from './s03-5-claim.js';
 import { N3 } from './s03-multiply.js';
 import { loadCss, backdrop } from './s00-hero.js';
 import { createChapter } from '../lib/chapter.js';
+import { grid } from '../lib/grid.js';
 import { fitCanvas } from '../lib/dom.js';
 
 const CSS = new URL('./h-neet.css', import.meta.url).href;
@@ -50,7 +51,9 @@ export default def => {
       W = w; H = h; chap.resize(w);
       g2 = fitCanvas(el.cv, w, h);
       const k = Math.min(w / 1440, h / 900);
-      const sx = 120 * k, sy = 140 * k, sw = w - 600 * k, sh = h - sy - 90 * k;
+      // on the grid (Vali 2026-11-13; UX review: the card overlapped the sheet at 1280): the sheet and its margin ring
+      // (58 px) end at column 8, clear of the caption column (right 24 px, 360 wide)
+      const G = grid(w), sx = G.x(0), sy = 140 * k, sw = G.end(7) - 58 - sx, sh = h - sy - 90 * k;
       const top = sy + 36, cols = Math.round(Math.sqrt(NB * sw / (sh - 46))), rows = Math.ceil(NB / cols);
       sheet = { sx, sy, sw, sh, top, cols, rows, px: (sw - 32) / cols, py: (sh - 52) / rows };
       sheet.rad = Math.min(sheet.px, sheet.py) * .36;
@@ -66,7 +69,7 @@ export default def => {
           const w2 = sw + 2 * o, h2 = sh + 2 * o;
           if (d < w2) { x = sx - o + d; y = sy - o; } else if ((d -= w2) < h2) { x = sx + sw + o; y = sy - o + d; }
           else if ((d -= h2) < w2) { x = sx + sw + o - d; y = sy + sh + o; } else { d -= w2; x = sx - o; y = sy + sh + o - d; }
-          if (y < 104 || y > h - 8 || x < 8 || x > w - 400) continue;   // clear of the lockup (~96 px), the caption (360 + 24 + gap), the edge
+          if (y < 104 || y > h - 8 || x < 8 || x > G.end(7) + 4) continue;   // clear of the lockup (~96 px), the caption (360 + 24 + gap), the edge
           slots.push({ x, y, a: Math.atan2(y - cy, x - cx) });
         }
       }

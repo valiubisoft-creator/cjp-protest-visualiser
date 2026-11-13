@@ -8,8 +8,9 @@
 //               inside it, and roaches inside it turn black (ink: .stage-dramatic = red stage, black roaches).
 // p 0.30–0.55   hold: roaches shimmer along their stroke (tick only). (Brackets removed, Vali 2026-11-13.)
 // p 0.55–0.75   "Victory" (meta.finale.headline) wipes in beneath, left to right, in the display face; shimmer calms.
-// p 0.75–1.00   meta.finale.line (verbatim, with its *) rises in; roaches start to peel away downward, a few at
-//               first (p 0.85 ≈ 8%), ~45% by p 1, toward the reading section that scrolls up next.
+// p 0.75–1.00   meta.finale.line (verbatim, with its *) rises in.
+// p 0.60–1.00   once the date has formed and Victory is in, every roach slowly wanders off its stroke in its own
+//               direction and fades into the background (to FADE_TO), staggered (Vali 2026-11-13; was: 45% peel down).
 // update(p) is pure in p (poses at t = 0 plus the clock's shimmer). Walk cycles are tied to distance walked.
 import { tok, px, fitCanvas } from '../lib/dom.js';
 import { esc } from '../lib/text.js';
@@ -27,7 +28,7 @@ const CSS = new URL('./s06-finale.css', import.meta.url).href;
 const BOX = { x: 170 / 1440, y: 150 / 900, w: 1100 / 1440, h: 290 / 900 };
 const S_F = 7.2, SPACING = 9.2, LANES = 2, AMP = 3;   // finale roaches: larger than S4's 5.6 (the "larger map roaches")
 const CONV = .30, FLOOD0 = .14, FLOOD1 = .30, VIC0 = .55, VIC1 = .72, LINE0 = .75, LINE1 = .83;
-const PEEL0 = .76, PEEL_MAX = .45;                      // peel: rank r < PEEL_MAX starts at PEEL0 + .24 (r / PEEL_MAX)^.6
+const PEEL0 = .60, PEEL_SPAN = .22, FADE_LEN = .18, FADE_TO = .1;   // drift + fade: roach r starts at PEEL0 + PEEL_SPAN·r
 
 // the victory node's fact that carries the finale line (for the star's attribution wording)
 const victoryFact = (d, fin) => d.byId.node.victory?.facts.find(f => f.text === fin.line);
@@ -114,10 +115,9 @@ export default def => {
       o.delay = .02 + .05 * f + .04 * hash01(i, 611); o.dur = Math.min(CONV - o.delay, .12 + .14 * f);
       o.flip = hash01(i, 612) < .5 ? Math.PI : 0;
       o.w = TAU * (1.2 + 1.2 * hash01(i, 613)); o.ph = TAU * hash01(i, 614);
-      // peel-away: rank r; the first few go at PEEL0, ~45% have gone by p 1; heading roughly down
-      const r = hash01(i, 615);
-      o.p0 = r < PEEL_MAX ? PEEL0 + .24 * (r / PEEL_MAX) ** .6 : 9;
-      o.pa = Math.PI / 2 + (hash01(i, 616) - .5) * 1.1;
+      // drift + fade: everyone, staggered by rank; each in its own direction, slowly
+      o.p0 = PEEL0 + PEEL_SPAN * hash01(i, 615);
+      o.pa = TAU * hash01(i, 616); o.sp = .25 + .2 * hash01(i, 617);
     }
     const cx = (box.x0 + box.x1) / 2, cy = (box.y0 + box.y1) / 2;
     const rmax = Math.max(...[[0, 0], [w, 0], [0, h], [w, h]].map(([x, y]) => Math.hypot(x - cx, y - cy)));
@@ -199,7 +199,7 @@ export default def => {
     const calm = 1 - .65 * ease.inOutSine(clamp01((p - VIC0) / (VIC1 - VIC0)));
     for (const o of R) {
       const e0 = clamp01((p - o.delay) / o.dur);
-      let x, y, size, rot, legs;
+      let x, y, size, rot, legs, al = 1;
       if (o.slot < 0) {                                       // surplus: off the nearest edge
         const e = ease.inOutSine(e0), dirA = Math.atan2(o.ty - o.sy, o.tx - o.sx);
         x = lerp(o.sx, o.tx, e); y = lerp(o.sy, o.ty, e); size = o.s0;
@@ -214,15 +214,16 @@ export default def => {
         const pe = clamp01((p - o.p0) / .06);
         const arr = clamp01((e0 - .9) / .1) * calm * (1 - pe);
         if (arr > 0 && t > 0) { const j = AMP * Math.max(1, k) * Math.sin(o.w * t + o.ph) * arr; x += Math.cos(s.a) * j; y += Math.sin(s.a) * j; legs += 1.5 * j; }
-        if (p > o.p0) {                                       // peel away: turn, then walk off downward
-          const u = p - o.p0, turn = clamp01(u / .03), d = Math.max(0, u - .015) * H * 4.6;
+        if (p > o.p0) {                                       // drift: turn, walk slowly in its own direction, fade back
+          const u = p - o.p0, turn = clamp01(u / .04), d = Math.max(0, u - .01) * H * o.sp;
           rot = fl2 + angDiff(fl2, o.pa) * ease.inOutSine(turn);
           x += Math.cos(o.pa) * d; y += Math.sin(o.pa) * d; legs += d / S * 1.2;
-          if (y > H + 3 * S * 1.9) continue;
+          al = lerp(1, FADE_TO, ease.inOutSine(clamp01(u / FADE_LEN)));
         }
       }
-      roach(g, x, y, rot, size, legs);
+      g.globalAlpha = al; roach(g, x, y, rot, size, legs);
     }
+    g.globalAlpha = 1;
     // roaches inside the flood turn black (recolour what is already drawn)
     if (rad > 0) {
       g.save(); g.globalCompositeOperation = 'source-atop'; g.fillStyle = col.dRoach; g.fill(floodPath(rad)); g.restore();

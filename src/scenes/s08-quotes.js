@@ -2,7 +2,8 @@
 // One factory; def.sub = index into quotes.quotes filtered `selected: true` (Vali's review 2026-11-12: Ambedkar only,
 // so the budget makes one 160 vh scene, S8a; the component stays generic for any future selected quote).
 //
-// Layout: centred, no role label, no `year` (not verified). If the quote is not in English the original script sits
+// Layout: centred, no role label, no `year` (not verified). The typed quote is set in Protest Revolution (hybrid, Vali
+// 2026-11-13: the piece's only display-face quote) on 10 of the 12 grid columns; the attribution is Public Sans. If the quote is not in English the original script sits
 // above (Urdu: --font-urdu, RTL). Then a rule with one roach on it, then author, work, translation credit (non-English
 // only) and the source link. Text verbatim from quotes.json; where `text` is the "(same; written in English)" marker the
 // English IS `original_text`.

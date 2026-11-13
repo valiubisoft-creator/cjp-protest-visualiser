@@ -12,9 +12,10 @@
 //   0.450–0.700  10 Oct, Delhi, the field: 15,000 roaches (one per person, canvas) fill column by column from the left.
 //                Each published count is a red line that draws in when the fill reaches it, with its label. The loupe
 //                appears once the fill passes 2,000. Caption 2
-//   0.700–0.785  Mumbai: the field dims and shrinks; a block of 600 at the same scale fills beside it. Caption 3
-//   0.785–0.930  the cell: two roaches walk in, the bars close behind them, names under it; the tally ticks 1 → 7. Caption 4
-//   0.930–1.000  the Amnesty quote (caption 5) over the dimmed cell
+//   (Mumbai beat removed, Vali 2026-11-13)
+//   0.720–0.890  the cell: two roaches walk in, the bars close behind them, names under it; the tally ticks 1 → 7. Caption 3.
+//                The cell then fades out completely (0.865–0.890)
+//   0.895–1.000  the Amnesty quote (caption 4) on its own: centred, no card, nothing behind it (Vali 2026-11-13)
 // Purity: one paused anime.js timeline per layout (1000 ms = p 0 → 1) for every DOM/SVG entrance and the tweened state
 // (clock hand, Mumbai fill, cell walk, days). Roach poses and beat fades are plain functions of p. tick() only moves the
 // two cell roaches' legs (idle) and never changes what p decides. Hover on a count line or label: a tip (claimant, date).
@@ -41,11 +42,10 @@ const P = {
   // launch schedule (p, roaches launched): holds let the walkers land before each count is shown
   launch: [[.138, 0], [.160, 150], [.172, 150], [.198, 700], [.208, 700], [.228, 1000]], walk: .012,
   dawn: [.272, .44], strip: .272, hand: [.29, .41],
-  field: [.45, .785], fillA: .462, fillB: .65, lines: [.45, .70], fillPow: 1.6,
-  shrink: [.70, .725], mumFill: [.728, .765], mumG: [.712, .78],
-  cell: [.785, 1], frame: .79, walkC: [.792, .835], bars: .835, names: .85, tally: [.86, .905], dim: [.93, .95],
+  field: [.45, .712], fillA: .462, fillB: .65, lines: [.45, .70], fillPow: 1.6,
+  cell: [.72, 1], frame: .725, walkC: [.727, .77], bars: .77, names: .785, tally: [.795, .84], dim: [.865, .89],
 };
-const CAPS = [[0, .13, .25], [1, .282, .42], [2, .47, .68], [3, .728, .762], [4, .795, .915], [5, .94, 1.5]];
+const CAPS = [[0, .13, .25], [1, .282, .42], [2, .47, .68], [3, .73, .855], [4, .895, 1.5]];
 const win = (p, a, b, f = .012) => clamp01((p - a) / f) * (1 - clamp01((p - b) / f));
 const ms = p => p * 1000;
 
@@ -62,7 +62,6 @@ const FIELD = [
   ['oc_1010_delhi_7000_pti', 'hi', 'Delhi Police (PTI)'],
   ['oc_1010_delhi_cjp_15000', 'hi', 'CJP'],
 ];
-const MUMBAI = ['oc_1010_mumbai_amnesty', 'Amnesty International'];
 const FACES = ['dhruv-rathee', 'abhijeet-dipke', 'saurav-das', 'ashutosh-ranka'];
 
 export default def => {
@@ -225,11 +224,6 @@ export default def => {
       }
       return `<div class="oct-fl lo" data-k="${j}" style="left:${loX + 6}px;top:${loTop + lo.indexOf(FIELD[j]) * loStep}px"><b>${valHTML(c, id)}</b> <span>${esc(who)}</span></div>`;
     }).join('');
-    const mum = count(MUMBAI[0]);
-    const fbX = X0, fbY = R(Y0 + fh * (1 - L.sh) / 2), fbW = R(fw * L.sh), fbH = R(fh * L.sh);
-    const mCols = 25, mRows = Math.ceil((mum?.value || 0) / mCols), mp = L.pitch * L.sh;
-    const mbW = mCols * mp, mbH = mRows * L.py * L.sh, mbX = R(fbX + fbW + 64 * k), mbY = R(fbY + fbH - mbH);
-    L.fb = { x: fbX, y: fbY, w: fbW, h: fbH }; L.mb = { x: mbX, y: mbY, w: mbW, h: mbH, cols: mCols, rows: mRows, p: mp, n: mum?.value || 0 };
     const people = OC?.people || [];
     const days = people[0]?.days;
     const nameOf = j => people[j]?.name ? esc(people[j].name) : miss(`october_counts.people[${j}].name`);
@@ -263,10 +257,6 @@ export default def => {
         ${fLabels}
         <div class="oct-loupeL" style="left:${lz.x + lz.r + 8}px;top:${lz.y - 9}px">One roach, one person</div>
         <p class="oct-note oct-fnote" style="left:${X0}px;top:${loTop + lo.length * loStep + 10}px">10 Oct, Delhi. One roach = one person. White: up to the lowest official count · grey: up to the highest police count · dark: the CJP’s count</p>
-      </div>
-      <div class="oct-mum-ui">
-        <div class="oct-ml oct-ml-d" style="left:${fbX}px;top:${fbY + fbH + 12}px"><b>Delhi</b><br><span>10 Oct · the field above, shrunk</span></div>
-        <div class="oct-ml oct-ml-m" style="left:${mbX}px;top:${fbY + fbH + 12}px"><b>Mumbai</b> · ${valHTML(mum, MUMBAI[0])}<br><span>${esc(MUMBAI[1])} · same scale</span></div>
       </div>
       <div class="oct-cell-ui">
         <div class="oct-days" style="left:${tallyX}px;top:${tallyY}px"><span class="n" style="font-size:${R(64 * k)}px">1</span><span class="hy-kick">days in judicial custody${days ? star(people[0].source_ids, src(), 'reported') : miss('october_counts.people[0].days')}<br>14 – 21 Oct</span>${tally}</div>
@@ -317,10 +307,6 @@ export default def => {
     set($('.oct-loupeL'), { opacity: 0 }, { opacity: 1 }, ms(fillP(Math.min(L.N, L.loupeN + 600))), { duration: 8 });
     rise($('.oct-fnote'), ms(P.fillA), { duration: 10 });
     // Mumbai
-    tl.add(S, { shrink: [0, 1], ease: 'inOutCubic', duration: ms(P.shrink[1] - P.shrink[0]) }, ms(P.shrink[0]));
-    rise($('.oct-ml-d'), ms(P.shrink[1] - .006), { duration: 8 });
-    tl.add(S, { mum: [0, L.mb.n], ease: 'linear', duration: ms(P.mumFill[1] - P.mumFill[0]) }, ms(P.mumFill[0]));
-    rise($('.oct-ml-m'), ms(P.mumFill[1] - .004), { duration: 8 });
     // cell
     draw($('.oct-frame'), ms(P.frame), { duration: 14, ease: 'inOutQuad' });
     tl.add(S, { walk: [0, 1], ease: 'linear', duration: ms(P.walkC[1] - P.walkC[0]) }, ms(P.walkC[0]));
@@ -334,7 +320,7 @@ export default def => {
     // groups and hover
     L.el = {
       gPen: $('.oct-g-pen'), gDawn: $('.oct-g-dawn'), gField: $('.oct-g-field'), gCell: $('.oct-g-cell'),
-      pen: $('.oct-pen-ui'), dawn: $('.oct-dawn-ui'), field: $('.oct-field-ui'), mum: $('.oct-mum-ui'), cell: $('.oct-cell-ui'),
+      pen: $('.oct-pen-ui'), dawn: $('.oct-dawn-ui'), field: $('.oct-field-ui'), cell: $('.oct-cell-ui'),
       band: $('.oct-band'), bandO: $('.oct-band-o'), held: $('.oct-held'), hand: $('.oct-hand'), hh: $('.oct-hand .hh'),
       clock: $('.oct-clock'), daysN: $('.oct-days .n'), stops: $$('.oct-stop'),
     };
@@ -347,9 +333,10 @@ export default def => {
 
   function placeCaps() {
     const caps = chapter.el.caps, { k, Y0, Y, cy, ch } = L;
-    const top = [Y0, Math.round(Y - 330 * k), Y0, Y0, Math.round(cy - ch / 2), 0];
-    caps.forEach((c, i) => { if (i < 5) c.style.top = top[i] + 'px'; });
-    const q = caps[5]; if (q) { const qw = Math.min(720, W - 2 * L.X0); q.style.width = qw + 'px'; q.style.left = Math.round((W - qw) / 2) + 'px'; q.style.top = Math.round(H * .5 - 110 * k) + 'px'; }
+    const top = [Y0, Math.round(Y - 330 * k), Y0, Math.round(cy - ch / 2)];
+    caps.forEach((c, i) => { if (i < 4) c.style.top = top[i] + 'px'; });
+    // the quote: centred on the grid, 8 of 12 columns, vertically centred (CSS translate)
+    const q = caps[4]; if (q) { const m = Math.min(160, Math.max(96, W / 12)), col = (W - 2 * m - 11 * 24) / 12, qw = Math.round(8 * col + 7 * 24); q.style.width = qw + 'px'; q.style.left = Math.round((W - qw) / 2) + 'px'; q.style.top = '50%'; }
   }
 
   /* ── hover: highlight a count's line and label; tip with claimant + date (time-based UI, never p) ── */
@@ -374,9 +361,9 @@ export default def => {
     const E = L.el;
     // beat groups (plain functions of p)
     const aPen = win(p, P.pen[0], P.pen[1]), aDawn = win(p, P.dawn[0], P.dawn[1]), aLines = win(p, P.lines[0], P.lines[1]);
-    const aMum = win(p, P.mumG[0], P.mumG[1]), aCell = win(p, P.cell[0], 2) * (1 - .78 * clamp01((p - P.dim[0]) / (P.dim[1] - P.dim[0])));
+    const aCell = cellA(p);
     vis(E.gPen, aPen); vis(E.pen, aPen); vis(E.gDawn, aDawn); vis(E.dawn, aDawn);
-    vis(E.gField, aLines); vis(E.field, aLines); vis(E.mum, aMum); vis(E.gCell, aCell); vis(E.cell, aCell);
+    vis(E.gField, aLines); vis(E.field, aLines); vis(E.gCell, aCell); vis(E.cell, aCell);
     if (aLines < .5) hover(null);
     // pen stops: the latest reached is bright, earlier ones step back
     let last = -1; PEN.forEach(([id], j) => { const v = count(id)?.value; if (v && p >= arriveP(v)) last = j; });
@@ -394,11 +381,13 @@ export default def => {
     E.daysN.textContent = String(Math.min(L.days || 1, Math.floor(S.days)));
     drawCanvas(aPen, aCell);
   }
+  // the cell fades out completely before the quote: the quote stands alone (Vali 2026-11-13)
+  const cellA = q => win(q, P.cell[0], 2) * (1 - clamp01((q - P.dim[0]) / (P.dim[1] - P.dim[0])));
   const vis = (el, a) => { el.style.opacity = a.toFixed(3); el.style.visibility = a > .001 ? '' : 'hidden'; };
 
   /* ── canvas: pen roaches, the field, the loupe, Mumbai, the cell ── */
   function drawCanvas(aPen = win(p, P.pen[0], P.pen[1]), aCell = null) {
-    if (aCell == null) aCell = win(p, P.cell[0], 2) * (1 - .78 * clamp01((p - P.dim[0]) / (P.dim[1] - P.dim[0])));
+    if (aCell == null) aCell = cellA(p);
     g.clearRect(0, 0, W, H);
     if (aPen > 0) drawPen(aPen);
     const aField = win(p, P.field[0], P.field[1]);
@@ -459,8 +448,6 @@ export default def => {
     // the loupe: after the fill passes 2,000 (fades with the count lines)
     const n = fillN(p), aL = clamp01((n - L.loupeN) / 1200) * win(p, P.lines[0], P.lines[1]) * (1 - sh);
     if (aL > 0) drawLoupe(aL, n);
-    // Mumbai: 600 at the same (shrunk) scale, column by column
-    if (S.mum > 0) drawMumbai(a);
   }
   function drawLoupe(a, n) {
     const { x, y, r, z, sx, sy } = L.loupe;
@@ -476,17 +463,6 @@ export default def => {
     g.restore();
     g.save(); g.globalAlpha = a; g.strokeStyle = col.fg; g.lineWidth = 1.5; g.beginPath(); g.arc(x, y, r, 0, TAU); g.stroke(); g.restore();
   }
-  function drawMumbai(a) {
-    const m = L.mb, n = S.mum, s = fs() * L.sh;
-    g.save(); g.fillStyle = g.strokeStyle = col.roach;
-    for (let i = 0; i < Math.ceil(n); i++) {
-      const c = Math.floor(i / m.rows), r = i % m.rows;
-      g.globalAlpha = a * clamp01((n - i) / (m.rows * .5));
-      roach(g, m.x + (c + .5) * m.p, m.y + (r + .5) * L.py * L.sh, frot(i + 31), s, fleg(i + 31));
-    }
-    g.restore();
-  }
-
   function drawCell(a) {
     const { cx, cy, cw, k } = L, s = 22 * k, w = S.walk, t = ctx.clock.still ? 0 : ctx.clock.t || 0;
     g.save(); g.globalAlpha = a; g.fillStyle = g.strokeStyle = col.roach;

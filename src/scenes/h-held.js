@@ -20,9 +20,10 @@ import { claim } from './s03-5-claim.js';
 import { N3 } from './s03-multiply.js';
 import { loadCss, backdrop } from './s00-hero.js';
 import { createChapter } from '../lib/chapter.js';
+import { grid as colGrid } from '../lib/grid.js';
 
 const CSS = new URL('./h-held.css', import.meta.url).href;
-const IN = [.18, .34], MOVE = [.38, .56], HOME = [.88, .98], DAY = [.56, .80];   // Day 1 until the movers are out, then to Day 48
+const IN = [.18, .34], MOVE = [.38, .56], HOME = [.88, .98], DAY = [.56, .80], DAY9 = [.585, .72];   // Day 1 until the movers are out, then to Day 48
 const mover = i => hash01(i, 81) < .45;
 
 export default def => {
@@ -32,7 +33,9 @@ export default def => {
   const tl = createTimeline({ autoplay: false, defaults: { ease: 'outQuart' } });
   tl.add({ duration: 1000 }, 0);
   utils.set(st, { day: 0, notice: 0, lift: 0 });
-  tl.add(st, { day: [0, 47], duration: (DAY[1] - DAY[0]) * 1000, ease: 'linear' }, DAY[0] * 1000);
+  // the tally parks on Day 9 while caption 2 ("29 May · Day 9") is up, then runs on to Day 48 (UX review 2026-11-13)
+  tl.add(st, { day: [0, 8], duration: (DAY9[0] - DAY[0]) * 1000, ease: 'linear' }, DAY[0] * 1000);
+  tl.add(st, { day: [8, 47], duration: (DAY[1] - DAY9[1]) * 1000, ease: 'linear' }, DAY9[1] * 1000);
   tl.add(st, { notice: [0, 1], duration: 40, ease: 'outBack(2)' }, 320);
   tl.add(st, { lift: [0, 1], duration: 60, ease: 'inOutSine' }, 740);
 
@@ -44,7 +47,7 @@ export default def => {
       c.root.innerHTML = `<canvas class="hheld-cv" aria-hidden="true"></canvas>
         <div class="hheld-box a"><div class="bar"><b>@CJP_2029</b><span class="t-micro">X · original account</span></div></div>
         <div class="hheld-box b"><div class="bar"><b>@Cockroachisback</b><span class="t-micro">opened 21 May</span></div></div>
-        <div class="hheld-notice" role="img" aria-label="Withheld in India"><div class="t-micro">Withheld in India</div><p>Section 69A, IT Act. Order by email, 21 May 2026.</p></div>
+        <div class="hheld-notice" role="img" aria-label="Withheld in India"><div class="t-micro">Withheld in India</div><p>Section 69A, IT Act. Order by email, 21&nbsp;May&nbsp;2026.</p></div>
         <div class="hheld-tally" aria-live="off"><div class="t-micro">Days the order stood</div><div class="row"><span class="n t-num">1</span><svg class="marks" viewBox="0 0 520 48" aria-hidden="true"></svg></div></div>`;
       const q = s => c.root.querySelector(s);
       el = { cv: q('.hheld-cv'), A: q('.hheld-box.a'), B: q('.hheld-box.b'), notice: q('.hheld-notice'), tally: q('.hheld-tally'), n: q('.hheld-tally .n'), marks: q('.hheld-tally .marks') };
@@ -58,12 +61,13 @@ export default def => {
     resize(w, h) {
       W = w; H = h; chap.resize(w); g2 = fitCanvas(el.cv, w, h);
       const k = Math.min(w / 1440, h / 900), top = 150 * k;
-      const A = { x: 120 * k, y: top, w: 430 * k, h: h - top - 210 * k };
-      const B = { x: A.x + A.w + 150 * k, y: top + 70 * k, w: 300, h: A.h - 70 * k };
+      // on the grid (Vali 2026-11-13): A in columns 1–4, B in 6–8; the caption column (right 24 px, 360) stays clear
+      const G = colGrid(w), A = { x: G.x(0), y: top, w: G.span(4), h: h - top - 210 * k };
+      const B = { x: G.x(5), y: top + 70 * k, w: G.span(3), h: A.h - 70 * k };
       L = { A, B, k };
       const box = (e, b) => Object.assign(e.style, { left: b.x + 'px', top: b.y + 'px', width: b.w + 'px', height: b.h + 'px' });
       box(el.A, A); box(el.B, B);
-      Object.assign(el.notice.style, { left: A.x + 28 * k + 'px', top: A.y + A.h * .36 + 'px', width: A.w - 56 * k + 'px' });
+      Object.assign(el.notice.style, { left: A.x + 28 * k + 'px', top: A.y + A.h / 2 + 'px', width: A.w - 56 * k + 'px' });   // centred in A (box-sizing: border-box; Vali 2026-11-13)
       Object.assign(el.tally.style, { left: A.x + 'px', top: A.y + A.h + 34 * k + 'px' });
       el.n.style.fontSize = 64 * k + 'px'; el.marks.style.width = 520 * k + 'px'; el.marks.style.height = 48 * k + 'px';
       for (const cap of chap.el.caps) Object.assign(cap.style, { right: '24px', top: top + 'px' });
@@ -89,7 +93,7 @@ export default def => {
     el.B.style.clipPath = `inset(0 0 ${((1 - clamp01((p - .38) / .05)) * 100).toFixed(1)}% 0)`;
     const na = st.notice * (1 - st.lift) * out;
     show(el.notice, na);
-    el.notice.style.transform = `scale(${(1 + (1 - st.notice) * .5).toFixed(3)}) translateY(${(-st.lift * 30).toFixed(1)}px)`;
+    el.notice.style.transform = `translateY(-50%) scale(${(1 + (1 - st.notice) * .5).toFixed(3)}) translateY(${(-st.lift * 30).toFixed(1)}px)`;
     const day = Math.min(48, 1 + Math.floor(st.day + 1e-6));
     el.n.textContent = day;
     el.lines.forEach((ln, i) => ln.style.opacity = i < day ? 1 : .12);
